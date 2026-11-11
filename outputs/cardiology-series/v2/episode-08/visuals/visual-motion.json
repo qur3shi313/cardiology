@@ -1,0 +1,96 @@
+{
+  "filter": "freezedetect=n=0.001:d=2",
+  "source_clips_only": true,
+  "duration_seconds": 186.36666666666667,
+  "frozen_seconds": 21.566666666666666,
+  "frozen_percent": 11.572169558218565,
+  "longest_unintentional_hold_seconds": 4.566667000000001,
+  "clips": [
+    {
+      "scene": "P01",
+      "duration": 14.933333333333334,
+      "holds": [],
+      "hold_seconds": 0
+    },
+    {
+      "scene": "P02",
+      "duration": 21.1,
+      "holds": [],
+      "hold_seconds": 0
+    },
+    {
+      "scene": "P03",
+      "duration": 20.666666666666668,
+      "holds": [],
+      "hold_seconds": 0
+    },
+    {
+      "scene": "P04",
+      "duration": 21.933333333333334,
+      "holds": [],
+      "hold_seconds": 0
+    },
+    {
+      "scene": "P05",
+      "duration": 22.633333333333333,
+      "holds": [],
+      "hold_seconds": 0
+    },
+    {
+      "scene": "P06",
+      "duration": 18.633333333333333,
+      "holds": [],
+      "hold_seconds": 0
+    },
+    {
+      "scene": "P07",
+      "duration": 24.366666666666667,
+      "holds": [],
+      "hold_seconds": 0
+    },
+    {
+      "scene": "P08",
+      "duration": 21.866666666666667,
+      "holds": [
+        {
+          "start": 0.0,
+          "end": 3.733333,
+          "duration": 3.733333
+        },
+        {
+          "start": 12.033333,
+          "end": 16.6,
+          "duration": 4.566667000000001
+        },
+        {
+          "start": 16.6,
+          "end": 21.866666666666667,
+          "duration": 5.266666666666666,
+          "terminal": true,
+          "intentional": "Emergency message for readable dwell"
+        }
+      ],
+      "hold_seconds": 13.566666666666666
+    },
+    {
+      "scene": "P09",
+      "duration": 12.233333333333333,
+      "holds": [],
+      "hold_seconds": 0
+    },
+    {
+      "scene": "P10",
+      "duration": 8.0,
+      "holds": [
+        {
+          "start": 0.0,
+          "end": 8.0,
+          "duration": 8.0,
+          "terminal": true,
+          "intentional": "Eight-second sources and next-episode reading card"
+        }
+      ],
+      "hold_seconds": 8.0
+    }
+  ]
+}

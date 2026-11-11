@@ -1,0 +1,62 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P01-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 14.933333333333334,
+    "native_composition": true
+  },
+  "P02": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P02-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 21.1,
+    "native_composition": true
+  },
+  "P03": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P03-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 20.666666666666668,
+    "native_composition": true
+  },
+  "P04": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P04-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 21.933333333333334,
+    "native_composition": true
+  },
+  "P05": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P05-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 22.633333333333333,
+    "native_composition": true
+  },
+  "P06": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P06-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 18.633333333333333,
+    "native_composition": true
+  },
+  "P07": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P07-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 24.366666666666667,
+    "native_composition": true
+  },
+  "P08": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P08-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 21.866666666666667,
+    "native_composition": true
+  },
+  "P09": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P09-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 12.233333333333333,
+    "native_composition": true
+  },
+  "P10": {
+    "path": "outputs/cardiology-series/v2/episode-08/visuals/P10-dcb.mp4",
+    "in_sec": 0,
+    "out_sec": 8.0,
+    "native_composition": true
+  }
+}

@@ -7,7 +7,7 @@
       "episode": "episode-01",
       "title": "Coronary angiogram through the wrist or groin",
       "target": "2026-11-12T18:00:00+05:00",
-      "status": "replacement_master_assembling_final_recovery_sources_in_repair",
+      "status": "revised_sources_complete_full_master_assembling",
       "production_material": "Existing wrist and groin scripts, footage and Alexander voice",
       "studio_verified": false,
       "watch_url": null,
@@ -108,14 +108,15 @@
       "episode": "episode-08",
       "title": "Coronary drug-coated balloons",
       "target": "2026-11-19T18:00:00+05:00",
-      "status": "picture_rendering",
+      "status": "all_pictures_verified_master_queued",
       "production_material": "Existing drug-coated balloon package",
       "studio_verified": false,
       "watch_url": null,
       "qa_passed": false,
       "duration_seconds": 186.367,
       "scene_count": 10,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "verified_source_motion_percent": 11.57
     },
     {
       "topic": 9,

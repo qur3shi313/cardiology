@@ -162,11 +162,13 @@ def scar_tissue(c,gain):
 
 
 def blood(c,t,gain,slow):
-    for j in range(26):
-        x=(j*81+t*(53+(j%5)*5)*slow)%1350-22
-        q=((j*37)%119-59)/64
+    for j in range(42):
+        x=(j*83+t*(69+(j%5)*8)*slow)%1370-42
+        q=((j*37)%107-53)/67
         y=stent.center(x)+q*lumen_radius(x,gain)
-        ellipse(c,x,y,5.5+j%3,1.8+j%2*.4,'#ed9a8c',69+j%4*10)
+        ellipse(c,x,y,10+j%6*1.2,2.7+j%4*.55,'#e99485',104+j%4*16)
+        if j%4==0:
+            ellipse(c,x-3,y-1.0,5.2,1.25,'#f7b398',117)
 
 
 def coated_balloon(c,x,radius,coated):
@@ -201,7 +203,7 @@ def transfer(c,t,gain,amount):
         p=(t*.48+i*.111)%1
         side=-1 if i%2 else 1
         y=stent.center(x)+side*(lumen_radius(x,gain)+13*p)
-        ellipse(c,x,y,2.6,2.6,'#d9e9a4',round(172*(1-p)*amount))
+        ellipse(c,x,y,3.2,3.2,'#d9e9a4',round(192*(1-p)*amount))
 
 
 def cutaway(c,t,gain,*,case='expanded',wire=None,balloon=None,drug=0,zoom=1):
@@ -224,7 +226,11 @@ def zoomed(x,y,scale):
     return CENTER+(x-CENTER)*scale,388+(y-388)*scale
 
 
-def contrast(c,p,t,*,wider=False,label=None):
+def contrast(c,p,t,*,wider=False,label=None,zoom=1):
+    c.save()
+    if zoom!=1:
+        c.translate(656*(1-zoom),382*(1-zoom))
+        c.scale(zoom,zoom)
     paint_image(c,angiogram.radiograph_plate())
     branches,total=angiogram.tree('left')
     distance=ease(p,0,.45)*total
@@ -247,6 +253,7 @@ def contrast(c,p,t,*,wider=False,label=None):
     x,y=222+3.48*root[0],101+1.88*root[1]
     guide=curve((x-150,146),((x-104,143),(x-57,y-22),(x,y)))
     line(c,guide,'#535d58',4.5,209)
+    c.restore()
     text(c,'Simulated coronary X-ray',54,69,31,LIGHT)
     if label:
         tag(c,label,dark=True)
@@ -268,14 +275,19 @@ def heart_plate():
 
 
 def heart(c,p,t):
+    scale=1+.14*ease(p,.01,.96)
+    c.save()
+    c.translate(652*(1-scale),391*(1-scale))
+    c.scale(scale,scale)
     paint_image(c,heart_plate())
     branch=curve((675,240),((643,267),(624,310),(644,341)),((661,383),(691,427),(703,510)))
     second=curve((638,300),((589,292),(544,321),(509,373)),((485,405),(457,432),(443,452)))
     for points in (branch,second):
         line(c,points,'#85465a',16)
         line(c,angiogram.art.trace(points,ease(p,0,.87)),'#f3c4a3',8)
-    title(c,'Coronary arteries supply the heart')
-    marker(c,'Coronary artery',910,329,(650,344))
+    c.restore()
+    title(c,'Coronary arteries')
+    marker(c,'Supplies heart muscle',910,329,(652-2*scale,391-47*scale))
 
 
 @lru_cache(maxsize=1)
@@ -291,24 +303,29 @@ def inside_plate():
         plaque=curve((550,357),((569,298),(611,273),(670,266)),((697,296),(673,334),(632,361)),
                      ((587,395),(589,418),(564,428)))
         c.drawPath(polygon(plaque,True),gradient(554,275,689,420,['#dbad94','#9b6262','#724c50']))
-        title(c,'A view from inside the artery',dark=True)
-        tag(c,'Illustrated cross-section',dark=True)
     return snapshot(draw)
 
 
 def inside(c,p,t):
+    scale=1+.23*ease(p,0,1)
+    c.save()
+    c.translate(680*(1-scale),392*(1-scale))
+    c.scale(scale,scale)
     paint_image(c,inside_plate())
     a=t*2.4
     line(c,[(680,392),(680+129*cos(a),392+129*sin(a))],'#b6dfc9',3.7,151)
     ellipse(c,680,392,19,19,'#9bbaaf')
     ellipse(c,680,392,10,10,'#203833')
+    c.restore()
+    title(c,'A view from inside the artery',dark=True)
+    tag(c,'Illustrated cross-section',dark=True)
 
 
 def hook(c,p,t):
     if p>.81:
         contrast(c,(p-.81)/.19,t,label='The team checks the blood flow')
         return
-    zoom=1+.12*ease(p,0,.36)
+    zoom=1+.17*ease(p,0,.76)
     cutaway(c,t,0,zoom=zoom)
     if p>.28:
         title(c,'Coronary drug-coated balloons')
@@ -326,14 +343,16 @@ def narrowing(c,p,t):
         marker(c,'Tissue narrows the channel',765,222,zoomed(CENTER,stent.center(CENTER)-54,zoom))
     else:
         alternate=p<.81
-        cutaway(c,t,.28 if alternate else 0,case='underexpanded' if alternate else 'expanded')
+        zoom=1+.15*ease(p,.61,.81) if alternate else 1+.14*ease(p,.81,1)
+        cutaway(c,t,.28 if alternate else 0,case='underexpanded' if alternate else 'expanded',zoom=zoom)
         title(c,'A separate cause' if alternate else 'Why the cause matters')
         tag(c,'The stent opened incompletely' if alternate else 'The findings guide treatment')
 
 
 def imaging_and_wire(c,p,t):
     if p<.25:
-        contrast(c,p/.25,t,label='Narrowing in the treated segment')
+        local=p/.25
+        contrast(c,local,t,label='Narrowing in the treated segment',zoom=1+.095*ease(local,.02,.98))
     elif p<.55:
         inside(c,(p-.25)/.30,t)
     else:
@@ -367,8 +386,9 @@ def delivery(c,p,t):
     position=mix(-258,CENTER,advance)
     radius=mix(10,91,inflation)
     gain=mix(PREPARED,TREATED,inflation)
+    zoom=1+.23*ease(p,.64,.85)*(1-ease(p,.91,1))
     cutaway(c,t,gain,wire=1171,balloon=(position,radius,True),
-            drug=ease(p,.64,.76))
+            drug=ease(p,.64,.76),zoom=zoom)
     title(c,'How the balloon coating delivers medicine')
     if .20<p<.35:
         marker(c,'Medicine on the outside',801,216,(CENTER+96,stent.center(CENTER+96)-radius))
@@ -381,7 +401,7 @@ def final_check(c,p,t):
         collapse=ease(p,.01,.085)
         pull=ease(p,.085,.18)
         position=CENTER-879*pull
-        cutaway(c,t,TREATED,wire=1171,
+        cutaway(c,t,TREATED,wire=1171,zoom=1+.13*ease(p,.19,.35),
                 balloon=(position,mix(91,9,collapse),True) if position+171>X0 else None)
         title(c,'The original stent stays')
         tag(c,'The balloon comes out')
@@ -411,7 +431,8 @@ def selection(c,p,t):
         for i in range(4):
             xs=range(470,825,12)
             line(c,[(x,300+i*59+(1-((x-646)/194)**2)*15) for x in xs],'#e2f5de',2.5,177)
-        for width in (52,111,168):
+        rotation=14*sin(t*1.6)
+        for width in (52+rotation,111+rotation,168+rotation):
             path=[(646+width*cos(pi*k/22),393+174*sin(pi*k/22)) for k in range(45)]
             line(c,path,'#ddf4db',2.5,156)
         text(c,'By country and device',54,661,33,GREEN)
@@ -436,20 +457,55 @@ def recovery_plate():
     return snapshot(draw)
 
 
+@lru_cache(maxsize=1)
+def wrist_check_plate():
+    def draw(c):
+        paint_image(c,field())
+        block(c,-52,297,1393,296,115,gradient(139,313,1219,603,['#dfba9f','#c99582','#9c6263']))
+        block(c,-88,280,479,324,55,gradient(17,276,365,623,['#bddcce','#78ac9d','#47796e']))
+        block(c,555,292,179,310,33,solid('#467f72',188))
+        block(c,550,318,190,101,31,gradient(550,329,726,436,['#c3e1d5','#80ad9d','#4d897c']))
+        ellipse(c,645,394,57,27,'#d2ebdb',205)
+        line(c,[(588,573),(693,573)],'#bfe4d1',4,145)
+    return snapshot(draw)
+
+
 def recovery(c,p,t):
-    if p<.34:
+    if p<.17:
         paint_image(c,recovery_plate())
         title(c,'The team monitors recovery')
         path=curve((861,269),((881,269),(889,271),(906,269)),((914,268),(922,242),(931,251)),
                    ((941,272),(950,286),(961,270)),((976,262),(997,275),(1029,270)))
         line(c,angiogram.art.trace(path,.36+.64*ease(p,0,.29)),'#e4f8d6',4)
         tag(c,'Access-site and circulation checks')
-    elif p<.76:
+    elif p<.34:
+        q=ease(p,.17,.34)
+        paint_image(c,wrist_check_plate(),scale=1+.16*q,centre=(642,409))
+        title(c,'The team checks the access site')
+        marker(c,'Dressed wrist example',851,238,(645,409-15*(1+.16*q)))
+        tag(c,'Access-site care')
+    elif p<.55:
         paint_image(c,field())
         title(c,'Follow your own discharge instructions')
-        angiogram.icon(c,'list',ease(p,.34,.73),t)
+        q=ease(p,.34,.55)
+        scale=.92+.17*q
+        c.save()
+        c.translate(924*(1-scale),382*(1-scale))
+        c.scale(scale,scale)
+        angiogram.icon(c,'list',q,t)
+        c.restore()
         text(c,'Medicine plan',54,341,39,GREEN,heading=True)
-        text(c,'Ask before changing medicines',54,413,31,GREEN)
+        text(c,'Antiplatelet medicines',54,413,31,GREEN)
+    elif p<.76:
+        paint_image(c,field(True))
+        title(c,'Check with your cardiology team',dark=True)
+        q=ease(p,.55,.76)
+        block(c,745,230,330,219,47,gradient(747,231,1060,461,['#8fc6b2','#569b89','#367869']))
+        block(c,819,356,294,186,42,gradient(818,359,1100,544,['#4d9e8d','#75b39e','#3b7b70']))
+        for i in range(3):
+            ellipse(c,810+i*65,312,10+5*q,10+5*q,'#eff9da')
+            ellipse(c,877+i*64,431,8+5*q,8+5*q,'#e2f7e0')
+        text(c,'Ask before changing medicines',53,424,36,LIGHT,heading=True)
     else:
         paint_image(c,field(True))
         title(c,'Get emergency help',dark=True)
