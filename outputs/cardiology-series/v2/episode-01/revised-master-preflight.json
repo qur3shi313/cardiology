@@ -1,0 +1,115 @@
+{
+  "sha256": "c34bb7c5ef22a7d3d90d466cdbb8518fbefbe9e9b420228931c33c76c8006836",
+  "duration_seconds": 419.6,
+  "motion": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 43.633332,
+    "percent": 10.399,
+    "longest_seconds": 5.866666,
+    "intervals": [
+      {
+        "start_seconds": 5.0,
+        "end_seconds": 7.333333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 36.233333,
+        "end_seconds": 39.1,
+        "terminal": false
+      },
+      {
+        "start_seconds": 39.6,
+        "end_seconds": 44.1,
+        "terminal": false
+      },
+      {
+        "start_seconds": 59.466667,
+        "end_seconds": 61.466667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 61.466667,
+        "end_seconds": 63.466667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 65.466667,
+        "end_seconds": 67.466667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 71.866667,
+        "end_seconds": 73.933333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 92.2,
+        "end_seconds": 94.2,
+        "terminal": false
+      },
+      {
+        "start_seconds": 94.2,
+        "end_seconds": 96.266667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 227.166667,
+        "end_seconds": 229.166667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 244.866667,
+        "end_seconds": 246.9,
+        "terminal": false
+      },
+      {
+        "start_seconds": 311.433333,
+        "end_seconds": 313.433333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 313.566667,
+        "end_seconds": 319.433333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 366.9,
+        "end_seconds": 368.933333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 368.933333,
+        "end_seconds": 371.533333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 382.0,
+        "end_seconds": 384.0,
+        "terminal": false
+      },
+      {
+        "start_seconds": 384.0,
+        "end_seconds": 387.266667,
+        "terminal": false
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.03,
+    "true_peak_dbtp": -1.43,
+    "raw_loudnorm": {
+      "input_i": "-14.03",
+      "input_tp": "-1.43",
+      "input_lra": "2.80",
+      "input_thresh": "-24.38",
+      "output_i": "-14.01",
+      "output_tp": "-1.28",
+      "output_lra": "2.80",
+      "output_thresh": "-24.36",
+      "normalization_type": "dynamic",
+      "target_offset": "0.01"
+    }
+  }
+}

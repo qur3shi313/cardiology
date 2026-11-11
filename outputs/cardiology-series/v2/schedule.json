@@ -7,7 +7,7 @@
       "episode": "episode-01",
       "title": "Coronary angiogram through the wrist or groin",
       "target": "2026-11-12T18:00:00+05:00",
-      "status": "revised_1440p_decoded_delivery_checks_running",
+      "status": "revised_master_motion_audio_passed_final_package_pending",
       "production_material": "Existing wrist and groin scripts, footage and Alexander voice",
       "studio_verified": false,
       "watch_url": null,
@@ -15,7 +15,9 @@
       "duration_seconds": 419.6,
       "scene_count": 40,
       "narration_decoded": true,
-      "blocked_motion_percent": 37.989
+      "blocked_motion_percent": 37.989,
+      "master_sha256": "c34bb7c5ef22a7d3d90d466cdbb8518fbefbe9e9b420228931c33c76c8006836",
+      "revised_motion_percent": 10.399
     },
     {
       "topic": 2,
