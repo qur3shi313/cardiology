@@ -9,3 +9,5 @@ Use original illustrated anatomy. People appear as fully and modestly clothed fi
 Use Alexander's ElevenLabs English narration. Keep the source wording for retained claims and align captions to the actual recordings. Keep music out of all versions. Mix speech to −14 LUFS integrated with true peak at or below −1 dBTP. A short end card identifies the series, the next topic, and the clinical sources.
 
 Deliver H.264 at 2560×1440 and 30 fps, plus a 1080p copy, English SRT, chapter list, 1280×720 thumbnail, vertical Short, and quality report. Check decoded frames on a phone-size contact sheet. Review readability, depiction, motion, anatomical continuity, and sync. Document intentional holds and use the frame checks to find unexpected static sections.
+
+Motion starts with a meaningful clinical change. Set a short hold when the viewer needs to inspect a device position. Keep the frame fixed for insertion, expansion and withdrawal. Use a new close-up to reveal a different feature rather than moving a parked wire to create activity. If a render misses the freeze limit, fix the explanatory scene and review the new master hash.

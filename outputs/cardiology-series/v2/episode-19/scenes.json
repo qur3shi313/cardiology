@@ -1,0 +1,90 @@
+[
+  {
+    "id": "P01",
+    "title": "What happens after the valve is in place?",
+    "narration": "The new valve is working. What happens next? The care team watches the heart rhythm, checks the site where the catheter went in, and uses an ultrasound scan to assess the new valve. These early checks guide the next part of recovery.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 17,
+    "visual_direction": "Start on an already seated valve opening during systole. In the first five seconds, pull back to a monitored recovery scene. Add title as the monitor trace continues.",
+    "on_screen_text": "New valve · Early checks",
+    "source_ids": "A, B, C"
+  },
+  {
+    "id": "P02",
+    "title": "The first checks in hospital",
+    "narration": "In this example, the catheter reached the heart through an artery in the groin. The team checks the small covered wound for bleeding or swelling. It also monitors heart rhythm and blood pressure. How long the patient stays depends on recovery, the access route, and whether the team finds any problems.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 17,
+    "target_end_sec": 42,
+    "visual_direction": "Use the same covered access location. Move from the dressed upper-thigh site to a non-diagnostic simulated monitor and back to the anonymous clothed patient.",
+    "on_screen_text": "Access site · Heart rhythm",
+    "source_ids": "A, B, C"
+  },
+  {
+    "id": "P03",
+    "title": "Why the team watches the rhythm",
+    "narration": "The new valve sits close to part of the heart’s electrical pathway. Some people develop a change in the way electrical signals travel after TAVI. If that happens, the team may monitor them for longer. Some people need a permanent pacemaker to help maintain a reliable rhythm.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 42,
+    "target_end_sec": 65,
+    "visual_direction": "Highlight the nearby conduction system in a labelled schematic with simplified course, then show a generic pacemaker silhouette separately as one possibility. Preserve the valve frame and surrounding anatomy.",
+    "on_screen_text": "Rhythm changes may need monitoring",
+    "source_ids": "B, D"
+  },
+  {
+    "id": "P04",
+    "title": "Checking the valve on ultrasound",
+    "narration": "An echocardiogram uses ultrasound to assess how the replacement valve opens and closes and how blood moves through it. The team can also check whether any blood leaks around the edge of the valve. These findings, together with the other checks, inform the recovery plan.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 65,
+    "target_end_sec": 89,
+    "visual_direction": "Show a simulated echo aligned with the same root. Briefly illustrate a small hypothetical edge leak in a separately labelled example, distinct from flow through the valve.",
+    "on_screen_text": "Valve motion · Flow around the edge",
+    "source_ids": "B, D"
+  },
+  {
+    "id": "P05",
+    "title": "The home recovery plan",
+    "narration": "Before the patient goes home, the team explains how to care for the wound, build up activity, and follow the prescribed medicine plan. It also explains whom to contact with concerns and when the next check is due. The details can vary with other conditions and how the procedure went.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 89,
+    "target_end_sec": 114,
+    "visual_direction": "Show an anonymous discharge conversation and an unfilled care-plan card. Animate broad categories only. Avoid examples of timings, wound handling, drugs or exercise targets.",
+    "on_screen_text": "Wound care · Activity · Medicines",
+    "source_ids": "A, C, E"
+  },
+  {
+    "id": "P06",
+    "title": "Knowing when to get urgent help",
+    "narration": "The discharge instructions explain which warning signs need urgent attention. Severe bleeding from the access site or possible signs of stroke need emergency help. Stroke signs can include a drooping face, sudden arm weakness, or speech difficulty. Call local emergency services immediately if these occur.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 114,
+    "target_end_sec": 139,
+    "visual_direction": "Use a calm clearly legible full-screen emergency card. Show face, arm and speech signals as restrained icons. Do not simulate wound treatment or use a country-specific number.",
+    "on_screen_text": "Severe bleeding or stroke signs? Call emergency services",
+    "source_ids": "A, C"
+  },
+  {
+    "id": "P07",
+    "title": "Follow-up checks",
+    "narration": "Follow-up helps the team see how the patient feels and how the valve is working over time. The team may review symptoms, medicines and rhythm, and arrange a repeat ultrasound. Before the patient leaves hospital, it is useful to know who will arrange follow-up and whom to call with questions.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 139,
+    "target_end_sec": 165,
+    "visual_direction": "Follow the same patient into outpatient consultation. Match the initial and follow-up valve visuals. Move through an unnumbered calendar without promising a fixed timeline.",
+    "on_screen_text": "Symptoms · Ongoing valve checks",
+    "source_ids": "A, B, D, E"
+  },
+  {
+    "id": "P08",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 165,
+    "target_end_sec": 173,
+    "visual_direction": "Hold references and production disclosure for eight seconds.",
+    "on_screen_text": "ESC/EACTS · NHS patient resources · Original educational animation",
+    "source_ids": "A, B, C, D, E"
+  }
+]

@@ -10,7 +10,7 @@ The master timeline is 12,588 frames at 30 fps, or 6:59.600. The spoken track co
 | Coronary imaging twice, with two different catheter choices | Follow the right-groin example through coronary imaging. The guidewire comes out before the left run. The left diagnostic catheter is replaced with the right catheter in this example, and the second guidewire comes out before the right run. The radial single-catheter example remains available in the original source materials. |
 | Two readings of a sample angiogram | Use the first original groin result sentence and one next-steps passage. Use a separate treatment illustration if showing the balloon and stent. |
 | Two full discharge sections and emergency passages | Keep distinct groin pressure or closure and wrist-band checks, one shared discharge and home-care section, and the original wrist emergency recording. The emergency card covers either the hand or foot on the accessed side. The groin version supplies the foot wording and supporting aftercare sources. |
-| Long end holds and two summaries | Use the final original spoken discharge question over the animated sources and end-screen card. |
+| Long end holds and two summaries | Use the final original spoken discharge reminder over the animated sources and end-screen card. |
 
 ## Assembly
 

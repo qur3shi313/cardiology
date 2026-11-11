@@ -68,3 +68,30 @@ The paths in this section are relative to `episode-01/revision/`. Files are usef
 2. Recreate the two clean cutaways and the draped/neutral locator. Reuse the measured path states and exact geometry. Preserve one continuous action and a fixed camera per access-device step. Animate informative changes every 3–5 seconds, including wider/closer handoffs between steps, movement of contrast, appearance of an ultrasound comparison or a label focusing attention. Keep already parked devices still. Use a large visual change where a fixed device would otherwise be held too long.
 3. Build high-visibility route tracking and alternate recovery. Replace static editorial cards with short animated scenes. Keep the composition varied across the hook, the root, body routes, grayscale imaging and aftercare. A fixed-angle device action can be visually active through movement of the actual device. Inspection holds should serve a specific anatomical or device cue.
 4. Measure the master with the requested freeze thresholds. Use fewer than three extended holds and check each for clinical purpose. Measure illustration coverage and glyph bounds, then review the 390 px samples and every transition with draped assets. Check the Short and thumbnail independently. Reconcile captions and scene duration against the final narration, including the end-card cue, and document any editorial timing interpretation.
+
+## Combined timeline overrides
+
+The committed narration timing fixes these local picture durations at 30 fps. `visuals/render_groin.py` produces a silent H.264 clip and a representative still for each mapping. Install Pillow and FFmpeg, keep the project font directory, and call `python visuals/render_groin.py F16` from this episode directory. `FFMPEG` can point to a custom FFmpeg executable. The renderer draws the 2D layers at three times output resolution and downsamples with Lanczos. It also supports `--width 2560` for a native 1440p source. The default sources are 1920 × 1080.
+
+| Combined timeline | Source scene | Picture under `visuals/` | Frames |
+| --- | --- | --- | ---: |
+| P12 | R12 | `R12-route.mp4` | 260 |
+| P13 | F04 | `F04-locator.mp4` | 164 |
+| P14 | F05 | `F05-needle.mp4` | 255 |
+| P15 | F06 | `F06-fine-wire.mp4` | 300 |
+| P16 | F07 | `F07-needle-out.mp4` | 95 |
+| P17 | F08 | `F08-introducer.mp4` | 207 |
+| P18 | F09 | `F09-fine-wire-out.mp4` | 280 |
+| P19 | F10 | `F10-exchange-wire.mp4` | 182 |
+| P20 | F11 | `F11-introducer-out.mp4` | 216 |
+| P21 | F12 | `F12-working-sheath.mp4` | 169 |
+| P22 | F13 | `F13-exchange-out.mp4` | 318 |
+| P23 | F16 | `F16-route.mp4` | 507 |
+| P31 | F24 | `F24-withdraw.mp4` | 259 |
+| P32 | F25 | `F25-close.mp4` | 233 |
+| P33 | F26 | `F26-checks.mp4` | 309 |
+| P34 | F27 | `F27-recovery.mp4` | 284 |
+
+P13 uses only the draped anatomy locator and the arterial location. The new P14 and P15 add freshly labeled simulated ultrasound and X-ray respectively. P23 starts with the close-up of the long diagnostic wire entering through the stationary working sheath, then the catheter following the wire, before the wider view follows the leading tip to the aortic root. P34 is a covered patient with the straight leg visible only as the contour of the blanket. The entry and device states retain their original orientation and their near-wall, short-wire and exchange relationships. [SCAI femoral access guidance](https://www.scai.org/quality-improvement-tools/qi-tips/safe-femoral-access-using-all-tools-toolbox) · [NHS coronary angiogram aftercare](https://www.guysandstthomas.nhs.uk/health-information/coronary-angiogram/after-coronary-angiogram)
+
+If another scene needs the old groin tool states for reference, omit `groin_locator()` when drawing the legacy background, before any devices or illustrative imaging are composited. A flattened review image requires an opaque cover from `x=1280` to `1514`, `y=193` to `329` of the 1600 × 900 original; multiply coordinates by 1.2 for a 1080p image. This covers the old artwork, shadow, text, navel and contours before the cutaway tissue begins at `y≈330`. The legacy ultrasound/X-ray inset begins at `(1124,218)` and ends at `(1515,410)`. For P14/P15 and any final entry image, draw the drape replacement below the inset, then composite new simulated-imaging disclosure and labels above it. Never punch a hole in the mask to reveal old body art. The final groin outputs here use new draped layers directly.

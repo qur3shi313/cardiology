@@ -7,160 +7,220 @@
       "episode": "episode-01",
       "title": "Coronary angiogram through the wrist or groin",
       "target": "2026-11-12T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Existing wrist and groin scripts, footage and Alexander voice"
+      "status": "picture_rendering",
+      "production_material": "Existing wrist and groin scripts, footage and Alexander voice",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 2,
       "episode": "episode-02",
       "title": "Wrist versus groin access and why the team chooses a route",
       "target": "2026-11-13T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Existing wrist versus groin access package"
+      "status": "picture_rendering",
+      "production_material": "Existing wrist versus groin access package",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 3,
       "episode": "episode-03",
       "title": "What the sheath, guidewire, catheter and contrast each do",
       "target": "2026-11-14T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Existing device roles script, storyboard and animation"
+      "status": "picture_rendering",
+      "production_material": "Existing device roles script, storyboard and animation",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 4,
       "episode": "episode-04",
       "title": "How clinicians read a coronary angiogram",
       "target": "2026-11-15T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Script and sources in production"
+      "status": "voice_and_timeline_locked",
+      "production_material": "Script and sources in production",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 5,
       "episode": "episode-05",
       "title": "Recovery and next steps after a coronary angiogram",
       "target": "2026-11-16T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Script and sources in production"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Script and sources in production",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 6,
       "episode": "episode-06",
       "title": "Coronary angioplasty and stent placement",
       "target": "2026-11-17T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Existing angioplasty and stent package"
+      "status": "voice_and_timeline_locked",
+      "production_material": "Existing angioplasty and stent package",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 7,
       "episode": "episode-07",
       "title": "How drug-eluting stents work",
       "target": "2026-11-18T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 8,
       "episode": "episode-08",
       "title": "Coronary drug-coated balloons",
       "target": "2026-11-19T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Existing drug-coated balloon package"
+      "status": "voice_and_timeline_locked",
+      "production_material": "Existing drug-coated balloon package",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 9,
       "episode": "episode-09",
       "title": "Why a stent can narrow again and how the team investigates",
       "target": "2026-11-20T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 10,
       "episode": "episode-10",
       "title": "Recovery, medicines and follow-up after PCI",
       "target": "2026-11-21T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 11,
       "episode": "episode-11",
       "title": "How FFR and iFR help assess a coronary narrowing",
       "target": "2026-11-22T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 12,
       "episode": "episode-12",
       "title": "Looking inside coronary arteries with IVUS and OCT",
       "target": "2026-11-23T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 13,
       "episode": "episode-13",
       "title": "Calcified arteries and complex PCI",
       "target": "2026-11-24T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 14,
       "episode": "episode-14",
       "title": "Heart attack and emergency PCI",
       "target": "2026-11-25T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 15,
       "episode": "episode-15",
       "title": "Treatment decisions when several coronary arteries are narrowed",
       "target": "2026-11-26T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 16,
       "episode": "episode-16",
       "title": "What happens in aortic stenosis",
       "target": "2026-11-27T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 17,
       "episode": "episode-17",
       "title": "How the Heart Team plans TAVI",
       "target": "2026-11-28T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 18,
       "episode": "episode-18",
       "title": "How transcatheter aortic valve implantation is performed",
       "target": "2026-11-29T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Existing TAVI package"
+      "status": "voice_and_timeline_locked",
+      "production_material": "Existing TAVI package",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 19,
       "episode": "episode-19",
       "title": "Recovery and follow-up after TAVI",
       "target": "2026-11-30T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     },
     {
       "topic": 20,
       "episode": "episode-20",
       "title": "TAVI, surgery and how the Heart Team weighs the options",
       "target": "2026-12-01T18:00:00+05:00",
-      "status": "planned",
-      "production_material": "Source review and script pending"
+      "status": "source_script_and_storyboard_ready",
+      "production_material": "Source review and script pending",
+      "studio_verified": false,
+      "watch_url": null,
+      "qa_passed": false
     }
   ]
 }

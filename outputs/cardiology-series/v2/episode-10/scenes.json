@@ -1,0 +1,101 @@
+[
+  {
+    "id": "P01",
+    "title": "When the stent stays",
+    "narration": "The stent is in. What happens after the cath lab? Recovery includes an access-site check, a medicine plan and follow-up for the heart condition that led to treatment.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 15,
+    "visual_direction": "Open with the balloon withdrawing from a seated stent. Match-cut the moving vessel into a bedside recovery scene before the title appears. Keep the first question inside the first five seconds.",
+    "on_screen_text": "After PCI",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P02",
+    "title": "Recovery checks",
+    "narration": "PCI is a catheter procedure that treats a narrowed heart artery. Afterward, staff check your blood pressure and pulse and look for bleeding where the catheter entered. The access site, the way it was closed and your condition all affect when you can get up and go home.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 15,
+    "target_end_sec": 37,
+    "visual_direction": "Glide from a cutaway of the treated coronary segment to a bedside monitor and a covered wrist or groin dressing. Show the routes separately, with only a small draped access window. Keep the monitor abstract and free of patient values.",
+    "on_screen_text": "Access site and circulation",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P03",
+    "title": "The medicine plan after a stent",
+    "narration": "After a stent, your team usually prescribes antiplatelet medicines. They make platelets less likely to clump together and form a clot inside the stent. The plan depends on why you had PCI, your chance of bleeding and any other medicines you take. Your discharge summary should tell you which plan applies to you.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 37,
+    "target_end_sec": 62,
+    "visual_direction": "Use a macro cutaway of a seated stent and platelet symbols, then a moving transition to a simple medication plan. Show the medicine as a separate care action without implying that it comes from the stent coating.",
+    "on_screen_text": "Antiplatelets help prevent clots",
+    "source_ids": "B, C"
+  },
+  {
+    "id": "P04",
+    "title": "Before medicines are changed",
+    "narration": "Before you leave, confirm which medicines are new and whom to contact about side effects or missed doses. If another clinician plans surgery or dental work, tell them about your stent and your medicines. Your care teams can work together before any medicine change.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 62,
+    "target_end_sec": 84,
+    "visual_direction": "Show hands comparing a prescription list with a generic discharge plan, then connect it to a dental or surgery appointment icon. Use no product names, doses or procedure scheduling advice.",
+    "on_screen_text": "Ask before changing the plan",
+    "source_ids": "B, C, E"
+  },
+  {
+    "id": "P05",
+    "title": "Activity and the wound at home",
+    "narration": "Your own discharge instructions cover the dressing, activity, lifting, driving and return to work. A small bruise or mild tenderness can occur. Increasing pain, redness, swelling, drainage or fever are reasons to contact the care team. How quickly you can return to activity depends on your recovery and the reason for treatment.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 84,
+    "target_end_sec": 106,
+    "visual_direction": "Follow a discharge card to simple home icons. Show mild bruising in a small, non-graphic wrist inset, then make the prompt-contact symptoms distinct. Groin remains draped and no mobility timeline appears.",
+    "on_screen_text": "Follow your discharge instructions",
+    "source_ids": "A, B, F"
+  },
+  {
+    "id": "P06",
+    "title": "Emergency symptoms",
+    "narration": "Get emergency help for severe chest pain, sudden trouble breathing, heavy bleeding or bleeding that will not stop at the access site. A hand or foot that suddenly becomes cold, pale or numb on the side used also needs urgent attention. Your discharge plan should identify whom to call with other concerns.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 106,
+    "target_end_sec": 128,
+    "visual_direction": "Use a bold, high-contrast alert and neutral phone icon. Show chest or breathing concerns in one beat, then access-site bleeding and limb symptoms. Keep the emergency wording fixed and omit self-treatment steps.",
+    "on_screen_text": "Get emergency help for serious symptoms",
+    "source_ids": "A, F, G"
+  },
+  {
+    "id": "P07",
+    "title": "Rehabilitation and follow-up",
+    "narration": "The treated section is only one part of coronary artery disease. Follow-up gives your team a chance to check symptoms, review medicines and discuss the prevention plan. Cardiac rehabilitation can provide supervised exercise, education and support when it is appropriate. Your team can tell you how to join.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 128,
+    "target_end_sec": 151,
+    "visual_direction": "Pull back from the treated segment to the whole heart and then a modestly clothed person in a supervised rehabilitation setting. Pair the rehabilitation scene with an abstract appointment timeline without dates.",
+    "on_screen_text": "Follow-up and cardiac rehabilitation",
+    "source_ids": "B, C, D"
+  },
+  {
+    "id": "P08",
+    "title": "What to take home",
+    "narration": "Before you leave, ask for the treatment result, the written medicine and recovery plan, and a clear contact for follow-up or problems. A planned procedure and an emergency procedure can lead to different recovery plans. Keep the plan that your team gives you.",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 151,
+    "target_end_sec": 174,
+    "visual_direction": "Return to the discharge summary and reveal one large heading at a time. Keep the medicine, recovery and contact information distinct. Use fictional paperwork with no identifying details.",
+    "on_screen_text": "Result · Medicines and recovery · Contact",
+    "source_ids": "A, B, C"
+  },
+  {
+    "id": "P09",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P09.mp4",
+    "target_start_sec": 174,
+    "target_end_sec": 182,
+    "visual_direction": "Hold the authentic logo, reference names, next episode and production disclosure for eight seconds. Leave room for YouTube end screens.",
+    "on_screen_text": "Sources and production",
+    "source_ids": "A–G"
+  }
+]

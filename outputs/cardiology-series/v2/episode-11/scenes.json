@@ -1,0 +1,101 @@
+[
+  {
+    "id": "P01",
+    "title": "Does a narrowing limit blood supply?",
+    "narration": "Can two similar narrowings affect blood flow differently? Yes. A picture shows the shape of the artery. Pressure measurements give the care team another way to assess how much a narrowing matters.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 16,
+    "visual_direction": "Open on two equal-looking simulated coronary narrowings and reveal different conceptual pressure traces within five seconds. Label these as two illustrative cases. Move to the title after the question.",
+    "on_screen_text": "Same appearance · Different pressure",
+    "source_ids": "H, I, K"
+  },
+  {
+    "id": "P02",
+    "title": "What the angiogram shows",
+    "narration": "A coronary angiogram uses contrast and X-rays to show the channel inside the artery. The clinician can see where it is narrow. In selected cases, it is unclear how much that narrowing affects blood supply to the heart muscle. That is where a pressure-based test may help.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 16,
+    "target_end_sec": 37,
+    "visual_direction": "Animate the same contrast front past one focal coronary narrowing. Hold the same branch geometry as the image changes to a schematic. The catheter tip remains upstream at the coronary opening.",
+    "on_screen_text": "Picture shows the artery’s shape",
+    "source_ids": "I, K, M"
+  },
+  {
+    "id": "P03",
+    "title": "Two pressure measurements",
+    "narration": "A thin wire carries a pressure sensor. In this example, the sensor is beyond the narrowing. The team compares pressure there with pressure near the artery’s opening, using the aortic pressure as a reference. The comparison helps estimate how strongly the narrowing limits blood flow under the conditions of the test.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 37,
+    "target_end_sec": 62,
+    "visual_direction": "Move the wire inside the open channel once and hold its sensor beyond the lesion. Identify aortic reference and downstream sensor with separate brief callouts. Show the signals together, without values or equipment setup.",
+    "on_screen_text": "Aortic reference · Downstream sensor",
+    "source_ids": "H, I, J"
+  },
+  {
+    "id": "P04",
+    "title": "How FFR is measured",
+    "narration": "F F R stands for fractional flow reserve. It uses the pressure comparison when blood flow has been increased as much as possible for the test. The team uses a medicine to create those conditions. The measurement helps estimate how the narrowing affects flow when the artery needs to carry more.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 62,
+    "target_end_sec": 83,
+    "visual_direction": "Keep the same wire and artery. Increase the speed of subtle flow particles through a labeled conceptual transition. Indicate the test condition without showing a syringe, molecule, dose, infusion or numerical threshold.",
+    "on_screen_text": "FFR · Increased-flow condition",
+    "source_ids": "H, I, J, L"
+  },
+  {
+    "id": "P05",
+    "title": "How iFR is measured",
+    "narration": "I F R stands for instantaneous wave-free ratio. It uses the pressure comparison at rest, during a particular part of each heartbeat when the heart is relaxing. The measurement uses that resting window. Both tests use pressure to help the team judge the effect of a narrowing.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 83,
+    "target_end_sec": 105,
+    "visual_direction": "Reset to the same stationary wire and resting flow. Animate one simple heart-cycle trace with a highlight during a small part of the relaxation phase. Keep the sample conceptual and do not show timing percentages or numeric results.",
+    "on_screen_text": "iFR · Resting heartbeat window",
+    "source_ids": "H, I, J, L"
+  },
+  {
+    "id": "P06",
+    "title": "Putting the numbers in context",
+    "narration": "The team checks that the pressure signals are reliable and interprets them with the symptoms, the artery anatomy and other findings. If the assessment suggests the narrowing is unlikely to limit blood supply, a stent may be deferred. Another result may support a treatment discussion when it fits the clinical picture.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 105,
+    "target_end_sec": 128,
+    "visual_direction": "Show a neutral monitor resolving to a stable conceptual trace. Transition to a clinician reviewing picture, symptoms and measurement as three cues. Illustrate monitoring and a treatment discussion with equal weight. Omit decision thresholds and automatic traffic-light labels.",
+    "on_screen_text": "Pressure is part of the decision",
+    "source_ids": "H, I, K"
+  },
+  {
+    "id": "P07",
+    "title": "What the test can answer",
+    "narration": "These measurements focus on the effect of a narrowing in a major coronary artery. Chest symptoms can have other causes. If the explanation is still unclear, the care team may consider another test. The goal is to choose a next step that fits the person and the findings together.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 128,
+    "target_end_sec": 151,
+    "visual_direction": "Pull back from the measured artery to the whole heart. A second illustrative path cues additional tests without suggesting FFR or iFR diagnoses every coronary condition. Keep major-vessel anatomy and microvessel testing visually distinct.",
+    "on_screen_text": "One question about one narrowing",
+    "source_ids": "H, K"
+  },
+  {
+    "id": "P08",
+    "title": "A useful question to ask",
+    "narration": "If your team uses one of these measurements, ask what it showed about the narrowing and how that changes the next step. The angiogram supplies the map. F F R and I F R add pressure information that can help guide the decision.",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 151,
+    "target_end_sec": 172,
+    "visual_direction": "Return to the opening pair of similar-looking cases and lay each pressure trace over the corresponding artery. End on the question and a neutral follow-up visual. Use no device or treatment claims beyond the narrated scope.",
+    "on_screen_text": "What does the measurement change?",
+    "source_ids": "H, I, K"
+  },
+  {
+    "id": "P09",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P09.mp4",
+    "target_start_sec": 172,
+    "target_end_sec": 180,
+    "visual_direction": "Hold the authentic logo, AHA and ACC/AHA/SCAI references, next episode title and production disclosure for eight seconds. Leave room for end screens.",
+    "on_screen_text": "Sources and production",
+    "source_ids": "H–M"
+  }
+]

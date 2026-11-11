@@ -1,0 +1,90 @@
+[
+  {
+    "id": "P01",
+    "title": "A valve that opens less",
+    "narration": "What happens when this heart valve cannot open fully? The aortic valve is the doorway from the heart’s main pumping chamber to the aorta. Watch how narrowing changes that opening with each heartbeat.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 16,
+    "visual_direction": "Immediately show a side-by-side normal and stenotic valve opening at matched systole. Enter the title over moving blood through the outlet.",
+    "on_screen_text": "The opening becomes narrower",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P02",
+    "title": "The normal route",
+    "narration": "The left ventricle pumps blood through the aortic valve into the aorta. This is the main artery carrying blood to the body. The valve leaflets open as the chamber pumps. They come together as the chamber relaxes, helping keep blood moving in one direction.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 16,
+    "target_end_sec": 40,
+    "visual_direction": "Use a long-axis cutaway with clear left ventricle, aortic valve and aorta. Follow flow forward during contraction and show leaflet closure during relaxation.",
+    "on_screen_text": "Left ventricle → Aorta",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P03",
+    "title": "What can cause narrowing",
+    "narration": "Aortic stenosis means the valve opening has narrowed. In many older adults, calcium builds up on the leaflets and makes them stiff. Some people are born with an aortic valve that has two leaflets instead of the usual three. That valve can also become narrowed over time.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 40,
+    "target_end_sec": 64,
+    "visual_direction": "Keep the principal illustrative case a three-leaflet calcific valve. Use a separately labelled and clearly timed two-leaflet inset. Calcium sits within thickened leaflets.",
+    "on_screen_text": "Stiff leaflets · Smaller opening",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P04",
+    "title": "Why the heart works harder",
+    "narration": "The pumping chamber must generate more pressure to move blood through a tighter opening. Over time its muscular wall can thicken. The heart may have more trouble filling or sending enough blood forward, especially during activity. How much this affects a person depends on the severity and how the heart adapts.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 64,
+    "target_end_sec": 89,
+    "visual_direction": "Compare a narrow jet with a normal outlet in the same cycle, then gently show thicker ventricular walls over time. Keep systolic flow forward and avoid quantified performance graphics.",
+    "on_screen_text": "More work for the heart",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P05",
+    "title": "Symptoms can develop gradually",
+    "narration": "Some people feel well for a long time. Others notice breathlessness, chest discomfort, dizziness, fainting or a drop in what they can do comfortably. A healthcare professional considers when symptoms happen and what else could be causing them. A scan helps put those symptoms in context.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 89,
+    "target_end_sec": 113,
+    "visual_direction": "Show walking pace changing in a clothed anonymous figure. Introduce two symptoms at a time. Use a neutral transition to a clinician reviewing symptoms.",
+    "on_screen_text": "Breathlessness · Reduced activity",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P06",
+    "title": "The echocardiogram",
+    "narration": "An echocardiogram is an ultrasound scan of the heart. It can show how far the valve opens, how fast blood moves through it, and how well the heart pumps. The team combines those measurements with the person’s symptoms and other findings. Sometimes more imaging helps clarify the severity.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 113,
+    "target_end_sec": 139,
+    "visual_direction": "Pair the same schematic valve with a simulated Doppler trace and visible pumping chamber. Keep values and diagnostic cutoffs off the artwork.",
+    "on_screen_text": "Valve opening · Flow speed",
+    "source_ids": "B"
+  },
+  {
+    "id": "P07",
+    "title": "What happens next",
+    "narration": "The next step may be regular monitoring or assessment for valve replacement, depending on the severity and the whole clinical picture. The team also considers how the condition affects daily life. In the next film, we’ll see how specialists use scans and a patient assessment to plan a possible catheter-based valve replacement.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 139,
+    "target_end_sec": 165,
+    "visual_direction": "Transition from follow-up calendar to Heart Team planning. Include an original neutral valve-frame silhouette in the final shot as a clear topic bridge.",
+    "on_screen_text": "Monitoring · Valve assessment",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P08",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 165,
+    "target_end_sec": 173,
+    "visual_direction": "Hold references and production disclosure for eight seconds.",
+    "on_screen_text": "American Heart Association · ESC/EACTS · Original educational animation",
+    "source_ids": "A, B"
+  }
+]

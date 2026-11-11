@@ -1,0 +1,90 @@
+[
+  {
+    "id": "P01",
+    "title": "Inside the artery",
+    "narration": "What can a scan inside an artery reveal? A coronary angiogram shows where contrast flows. A scan made from inside the vessel adds a cross-sectional view of the artery wall and, after treatment, of the stent.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 16,
+    "visual_direction": "Open with contrast outlining a focal narrowing. Reveal its aligned cross-section in the first five seconds, then show title over the still-moving coronary reconstruction.",
+    "on_screen_text": "An artery from the inside",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P02",
+    "title": "One artery, two views",
+    "narration": "The angiogram is a moving X-ray view of the contrast-filled channel. That view helps the team follow the branching arteries. An imaging catheter adds slices through the artery, like looking through the end of a tube. Clinicians can use those slices to study the wall and the open channel together.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 16,
+    "target_end_sec": 40,
+    "visual_direction": "Hold one branch as a landmark. Show the angiogram on the left and serial cross-sections passing the matched location on the right. Keep side branches and plaque position consistent.",
+    "on_screen_text": "Angiogram · Cross-section",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P03",
+    "title": "IVUS uses sound",
+    "narration": "IVUS stands for intravascular ultrasound. A small sensor on the catheter sends sound waves and detects the echoes. This can show the size of the vessel and structures deeper in the wall. Dense calcium can cast a shadow, which limits what the scan can show immediately behind it.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 40,
+    "target_end_sec": 65,
+    "visual_direction": "Show unobtrusive ultrasound pulses, then a scan-like ring with plaque and one shadow behind bright calcium. Keep acquisition illustrative and the catheter near centre without redrawing the lumen.",
+    "on_screen_text": "IVUS · Sound waves",
+    "source_ids": "B, C"
+  },
+  {
+    "id": "P04",
+    "title": "OCT uses light",
+    "narration": "OCT stands for optical coherence tomography. It uses near-infrared light to show fine detail near the inner surface. The team briefly clears blood from the imaging area so the light can reach the wall. OCT can show fine features such as individual stent struts. How deep it sees depends on the tissue.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 65,
+    "target_end_sec": 91,
+    "visual_direction": "Use a soft light sweep as opaque blood briefly clears locally. Hold a magnified region showing individual struts in a schematic OCT ring. Preserve the same plaque location.",
+    "on_screen_text": "OCT · Near-infrared light",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P05",
+    "title": "Planning a treatment",
+    "narration": "Before a stent is placed, an inside scan can show the length of the diseased segment, the size of the surrounding artery, and how much calcium is present. These details can change the treatment plan. The team chooses the imaging method based on the anatomy, the clinical situation, and what it needs to see.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 91,
+    "target_end_sec": 118,
+    "visual_direction": "Run through a few neighbouring cross-sections, then align them back to the long view. Highlight the length of one illustrated lesion and the arc of calcium. No values or tool settings.",
+    "on_screen_text": "Disease length · Calcium",
+    "source_ids": "A, B, C"
+  },
+  {
+    "id": "P06",
+    "title": "Checking the stent",
+    "narration": "After the stent opens, the team can check how fully it has expanded and whether its struts are close to the vessel wall. Here, a scan shows one portion that remains narrower than intended. The care team interprets that finding alongside the angiogram before deciding whether anything further is needed.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 118,
+    "target_end_sec": 143,
+    "visual_direction": "Keep a continuous stent frame. Show a single constricted segment and its cross-section, with clean adjacency to an expanded neighbouring section. Leave artery surface intact.",
+    "on_screen_text": "Stent expansion · Wall contact",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P07",
+    "title": "When imaging is useful",
+    "narration": "The extra detail matters most when it can change what the team does. For example, guidance recommends inside-artery imaging to guide treatment of complex lesions in people with an acute coronary syndrome. The findings have to fit the wider picture, including the patient’s condition, the artery anatomy, and the purpose of the procedure.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 143,
+    "target_end_sec": 170,
+    "visual_direction": "Return to the same case with angiogram and cross-section together. Close the animated clinical panel on the shared planning moment. Keep patient a clothed silhouette.",
+    "on_screen_text": "One more view for a decision",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P08",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 170,
+    "target_end_sec": 178,
+    "visual_direction": "Hold references and production disclosure for eight seconds.",
+    "on_screen_text": "ACC/AHA et al. · EAPCI · SCAI · Original educational animation",
+    "source_ids": "A, B, C"
+  }
+]

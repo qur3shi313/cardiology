@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "episode": "episode-03",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 6154,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "What the four tools do",
+      "start_frame": 0,
+      "end_frame": 441,
+      "narration": "A coronary angiogram uses four tools that do different jobs. The sheath gives the team a way in. The guidewire helps direct equipment. The catheter carries contrast, and the contrast makes the heart’s arteries show up on X-ray.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 0.0,
+        "out_sec": 14.7
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 15,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "Two routes, the same goal",
+      "start_frame": 441,
+      "end_frame": 942,
+      "narration": "The team can enter an artery at the wrist or the groin. We’ll follow a right wrist example. The catheter travels through connected arteries to the aorta, the large artery that leaves the heart. The groin route reaches the same area from below.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 14.7,
+        "out_sec": 31.4
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 19,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "The short access wire",
+      "start_frame": 942,
+      "end_frame": 1451,
+      "narration": "At the numb wrist, the team places a fine needle into the artery. In this example, a short access wire passes through the needle. The needle comes out and the wire stays in place. That short wire helps the team put the sheath into the artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 31.4,
+        "out_sec": 48.36666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "The sheath stays at the entry site",
+      "start_frame": 1451,
+      "end_frame": 2007,
+      "narration": "The sheath is a short, hollow tube. It goes in with a tapered insert that helps it enter. The insert and short wire come out, leaving the sheath at the wrist. It gives the team a passage to move a catheter in or out without making another puncture there.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 48.36666666666667,
+        "out_sec": 66.9
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "How groin access can differ",
+      "start_frame": 2007,
+      "end_frame": 2468,
+      "narration": "At the groin, the team may use a finer wire and a temporary tube before placing the working sheath. The steps and equipment can vary. Once the working sheath is in place, it serves the same purpose as at the wrist.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 66.9,
+        "out_sec": 82.26666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 20,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "The long diagnostic guidewire",
+      "start_frame": 2468,
+      "end_frame": 3068,
+      "narration": "Back at the wrist, a longer guidewire goes through the sheath. Live X-ray, called fluoroscopy, helps the cardiologist see it travel through the arteries. The thin, flexible diagnostic catheter slides over that wire toward the aorta near the heart. The sheath stays at the wrist.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 82.26666666666667,
+        "out_sec": 102.26666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "The guidewire comes out",
+      "start_frame": 3068,
+      "end_frame": 3649,
+      "narration": "Near the heart, the cardiologist withdraws the long guidewire from the catheter. The catheter stays in place. The team positions its curved tip at the opening of a coronary artery, just above the aortic valve. The wire is out before the contrast injection.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 102.26666666666667,
+        "out_sec": 121.63333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 21,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Contrast outlines the artery",
+      "start_frame": 3649,
+      "end_frame": 4187,
+      "narration": "The team injects a liquid called contrast through the hollow catheter. As it mixes with blood and moves through the coronary artery, it makes the channel inside the artery visible on X-ray. The outline fades as the contrast moves on with the blood.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 121.63333333333334,
+        "out_sec": 139.56666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 21,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P09",
+      "title": "When the X-rays are recorded",
+      "start_frame": 4187,
+      "end_frame": 4750,
+      "narration": "The team records a short series of X-rays while contrast is flowing, so the pictures show the arteries filling. They can move the X-ray camera for another view. They position the catheter at the other coronary opening for a separate injection and set of pictures.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 139.56666666666666,
+        "out_sec": 158.33333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P09.mp4",
+        "in_sec": 0,
+        "out_sec": 21,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P10",
+      "title": "What to tell your care team",
+      "start_frame": 4750,
+      "end_frame": 5405,
+      "narration": "Before the test, tell the team about kidney problems or any past reaction to X-ray contrast. The contrast usually contains iodine. Some people feel briefly warm during an injection. If you feel unwell, especially if you have chest discomfort, itching or trouble breathing, tell the team right away.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 158.33333333333334,
+        "out_sec": 180.16666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P10.mp4",
+        "in_sec": 0,
+        "out_sec": 23,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P11",
+      "title": "How the tools work together",
+      "start_frame": 5405,
+      "end_frame": 5914,
+      "narration": "Once the test is finished, the team removes the catheter and sheath and checks the entry site. The sheath provided a passage, the guidewire guided the catheter, and the catheter delivered the contrast. The moving X-rays are what the cardiologist reviews next.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3",
+        "in_sec": 180.16666666666666,
+        "out_sec": 197.12
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P11.mp4",
+        "in_sec": 0,
+        "out_sec": 18,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P12",
+      "title": "Clinical sources",
+      "start_frame": 5914,
+      "end_frame": 6154,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-03/visuals/P12.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

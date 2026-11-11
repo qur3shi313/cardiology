@@ -1,3 +1,5 @@
 Pillow==13.0.0
 numpy==2.3.5
 imageio-ffmpeg==0.6.0
+skia-python==138.0
+av==19.0.2

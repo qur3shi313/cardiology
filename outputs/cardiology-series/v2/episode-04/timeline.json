@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "episode": "episode-04",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 5705,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "What can one angle hide?",
+      "start_frame": 0,
+      "end_frame": 420,
+      "narration": "Can one X-ray angle hide a narrowed artery? Look at this simulated angiogram. A nearby branch overlaps the area. When the view changes, the same narrowing is easier to see.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3",
+        "in_sec": 0.0,
+        "out_sec": 14.0
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 15,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "What the image shows",
+      "start_frame": 420,
+      "end_frame": 973,
+      "narration": "A coronary angiogram is a moving X-ray study of the arteries that feed the heart muscle. Contrast enters through a catheter and outlines the channel that blood can pass through. The team watches the moving images to trace each artery and look for changes in the outline.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3",
+        "in_sec": 14.0,
+        "out_sec": 32.43333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 21,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "Follow the branches",
+      "start_frame": 973,
+      "end_frame": 1617,
+      "narration": "The team identifies the main branches before deciding where a narrowing is. In this example, the left main artery divides into the left anterior descending artery and the circumflex. A separate view shows the right coronary artery. Following the branches helps the team describe the exact location of a finding.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3",
+        "in_sec": 32.43333333333333,
+        "out_sec": 53.9
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "Spot the narrowing",
+      "start_frame": 1617,
+      "end_frame": 2257,
+      "narration": "Here is one short narrowing. Contrast still passes through it and reaches the artery beyond. The team compares the narrowest part with a nearby reference segment and describes where the narrowing is, how long it is, and how severe it looks. A narrowing and a complete blockage look different on the images.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3",
+        "in_sec": 53.9,
+        "out_sec": 75.23333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Why the team changes angle",
+      "start_frame": 2257,
+      "end_frame": 2872,
+      "narration": "The X-ray turns three-dimensional arteries into a flat image. From one angle, branches can overlap or a segment can look shorter than it is. A second view can separate the branches and show more of the same narrowing. The clinician compares the recordings before describing what they see.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3",
+        "in_sec": 75.23333333333333,
+        "out_sec": 95.73333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Does it affect blood supply?",
+      "start_frame": 2872,
+      "end_frame": 3568,
+      "narration": "The size of a narrowing on the picture gives the team one part of the answer. If its effect on blood supply is unclear, the team may use a thin pressure-sensing wire. Tests called F F R or I F R compare pressure beyond the narrowing with pressure upstream. The results help guide treatment decisions.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3",
+        "in_sec": 95.73333333333333,
+        "out_sec": 118.93333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 23,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "When major arteries look open",
+      "start_frame": 3568,
+      "end_frame": 4163,
+      "narration": "Sometimes the major arteries show no important blockage, even though a person has symptoms. Small blood vessels can work poorly, or a coronary artery can tighten temporarily. The care team uses the symptoms and other findings to decide whether more tests could help explain what is happening.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3",
+        "in_sec": 118.93333333333334,
+        "out_sec": 138.76666666666668
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 21,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "How the findings guide care",
+      "start_frame": 4163,
+      "end_frame": 4894,
+      "narration": "The result goes into a larger decision. The team considers the symptoms, urgency, which arteries are involved and any other tests. Care may include medicines and prevention, further assessment, a catheter procedure such as angioplasty and stenting, or a discussion about bypass surgery. In a heart attack, decisions may need to happen quickly.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3",
+        "in_sec": 138.76666666666668,
+        "out_sec": 163.13333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 28,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P09",
+      "title": "Three questions about the result",
+      "start_frame": 4894,
+      "end_frame": 5465,
+      "narration": "When the team explains an angiogram, three questions can make the result easier to understand. Which artery was involved? Is there evidence that the narrowing affects blood supply? What follow-up or treatment does the team recommend? Those answers connect the picture to a plan for care.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3",
+        "in_sec": 163.13333333333333,
+        "out_sec": 182.16666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P09.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P10",
+      "title": "Clinical sources",
+      "start_frame": 5465,
+      "end_frame": 5705,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-04/visuals/P10.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

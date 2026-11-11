@@ -1,0 +1,90 @@
+[
+  {
+    "id": "P01",
+    "title": "Planning starts before the procedure",
+    "narration": "How does the team know if a new valve will fit? Before a catheter-based valve replacement, the Heart Team builds a map of the heart valve and the vessels that could carry the device to it.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 17,
+    "visual_direction": "Open with a valve-ring cross-section changing into its matched 3D root map in five seconds. Add title over the moving map.",
+    "on_screen_text": "How the valve is planned",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P02",
+    "title": "Checking how serious the narrowing is",
+    "narration": "First, the team reviews the person’s symptoms and the severity of aortic stenosis. An echocardiogram shows the valve opening and how blood moves through it. It also helps assess the pumping chamber. The team uses these findings to decide whether valve replacement needs to be considered.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 17,
+    "target_end_sec": 41,
+    "visual_direction": "Align a moving ultrasound schematic with the same aortic valve. Keep root orientation fixed and use only conceptual waveforms.",
+    "on_screen_text": "Symptoms · Echocardiogram",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P03",
+    "title": "Measuring where the new valve would sit",
+    "narration": "A CT scan can show the aortic root in detail. The team measures the ring where the new valve would sit and studies nearby structures, including the openings of the coronary arteries. It also checks where calcium is concentrated. Those details matter for how a replacement valve could fit.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 41,
+    "target_end_sec": 67,
+    "visual_direction": "Reveal a conceptual CT reformat with an oblique annulus plane, show the coronary openings distinctly above it and show calcium on leaflets. No units or sizing tables.",
+    "on_screen_text": "Valve ring · Coronary openings",
+    "source_ids": "A"
+  },
+  {
+    "id": "P04",
+    "title": "Assessing the delivery route",
+    "narration": "The same type of scan can show a potential route through the arteries. The most common catheter route is through an artery in the groin. The team checks the route’s shape and size and where there is calcium. If that route is unsuitable, the team discusses other options.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 67,
+    "target_end_sec": 91,
+    "visual_direction": "Trace one continuous femoral-to-iliac-to-aorta path on a clothed, neutral silhouette. Show differences in narrowing and bends as separate illustrative insets. Do not animate access technique.",
+    "on_screen_text": "The groin-to-heart artery route",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P05",
+    "title": "Other health checks",
+    "narration": "The assessment can also include blood tests, a heart rhythm tracing and a look at the coronary arteries. The team considers other health conditions, day-to-day function and what the patient wants from treatment. These details help it weigh the potential benefits and risks of the available options.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 91,
+    "target_end_sec": 115,
+    "visual_direction": "Transition from ECG to kidney and functional assessment symbols, then to a patient explaining priorities. Use no lab thresholds or fasting instructions.",
+    "on_screen_text": "Rhythm · Overall health",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P06",
+    "title": "How a recommendation is made",
+    "narration": "The Heart Team brings together specialists in imaging, catheter treatment and surgery. They review the test results and discuss which options are suitable. Sometimes the assessment leads to further testing or a surgical opinion. The recommendation takes both the valve anatomy and the patient’s wider health into account.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 115,
+    "target_end_sec": 139,
+    "visual_direction": "Show a clothed team reviewing one integrated map. Close optional branches one at a time without implying a universal plan. Keep direct patient discussion visible in next scene.",
+    "on_screen_text": "One shared assessment",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P07",
+    "title": "Preparing for the discussion",
+    "narration": "The patient can ask why an option is being recommended, what its risks are, and what recovery could involve. The team explains the proposed next steps. In the next film, we’ll follow one planned example to see how a transcatheter valve reaches the heart and takes over the work of the narrowed valve.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 139,
+    "target_end_sec": 165,
+    "visual_direction": "Finish with the patient, decision discussion and a three-dimensional preview of the same valve ring. Keep animation at the plan stage. Let the drawing lead visually to next episode.",
+    "on_screen_text": "The plan and the reasons for it",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P08",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 165,
+    "target_end_sec": 173,
+    "visual_direction": "Hold references and production disclosure for eight seconds.",
+    "on_screen_text": "ESC/EACTS · Guy’s and St Thomas’ NHS · Original educational animation",
+    "source_ids": "A, B"
+  }
+]

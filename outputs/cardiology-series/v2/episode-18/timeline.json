@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "episode": "episode-18",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 5767,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "Transcatheter aortic valve implantation",
+      "start_frame": 0,
+      "end_frame": 520,
+      "narration": "When the aortic valve becomes severely narrowed, it can be hard for the heart to pump blood out to the body. Transcatheter aortic valve implantation, called TAVI or TAVR, places a new valve inside the old one.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 0.0,
+        "out_sec": 17.333333333333332
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 0.0,
+        "out_sec": 17.625,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "Why the valve narrows",
+      "start_frame": 520,
+      "end_frame": 1125,
+      "narration": "The aortic valve sits between the heart’s main pumping chamber and the aorta, the large artery that carries blood to the body. Calcium can stiffen the valve’s flaps so they open less. This is aortic stenosis. It can cause breathlessness, chest discomfort or fainting.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 17.333333333333332,
+        "out_sec": 37.5
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 17.625,
+        "out_sec": 37.833333333333336,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "How the heart team decides",
+      "start_frame": 1125,
+      "end_frame": 1808,
+      "narration": "A heart ultrasound, called an echo, shows how tightly the valve is narrowed. A CT scan helps the team plan where a new valve could fit and how to reach it. The heart team reviews your symptoms, anatomy, overall health and preferences with you. Surgical valve replacement may be a better option for some people.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 37.5,
+        "out_sec": 60.266666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 37.833333333333336,
+        "out_sec": 60.541666666666664,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "The route from groin to valve",
+      "start_frame": 1808,
+      "end_frame": 2334,
+      "narration": "In this example, the team reaches the valve through the femoral artery in the groin. A guidewire travels through the arteries in the pelvis, up the aorta and across the narrowed valve into the heart’s pumping chamber. Live X-rays help guide the equipment.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 60.266666666666666,
+        "out_sec": 77.8
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 60.541666666666664,
+        "out_sec": 78.0,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "How the new valve travels",
+      "start_frame": 2334,
+      "end_frame": 2765,
+      "narration": "The new valve has tissue flaps held in a metal frame. Here, it is compressed around a folded balloon on the end of a delivery catheter. The catheter follows the guidewire to the opening of the old valve.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 77.8,
+        "out_sec": 92.16666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 78.0,
+        "out_sec": 92.45833333333333,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Opening the new valve",
+      "start_frame": 2765,
+      "end_frame": 3294,
+      "narration": "Once the valve is in position, the balloon inflates and opens the metal frame. The frame pushes the old flaps aside. The team deflates and removes the balloon and catheter. The new valve stays in place, and its tissue flaps now open and close with each heartbeat.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 92.16666666666667,
+        "out_sec": 109.8
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 92.45833333333333,
+        "out_sec": 110.125,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "Checking the result",
+      "start_frame": 3294,
+      "end_frame": 3712,
+      "narration": "The team uses heart imaging to check how well blood flows through the new valve and whether blood leaks around it. They also check the heart rhythm and close the opening in the groin artery when the equipment comes out.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 109.8,
+        "out_sec": 123.73333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 110.125,
+        "out_sec": 124.16666666666667,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Recovery in hospital",
+      "start_frame": 3712,
+      "end_frame": 4218,
+      "narration": "In recovery, staff check your heart rhythm and groin site. Risks include bleeding, injury to a blood vessel, stroke, and changes in heart rhythm. Some people need a pacemaker. How long you stay in hospital depends on your recovery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 123.73333333333333,
+        "out_sec": 140.6
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 124.16666666666667,
+        "out_sec": 140.83333333333334,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P09",
+      "title": "Going home",
+      "start_frame": 4218,
+      "end_frame": 4742,
+      "narration": "Before going home, ask for written instructions on medicines, wound care, activity, driving and follow-up. Mild groin bruising or soreness can happen. Call your care team if the site becomes more red or painful, starts draining, or you develop a fever.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 140.6,
+        "out_sec": 158.06666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 140.83333333333334,
+        "out_sec": 158.41666666666666,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P10",
+      "title": "When to get emergency help",
+      "start_frame": 4742,
+      "end_frame": 5227,
+      "narration": "Call your local emergency number for heavy bleeding or bleeding that won’t stop, severe chest pain, sudden trouble breathing, or signs of stroke. These include sudden face drooping, arm weakness or trouble speaking.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 158.06666666666666,
+        "out_sec": 174.23333333333332
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 158.41666666666666,
+        "out_sec": 174.79166666666666,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P11",
+      "title": "What TAVI changes",
+      "start_frame": 5227,
+      "end_frame": 5527,
+      "narration": "TAVI gives the heart a new valve for blood to flow through. Keep your follow-up appointments so the team can check how it’s working.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-04/production/alexander.mp3",
+        "in_sec": 174.23333333333332,
+        "out_sec": 184.22
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 174.79166666666666,
+        "out_sec": 184.20833333333334,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P12",
+      "title": "Clinical sources",
+      "start_frame": 5527,
+      "end_frame": 5767,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-18/../../episode-04/production/delivery/elysian-tavi-tavr.mp4",
+        "in_sec": 184.20833333333334,
+        "out_sec": 192.20833333333334,
+        "reference_only": true
+      }
+    }
+  ]
+}

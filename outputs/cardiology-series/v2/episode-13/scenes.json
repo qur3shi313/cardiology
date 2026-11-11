@@ -1,0 +1,90 @@
+[
+  {
+    "id": "P01",
+    "title": "A stent meets hard calcium",
+    "narration": "Why can hard calcium stop a stent opening fully? Calcium in the artery wall can make a narrowed section stiff. In this example, part of the stent stays tight as the surrounding section opens.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 16,
+    "visual_direction": "Begin on a simulated uneven stent expansion, then zoom to one eccentric calcium arc behind the lumen. Use a stationary lesion position through the title.",
+    "on_screen_text": "Calcium can limit expansion",
+    "source_ids": "A"
+  },
+  {
+    "id": "P02",
+    "title": "Where the calcium is",
+    "narration": "Calcium can build up within the plaque in a coronary artery. Its location, length, and spread around the wall vary. An angiogram can sometimes show calcium. A scan from inside the artery, using ultrasound or OCT, can help the team work out how much of the wall is affected.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 16,
+    "target_end_sec": 40,
+    "visual_direction": "Fly through serial cross-sections at the same lesion. Transition to a paired angiographic and inside-artery view. Show the calcium as pale firm deposits within the wall.",
+    "on_screen_text": "Calcium within plaque",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P03",
+    "title": "Why preparation matters",
+    "narration": "A stent is designed to open and support the treated section. If a stiff area prevents it from opening sufficiently, the channel can remain narrow. When the team expects that problem, it may prepare the lesion before placing a stent. The purpose is to make the narrowed section easier to expand.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 40,
+    "target_end_sec": 64,
+    "visual_direction": "Roll back to pre-stent anatomy. Demonstrate a standard conceptual balloon meeting resistance at the same calcium patch. Keep the balloon attached to its shaft and follow with three distinct choice cards.",
+    "on_screen_text": "Preparing a stiff narrowing",
+    "source_ids": "A"
+  },
+  {
+    "id": "P04",
+    "title": "Specialised balloons",
+    "narration": "One option is a specialised balloon. Some have scoring elements or small cutting elements. These concentrate force against selected areas of plaque as the balloon opens. The team chooses a method based on the calcium and whether the device can reach the narrowed section.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 64,
+    "target_end_sec": 88,
+    "visual_direction": "Show a single conceptual scoring-balloon example in place with a few restrained contact highlights. Keep the cutting alternative named only. Use no numbers or parameter readouts.",
+    "on_screen_text": "Scoring balloon example",
+    "source_ids": "A"
+  },
+  {
+    "id": "P05",
+    "title": "Intravascular lithotripsy",
+    "narration": "Another option is intravascular lithotripsy. A balloon-based device delivers pulses that create pressure waves. In selected lesions those waves can fracture calcium within the wall, making it easier for the vessel to expand. In this illustration you can see fine cracks forming in the calcium.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 88,
+    "target_end_sec": 113,
+    "visual_direction": "Show subtle pressure pulses travelling into the calcium arc and fine local cracks that remain in place. Keep the arterial wall continuous, with no breaking vessel, flying debris or shock graphic.",
+    "on_screen_text": "Pressure waves · Calcium fractures",
+    "source_ids": "A"
+  },
+  {
+    "id": "P06",
+    "title": "Atherectomy",
+    "narration": "Atherectomy is a different type of preparation. Some systems use a small rotating element to modify hard plaque. The anatomy and the risks of the procedure guide that decision. This scene shows a separate example of an option the team may choose.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 113,
+    "target_end_sec": 137,
+    "visual_direction": "Reset to the same illustrative pre-treatment lesion. Show a brief treatment-zone close-up of a rotating element on a continuous wire. No graphic debris, technique settings or implied use after lithotripsy.",
+    "on_screen_text": "Atherectomy example",
+    "source_ids": "A"
+  },
+  {
+    "id": "P07",
+    "title": "Checking the final opening",
+    "narration": "After suitable preparation, the team may place a stent. It checks the final result using the angiogram and may use an inside-artery scan to look at expansion and contact with the wall. The practical aim is a well-expanded stent and a satisfactory blood-flow result in the treated artery.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 137,
+    "target_end_sec": 164,
+    "visual_direction": "Match the original lesion geometry. Open a conceptual stent and switch to two aligned frames for angiographic flow and cross-sectional expansion. End with a continuous channel.",
+    "on_screen_text": "Check expansion and blood flow",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P08",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 164,
+    "target_end_sec": 172,
+    "visual_direction": "Hold references and production disclosure for eight seconds.",
+    "on_screen_text": "SCAI · ACC/AHA et al. · Original educational animation",
+    "source_ids": "A, B"
+  }
+]

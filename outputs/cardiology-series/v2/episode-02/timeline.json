@@ -1,0 +1,878 @@
+{
+  "schema_version": 1,
+  "episode": "episode-02",
+  "series_topic": 2,
+  "title": "Wrist versus groin access and why the team chooses a route",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 6179,
+  "duration_sec": 205.966667,
+  "voice": "Alexander",
+  "audio_policy": "Narration only",
+  "caption_file": "episode-02.en.srt",
+  "chapter_file": "chapters.txt",
+  "audio_master": {
+    "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+    "in_sec": 0,
+    "out_sec": 199.44
+  },
+  "reference_footage_policy": "The previous video and normalized scene clips are clinical and continuity references for newly drawn visuals.",
+  "source_review": {
+    "episode": "episode-05",
+    "master": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-canva-export.mp4",
+    "picture": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+    "timing": "outputs/cardiology-series/episode-05/production/delivery/timing.json",
+    "captions": "outputs/cardiology-series/episode-05/production/delivery/elysian-wrist-vs-groin-access.en.srt",
+    "word_alignment": "outputs/cardiology-series/episode-05/production/scribe.json",
+    "canva_review": "outputs/cardiology-series/episode-05/production/delivery/canva-export-qa.json"
+  },
+  "short": {
+    "first_scene": "P05",
+    "last_scene": "P06",
+    "start_frame": 2303,
+    "end_frame": 3325,
+    "size": [
+      1080,
+      1920
+    ],
+    "visual_direction": "Open on an animated groin access locator and larger generic equipment. Use the same modest anatomical framing, recenter moving subjects, and burn in the retimed English captions."
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "Wrist vs groin access",
+      "stage": "two_routes_hook",
+      "route": "comparison",
+      "source_scene": "P01",
+      "start_frame": 0,
+      "end_frame": 381,
+      "duration_frames": 381,
+      "target_start_sec": 0.0,
+      "target_end_sec": 12.7,
+      "narration": "For a coronary angiogram, the team may go through your wrist or your groin. Both routes reach the arteries that supply your heart. The choice can affect your recovery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 0.0,
+        "out_sec": 12.7
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 0.0,
+        "out_sec": 12.708333333333334,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 0.0,
+          "out_sec": 12.708333333333334,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P01.mp4",
+          "in_sec": 0,
+          "out_sec": 12.708333333333334,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P01.mp4",
+      "visual_direction": "Trace the wrist and groin routes toward the same heart from the opening second. Use a full-height, sex-neutral silhouette and mask the groin under a surgical drape. Put “Wrist or groin?” over the moving routes. Reach the aortic root with two successive moving highlights, keeping each route distinct. Fade in the episode title over the motion after five seconds. Push in from the heart to the two small covered access views as the narration shifts to recovery.",
+      "visual_events": [
+        {
+          "start_frame": 0,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "For a coronary angiogram, the team may go through your wrist or your groin.",
+          "visual_direction": "Trace the wrist and groin routes toward the same heart from the opening second. Use a full-height, sex-neutral silhouette and mask the groin under a surgical drape. Put “Wrist or groin?” over the moving routes.",
+          "end_frame": 179
+        },
+        {
+          "start_frame": 179,
+          "in_scene_sec": 5.966667,
+          "spoken_anchor": "Both routes reach the arteries that supply your heart.",
+          "visual_direction": "Reach the aortic root with two successive moving highlights, keeping each route distinct. Fade in the episode title over the motion after five seconds.",
+          "end_frame": 295
+        },
+        {
+          "start_frame": 295,
+          "in_scene_sec": 9.833333,
+          "spoken_anchor": "The choice can affect your recovery.",
+          "visual_direction": "Push in from the heart to the two small covered access views as the narration shifts to recovery.",
+          "end_frame": 381
+        }
+      ],
+      "screen_labels": [
+        "Wrist or groin?",
+        "Two routes to the heart",
+        "The choice can affect recovery"
+      ],
+      "display_title": "Wrist versus groin access and why the team chooses a route",
+      "title_onset_sec": 5
+    },
+    {
+      "id": "P02",
+      "title": "Two routes to the heart",
+      "stage": "arterial_routes",
+      "route": "comparison",
+      "source_scene": "P02",
+      "start_frame": 381,
+      "end_frame": 882,
+      "duration_frames": 501,
+      "target_start_sec": 12.7,
+      "target_end_sec": 29.4,
+      "narration": "Wrist access enters the radial artery on the thumb side. Groin access enters the common femoral artery at the top of the thigh. The team numbs the skin and guides a thin tube called a catheter through the arteries to the heart.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 12.7,
+        "out_sec": 29.4
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 12.708333333333334,
+        "out_sec": 29.375,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 12.708333333333334,
+          "out_sec": 29.375,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P02.mp4",
+          "in_sec": 0,
+          "out_sec": 16.666666666666664,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P02.mp4",
+      "visual_direction": "Push in to a supported right palm-up wrist with a small drape window on the thumb side. Light up only the radial artery at the entry. Pan to the draped upper thigh and reveal the common femoral artery above its division through a small window. Keep the rest of the body covered. Trace each catheter inside the artery to the aortic root in the approved geometry. Use clear route labels, and no passage through the aortic valve.",
+      "visual_events": [
+        {
+          "start_frame": 381,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "Wrist access enters the radial artery on the thumb side.",
+          "visual_direction": "Push in to a supported right palm-up wrist with a small drape window on the thumb side. Light up only the radial artery at the entry.",
+          "end_frame": 519
+        },
+        {
+          "start_frame": 519,
+          "in_scene_sec": 4.6,
+          "spoken_anchor": "Groin access enters the common femoral artery at the top of the thigh.",
+          "visual_direction": "Pan to the draped upper thigh and reveal the common femoral artery above its division through a small window. Keep the rest of the body covered.",
+          "end_frame": 673
+        },
+        {
+          "start_frame": 673,
+          "in_scene_sec": 9.733333,
+          "spoken_anchor": "The team numbs the skin and guides a thin tube called a catheter through the arteries to the heart.",
+          "visual_direction": "Trace each catheter inside the artery to the aortic root in the approved geometry. Use clear route labels, and no passage through the aortic valve.",
+          "end_frame": 882
+        }
+      ],
+      "screen_labels": [
+        "Radial artery",
+        "Common femoral artery",
+        "Aortic root"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "An angiogram or a treatment",
+      "stage": "diagnostic_or_treatment",
+      "route": "comparison",
+      "source_scene": "P03",
+      "start_frame": 882,
+      "end_frame": 1595,
+      "duration_frames": 713,
+      "target_start_sec": 29.4,
+      "target_end_sec": 53.166667,
+      "narration": "An angiogram uses contrast and X-rays to show narrowings. Percutaneous coronary intervention, or PCI, is a catheter-based treatment. The team may use a balloon or a stent to treat a narrowing. Either route can be used for the test or treatment. Wrist access is common for a planned angiogram when suitable.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 29.4,
+        "out_sec": 53.166666666666664
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 29.375,
+        "out_sec": 53.166666666666664,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 29.375,
+          "out_sec": 53.166666666666664,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P03.mp4",
+          "in_sec": 0,
+          "out_sec": 23.791666666666664,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P03.mp4",
+      "visual_direction": "Fill a full-bleed simulated coronary X-ray tree. Keep the distal artery visible and mark it as simulated. Match-cut to a clearly labeled treatment example as PCI is named. Enlarge a short stenosis inside an artery cutaway. Advance the balloon along the wire, expand and deflate it at the narrowing in one continuous fixed view. If showing a stent, match its motion to the established stent example. Bring back the two covered entry routes while the artery treatment example exits frame. End on the radial site highlight under the planned-angiogram context.",
+      "visual_events": [
+        {
+          "start_frame": 882,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "An angiogram uses contrast and X-rays to show narrowings.",
+          "visual_direction": "Fill a full-bleed simulated coronary X-ray tree. Keep the distal artery visible and mark it as simulated.",
+          "end_frame": 1030
+        },
+        {
+          "start_frame": 1030,
+          "in_scene_sec": 4.933333,
+          "spoken_anchor": "Percutaneous coronary intervention, or PCI, is a catheter-based treatment.",
+          "visual_direction": "Match-cut to a clearly labeled treatment example as PCI is named. Enlarge a short stenosis inside an artery cutaway.",
+          "end_frame": 1228
+        },
+        {
+          "start_frame": 1228,
+          "in_scene_sec": 11.533333,
+          "spoken_anchor": "The team may use a balloon or a stent to treat a narrowing.",
+          "visual_direction": "Advance the balloon along the wire, expand and deflate it at the narrowing in one continuous fixed view. If showing a stent, match its motion to the established stent example.",
+          "end_frame": 1350
+        },
+        {
+          "start_frame": 1350,
+          "in_scene_sec": 15.6,
+          "spoken_anchor": "Either route can be used for the test or treatment.",
+          "visual_direction": "Bring back the two covered entry routes while the artery treatment example exits frame.",
+          "end_frame": 1457
+        },
+        {
+          "start_frame": 1457,
+          "in_scene_sec": 19.166667,
+          "spoken_anchor": "Wrist access is common for a planned angiogram when suitable.",
+          "visual_direction": "End on the radial site highlight under the planned-angiogram context.",
+          "end_frame": 1595
+        }
+      ],
+      "screen_labels": [
+        "Simulated angiogram",
+        "PCI treatment example",
+        "Either access route",
+        "Planned angiogram"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "Why the wrist is often chosen",
+      "stage": "when_wrist_is_chosen",
+      "route": "comparison",
+      "source_scene": "P04",
+      "start_frame": 1595,
+      "end_frame": 2303,
+      "duration_frames": 708,
+      "target_start_sec": 53.166667,
+      "target_end_sec": 76.766667,
+      "narration": "For PCI during a heart attack or another acute coronary syndrome, guidelines prefer the wrist when feasible. In that group it lowers the risk of bleeding and blood-vessel complications. The US guideline also reports a lower risk of death. For PCI in stable coronary disease, wrist access helps reduce bleeding and vessel problems at the entry site.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 53.166666666666664,
+        "out_sec": 76.76666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 53.166666666666664,
+        "out_sec": 76.79166666666667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 53.166666666666664,
+          "out_sec": 76.79166666666667,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P04.mp4",
+          "in_sec": 0,
+          "out_sec": 23.625000000000007,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P04.mp4",
+      "visual_direction": "Use a full-frame radial artery cutaway. Show the exact context label for the acute coronary syndrome PCI claim. Bring in bleeding and access-vessel illustrations in succession with a steady wrist image and at most two labels at once. Show the US guideline's mortality finding while the acute coronary syndrome PCI scope stays visible. Give no absolute risks, rankings or individual estimates. Change the context label before animating the stable-disease claim. Show only the access-site bleeding and vessel-complication outcomes in this context.",
+      "visual_events": [
+        {
+          "start_frame": 1595,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "For PCI during a heart attack or another acute coronary syndrome, guidelines prefer the wrist when feasible.",
+          "visual_direction": "Use a full-frame radial artery cutaway. Show the exact context label for the acute coronary syndrome PCI claim.",
+          "end_frame": 1827
+        },
+        {
+          "start_frame": 1827,
+          "in_scene_sec": 7.733333,
+          "spoken_anchor": "In that group it lowers the risk of bleeding and blood-vessel complications.",
+          "visual_direction": "Bring in bleeding and access-vessel illustrations in succession with a steady wrist image and at most two labels at once.",
+          "end_frame": 1965
+        },
+        {
+          "start_frame": 1965,
+          "in_scene_sec": 12.333333,
+          "spoken_anchor": "The US guideline also reports a lower risk of death.",
+          "visual_direction": "Show the US guideline's mortality finding while the acute coronary syndrome PCI scope stays visible. Give no absolute risks, rankings or individual estimates.",
+          "end_frame": 2080
+        },
+        {
+          "start_frame": 2080,
+          "in_scene_sec": 16.166667,
+          "spoken_anchor": "For PCI in stable coronary disease, wrist access helps reduce bleeding and vessel problems at the entry site.",
+          "visual_direction": "Change the context label before animating the stable-disease claim. Show only the access-site bleeding and vessel-complication outcomes in this context.",
+          "end_frame": 2303
+        }
+      ],
+      "screen_labels": [
+        "Acute coronary syndrome and PCI",
+        "Bleeding and vessel complications",
+        "Lower risk of death in this group",
+        "Stable coronary disease and PCI"
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "When the groin may be chosen",
+      "stage": "when_groin_is_chosen",
+      "route": "comparison",
+      "source_scene": "P05",
+      "start_frame": 2303,
+      "end_frame": 2861,
+      "duration_frames": 558,
+      "target_start_sec": 76.766667,
+      "target_end_sec": 95.366667,
+      "narration": "The groin artery can fit larger equipment, including some devices that help the heart pump in emergencies. The team may also use it if the wrist artery is small or hard to pass through. Previous bypass surgery or plans to use a wrist artery for bypass can affect the choice.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 76.76666666666667,
+        "out_sec": 95.36666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 76.79166666666667,
+        "out_sec": 95.33333333333333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 76.79166666666667,
+          "out_sec": 95.33333333333333,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P05.mp4",
+          "in_sec": 0,
+          "out_sec": 18.541666666666657,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P05.mp4",
+      "visual_direction": "Move from a modest groin locator to the femoral cutaway. Show a generic sheath and separate heart-support icon. Keep product marks and equipment dimensions out. Follow an illustrative catheter as it slows inside a narrow or curved arterial path, then pull the camera back to reveal the alternative access option. Pan to an internal heart and small upper-limb artery schematic. Depict prior bypass and potential future graft use as individual factors without a fixed preference.",
+      "visual_events": [
+        {
+          "start_frame": 2303,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "The groin artery can fit larger equipment, including some devices that help the heart pump in emergencies.",
+          "visual_direction": "Move from a modest groin locator to the femoral cutaway. Show a generic sheath and separate heart-support icon. Keep product marks and equipment dimensions out.",
+          "end_frame": 2499
+        },
+        {
+          "start_frame": 2499,
+          "in_scene_sec": 6.533333,
+          "spoken_anchor": "The team may also use it if the wrist artery is small or hard to pass through.",
+          "visual_direction": "Follow an illustrative catheter as it slows inside a narrow or curved arterial path, then pull the camera back to reveal the alternative access option.",
+          "end_frame": 2666
+        },
+        {
+          "start_frame": 2666,
+          "in_scene_sec": 12.1,
+          "spoken_anchor": "Previous bypass surgery or plans to use a wrist artery for bypass can affect the choice.",
+          "visual_direction": "Pan to an internal heart and small upper-limb artery schematic. Depict prior bypass and potential future graft use as individual factors without a fixed preference.",
+          "end_frame": 2861
+        }
+      ],
+      "screen_labels": [
+        "Larger equipment",
+        "Arterial anatomy",
+        "Previous or planned bypass"
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "If the team changes route",
+      "stage": "route_change",
+      "route": "comparison",
+      "source_scene": "P06",
+      "start_frame": 2861,
+      "end_frame": 3325,
+      "duration_frames": 464,
+      "target_start_sec": 95.366667,
+      "target_end_sec": 110.833333,
+      "narration": "Sometimes a wrist artery tightens around the catheter or the path is difficult to navigate. The team may switch to the other wrist or to the groin. If two sites were used, staff check both and explain how to look after them.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 95.36666666666666,
+        "out_sec": 110.83333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 95.33333333333333,
+        "out_sec": 110.83333333333333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 95.33333333333333,
+          "out_sec": 110.83333333333333,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P06.mp4",
+          "in_sec": 0,
+          "out_sec": 15.5,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P06.mp4",
+      "visual_direction": "Use the fixed radial cutaway to show the artery tighten around the catheter or the catheter pause at a difficult turn. Keep equipment in the arterial channel. Cut to a covered opposite wrist and then the draped groin as possible alternatives. Depict distinct examples rather than one instrument passing between routes. Show a fully clothed patient and staff checking the wrist and small draped groin access window. Keep the two locations visible without depicting uncovered anatomy.",
+      "visual_events": [
+        {
+          "start_frame": 2861,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "Sometimes a wrist artery tightens around the catheter or the path is difficult to navigate.",
+          "visual_direction": "Use the fixed radial cutaway to show the artery tighten around the catheter or the catheter pause at a difficult turn. Keep equipment in the arterial channel.",
+          "end_frame": 3042
+        },
+        {
+          "start_frame": 3042,
+          "in_scene_sec": 6.033333,
+          "spoken_anchor": "The team may switch to the other wrist or to the groin.",
+          "visual_direction": "Cut to a covered opposite wrist and then the draped groin as possible alternatives. Depict distinct examples rather than one instrument passing between routes.",
+          "end_frame": 3159
+        },
+        {
+          "start_frame": 3159,
+          "in_scene_sec": 9.933333,
+          "spoken_anchor": "If two sites were used, staff check both and explain how to look after them.",
+          "visual_direction": "Show a fully clothed patient and staff checking the wrist and small draped groin access window. Keep the two locations visible without depicting uncovered anatomy.",
+          "end_frame": 3325
+        }
+      ],
+      "screen_labels": [
+        "A difficult path",
+        "Another access site",
+        "Staff check both sites if used"
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "Closing the access site",
+      "stage": "access_closure",
+      "route": "comparison",
+      "source_scene": "P07",
+      "start_frame": 3325,
+      "end_frame": 3813,
+      "duration_frames": 488,
+      "target_start_sec": 110.833333,
+      "target_end_sec": 127.1,
+      "narration": "At the wrist, staff usually use a pressure band. They gradually ease the pressure while checking the site and your hand. At the groin, they may press by hand or use a closure device, such as a plug or stitch. They check for bleeding with either route.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 110.83333333333333,
+        "out_sec": 127.1
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 110.83333333333333,
+        "out_sec": 127.08333333333333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 110.83333333333333,
+          "out_sec": 127.08333333333333,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P07.mp4",
+          "in_sec": 0,
+          "out_sec": 16.25,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P07.mp4",
+      "visual_direction": "Open close on the wrist pressure band centered over the puncture in the approved cutaway. Ease the band pressure gradually while the clinician checks the site and hand circulation. Use modest draping and gloved hands. Match to a small draped groin cutaway. Show firm manual pressure, then a distinctly labeled alternative stitch illustration without changing the actual arterial location. Return to a comparison with limited wrist and groin views and a staff check at each example site.",
+      "visual_events": [
+        {
+          "start_frame": 3325,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "At the wrist, staff usually use a pressure band.",
+          "visual_direction": "Open close on the wrist pressure band centered over the puncture in the approved cutaway.",
+          "end_frame": 3421
+        },
+        {
+          "start_frame": 3421,
+          "in_scene_sec": 3.2,
+          "spoken_anchor": "They gradually ease the pressure while checking the site and your hand.",
+          "visual_direction": "Ease the band pressure gradually while the clinician checks the site and hand circulation. Use modest draping and gloved hands.",
+          "end_frame": 3548
+        },
+        {
+          "start_frame": 3548,
+          "in_scene_sec": 7.433333,
+          "spoken_anchor": "At the groin, they may press by hand or use a closure device, such as a plug or stitch.",
+          "visual_direction": "Match to a small draped groin cutaway. Show firm manual pressure, then a distinctly labeled alternative stitch illustration without changing the actual arterial location.",
+          "end_frame": 3734
+        },
+        {
+          "start_frame": 3734,
+          "in_scene_sec": 13.633333,
+          "spoken_anchor": "They check for bleeding with either route.",
+          "visual_direction": "Return to a comparison with limited wrist and groin views and a staff check at each example site.",
+          "end_frame": 3813
+        }
+      ],
+      "screen_labels": [
+        "Wrist pressure band",
+        "Site and hand checks",
+        "Groin pressure or closure device",
+        "Bleeding checks"
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "Getting up after the procedure",
+      "stage": "getting_up",
+      "route": "comparison",
+      "source_scene": "P08",
+      "start_frame": 3813,
+      "end_frame": 4304,
+      "duration_frames": 491,
+      "target_start_sec": 127.1,
+      "target_end_sec": 143.466667,
+      "narration": "After wrist access you can often sit up sooner. After groin access you may need to lie flat with your leg straight. When you can walk depends on how the site was closed, the medicines you received and how you’re doing. Wait for staff to tell you it’s safe.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 127.1,
+        "out_sec": 143.46666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 127.08333333333333,
+        "out_sec": 143.45833333333334,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 127.08333333333333,
+          "out_sec": 143.45833333333334,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P08.mp4",
+          "in_sec": 0,
+          "out_sec": 16.375000000000014,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P08.mp4",
+      "visual_direction": "Show a completely clothed person sitting with their banded arm supported. Move the camera with the seated patient as a clinician checks the band. Move to an entirely clothed person lying flat, leg straight, with only a draped access locator if necessary. Use no clock. Use short staff-assessment cues for closure, medicines and the patient's condition in succession as appropriate. Keep the positioning in view. Show the nurse signaling when getting up is safe and the patient preparing to move with assistance.",
+      "visual_events": [
+        {
+          "start_frame": 3813,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "After wrist access you can often sit up sooner.",
+          "visual_direction": "Show a completely clothed person sitting with their banded arm supported. Move the camera with the seated patient as a clinician checks the band.",
+          "end_frame": 3912
+        },
+        {
+          "start_frame": 3912,
+          "in_scene_sec": 3.3,
+          "spoken_anchor": "After groin access you may need to lie flat with your leg straight.",
+          "visual_direction": "Move to an entirely clothed person lying flat, leg straight, with only a draped access locator if necessary. Use no clock.",
+          "end_frame": 4038
+        },
+        {
+          "start_frame": 4038,
+          "in_scene_sec": 7.5,
+          "spoken_anchor": "When you can walk depends on how the site was closed, the medicines you received and how you’re doing.",
+          "visual_direction": "Use short staff-assessment cues for closure, medicines and the patient's condition in succession as appropriate. Keep the positioning in view.",
+          "end_frame": 4229
+        },
+        {
+          "start_frame": 4229,
+          "in_scene_sec": 13.866667,
+          "spoken_anchor": "Wait for staff to tell you it’s safe.",
+          "visual_direction": "Show the nurse signaling when getting up is safe and the patient preparing to move with assistance.",
+          "end_frame": 4304
+        }
+      ],
+      "screen_labels": [
+        "Wrist recovery",
+        "Groin recovery",
+        "Staff assess when you can walk",
+        "Wait for the team"
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "Going home",
+      "stage": "going_home",
+      "route": "comparison",
+      "source_scene": "P09",
+      "start_frame": 4304,
+      "end_frame": 4901,
+      "duration_frames": 597,
+      "target_start_sec": 143.466667,
+      "target_end_sec": 163.366667,
+      "narration": "Some people go home the same day after a straightforward planned angiogram. After a heart attack or if you need more monitoring, you may stay longer. Ask for written instructions on your dressing, medicines, lifting, driving and work, and whom to call with concerns.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 143.46666666666667,
+        "out_sec": 163.36666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 143.45833333333334,
+        "out_sec": 163.375,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 143.45833333333334,
+          "out_sec": 163.375,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P09.mp4",
+          "in_sec": 0,
+          "out_sec": 19.916666666666657,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P09.mp4",
+      "visual_direction": "Animate a neutral fully clothed patient receiving a discharge sheet. Use one large same-day label scoped to a straightforward planned case. Cut to another fully clothed patient remaining under monitoring, with a simple unnumbered monitor trace. Move closer to the instruction sheet. Reveal dressing, medicines, activity and contact information one or two at a time, then indicate a ride home.",
+      "visual_events": [
+        {
+          "start_frame": 4304,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "Some people go home the same day after a straightforward planned angiogram.",
+          "visual_direction": "Animate a neutral fully clothed patient receiving a discharge sheet. Use one large same-day label scoped to a straightforward planned case.",
+          "end_frame": 4464
+        },
+        {
+          "start_frame": 4464,
+          "in_scene_sec": 5.333333,
+          "spoken_anchor": "After a heart attack or if you need more monitoring, you may stay longer.",
+          "visual_direction": "Cut to another fully clothed patient remaining under monitoring, with a simple unnumbered monitor trace.",
+          "end_frame": 4642
+        },
+        {
+          "start_frame": 4642,
+          "in_scene_sec": 11.266667,
+          "spoken_anchor": "Ask for written instructions on your dressing, medicines, lifting, driving and work, and whom to call with concerns.",
+          "visual_direction": "Move closer to the instruction sheet. Reveal dressing, medicines, activity and contact information one or two at a time, then indicate a ride home.",
+          "end_frame": 4901
+        }
+      ],
+      "screen_labels": [
+        "Possible same-day discharge",
+        "More monitoring if needed",
+        "Your own discharge instructions"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "When to contact your care team",
+      "stage": "contact_care_team",
+      "route": "comparison",
+      "source_scene": "P10",
+      "start_frame": 4901,
+      "end_frame": 5332,
+      "duration_frames": 431,
+      "target_start_sec": 163.366667,
+      "target_end_sec": 177.733333,
+      "narration": "A small bruise and mild soreness at either site can happen. Contact your care team promptly if pain, redness or swelling increases, if fluid drains from the site, or if you develop a fever.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 163.36666666666667,
+        "out_sec": 177.73333333333332
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 163.375,
+        "out_sec": 177.75,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 163.375,
+          "out_sec": 177.75,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P10.mp4",
+          "in_sec": 0,
+          "out_sec": 14.375,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P10.mp4",
+      "visual_direction": "Show a subtle small bruise in restricted draped access close-ups on more than one skin tone. Keep the bruising and surrounding skin non-graphic. Use a calm full-frame contact instruction. Show increasing pain, redness or swelling, fluid drainage and fever in consecutive large cues with plain icons and one fixed call action.",
+      "visual_events": [
+        {
+          "start_frame": 4901,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "A small bruise and mild soreness at either site can happen.",
+          "visual_direction": "Show a subtle small bruise in restricted draped access close-ups on more than one skin tone. Keep the bruising and surrounding skin non-graphic.",
+          "end_frame": 5036
+        },
+        {
+          "start_frame": 5036,
+          "in_scene_sec": 4.5,
+          "spoken_anchor": "Contact your care team promptly if pain, redness or swelling increases, if fluid drains from the site, or if you develop a fever.",
+          "visual_direction": "Use a calm full-frame contact instruction. Show increasing pain, redness or swelling, fluid drainage and fever in consecutive large cues with plain icons and one fixed call action.",
+          "end_frame": 5332
+        }
+      ],
+      "screen_labels": [
+        "Small bruise or mild soreness",
+        "Contact your care team promptly"
+      ]
+    },
+    {
+      "id": "P11",
+      "title": "When to get emergency help",
+      "stage": "emergency",
+      "route": "comparison",
+      "source_scene": "P11",
+      "start_frame": 5332,
+      "end_frame": 5984,
+      "duration_frames": 652,
+      "target_start_sec": 177.733333,
+      "target_end_sec": 199.466667,
+      "narration": "If the site starts bleeding, apply firm pressure. Call your local emergency number for heavy bleeding, bleeding that won’t stop with pressure, or a swelling that grows quickly. Get emergency help if the hand or foot on that side suddenly becomes cold, pale or numb, or if you have severe chest pain or sudden trouble breathing.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3",
+        "in_sec": 177.73333333333332,
+        "out_sec": 199.44
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 177.75,
+        "out_sec": 199.45833333333334,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 177.75,
+          "out_sec": 199.45833333333334,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P11.mp4",
+          "in_sec": 0,
+          "out_sec": 21.708333333333343,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P11.mp4",
+      "visual_direction": "Keep “Call your local emergency number” large and visible from the start. Show gloved or modestly depicted hands applying pressure at a small covered entry window. Advance to separate non-graphic signs for heavy or continuing bleeding and rapid swelling. Keep the emergency call action visible. Show a covered limb with a small hand or foot locator, then change to chest pain and breathing symptoms as the narration reaches them. Keep the call action visible.",
+      "visual_events": [
+        {
+          "start_frame": 5332,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "If the site starts bleeding, apply firm pressure.",
+          "visual_direction": "Keep “Call your local emergency number” large and visible from the start. Show gloved or modestly depicted hands applying pressure at a small covered entry window.",
+          "end_frame": 5425
+        },
+        {
+          "start_frame": 5425,
+          "in_scene_sec": 3.1,
+          "spoken_anchor": "Call your local emergency number for heavy bleeding, bleeding that won’t stop with pressure, or a swelling that grows quickly.",
+          "visual_direction": "Advance to separate non-graphic signs for heavy or continuing bleeding and rapid swelling. Keep the emergency call action visible.",
+          "end_frame": 5657
+        },
+        {
+          "start_frame": 5657,
+          "in_scene_sec": 10.833333,
+          "spoken_anchor": "Get emergency help if the hand or foot on that side suddenly becomes cold, pale or numb, or if you have severe chest pain or sudden trouble breathing.",
+          "visual_direction": "Show a covered limb with a small hand or foot locator, then change to chest pain and breathing symptoms as the narration reaches them. Keep the call action visible.",
+          "end_frame": 5984
+        }
+      ],
+      "screen_labels": [
+        "Call your local emergency number",
+        "Firm pressure if bleeding",
+        "Heavy or continuing bleeding",
+        "Fast-growing swelling",
+        "Cold, pale or numb hand or foot",
+        "Severe chest pain or sudden breathing trouble"
+      ]
+    },
+    {
+      "id": "P12",
+      "title": "Clinical sources",
+      "stage": "credits",
+      "route": "comparison",
+      "source_scene": "P12",
+      "start_frame": 5984,
+      "end_frame": 6179,
+      "duration_frames": 195,
+      "target_start_sec": 199.466667,
+      "target_end_sec": 205.966667,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+        "in_sec": 199.45833333333334,
+        "out_sec": 207.45833333333334,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/wrist-vs-groin-picture-track.mp4",
+          "in_sec": 199.45833333333334,
+          "out_sec": 207.45833333333334,
+          "reference_only": true
+        },
+        {
+          "path": "outputs/cardiology-series/episode-05/production/delivery/shots/P12.mp4",
+          "in_sec": 0,
+          "out_sec": 8.0,
+          "reference_only": true
+        }
+      ],
+      "visual_file": "visuals/P12.mp4",
+      "visual_direction": "Hold a moving 6.5-second card. Use the authentic mark, Cardiology Education Series, sources in the description and next episode title. Reserve room for YouTube end screens. Use a restrained moving arterial trace and narration-only sound policy.",
+      "visual_events": [
+        {
+          "start_frame": 5984,
+          "in_scene_sec": 0.0,
+          "spoken_anchor": "",
+          "visual_direction": "Hold a moving 6.5-second card. Use the authentic mark, Cardiology Education Series, sources in the description and next episode title. Reserve room for YouTube end screens. Use a restrained moving arterial trace and narration-only sound policy.",
+          "end_frame": 6179
+        }
+      ],
+      "screen_labels": [
+        "Clinical sources in description",
+        "Next: What the sheath, guidewire, catheter and contrast each do"
+      ]
+    }
+  ]
+}

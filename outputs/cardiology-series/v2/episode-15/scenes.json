@@ -1,0 +1,90 @@
+[
+  {
+    "id": "P01",
+    "title": "Two narrowings, one treatment plan",
+    "narration": "Two arteries are narrowed. How does the team decide? This angiogram shows disease in more than one coronary artery. The team uses the pattern of disease, the patient’s situation and the goals of care to choose a plan.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 16,
+    "visual_direction": "Animate contrast through two separately narrowed branches from a consistent frontal left-coronary view. Highlight each site in sequence, then reveal title.",
+    "on_screen_text": "Several narrowings · One plan",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P02",
+    "title": "Stable care and emergency care",
+    "narration": "Timing matters. During a heart attack, the immediate priority is often the artery causing the emergency. The team then decides whether and when to address other significant narrowings. With stable coronary disease, there is usually time to assess symptoms, review the test results and discuss the options.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 16,
+    "target_end_sec": 41,
+    "visual_direction": "Split the same coronary map into two clearly identified clinical situations. In the emergency case highlight the culprit first. Avoid a universal order or delay interval.",
+    "on_screen_text": "Emergency care · Stable care",
+    "source_ids": "A, B, C"
+  },
+  {
+    "id": "P03",
+    "title": "What the tests add",
+    "narration": "The team looks at where the narrowings are, how complex they are, and how much heart muscle they may affect. It also checks how well the heart pumps. In selected cases, a pressure measurement inside an artery helps determine whether a particular narrowing limits flow enough to influence treatment.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 41,
+    "target_end_sec": 65,
+    "visual_direction": "Walk from artery map to a conceptual pressure comparison, then to left-ventricular contraction. No percentages or diagnostic thresholds. Keep highlights on matching branch landmarks.",
+    "on_screen_text": "Anatomy · Blood flow",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P04",
+    "title": "Medicines and prevention",
+    "narration": "Medicines and prevention are part of care across these options. In stable coronary disease, treatment can help manage symptoms and reduce the risk of future heart problems. The team may discuss restoring blood flow when symptoms still affect daily life or when the test results point to a particular benefit.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 65,
+    "target_end_sec": 89,
+    "visual_direction": "Show a patient and care team reviewing a two-part plan. Use generic medication and activity symbols. Keep the angiogram as a supporting panel and do not depict medications physically clearing plaque.",
+    "on_screen_text": "Symptom control · Prevention",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P05",
+    "title": "Angioplasty and stenting",
+    "narration": "Angioplasty and stenting, also called PCI, can open a selected section from inside the artery. A stent supports the treated section and blood flows through it. PCI can be suitable for particular patterns of disease. The team also considers how much disease can be treated and what risks apply.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 89,
+    "target_end_sec": 114,
+    "visual_direction": "Use a branch-matched close-up with a stent constrained to one treated lesion. Animate the flow through that segment while other lesions remain visible in a wider view.",
+    "on_screen_text": "PCI treats a section from inside",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P06",
+    "title": "Coronary bypass surgery",
+    "narration": "Coronary bypass surgery uses a blood vessel to create another route for blood to reach the heart muscle beyond a narrowing. The team may favour bypass for certain complex patterns, including some patients with diabetes and disease in several arteries, when surgery is suitable for them.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 114,
+    "target_end_sec": 139,
+    "visual_direction": "Show a conceptual graft joining the coronary artery beyond a narrowing. Animate blood through that route. Keep the original lesion in place and omit surgical technique.",
+    "on_screen_text": "A bypass supplies blood beyond a narrowing",
+    "source_ids": "A, B, D"
+  },
+  {
+    "id": "P07",
+    "title": "The Heart Team and the patient",
+    "narration": "When the choice is unclear, a Heart Team can bring together a cardiologist, an interventional cardiologist and a cardiac surgeon. The team and patient discuss likely benefits, risks, recovery, and what matters in daily life. That conversation connects the test results with a plan the patient understands.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 139,
+    "target_end_sec": 166,
+    "visual_direction": "Bring the same angiogram into a clothed, anonymous consultation scene. Show two clear evidence cards, then return to the patient. Do not show a preselected treatment badge.",
+    "on_screen_text": "Expected benefits · Recovery priorities",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P08",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 166,
+    "target_end_sec": 174,
+    "visual_direction": "Hold clinical references and production disclosure for eight seconds.",
+    "on_screen_text": "ACC/AHA/SCAI · AHA · Original educational animation",
+    "source_ids": "A, B, C, D"
+  }
+]

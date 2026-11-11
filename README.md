@@ -1,8 +1,12 @@
 # Elysian Biomedical Cardiology Education Series
 
-Private review snapshot of Elysian Biomedical LLP’s original interventional cardiology education videos. The series explains why a procedure is considered, what the clinical team does, how it checks the result, and what recovery may involve. The animations use illustrative anatomy and simulated medical imaging. The completed videos use synthetic English narration and timed English captions.
+Production repository for Elysian Biomedical LLP’s original interventional cardiology education videos. The series explains why a procedure is considered, what the clinical team does, how it checks the result, and what recovery may involve. The animations use illustrative anatomy and simulated medical imaging. The completed videos use synthetic English narration and timed English captions.
 
-## Videos in this snapshot
+## Current rebuild
+
+[Production status](outputs/cardiology-series/v2/PRODUCTION.md) · [20-episode plan](outputs/cardiology-series/v2/PLAN.md) · [Target release dates and verification status](outputs/cardiology-series/v2/schedule.json)
+
+## Original release records
 
 The first topic was split into two films. The video numbers below follow the YouTube release order. Releases are at 18:00 Pakistan time where scheduled. Status is from the verified project records on 11 November 2026. Scheduled watch pages may become available at release time.
 
