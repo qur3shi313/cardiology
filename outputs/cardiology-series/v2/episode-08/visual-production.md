@@ -14,3 +14,9 @@ The pictures follow the existing Alexander timeline. In the representative case,
 ## Reproducibility
 
 Run `python outputs/cardiology-series/v2/episode-08/render_dcb.py` from the workspace with PyAV, Skia and the shared series package available. Optional scene numbers limit rendering to those scenes. Use `--force` to replace selected outputs and `--thumbnail` to create the 1280×720 image. One local encoder renders each scene at 2560×1440 and 30 fps. The resulting `visuals/dcb-overrides.json` supplies the picture paths and frame-locked lengths to the shared master assembler.
+
+## Picture verification
+
+The ten current picture clips decoded through the end at 2560×1440, 30 fps and H.264 yuv420p. The frame-locked total is 5,591 frames, or 186.367 seconds. The clips are silent. `visuals/visual-decode.json` records the frame counts and SHA-256 values. The 92 decoded 390-pixel samples in `visuals/visual-review-1.jpg` through `visuals/visual-review-7.jpg` were checked for label readability, fixed device relationships, local medicine transfer, distinct angiography projections and fully covered recovery artwork.
+
+The source-only FFmpeg motion scan measured 21.567 seconds of holds, or 11.57% of the picture duration, with 4.567 seconds as the longest unintentional hold. The other deliberate dwell is on the emergency message and eight-second source card. The full measurements and intervals are in `visuals/visual-motion.json`. The final master still needs its own assembly and media QA.

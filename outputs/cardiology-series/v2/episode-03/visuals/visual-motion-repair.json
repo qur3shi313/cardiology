@@ -1,0 +1,38 @@
+{
+  "P03": {
+    "file": "P03.mp4",
+    "sha256": "aca11fe0ce0c6950953b00a02b46abbfd6053918e0a2ebee7bb29df2cca6a753",
+    "motion": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P07": {
+    "file": "P07.mp4",
+    "sha256": "457d5ab6ee14aa1f3e865b9fb6f583b65bd2aa1ca850fd98b2ad31655f44e158",
+    "motion": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P08": {
+    "file": "P08.mp4",
+    "sha256": "4dcdff92288a37849241faa0d4afb21ac8cad40297cf576bc1d137140691171d",
+    "motion": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  }
+}

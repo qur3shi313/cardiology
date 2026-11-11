@@ -330,6 +330,17 @@ def wrist_art(c,t):
     wrist.flow(c,-t)
 
 
+def wrist_access_flow(c,t):
+    # Arterial flow continues toward the hand while the access devices
+    # approach in the opposite direction. Keep the motion inside the lumen.
+    for index in range(44):
+        x=(index*83-t*(68+(index%5)*9))%1340-32
+        y=wrist.center(x)+((index*37)%35)-17
+        oval(c,x,y,9.2+index%6*1.15,3.0+index%4*.47,'#eb8f86',107+index%4*18)
+        if index%5==0:
+            oval(c,x-2,y-1,4.9,1.45,'#f8b09b',128)
+
+
 def wrist_labels(c,label):
     brand(c,x=889)
     words(c,label,1222,138,47,GREEN,face=wrist.HEADING,align='right')
@@ -342,7 +353,9 @@ def wrist_base(c,t,label):
 
 
 def access_wire(c,p,t):
-    wrist_base(c,t,'The short access wire')
+    wrist_art(c,t)
+    wrist_access_flow(c,t)
+    wrist_labels(c,'The short access wire')
     # A rigid needle stops where the access tract first reaches the lumen.
     # Only the flexible wire follows the bend further along the vessel.
     needle_tip = mix(-117,510,ease(p,.02,.26))-696*ease(p,.55,.74)
@@ -507,12 +520,22 @@ def root_plate():
     return surface.makeImageSnapshot()
 
 
+def aortic_flow(c,t):
+    # This cutaway follows aortic flow up from the valve. The golden material
+    # in the catheter is drawn separately when contrast is being delivered.
+    for index in range(46):
+        y=350+(index*19-t*(44+(index%5)*7))%244
+        spread=30 if y<510 else 49
+        x=1146+(((index*71)%97)-48)/48*spread
+        cx,cy=root_point((x,y))
+        oval(c,cx,cy,7.8+index%6*1.25,3.45+index%4*.65,'#f2a998',115+index%4*18)
+        if index%6==0:
+            oval(c,cx+1,cy-1,4.7,1.65,'#f9d1b2',116)
+
+
 def root(c,p,t,inject=False):
     c.drawImageRect(root_plate(),rect(0,0,1280,720),skia.SamplingOptions(skia.FilterMode.kNearest))
-    for i in range(17):
-        y = 350+(i*19-t*33)%244
-        x = 1146+((i*23)%66)-33
-        oval(c,*root_point((x,y)),3.7,2.2,'#f6c0ab',99)
+    aortic_flow(c,t)
     q = 1 if inject else ease(p,.435,.73)
     tip = tuple(mix(a,b,q) for a,b in zip(coronary.NEUTRAL,LEFT))
     catheter = coronary.instrument_path(tip)
