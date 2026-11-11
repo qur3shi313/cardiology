@@ -22,21 +22,22 @@
       "episode": "episode-02",
       "title": "Wrist versus groin access and why the team chooses a route",
       "target": "2026-11-13T18:00:00+05:00",
-      "status": "all_source_pictures_decoded_master_assembling",
+      "status": "revised_1440p_decoded_delivery_checks_running",
       "production_material": "Existing wrist versus groin access package",
       "studio_verified": false,
       "watch_url": null,
       "qa_passed": false,
       "duration_seconds": 205.967,
       "scene_count": 12,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "master_bytes": 144752994
     },
     {
       "topic": 3,
       "episode": "episode-03",
       "title": "What the sheath, guidewire, catheter and contrast each do",
       "target": "2026-11-14T18:00:00+05:00",
-      "status": "revised_sources_verified_full_master_rebuilding",
+      "status": "revised_1440p_decoded_delivery_checks_running",
       "production_material": "Existing device roles script, storyboard and animation",
       "studio_verified": false,
       "watch_url": null,
@@ -44,7 +45,8 @@
       "duration_seconds": 205.133,
       "scene_count": 12,
       "narration_decoded": true,
-      "blocked_motion_percent": 27.088
+      "blocked_motion_percent": 27.088,
+      "master_bytes": 133669220
     },
     {
       "topic": 4,
@@ -223,14 +225,16 @@
       "episode": "episode-16",
       "title": "What happens in aortic stenosis",
       "target": "2026-11-27T18:00:00+05:00",
-      "status": "picture_renderer_queued",
+      "status": "all_pictures_verified_master_queued",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": false,
       "watch_url": null,
       "qa_passed": false,
       "duration_seconds": 141.7,
       "scene_count": 8,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "source_hold_seconds": 6.067,
+      "source_frames": 4251
     },
     {
       "topic": 17,
