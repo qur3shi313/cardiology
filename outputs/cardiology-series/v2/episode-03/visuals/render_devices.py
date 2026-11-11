@@ -2,8 +2,7 @@
 
 import argparse
 from functools import lru_cache
-import json
-from math import cos, hypot, sin
+from math import sin
 from pathlib import Path
 import importlib.util
 import shutil
@@ -24,9 +23,9 @@ FEMORAL_SOURCE = HERE.parents[1] / 'episode-01/visuals/render_groin.py'
 spec = importlib.util.spec_from_file_location('elysian_femoral_source', FEMORAL_SOURCE)
 femoral = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(femoral)
-GREEN, MINT, PALE = '#004b3d', '#73c0aa', '#eff8ee'
+GREEN = '#004b3d'
 DARK, INK, MUTED = '#0d3531', '#213c37', '#4c7168'
-CREAM, GOLD, CORAL = '#f2fbf3', '#e7bd77', '#aa5969'
+CREAM, GOLD = '#f2fbf3', '#e7bd77'
 BODY_X, BODY_Y, BODY_SX, BODY_SY = 89, 74, 1.91, 1.10
 BASE = {1: 15, 2: 13, 3: 14, 4: 14, 5: 12, 6: 15,
         7: 13, 8: 13, 9: 14, 10: 12, 11: 13, 12: 8}

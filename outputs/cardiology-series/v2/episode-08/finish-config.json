@@ -1,0 +1,22 @@
+{
+  "thumbnail": {
+    "artwork": "thumbnail.png"
+  },
+  "short": {
+    "seconds": [
+      78.633,
+      107.5
+    ],
+    "headings": [
+      "A drug-coated",
+      "balloon in motion"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "CORONARY ARTERY"
+  }
+}

@@ -39,3 +39,9 @@ These are seconds within each silent source clip. Match the picture events to th
 Run `python outputs/cardiology-series/v2/episode-03/visuals/render_devices.py P01 P02` from the workspace with `numpy`, `skia-python` and FFmpeg available. Omit the scene IDs to build the full set. Use `--force` to replace an existing picture, `--thumbnail` to build the 1280×720 thumbnail, and `--stills` for design inspection.
 
 The renderer uses the shared Skia access and angiogram library plus the reviewed common-femoral path and original coronary-route geometry. It renders 2560×1440 at 30 fps. It stages one temporary native frame spool at a time and uses one FFmpeg encoder with two threads. The spool is removed after the attempt. The final video master, captions, audio and delivery QA are separate assembly steps.
+
+## Picture verification
+
+All 12 silent H.264 source clips decoded through the end at 2560×1440, 30 fps and yuv420p. The measured total is 4,680 frames across 156 seconds of retimable picture. Per-clip frame counts and SHA-256 values are in `visuals/visual-decode.json`.
+
+The 95 decoded samples in `visuals/visual-review-1.jpg` through `visuals/visual-review-7.jpg` were reviewed at 390 pixels wide. The sample set includes five-second intervals and major action boundaries. The review confirmed the straight needle before the wire bends, the stable sheath through removal of the inner tools, the covered femoral example and its explicit time jump, the wire withdrawn before contrast, and the separate left and right runs. The art uses a sex-neutral route silhouette, a thumb-side wrist illustration, covered groin anatomy and fully clothed anonymous consultation figures.

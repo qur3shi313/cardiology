@@ -1,0 +1,72 @@
+{
+  "P04": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P04-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 9.033333333333333,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P05": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P05-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 5.766666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P06": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P06-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 8.4,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P07": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P07-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 8.266666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P08": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P08-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 10.066666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P09": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P09-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 10.966666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P10": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P10-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 11.6,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P11": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P11-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 7.5,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P35": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P35-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 9.166666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P36": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P36-radial-cutaway.mp4",
+    "in_sec": 0,
+    "out_sec": 8.566666666666666,
+    "reference_only": false,
+    "native_composition": true
+  }
+}

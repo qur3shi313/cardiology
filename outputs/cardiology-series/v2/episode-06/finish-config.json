@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "How a stent",
+      "opens"
+    ],
+    "eyebrow": "CORONARY ANGIOPLASTY",
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "seconds": 157.9
+  },
+  "short": {
+    "headings": [
+      "How a coronary",
+      "stent opens"
+    ],
+    "crop": [
+      2048,
+      1240,
+      258,
+      163
+    ],
+    "eyebrow": "BALLOON-EXPANDABLE STENT",
+    "seconds": [
+      150.6,
+      168.8
+    ]
+  }
+}

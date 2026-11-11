@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "TAVI valve",
+      "placement"
+    ],
+    "seconds": 98.66666666666667,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      92.16666666666667,
+      109.8
+    ],
+    "headings": [
+      "How a TAVI valve",
+      "opens in place"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "BALLOON-EXPANDABLE VALVE"
+  }
+}

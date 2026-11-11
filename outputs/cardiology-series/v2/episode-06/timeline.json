@@ -6,7 +6,7 @@
     2560,
     1440
   ],
-  "duration_frames": 8928,
+  "duration_frames": 9153,
   "caption_file": "captions.en.srt",
   "chapter_file": "chapters.txt",
   "voice_alignment": {
@@ -302,6 +302,31 @@
         "out_sec": 297.625,
         "reference_only": true
       }
+    },
+    {
+      "id": "P17",
+      "title": "Clinical sources",
+      "start_frame": 8928,
+      "end_frame": 9153,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-06/../../episode-02/production/delivery/elysian-coronary-angioplasty-stent.mp4",
+        "in_sec": 297.625,
+        "out_sec": 305.125,
+        "reference_only": true
+      }
     }
-  ]
+  ],
+  "short": {
+    "first_scene": "P09",
+    "last_scene": "P09",
+    "start_frame": 4518,
+    "end_frame": 5064,
+    "size": [
+      1080,
+      1920
+    ],
+    "visual_direction": "The stent expands, the balloon deflates, and the mesh stays."
+  }
 }

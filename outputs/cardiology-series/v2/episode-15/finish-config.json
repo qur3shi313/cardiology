@@ -1,0 +1,34 @@
+{
+  "thumbnail": {
+    "title": [
+      "Several",
+      "narrowed",
+      "arteries"
+    ],
+    "seconds": 106.23333333333333,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      99.73333333333333,
+      119.5
+    ],
+    "headings": [
+      "How bypass creates",
+      "another route"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "ILLUSTRATED CORONARY BYPASS"
+  }
+}

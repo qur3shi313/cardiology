@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "Heart attack",
+      "and PCI"
+    ],
+    "seconds": 103.66666666666667,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      97.16666666666667,
+      117.66666666666667
+    ],
+    "headings": [
+      "Emergency PCI:",
+      "restoring flow"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "EDUCATIONAL ANIMATION"
+  }
+}

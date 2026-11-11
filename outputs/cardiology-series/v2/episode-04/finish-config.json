@@ -1,0 +1,22 @@
+{
+  "thumbnail": {
+    "artwork": "thumbnail.jpg"
+  },
+  "short": {
+    "seconds": [
+      0,
+      14
+    ],
+    "headings": [
+      "One narrowing,",
+      "two X-ray views"
+    ],
+    "crop": [
+      1800,
+      1180,
+      390,
+      183
+    ],
+    "eyebrow": "SIMULATED CORONARY X-RAY"
+  }
+}

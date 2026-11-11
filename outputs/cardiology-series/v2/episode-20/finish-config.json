@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "TAVI or",
+      "surgery?"
+    ],
+    "seconds": 44.36666666666667,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      37.86666666666667,
+      58.43333333333333
+    ],
+    "headings": [
+      "Surgical aortic",
+      "valve replacement"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "EDUCATIONAL ANIMATION"
+  }
+}

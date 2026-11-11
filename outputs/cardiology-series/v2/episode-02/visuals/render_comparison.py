@@ -264,15 +264,15 @@ def p01(c, row, n):
     j,p,t=beat(row,n)
     field(c)
     if j==2:
-        wrist_surface(c,1.3+p*.12,26+p*46,93,pressure=.52)
-        groin_surface(c,970-p*28,353,1.05+p*.14)
-        pulse(c,313+p*30,361,t)
-        pulse(c,970-p*28,371,t+.28)
+        wrist_surface(c,1.52+p*.12,8+p*26,68,pressure=.52)
+        groin_surface(c,943-p*24,339,1.43+p*.09)
+        pulse(c,344+p*47,348,t)
+        pulse(c,943-p*24,360,t+.28)
         note(c,"The choice can affect recovery",640,661,align="center")
         return
     a=easing(t,0,4.5)
     b=easing(t,.65,5.0)
-    scale=.91+t*.0134
+    scale=.99+t*.0095
     body(c,330+t*1.3,395,scale,[("wrist",a)],t)
     body(c,954-t*1.3,395,scale,[("groin",b)],t)
     if t<5:
@@ -289,10 +289,10 @@ def p02(c,row,n):
     field(c)
     if j==0:
         c.save()
-        c.translate(0,lerp(68,5,p))
-        wrist_surface(c,2.2,105,44)
+        c.translate(0,lerp(36,-22,p))
+        wrist_surface(c,2.55,104,-64)
         c.restore()
-        marker(c,(591,449+lerp(68,5,p)),"Radial artery",880,205)
+        marker(c,(668,405+lerp(36,-22,p)),"Radial artery",880,205)
     elif j==1:
         scale=1.82+p*.24
         x=616+p*48
@@ -322,9 +322,25 @@ def xray(c,t,p):
     c.save()
     c.translate(353+18*sin(t*.85),-32+5*cos(t))
     c.scale(2.45,2.46)
+    parent_indices=(None,0,0,1,1,1,1,2,2,3)
+    paths=[]
+    filled=[]
     for i,(pts,width) in enumerate(anatomy.ANGIO_LEFT):
-        offset=0 if i==0 else .16 if i<3 else .38
-        fraction=easing(p,offset,min(1,offset+.57))
+        if i==0:
+            fraction=easing(p,0,.25)
+        elif i<3:
+            fraction=easing(p,.25,.92)
+        else:
+            parent=parent_indices[i]
+            parent_path=paths[parent]
+            ox,oy=pts[0]
+            joint=min(range(len(parent_path)),key=lambda j:hypot(parent_path[j][0]-ox,parent_path[j][1]-oy))
+            distances=arc_lengths(parent_path)
+            arrival=distances[joint]/distances[-1]
+            fraction=easing(filled[parent],arrival,min(1,arrival+.38))
+            pts=(parent_path[joint],*pts)
+        paths.append(pts)
+        filled.append(fraction)
         part=path_part(pts,fraction)
         line(c,part,"#354341",width+3,150)
         line(c,part,"#1c2829",width,255)
@@ -402,7 +418,7 @@ FEMORAL_BRANCH = curve((455,489),((402,500),(354,522),(291,555)),
 
 
 def femoral_closure(c,t,p):
-    rectangle(c,0,184,1280,450,gradient(0,188,1270,620,["#a9ccbb","#6aa89a","#2f7165"]))
+    rectangle(c,0,147,1280,530,gradient(0,149,1270,673,["#a9ccbb","#6aa89a","#2f7165"]))
     for i in range(10):
         x=i*147-30
         line(c,curve((x,186),((x+18,299),(x-14,477),(x+25,625))),"#c9e3d1",2.8,80)
@@ -455,10 +471,10 @@ def p07(c,row,n):
         target,label=femoral_closure(c,t,p)
         marker(c,target,label,420,128)
         return
-    wrist_surface(c,1.31+.17*p,1+34*p,117,pressure=.43)
-    groin_surface(c,963-27*p,359,.85+.12*p)
-    pulse(c,291+70*p,362,t)
-    pulse(c,963-27*p,372,t+.32)
+    wrist_surface(c,1.51+.14*p,-15+29*p,68,pressure=.43)
+    groin_surface(c,949-27*p,335,1.43+.10*p)
+    pulse(c,319+60*p,346,t)
+    pulse(c,949-27*p,355,t+.32)
     note(c,"Staff check both sites for bleeding",640,665,align="center")
 
 

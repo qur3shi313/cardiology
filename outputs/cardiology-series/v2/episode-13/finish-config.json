@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "Calcium",
+      "and stents"
+    ],
+    "seconds": 82.96666666666667,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      76.46666666666667,
+      97.03333333333333
+    ],
+    "headings": [
+      "How pressure waves",
+      "can fracture calcium"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "INTRAVASCULAR LITHOTRIPSY"
+  }
+}

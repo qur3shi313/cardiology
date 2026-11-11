@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "Drug-eluting",
+      "stents"
+    ],
+    "eyebrow": "CORONARY STENT TECHNOLOGY",
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "seconds": 6.3
+  },
+  "short": {
+    "headings": [
+      "What stays in",
+      "the artery?"
+    ],
+    "crop": [
+      2048,
+      1240,
+      258,
+      163
+    ],
+    "eyebrow": "DRUG-ELUTING STENT",
+    "seconds": [
+      0.0,
+      13.933333333333334
+    ]
+  }
+}

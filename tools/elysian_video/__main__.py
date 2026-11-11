@@ -3,6 +3,7 @@
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
+from hashlib import sha256
 import json
 import os
 from pathlib import Path
@@ -133,10 +134,30 @@ def picture(exe, scene, work, quality):
     else:
         arguments.extend(['-filter_threads',2,'-vf',','.join(chain),'-map','0:v:0'])
     target=work/f'{scene["id"]}.mp4'
+    cache=picture_cache(scene,quality)
+    if cache.is_file():
+        shutil.copyfile(cache,target)
+        return target
     run(exe,'-v','error','-y',*arguments,'-an','-frames:v',frames,'-c:v','libx264','-preset',quality,
         '-crf',16,'-profile:v','high','-pix_fmt','yuv420p','-threads',4,'-g',60,'-bf',2,
         '-video_track_timescale',30000,target)
+    cache.parent.mkdir(parents=True,exist_ok=True)
+    staging=cache.with_suffix(f'.{os.getpid()}.part')
+    shutil.copyfile(target,staging)
+    staging.replace(cache)
     return target
+
+def picture_cache(scene,quality):
+    spec=scene['footage']
+    media=read_media(spec)
+    with media.path.open('rb') as file:
+        source_hash=sha256()
+        for block in iter(lambda:file.read(1024*1024),b''):
+            source_hash.update(block)
+    version='picture-2560x1440-30-noise2-static-rev1'
+    token=json.dumps({'version':version,'preset':quality,'hash':source_hash.hexdigest(),'spec':spec,
+                     'frames':scene['end_frame']-scene['start_frame']},sort_keys=True)
+    return ROOT/'work/cardiology-v2-scratch/scene-cache'/f'{sha256(token.encode()).hexdigest()}.mp4'
 
 
 def narration(exe, scene, work):

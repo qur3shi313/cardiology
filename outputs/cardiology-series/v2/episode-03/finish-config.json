@@ -1,0 +1,22 @@
+{
+  "thumbnail": {
+    "artwork": "thumbnail.png"
+  },
+  "short": {
+    "seconds": [
+      31.4,
+      66.9
+    ],
+    "headings": [
+      "Needle, wire,",
+      "then sheath"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "RIGHT WRIST • ANATOMICAL CUTAWAY"
+  }
+}

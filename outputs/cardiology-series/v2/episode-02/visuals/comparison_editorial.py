@@ -64,7 +64,7 @@ def cutaway(c,t,y=-148,sy=1.42):
 def p04(c,row,n):
     j,p,t=beat(row,n)
     field(c,"forest")
-    cutaway(c,t,-163+t*3.05,1.48)
+    cutaway(c,t,-274+t*2.5,1.60)
     heading="Stable coronary disease and PCI" if j==3 else "Acute coronary syndrome and PCI"
     note(c,heading,63,110,dark=True)
     icon,label=(
@@ -100,6 +100,16 @@ def difficult_path(c,t,p):
     return stop[-1]
 
 
+def difficult_full(c,t,p):
+    c.save()
+    c.translate(0,439)
+    c.scale(1,1.88)
+    c.translate(0,-439)
+    x,y=difficult_path(c,t,p)
+    c.restore()
+    return x,439+(y-439)*1.88
+
+
 def p05(c,row,n):
     j,p,t=beat(row,n)
     field(c)
@@ -114,13 +124,13 @@ def p05(c,row,n):
         pictogram(c,"heart",1094,521,.98+sin(t*4)*.06)
         note(c,"Larger equipment",1218,122,align="right")
     elif j==1:
-        tip=difficult_path(c,t,p)
+        tip=difficult_full(c,t,p)
         pulse(c,*tip,t)
         note(c,"Arterial anatomy",68,135)
     else:
         c.save()
-        c.translate(415+22*easing(p),327)
-        c.scale(1.18,1.18)
+        c.translate(381+23*easing(p),327)
+        c.scale(1.36,1.36)
         c.translate(-330,-295)
         artery(c,anatomy.AORTA,43,"#ab6470")
         shape(c,anatomy.MYOCARDIUM,gradient(155,170,492,497,["#d98e86","#ad6370","#774055"]),
@@ -131,7 +141,7 @@ def p05(c,row,n):
         artery(c,bypass,10,"#b4976b")
         line(c,path_part(bypass,easing(p)), "#f9e8ac",4.4)
         c.restore()
-        wrist_surface(c,1.15,711+32*(1-easing(p)),102)
+        wrist_surface(c,1.30,680+21*(1-easing(p)),97)
         note(c,"Previous bypass or planned graft",640,646,align="center")
 
 
@@ -199,7 +209,7 @@ def p06(c,row,n):
     j,p,t=beat(row,n)
     field(c)
     if j==0:
-        tip=difficult_path(c,t,p)
+        tip=difficult_full(c,t,p)
         pulse(c,*tip,t)
         note(c,"A difficult arterial path",73,128)
     elif j==1:
@@ -212,10 +222,15 @@ def p06(c,row,n):
             pulse(c,*b[1],t)
             note(c,"The groin",931,651,align="center")
     else:
+        c.save()
+        c.translate(640,394)
+        c.scale(1.13,1.37)
+        c.translate(-640,-394)
         patient(c,466,340,1.35,"staff_check",t)
         patient(c,284,411+13*(1-easing(p)),1.43,"flat",t)
         pulse(c,619,462,t)
         pulse(c,531,457,t+.35)
+        c.restore()
         note(c,"Staff check both sites if used",640,654,align="center")
 
 
@@ -223,20 +238,34 @@ def p08(c,row,n):
     j,p,t=beat(row,n)
     field(c)
     if j==0:
-        x=408+lerp(-46,34,easing(p))
-        patient(c,x,339,1.65,"seated",t,True)
-        marker(c,(x+211*1.65,458),"Wrist band",920,209)
+        x=288+lerp(-33,37,easing(p))
+        c.save()
+        c.translate(1117,316)
+        c.scale(-1,1)
+        patient(c,0,0,1.64,"staff_check",t)
+        c.restore()
+        patient(c,x,315,2.15,"seated",t,True)
+        marker(c,(x+211*2.15,469),"Wrist band",884,209)
         note(c,"Often able to sit up sooner",69,661)
     elif j==1:
-        patient(c,230+44*easing(p),403,1.69,"flat",t)
+        c.save()
+        c.translate(1084,264)
+        c.scale(-1,1)
+        patient(c,0,0,1.65,"staff",t)
+        c.restore()
+        patient(c,209+42*easing(p),408,1.91,"flat",t)
         note(c,"May need to lie flat with the leg straight",73,161)
     else:
-        patient(c,712,244,1.60,"staff",t)
-        patient(c,250+26*easing(p),401,1.56,"flat",t)
+        patient(c,732,228,1.67,"staff",t)
+        patient(c,226+27*easing(p),405,1.74,"flat",t)
         note(c,"Staff assess when you can walk" if j==2 else "Wait until staff say it is safe",640,669,align="center")
 
 
-def paper(c,x,y,entries,check_count):
+def paper(c,x,y,entries,check_count,scale=1.0):
+    c.save()
+    c.translate(x,y)
+    c.scale(scale,scale)
+    x,y=0,0
     rectangle(c,x+13,y+16,525,435,solid("#719b8c",95),25)
     rectangle(c,x,y,525,435,gradient(x,y,x+525,y+435,["#fcfff3","#e9f3e4"]),25)
     rectangle(c,x+168,y-15,193,48,"#6ba696",9)
@@ -248,6 +277,7 @@ def paper(c,x,y,entries,check_count):
         ellipse(c,x+60,yy-9,14,14,"#cee6d5")
         line(c,((x+53,yy-8),(x+59,yy-2),(x+68,yy-17)),TEAL,3.5)
         words(c,label,x+91,yy,30,INK)
+    c.restore()
 
 
 def car(c,x,y,s):
@@ -270,8 +300,8 @@ def p09(c,row,n):
     j,p,t=beat(row,n)
     field(c)
     if j==0:
-        paper(c,117+65*easing(p),129,("Dressing care",),1)
-        car(c,858+143*easing(p),437,1.55)
+        paper(c,75+30*easing(p),88,("Dressing care",),1,1.28)
+        car(c,914+80*easing(p),437,1.68)
         note(c,"Possible same-day discharge",72,661)
     elif j==1:
         patient(c,239+39*easing(p),404,1.63,"flat",t)
@@ -281,8 +311,8 @@ def p09(c,row,n):
         note(c,"More monitoring if needed",73,661)
     else:
         details=("Dressing care","Medicines") if p<.50 else ("Lifting, driving and work","Who to call")
-        paper(c,151+32*easing(p),129,details,1 if p%.50<.13 else 2)
-        car(c,911+84*easing(p),396,1.38)
+        paper(c,77+29*easing(p),88,details,1 if p%.50<.13 else 2,1.28)
+        car(c,918+75*easing(p),431,1.62)
 
 
 def advice(c,heading,icon,label,t,p, *, emergency=False):
@@ -358,8 +388,8 @@ def p12(c,row,n):
     brand(c,75,66,dark=True)
     words(c,"Cardiology Education Series",74,177,45,LIGHT,title=True)
     words(c,"Next episode",75,265,29,"#b6dfca")
-    words(c,"What the sheath, guidewire,",74,332,41,LIGHT,title=True)
-    words(c,"catheter and contrast each do",74,390,41,LIGHT,title=True)
+    words(c,"What the sheath, guidewire,",74,332,43,LIGHT,title=True)
+    words(c,"catheter and contrast each do",74,390,43,LIGHT,title=True)
     words(c,"Clinical sources in the description",75,481,30,"#d2edda")
 
 

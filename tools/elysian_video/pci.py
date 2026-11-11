@@ -7,6 +7,7 @@ from .__main__ import ROOT, SERIES, FPS
 from .access import HEADING, LOGO
 from .encode import encode_scene
 from . import stent as art
+from . import pci_support
 
 TITLE = {
     'P05': ('The guidewire crosses first', 'The wire stays beyond the narrowing'),
@@ -99,12 +100,13 @@ def render():
     overrides={}
     for scene in timeline['scenes']:
         ident=scene['id']
-        if ident not in TITLE: continue
+        if ident not in TITLE and ident not in pci_support.SCENES: continue
         n=scene['end_frame']-scene['start_frame']
         final=visual/f'{ident}-coronary-cutaway.mp4'
         temporary=visual/f'{ident}-coronary-cutaway.part.mp4'
         if not final.is_file():
-            encode_scene(temporary,n,lambda c,i:draw(c,ident,i/max(1,n-1),i/FPS))
+            scene_draw=draw if ident in TITLE else pci_support.draw
+            encode_scene(temporary,n,lambda c,i:scene_draw(c,ident,i/max(1,n-1),i/FPS))
             temporary.replace(final)
         overrides[ident]={'path':final.relative_to(ROOT).as_posix(),'in_sec':0,'out_sec':n/FPS,
                           'reference_only':False,'native_composition':True}

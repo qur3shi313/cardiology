@@ -1,6 +1,7 @@
 """Original coronary stent mechanics for the complete angioplasty episode."""
 
 from dataclasses import dataclass
+from functools import lru_cache
 from math import cos, exp, pi, sin
 from random import Random
 
@@ -105,7 +106,7 @@ def text(canvas, value, x, baseline, size, tone, face=BOLD, alpha=255):
     canvas.drawString(value, x, baseline, font, paint(tone, alpha))
 
 
-def artery(canvas, expansion):
+def draw_artery(canvas, expansion):
     outer_top = [(x, center(x)-211-11*cos(x/150)) for x in XS]
     outer_bottom = [(x, center(x)+218+10*sin(x/170)) for x in XS]
     rim_top = [(x, center(x)-193-9*cos(x/150)) for x in XS]
@@ -146,6 +147,22 @@ def artery(canvas, expansion):
             canvas.drawCircle(x,y,rng.uniform(.4,1.4),paint('#825345',rng.randrange(32,94)))
     return inner
 
+@lru_cache(maxsize=3)
+def artery_plate(expansion):
+    surface=skia.Surface(2560,1440)
+    canvas=surface.getCanvas()
+    canvas.clear(skia.ColorTRANSPARENT)
+    canvas.scale(2,2)
+    lumen=draw_artery(canvas,expansion)
+    return surface.makeImageSnapshot(),lumen
+
+def artery(canvas,expansion):
+    # Cache the stable medical illustration; device animation is composed
+    # independently at every frame. Subpixel changes retain smooth expansion.
+    image,lumen=artery_plate(round(expansion*240)/240)
+    canvas.drawImageRect(image,skia.Rect.MakeWH(1280,720),
+                         skia.SamplingOptions(skia.FilterMode.kNearest))
+    return lumen
 
 def blood_flow(canvas, t, state, lumen):
     canvas.save()
@@ -167,16 +184,17 @@ def wire(canvas, tip):
     line(canvas, points[-10:], '#fff0ce', 2.4)
 
 
-def stent(canvas, x0, radius, front):
+def draw_stent(canvas, x0, radius, front):
     ring_count, struts = 11, 16
     period = 2*pi/struts
+    radius_at=radius if callable(radius) else lambda x:radius
     for i in range(ring_count):
         x = x0-MESH_HALF+2*MESH_HALF*i/(ring_count-1)
         nodes = []
         for j in range(struts+1):
             theta = (j+(i%2)*.5)*period
             xx = x+(-1)**j*9
-            nodes.append((xx,center(xx)+radius*sin(theta),theta))
+            nodes.append((xx,center(xx)+radius_at(xx)*sin(theta),theta))
         for a,b in zip(nodes,nodes[1:]):
             depth = cos((a[2]+b[2])*.5)
             if (depth>=0) != front:
@@ -194,8 +212,24 @@ def stent(canvas, x0, radius, front):
                 if (cos(theta)>=0) != front:
                     continue
                 xb=x0n+2*MESH_HALF/(ring_count-1)-7
-                line(canvas,[(x0n,y0n),(xb,center(xb)+radius*sin(theta+period*.5))],
+                line(canvas,[(x0n,y0n),(xb,center(xb)+radius_at(xb)*sin(theta+period*.5))],
                      '#c5cfc4' if front else '#7f908b',2.8,220 if front else 126)
+
+@lru_cache(maxsize=4)
+def stent_plate(radius,front):
+    surface=skia.Surface(2560,1440)
+    canvas=surface.getCanvas()
+    canvas.clear(skia.ColorTRANSPARENT)
+    canvas.scale(2,2)
+    draw_stent(canvas,LESION,radius,front)
+    return surface.makeImageSnapshot()
+
+def stent(canvas,x0,radius,front):
+    if x0==LESION and not callable(radius) and radius in (116,75):
+        canvas.drawImageRect(stent_plate(radius,front),skia.Rect.MakeWH(1280,720),
+                             skia.SamplingOptions(skia.FilterMode.kNearest))
+    else:
+        draw_stent(canvas,x0,radius,front)
 
 
 def balloon(canvas, x, radius):

@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "Aortic valve",
+      "narrowing"
+    ],
+    "seconds": 20.233333333333334,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      13.733333333333333,
+      31.633333333333333
+    ],
+    "headings": [
+      "Why the aortic",
+      "valve narrows"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "AORTIC STENOSIS"
+  }
+}

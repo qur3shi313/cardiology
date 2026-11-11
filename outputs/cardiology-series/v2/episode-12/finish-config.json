@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "Inside an",
+      "artery"
+    ],
+    "seconds": 43.266666666666666,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      36.766666666666666,
+      58.86666666666667
+    ],
+    "headings": [
+      "How IVUS sees",
+      "inside the artery"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "ILLUSTRATED ULTRASOUND"
+  }
+}

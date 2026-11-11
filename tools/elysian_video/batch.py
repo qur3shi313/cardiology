@@ -18,7 +18,7 @@ def ready(episode):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('episode',choices=('episode-01','episode-02','episode-03'))
+    parser.add_argument('episode',choices=tuple(f'episode-{i:02}' for i in range(1,21)))
     parser.add_argument('--wait-minutes',type=float,default=75)
     parser.add_argument('--ffmpeg',default=LEGACY_FFMPEG,type=Path)
     args=parser.parse_args()
@@ -31,7 +31,7 @@ def main():
         time.sleep(15)
     print(f'{args.episode}: all picture sources present; assembling the complete film',flush=True)
     render_episode(args.ffmpeg.resolve(),episode,1,'slow')
-    if args.episode=='episode-01':
+    if args.episode=='episode-01' or (episode/'finish-config.json').is_file():
         finish(episode,args.ffmpeg.resolve())
     master=episode/'delivery'/f'{episode.name}-1440p.mp4'
     status=check_master(master,str(args.ffmpeg.resolve()),episode)

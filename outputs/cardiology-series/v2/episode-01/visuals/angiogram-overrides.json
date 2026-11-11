@@ -1,0 +1,100 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P01-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 8.433333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P02": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P02-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 22.166666666666668,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P03": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P03-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 14.066666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P24": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P24-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 12.466666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P25": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P25-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 23.766666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P26": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P26-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 13.833333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P27": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P27-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 11.066666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P28": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P28-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 16.433333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P29": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P29-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 5.166666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P30": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P30-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 22.133333333333333,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P37": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P37-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 8.533333333333333,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P38": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P38-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 16.2,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P39": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P39-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 13.9,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P40": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/P40-angiogram-visual.mp4",
+    "in_sec": 0,
+    "out_sec": 7.5,
+    "reference_only": false,
+    "native_composition": true
+  }
+}

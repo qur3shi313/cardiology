@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "Recovery",
+      "after TAVI"
+    ],
+    "seconds": 61.0,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      54.5,
+      73.2
+    ],
+    "headings": [
+      "Checking the valve",
+      "after TAVI"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "ILLUSTRATED ULTRASOUND"
+  }
+}

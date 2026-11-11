@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "Recovery",
+      "after PCI"
+    ],
+    "seconds": 35.66666666666667,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      29.166666666666668,
+      51.13333333333333
+    ],
+    "headings": [
+      "Medicines",
+      "after a stent"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "RECOVERY AFTER PCI"
+  }
+}

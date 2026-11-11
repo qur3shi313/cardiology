@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "Why stents",
+      "narrow"
+    ],
+    "seconds": 40.53333333333333,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      34.03333333333333,
+      55.233333333333334
+    ],
+    "headings": [
+      "Why a stent",
+      "can narrow again"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "ILLUSTRATED MECHANISMS"
+  }
+}

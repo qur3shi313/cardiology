@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "Planning",
+      "a new valve"
+    ],
+    "seconds": 38.233333333333334,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      31.733333333333334,
+      52.9
+    ],
+    "headings": [
+      "Measuring where",
+      "the valve sits"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "ILLUSTRATED CT VIEW"
+  }
+}

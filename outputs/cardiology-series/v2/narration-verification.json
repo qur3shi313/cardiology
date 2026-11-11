@@ -56,8 +56,8 @@
     },
     {
       "episode": 6,
-      "duration_seconds": 297.6,
-      "scenes": 16,
+      "duration_seconds": 305.1,
+      "scenes": 17,
       "srt_cues": 69,
       "narration_sources": [
         "outputs/cardiology-series/episode-02/production/alexander.mp3"

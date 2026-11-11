@@ -1,0 +1,34 @@
+{
+  "thumbnail": {
+    "title": [
+      "Pressure",
+      "beyond a",
+      "narrowing"
+    ],
+    "seconds": 38.93333333333333,
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "eyebrow": "CARDIOLOGY EDUCATION"
+  },
+  "short": {
+    "seconds": [
+      32.43333333333333,
+      54.36666666666667
+    ],
+    "headings": [
+      "Measuring pressure",
+      "past a narrowing"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "CORONARY PHYSIOLOGY"
+  }
+}

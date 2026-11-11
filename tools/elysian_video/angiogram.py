@@ -177,7 +177,7 @@ CARDS={
         ('Contact your care team','Increasing pain, redness, drainage or fever','call'))),
     'P39':('When to get emergency help',(
         ('Heavy or persistent bleeding','Call local emergency services','band'),
-        ('Growing swelling or a cold hand','Call local emergency services','call'),
+        ('Rapid swelling or a cold limb','Call local emergency services','call'),
         ('Chest pressure or breathlessness','Call local emergency services','pulse'))),
     'P40':('Know your result and recovery plan',(
         ('Clinical sources','AHA  •  SCAI  •  Guy’s and St Thomas’ NHS','check'),)),
@@ -277,7 +277,7 @@ def cards(c,ident,p,t,duration):
     local=(p-stops[i])/((stops[i+1] if i<len(stops)-1 else 1.0)-stops[i])
     title,detail,kind=entries[i]
     icon(c,kind,local,t)
-    text(c,title,85,324,40,'#713737' if urgent else '#004b3d')
+    text(c,title,85,324,36 if urgent else 40,'#713737' if urgent else '#004b3d')
     text(c,detail,85,385,27,'#333b39',REGULAR)
     if ident=='P40':
         text(c,'Next: Wrist versus groin access',85,472,28,'#235e50')

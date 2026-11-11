@@ -53,25 +53,32 @@ def title(draw,label,where,size,tone,limit):
 def logo(size):
     return Image.open(ROOT/'work/company-logo-original-686.jpg').convert('RGBA').resize((size,size),Image.Resampling.LANCZOS)
 
-def thumbnail(ffmpeg,master,dest,seconds,lines):
+def thumbnail(ffmpeg,master,dest,seconds,lines,crop=(1580,1000,545,303),eyebrow='CORONARY ANGIOGRAPHY'):
     frame=dest.with_suffix('.frame.png')
     try:
+        w,h,x,y=crop
         run(ffmpeg,'-v','error','-y','-ss',seconds,'-i',master,'-frames:v',1,
-            '-vf','crop=1580:1000:545:303,scale=740:468:flags=lanczos',frame)
+            '-vf',f'crop={w}:{h}:{x}:{y},scale=740:-2:flags=lanczos',frame)
         out=Image.new('RGBA',(1280,720),'#102b29')
         visual=Image.open(frame).convert('RGBA')
-        out.alpha_composite(visual,(540,154))
+        out.alpha_composite(visual,(540,(720-visual.height)//2+30))
         out.alpha_composite(logo(77),(62,55))
         pen=ImageDraw.Draw(out)
         title(pen,'Elysian Biomedical LLP',(157,76),33,'#e4f3eb',455)
+        font_size=88
+        while font_size>77:
+            face=ImageFont.truetype(str(FONTS/'fira-sans-semibold.ttf'),font_size)
+            if all(face.getlength(line)<=470 for line in lines): break
+            font_size-=1
         for i,line in enumerate(lines):
-            title(pen,line,(57,210+i*114),101,'#f5fff7',515)
-        title(pen,'CORONARY ANGIOGRAPHY',(63,585),29,'#a0d3be',493)
+            title(pen,line,(57,202+i*104),font_size,'#f5fff7',470)
+        title(pen,eyebrow,(63,585),29,'#a0d3be',493)
         out.convert('RGB').save(dest,quality=96,subsampling=0)
     finally:
         if frame.is_file(): frame.unlink()
 
-def short(ffmpeg,master,srt,dest,a,b):
+def short(ffmpeg,master,srt,dest,a,b,headings=('How contrast reveals','the coronary arteries'),
+          crop=(1580,1030,524,274),eyebrow='SIMULATED X-RAY'):
     with scratch('elysian-short-') as temp:
         work=Path(temp)
         captions=work/'vertical.ass'
@@ -84,13 +91,16 @@ def short(ffmpeg,master,srt,dest,a,b):
         overlay.alpha_composite(logo(94),(68,106))
         pen=ImageDraw.Draw(overlay)
         title(pen,'Elysian Biomedical LLP',(180,127),45,'#e0f3e9',848)
-        title(pen,'How contrast reveals',(67,292),87,'#f3fff5',960)
-        title(pen,'the coronary arteries',(67,397),84,'#f3fff5',960)
-        title(pen,'SIMULATED X-RAY',(71,1415),42,'#a9dcca',960)
+        for i,line in enumerate(headings):
+            title(pen,line,(67,292+i*105),84,'#f3fff5',960)
+        title(pen,eyebrow,(71,1415),42,'#a9dcca',960)
         pen.line((70,1479,1010,1479),fill='#416a5e',width=3)
         graphic=work/'short-overlay.png'
         overlay.save(graphic)
-        chain=('[0:v]crop=1580:1030:524:274,scale=1080:-2:flags=lanczos,'
+        w,h,x,y=crop
+        if (1080*h/w)>795:
+            raise ValueError('Vertical framing covers the Short caption band')
+        chain=(f'[0:v]crop={w}:{h}:{x}:{y},scale=1080:-2:flags=lanczos,'
                'pad=1080:1920:0:586:color=0x102a28,setsar=1[picture];'
                '[picture][1:v]overlay=0:0,ass=vertical.ass:fontsdir=fonts[out]')
         run(ffmpeg,'-v','error','-y','-ss',f'{a:.7f}','-t',f'{b-a:.7f}','-i',master,
@@ -105,19 +115,35 @@ def finish(episode,ffmpeg):
     delivery=episode/'delivery'
     master=delivery/f'{episode.name}-1440p.mp4'
     if not master.is_file(): raise FileNotFoundError(master)
-    spec=timeline['short']
-    a,b=spec['start_frame']/FPS,spec['end_frame']/FPS
+    config_path=episode/'finish-config.json'
+    if config_path.is_file():
+        config=json.loads(config_path.read_text(encoding='utf-8-sig'))
+    elif episode.name=='episode-01':
+        config={}
+    else:
+        raise ValueError('Set episode-specific thumbnail and Short layout first')
+    spec=config.get('short') or timeline['short']
+    a,b=(spec['seconds'] if 'seconds' in spec else
+         (spec['start_frame']/FPS,spec['end_frame']/FPS))
     if not 0<=a<b or b-a>45:
         raise ValueError('Use a positive Short duration of 45 seconds or less')
-    if episode.name!='episode-01':
-        raise ValueError('Set episode-specific crop, thumbnail and Short title first')
     srt=episode/timeline.get('caption_file','captions.en.srt')
-    thumbnail(ffmpeg,master,delivery/f'{episode.name}-thumbnail.jpg',6.3,('Wrist','or groin?'))
-    short(ffmpeg,master,srt,delivery/f'{episode.name}-short.mp4',a,b)
+    thumb=delivery/f'{episode.name}-thumbnail.jpg'
+    ts=config.get('thumbnail',{})
+    if ts.get('artwork'):
+        with Image.open(episode/ts['artwork']) as source:
+            if source.size!=(1280,720):
+                raise ValueError('An approved thumbnail must be 1280 × 720')
+            source.convert('RGB').save(thumb,quality=96,subsampling=0)
+    else:
+        thumbnail(ffmpeg,master,thumb,ts.get('seconds',6.3),ts.get('title',('Wrist','or groin?')),
+                  tuple(ts.get('crop',(1580,1000,545,303))),ts.get('eyebrow','CORONARY ANGIOGRAPHY'))
+    kwargs={k:spec[k] for k in ('headings','crop','eyebrow') if k in spec}
+    short(ffmpeg,master,srt,delivery/f'{episode.name}-short.mp4',a,b,**kwargs)
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('episode',choices=('episode-01',))
+    p.add_argument('episode',choices=tuple(f'episode-{i:02}' for i in range(1,21)))
     p.add_argument('--ffmpeg',default=LEGACY_FFMPEG,type=Path)
     args=p.parse_args()
     finish(SERIES/args.episode,args.ffmpeg.resolve())

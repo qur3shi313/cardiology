@@ -1,0 +1,33 @@
+{
+  "thumbnail": {
+    "title": [
+      "After your",
+      "angiogram"
+    ],
+    "eyebrow": "RECOVERY AFTER ANGIOGRAPHY",
+    "crop": [
+      1580,
+      1000,
+      530,
+      300
+    ],
+    "seconds": 15.5
+  },
+  "short": {
+    "headings": [
+      "Wrist band or",
+      "groin closure?"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
+    "eyebrow": "AFTER THE ANGIOGRAM",
+    "seconds": [
+      11.7,
+      41.7
+    ]
+  }
+}

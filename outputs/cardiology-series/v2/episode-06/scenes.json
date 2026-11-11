@@ -126,5 +126,13 @@
     "visual_file": "../../episode-02/production/delivery/elysian-coronary-angioplasty-stent.mp4",
     "target_start_sec": 282.25,
     "target_end_sec": 297.625
+  },
+  {
+    "id": "P17",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P17-coronary-cutaway.mp4",
+    "target_start_sec": 297.6,
+    "target_end_sec": 305.1
   }
 ]

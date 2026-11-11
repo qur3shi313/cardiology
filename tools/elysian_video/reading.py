@@ -91,9 +91,23 @@ def ring(c, point, radius=23, tone=GOLD, width=3):
     c.drawCircle(*point, radius, pen)
 
 
-def clinical_backdrop(c):
+def target_ring(c, point, radius=23, tone=GOLD, width=3.5):
+    ring(c, point, radius, '#584a2f', width+4)
+    ring(c, point, radius, tone, width)
+
+
+@lru_cache(maxsize=1)
+def clinical_plate():
+    surface=skia.Surface(W*2,H*2)
+    c=surface.getCanvas()
+    c.scale(2,2)
     rect(c, 0, 0, W, H, grad(120, 0, 1130, 750, ['#edf7ee','#cbe3d8','#96c1b4']))
     c.drawOval(skia.Rect.MakeXYWH(500, 90, 870, 690), solid('#eff8eb', 88))
+    return surface.makeImageSnapshot()
+
+
+def clinical_backdrop(c):
+    c.drawImageRect(clinical_plate(),skia.Rect.MakeWH(W,H),SAMPLE)
 
 
 def vignette(c):
@@ -284,21 +298,29 @@ def imaging_open(c,t,d):
 def image_meaning(c,t,d):
     clinical_backdrop(c)
     warm=1-cue(t,9.5,13.8)
-    if warm>0:
-        heart(c,683,310,1.84)
-    if warm<1:
-        film(c,round((1-warm)*255))
     amount=.07+.93*cue(t,3,12.9)
     angle=CLEAR+6.5*sin(t/d*pi)
-    coronary(c,angle=angle,fill=amount,alpha=round(248-39*cue(t,15.9,d)),zoom=1.01+.15*t/d,
+    zoom=blend(.81,1.02,cue(t,0,5.7))+.10*t/d
+    cx=blend(752,676,cue(t,.0,9.1))
+    cy=blend(419,374,cue(t,.0,7.7))
+    if warm>0:
+        ostium=project(model('left')[0][0][0][0],angle,cx,cy,zoom)
+        x,y=ostium
+        root=art.curve((x+10,y-63),((x+23,y-41),(x+20,y-13),(x+14,y+15)))
+        line(c,root,'#773e49',22)
+        line(c,root,'#c87978',16)
+        line(c,[(x+5,y-6),(x,y)],'#c87978',9)
+    if warm<1:
+        film(c,round((1-warm)*255))
+    coronary(c,angle=angle,fill=amount,alpha=round(248-39*cue(t,15.9,d)),zoom=zoom,cx=cx,cy=cy,
              anatomical=warm>.48)
-    heading(c,'Contrast outlines the channel',dark=warm<.55)
+    heading(c,'Contrast',dark=warm<.55)
     if warm<.55:
         disclosure(c)
     if 4.6<t<9.7:
         badge(c,'Contrast enters at the coronary opening',dark=warm<.55)
     elif t>=9.7:
-        badge(c,'The open lumen fills',dark=warm<.55)
+        badge(c,'Contrast outlines the open channel',dark=warm<.55)
 
 
 def branches_scene(c,t,d):
@@ -317,15 +339,15 @@ def branches_scene(c,t,d):
     side='left' if left else 'right'
     angle=(CLEAR if left else 15)+7*sin(t/d*pi)
     local=t-start
-    spot=coronary(c,side,angle=angle,cx=732,cy=380,zoom=.97+.12*t/d,
+    spot=coronary(c,side,angle=angle,cx=785,cy=407,zoom=.84+.09*t/d,
                   fill=1 if left else .18+.82*cue(local,-.2,2.8),
                   narrowed=left,highlight=branch,trace=.08+.92*cue(local,0,3.9))
-    heart(c,232,319,1.02,branch=branch if left else 3)
+    heart(c,155,369,.66,branch=branch if left else 3)
     if left and t>=16.55:
-        ring(c,spot,25,GOLD)
+        target_ring(c,spot,25)
     heading(c,'Follow the branches')
     disclosure(c)
-    badge(c,title)
+    badge(c,title,size=34)
 
 
 def anatomy_channel(c,t,*, mode='narrow', pressure=False, lead=0.):
@@ -382,14 +404,14 @@ def narrowing_scene(c,t,d):
         heading(c,'Find the focal narrowing')
         disclosure(c)
         if t<6.4:
-            ring(c,focus,22+3*sin(t*3),GOLD)
+            target_ring(c,focus,22+3*sin(t*3))
             badge(c,'Contrast reaches beyond it')
         elif t<10.4:
             pt=project(model('left')[0][1][0][16],CLEAR,616-29*sin(t/d*pi),357,zoom)
-            ring(c,pt,23,'#c2f2d5')
+            target_ring(c,pt,23,'#c2f2d5')
             badge(c,'Nearby reference segment')
         else:
-            ring(c,focus,28,GOLD)
+            target_ring(c,focus,28)
             badge(c,'Focal narrowing')
     elif t<16.9:
         anatomy_channel(c,t)
@@ -408,10 +430,10 @@ def two_views(c,t,d):
         zoom=1.06+.18*(t/12.7)
         spot=coronary(c,angle=angle,zoom=zoom,cx=641-19*sin(t*.29))
         if t<7.6:
-            ring(c,spot,29,'#f7d790')
+            target_ring(c,spot,29)
             badge(c,'Branch overlap')
         else:
-            ring(c,spot,25+2*sin(t*2.2),GOLD)
+            target_ring(c,spot,25+2*sin(t*2.2))
             badge(c,'The same narrowing')
     else:
         line(c,[(641,142),(641,626)],'#344d46',3.3,202)
@@ -420,9 +442,9 @@ def two_views(c,t,d):
             c.save()
             c.clipRect(skia.Rect.MakeXYWH(x-318,139,636,475))
             pos=coronary(c,angle=angle,cx=x,cy=384,zoom=.62+.14*phase+.04*(t/d))
-            ring(c,pos,18.6+2.3*sin(t*2),GOLD,2.7)
+            target_ring(c,pos,18.6+2.3*sin(t*2),GOLD,3.1)
             c.restore()
-            label(c,view,x,655,32,WHITE,align='center')
+            label(c,view,x,655,35,WHITE,align='center')
     heading(c,'Same artery, different angle')
     disclosure(c)
 
@@ -431,7 +453,7 @@ def physiology(c,t,d):
     if t<5.2:
         film(c)
         spot=coronary(c,zoom=1.13+.18*(t/5.2),angle=CLEAR+3*sin(t*.41))
-        ring(c,spot,24+5*cue(t,.3,4.7),GOLD)
+        target_ring(c,spot,24+5*cue(t,.3,4.7))
         heading(c,'The picture is one part')
         disclosure(c)
         return
@@ -543,7 +565,7 @@ def option_icon(c,which,t):
 
 def choices(c,t,d):
     clinical_backdrop(c)
-    heart(c,427+24*sin(t*.27),344,1.44+.15*sin(t/d*pi),branch='all')
+    heart(c,427+24*sin(t*.27),397,1.28+.12*sin(t/d*pi),branch='all')
     if t<7.8:
         option,copy='findings','Findings, symptoms and urgency'
     elif t<10.5:
@@ -558,7 +580,7 @@ def choices(c,t,d):
         option,copy='urgent','Heart attack care can be urgent'
     option_icon(c,option,t)
     heading(c,'Findings guide the next decision',dark=False)
-    label(c,copy,920,568,31,INK,align='center')
+    label(c,copy,920,568,34,INK,align='center')
 
 
 def questions(c,t,d):
@@ -567,14 +589,14 @@ def questions(c,t,d):
     block(c,47,185,464,368,22,solid('#142f2d',234))
     if t<8:
         copy=('Which artery','was involved?')
-        ring(c,spot,23+4*sin(t*2.4),GOLD)
+        target_ring(c,spot,23+4*sin(t*2.4))
     elif t<12.3:
         copy=('Does it affect','blood supply?')
         line(c,[(spot[0],spot[1]),(spot[0]+65,spot[1]+50),(spot[0]+99,spot[1]+73)],GOLD,2.6)
-        ring(c,(spot[0]+99,spot[1]+73),18+4*sin(t*2.3),GOLD)
+        target_ring(c,(spot[0]+99,spot[1]+73),18+4*sin(t*2.3))
     else:
         copy=('What follow-up','or treatment?')
-        ring(c,spot,24+5*sin(t*2.2),'#c7eed2')
+        target_ring(c,spot,24+5*sin(t*2.2),'#c7eed2')
     heading(c,'Three questions to ask')
     disclosure(c)
     for i,text in enumerate(copy):
@@ -625,10 +647,27 @@ def thumbnail():
     surface.makeImageSnapshot().save(str(FOLDER/'thumbnail.jpg'),skia.kJPEG,95)
 
 
-def build(only=(), *, stills=False):
+def picture_entry(target, count):
+    return {'path':target.relative_to(ROOT).as_posix(),'in_sec':0,'out_sec':count/FPS,
+            'reference_only':False,'native_composition':True}
+
+
+def write_overrides(entries):
+    if entries:
+        dest=ASSETS/'reading-overrides.json'
+        pending=dest.with_suffix('.partial.json')
+        pending.write_text(json.dumps(entries,indent=2)+'\n',encoding='utf-8')
+        pending.replace(dest)
+
+
+def build(only=(), *, stills=False, replace=False):
     ASSETS.mkdir(exist_ok=True)
     data=json.loads((FOLDER/'timeline.json').read_text(encoding='utf-8-sig'))
     entries={}
+    for row in data['scenes']:
+        target=ASSETS/f"{row['id']}-reading.mp4"
+        if target.is_file():
+            entries[row['id']]=picture_entry(target,row['end_frame']-row['start_frame'])
     for row in data['scenes']:
         ident=row['id']
         scene=SCENES[ident]
@@ -637,18 +676,18 @@ def build(only=(), *, stills=False):
         if not only or ident in only:
             d=count/FPS
             save_still(scene,d,d*(.65 if ident!='P01' else .45),ASSETS/f'{ident}-reading.png')
-            if not stills and not target.is_file():
+            if not stills and (replace or not target.is_file()):
                 tmp=target.with_suffix('.partial.mp4')
-                encode_scene(tmp,count,lambda canvas,frame:scene(canvas,frame/FPS,d),preset='veryfast',threads=2)
+                def draw(canvas, frame):
+                    if frame and frame%150==0:
+                        print(f'{ident}: drawing frame {frame}/{count}',flush=True)
+                    scene(canvas,frame/FPS,d)
+                encode_scene(tmp,count,draw,preset='veryfast',threads=2)
                 tmp.replace(target)
+                entries[ident]=picture_entry(target,count)
+                write_overrides(entries)
                 print(f'{ident}: {count} frames',flush=True)
-        if target.is_file():
-            entries[ident]={'path':target.relative_to(ROOT).as_posix(),'in_sec':0,'out_sec':count/FPS,
-                            'reference_only':False,'native_composition':True}
-            dest=ASSETS/'reading-overrides.json'
-            pending=dest.with_suffix('.partial.json')
-            pending.write_text(json.dumps(entries,indent=2)+'\n',encoding='utf-8')
-            pending.replace(dest)
+    write_overrides(entries)
     thumbnail()
 
 
@@ -656,7 +695,8 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('scenes',nargs='*',metavar='SCENE')
     parser.add_argument('--stills',action='store_true')
+    parser.add_argument('--replace',action='store_true')
     args=parser.parse_args()
     if set(args.scenes)-set(SCENES):
         parser.error('Use scene IDs P01 through P10.')
-    build(args.scenes,stills=args.stills)
+    build(args.scenes,stills=args.stills,replace=args.replace)
