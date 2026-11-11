@@ -1,0 +1,47 @@
+[
+  {
+    "scene": 4,
+    "start_frame": 2070,
+    "end_frame": 2643,
+    "frames": 573,
+    "timeline_start_sec": 68.986,
+    "timeline_end_sec": 88.084,
+    "file": "R04-find-radial-artery.mp4"
+  },
+  {
+    "scene": 19,
+    "start_frame": 8930,
+    "end_frame": 9202,
+    "frames": 272,
+    "timeline_start_sec": 297.665,
+    "timeline_end_sec": 306.721,
+    "file": "R19-withdraw-diagnostic-catheter.mp4"
+  },
+  {
+    "scene": 20,
+    "start_frame": 9202,
+    "end_frame": 9477,
+    "frames": 275,
+    "timeline_start_sec": 306.721,
+    "timeline_end_sec": 315.904,
+    "file": "R20-remove-sheath-compress.mp4"
+  },
+  {
+    "scene": 21,
+    "start_frame": 9477,
+    "end_frame": 9750,
+    "frames": 273,
+    "timeline_start_sec": 315.904,
+    "timeline_end_sec": 324.995,
+    "file": "R21-check-wrist-band.mp4"
+  },
+  {
+    "scene": 22,
+    "start_frame": 9750,
+    "end_frame": 10474,
+    "frames": 724,
+    "timeline_start_sec": 324.995,
+    "timeline_end_sec": 349.12,
+    "file": "R22-recovery-and-discharge.mp4"
+  }
+]

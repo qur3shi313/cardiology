@@ -1,0 +1,18 @@
+# Coronary angiography visual and narration revision
+
+The owner approved the two-episode concept, requested revised illustrations and ElevenLabs narration, then explicitly selected Public for both finished replacements. The original uploads were last verified Private on 11 November 2026 and were left untouched during the replacement upload.
+
+**Picture.** Use the original scripts and shot order. Build one continuous cutaway for each access sequence. Keep the artery, skin, landmarks, and camera fixed while the needle, wire, dilator, and sheath move on separate paths. Hold an instrument still when the next device moves over it. Follow the diagnostic catheter with a route map, then switch to fixed coronary views for separate contrast injections and simulated results. Show wrist compression and groin closure or compression in their distinct recovery scenes. Use the authentic Elysian logo, Josefin Sans and Fira Sans, the existing website palette, and short labels that point to the active tool. Keep the series name, timing, and callout placement consistent across episodes.
+
+**Motion previews.** The [wrist preview](wrist-proof/radial-access-alexander-preview.mp4) runs 21 seconds and shows five access movements. The [groin preview](femoral-proof/femoral-access-alexander-review.mp4) runs 45.43 seconds and shows six exchange movements. Both have Alexander narration and passed a full video and audio decode. The wrist preview incorporates the corrected right-palm locator, continuous instrument entry, fixed-length wire withdrawal, and a sheath tip that follows the lumen. These are private source clips for the edit, not complete episode exports.
+
+**Voice.** The owner approved both sample takes from Alexander, the ElevenLabs English baritone. The approved source script for each episode was retained and recorded in two sections. The break occurs after the route to the aorta and before reaching the first coronary opening. Both joined narration files passed a full audio decode. The machine transcripts matched all normalized words in the original scripts. Use these word timings to match illustrations and captions to the new voice.
+
+- Wrist: [narration](radial-alexander-full.m4a), [English captions](radial-alexander.en.srt), [scene timing and transcript check](radial-alexander-scene-timing.json).
+- Groin: [narration](femoral-alexander-full.m4a), [English captions](femoral-alexander.en.srt), [scene timing and transcript check](femoral-alexander-scene-timing.json).
+
+**Canva.** The wrist and groin motion preview project is saved in the owner's Business team. Both narrated access previews were assembled into the 1:06 timeline and played in the editor. Both full Alexander narration tracks are in the Canva library. The complete 1080p delivery exports were assembled frame-accurately from the revised visual assets with the approved narration and captions.
+
+**Delivery.** [Episode 1A · Right wrist](https://youtu.be/YIw1bSATJqY) and [Episode 1B · Right groin](https://youtu.be/sFbJGjFIuHo) are Public on Elysian Biomedical LLP. Both have timed English subtitles, Education category and synthetic narration disclosure. See [publication record](full-review/youtube-publication-revised.json), [independent decoded visual review](full-review/independent-decoded-qc.jpg).
+
+**Review.** Check the whole animation at normal speed and frame by frame at each instrument handoff. Verify anatomical side, vessel and lumen continuity, relative instrument positions, motion direction, visible closures, spoken terminology, source captions, and mobile legibility. A machine transcript can support timing and wording checks. It does not substitute for listening or professional clinical review.

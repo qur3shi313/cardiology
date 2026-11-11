@@ -1,0 +1,285 @@
+{
+  "route": "femoral",
+  "duration_seconds": 599.3125,
+  "chapters": [
+    {
+      "time": 0.0,
+      "duration": 28.375,
+      "title": "Coronary angiography",
+      "stage": "heart",
+      "voice": "A coronary angiogram answers a question: is there a narrowing or blockage in an artery that supplies the heart muscle? In this example, the cardiologist reaches those arteries through the patient’s right groin. We’ll follow the instruments to the heart, see how contrast creates the images, and return to the groin for recovery.",
+      "detail": "Right groin access",
+      "hold": 2
+    },
+    {
+      "time": 28.375,
+      "duration": 27.25,
+      "title": "Why the test is done",
+      "stage": "stenosis",
+      "voice": "The heart muscle gets its blood supply from the coronary arteries. Plaque can build up in an artery wall and make the channel narrower. An angiogram may be planned after a review of symptoms and other tests. In some suspected heart attacks, the team may need an urgent angiogram and may go on to treat the artery.",
+      "detail": "The test shows the open channel of the artery",
+      "hold": 2
+    },
+    {
+      "time": 55.625,
+      "duration": 31.75,
+      "title": "Preparing for the test",
+      "stage": "heart",
+      "voice": "For a planned angiogram, your team explains the test and reviews your medicines, kidney health and any previous reaction to contrast. Follow their instructions about food, drink and medicines. In the cath lab, staff monitor your heart rhythm and blood pressure. You are usually awake. The team can give medicine to help you relax if needed.",
+      "detail": "The clinical team reviews medicines, kidney health and contrast history",
+      "hold": 2
+    },
+    {
+      "time": 87.375,
+      "duration": 23.75,
+      "title": "Find the common femoral artery",
+      "stage": "site",
+      "voice": "The common femoral artery runs beneath the skin in the upper thigh near the groin. Here the team uses ultrasound to identify it. The skin is cleaned and the area is covered with a sterile drape. Local anaesthetic numbs the spot where the artery will be entered.",
+      "detail": "Upper thigh, above the artery’s division",
+      "hold": 3
+    },
+    {
+      "time": 111.125,
+      "duration": 16.75,
+      "title": "Micropuncture needle",
+      "stage": "needle",
+      "voice": "After numbing the site, the cardiologist uses a fine access needle to enter the common femoral artery under ultrasound. The needle tip is shown inside the artery.",
+      "detail": "The tip enters the artery through its near wall",
+      "hold": 3
+    },
+    {
+      "time": 127.875,
+      "duration": 13.8125,
+      "title": "Fine access wire",
+      "stage": "short_wire",
+      "voice": "A fine access wire passes through the hollow needle. X-ray helps the team confirm that the wire follows the main iliac artery.",
+      "detail": "The wire passes through the needle",
+      "hold": 3
+    },
+    {
+      "time": 141.688,
+      "duration": 12.8125,
+      "title": "Withdraw the needle",
+      "stage": "needle_out",
+      "voice": "The needle slides back out over the wire. Watch how the wire stays in the artery and preserves the entry path.",
+      "detail": "Needle out, access wire stays",
+      "hold": 3
+    },
+    {
+      "time": 154.5,
+      "duration": 10.9375,
+      "title": "Temporary micropuncture introducer",
+      "stage": "sheath_in",
+      "voice": "The team passes a temporary micropuncture introducer with its inner dilator over the fine wire.",
+      "detail": "A temporary outer introducer and inner dilator",
+      "hold": 3
+    },
+    {
+      "time": 165.438,
+      "duration": 13.75,
+      "title": "Remove the fine wire and dilator",
+      "stage": "short_out",
+      "voice": "The fine wire and inner dilator are taken out. The outer introducer stays in the artery so the team can exchange wires.",
+      "detail": "The outer introducer stays in place",
+      "hold": 3
+    },
+    {
+      "time": 179.188,
+      "duration": 9.9375,
+      "title": "Pass the larger exchange wire",
+      "stage": "exchange_wire",
+      "voice": "A larger exchange wire goes through the temporary introducer and into the artery.",
+      "detail": "The exchange wire is separate from the fine wire",
+      "hold": 3
+    },
+    {
+      "time": 189.125,
+      "duration": 12.0625,
+      "title": "Withdraw the temporary introducer",
+      "stage": "micro_out",
+      "voice": "The temporary introducer comes out over the exchange wire. The exchange wire stays in place.",
+      "detail": "Introducer out, exchange wire stays",
+      "hold": 3
+    },
+    {
+      "time": 201.188,
+      "duration": 9.375,
+      "title": "Advance the working femoral sheath",
+      "stage": "working_sheath",
+      "voice": "The working femoral sheath and its dilator slide in over the exchange wire.",
+      "detail": "The working sheath replaces the temporary introducer",
+      "hold": 3
+    },
+    {
+      "time": 210.562,
+      "duration": 16.3125,
+      "title": "Remove the exchange wire and dilator",
+      "stage": "working_dilator_out",
+      "voice": "The team removes the exchange wire and the dilator. The working sheath stays at the groin. The team can take a separate groin image to check the entry site.",
+      "detail": "The working sheath stays at the groin",
+      "hold": 3
+    },
+    {
+      "time": 226.875,
+      "duration": 16.3125,
+      "title": "Diagnostic guidewire",
+      "stage": "long_wire",
+      "voice": "A longer diagnostic guidewire passes through the sheath. Live X-ray, called fluoroscopy, lets the cardiologist see where the wire is going.",
+      "detail": "A separate wire guides the diagnostic catheter",
+      "hold": 3
+    },
+    {
+      "time": 243.188,
+      "duration": 13.0625,
+      "title": "Diagnostic catheter",
+      "stage": "catheter",
+      "voice": "The diagnostic catheter advances over the long guidewire. The short sheath remains where the team entered the artery.",
+      "detail": "The catheter follows the wire",
+      "hold": 3
+    },
+    {
+      "time": 256.25,
+      "duration": 22.9375,
+      "title": "The route to the aorta",
+      "stage": "route",
+      "voice": "The wire and catheter travel through the right external and common iliac arteries, then up the abdominal and chest aorta. They round the aortic arch toward the aortic root, where the coronary arteries begin above the aortic valve.",
+      "detail": "Right common femoral artery to the aortic root",
+      "hold": 5
+    },
+    {
+      "time": 279.188,
+      "duration": 17.8125,
+      "title": "Reach the coronary opening",
+      "stage": "root",
+      "voice": "At the aortic root, the long guidewire is withdrawn from the catheter. Here the curved catheter tip is positioned at the left coronary opening, above the aortic valve.",
+      "detail": "The catheter tip sits at the entrance to the artery",
+      "hold": 4
+    },
+    {
+      "time": 297.0,
+      "duration": 31.625,
+      "title": "Left coronary contrast run",
+      "stage": "left_contrast",
+      "voice": "The cardiologist injects X-ray contrast through the diagnostic catheter. For a moment, it outlines the channel that blood travels through. Watch the left main artery fill and then see two of its main branches come into view. Now look at the same moment on the X-ray. The dark branching lines show where the contrast is flowing.",
+      "detail": "Simulated angiogram",
+      "hold": 5
+    },
+    {
+      "time": 328.625,
+      "duration": 18.6875,
+      "title": "Withdraw the left diagnostic catheter",
+      "stage": "femoral_left_out",
+      "voice": "In this groin example, the team uses a different catheter for the right artery. The left catheter moves back from the coronary opening and is withdrawn. The working sheath stays at the groin.",
+      "detail": "The sheath keeps the entry available",
+      "hold": 3
+    },
+    {
+      "time": 347.312,
+      "duration": 15.6875,
+      "title": "Advance the right diagnostic catheter",
+      "stage": "femoral_right_in",
+      "voice": "The right diagnostic catheter follows a guidewire up through the aorta. The team withdraws the wire and positions the catheter tip at the right coronary opening.",
+      "detail": "The wire is out before contrast",
+      "hold": 3
+    },
+    {
+      "time": 363.0,
+      "duration": 23.625,
+      "title": "Right coronary contrast run",
+      "stage": "right_contrast",
+      "voice": "The cardiologist injects contrast separately at the right coronary opening. The right coronary artery and its branches briefly appear on X-ray. The imaging arm can move around the patient to record the arteries from different angles.",
+      "detail": "Separate injection at the right coronary opening",
+      "hold": 5
+    },
+    {
+      "time": 386.625,
+      "duration": 33.375,
+      "title": "Reading the result",
+      "stage": "stenosis",
+      "voice": "On this example image, the contrast-filled channel is thinner at one spot. Another angle helps the cardiologist check where the narrowing is and how severe it looks. Sometimes a pressure measurement or imaging from inside the artery helps answer what the angiogram alone cannot. If no major blockage is visible and symptoms persist, the team may look for other causes.",
+      "detail": "A narrowing appears as a thinner contrast-filled channel",
+      "hold": 4
+    },
+    {
+      "time": 420.0,
+      "duration": 32.5625,
+      "title": "Deciding the next step",
+      "stage": "result",
+      "voice": "The next step depends on the findings, the symptoms, and whether the situation is urgent. It may be medicines, another test, angioplasty, or a discussion about bypass surgery. Angioplasty uses a balloon and may place a stent to treat a narrowing. In selected cases the team can do that in the same session. Here, the test ends after imaging.",
+      "detail": "Medicines, more tests, angioplasty or bypass review",
+      "hold": 3
+    },
+    {
+      "time": 452.562,
+      "duration": 14.875,
+      "title": "Withdraw the diagnostic catheter",
+      "stage": "catheter_out",
+      "voice": "After the images are complete, the cardiologist withdraws the diagnostic catheter through the sheath. The sheath is still at the access site.",
+      "detail": "The catheter comes out first",
+      "hold": 3
+    },
+    {
+      "time": 467.438,
+      "duration": 12.25,
+      "title": "Remove the sheath and close the site",
+      "stage": "remove",
+      "voice": "For manual closure, the team removes the groin sheath and presses firmly over the entry site to control bleeding.",
+      "detail": "Manual pressure at the groin",
+      "hold": 3
+    },
+    {
+      "time": 479.688,
+      "duration": 17.0,
+      "title": "Closure and groin checks",
+      "stage": "closure",
+      "voice": "In selected cases, the team uses a closure device, such as a plug or stitch system. Staff check the site and leg circulation before the patient gets up.",
+      "detail": "Closure depends on the access site and care plan",
+      "hold": 3
+    },
+    {
+      "time": 496.688,
+      "duration": 30.6875,
+      "title": "Recovery and discharge",
+      "stage": "aftercare",
+      "voice": "Staff check your pulse, blood pressure, groin and leg circulation. You may need to lie flat with the leg straight while the site is monitored. After an uncomplicated planned test, many patients can go home the same day. Ask what the angiogram showed, when you can walk, lift or drive, and whom to contact with questions.",
+      "detail": "Follow the team’s written instructions",
+      "hold": 3
+    },
+    {
+      "time": 527.375,
+      "duration": 21.375,
+      "title": "At home",
+      "stage": "home",
+      "voice": "Follow the written instructions for the dressing, activity, medicines and follow-up. A small bruise or mild soreness can happen. Contact the care team promptly for increasing redness or pain, drainage or fever.",
+      "detail": "Mild bruising can occur. Report worsening symptoms.",
+      "hold": 3
+    },
+    {
+      "time": 548.75,
+      "duration": 20.1875,
+      "title": "When to get emergency help",
+      "stage": "urgent",
+      "voice": "Call local emergency services for heavy bleeding or bleeding that continues despite firm pressure, rapidly growing swelling, a newly cold or numb foot, new chest pressure or sudden shortness of breath.",
+      "detail": "Call local emergency services",
+      "hold": 4
+    },
+    {
+      "time": 568.938,
+      "duration": 22.375,
+      "title": "What the test tells you",
+      "stage": "heart",
+      "voice": "The groin gives the team a route to the heart. The catheter delivers contrast, the X-rays show the coronary arteries, and the images help guide the next decision. Before you go home, make sure you know your result and what to do during recovery.",
+      "detail": "Route, images and the next decision",
+      "hold": 2
+    },
+    {
+      "time": 591.312,
+      "duration": 8.0,
+      "title": "Clinical sources",
+      "stage": "end",
+      "voice": "",
+      "detail": "American Heart Association · SCAI · Guy’s and St Thomas’ NHS",
+      "hold": 8
+    }
+  ]
+}

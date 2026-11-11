@@ -1,0 +1,259 @@
+{
+  "status": "draft_metadata_for_revised_uploads",
+  "chapter_timing": "Whole-second chapter labels floor the scene narration start in the revised Alexander tracks. Match against the final rendered video before upload if its edit adds a lead-in or shifts scene timing.",
+  "media_disclosure": "Original educational animation with simulated angiograms and synthetic English narration.",
+  "episodes": [
+    {
+      "episode": "1A",
+      "route": "radial",
+      "title": "How a Coronary Angiogram Works Through the Wrist | Right Radial Access",
+      "description": "How does a coronary angiogram reach the heart through the right wrist? Episode 1A of the Elysian Biomedical LLP cardiology series follows a diagnostic angiogram through the right radial artery.\n\nSee how a needle and short access wire help place a sheath at the wrist. Follow the diagnostic guidewire and catheter to the aorta, then see how contrast makes the left and right coronary arteries visible on X-ray. The episode also explains how the images inform next steps and what to expect when the team removes the sheath, applies wrist compression and checks recovery.\n\nFor general education. Follow your own care team’s instructions about preparation, recovery and when to get help.\n\nOriginal educational animation with simulated angiograms and synthetic English narration.\n\nChapters\n00:00 Wrist coronary angiography\n00:22 Why the test is done\n00:44 Preparing for the test\n01:08 Finding the wrist artery\n01:28 Needle and short access wire\n02:00 Radial sheath and dilator\n02:21 Diagnostic guidewire and catheter\n02:40 The wrist-to-aorta route\n03:12 Left coronary contrast images\n03:49 Right coronary contrast images\n04:05 What the images show\n04:32 Deciding what comes next\n05:06 Sheath removal and wrist compression\n05:24 Recovery and discharge\n05:49 At home\n06:05 When to get emergency help\n\nSources\nAmerican Heart Association — Coronary angiogram\nhttps://www.heart.org/en/health-topics/heart-attack/diagnosing-a-heart-attack/coronary-angiogram\nSociety for Cardiovascular Angiography & Interventions — Transradial best practices\nhttps://www.scai.org/publications/clinical-documents/scai-expert-consensus-statement-update-best-practices-transradial\nGuy’s and St Thomas’ NHS Foundation Trust — After a coronary angiogram\nhttps://www.guysandstthomas.nhs.uk/health-information/coronary-angiogram/after-coronary-angiogram",
+      "chapters": [
+        {
+          "timestamp": "00:00",
+          "title": "Wrist coronary angiography",
+          "source_scene": "Coronary angiography",
+          "narration_start_sec": 0
+        },
+        {
+          "timestamp": "00:22",
+          "title": "Why the test is done",
+          "source_scene": "Why the test is done",
+          "narration_start_sec": 22.338
+        },
+        {
+          "timestamp": "00:44",
+          "title": "Preparing for the test",
+          "source_scene": "Preparing for the test",
+          "narration_start_sec": 44.489
+        },
+        {
+          "timestamp": "01:08",
+          "title": "Finding the wrist artery",
+          "source_scene": "Find the radial artery",
+          "narration_start_sec": 68.986
+        },
+        {
+          "timestamp": "01:28",
+          "title": "Needle and short access wire",
+          "source_scene": "Access needle",
+          "narration_start_sec": 88.084
+        },
+        {
+          "timestamp": "02:00",
+          "title": "Radial sheath and dilator",
+          "source_scene": "Radial sheath and dilator",
+          "narration_start_sec": 120.07
+        },
+        {
+          "timestamp": "02:21",
+          "title": "Diagnostic guidewire and catheter",
+          "source_scene": "Diagnostic guidewire",
+          "narration_start_sec": 141.119
+        },
+        {
+          "timestamp": "02:40",
+          "title": "The wrist-to-aorta route",
+          "source_scene": "The route to the aorta",
+          "narration_start_sec": 160.228
+        },
+        {
+          "timestamp": "03:12",
+          "title": "Left coronary contrast images",
+          "source_scene": "Left coronary contrast run",
+          "narration_start_sec": 192.814
+        },
+        {
+          "timestamp": "03:49",
+          "title": "Right coronary contrast images",
+          "source_scene": "Right coronary contrast run",
+          "narration_start_sec": 229.641
+        },
+        {
+          "timestamp": "04:05",
+          "title": "What the images show",
+          "source_scene": "Reading the result",
+          "narration_start_sec": 245.687
+        },
+        {
+          "timestamp": "04:32",
+          "title": "Deciding what comes next",
+          "source_scene": "Deciding the next step",
+          "narration_start_sec": 272.076
+        },
+        {
+          "timestamp": "05:06",
+          "title": "Sheath removal and wrist compression",
+          "source_scene": "Remove the sheath and close the site",
+          "narration_start_sec": 306.721
+        },
+        {
+          "timestamp": "05:24",
+          "title": "Recovery and discharge",
+          "source_scene": "Recovery and discharge",
+          "narration_start_sec": 324.995
+        },
+        {
+          "timestamp": "05:49",
+          "title": "At home",
+          "source_scene": "At home",
+          "narration_start_sec": 349.12
+        },
+        {
+          "timestamp": "06:05",
+          "title": "When to get emergency help",
+          "source_scene": "When to get emergency help",
+          "narration_start_sec": 365.305
+        }
+      ],
+      "sources": [
+        {
+          "name": "American Heart Association — Coronary angiogram",
+          "url": "https://www.heart.org/en/health-topics/heart-attack/diagnosing-a-heart-attack/coronary-angiogram"
+        },
+        {
+          "name": "Society for Cardiovascular Angiography & Interventions — Transradial best practices",
+          "url": "https://www.scai.org/publications/clinical-documents/scai-expert-consensus-statement-update-best-practices-transradial"
+        },
+        {
+          "name": "Guy’s and St Thomas’ NHS Foundation Trust — After a coronary angiogram",
+          "url": "https://www.guysandstthomas.nhs.uk/health-information/coronary-angiogram/after-coronary-angiogram"
+        }
+      ],
+      "source_timing_file": "outputs/cardiology-series/episode-01/revision/radial-alexander-scene-timing.json",
+      "source_audio_duration_sec": 395.74
+    },
+    {
+      "episode": "1B",
+      "route": "femoral",
+      "title": "How a Coronary Angiogram Works Through the Groin | Right Femoral Access",
+      "description": "How does a coronary angiogram reach the heart through the right groin? Episode 1B of the Elysian Biomedical LLP cardiology series follows a diagnostic angiogram through the right common femoral artery.\n\nSee how ultrasound helps locate the artery, how a fine needle and wire establish access and how a temporary introducer and wire exchange allow the working sheath to be placed. Follow the diagnostic catheter to the aorta, watch the left and right coronary contrast runs and see how the images inform next steps. The episode also explains groin closure options, recovery checks and aftercare.\n\nFor general education. Follow your own care team’s instructions about preparation, recovery and when to get help.\n\nOriginal educational animation with simulated angiograms and synthetic English narration.\n\nChapters\n00:00 Groin coronary angiography\n00:22 Why the test is done\n00:43 Preparing for the test\n01:06 Finding the common femoral artery\n01:25 Micropuncture needle and fine wire\n01:55 Temporary introducer and wire exchange\n02:25 Working femoral sheath\n02:42 Diagnostic guidewire and catheter\n03:01 The groin-to-aorta route\n03:30 Left coronary contrast images\n03:54 Changing the diagnostic catheter\n04:19 Right coronary contrast images\n04:35 What the images show\n05:02 Deciding what comes next\n05:34 Sheath removal and groin closure\n05:53 Recovery and discharge\n06:15 At home\n06:32 When to get emergency help\n\nSources\nAmerican Heart Association — Coronary angiogram\nhttps://www.heart.org/en/health-topics/heart-attack/diagnosing-a-heart-attack/coronary-angiogram\nSociety for Cardiovascular Angiography & Interventions — Safe femoral access\nhttps://www.scai.org/quality-improvement-tools/qi-tips/safe-femoral-access-using-all-tools-toolbox\nGuy’s and St Thomas’ NHS Foundation Trust — After a coronary angiogram\nhttps://www.guysandstthomas.nhs.uk/health-information/coronary-angiogram/after-coronary-angiogram",
+      "chapters": [
+        {
+          "timestamp": "00:00",
+          "title": "Groin coronary angiography",
+          "source_scene": "Coronary angiography",
+          "narration_start_sec": 0
+        },
+        {
+          "timestamp": "00:22",
+          "title": "Why the test is done",
+          "source_scene": "Why the test is done",
+          "narration_start_sec": 22.222
+        },
+        {
+          "timestamp": "00:43",
+          "title": "Preparing for the test",
+          "source_scene": "Preparing for the test",
+          "narration_start_sec": 43.224
+        },
+        {
+          "timestamp": "01:06",
+          "title": "Finding the common femoral artery",
+          "source_scene": "Find the common femoral artery",
+          "narration_start_sec": 66.503
+        },
+        {
+          "timestamp": "01:25",
+          "title": "Micropuncture needle and fine wire",
+          "source_scene": "Micropuncture needle",
+          "narration_start_sec": 85.311
+        },
+        {
+          "timestamp": "01:55",
+          "title": "Temporary introducer and wire exchange",
+          "source_scene": "Temporary micropuncture introducer",
+          "narration_start_sec": 115.974
+        },
+        {
+          "timestamp": "02:25",
+          "title": "Working femoral sheath",
+          "source_scene": "Advance the working femoral sheath",
+          "narration_start_sec": 145.462
+        },
+        {
+          "timestamp": "02:42",
+          "title": "Diagnostic guidewire and catheter",
+          "source_scene": "Diagnostic guidewire",
+          "narration_start_sec": 162.006
+        },
+        {
+          "timestamp": "03:01",
+          "title": "The groin-to-aorta route",
+          "source_scene": "The route to the aorta",
+          "narration_start_sec": 181.21
+        },
+        {
+          "timestamp": "03:30",
+          "title": "Left coronary contrast images",
+          "source_scene": "Left coronary contrast run",
+          "narration_start_sec": 210.569
+        },
+        {
+          "timestamp": "03:54",
+          "title": "Changing the diagnostic catheter",
+          "source_scene": "Withdraw the left diagnostic catheter",
+          "narration_start_sec": 234.335
+        },
+        {
+          "timestamp": "04:19",
+          "title": "Right coronary contrast images",
+          "source_scene": "Right coronary contrast run",
+          "narration_start_sec": 259.215
+        },
+        {
+          "timestamp": "04:35",
+          "title": "What the images show",
+          "source_scene": "Reading the result",
+          "narration_start_sec": 275.655
+        },
+        {
+          "timestamp": "05:02",
+          "title": "Deciding what comes next",
+          "source_scene": "Deciding the next step",
+          "narration_start_sec": 302.369
+        },
+        {
+          "timestamp": "05:34",
+          "title": "Sheath removal and groin closure",
+          "source_scene": "Remove the sheath and close the site",
+          "narration_start_sec": 334.936
+        },
+        {
+          "timestamp": "05:53",
+          "title": "Recovery and discharge",
+          "source_scene": "Recovery and discharge",
+          "narration_start_sec": 353.001
+        },
+        {
+          "timestamp": "06:15",
+          "title": "At home",
+          "source_scene": "At home",
+          "narration_start_sec": 375.908
+        },
+        {
+          "timestamp": "06:32",
+          "title": "When to get emergency help",
+          "source_scene": "When to get emergency help",
+          "narration_start_sec": 392.173
+        }
+      ],
+      "sources": [
+        {
+          "name": "American Heart Association — Coronary angiogram",
+          "url": "https://www.heart.org/en/health-topics/heart-attack/diagnosing-a-heart-attack/coronary-angiogram"
+        },
+        {
+          "name": "Society for Cardiovascular Angiography & Interventions — Safe femoral access",
+          "url": "https://www.scai.org/quality-improvement-tools/qi-tips/safe-femoral-access-using-all-tools-toolbox"
+        },
+        {
+          "name": "Guy’s and St Thomas’ NHS Foundation Trust — After a coronary angiogram",
+          "url": "https://www.guysandstthomas.nhs.uk/health-information/coronary-angiogram/after-coronary-angiogram"
+        }
+      ],
+      "source_timing_file": "outputs/cardiology-series/episode-01/revision/femoral-alexander-scene-timing.json",
+      "source_audio_duration_sec": 422.54
+    }
+  ]
+}

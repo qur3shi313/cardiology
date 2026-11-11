@@ -1,0 +1,22 @@
+{
+  "video": 5,
+  "episode": "04",
+  "approved_topic": 18,
+  "id": "V7NjFLTYhuE",
+  "title": "How TAVI Works | Aortic Valve Replacement Through the Groin",
+  "url": "https://youtu.be/V7NjFLTYhuE",
+  "scheduled_for": "2026-11-14T18:00:00+05:00",
+  "schedule_clicked_at_utc": "2026-11-11T13:02:33.261Z",
+  "studio_status": "Scheduled",
+  "runtime_seconds": 192.20833333333334,
+  "master": "episode-04/production/delivery/elysian-tavi-tavr.mp4",
+  "sha256": "bfe4a312e1cf0a2536c397a6c0546ef04f11f7a2af7791e9b6755dae5fa4f2b9",
+  "english_caption_cues": 43,
+  "ai_disclosed": true,
+  "youtube_checks": "No issues found",
+  "thumbnail": "episode-04/tavi-youtube-thumbnail.png",
+  "captions": "episode-04/production/delivery/elysian-tavi-tavr.en.srt",
+  "description": "episode-04/production/delivery/youtube-description.txt",
+  "canva_saved_complete_master_as_single_timeline_clip": true,
+  "verified_at_utc": "2026-11-11T13:03:38.327862+00:00"
+}

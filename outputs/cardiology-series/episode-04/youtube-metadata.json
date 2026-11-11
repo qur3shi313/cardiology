@@ -1,0 +1,23 @@
+{
+  "episode": "04",
+  "video": 5,
+  "title": "How TAVI Works | Aortic Valve Replacement Through the Groin",
+  "thumbnail": "tavi-youtube-thumbnail.png",
+  "thumbnail_alt": "Elysian Biomedical LLP thumbnail reading ‘TAVI’ and ‘A new aortic valve’, next to a three-quarter illustration of an expanded silver valve frame with three open ivory tissue leaflets.",
+  "chapter_status": "verified_against_master_timing_and_applied",
+  "final_description_file": "production/delivery/youtube-description.txt",
+  "description": "How does a new heart valve reach the aortic valve through an artery in the groin? Video 5 of Elysian Biomedical LLP’s Cardiology Education Series follows one example of transcatheter aortic valve implantation (TAVI), also called transcatheter aortic valve replacement (TAVR).\n\nSee why aortic stenosis narrows the valve, how the Heart Team assesses treatment options, and how a balloon-expandable tissue valve opens inside the original valve. The animation also shows what the team checks after placement and what to expect during recovery and follow-up.\n\nFor general education. Your own care team can explain the treatment and discharge plan that apply to you. Original educational animation with simulated medical imaging and synthetic English narration.\n\nClinical sources\nAmerican Heart Association — What is TAVR (TAVI)?\nhttps://www.heart.org/en/health-topics/heart-valve-problems-and-disease/understanding-your-heart-valve-treatment-options/what-is-tavr\nGuy’s and St Thomas’ NHS Foundation Trust — TAVI procedure\nhttps://www.guysandstthomas.nhs.uk/health-information/tavi-aortic-stenosis/tavi-procedure\nGuy’s and St Thomas’ NHS Foundation Trust — Recovery from a TAVI\nhttps://www.guysandstthomas.nhs.uk/health-information/tavi-aortic-stenosis/recovery-tavi\nESC/EACTS — 2025 guideline for the management of valvular heart disease\nhttps://academic.oup.com/eurheartj/article/46/44/4635/8234488\nFDA-hosted patient booklet for a balloon-expandable valve — Procedure and recovery, pages 10–14\nhttps://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S182C.pdf\nACC/AHA — Guideline for valvular heart disease\nhttps://professional.heart.org/en/science-news/2020-acc-aha-guideline-for-the-management-of-patients-with-valvular-heart-disease/top-things-to-know\nSCAI — TAVR delivery route\nhttps://www.scai.org/quality-improvement-tools/qi-tips/how-deliver-transcatheter-aortic-valve-replacement-tavr-delivery",
+  "chapter_titles": {
+    "P01": "TAVI and the aortic valve",
+    "P02": "Why the valve narrows",
+    "P03": "How the Heart Team decides",
+    "P04": "The route from groin to valve",
+    "P05": "How the new valve travels",
+    "P06": "Opening the new valve",
+    "P07": "Checking the result",
+    "P08": "Recovery in hospital",
+    "P09": "Going home",
+    "P10": "When to get emergency help",
+    "P11": "What TAVI changes"
+  }
+}

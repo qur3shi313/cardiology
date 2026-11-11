@@ -1,0 +1,29 @@
+[
+  {
+    "scene": 10,
+    "start_frame": 4234,
+    "end_frame": 4582,
+    "frames": 348,
+    "timeline_start_sec": 141.119,
+    "timeline_end_sec": 152.728,
+    "file": "R10-diagnostic-guidewire.mp4"
+  },
+  {
+    "scene": 11,
+    "start_frame": 4582,
+    "end_frame": 4807,
+    "frames": 225,
+    "timeline_start_sec": 152.728,
+    "timeline_end_sec": 160.228,
+    "file": "R11-diagnostic-catheter.mp4"
+  },
+  {
+    "scene": 12,
+    "start_frame": 4807,
+    "end_frame": 5429,
+    "frames": 622,
+    "timeline_start_sec": 160.228,
+    "timeline_end_sec": 180.96,
+    "file": "R12-wrist-to-aorta.mp4"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "channel": "Elysian Biomedical LLP",
+  "channel_id": "UCEJkz6_una0fWFDmIUVQmfg",
+  "verified_public_at_utc": "2026-11-11T09:46:02.384Z",
+  "timestamp_note": "The publish timestamps are the observed Studio actions. The Studio dates and Public labels were confirmed in the channel content list.",
+  "original_uploads_modified_in_this_pass": false,
+  "videos": [
+    {
+      "episode": "1A",
+      "route": "radial",
+      "title": "How a Coronary Angiogram Works Through the Wrist | Right Radial Access",
+      "id": "YIw1bSATJqY",
+      "url": "https://youtu.be/YIw1bSATJqY",
+      "file": "elysian-angiography-radial-revised.mp4",
+      "sha256": "6d56955e6b685b4e295fc62d7bf995c1aa9297ec60c64ec1507cb8269c1a084e",
+      "duration_seconds": 402.73,
+      "publish_clicked_at_utc": "2026-11-11T09:44:03.168Z",
+      "visibility": "public",
+      "english_subtitles_published": true,
+      "ai_disclosure": true,
+      "youtube_checks": "No issues found"
+    },
+    {
+      "episode": "1B",
+      "route": "femoral",
+      "title": "How a Coronary Angiogram Works Through the Groin | Right Femoral Access",
+      "id": "sFbJGjFIuHo",
+      "url": "https://youtu.be/sFbJGjFIuHo",
+      "file": "elysian-angiography-femoral-revised.mp4",
+      "sha256": "c5f48d35002c26df0b99610e2101a942ef43efc7f305a786d2894b28318b7da1",
+      "duration_seconds": 429.53,
+      "publish_clicked_at_utc": "2026-11-11T09:44:49.592Z",
+      "visibility": "public",
+      "english_subtitles_published": true,
+      "ai_disclosure": true,
+      "youtube_checks": "No issues found"
+    }
+  ]
+}

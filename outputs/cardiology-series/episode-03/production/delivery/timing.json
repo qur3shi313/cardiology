@@ -1,0 +1,67 @@
+{
+  "voice_seconds": 178.36,
+  "video_seconds": 186.375,
+  "alignment_score": 1.0,
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "Coronary drug-coated balloons",
+      "start_seconds": 0.0,
+      "end_seconds": 15.208333333333334
+    },
+    {
+      "id": "P02",
+      "title": "Why a stented artery can narrow",
+      "start_seconds": 15.208333333333334,
+      "end_seconds": 36.25
+    },
+    {
+      "id": "P03",
+      "title": "Imaging and the guidewire",
+      "start_seconds": 36.25,
+      "end_seconds": 57.041666666666664
+    },
+    {
+      "id": "P04",
+      "title": "Preparing the narrowed segment",
+      "start_seconds": 57.041666666666664,
+      "end_seconds": 79.29166666666667
+    },
+    {
+      "id": "P05",
+      "title": "How the coating delivers medicine",
+      "start_seconds": 79.29166666666667,
+      "end_seconds": 101.54166666666667
+    },
+    {
+      "id": "P06",
+      "title": "Balloon out and final check",
+      "start_seconds": 101.54166666666667,
+      "end_seconds": 120.25
+    },
+    {
+      "id": "P07",
+      "title": "Where drug-coated balloons are used",
+      "start_seconds": 120.25,
+      "end_seconds": 144.5
+    },
+    {
+      "id": "P08",
+      "title": "Recovery and the medicine plan",
+      "start_seconds": 144.5,
+      "end_seconds": 166.375
+    },
+    {
+      "id": "P09",
+      "title": "What stays in the artery",
+      "start_seconds": 166.375,
+      "end_seconds": 178.375
+    },
+    {
+      "id": "P10",
+      "title": "Clinical sources",
+      "start_seconds": 178.375,
+      "end_seconds": 186.375
+    }
+  ]
+}

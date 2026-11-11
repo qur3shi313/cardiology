@@ -1,0 +1,128 @@
+{
+  "status": "verified_silent_visual_assets",
+  "total_duration_sec": 223.0,
+  "clips": [
+    {
+      "id": "P01",
+      "file": "visuals/P01.mp4",
+      "duration_sec": 20.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "ba1646cd722ca0e70b45c6b5dfe0f3489dfc5167ac29aa41b3489c0c19cf6c34",
+      "full_decode": "passed"
+    },
+    {
+      "id": "P02",
+      "file": "visuals/P02.mp4",
+      "duration_sec": 27.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "3345fecf0ab58430f12d32e869e720f064ee419dbc6e0b7ffef6ffc5f3a8fc6a",
+      "full_decode": "passed"
+    },
+    {
+      "id": "P03",
+      "file": "visuals/P03.mp4",
+      "duration_sec": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "a1bfe3254032fcd56208f5c988bea53c90f1e4921247249cd01be739ef4a507f",
+      "full_decode": "passed"
+    },
+    {
+      "id": "P04",
+      "file": "visuals/P04.mp4",
+      "duration_sec": 24.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "ff97ebcb39f28f3d1df053ef0e249912cf669e505cf203743a808a69dd5d348b",
+      "full_decode": "passed"
+    },
+    {
+      "id": "P05",
+      "file": "visuals/P05.mp4",
+      "duration_sec": 26.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "d8fc473956ae0c44540e2cf1cb9c670d58bf5de49d4e9e2d40504545cb4e0f14",
+      "full_decode": "passed"
+    },
+    {
+      "id": "P06",
+      "file": "visuals/P06.mp4",
+      "duration_sec": 23.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "2f1c29243e22085ea707f5e5e1fa95db54b976f093239f1d0993555278115653",
+      "full_decode": "passed"
+    },
+    {
+      "id": "P07",
+      "file": "visuals/P07.mp4",
+      "duration_sec": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "784866154f620f2d0bd8797ab4bf63090dca314045c11f01e5b45243db807ff1",
+      "full_decode": "passed"
+    },
+    {
+      "id": "P08",
+      "file": "visuals/P08.mp4",
+      "duration_sec": 27.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "3fffc61de025ba67a89b3e967ad7c74b07a2ed0cdfbf8e61cbea0c5b461d043d",
+      "full_decode": "passed"
+    },
+    {
+      "id": "P09",
+      "file": "visuals/P09.mp4",
+      "duration_sec": 18.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "122f48a89bd38d929c6f5eca888e37b2f1e1b24e77e17ed9c5866ea26d2110d8",
+      "full_decode": "passed"
+    },
+    {
+      "id": "P10",
+      "file": "visuals/P10.mp4",
+      "duration_sec": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "codec": "h264",
+      "audio_streams": 0,
+      "sha256": "73a3616f982fbb97e2be3ea5f9ce053a1edfee930d35c138f3567ca4b8e2536c",
+      "full_decode": "passed"
+    }
+  ],
+  "contact_sheet": "visual-contact-sheet.jpg",
+  "contact_sheet_sample_count": 15
+}

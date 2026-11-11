@@ -1,0 +1,110 @@
+[
+  {
+    "id": "P01",
+    "title": "Transcatheter aortic valve implantation",
+    "narration": "When the aortic valve becomes severely narrowed, it can be hard for the heart to pump blood out to the body. Transcatheter aortic valve implantation, called TAVI or TAVR, places a new valve inside the old one.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 18,
+    "visual_direction": "Open on a whole-heart cutaway. Trace forward flow from the left ventricle into the aorta, then bring the camera to the aortic valve. Hold the original narrowed valve on screen under the episode title."
+  },
+  {
+    "id": "P02",
+    "title": "Why the valve narrows",
+    "narration": "The aortic valve sits between the heart’s main pumping chamber and the aorta, the large artery that carries blood to the body. Calcium can stiffen the valve’s flaps so they open less. This is aortic stenosis. It can cause breathlessness, chest discomfort or fainting.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 18,
+    "target_end_sec": 42,
+    "visual_direction": "Compare the same three-leaflet anatomy with a healthy valve in a small reference inset. Animate one complete heartbeat. In the main example, show pale deposits on the valve flaps, a smaller opening during the pumping phase and a narrower forward-flow stream."
+  },
+  {
+    "id": "P03",
+    "title": "How the heart team decides",
+    "narration": "A heart ultrasound, called an echo, shows how tightly the valve is narrowed. A CT scan helps the team plan where a new valve could fit and how to reach it. The heart team reviews your symptoms, anatomy, overall health and preferences with you. Surgical valve replacement may be a better option for some people.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 42,
+    "target_end_sec": 69,
+    "visual_direction": "Use an illustrated echo to identify the narrowed valve, then a CT-style aortic-root and pelvic artery map. End with a patient, cardiologist and heart surgeon discussing the catheter and surgical options. Give the choices equal visual weight."
+  },
+  {
+    "id": "P04",
+    "title": "The route from groin to valve",
+    "narration": "In this example, the team reaches the valve through the femoral artery in the groin. A guidewire travels through the arteries in the pelvis, up the aorta and across the narrowed valve into the heart’s pumping chamber. Live X-rays help guide the equipment.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 69,
+    "target_end_sec": 90,
+    "visual_direction": "Show right common femoral arterial access above the division. Animate the wire through the right external and common iliac arteries, abdominal aorta, descending thoracic aorta, arch and ascending aorta, then through the aortic valve into the left ventricle. Keep the sheath at the groin and the wire inside the arterial path. Use a separate inset labelled Simulated X-ray."
+  },
+  {
+    "id": "P05",
+    "title": "How the new valve travels",
+    "narration": "The new valve has tissue flaps held in a metal frame. Here, it is compressed around a folded balloon on the end of a delivery catheter. The catheter follows the guidewire to the opening of the old valve.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 90,
+    "target_end_sec": 110,
+    "visual_direction": "Show an enlarged view of the three tissue leaflets inside the metal frame, then the compressed valve on its folded delivery balloon with the guidewire through the catheter. Advance the assembled delivery system over the parked wire and stop at the native valve opening."
+  },
+  {
+    "id": "P06",
+    "title": "Opening the new valve",
+    "narration": "Once the valve is in position, the balloon inflates and opens the metal frame. The frame pushes the old flaps aside. The team deflates and removes the balloon and catheter. The new valve stays in place, and its tissue flaps now open and close with each heartbeat.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 110,
+    "target_end_sec": 134,
+    "visual_direction": "Hold the same cutaway camera. Animate the balloon and frame widening together at the native aortic annulus. Show the old flaps and calcium held outside the frame. Deflate the balloon first, then withdraw the delivery system. Clear the guidewire before the leaflet-motion close-up. Show the new leaflets opening during pumping and closing between beats."
+  },
+  {
+    "id": "P07",
+    "title": "Checking the result",
+    "narration": "The team uses heart imaging to check how well blood flows through the new valve and whether blood leaks around it. They also check the heart rhythm and close the opening in the groin artery when the equipment comes out.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 134,
+    "target_end_sec": 151,
+    "visual_direction": "Show the valve in place with the original landmarks, an illustrated echo check and a simple rhythm trace. Then cut to the groin for device withdrawal and a closed access-site dressing. Keep the implanted valve visible in a small heart locator."
+  },
+  {
+    "id": "P08",
+    "title": "Recovery in hospital",
+    "narration": "In recovery, staff check your heart rhythm and groin site. Risks include bleeding, injury to a blood vessel, stroke, and changes in heart rhythm. Some people need a pacemaker. How long you stay in hospital depends on your recovery.",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 151,
+    "target_end_sec": 172,
+    "visual_direction": "Show a bedside nurse checking the groin dressing and a separate heart-rhythm monitor. Briefly explain that a pacemaker may be needed using a small labelled icon. Keep vital signs and personal details off screen."
+  },
+  {
+    "id": "P09",
+    "title": "Going home",
+    "narration": "Before going home, ask for written instructions on medicines, wound care, activity, driving and follow-up. Mild groin bruising or soreness can happen. Call your care team if the site becomes more red or painful, starts draining, or you develop a fever.",
+    "visual_file": "visuals/P09.mp4",
+    "target_start_sec": 172,
+    "target_end_sec": 189,
+    "visual_direction": "Use a sample discharge sheet with large labels and a groin-dressing illustration. Hold a separate, calm contact-your-team card during the fever and wound symptoms. Keep the contact wording location-neutral."
+  },
+  {
+    "id": "P10",
+    "title": "When to get emergency help",
+    "narration": "Call your local emergency number for heavy bleeding or bleeding that won’t stop, severe chest pain, sudden trouble breathing, or signs of stroke. These include sudden face drooping, arm weakness or trouble speaking.",
+    "visual_file": "visuals/P10.mp4",
+    "target_start_sec": 189,
+    "target_end_sec": 206,
+    "visual_direction": "Use a high-contrast emergency card in two beats. First show bleeding, severe chest pain and sudden breathing trouble. Then hold the three stroke signs with simple icons. Keep the emergency action visible in both beats."
+  },
+  {
+    "id": "P11",
+    "title": "What TAVI changes",
+    "narration": "TAVI gives the heart a new valve for blood to flow through. Keep your follow-up appointments so the team can check how it’s working.",
+    "visual_file": "visuals/P11.mp4",
+    "target_start_sec": 206,
+    "target_end_sec": 218,
+    "visual_direction": "Return to the implanted valve and animate one heartbeat in the same aortic cutaway. Pull back to the whole heart, then show a follow-up appointment and an echo icon."
+  },
+  {
+    "id": "P12",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P12.mp4",
+    "target_start_sec": 218,
+    "target_end_sec": 226,
+    "visual_direction": "Hold a simple sources and production card for eight seconds. Use the authentic Elysian logo, accessible abbreviated source names and the verified voice and animation disclosure from the final edit."
+  }
+]

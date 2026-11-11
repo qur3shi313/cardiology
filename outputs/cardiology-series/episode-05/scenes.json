@@ -1,0 +1,110 @@
+[
+  {
+    "id": "P01",
+    "title": "Wrist vs groin access",
+    "narration": "For a coronary angiogram, the team may go through your wrist or your groin. Both routes reach the arteries that supply your heart. The choice can affect your recovery.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 15,
+    "visual_direction": "Open with equal-sized wrist and groin views on a front-facing outline. Use the same heart target and a short animated arterial highlight in each panel. Label the patient's right side in both examples."
+  },
+  {
+    "id": "P02",
+    "title": "Two routes to the heart",
+    "narration": "Wrist access enters the radial artery on the thumb side. Groin access enters the common femoral artery at the top of the thigh. The team numbs the skin and guides a thin tube called a catheter through the arteries to the heart.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 15,
+    "target_end_sec": 34,
+    "visual_direction": "Show a right palm-up wrist close-up and a right groin cutaway above the femoral artery's division. Animate each catheter inside its artery and end at the same aortic root. Use one active instrument per route and label the entry artery."
+  },
+  {
+    "id": "P03",
+    "title": "An angiogram or a treatment",
+    "narration": "An angiogram uses contrast and X-rays to show narrowings. Percutaneous coronary intervention, or PCI, is a catheter-based treatment. The team may use a balloon or a stent to treat a narrowing. Either route can be used for the test or treatment. Wrist access is common for a planned angiogram when suitable.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 34,
+    "target_end_sec": 53,
+    "visual_direction": "Hold a simulated coronary X-ray with the distal vessel visible. Move to a separate cutaway that shows a balloon opening one short narrowing, then return to the route selector. Label the test and the treatment as separate clinical steps."
+  },
+  {
+    "id": "P04",
+    "title": "Why the wrist is often chosen",
+    "narration": "For PCI during a heart attack or another acute coronary syndrome, guidelines prefer the wrist when feasible. In that group it lowers the risk of bleeding and blood-vessel complications. The US guideline also reports a lower risk of death. For PCI in stable coronary disease, wrist access helps reduce bleeding and vessel problems at the entry site.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 53,
+    "target_end_sec": 83,
+    "visual_direction": "Present two clinical situations in sequence with distinct headings. Use the same wrist close-up in both. Show the mortality finding as a short subtitle only during the acute coronary syndrome and PCI beat. Use no percentages, rankings or personal risk figures."
+  },
+  {
+    "id": "P05",
+    "title": "When the groin may be chosen",
+    "narration": "The groin artery can fit larger equipment, including some devices that help the heart pump in emergencies. The team may also use it if the wrist artery is small or hard to pass through. Previous bypass surgery or plans to use a wrist artery for bypass can affect the choice.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 83,
+    "target_end_sec": 108,
+    "visual_direction": "Compare wrist and groin vessel size schematically without a scale. Use three simple beats for equipment needs, arterial anatomy and bypass history. For the equipment example, use an unlabeled larger sheath and a small heart-support icon. Illustrate a bypass graft as a separate consideration."
+  },
+  {
+    "id": "P06",
+    "title": "If the team changes route",
+    "narration": "Sometimes a wrist artery tightens around the catheter or the path is difficult to navigate. The team may switch to the other wrist or to the groin. If two sites were used, staff check both and explain how to look after them.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 108,
+    "target_end_sec": 126,
+    "visual_direction": "Show the first catheter pausing, then use a clean scene cut to an alternate wrist or groin location. Keep each access site identifiable. Finish on a bedside check of the two sites in this illustrative example."
+  },
+  {
+    "id": "P07",
+    "title": "Closing the access site",
+    "narration": "At the wrist, staff usually use a pressure band. They gradually ease the pressure while checking the site and your hand. At the groin, they may press by hand or use a closure device, such as a plug or stitch. They check for bleeding with either route.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 126,
+    "target_end_sec": 150,
+    "visual_direction": "Hold the wrist band centered over the radial puncture. Then show gloved hands applying firm pressure at the groin. Present a closure-device example on a separate optional card using a simple stitch illustration outside the vessel lumen. Check both limb and puncture-site landmarks."
+  },
+  {
+    "id": "P08",
+    "title": "Getting up after the procedure",
+    "narration": "After wrist access you can often sit up sooner. After groin access you may need to lie flat with your leg straight. When you can walk depends on how the site was closed, the medicines you received and how you’re doing. Wait for staff to tell you it’s safe.",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 150,
+    "target_end_sec": 171,
+    "visual_direction": "Use a quiet bedside comparison. Keep the wrist band visible on a supported arm while the patient sits. Show the groin-access patient flat with the leg straight, then briefly show the nurse signaling when movement is safe. Use no recovery clock or fixed walking time."
+  },
+  {
+    "id": "P09",
+    "title": "Going home",
+    "narration": "Some people go home the same day after a straightforward planned angiogram. After a heart attack or if you need more monitoring, you may stay longer. Ask for written instructions on your dressing, medicines, lifting, driving and work, and whom to call with concerns.",
+    "visual_file": "visuals/P09.mp4",
+    "target_start_sec": 171,
+    "target_end_sec": 192,
+    "visual_direction": "Show an example discharge sheet with large labels for the dressing, medicines, activity and the care team's contact information. Show a ride home as a planning cue. Keep personal details, doses and fixed timelines off screen."
+  },
+  {
+    "id": "P10",
+    "title": "When to contact your care team",
+    "narration": "A small bruise and mild soreness at either site can happen. Contact your care team promptly if pain, redness or swelling increases, if fluid drains from the site, or if you develop a fever.",
+    "visual_file": "visuals/P10.mp4",
+    "target_start_sec": 192,
+    "target_end_sec": 207,
+    "visual_direction": "Show a small, subtle bruise at the wrist and groin, then transition to a calm contact-your-team card. Use icons and plain labels for worsening symptoms, drainage and fever. Use several skin tones without treating colour alone as the cue."
+  },
+  {
+    "id": "P11",
+    "title": "When to get emergency help",
+    "narration": "If the site starts bleeding, apply firm pressure. Call your local emergency number for heavy bleeding, bleeding that won’t stop with pressure, or a swelling that grows quickly. Get emergency help if the hand or foot on that side suddenly becomes cold, pale or numb, or if you have severe chest pain or sudden trouble breathing.",
+    "visual_file": "visuals/P11.mp4",
+    "target_start_sec": 207,
+    "target_end_sec": 230,
+    "visual_direction": "Keep the emergency action on screen across two beats. First show access-site bleeding or fast swelling, with a non-graphic pressure cue. Then show the affected hand or foot and a chest or breathing icon. Use a location-neutral call instruction and large type."
+  },
+  {
+    "id": "P12",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P12.mp4",
+    "target_start_sec": 230,
+    "target_end_sec": 238,
+    "visual_direction": "Hold the sources card for eight seconds. Use the authentic Elysian logo, short official source names and the verified production and narration credits from the final edit. Use the video description for full citations and links to the two angiogram episodes."
+  }
+]

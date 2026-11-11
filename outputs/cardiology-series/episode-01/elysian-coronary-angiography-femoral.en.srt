@@ -1,0 +1,503 @@
+1
+00:00:00,480 --> 00:00:05,851
+A coronary angiogram answers a question: is there a narrowing or
+
+2
+00:00:05,851 --> 00:00:10,246
+blockage in an artery that supplies the heart muscle?
+
+3
+00:00:10,246 --> 00:00:13,664
+In this example, the cardiologist reaches those
+
+4
+00:00:13,664 --> 00:00:16,594
+arteries through the patient’s right groin.
+
+5
+00:00:16,594 --> 00:00:21,966
+We’ll follow the instruments to the heart, see how contrast creates
+
+6
+00:00:21,966 --> 00:00:26,360
+the images, and return to the groin for recovery.
+
+7
+00:00:28,855 --> 00:00:33,624
+The heart muscle gets its blood supply from the coronary arteries.
+
+8
+00:00:33,624 --> 00:00:36,658
+Plaque can build up in an artery
+
+9
+00:00:36,658 --> 00:00:39,260
+wall and make the channel narrower.
+
+10
+00:00:39,260 --> 00:00:42,294
+An angiogram may be planned after a
+
+11
+00:00:42,294 --> 00:00:44,895
+review of symptoms and other tests.
+
+12
+00:00:44,895 --> 00:00:49,664
+In some suspected heart attacks, the team may need an urgent
+
+13
+00:00:49,664 --> 00:00:53,566
+angiogram and may go on to treat the artery.
+
+14
+00:00:56,105 --> 00:01:01,845
+For a planned angiogram, your team explains the test and reviews
+
+15
+00:01:01,845 --> 00:01:07,063
+your medicines, kidney health and any previous reaction to contrast.
+
+16
+00:01:07,063 --> 00:01:11,237
+Follow their instructions about food, drink and medicines.
+
+17
+00:01:11,237 --> 00:01:14,368
+In the cath lab, staff monitor
+
+18
+00:01:14,368 --> 00:01:17,498
+your heart rhythm and blood pressure.
+
+19
+00:01:17,498 --> 00:01:19,586
+You are usually awake.
+
+20
+00:01:19,586 --> 00:01:25,325
+The team can give medicine to help you relax if needed.
+
+21
+00:01:27,855 --> 00:01:32,595
+The common femoral artery runs beneath the skin in the upper
+
+22
+00:01:32,595 --> 00:01:34,318
+thigh near the groin.
+
+23
+00:01:34,318 --> 00:01:37,765
+Here the team uses ultrasound to identify it.
+
+24
+00:01:37,765 --> 00:01:40,781
+The skin is cleaned and the area
+
+25
+00:01:40,781 --> 00:01:43,367
+is covered with a sterile drape.
+
+26
+00:01:43,367 --> 00:01:48,106
+Local anaesthetic numbs the spot where the artery will be entered.
+
+27
+00:01:51,605 --> 00:01:56,994
+After numbing the site, the cardiologist uses a fine access needle
+
+28
+00:01:56,994 --> 00:02:00,913
+to enter the common femoral artery under ultrasound.
+
+29
+00:02:00,913 --> 00:02:04,832
+The needle tip is shown inside the artery.
+
+30
+00:02:08,355 --> 00:02:12,568
+A fine access wire passes through the hollow needle.
+
+31
+00:02:12,568 --> 00:02:15,844
+X-ray helps the team confirm that the
+
+32
+00:02:15,844 --> 00:02:18,653
+wire follows the main iliac artery.
+
+33
+00:02:22,168 --> 00:02:25,700
+The needle slides back out over the wire.
+
+34
+00:02:25,700 --> 00:02:28,791
+Watch how the wire stays in the
+
+35
+00:02:28,791 --> 00:02:31,441
+artery and preserves the entry path.
+
+36
+00:02:34,980 --> 00:02:40,438
+The team passes a temporary micropuncture introducer with its inner dilator
+
+37
+00:02:40,438 --> 00:02:42,423
+over the fine wire.
+
+38
+00:02:45,918 --> 00:02:50,116
+The fine wire and inner dilator are taken out.
+
+39
+00:02:50,116 --> 00:02:53,381
+The outer introducer stays in the artery
+
+40
+00:02:53,381 --> 00:02:56,180
+so the team can exchange wires.
+
+41
+00:02:59,668 --> 00:03:03,124
+A larger exchange wire goes through the
+
+42
+00:03:03,124 --> 00:03:06,086
+temporary introducer and into the artery.
+
+43
+00:03:09,605 --> 00:03:14,749
+The temporary introducer comes out over the exchange wire.
+
+44
+00:03:14,749 --> 00:03:18,178
+The exchange wire stays in place.
+
+45
+00:03:21,668 --> 00:03:24,830
+The working femoral sheath and its dilator
+
+46
+00:03:24,830 --> 00:03:27,541
+slide in over the exchange wire.
+
+47
+00:03:31,042 --> 00:03:35,017
+The team removes the exchange wire and the dilator.
+
+48
+00:03:35,017 --> 00:03:38,109
+The working sheath stays at the groin.
+
+49
+00:03:38,109 --> 00:03:41,200
+The team can take a separate groin
+
+50
+00:03:41,200 --> 00:03:43,850
+image to check the entry site.
+
+51
+00:03:47,355 --> 00:03:52,223
+A longer diagnostic guidewire passes through the sheath.
+
+52
+00:03:52,223 --> 00:03:56,482
+Live X-ray, called fluoroscopy, lets the cardiologist
+
+53
+00:03:56,482 --> 00:04:00,133
+see where the wire is going.
+
+54
+00:04:03,668 --> 00:04:07,907
+The diagnostic catheter advances over the long guidewire.
+
+55
+00:04:07,907 --> 00:04:13,206
+The short sheath remains where the team entered the artery.
+
+56
+00:04:16,730 --> 00:04:21,766
+The wire and catheter travel through the right external and common
+
+57
+00:04:21,766 --> 00:04:25,886
+iliac arteries, then up the abdominal and chest aorta.
+
+58
+00:04:25,886 --> 00:04:30,922
+They round the aortic arch toward the aortic root, where the
+
+59
+00:04:30,922 --> 00:04:34,127
+coronary arteries begin above the aortic valve.
+
+60
+00:04:39,668 --> 00:04:42,522
+At the aortic root, the long
+
+61
+00:04:42,522 --> 00:04:45,377
+guidewire is withdrawn from the catheter.
+
+62
+00:04:45,377 --> 00:04:50,611
+Here the curved catheter tip is positioned at the left coronary
+
+63
+00:04:50,611 --> 00:04:52,990
+opening, above the aortic valve.
+
+64
+00:04:57,480 --> 00:05:01,678
+The cardiologist injects X-ray contrast through the diagnostic catheter.
+
+65
+00:05:01,678 --> 00:05:06,809
+For a moment, it outlines the channel that blood travels through.
+
+66
+00:05:06,809 --> 00:05:11,940
+Watch the left main artery fill and then see two of
+
+67
+00:05:11,940 --> 00:05:14,738
+its main branches come into view.
+
+68
+00:05:14,738 --> 00:05:18,936
+Now look at the same moment on the X-ray.
+
+69
+00:05:18,936 --> 00:05:23,601
+The dark branching lines show where the contrast is flowing.
+
+70
+00:05:29,105 --> 00:05:32,329
+In this groin example, the team uses
+
+71
+00:05:32,329 --> 00:05:35,552
+a different catheter for the right artery.
+
+72
+00:05:35,552 --> 00:05:38,315
+The left catheter moves back from
+
+73
+00:05:38,315 --> 00:05:41,079
+the coronary opening and is withdrawn.
+
+74
+00:05:41,079 --> 00:05:44,302
+The working sheath stays at the groin.
+
+75
+00:05:47,792 --> 00:05:52,936
+The right diagnostic catheter follows a guidewire up through the aorta.
+
+76
+00:05:52,936 --> 00:05:58,080
+The team withdraws the wire and positions the catheter tip at
+
+77
+00:05:58,080 --> 00:05:59,950
+the right coronary opening.
+
+78
+00:06:03,480 --> 00:06:08,507
+The cardiologist injects contrast separately at the right coronary opening.
+
+79
+00:06:08,507 --> 00:06:14,036
+The right coronary artery and its branches briefly appear on X-ray.
+
+80
+00:06:14,036 --> 00:06:19,566
+The imaging arm can move around the patient to record the
+
+81
+00:06:19,566 --> 00:06:21,577
+arteries from different angles.
+
+82
+00:06:27,105 --> 00:06:29,989
+On this example image, the contrast-filled
+
+83
+00:06:29,989 --> 00:06:32,873
+channel is thinner at one spot.
+
+84
+00:06:32,873 --> 00:06:38,160
+Another angle helps the cardiologist check where the narrowing is and
+
+85
+00:06:38,160 --> 00:06:40,083
+how severe it looks.
+
+86
+00:06:40,083 --> 00:06:45,370
+Sometimes a pressure measurement or imaging from inside the artery helps
+
+87
+00:06:45,370 --> 00:06:48,254
+answer what the angiogram alone cannot.
+
+88
+00:06:48,254 --> 00:06:53,542
+If no major blockage is visible and symptoms persist, the team
+
+89
+00:06:53,542 --> 00:06:55,945
+may look for other causes.
+
+90
+00:07:00,480 --> 00:07:05,896
+The next step depends on the findings, the symptoms, and whether
+
+91
+00:07:05,896 --> 00:07:07,866
+the situation is urgent.
+
+92
+00:07:07,866 --> 00:07:11,312
+It may be medicines, another test, angioplasty,
+
+93
+00:07:11,312 --> 00:07:14,266
+or a discussion about bypass surgery.
+
+94
+00:07:14,266 --> 00:07:17,713
+Angioplasty uses a balloon and may place
+
+95
+00:07:17,713 --> 00:07:20,667
+a stent to treat a narrowing.
+
+96
+00:07:20,667 --> 00:07:23,622
+In selected cases the team can
+
+97
+00:07:23,622 --> 00:07:26,576
+do that in the same session.
+
+98
+00:07:26,576 --> 00:07:29,530
+Here, the test ends after imaging.
+
+99
+00:07:33,042 --> 00:07:36,652
+After the images are complete, the cardiologist
+
+100
+00:07:36,652 --> 00:07:40,261
+withdraws the diagnostic catheter through the sheath.
+
+101
+00:07:40,261 --> 00:07:44,385
+The sheath is still at the access site.
+
+102
+00:07:47,918 --> 00:07:52,988
+For manual closure, the team removes the groin sheath and presses
+
+103
+00:07:52,988 --> 00:07:56,676
+firmly over the entry site to control bleeding.
+
+104
+00:08:00,168 --> 00:08:05,474
+In selected cases, the team uses a closure device, such as
+
+105
+00:08:05,474 --> 00:08:07,886
+a plug or stitch system.
+
+106
+00:08:07,886 --> 00:08:10,781
+Staff check the site and leg
+
+107
+00:08:10,781 --> 00:08:13,675
+circulation before the patient gets up.
+
+108
+00:08:17,168 --> 00:08:22,018
+Staff check your pulse, blood pressure, groin and leg circulation.
+
+109
+00:08:22,018 --> 00:08:27,353
+You may need to lie flat with the leg straight while
+
+110
+00:08:27,353 --> 00:08:29,293
+the site is monitored.
+
+111
+00:08:29,293 --> 00:08:32,688
+After an uncomplicated planned test, many patients
+
+112
+00:08:32,688 --> 00:08:35,598
+can go home the same day.
+
+113
+00:08:35,598 --> 00:08:40,933
+Ask what the angiogram showed, when you can walk, lift or
+
+114
+00:08:40,933 --> 00:08:44,328
+drive, and whom to contact with questions.
+
+115
+00:08:47,855 --> 00:08:53,997
+Follow the written instructions for the dressing, activity, medicines and follow-up.
+
+116
+00:08:53,997 --> 00:08:58,464
+A small bruise or mild soreness can happen.
+
+117
+00:08:58,464 --> 00:09:02,372
+Contact the care team promptly for increasing
+
+118
+00:09:02,372 --> 00:09:05,722
+redness or pain, drainage or fever.
+
+119
+00:09:09,230 --> 00:09:14,802
+Call local emergency services for heavy bleeding or bleeding that continues
+
+120
+00:09:14,802 --> 00:09:20,373
+despite firm pressure, rapidly growing swelling, a newly cold or numb
+
+121
+00:09:20,373 --> 00:09:24,932
+foot, new chest pressure or sudden shortness of breath.
+
+122
+00:09:29,418 --> 00:09:33,926
+The groin gives the team a route to the heart.
+
+123
+00:09:33,926 --> 00:09:38,885
+The catheter delivers contrast, the X-rays show the coronary arteries, and
+
+124
+00:09:38,885 --> 00:09:42,041
+the images help guide the next decision.
+
+125
+00:09:42,041 --> 00:09:47,000
+Before you go home, make sure you know your result and
+
+126
+00:09:47,000 --> 00:09:49,254
+what to do during recovery.

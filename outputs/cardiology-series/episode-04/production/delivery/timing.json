@@ -1,0 +1,79 @@
+{
+  "voice_seconds": 184.22,
+  "video_seconds": 192.20833333333334,
+  "alignment_score": 1.0,
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "Transcatheter aortic valve implantation",
+      "start_seconds": 0.0,
+      "end_seconds": 17.625
+    },
+    {
+      "id": "P02",
+      "title": "Why the valve narrows",
+      "start_seconds": 17.625,
+      "end_seconds": 37.833333333333336
+    },
+    {
+      "id": "P03",
+      "title": "How the heart team decides",
+      "start_seconds": 37.833333333333336,
+      "end_seconds": 60.541666666666664
+    },
+    {
+      "id": "P04",
+      "title": "The route from groin to valve",
+      "start_seconds": 60.541666666666664,
+      "end_seconds": 78.0
+    },
+    {
+      "id": "P05",
+      "title": "How the new valve travels",
+      "start_seconds": 78.0,
+      "end_seconds": 92.45833333333333
+    },
+    {
+      "id": "P06",
+      "title": "Opening the new valve",
+      "start_seconds": 92.45833333333333,
+      "end_seconds": 110.125
+    },
+    {
+      "id": "P07",
+      "title": "Checking the result",
+      "start_seconds": 110.125,
+      "end_seconds": 124.16666666666667
+    },
+    {
+      "id": "P08",
+      "title": "Recovery in hospital",
+      "start_seconds": 124.16666666666667,
+      "end_seconds": 140.83333333333334
+    },
+    {
+      "id": "P09",
+      "title": "Going home",
+      "start_seconds": 140.83333333333334,
+      "end_seconds": 158.41666666666666
+    },
+    {
+      "id": "P10",
+      "title": "When to get emergency help",
+      "start_seconds": 158.41666666666666,
+      "end_seconds": 174.79166666666666
+    },
+    {
+      "id": "P11",
+      "title": "What TAVI changes",
+      "start_seconds": 174.79166666666666,
+      "end_seconds": 184.20833333333334
+    },
+    {
+      "id": "P12",
+      "title": "Clinical sources",
+      "start_seconds": 184.20833333333334,
+      "end_seconds": 192.20833333333334
+    }
+  ]
+}

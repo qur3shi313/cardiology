@@ -1,0 +1,92 @@
+[
+  {
+    "id": "P01",
+    "title": "Coronary drug-coated balloons",
+    "narration": "A heart artery can narrow again inside a stent. In selected cases, a drug-coated balloon can treat that narrowing without leaving a second metal scaffold. Here’s what happens from the first images to the final check and recovery.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 20,
+    "visual_direction": "Set the existing stent in a longitudinal coronary artery cutaway. Show tissue narrowing its central channel. Move from a heart locator to the stented segment, then hold."
+  },
+  {
+    "id": "P02",
+    "title": "Why a stented artery can narrow",
+    "narration": "Coronary arteries carry blood to the heart muscle. When a segment narrows again inside a stent or near its edge, doctors call it in-stent restenosis. Tissue can build up inside the stent. Sometimes the stent itself did not open fully. The cause matters because it helps determine which treatment the team chooses.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 20,
+    "target_end_sec": 47,
+    "visual_direction": "Use a fixed, labeled cutaway of the main example with tissue inside the stent. In a separate inset depict underexpansion as a narrowed stent cage, then remove the inset before continuing. Keep these visually separate."
+  },
+  {
+    "id": "P03",
+    "title": "Imaging and the guidewire",
+    "narration": "An angiogram uses contrast and X-rays to show the narrowed channel. The team may also use imaging from inside the artery to see how the stent opened and what’s inside it. When treatment goes ahead, a thin coronary guidewire crosses the narrowed segment and provides a track for the balloon catheters.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 47,
+    "target_end_sec": 72,
+    "visual_direction": "Show grayscale illustrative angiogram of the same lesion and an optional circular inside-artery view. Cut back to the longitudinal view and animate the wire into and through the narrowed lumen. The pre-existing stent stays fixed."
+  },
+  {
+    "id": "P04",
+    "title": "Preparing the narrowed segment",
+    "narration": "First, the team prepares the narrowed segment. In this example, a separate preparation balloon goes over the wire and expands inside the old stent. The team deflates and removes that balloon, then checks the opening and blood flow. The guidewire stays in place while the team decides whether to proceed with the drug-coated balloon.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 72,
+    "target_end_sec": 96,
+    "visual_direction": "Advance a folded plain preparation balloon over the wire, inflate at the narrowed segment, then deflate and withdraw. Tissue remains, with a wider channel. Show the prepared lumen before bringing in the drug-coated balloon."
+  },
+  {
+    "id": "P05",
+    "title": "How the coating delivers medicine",
+    "narration": "The drug-coated balloon travels over the same wire. The medicine is on the outside of the balloon. At the treatment site, the team inflates it so the coating contacts the inner surface of the treated segment. Some of the medicine transfers into the tissue. Its purpose is to reduce the chance of the artery narrowing again.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 96,
+    "target_end_sec": 122,
+    "visual_direction": "Use the same cutaway. Distinguish the coated balloon with a thin green exterior line and discrete green markers. Show gradual apposition, then localized transfer at the contact zone only. Represent contact and diffusion schematically."
+  },
+  {
+    "id": "P06",
+    "title": "Balloon out and final check",
+    "narration": "The team deflates and removes the coated balloon. The original stent stays in place. The team takes more contrast X-rays to see how open the treated area is and how blood flows beyond it. If the result is inadequate, the team may need to use a different treatment.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 122,
+    "target_end_sec": 145,
+    "visual_direction": "Deflate and remove the coated balloon, keep the original metal cage present. Compare before and after simulated X-rays in the same view, with a wider but realistic channel and contrast into the same downstream branch."
+  },
+  {
+    "id": "P07",
+    "title": "Where drug-coated balloons are used",
+    "narration": "A drug-coated balloon is one option for selected cases of in-stent restenosis. In twenty twenty-four, the United States Food and Drug Administration approved one coronary device for that use. Researchers have also studied these balloons in some small coronary arteries that had never been stented. Approved uses vary by country and device.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 145,
+    "target_end_sec": 170,
+    "visual_direction": "Use an existing-stent cutaway under the primary message. A smaller separate image can show a previously unstented vessel under Research in selected small vessels. Use no manufacturer logo or product imagery."
+  },
+  {
+    "id": "P08",
+    "title": "Recovery and the medicine plan",
+    "narration": "After the catheters are removed, the care team controls bleeding at the wrist or groin and monitors recovery. Follow your own discharge instructions, including the plan for antiplatelet medicines. Check with your cardiology team before changing them. Get emergency help for severe or persistent chest pain or bleeding that won’t stop.",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 170,
+    "target_end_sec": 197,
+    "visual_direction": "Use a clinical recovery diagram with cuff and access-site check, then large instructions for prescribed medicines, access-site care and emergency symptoms. Use no dose, timings or location-specific phone number."
+  },
+  {
+    "id": "P09",
+    "title": "What stays in the artery",
+    "narration": "The coated balloon delivers medicine and then comes out. In the example you’ve seen, the original stent stays, and the cardiology team uses the final images to guide what happens next.",
+    "visual_file": "visuals/P09.mp4",
+    "target_start_sec": 197,
+    "target_end_sec": 215,
+    "visual_direction": "Return to the cutaway after both balloons have been removed. Hold the prior stent and wider channel throughout the recap."
+  },
+  {
+    "id": "P10",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P10.mp4",
+    "target_start_sec": 215,
+    "target_end_sec": 223,
+    "visual_direction": "Hold the sources and truthful production disclosure for eight seconds."
+  }
+]

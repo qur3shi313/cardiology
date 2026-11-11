@@ -1,0 +1,109 @@
+{
+  "voice_seconds": 297.61,
+  "video_seconds": 305.625,
+  "alignment_score": 1.0,
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "Angioplasty and stents",
+      "start_seconds": 0.0,
+      "end_seconds": 19.291666666666668
+    },
+    {
+      "id": "P02",
+      "title": "Why the artery narrows",
+      "start_seconds": 19.291666666666668,
+      "end_seconds": 36.75
+    },
+    {
+      "id": "P03",
+      "title": "From diagnosis to treatment",
+      "start_seconds": 36.75,
+      "end_seconds": 59.541666666666664
+    },
+    {
+      "id": "P04",
+      "title": "The guide catheter",
+      "start_seconds": 59.541666666666664,
+      "end_seconds": 77.91666666666667
+    },
+    {
+      "id": "P05",
+      "title": "Crossing the narrowing",
+      "start_seconds": 77.91666666666667,
+      "end_seconds": 96.75
+    },
+    {
+      "id": "P06",
+      "title": "Preparing the narrowing",
+      "start_seconds": 96.75,
+      "end_seconds": 115.33333333333333
+    },
+    {
+      "id": "P07",
+      "title": "Keeping the wire in place",
+      "start_seconds": 115.33333333333333,
+      "end_seconds": 132.16666666666666
+    },
+    {
+      "id": "P08",
+      "title": "How the stent arrives",
+      "start_seconds": 132.16666666666666,
+      "end_seconds": 150.95833333333334
+    },
+    {
+      "id": "P09",
+      "title": "Expanding the stent",
+      "start_seconds": 150.95833333333334,
+      "end_seconds": 169.20833333333334
+    },
+    {
+      "id": "P10",
+      "title": "The medicine coating",
+      "start_seconds": 169.20833333333334,
+      "end_seconds": 185.33333333333334
+    },
+    {
+      "id": "P11",
+      "title": "Checking the result",
+      "start_seconds": 185.33333333333334,
+      "end_seconds": 203.0
+    },
+    {
+      "id": "P12",
+      "title": "Removing the equipment",
+      "start_seconds": 203.0,
+      "end_seconds": 217.125
+    },
+    {
+      "id": "P13",
+      "title": "Recovery and discharge",
+      "start_seconds": 217.125,
+      "end_seconds": 239.41666666666666
+    },
+    {
+      "id": "P14",
+      "title": "Antiplatelet medicines",
+      "start_seconds": 239.41666666666666,
+      "end_seconds": 262.4583333333333
+    },
+    {
+      "id": "P15",
+      "title": "Aftercare and urgent symptoms",
+      "start_seconds": 262.4583333333333,
+      "end_seconds": 282.25
+    },
+    {
+      "id": "P16",
+      "title": "What treatment changes",
+      "start_seconds": 282.25,
+      "end_seconds": 297.625
+    },
+    {
+      "id": "P17",
+      "title": "Clinical sources",
+      "start_seconds": 297.625,
+      "end_seconds": 305.625
+    }
+  ]
+}

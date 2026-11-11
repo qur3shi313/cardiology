@@ -1,0 +1,25 @@
+{
+  "full_decode_passed": true,
+  "resolution": "1920x1080",
+  "duration_seconds": 207.47,
+  "reference_duration_seconds": 207.46,
+  "scenes_sampled": 12,
+  "max_mean_luma_difference": 0.5822,
+  "audio_match_windows": [
+    {
+      "reference_start_s": 18.0,
+      "offset_s": 0.0965,
+      "correlation": 0.953
+    },
+    {
+      "reference_start_s": 100.0,
+      "offset_s": 0.0965,
+      "correlation": 0.9616
+    },
+    {
+      "reference_start_s": 185.0,
+      "offset_s": 0.0965,
+      "correlation": 0.9406
+    }
+  ]
+}

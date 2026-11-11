@@ -1,0 +1,32 @@
+[
+  {
+    "file": "josefin-sans-variable.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/josefinsans/JosefinSans%5Bwght%5D.ttf",
+    "bytes": 118588
+  },
+  {
+    "file": "fira-sans-light.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/firasans/FiraSans-Light.ttf",
+    "bytes": 449660
+  },
+  {
+    "file": "fira-sans-regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/firasans/FiraSans-Regular.ttf",
+    "bytes": 456996
+  },
+  {
+    "file": "fira-sans-semibold.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/firasans/FiraSans-SemiBold.ttf",
+    "bytes": 489028
+  },
+  {
+    "file": "JosefinSans-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/josefinsans/OFL.txt",
+    "bytes": 4449
+  },
+  {
+    "file": "FiraSans-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/firasans/OFL.txt",
+    "bytes": 4370
+  }
+]

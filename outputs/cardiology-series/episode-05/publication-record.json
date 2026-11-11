@@ -1,0 +1,28 @@
+{
+  "video": 6,
+  "episode": "05",
+  "approved_topic": 2,
+  "id": "wTj-F4zotns",
+  "title": "Wrist vs Groin Access | How the Cath Lab Team Chooses",
+  "url": "https://youtu.be/wTj-F4zotns",
+  "scheduled_for": "2026-11-15T18:00:00+05:00",
+  "schedule_clicked_at_utc": "2026-11-11T15:04:35.158Z",
+  "studio_status": "Scheduled",
+  "runtime_seconds": 207.47,
+  "master": "episode-05/production/delivery/wrist-vs-groin-canva-export.mp4",
+  "sha256": "46d4e1f7f511e83e195f2891099260422aaa35f91bb74ba0a27add67b73cb389",
+  "english_caption_cues": 44,
+  "canva_caption_adjustment_milliseconds": 96,
+  "ai_disclosed": true,
+  "youtube_checks": "No issues found",
+  "thumbnail": "episode-05/wrist-vs-groin-youtube-thumbnail.png",
+  "thumbnail_sha256": "dee2c11f964e275f4cf152d5e34f99c148511bcbe1b54e80ed4187d805a412ab",
+  "captions": "episode-05/production/delivery/wrist-vs-groin-canva-export.en.srt",
+  "description": "episode-05/youtube-description.txt",
+  "canva_tracks": [
+    "12 timed illustrated scenes",
+    "Alexander English narration via ElevenLabs"
+  ],
+  "canva_export_qa": "episode-05/production/delivery/canva-export-qa.json",
+  "verified_at_utc": "2026-11-11T15:06:00.369160+00:00"
+}

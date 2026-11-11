@@ -1,0 +1,290 @@
+{
+  "route": "radial",
+  "fps": 30,
+  "size": [
+    1920,
+    1080
+  ],
+  "voice_file": "radial-alexander-full.m4a",
+  "voice_seconds": 395.73333333333335,
+  "end_card_seconds": 7.0,
+  "picture_seconds": 402.73333333333335,
+  "total_frames": 12082,
+  "scenes": [
+    {
+      "scene_start": 1,
+      "scene_end": 1,
+      "frame_start": 0,
+      "frame_end": 670,
+      "frames": 670,
+      "source": "editorial-scenes/R01.png",
+      "segment": "radial-shots/01-01.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 2,
+      "scene_end": 2,
+      "frame_start": 670,
+      "frame_end": 1335,
+      "frames": 665,
+      "source": "editorial-scenes/R02.png",
+      "segment": "radial-shots/02-02.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 3,
+      "scene_end": 3,
+      "frame_start": 1335,
+      "frame_end": 2070,
+      "frames": 735,
+      "source": "editorial-scenes/R03.png",
+      "segment": "radial-shots/03-03.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 4,
+      "scene_end": 4,
+      "frame_start": 2070,
+      "frame_end": 2643,
+      "frames": 573,
+      "source": "radial-route-scenes/R04-find-radial-artery.mp4",
+      "segment": "radial-shots/04-04.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 5,
+      "scene_end": 5,
+      "frame_start": 2643,
+      "frame_end": 3103,
+      "frames": 460,
+      "source": "wrist-proof/radial-access-motion-proof.mp4",
+      "segment": "radial-shots/05-05.mp4",
+      "source_window_sec": [
+        0,
+        4.6
+      ]
+    },
+    {
+      "scene_start": 6,
+      "scene_end": 6,
+      "frame_start": 3103,
+      "frame_end": 3354,
+      "frames": 251,
+      "source": "wrist-proof/radial-access-motion-proof.mp4",
+      "segment": "radial-shots/06-06.mp4",
+      "source_window_sec": [
+        4.6,
+        8.3
+      ]
+    },
+    {
+      "scene_start": 7,
+      "scene_end": 7,
+      "frame_start": 3354,
+      "frame_end": 3602,
+      "frames": 248,
+      "source": "wrist-proof/radial-access-motion-proof.mp4",
+      "segment": "radial-shots/07-07.mp4",
+      "source_window_sec": [
+        8.3,
+        11.2
+      ]
+    },
+    {
+      "scene_start": 8,
+      "scene_end": 8,
+      "frame_start": 3602,
+      "frame_end": 3904,
+      "frames": 302,
+      "source": "wrist-proof/radial-access-motion-proof.mp4",
+      "segment": "radial-shots/08-08.mp4",
+      "source_window_sec": [
+        11.2,
+        16.15
+      ]
+    },
+    {
+      "scene_start": 9,
+      "scene_end": 9,
+      "frame_start": 3904,
+      "frame_end": 4234,
+      "frames": 330,
+      "source": "wrist-proof/radial-access-motion-proof.mp4",
+      "segment": "radial-shots/09-09.mp4",
+      "source_window_sec": [
+        16.15,
+        21.0
+      ]
+    },
+    {
+      "scene_start": 10,
+      "scene_end": 10,
+      "frame_start": 4234,
+      "frame_end": 4582,
+      "frames": 348,
+      "source": "radial-route-scenes/R10-diagnostic-guidewire.mp4",
+      "segment": "radial-shots/10-10.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 11,
+      "scene_end": 11,
+      "frame_start": 4582,
+      "frame_end": 4807,
+      "frames": 225,
+      "source": "radial-route-scenes/R11-diagnostic-catheter.mp4",
+      "segment": "radial-shots/11-11.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 12,
+      "scene_end": 12,
+      "frame_start": 4807,
+      "frame_end": 5429,
+      "frames": 622,
+      "source": "radial-route-scenes/R12-wrist-to-aorta.mp4",
+      "segment": "radial-shots/12-12.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 13,
+      "scene_end": 13,
+      "frame_start": 5429,
+      "frame_end": 5784,
+      "frames": 355,
+      "source": "shared-coronary-scenes/reach-left-opening.mp4",
+      "segment": "radial-shots/13-13.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 14,
+      "scene_end": 14,
+      "frame_start": 5784,
+      "frame_end": 6511,
+      "frames": 727,
+      "source": "shared-coronary-scenes/left-contrast.mp4",
+      "segment": "radial-shots/14-14.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 15,
+      "scene_end": 15,
+      "frame_start": 6511,
+      "frame_end": 6889,
+      "frames": 378,
+      "source": "shared-coronary-scenes/radial-reposition.mp4",
+      "segment": "radial-shots/15-15.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 16,
+      "scene_end": 16,
+      "frame_start": 6889,
+      "frame_end": 7371,
+      "frames": 482,
+      "source": "shared-coronary-scenes/right-contrast.mp4",
+      "segment": "radial-shots/16-16.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 17,
+      "scene_end": 17,
+      "frame_start": 7371,
+      "frame_end": 8162,
+      "frames": 791,
+      "source": "shared-coronary-scenes/reading-the-result.mp4",
+      "segment": "radial-shots/17-17.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 18,
+      "scene_end": 18,
+      "frame_start": 8162,
+      "frame_end": 8930,
+      "frames": 768,
+      "source": "shared-coronary-scenes/deciding-the-next-step.mp4",
+      "segment": "radial-shots/18-18.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 19,
+      "scene_end": 19,
+      "frame_start": 8930,
+      "frame_end": 9202,
+      "frames": 272,
+      "source": "radial-route-scenes/R19-withdraw-diagnostic-catheter.mp4",
+      "segment": "radial-shots/19-19.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 20,
+      "scene_end": 20,
+      "frame_start": 9202,
+      "frame_end": 9477,
+      "frames": 275,
+      "source": "radial-route-scenes/R20-remove-sheath-compress.mp4",
+      "segment": "radial-shots/20-20.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 21,
+      "scene_end": 21,
+      "frame_start": 9477,
+      "frame_end": 9750,
+      "frames": 273,
+      "source": "radial-route-scenes/R21-check-wrist-band.mp4",
+      "segment": "radial-shots/21-21.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 22,
+      "scene_end": 22,
+      "frame_start": 9750,
+      "frame_end": 10474,
+      "frames": 724,
+      "source": "radial-route-scenes/R22-recovery-and-discharge.mp4",
+      "segment": "radial-shots/22-22.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 23,
+      "scene_end": 23,
+      "frame_start": 10474,
+      "frame_end": 10959,
+      "frames": 485,
+      "source": "editorial-scenes/R23.png",
+      "segment": "radial-shots/23-23.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 24,
+      "scene_end": 24,
+      "frame_start": 10959,
+      "frame_end": 11392,
+      "frames": 433,
+      "source": "editorial-scenes/R24.png",
+      "segment": "radial-shots/24-24.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 25,
+      "scene_end": 25,
+      "frame_start": 11392,
+      "frame_end": 11872,
+      "frames": 480,
+      "source": "editorial-scenes/R25.png",
+      "segment": "radial-shots/25-25.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 26,
+      "scene_end": 26,
+      "frame_start": 11872,
+      "frame_end": 12082,
+      "frames": 210,
+      "source": "editorial-scenes/R26.png",
+      "segment": "radial-shots/26-26.mp4",
+      "source_window_sec": null
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "voice_seconds": 199.44,
+  "video_seconds": 207.45833333333334,
+  "alignment_score": 1.0,
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "Wrist vs groin access",
+      "start_seconds": 0.0,
+      "end_seconds": 12.708333333333334
+    },
+    {
+      "id": "P02",
+      "title": "Two routes to the heart",
+      "start_seconds": 12.708333333333334,
+      "end_seconds": 29.375
+    },
+    {
+      "id": "P03",
+      "title": "An angiogram or a treatment",
+      "start_seconds": 29.375,
+      "end_seconds": 53.166666666666664
+    },
+    {
+      "id": "P04",
+      "title": "Why the wrist is often chosen",
+      "start_seconds": 53.166666666666664,
+      "end_seconds": 76.79166666666667
+    },
+    {
+      "id": "P05",
+      "title": "When the groin may be chosen",
+      "start_seconds": 76.79166666666667,
+      "end_seconds": 95.33333333333333
+    },
+    {
+      "id": "P06",
+      "title": "If the team changes route",
+      "start_seconds": 95.33333333333333,
+      "end_seconds": 110.83333333333333
+    },
+    {
+      "id": "P07",
+      "title": "Closing the access site",
+      "start_seconds": 110.83333333333333,
+      "end_seconds": 127.08333333333333
+    },
+    {
+      "id": "P08",
+      "title": "Getting up after the procedure",
+      "start_seconds": 127.08333333333333,
+      "end_seconds": 143.45833333333334
+    },
+    {
+      "id": "P09",
+      "title": "Going home",
+      "start_seconds": 143.45833333333334,
+      "end_seconds": 163.375
+    },
+    {
+      "id": "P10",
+      "title": "When to contact your care team",
+      "start_seconds": 163.375,
+      "end_seconds": 177.75
+    },
+    {
+      "id": "P11",
+      "title": "When to get emergency help",
+      "start_seconds": 177.75,
+      "end_seconds": 199.45833333333334
+    },
+    {
+      "id": "P12",
+      "title": "Clinical sources",
+      "start_seconds": 199.45833333333334,
+      "end_seconds": 207.45833333333334
+    }
+  ]
+}

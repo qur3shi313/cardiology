@@ -1,0 +1,27 @@
+{
+  "channel": "Elysian Biomedical LLP",
+  "channel_id": "UCEJkz6_una0fWFDmIUVQmfg",
+  "channel_url": "https://www.youtube.com/@elysianbiomedicalllp",
+  "publication_date_native": "2026-11-11",
+  "timestamp_note": "UTC times are observed interaction times or bounds, not native exact publication timestamps.",
+  "videos": {
+    "radial": {
+      "title": "Coronary Angiography Through the Wrist | Radial Access",
+      "publish_clicked_at_utc": "2026-11-11T05:21:06.144Z",
+      "published_confirmed_by_utc": "2026-11-11T05:21:20.563Z",
+      "private_save_clicked_at_utc": "2026-11-11T05:22:15.934Z",
+      "visibility": "private",
+      "timed_english_captions_saved": true
+    },
+    "femoral": {
+      "title": "Coronary Angiography Through the Groin | Femoral Access",
+      "publish_clicked_at_utc": "2026-11-11T05:21:20.563Z",
+      "published_confirmed_by_utc": "2026-11-11T05:21:41.635Z",
+      "private_save_clicked_at_utc": "2026-11-11T05:22:14.233Z",
+      "visibility": "private",
+      "timed_english_captions_saved": true
+    }
+  },
+  "both_private_verified_at_utc": "2026-11-11T05:22:22.041Z",
+  "revision_direction": "Use Canva for visuals and ElevenLabs for English voiceover. The original cuts are rejected and should stay private."
+}

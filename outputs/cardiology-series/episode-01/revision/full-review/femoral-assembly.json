@@ -1,0 +1,195 @@
+{
+  "route": "femoral",
+  "fps": 30,
+  "size": [
+    1920,
+    1080
+  ],
+  "voice_file": "femoral-alexander-full.m4a",
+  "voice_seconds": 422.53333333333336,
+  "end_card_seconds": 7.0,
+  "picture_seconds": 429.53333333333336,
+  "total_frames": 12886,
+  "scenes": [
+    {
+      "scene_start": 1,
+      "scene_end": 1,
+      "frame_start": 0,
+      "frame_end": 667,
+      "frames": 667,
+      "source": "editorial-scenes/F01.png",
+      "segment": "femoral-shots/01-01.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 2,
+      "scene_end": 2,
+      "frame_start": 667,
+      "frame_end": 1297,
+      "frames": 630,
+      "source": "editorial-scenes/F02.png",
+      "segment": "femoral-shots/02-02.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 3,
+      "scene_end": 3,
+      "frame_start": 1297,
+      "frame_end": 1995,
+      "frames": 698,
+      "source": "editorial-scenes/F03.png",
+      "segment": "femoral-shots/03-03.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 4,
+      "scene_end": 7,
+      "frame_start": 1995,
+      "frame_end": 3479,
+      "frames": 1484,
+      "source": "femoral-route-scenes/femoral-f04-f07-arterial-entry.mp4",
+      "segment": "femoral-shots/04-07.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 8,
+      "scene_end": 13,
+      "frame_start": 3479,
+      "frame_end": 4860,
+      "frames": 1381,
+      "source": "femoral-proof/femoral-access-alexander-review.mp4",
+      "segment": "femoral-shots/08-13.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 14,
+      "scene_end": 16,
+      "frame_start": 4860,
+      "frame_end": 5943,
+      "frames": 1083,
+      "source": "femoral-route-scenes/femoral-f14-f16-diagnostic-route.mp4",
+      "segment": "femoral-shots/14-16.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 17,
+      "scene_end": 17,
+      "frame_start": 5943,
+      "frame_end": 6317,
+      "frames": 374,
+      "source": "shared-coronary-scenes/reach-left-opening.mp4",
+      "segment": "femoral-shots/17-17.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 18,
+      "scene_end": 18,
+      "frame_start": 6317,
+      "frame_end": 7030,
+      "frames": 713,
+      "source": "shared-coronary-scenes/left-contrast.mp4",
+      "segment": "femoral-shots/18-18.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 19,
+      "scene_end": 19,
+      "frame_start": 7030,
+      "frame_end": 7445,
+      "frames": 415,
+      "source": "shared-coronary-scenes/femoral-left-withdrawal.mp4",
+      "segment": "femoral-shots/19-19.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 20,
+      "scene_end": 20,
+      "frame_start": 7445,
+      "frame_end": 7776,
+      "frames": 331,
+      "source": "shared-coronary-scenes/femoral-right-advance.mp4",
+      "segment": "femoral-shots/20-20.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 21,
+      "scene_end": 21,
+      "frame_start": 7776,
+      "frame_end": 8270,
+      "frames": 494,
+      "source": "shared-coronary-scenes/right-contrast.mp4",
+      "segment": "femoral-shots/21-21.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 22,
+      "scene_end": 22,
+      "frame_start": 8270,
+      "frame_end": 9071,
+      "frames": 801,
+      "source": "shared-coronary-scenes/reading-the-result.mp4",
+      "segment": "femoral-shots/22-22.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 23,
+      "scene_end": 23,
+      "frame_start": 9071,
+      "frame_end": 9789,
+      "frames": 718,
+      "source": "shared-coronary-scenes/deciding-the-next-step.mp4",
+      "segment": "femoral-shots/23-23.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 24,
+      "scene_end": 27,
+      "frame_start": 9789,
+      "frame_end": 11277,
+      "frames": 1488,
+      "source": "femoral-route-scenes/femoral-f24-f27-withdrawal-recovery.mp4",
+      "segment": "femoral-shots/24-27.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 28,
+      "scene_end": 28,
+      "frame_start": 11277,
+      "frame_end": 11765,
+      "frames": 488,
+      "source": "editorial-scenes/F28.png",
+      "segment": "femoral-shots/28-28.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 29,
+      "scene_end": 29,
+      "frame_start": 11765,
+      "frame_end": 12194,
+      "frames": 429,
+      "source": "editorial-scenes/F29.png",
+      "segment": "femoral-shots/29-29.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 30,
+      "scene_end": 30,
+      "frame_start": 12194,
+      "frame_end": 12676,
+      "frames": 482,
+      "source": "editorial-scenes/F30.png",
+      "segment": "femoral-shots/30-30.mp4",
+      "source_window_sec": null
+    },
+    {
+      "scene_start": 31,
+      "scene_end": 31,
+      "frame_start": 12676,
+      "frame_end": 12886,
+      "frames": 210,
+      "source": "editorial-scenes/F31.png",
+      "segment": "femoral-shots/31-31.mp4",
+      "source_window_sec": null
+    }
+  ]
+}

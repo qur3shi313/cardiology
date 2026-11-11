@@ -1,0 +1,240 @@
+{
+  "route": "radial",
+  "duration_seconds": 548.625,
+  "chapters": [
+    {
+      "time": 0.0,
+      "duration": 28.25,
+      "title": "Coronary angiography",
+      "stage": "heart",
+      "voice": "A coronary angiogram answers a question: is there a narrowing or blockage in an artery that supplies the heart muscle? In this example, the cardiologist reaches those arteries through the patient’s right wrist. We’ll follow the instruments to the heart, see how contrast creates the images, and return to the wrist for recovery.",
+      "detail": "Right wrist access",
+      "hold": 2
+    },
+    {
+      "time": 28.25,
+      "duration": 27.25,
+      "title": "Why the test is done",
+      "stage": "stenosis",
+      "voice": "The heart muscle gets its blood supply from the coronary arteries. Plaque can build up in an artery wall and make the channel narrower. An angiogram may be planned after a review of symptoms and other tests. In some suspected heart attacks, the team may need an urgent angiogram and may go on to treat the artery.",
+      "detail": "The test shows the open channel of the artery",
+      "hold": 2
+    },
+    {
+      "time": 55.5,
+      "duration": 31.75,
+      "title": "Preparing for the test",
+      "stage": "heart",
+      "voice": "For a planned angiogram, your team explains the test and reviews your medicines, kidney health and any previous reaction to contrast. Follow their instructions about food, drink and medicines. In the cath lab, staff monitor your heart rhythm and blood pressure. You are usually awake. The team can give medicine to help you relax if needed.",
+      "detail": "The clinical team reviews medicines, kidney health and contrast history",
+      "hold": 2
+    },
+    {
+      "time": 87.25,
+      "duration": 23.5,
+      "title": "Find the radial artery",
+      "stage": "site",
+      "voice": "The radial artery runs on the thumb side of the wrist. Here the team checks the right wrist and uses ultrasound to see the artery. The skin is cleaned and the area is covered with a sterile drape. Local anaesthetic numbs the spot where the artery will be entered.",
+      "detail": "Thumb side of the right wrist",
+      "hold": 3
+    },
+    {
+      "time": 110.75,
+      "duration": 19.5,
+      "title": "Access needle",
+      "stage": "needle",
+      "voice": "Once the area is numb, a small access needle enters the radial artery. Watch the tip cross the near wall and come to rest inside the artery. That hollow needle gives the first wire a way in.",
+      "detail": "The tip enters the artery through its near wall",
+      "hold": 3
+    },
+    {
+      "time": 130.25,
+      "duration": 12.6875,
+      "title": "Fine access wire",
+      "stage": "short_wire",
+      "voice": "A short access wire passes through the hollow needle and into the radial artery. The wire points up the arm.",
+      "detail": "The wire passes through the needle",
+      "hold": 3
+    },
+    {
+      "time": 142.938,
+      "duration": 12.8125,
+      "title": "Withdraw the needle",
+      "stage": "needle_out",
+      "voice": "The needle slides back out over the wire. Watch how the wire stays in the artery and preserves the entry path.",
+      "detail": "Needle out, access wire stays",
+      "hold": 3
+    },
+    {
+      "time": 155.75,
+      "duration": 16.375,
+      "title": "Radial sheath and dilator",
+      "stage": "sheath_in",
+      "voice": "The short radial sheath goes in over the access wire. A tapered insert, called a dilator, sits inside the sheath as it goes in.",
+      "detail": "The sheath and dilator advance together",
+      "hold": 4
+    },
+    {
+      "time": 172.125,
+      "duration": 15.75,
+      "title": "Remove the access wire and dilator",
+      "stage": "short_out",
+      "voice": "The team removes the short access wire and the dilator. The outer sheath stays at the wrist. It gives the next instruments a way into the artery.",
+      "detail": "The short sheath stays at the wrist",
+      "hold": 3
+    },
+    {
+      "time": 187.875,
+      "duration": 16.3125,
+      "title": "Diagnostic guidewire",
+      "stage": "long_wire",
+      "voice": "A longer diagnostic guidewire passes through the sheath. Live X-ray, called fluoroscopy, lets the cardiologist see where the wire is going.",
+      "detail": "A separate wire guides the diagnostic catheter",
+      "hold": 3
+    },
+    {
+      "time": 204.188,
+      "duration": 13.0625,
+      "title": "Diagnostic catheter",
+      "stage": "catheter",
+      "voice": "The diagnostic catheter advances over the long guidewire. The short sheath remains where the team entered the artery.",
+      "detail": "The catheter follows the wire",
+      "hold": 3
+    },
+    {
+      "time": 217.25,
+      "duration": 27.75,
+      "title": "The route to the aorta",
+      "stage": "route",
+      "voice": "From the wrist, the wire and catheter follow arteries up the arm, through the shoulder, and into the large artery that leads to the aorta. Follow the tip as it comes around the arch and down the ascending aorta toward the aortic root. The coronary arteries begin just above the aortic valve.",
+      "detail": "Right radial artery to the aortic root",
+      "hold": 5
+    },
+    {
+      "time": 245.0,
+      "duration": 17.8125,
+      "title": "Reach the coronary opening",
+      "stage": "root",
+      "voice": "At the aortic root, the long guidewire is withdrawn from the catheter. Here the curved catheter tip is positioned at the left coronary opening, above the aortic valve.",
+      "detail": "The catheter tip sits at the entrance to the artery",
+      "hold": 4
+    },
+    {
+      "time": 262.812,
+      "duration": 31.625,
+      "title": "Left coronary contrast run",
+      "stage": "left_contrast",
+      "voice": "The cardiologist injects X-ray contrast through the diagnostic catheter. For a moment, it outlines the channel that blood travels through. Watch the left main artery fill and then see two of its main branches come into view. Now look at the same moment on the X-ray. The dark branching lines show where the contrast is flowing.",
+      "detail": "Simulated angiogram",
+      "hold": 5
+    },
+    {
+      "time": 294.438,
+      "duration": 18.0,
+      "title": "Reposition the catheter",
+      "stage": "radial_transfer",
+      "voice": "In this wrist example, the same diagnostic catheter is shaped to reach both openings. It comes back into the aortic root, then the tip is repositioned at the right coronary opening.",
+      "detail": "Left opening, aortic root, then right opening",
+      "hold": 3
+    },
+    {
+      "time": 312.438,
+      "duration": 23.625,
+      "title": "Right coronary contrast run",
+      "stage": "right_contrast",
+      "voice": "The cardiologist injects contrast separately at the right coronary opening. The right coronary artery and its branches briefly appear on X-ray. The imaging arm can move around the patient to record the arteries from different angles.",
+      "detail": "Separate injection at the right coronary opening",
+      "hold": 5
+    },
+    {
+      "time": 336.062,
+      "duration": 33.375,
+      "title": "Reading the result",
+      "stage": "stenosis",
+      "voice": "On this example image, the contrast-filled channel is thinner at one spot. Another angle helps the cardiologist check where the narrowing is and how severe it looks. Sometimes a pressure measurement or imaging from inside the artery helps answer what the angiogram alone cannot. If no major blockage is visible and symptoms persist, the team may look for other causes.",
+      "detail": "A narrowing appears as a thinner contrast-filled channel",
+      "hold": 4
+    },
+    {
+      "time": 369.438,
+      "duration": 32.5625,
+      "title": "Deciding the next step",
+      "stage": "result",
+      "voice": "The next step depends on the findings, the symptoms, and whether the situation is urgent. It may be medicines, another test, angioplasty, or a discussion about bypass surgery. Angioplasty uses a balloon and may place a stent to treat a narrowing. In selected cases the team can do that in the same session. Here, the test ends after imaging.",
+      "detail": "Medicines, more tests, angioplasty or bypass review",
+      "hold": 3
+    },
+    {
+      "time": 402.0,
+      "duration": 14.875,
+      "title": "Withdraw the diagnostic catheter",
+      "stage": "catheter_out",
+      "voice": "After the images are complete, the cardiologist withdraws the diagnostic catheter through the sheath. The sheath is still at the access site.",
+      "detail": "The catheter comes out first",
+      "hold": 3
+    },
+    {
+      "time": 416.875,
+      "duration": 14.25,
+      "title": "Remove the sheath and close the site",
+      "stage": "remove",
+      "voice": "Staff position a wrist compression band over the puncture as the sheath comes out. The band puts pressure over the site to control bleeding.",
+      "detail": "Radial compression band",
+      "hold": 3
+    },
+    {
+      "time": 431.125,
+      "duration": 13.5625,
+      "title": "Check the wrist band",
+      "stage": "closure",
+      "voice": "Staff check the puncture site and circulation in the hand. They gradually reduce the band pressure and remove it when it is safe.",
+      "detail": "Staff monitor bleeding and hand circulation",
+      "hold": 3
+    },
+    {
+      "time": 444.688,
+      "duration": 32.0,
+      "title": "Recovery and discharge",
+      "stage": "aftercare",
+      "voice": "Staff check your pulse, blood pressure and wrist. They may check circulation in the hand. After an uncomplicated planned test, many patients can go home the same day. Others need longer observation. Ask what the angiogram showed, how to care for the wrist, when to lift or drive again, and whom to contact with questions.",
+      "detail": "Follow the team’s written instructions",
+      "hold": 3
+    },
+    {
+      "time": 476.688,
+      "duration": 21.375,
+      "title": "At home",
+      "stage": "home",
+      "voice": "Follow the written instructions for the dressing, activity, medicines and follow-up. A small bruise or mild soreness can happen. Contact the care team promptly for increasing redness or pain, drainage or fever.",
+      "detail": "Mild bruising can occur. Report worsening symptoms.",
+      "hold": 3
+    },
+    {
+      "time": 498.062,
+      "duration": 20.25,
+      "title": "When to get emergency help",
+      "stage": "urgent",
+      "voice": "Call local emergency services for heavy bleeding or bleeding that continues despite firm pressure, rapidly growing swelling, a newly cold or numb hand, new chest pressure or sudden shortness of breath.",
+      "detail": "Call local emergency services",
+      "hold": 4
+    },
+    {
+      "time": 518.312,
+      "duration": 22.3125,
+      "title": "What the test tells you",
+      "stage": "heart",
+      "voice": "The wrist gives the team a route to the heart. The catheter delivers contrast, the X-rays show the coronary arteries, and the images help guide the next decision. Before you go home, make sure you know your result and what to do during recovery.",
+      "detail": "Route, images and the next decision",
+      "hold": 2
+    },
+    {
+      "time": 540.625,
+      "duration": 8.0,
+      "title": "Clinical sources",
+      "stage": "end",
+      "voice": "",
+      "detail": "American Heart Association · SCAI · Guy’s and St Thomas’ NHS",
+      "hold": 8
+    }
+  ]
+}
