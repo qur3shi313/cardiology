@@ -1,5 +1,6 @@
 """Native angiogram imaging and editorial scenes, keyed to episode 01 narration."""
 from bisect import bisect_right
+import argparse
 from functools import lru_cache
 from math import cos, sin, pi, radians, hypot
 import importlib.util
@@ -122,8 +123,8 @@ def imaging(c,ident,p,t,duration):
     c.drawImageRect(radiograph_plate(),skia.Rect.MakeWH(1280,720),
                     skia.SamplingOptions(skia.FilterMode.kNearest))
     if ident=='P01':
-        q=smooth(p/.31)
-        tip=contrast_paths(c,side,q,244,4,True)
+        q=smooth(p/.66)
+        contrast_paths(c,side,q,round(245-49*smooth((p-.75)/.25)),4,True)
         if t>=5:
             header(c,title,'SIMULATED X-RAY',True)
             block(c,54,589,283,46,12,solid('#1a3934',231))
@@ -131,7 +132,7 @@ def imaging(c,ident,p,t,duration):
         else:
             text(c,'SIMULATED CORONARY X-RAY',56,64,25,'#e1f0e8')
     elif ident=='P29':
-        spot=contrast_paths(c,side,smooth(p/.24),242,-13,True)
+        spot=contrast_paths(c,side,smooth(p/.53),round(245-70*smooth((p-.58)/.42)),-13,True)
         if p>.32:
             x,y=spot
             r=23+1.2*cos(p*8*pi)
@@ -147,8 +148,8 @@ def imaging(c,ident,p,t,duration):
             w=(p/.5); angle=-19 if side=='right' else 7
         else:
             w=(p-.5)/.5; angle=26 if side=='right' else -14
-        fill=smooth((w-.03)/.47)
-        opacity=round(245*(1-smooth((w-.78)/.21)))
+        fill=smooth((w-.01)/.63)
+        opacity=round(245*(1-smooth((w-.62)/.38)))
         contrast_paths(c,side,fill,opacity,angle,False)
         header(c,title,'SIMULATED X-RAY',True)
         block(c,54,587,294,49,11,solid('#132d2a',229))
@@ -201,25 +202,30 @@ def editorial_plate(ident):
 
 def icon(c,kind,p,t):
     cx,cy=929,380
-    q=smooth(p/.45)
+    q=smooth(p)
     if kind in ('open','narrow'):
-        for radius,sh in ((141,'#723641'),(126,'#c77270'),(108,'#e5a38c'),(91,'#572637')):
-            c.drawCircle(cx,cy,radius,solid(sh))
+        beat=4.7*sin(t*2*pi*.84)
+        for radius,sh in ((154,'#723641'),(138,'#c77270'),(119,'#e5a38c'),(99,'#572637')):
+            c.drawCircle(cx,cy,radius+beat,solid(sh))
         if kind=='narrow':
             c.drawPath(path([(cx-77,cy-51),(cx-23,cy-85),(cx-11,cy-37),(cx-15,cy+7),
                              (cx+1,cy+52),(cx-31,cy+85),(cx-70,cy+59),(cx-90,cy+5)],True),
                        grad(cx-70,cy-74,cx,cy+75,['#e8c59a','#b67963']))
-        for j in range(16):
-            dx=((j*29+t*62)%132)-66
-            dy=((j*37)%134)-67
-            if hypot(dx,dy)<76 and (kind=='open' or dx>4):
-                dot(c,cx+dx,cy+dy,3.8,'#e19a90',147)
+        for j in range(24):
+            dx=((j*29+t*119)%167)-83
+            dy=((j*37+t*39)%147)-73
+            if hypot(dx,dy)<91 and (kind=='open' or dx>4):
+                dot(c,cx+dx,cy+dy,5.4,'#f3aaa0',185)
     elif kind=='pulse':
-        route=[(730,415),(812,415),(844,380),(885,453),(927,305),(981,413),(1139,413)]
-        line(c,route,'#285a55',10)
-        part=min(len(route),max(2,int(1+(len(route)-1)*q)))
-        line(c,route[:part],'#a0e8cc',7)
-        x,y=route[part-1]
+        points=[]
+        for i in range(84):
+            x=732+i*4.75
+            wave=((i/33)+t*.61)%1
+            d=111*max(0,1-abs(wave-.32)/.055)-37*max(0,1-abs(wave-.42)/.08)
+            points.append((x,407-d))
+        line(c,points,'#3a8070',14)
+        line(c,points,'#a0e8cc',6.8)
+        x,y=points[-1]
         dot(c,x,y,8,'#eeffeb')
     elif kind in ('balloon','vessel'):
         block(c,729,307,413,133,65,solid('#8c414c'))
@@ -229,12 +235,20 @@ def icon(c,kind,p,t):
             block(c,838,374-h/2,192,h,min(h/2,27),solid('#76b8b2',212))
             line(c,[(736,374),(1125,374)],'#d7e9cb',4)
         else:
-            line(c,[(743,386),(829,385),(888,285),(1000,287),(1108,370)],'#cf9b83',17)
-            line(c,[(743,386),(829,385),(888,285),(1000,287),(1108,370)],'#6eaca1',8)
+            route=[(743,386),(829,385),(888,285),(1000,287),(1108,370)]
+            line(c,route,'#cf9b83',17)
+            line(c,route,'#6eaca1',8)
+            for i in range(9):
+                along=(t*.71+i/9)*(len(route)-1)
+                k=int(along)%(len(route)-1)
+                f=along-int(along)
+                (x,y),(xx,yy)=route[k:k+2]
+                dot(c,x+(xx-x)*f,y+(yy-y)*f,5.5,'#d5f5db',220)
     elif kind=='band':
         block(c,762,331,329,115,43,solid('#9cbdb2'))
-        block(c,875,309,99,160,16,solid('#d8e4d3'))
-        block(c,900,356,49,65,7,solid('#648a7e'))
+        y=309-77*(1-q)
+        block(c,875,y,99,160,16,solid('#d8e4d3'))
+        block(c,900,y+47,49,65,7,solid('#648a7e'))
         line(c,[(867,479),(982,479)],'#a7d5c5',4,round(225*q))
     elif kind=='clock':
         dot(c,cx,cy,131,'#c6dfce'); dot(c,cx,cy,119,'#244741')
@@ -253,9 +267,10 @@ def icon(c,kind,p,t):
     elif kind=='call':
         block(c,852,246,156,259,28,solid('#7ab19e'))
         block(c,865,259,130,217,17,solid('#173934'))
-        for i in range(3):
-            r=18+i*19+(t*11)%19
-            edge=solid('#aee2cf',84); edge.setStyle(skia.Paint.kStroke_Style); edge.setStrokeWidth(3)
+        for i in range(4):
+            r=17+(t*77+i*29)%116
+            edge=solid('#aee2cf',round(199*(1-(r-17)/116)))
+            edge.setStyle(skia.Paint.kStroke_Style); edge.setStrokeWidth(6)
             c.drawCircle(cx,cy,r,edge)
         dot(c,cx,cy,20,'#8dd1ba')
     else:
@@ -263,9 +278,11 @@ def icon(c,kind,p,t):
         block(c,880,220,102,48,13,solid('#84baaa'))
         for j in range(3):
             y=312+j*69
-            line(c,[(887,y),(1002,y)],'#698b80',4)
-            if q*3>=j+.25:
-                line(c,[(841,y-2),(851,y+8),(869,y-13)],'#25836f',5)
+            show=smooth(p*3-j)
+            line(c,[(887,y),(887+115*show,y)],'#698b80',5.8)
+            if show>.12:
+                checked=art.trace([(841,y-2),(851,y+8),(869,y-13)],show)
+                line(c,checked,'#25836f',6.2)
 
 def cards(c,ident,p,t,duration):
     urgent=ident=='P39'
@@ -362,6 +379,14 @@ def show_root(c,ident,p,t,duration):
         if py>536: px=1154+((i*31)%154)-77
         x,y=root_coord((px,py))
         dot(c,x,y,3.6,'#eacbb2',135)
+    # Broad, translucent bands show blood moving up the root while the
+    # catheter geometry stays fixed at the selected anatomical landmark.
+    c.save()
+    c.clipPath(path(root_trace(ROOT_LUMEN),True),doAntiAlias=True)
+    for j in range(3):
+        y=605-(t*112+j*153)%459
+        c.drawOval(skia.Rect.MakeXYWH(397,y,537,37),solid('#f7cdac',76))
+    c.restore()
     wire,catheter=[],[]
     if ident=='P24':
         tip=blend_point(NEUTRAL,LEFT,smooth((p-.48)/.44))
@@ -398,19 +423,21 @@ def show_root(c,ident,p,t,duration):
     else:
         text(c,'Aortic root  /  Enlarged cutaway',55,677,25,'#255d51',REGULAR)
 
-def build():
+def build(selected=None):
     folder=SERIES/'episode-01'
     assets=folder/'visuals'
     assets.mkdir(exist_ok=True)
     data=json.loads((folder/'timeline.json').read_text(encoding='utf-8-sig'))
-    by_id={}
+    existing=assets/'angiogram-overrides.json'
+    by_id=json.loads(existing.read_text(encoding='utf-8-sig')) if selected and existing.is_file() else {}
     for row in data['scenes']:
         ident=row['id']
         if ident not in IMAGING and ident not in CARDS and ident not in ROOT_SCENES: continue
+        if selected and ident not in selected: continue
         n=row['end_frame']-row['start_frame']
         target=assets/f'{ident}-angiogram-visual.mp4'
         tmp=assets/f'{ident}-angiogram-visual.part.mp4'
-        if not target.exists():
+        if not target.exists() or selected:
             draw=imaging if ident in IMAGING else show_root if ident in ROOT_SCENES else cards
             encode_scene(tmp,n,lambda c,f:draw(c,ident,f/max(1,n-1),f/FPS,n/FPS))
             tmp.replace(target)
@@ -420,4 +447,6 @@ def build():
         print(f'Assembled {ident} ({n} frames)',flush=True)
 
 if __name__=='__main__':
-    build()
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--scenes',nargs='+',choices=tuple(IMAGING)+tuple(CARDS)+tuple(ROOT_SCENES))
+    build(p.parse_args().scenes)

@@ -186,7 +186,18 @@ def check_master(path, ffmpeg, episode):
     duration = int(decoded_times[-1]) / 1_000_000
     report['video_full_decode'] = True
     report['video_duration_seconds'] = duration
+    decoded_frames=re.findall(rb'^frame=(\d+)\s*$',video.stdout,re.MULTILINE)
+    report['video_frames']=int(decoded_frames[-1]) if decoded_frames else None
     report['freeze'] = freeze_report(video.stderr.decode('utf-8', 'replace'), duration)
+    contributors=[]
+    for scene in timeline['scenes']:
+        a,b=(scene[key]/timeline['fps'] for key in ('start_frame','end_frame'))
+        frozen=sum(max(0,min(b,x['end_seconds'])-max(a,x['start_seconds']))
+                   for x in report['freeze']['intervals'])
+        if frozen>=2:
+            contributors.append({'scene':scene['id'],'title':scene['title'],
+                                 'frozen_seconds':round(frozen,3),'scene_seconds':round(b-a,3)})
+    report['freeze']['scene_contributors']=sorted(contributors,key=lambda x:x['frozen_seconds'],reverse=True)
     report['audio'] = inspect_audio(ffmpeg, path) if report['audio_present'] else None
     required = {'codec': 'h264', 'width': 2560, 'height': 1440, 'fps': 30.0, 'pixel_format': 'yuv420p',
                 'audio_codec':'aac','audio_rate':48000,'audio_stereo':True}
@@ -196,6 +207,8 @@ def check_master(path, ffmpeg, episode):
     report['expected_duration_seconds']=intended
     if abs(duration-intended)>.5:
         errors.append('Decoded video differs from the narration timeline by over 0.5 seconds')
+    if report['video_frames']!=timeline['duration_frames']:
+        errors.append('The decoded frame count differs from the locked scene timeline')
     report['audio_sources']=sorted({x['audio']['path'] for x in timeline['scenes'] if x.get('audio')})
     audio=report['audio']
     if not audio or audio['integrated_lufs'] is None or not -15<=audio['integrated_lufs']<=-13:

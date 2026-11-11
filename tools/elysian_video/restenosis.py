@@ -10,11 +10,14 @@ from .encode import encode_scene
 
 def lumen_view(c,t,kind,p=1.0,*,scaffold=True):
     access.rect(c,0,0,1280,720,access.solid('#e3eee7'))
-    width=75 if kind=='underexpanded' else 116
+    width=116
+    radius=(lambda x:116-41*exp(-abs((x-art.LESION)/88)**2.6)) if kind=='underexpanded' else 116
     expansion=.52 if kind=='underexpanded' else 1.
     lumen=art.artery(c,expansion)
+    s=art.Motion(-350,-350,10,art.LESION,width,expansion,.16 if kind=='clot' else 1)
+    art.blood_flow(c,t,s,lumen)
     if scaffold:
-        art.stent(c,art.LESION,width,False)
+        art.stent(c,art.LESION,radius,False)
     if kind in ('tissue','plaque','clot'):
         xs=range(art.LESION-153,art.LESION+154,4)
         if kind=='clot':
@@ -32,10 +35,8 @@ def lumen_view(c,t,kind,p=1.0,*,scaffold=True):
                 a=[(x,art.center(x)-107) for x in core]
                 b=[(x,art.center(x)-107+33*spread*exp(-((x-art.LESION)/51)**2)) for x in core]
                 c.drawPath(art.enclosed(a,b),art.gradient(585,279,709,320,['#e9cf9e','#c29368']))
-    s=art.Motion(-350,-350,10,art.LESION,width,expansion,.16 if kind=='clot' else 1)
-    art.blood_flow(c,t,s,lumen)
     if scaffold:
-        art.stent(c,art.LESION,width,True)
+        art.stent(c,art.LESION,radius,True)
 
 def label(c,title,detail):
     angiogram.header(c,title,'CORONARY STENTS')
@@ -113,7 +114,13 @@ def draw(c,ident,p,t):
                  ('Sudden trouble breathing also','needs emergency assessment'),'call',(p-.66)/.34,t)
         return
     if ident=='P05':
-        angiogram.imaging(c,'P29',p,t,0)
+        if p<.62:
+            angiogram.imaging(c,'P29',p/.62,t,0)
+        else:
+            q=(p-.62)/.38
+            angiogram.imaging(c,'P25',q,t,0)
+            access.rect(c,0,67,1280,78,access.solid('#152d2b'))
+            access.text(c,'The team also reviews earlier images',55,132,47,'#eff9ef',access.HEADING)
         return
     if ident=='P06':
         cross_section(c,p,t,'IVUS' if p<.56 else 'OCT')
@@ -122,8 +129,11 @@ def draw(c,ident,p,t):
         if p<.34:
             lumen_view(c,t,'underexpanded')
             label(c,'The cause guides the next step','An underexpanded stent needs a mechanical assessment')
-        elif p<.72:
-            local=(p-.34)/.38
+        elif p<.45:
+            card(c,'The cause guides the next step','Reassess the mechanical problem',
+                 ('The following are separate examples','of options for selected cases'),'check',(p-.34)/.11,t)
+        elif p<.75:
+            local=(p-.45)/.30
             inflation=access.smooth(local/.37)*(1-access.smooth((local-.58)/.14))
             x=art.LESION-(art.LESION+280)*access.smooth((local-.75)/.25)
             coating.device(c,local,t,True,1,x,12+75*inflation,True,inflation)
@@ -131,14 +141,14 @@ def draw(c,ident,p,t):
         else:
             coating.device(c,p,t,True,1,wire=False,diffusion=.8)
             art.stent(c,art.LESION,103,True)
-            label(c,'Another drug-eluting stent','A new stent leaves a scaffold')
+            label(c,'Another drug-eluting stent','A new inner scaffold remains within the treated section')
         return
     if ident=='P08':
         card(c,'Questions after the assessment','What was the cause?',
              ('Ask how the team checked the finding','and what changes in your plan'),'check',p,t)
         return
-    card(c,'Clinical sources','Clinical sources',('SCAI expert consensus',
-         'AHA and NHS patient information'),'list',p,t)
+    card(c,'Clinical sources','SCAI, ESC, AHA and NHLBI',
+         ('Original animation · Synthetic English narration','Next: recovery and medicines after PCI'),'list',p,t)
 
 def render():
     episode=SERIES/'episode-09'

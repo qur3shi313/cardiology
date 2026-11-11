@@ -200,9 +200,12 @@ def scene(c,id,p,t):
     mark=(329,322)
     if id=='P04':
         # Ultrasound beam and an arterial cross-section without a diagnostic claim.
-        x=348
-        c.drawPath(path([(x-15,268),(x+19,268),(x+91,431),(x-28,431)],True),solid('#b1ebd6',69))
-        c.drawRoundRect(skia.Rect.MakeXYWH(x-28,249,75,30),8,8,solid('#235951'))
+        x=315+64*smooth(p)
+        probe_y=tissue_top(x)-30-52*(1-smooth(p/.24))
+        contact=smooth((p-.19)/.10)
+        c.drawPath(path([(x-15,probe_y+29),(x+19,probe_y+29),(x+91,431),(x-28,431)],True),
+                   solid('#b1ebd6',round(99*contact)))
+        c.drawRoundRect(skia.Rect.MakeXYWH(x-28,probe_y,75,30),8,8,solid('#235951'))
         for ring in range(2):
             radius=8+((t*26+ring*18)%36)
             pen=solid('#e4fff0',round((37-radius)*4))
@@ -233,6 +236,10 @@ def scene(c,id,p,t):
     if needle_tip is not None:
         tube(c,needle_tip-430,needle_tip,6.7,NEEDLE,taper=24)
         tube(c,needle_tip-477,needle_tip-428,13,SHEATH)
+        if id=='P06' and wire_tip is not None:
+            # A narrow section line reveals the wire in the hollow shaft,
+            # before the tip exits into the artery.
+            shape(c,needle_tip-429,min(wire_tip,needle_tip-9),2.7,'#ead49c',alpha=203)
     if band is not None:
         # Only the external strap and pad are visible in this cutaway.
         # The compression device never enters the skin or artery.
