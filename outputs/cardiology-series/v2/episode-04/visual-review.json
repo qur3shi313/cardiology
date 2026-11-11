@@ -1,0 +1,70 @@
+{
+  "master_sha256": "b4acd939bbf06ff8e26d39e2a8043591777a819f2f314765e9ae8f0884c7dec3",
+  "verified_at": "2026-11-12T00:05:09.765240+05:00",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "short_sha256": "b9a3afde39166283ed3556b889117c22f427ffe235cf5e13e3117b8c1d6d4034",
+  "thumbnail_sha256": "fe0645bf36f528509fea6566e2d43088ebfd31071d3fb6e1bee60637c78ac696",
+  "intentional_holds": [],
+  "review_evidence": {
+    "clinical": "Source-mapped illustration. Focal LAD narrowing is the same anatomical location in both projections; pressure sensing wire beyond the target and separate upstream reference. The complete obstruction, nonobstructive major artery, microvessels and transient narrowing are separate examples. No individualized advice.",
+    "pictures": "All ten picture clips decoded. Sampled each shot and key anatomy transitions, and reviewed exact-master 390 px frames at five-second intervals. The projected views and longitudinal cutaways use full-width illustrated fields. Confirmed no clipped title in the care-options sequence.",
+    "caption_and_voice": "Locked English source captions plus waveform comparison of the nine narrated scenes. No background tracks. The final eight seconds carry credits and next-topic text. Source and decoded signal checks do not claim independent human listening.",
+    "speech_alignment_samples": [
+      {
+        "scene": "P01",
+        "score": 0.8437,
+        "offset_ms": -0.25
+      },
+      {
+        "scene": "P02",
+        "score": 0.8814,
+        "offset_ms": -0.25
+      },
+      {
+        "scene": "P03",
+        "score": 0.8375,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P04",
+        "score": 0.8354,
+        "offset_ms": -0.25
+      },
+      {
+        "scene": "P05",
+        "score": 0.8537,
+        "offset_ms": -0.25
+      },
+      {
+        "scene": "P06",
+        "score": 0.8373,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P07",
+        "score": 0.8728,
+        "offset_ms": -0.25
+      },
+      {
+        "scene": "P08",
+        "score": 0.8811,
+        "offset_ms": -0.25
+      },
+      {
+        "scene": "P09",
+        "score": 0.8823,
+        "offset_ms": -0.25
+      }
+    ],
+    "short_and_thumbnail": "Decoded the repaired Short at 1, 6 and 12 seconds and reviewed all three at 320 px. Original landscape labels no longer clip into the vertical crop. The lesion remains visible, with simulated X-ray disclosure, timed burned captions and approved logo. Exact thumbnail checked at 320 px.",
+    "modesty": "Original coronary geometry and diagrams only; no photographs, real people, exposed bodies, music or other added sound."
+  }
+}
