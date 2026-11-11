@@ -103,10 +103,20 @@ def short(ffmpeg,master,srt,dest,a,b,headings=('How contrast reveals','the coron
         chain=(f'[0:v]crop={w}:{h}:{x}:{y},scale=1080:-2:flags=lanczos,'
                'pad=1080:1920:0:586:color=0x102a28,setsar=1[picture];'
                '[picture][1:v]overlay=0:0,ass=vertical.ass:fontsdir=fonts[out]')
-        run(ffmpeg,'-v','error','-y','-ss',f'{a:.7f}','-t',f'{b-a:.7f}','-i',master,
-            '-i',graphic,'-filter_complex_threads',2,'-filter_complex',chain,
+        trim=('-ss',f'{a:.7f}','-t',f'{b-a:.7f}','-i',master)
+        loudness='loudnorm=I=-14:TP=-1.5:LRA=7'
+        measured=run(ffmpeg,'-v','info','-nostats',*trim,'-map','0:a:0',
+                     '-af',loudness+':print_format=json','-f','null','-',
+                     capture_output=True,text=True,encoding='utf-8',errors='replace')
+        stats=json.loads(re.findall(r'\{[^{}]+\}',measured.stderr)[-1])
+        known=':'.join(f'measured_{key}={stats["input_"+key]}' for key in ('i','tp','lra','thresh'))
+        if stats['input_i']=='-inf':
+            raise ValueError('The selected Short interval has no audible narration')
+        run(ffmpeg,'-v','error','-y',*trim,'-i',graphic,'-filter_complex_threads',2,'-filter_complex',chain,
             '-map','[out]','-map','0:a:0','-t',f'{b-a:.7f}','-r',FPS,'-c:v','libx264',
-            '-preset','slow','-crf',16,'-g',60,'-bf',2,'-threads',5,'-c:a','aac','-b:a','320k',
+            '-preset','slow','-crf',16,'-g',60,'-bf',2,'-threads',5,
+            '-af',f'{loudness}:{known}:offset={stats["target_offset"]}:linear=true',
+            '-ac','2','-ar','48000','-c:a','aac','-b:a','320k',
             '-movflags','+faststart',dest,cwd=work)
 
 def finish(episode,ffmpeg):

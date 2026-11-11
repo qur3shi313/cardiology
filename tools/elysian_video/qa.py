@@ -82,11 +82,24 @@ def inspect_audio(ffmpeg, path):
     }
 
 
+def speech_errors(audio, prefix=''):
+    if not audio:
+        return [prefix + 'Speech track is missing']
+    loudness, peak = audio['integrated_lufs'], audio['true_peak_dbtp']
+    errors = []
+    if loudness is None or not -15 <= loudness <= -13:
+        errors.append(prefix + 'Speech loudness outside -14 ± 1 LUFS')
+    if peak is None or peak > -1:
+        errors.append(prefix + 'True peak exceeds -1 dBTP or could not be measured')
+    return errors
+
+
 def contact_sheet(ffmpeg, path, duration, output):
     times = list(range(0, math.ceil(duration), 5))
     columns = min(3, len(times))
     def sample(seconds):
-        result = invoke(ffmpeg, '-v', 'error', '-ss', seconds, '-i', path, '-map', '0:v:0',
+        result = invoke(ffmpeg, '-v', 'error', '-threads', 2, '-filter_threads', 2,
+                        '-ss', seconds, '-i', path, '-map', '0:v:0',
                         '-frames:v', 1, '-vf', 'scale=390:-2:flags=lanczos', '-c:v', 'png',
                         '-f', 'image2pipe', 'pipe:1')
         if not result.stdout:
@@ -94,7 +107,7 @@ def contact_sheet(ffmpeg, path, duration, output):
         with Image.open(BytesIO(result.stdout)) as frame:
             return frame.convert('RGB')
 
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=2) as pool:
         frames=list(pool.map(sample,times))
 
     height = frames[0].height + 27
@@ -161,6 +174,16 @@ def check_package(episode, master, ffmpeg, intended):
                   'audio_codec':'aac','audio_rate':48000,'audio_stereo':True}
         if any(fmt[k]!=v for k,v in expected.items()):
             errors.append(f'{suffix}: picture or voice format does not match')
+        else:
+            decoded=invoke(ffmpeg,'-v','error','-xerror','-threads',2,'-i',path,
+                           '-map','0:v:0','-map','0:a:0','-f','null','-',check=False)
+            package[suffix]['full_decode']=decoded.returncode==0
+            if decoded.returncode:
+                errors.append(f'{suffix}: picture or voice failed full decode')
+            elif suffix=='short':
+                speech=inspect_audio(ffmpeg,path)
+                package[suffix]['audio']=speech
+                errors.extend(speech_errors(speech,'Short: '))
         if seconds is None or seconds<=0 or seconds>max_sec or (suffix=='1080p' and abs(seconds-intended)>.5):
             errors.append(f'{suffix}: duration does not match')
     thumb=next((x for x in (delivery/f'{stem}-thumbnail.jpg',delivery/f'{stem}-thumbnail.png') if x.is_file()),None)
@@ -210,11 +233,7 @@ def check_master(path, ffmpeg, episode):
     if report['video_frames']!=timeline['duration_frames']:
         errors.append('The decoded frame count differs from the locked scene timeline')
     report['audio_sources']=sorted({x['audio']['path'] for x in timeline['scenes'] if x.get('audio')})
-    audio=report['audio']
-    if not audio or audio['integrated_lufs'] is None or not -15<=audio['integrated_lufs']<=-13:
-        errors.append('Speech loudness outside -14 ± 1 LUFS')
-    if not audio or audio['true_peak_dbtp'] is None or audio['true_peak_dbtp']>-1:
-        errors.append('True peak exceeds -1 dBTP or could not be measured')
+    errors.extend(speech_errors(report['audio']))
     if report['freeze']['percent']>15:
         errors.append('More than 15 percent of the video is frozen')
     checks=episode/'visual-review.json'
