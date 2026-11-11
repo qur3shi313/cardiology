@@ -234,29 +234,41 @@ def scene(c,id,p,t):
         tube(c,needle_tip-430,needle_tip,6.7,NEEDLE,taper=24)
         tube(c,needle_tip-477,needle_tip-428,13,SHEATH)
     if band is not None:
-        pressure=band
-        c.drawOval(skia.Rect.MakeXYWH(297,278,75,304),solid('#57b5aa',round(95+52*pressure)))
-        c.drawRoundRect(skia.Rect.MakeXYWH(306,274,59,34),8,8,solid('#236c60'))
-        c.drawOval(skia.Rect.MakeXYWH(309,299,53,17+10*pressure),solid('#9fe3cf',202))
+        # Only the external strap and pad are visible in this cutaway.
+        # The compression device never enters the skin or artery.
+        lift=smooth((p-.75)/.25) if id=='P36' else (1-band)
+        pad_y=tissue_top(331)-25-92*lift
+        if lift<.98:
+            opacity=round(255*(1-smooth((lift-.71)/.26)))
+            c.drawRoundRect(skia.Rect.MakeXYWH(273,pad_y-13,120,30),12,12,solid('#3b9587',opacity))
+            c.drawRoundRect(skia.Rect.MakeXYWH(301,pad_y-7,63,25),9,9,solid('#174b44',opacity))
+            c.drawOval(skia.Rect.MakeXYWH(309,pad_y+13,47,10+3*band),solid('#96d3c0',opacity))
+            if band>.34 and lift<.22:
+                for x in (323,341):
+                    line(c,[(x,pad_y-49),(x,pad_y-19)],'#367b6d',3.5,opacity)
+                    line(c,[(x-5,pad_y-25),(x,pad_y-19),(x+5,pad_y-25)],'#367b6d',3.3,opacity)
     title, label=STAGES[id]
     text(c,title,49,652,47,'#effbf2',HEADING)
-    if p>.13:
+    if p>.13 and (id!='P06' or (wire_tip is not None and wire_tip>entry+12)):
+        if id=='P36' and p>.79:
+            label='Band removed when safe'
         callout(c,label,765 if mark[0]<710 else 618,*mark,smooth((p-.13)/.13))
     text(c,'Arterial access  /  Clinical illustration',50,690,32,'#d8eee4',REGULAR)
     text(c,'Toward the heart',921,673,32,'#d8eee4',REGULAR)
     line(c,[(1176,666),(1224,666),(1213,656)],'#a1d4c6',3)
     line(c,[(1224,666),(1213,676)],'#a1d4c6',3)
 
-def render(ffmpeg, folder, timeline):
+def render(ffmpeg, folder, timeline, selected=None):
     folder.mkdir(parents=True,exist_ok=True)
-    layer={}
+    existing=folder/'radial-overrides.json'
+    layer=json.loads(existing.read_text(encoding='utf-8-sig')) if existing.exists() and selected else {}
     for row in timeline['scenes']:
         ident=row['id']
-        if ident not in STAGES: continue
+        if ident not in STAGES or (selected and ident not in selected): continue
         frames=row['end_frame']-row['start_frame']
         target=folder/f'{ident}-radial-cutaway.mp4'
         temp=folder/f'{ident}-radial-cutaway.part.mp4'
-        if not target.exists():
+        if not target.exists() or selected:
             encode_scene(temp,frames,lambda c,f:scene(c,ident,f/max(1,frames-1),(row['start_frame']+f)/FPS))
             temp.replace(target)
         layer[ident]={'path':target.relative_to(ROOT).as_posix(),'in_sec':0,'out_sec':frames/FPS,
@@ -267,6 +279,7 @@ def render(ffmpeg, folder, timeline):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--ffmpeg',default=LEGACY_FFMPEG)
+    p.add_argument('--scenes',nargs='+',choices=tuple(STAGES))
     args=p.parse_args()
     ep=SERIES/'episode-01'
-    render(args.ffmpeg,ep/'visuals',json.loads((ep/'timeline.json').read_text(encoding='utf-8-sig')))
+    render(args.ffmpeg,ep/'visuals',json.loads((ep/'timeline.json').read_text(encoding='utf-8-sig')),args.scenes)

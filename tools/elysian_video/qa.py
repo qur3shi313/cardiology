@@ -138,6 +138,41 @@ def verify_captions(path, duration):
         previous=end
     return {'file':path.name,'cue_count':len(blocks),'errors':errors}
 
+def check_package(episode, master, ffmpeg, intended):
+    package={}
+    errors=[]
+    stem=episode.name
+    delivery=master.parent
+    for suffix,width,height,max_sec in (('1080p',1920,1080,intended+.5),('short',1080,1920,45.05)):
+        path=delivery/f'{stem}-{suffix}.mp4'
+        if not path.is_file():
+            errors.append(f'{suffix}: output is missing')
+            continue
+        result=invoke(ffmpeg,'-i',path,check=False)
+        log=result.stderr.decode('utf-8','replace')
+        fmt=metadata(log)
+        match=re.search(r'Duration:\s*(\d+):(\d+):(\d+\.\d+)',log)
+        seconds=None
+        if match:
+            h,m,s=match.groups()
+            seconds=int(h)*3600+int(m)*60+float(s)
+        package[suffix]={'file':path.name,'sha256':file_hash(path),'duration_seconds':seconds,**fmt}
+        expected={'width':width,'height':height,'fps':30.,'codec':'h264','audio_present':True,
+                  'audio_codec':'aac','audio_rate':48000,'audio_stereo':True}
+        if any(fmt[k]!=v for k,v in expected.items()):
+            errors.append(f'{suffix}: picture or voice format does not match')
+        if seconds is None or seconds<=0 or seconds>max_sec or (suffix=='1080p' and abs(seconds-intended)>.5):
+            errors.append(f'{suffix}: duration does not match')
+    thumb=next((x for x in (delivery/f'{stem}-thumbnail.jpg',delivery/f'{stem}-thumbnail.png') if x.is_file()),None)
+    if thumb:
+        with Image.open(thumb) as photo:
+            package['thumbnail']={'file':thumb.name,'sha256':file_hash(thumb),'size':list(photo.size)}
+            if photo.size!=(1280,720):
+                errors.append('Thumbnail is not 1280 × 720')
+    else:
+        errors.append('Thumbnail is missing')
+    return package,errors
+
 
 def check_master(path, ffmpeg, episode):
     probe = invoke(ffmpeg, '-i', path, check=False)
@@ -184,6 +219,8 @@ def check_master(path, ffmpeg, episode):
              episode/'captions.en.srt')
     report['captions']=verify_captions(cap,duration)
     errors.extend(report['captions']['errors'])
+    report['deliverables'],pack_errors=check_package(episode,path,ffmpeg,intended)
+    errors.extend(pack_errors)
     report['halal_review']=review.get('halal_review','pending')
     for key in ('mobile_readability','art_coverage','device_motion','clinical_accuracy',
                 'caption_alignment','voice_only','thumbnail','vertical_short','halal_review'):
