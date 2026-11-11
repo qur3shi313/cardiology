@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "episode": "episode-12",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4613,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "Inside the artery",
+      "start_frame": 0,
+      "end_frame": 471,
+      "narration": "What can a scan inside an artery reveal? A coronary angiogram shows where contrast flows. A scan made from inside the vessel adds a cross-sectional view of the artery wall and, after treatment, of the stent.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-12/audio/alexander-episode-12.mp3",
+        "in_sec": 0.0,
+        "out_sec": 15.7
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-12/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 16,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "One artery, two views",
+      "start_frame": 471,
+      "end_frame": 1103,
+      "narration": "The angiogram is a moving X-ray view of the contrast-filled channel. That view helps the team follow the branching arteries. An imaging catheter adds slices through the artery, like looking through the end of a tube. Clinicians can use those slices to study the wall and the open channel together.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-12/audio/alexander-episode-12.mp3",
+        "in_sec": 15.7,
+        "out_sec": 36.766666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-12/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "IVUS uses sound",
+      "start_frame": 1103,
+      "end_frame": 1766,
+      "narration": "IVUS stands for intravascular ultrasound. A small sensor on the catheter sends sound waves and detects the echoes. This can show the size of the vessel and structures deeper in the wall. Dense calcium can cast a shadow, which limits what the scan can show immediately behind it.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-12/audio/alexander-episode-12.mp3",
+        "in_sec": 36.766666666666666,
+        "out_sec": 58.86666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-12/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "OCT uses light",
+      "start_frame": 1766,
+      "end_frame": 2495,
+      "narration": "OCT stands for optical coherence tomography. It uses near-infrared light to show fine detail near the inner surface. The team briefly clears blood from the imaging area so the light can reach the wall. OCT can show fine features such as individual stent struts. How deep it sees depends on the tissue.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-12/audio/alexander-episode-12.mp3",
+        "in_sec": 58.86666666666667,
+        "out_sec": 83.16666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-12/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 26,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Planning a treatment",
+      "start_frame": 2495,
+      "end_frame": 3103,
+      "narration": "Before a stent is placed, an inside scan can show the length of the diseased segment, the size of the surrounding artery, and how much calcium is present. These details can change the treatment plan. The team chooses the imaging method based on the anatomy, the clinical situation, and what it needs to see.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-12/audio/alexander-episode-12.mp3",
+        "in_sec": 83.16666666666667,
+        "out_sec": 103.43333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-12/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 27,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Checking the stent",
+      "start_frame": 3103,
+      "end_frame": 3699,
+      "narration": "After the stent opens, the team can check how fully it has expanded and whether its struts are close to the vessel wall. Here, a scan shows one portion that remains narrower than intended. The care team interprets that finding alongside the angiogram before deciding whether anything further is needed.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-12/audio/alexander-episode-12.mp3",
+        "in_sec": 103.43333333333334,
+        "out_sec": 123.3
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-12/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "When imaging is useful",
+      "start_frame": 3699,
+      "end_frame": 4373,
+      "narration": "The extra detail matters most when it can change what the team does. For example, guidance recommends inside-artery imaging to guide treatment of complex lesions in people with an acute coronary syndrome. The findings have to fit the wider picture, including the patient’s condition, the artery anatomy, and the purpose of the procedure.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-12/audio/alexander-episode-12.mp3",
+        "in_sec": 123.3,
+        "out_sec": 145.76
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-12/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 27,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Clinical sources",
+      "start_frame": 4373,
+      "end_frame": 4613,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-12/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

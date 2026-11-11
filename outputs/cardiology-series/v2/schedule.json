@@ -11,7 +11,10 @@
       "production_material": "Existing wrist and groin scripts, footage and Alexander voice",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 419.6,
+      "scene_count": 40,
+      "narration_decoded": true
     },
     {
       "topic": 2,
@@ -22,7 +25,10 @@
       "production_material": "Existing wrist versus groin access package",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 205.967,
+      "scene_count": 12,
+      "narration_decoded": true
     },
     {
       "topic": 3,
@@ -33,29 +39,38 @@
       "production_material": "Existing device roles script, storyboard and animation",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 205.133,
+      "scene_count": 12,
+      "narration_decoded": true
     },
     {
       "topic": 4,
       "episode": "episode-04",
       "title": "How clinicians read a coronary angiogram",
       "target": "2026-11-15T18:00:00+05:00",
-      "status": "voice_and_timeline_locked",
+      "status": "picture_rendering",
       "production_material": "Script and sources in production",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 190.167,
+      "scene_count": 10,
+      "narration_decoded": true
     },
     {
       "topic": 5,
       "episode": "episode-05",
       "title": "Recovery and next steps after a coronary angiogram",
       "target": "2026-11-16T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "picture_rendering",
       "production_material": "Script and sources in production",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 198.0,
+      "scene_count": 11,
+      "narration_decoded": true
     },
     {
       "topic": 6,
@@ -66,18 +81,24 @@
       "production_material": "Existing angioplasty and stent package",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 297.6,
+      "scene_count": 16,
+      "narration_decoded": true
     },
     {
       "topic": 7,
       "episode": "episode-07",
       "title": "How drug-eluting stents work",
       "target": "2026-11-18T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 162.467,
+      "scene_count": 9,
+      "narration_decoded": true
     },
     {
       "topic": 8,
@@ -88,106 +109,136 @@
       "production_material": "Existing drug-coated balloon package",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 186.367,
+      "scene_count": 10,
+      "narration_decoded": true
     },
     {
       "topic": 9,
       "episode": "episode-09",
       "title": "Why a stent can narrow again and how the team investigates",
       "target": "2026-11-20T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 162.233,
+      "scene_count": 9,
+      "narration_decoded": true
     },
     {
       "topic": 10,
       "episode": "episode-10",
       "title": "Recovery, medicines and follow-up after PCI",
       "target": "2026-11-21T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 162.3,
+      "scene_count": 9,
+      "narration_decoded": true
     },
     {
       "topic": 11,
       "episode": "episode-11",
       "title": "How FFR and iFR help assess a coronary narrowing",
       "target": "2026-11-22T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 157.467,
+      "scene_count": 9,
+      "narration_decoded": true
     },
     {
       "topic": 12,
       "episode": "episode-12",
       "title": "Looking inside coronary arteries with IVUS and OCT",
       "target": "2026-11-23T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 153.767,
+      "scene_count": 8,
+      "narration_decoded": true
     },
     {
       "topic": 13,
       "episode": "episode-13",
       "title": "Calcified arteries and complex PCI",
       "target": "2026-11-24T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 143.767,
+      "scene_count": 8,
+      "narration_decoded": true
     },
     {
       "topic": 14,
       "episode": "episode-14",
       "title": "Heart attack and emergency PCI",
       "target": "2026-11-25T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 147.3,
+      "scene_count": 8,
+      "narration_decoded": true
     },
     {
       "topic": 15,
       "episode": "episode-15",
       "title": "Treatment decisions when several coronary arteries are narrowed",
       "target": "2026-11-26T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 149.233,
+      "scene_count": 8,
+      "narration_decoded": true
     },
     {
       "topic": 16,
       "episode": "episode-16",
       "title": "What happens in aortic stenosis",
       "target": "2026-11-27T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 141.7,
+      "scene_count": 8,
+      "narration_decoded": true
     },
     {
       "topic": 17,
       "episode": "episode-17",
       "title": "How the Heart Team plans TAVI",
       "target": "2026-11-28T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 140.433,
+      "scene_count": 8,
+      "narration_decoded": true
     },
     {
       "topic": 18,
@@ -198,29 +249,38 @@
       "production_material": "Existing TAVI package",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 192.233,
+      "scene_count": 12,
+      "narration_decoded": true
     },
     {
       "topic": 19,
       "episode": "episode-19",
       "title": "Recovery and follow-up after TAVI",
       "target": "2026-11-30T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 140.667,
+      "scene_count": 8,
+      "narration_decoded": true
     },
     {
       "topic": 20,
       "episode": "episode-20",
       "title": "TAVI, surgery and how the Heart Team weighs the options",
       "target": "2026-12-01T18:00:00+05:00",
-      "status": "source_script_and_storyboard_ready",
+      "status": "voice_and_timeline_locked",
       "production_material": "Source review and script pending",
       "studio_verified": false,
       "watch_url": null,
-      "qa_passed": false
+      "qa_passed": false,
+      "duration_seconds": 147.867,
+      "scene_count": 8,
+      "narration_decoded": true
     }
   ]
 }

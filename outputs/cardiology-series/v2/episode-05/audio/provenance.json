@@ -1,0 +1,13 @@
+{
+  "file": "alexander-episode-05.mp3",
+  "provider": "ElevenLabs",
+  "model": "eleven_multilingual_v2",
+  "voice": "Alexander",
+  "sha256": "2dcd321a6fe267df1579a2bfab501c380b57c361f003ed30960787eeca3d41ee",
+  "speech_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "use": "voice-only narrative for the corresponding complete episode"
+}

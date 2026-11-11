@@ -31,8 +31,10 @@ def header(c,title,tag='CORONARY ANGIOGRAPHY', dark=False):
     text(c,title,55,132,48,tone,HEADING)
 
 def stroke_var(c,pts,weights,shade,opacity):
-    for (a,b),w in zip(zip(pts,pts[1:]),weights):
-        line(c,[a,b],shade,w,opacity)
+    # Draw each small run as one smooth stroke, retaining the focal taper.
+    for i in range(0,len(weights),5):
+        segment=weights[i:i+5]
+        line(c,pts[i:i+len(segment)+1],shade,sum(segment)/len(segment),opacity)
 
 @lru_cache(maxsize=4)
 def tree(side):
@@ -185,11 +187,21 @@ CARDS={
 MARKS={'P02':(.0,.29,.59),'P03':(.0,.40,.64),'P30':(.0,.35,.49,.73),
        'P37':(.0,.65),'P38':(.0,.42,.67),'P39':(.0,.40,.73),'P40':(.0,)}
 
+@lru_cache(maxsize=10)
+def editorial_plate(ident):
+    surface=skia.Surface(WIDTH,HEIGHT)
+    c=surface.getCanvas()
+    c.scale(2,2)
+    rect(c,0,0,1280,720,grad(0,0,1240,715,['#fbfcf6','#e9f3eb','#bad5c6']))
+    header(c,CARDS[ident][0],'PATIENT RECOVERY' if ident in ('P37','P38','P39','P40') else 'TEST AND RESULTS')
+    block(c,683,190,505,406,42,grad(726,209,1133,565,['#143c36','#0d2728','#071e21']))
+    block(c,55,238,8,194,4,solid('#a34f4e' if ident=='P39' else '#00835b'))
+    text(c,'Follow the advice of your own care team',57,663,25,'#2f5e52',REGULAR)
+    return surface.makeImageSnapshot()
+
 def icon(c,kind,p,t):
     cx,cy=929,380
     q=smooth(p/.45)
-    base=grad(726,209,1133,565,['#143c36','#0d2728','#071e21'])
-    block(c,683,190,505,406,42,base)
     if kind in ('open','narrow'):
         for radius,sh in ((141,'#723641'),(126,'#c77270'),(108,'#e5a38c'),(91,'#572637')):
             c.drawCircle(cx,cy,radius,solid(sh))
@@ -233,9 +245,10 @@ def icon(c,kind,p,t):
     elif kind=='medicine':
         for j in range(2):
             c.save()
-            c.rotate(-35,cx+(j-0.5)*101,cy)
-            block(c,cx-29+(j-.5)*101,cy-87,58,174,29,solid('#dce7d6'))
-            block(c,cx-29+(j-.5)*101,cy-1,58,88,29,solid('#80ad9d'))
+            offset=(j-.5)*(69+45*smooth(p))
+            c.rotate(-34+(j-.5)*8*smooth(p),cx+offset,cy)
+            block(c,cx-29+offset,cy-87,58,174,29,solid('#dce7d6'))
+            block(c,cx-29+offset,cy-1,58,88,29,solid('#80ad9d'))
             c.restore()
     elif kind=='call':
         block(c,852,246,156,259,28,solid('#7ab19e'))
@@ -256,22 +269,20 @@ def icon(c,kind,p,t):
 
 def cards(c,ident,p,t,duration):
     urgent=ident=='P39'
-    rect(c,0,0,1280,720,grad(0,0,1240,715,['#fbfcf6','#e9f3eb','#bad5c6']))
-    title,entries=CARDS[ident]
-    header(c,title,'PATIENT RECOVERY' if ident in ('P37','P38','P39','P40') else 'TEST AND RESULTS')
+    c.drawImageRect(editorial_plate(ident),skia.Rect.MakeWH(1280,720),
+                    skia.SamplingOptions(skia.FilterMode.kNearest))
+    _,entries=CARDS[ident]
     stops=MARKS[ident]
     i=bisect_right(stops,p)-1
     local=(p-stops[i])/((stops[i+1] if i<len(stops)-1 else 1.0)-stops[i])
     title,detail,kind=entries[i]
     icon(c,kind,local,t)
-    block(c,55,238,8,194,4,solid('#a34f4e' if urgent else '#00835b'))
     text(c,title,85,324,40,'#713737' if urgent else '#004b3d')
     text(c,detail,85,385,27,'#333b39',REGULAR)
     if ident=='P40':
         text(c,'Next: Wrist versus groin access',85,472,28,'#235e50')
     for j in range(len(entries)):
         block(c,86+59*j,568,40,7,4,solid('#226956' if j==i else '#adcabe'))
-    text(c,'Follow the advice of your own care team',57,663,25,'#2f5e52',REGULAR)
 
 ROOT_SCENES={
     'P24':'At the left coronary opening',
@@ -315,7 +326,11 @@ def instrument_path(tip, bend=0):
         ((1134,500+bend),(tx+(1142-tx)*.36,ty+bend),tip),
     )
 
-def show_root(c,ident,p,t,duration):
+@lru_cache(maxsize=1)
+def root_plate():
+    surface=skia.Surface(WIDTH,HEIGHT)
+    c=surface.getCanvas()
+    c.scale(2,2)
     rect(c,0,0,1280,720,grad(0,0,1220,720,['#f4faf3','#dcece5','#b5d2c6']))
     # The coronary ostia are shown above the valve plane. This view follows
     # the original source illustration's left/right anatomical orientation.
@@ -329,12 +344,6 @@ def show_root(c,ident,p,t,duration):
                grad(398,186,895,611,['#b57273','#a15261','#653641']))
     c.drawPath(path(root_trace(ROOT_LUMEN),True),
                grad(394,216,848,596,['#f0bba0','#d8958b','#a46571']))
-    for i in range(16):
-        py=335+(i*19+t*40)%269
-        px=1146+((i*27)%88)-44
-        if py>536: px=1154+((i*31)%154)-77
-        x,y=root_coord((px,py))
-        dot(c,x,y,3.6,'#eacbb2',135)
     for p0 in (LEFT,RIGHT):
         x,y=root_coord(p0)
         c.drawOval(skia.Rect.MakeXYWH(x-19,y-12,38,24),solid('#71384e'))
@@ -342,6 +351,17 @@ def show_root(c,ident,p,t,duration):
                               ((1193,614),(1218,601),(1258,603))))
     line(c,valve,'#75364a',16)
     line(c,valve,'#edb394',8)
+    return surface.makeImageSnapshot()
+
+def show_root(c,ident,p,t,duration):
+    c.drawImageRect(root_plate(),skia.Rect.MakeWH(1280,720),
+                    skia.SamplingOptions(skia.FilterMode.kNearest))
+    for i in range(16):
+        py=335+(i*19+t*40)%269
+        px=1146+((i*27)%88)-44
+        if py>536: px=1154+((i*31)%154)-77
+        x,y=root_coord((px,py))
+        dot(c,x,y,3.6,'#eacbb2',135)
     wire,catheter=[],[]
     if ident=='P24':
         tip=blend_point(NEUTRAL,LEFT,smooth((p-.48)/.44))

@@ -20,6 +20,10 @@ FONTS = ROOT / 'outputs/website-v2/elysian-corporate/assets/fonts'
 WIDTH, HEIGHT, FPS = 2560, 1440, 30
 LEGACY_FFMPEG = ROOT / 'work/video-runtime/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe'
 
+def scratch(prefix):
+    folder=ROOT/'work/cardiology-v2-scratch'
+    folder.mkdir(parents=True,exist_ok=True)
+    return TemporaryDirectory(prefix=prefix,dir=folder)
 
 @dataclass(frozen=True)
 class Media:
@@ -116,7 +120,8 @@ def picture(exe, scene, work, quality):
     else:
         chain.extend([f'scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos',
                       f'pad={WIDTH}:{HEIGHT}:(ow-iw)/2:(oh-ih)/2:color=0xe8f0e8'])
-    chain.extend(['setsar=1','tpad=stop_mode=clone:stop_duration=0.15','format=yuv420p'])
+    chain.extend(['setsar=1','tpad=stop_mode=clone:stop_duration=0.15','format=yuv420p',
+                  'noise=alls=2:allf=u'])
     arguments=['-ss',f'{source.start:.6f}','-t',f'{source.end-source.start:.6f}','-i',source.path]
     if label := spec.get('label'):
         overlay=work/f'{scene["id"]}-label.png'
@@ -154,7 +159,7 @@ def concat_list(work, name, files):
 
 
 def normalized_voice(exe, work, list_path):
-    chain='highpass=f=65,loudnorm=I=-14:TP=-1.25:LRA=7'
+    chain='highpass=f=65,loudnorm=I=-14:TP=-1.50:LRA=7'
     measurement=run(exe,'-nostats','-f','concat','-safe',0,'-i',list_path,
                     '-af',chain+':print_format=json','-f','null','-',capture_output=True,
                     text=True,encoding='utf-8',errors='replace')
@@ -178,7 +183,7 @@ def render_episode(exe, episode, jobs, quality):
         raise ValueError('Picture decisions still needed: '+', '.join(incomplete))
     output = episode/'delivery'
     output.mkdir(exist_ok=True)
-    with TemporaryDirectory(prefix='elysian-film-') as temporary:
+    with scratch('elysian-film-') as temporary:
         work = Path(temporary)
         scenes = timeline['scenes']
         with ThreadPoolExecutor(max_workers=jobs) as pool:

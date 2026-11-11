@@ -4,11 +4,10 @@ import json
 from pathlib import Path
 import re
 import shutil
-from tempfile import TemporaryDirectory
 
 from PIL import Image, ImageDraw, ImageFont
 
-from .__main__ import ROOT, SERIES, FONTS, FPS, LEGACY_FFMPEG, run
+from .__main__ import ROOT, SERIES, FONTS, FPS, LEGACY_FFMPEG, run, scratch
 
 def read_srt(path):
     def seconds(s):
@@ -58,10 +57,10 @@ def thumbnail(ffmpeg,master,dest,seconds,lines):
     frame=dest.with_suffix('.frame.png')
     try:
         run(ffmpeg,'-v','error','-y','-ss',seconds,'-i',master,'-frames:v',1,
-            '-vf','crop=1580:1150:545:175,scale=740:539:flags=lanczos',frame)
+            '-vf','crop=1580:1000:545:303,scale=740:468:flags=lanczos',frame)
         out=Image.new('RGBA',(1280,720),'#102b29')
         visual=Image.open(frame).convert('RGBA')
-        out.alpha_composite(visual,(540,108))
+        out.alpha_composite(visual,(540,154))
         out.alpha_composite(logo(77),(62,55))
         pen=ImageDraw.Draw(out)
         title(pen,'Elysian Biomedical LLP',(157,76),33,'#e4f3eb',455)
@@ -73,7 +72,7 @@ def thumbnail(ffmpeg,master,dest,seconds,lines):
         if frame.is_file(): frame.unlink()
 
 def short(ffmpeg,master,srt,dest,a,b):
-    with TemporaryDirectory(prefix='elysian-short-') as temp:
+    with scratch('elysian-short-') as temp:
         work=Path(temp)
         captions=work/'vertical.ass'
         caption_track(captions,srt,a,b)

@@ -1,0 +1,114 @@
+{
+  "P12": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/R12-route.mp4",
+    "in_sec": 0,
+    "out_sec": 8.666666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P13": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F04-locator.mp4",
+    "in_sec": 0,
+    "out_sec": 5.466666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P14": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F05-needle.mp4",
+    "in_sec": 0,
+    "out_sec": 8.5,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P15": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F06-fine-wire.mp4",
+    "in_sec": 0,
+    "out_sec": 10.0,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P16": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F07-needle-out.mp4",
+    "in_sec": 0,
+    "out_sec": 3.1666666666666665,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P17": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F08-introducer.mp4",
+    "in_sec": 0,
+    "out_sec": 6.9,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P18": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F09-fine-wire-out.mp4",
+    "in_sec": 0,
+    "out_sec": 9.333333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P19": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F10-exchange-wire.mp4",
+    "in_sec": 0,
+    "out_sec": 6.066666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P20": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F11-introducer-out.mp4",
+    "in_sec": 0,
+    "out_sec": 7.2,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P21": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F12-working-sheath.mp4",
+    "in_sec": 0,
+    "out_sec": 5.633333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P22": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F13-exchange-out.mp4",
+    "in_sec": 0,
+    "out_sec": 10.6,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P23": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F16-route.mp4",
+    "in_sec": 0,
+    "out_sec": 16.9,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P31": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F24-withdraw.mp4",
+    "in_sec": 0,
+    "out_sec": 8.633333333333333,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P32": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F25-close.mp4",
+    "in_sec": 0,
+    "out_sec": 7.766666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P33": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F26-checks.mp4",
+    "in_sec": 0,
+    "out_sec": 10.3,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P34": {
+    "path": "outputs/cardiology-series/v2/episode-01/visuals/F27-recovery.mp4",
+    "in_sec": 0,
+    "out_sec": 9.466666666666667,
+    "reference_only": false,
+    "native_composition": true
+  }
+}

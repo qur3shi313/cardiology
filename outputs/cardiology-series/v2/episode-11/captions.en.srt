@@ -1,0 +1,177 @@
+1
+00:00:00,000 --> 00:00:03,402
+Can two similar narrowings affect blood
+flow differently?
+
+2
+00:00:03,913 --> 00:00:07,326
+Yes. A picture shows the shape of the
+artery.
+
+3
+00:00:07,767 --> 00:00:11,773
+Pressure measurements give the care team
+another way to assess how much a narrowing
+
+4
+00:00:11,842 --> 00:00:12,562
+matters.
+
+5
+00:00:13,166 --> 00:00:17,983
+A coronary angiogram uses contrast and
+X-rays to show the channel
+
+6
+00:00:18,076 --> 00:00:22,349
+inside the artery. The clinician can see
+where it is narrow.
+
+7
+00:00:22,953 --> 00:00:28,061
+In selected cases, it is unclear how much
+that narrowing affects blood supply to the
+
+8
+00:00:28,119 --> 00:00:32,124
+heart muscle. That is where a pressure-
+based test may help.
+
+9
+00:00:32,728 --> 00:00:35,433
+A thin wire carries a pressure sensor.
+
+10
+00:00:35,944 --> 00:00:39,345
+In this example, the sensor is beyond the
+narrowing.
+
+11
+00:00:40,042 --> 00:00:44,814
+The team compares pressure there with
+pressure near the artery’s opening, using
+
+12
+00:00:44,872 --> 00:00:47,077
+the aortic pressure as a reference.
+
+13
+00:00:47,774 --> 00:00:52,499
+The comparison helps estimate how strongly
+the narrowing limits blood flow under the
+
+14
+00:00:52,534 --> 00:00:53,892
+conditions of the test.
+
+15
+00:00:54,844 --> 00:00:58,118
+F F R stands for fractional flow reserve.
+
+16
+00:00:58,560 --> 00:01:02,786
+It uses the pressure comparison when blood
+flow has been increased as much as
+
+17
+00:01:02,867 --> 00:01:04,179
+possible for the test.
+
+18
+00:01:04,876 --> 00:01:07,941
+The team uses a medicine to create those
+conditions.
+
+19
+00:01:08,382 --> 00:01:12,294
+The measurement helps estimate how the
+narrowing affects flow when the artery
+
+20
+00:01:12,364 --> 00:01:13,804
+needs to carry more.
+
+21
+00:01:14,756 --> 00:01:19,017
+I F R stands for instantaneous wave-free
+ratio.
+
+22
+00:01:19,400 --> 00:01:24,230
+It uses the pressure comparison at rest,
+during a particular part of each heartbeat
+
+23
+00:01:24,265 --> 00:01:25,820
+when the heart is relaxing.
+
+24
+00:01:26,262 --> 00:01:28,897
+The measurement uses that resting window.
+
+25
+00:01:29,408 --> 00:01:33,773
+Both tests use pressure to help the team
+judge the effect of a narrowing.
+
+26
+00:01:34,214 --> 00:01:38,510
+The team checks that the pressure signals
+are reliable and interprets them with the
+
+27
+00:01:38,556 --> 00:01:42,016
+symptoms, the artery anatomy and other
+findings.
+
+28
+00:01:42,713 --> 00:01:47,809
+If the assessment suggests the narrowing
+is unlikely to limit blood supply, a stent
+
+29
+00:01:47,937 --> 00:01:52,627
+may be deferred. Another result may
+support a treatment discussion when it
+
+30
+00:01:52,697 --> 00:01:54,404
+fits the clinical picture.
+
+31
+00:01:55,007 --> 00:02:00,185
+These measurements focus on the effect of
+a narrowing in a major coronary artery.
+
+32
+00:02:00,998 --> 00:02:03,378
+Chest symptoms can have other causes.
+
+33
+00:02:03,761 --> 00:02:08,417
+If the explanation is still unclear, the
+care team may consider another test.
+
+34
+00:02:08,928 --> 00:02:13,746
+The goal is to choose a next step that
+fits the person and the findings together.
+
+35
+00:02:14,257 --> 00:02:18,065
+If your team uses one of these
+measurements, ask what it showed about the
+
+36
+00:02:18,135 --> 00:02:20,828
+narrowing and how that changes the next
+step.
+
+37
+00:02:21,641 --> 00:02:23,533
+The angiogram supplies the map.
+
+38
+00:02:24,044 --> 00:02:29,396
+F F R and I F R add pressure information
+that can help guide the decision.

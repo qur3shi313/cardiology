@@ -159,7 +159,7 @@ def sheath(c, tip, dilator=None):
         c.drawOval(skia.Rect.MakeXYWH(u-3.5,v-10,7,20),solid('#17342e'))
 
 def callout(c, label, tx, x, y, opacity):
-    f=skia.Font(BOLD,28)
+    f=skia.Font(BOLD,36)
     w=f.measureText(label)
     a=round(opacity*255)
     start=tx if x<tx else tx+w+26
@@ -167,15 +167,15 @@ def callout(c, label, tx, x, y, opacity):
          '#24675b',2.4,a)
     c.drawCircle(x,y,6,solid('#24675b',a))
     c.drawCircle(x,y,2.5,solid('#f4f8ee',a))
-    c.drawRoundRect(skia.Rect.MakeXYWH(tx-12,173,w+25,47),10,10,solid('#e5f2ea',a))
-    text(c,label,tx,204,28,'#12483e',BOLD,a)
+    c.drawRoundRect(skia.Rect.MakeXYWH(tx-12,168,w+25,56),10,10,solid('#e5f2ea',a))
+    text(c,label,tx,207,36,'#12483e',BOLD,a)
 
 def background(c):
     rect(c,0,0,1280,720,grad(0,0,1110,720,['#fbfcf6','#e3efe7','#b4d3c5'],[0,.65,1]))
     rect(c,0,582,1280,138,grad(0,582,1280,720,['#0f3c36','#082b29']))
-    c.drawImageRect(LOGO,skia.Rect.MakeXYWH(885,31,46,46),skia.SamplingOptions(skia.FilterMode.kLinear))
-    text(c,'Elysian Biomedical LLP',946,61,25,'#004b3d')
-    text(c,'RIGHT WRIST',946,95,24,'#28685a')
+    c.drawImageRect(LOGO,skia.Rect.MakeXYWH(836,27,54,54),skia.SamplingOptions(skia.FilterMode.kLinear))
+    text(c,'Elysian Biomedical LLP',904,63,32,'#004b3d')
+    text(c,'RIGHT WRIST',904,106,33,'#28685a')
 
 @lru_cache(maxsize=1)
 def access_plate():
@@ -193,7 +193,9 @@ def scene(c,id,p,t):
     # Screen-space choreography for the same access tract in every wrist shot.
     # Needle, short wire, sheath, and diagnostic catheter are separate layers.
     q=smooth((p-.04)/.82)
-    entry, short, stop, long = 591, 797, 631, 1196
+    # The rigid needle stops on the straight access track just inside the
+    # lumen. Only the flexible wire and over-wire devices follow the bend.
+    entry, short, stop, long = 503, 797, 631, 1196
     needle_tip, wire_tip, sheath_tip, dilator_tip, cath_tip, band = (None,)*6
     mark=(329,322)
     if id=='P04':
@@ -240,9 +242,9 @@ def scene(c,id,p,t):
     text(c,title,49,652,47,'#effbf2',HEADING)
     if p>.13:
         callout(c,label,765 if mark[0]<710 else 618,*mark,smooth((p-.13)/.13))
-    text(c,'Arterial access  /  Clinical illustration',50,690,24,'#d8eee4',REGULAR)
-    text(c,'Toward the heart',981,673,25,'#d8eee4',REGULAR)
-    line(c,[(1174,666),(1224,666),(1213,656)],'#a1d4c6',3)
+    text(c,'Arterial access  /  Clinical illustration',50,690,32,'#d8eee4',REGULAR)
+    text(c,'Toward the heart',921,673,32,'#d8eee4',REGULAR)
+    line(c,[(1176,666),(1224,666),(1213,656)],'#a1d4c6',3)
     line(c,[(1224,666),(1213,676)],'#a1d4c6',3)
 
 def render(ffmpeg, folder, timeline):

@@ -3,7 +3,7 @@
 from math import cos, sin
 
 from render_comparison import (
-    INK, JADE, LIGHT, MID, MUTED, RED, TEAL, WARN, anatomy, artery, beat, body, brand,
+    INK, JADE, LIGHT, TEAL, WARN, anatomy, artery, beat, body, brand,
     curve, easing, ellipse, field, glove, gradient, groin_surface, lerp, line, marker,
     note, path_part, pulse, rectangle, shape, solid, words, wrist, wrist_surface,
 )
@@ -203,7 +203,7 @@ def p06(c,row,n):
         pulse(c,*tip,t)
         note(c,"A difficult arterial path",73,128)
     elif j==1:
-        a=body(c,370,367,1.10,[],t)
+        body(c,370,367,1.10,[],t)
         b=body(c,924,367,1.10,[("groin",easing(p,.32,1))],t)
         if p<.57:
             pulse(c,370+(525-293)*1.10,367+(397-282)*1.10,t)

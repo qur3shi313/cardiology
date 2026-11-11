@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "episode": "episode-10",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4869,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "When the stent stays",
+      "start_frame": 0,
+      "end_frame": 331,
+      "narration": "The stent is in. What happens after the cath lab? Recovery includes an access-site check, a medicine plan and follow-up for the heart condition that led to treatment.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3",
+        "in_sec": 0.0,
+        "out_sec": 11.033333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-10/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 15,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "Recovery checks",
+      "start_frame": 331,
+      "end_frame": 875,
+      "narration": "PCI is a catheter procedure that treats a narrowed heart artery. Afterward, staff check your blood pressure and pulse and look for bleeding where the catheter entered. The access site, the way it was closed and your condition all affect when you can get up and go home.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3",
+        "in_sec": 11.033333333333333,
+        "out_sec": 29.166666666666668
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-10/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "The medicine plan after a stent",
+      "start_frame": 875,
+      "end_frame": 1534,
+      "narration": "After a stent, your team usually prescribes antiplatelet medicines. They make platelets less likely to clump together and form a clot inside the stent. The plan depends on why you had PCI, your chance of bleeding and any other medicines you take. Your discharge summary should tell you which plan applies to you.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3",
+        "in_sec": 29.166666666666668,
+        "out_sec": 51.13333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-10/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "Before medicines are changed",
+      "start_frame": 1534,
+      "end_frame": 2059,
+      "narration": "Before you leave, confirm which medicines are new and whom to contact about side effects or missed doses. If another clinician plans surgery or dental work, tell them about your stent and your medicines. Your care teams can work together before any medicine change.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3",
+        "in_sec": 51.13333333333333,
+        "out_sec": 68.63333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-10/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Activity and the wound at home",
+      "start_frame": 2059,
+      "end_frame": 2764,
+      "narration": "Your own discharge instructions cover the dressing, activity, lifting, driving and return to work. A small bruise or mild tenderness can occur. Increasing pain, redness, swelling, drainage or fever are reasons to contact the care team. How quickly you can return to activity depends on your recovery and the reason for treatment.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3",
+        "in_sec": 68.63333333333334,
+        "out_sec": 92.13333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-10/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Emergency symptoms",
+      "start_frame": 2764,
+      "end_frame": 3450,
+      "narration": "Get emergency help for severe chest pain, sudden trouble breathing, heavy bleeding or bleeding that will not stop at the access site. A hand or foot that suddenly becomes cold, pale or numb on the side used also needs urgent attention. Your discharge plan should identify whom to call with other concerns.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3",
+        "in_sec": 92.13333333333334,
+        "out_sec": 115.0
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-10/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "Rehabilitation and follow-up",
+      "start_frame": 3450,
+      "end_frame": 4095,
+      "narration": "The treated section is only one part of coronary artery disease. Follow-up gives your team a chance to check symptoms, review medicines and discuss the prevention plan. Cardiac rehabilitation can provide supervised exercise, education and support when it is appropriate. Your team can tell you how to join.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3",
+        "in_sec": 115.0,
+        "out_sec": 136.5
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-10/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 23,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "What to take home",
+      "start_frame": 4095,
+      "end_frame": 4629,
+      "narration": "Before you leave, ask for the treatment result, the written medicine and recovery plan, and a clear contact for follow-up or problems. A planned procedure and an emergency procedure can lead to different recovery plans. Keep the plan that your team gives you.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3",
+        "in_sec": 136.5,
+        "out_sec": 154.3
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-10/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 23,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P09",
+      "title": "Clinical sources",
+      "start_frame": 4629,
+      "end_frame": 4869,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-10/visuals/P09.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

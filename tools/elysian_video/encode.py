@@ -10,10 +10,10 @@ from .__main__ import WIDTH, HEIGHT, FPS
 
 
 def encode_scene(target, count, draw, preset='medium', threads=3):
-    rgba=np.empty((HEIGHT,WIDTH,4),dtype=np.uint8)
-    info=skia.ImageInfo.Make(WIDTH,HEIGHT,skia.ColorType.kRGBA_8888_ColorType,
+    pixels=np.empty((HEIGHT,WIDTH,4),dtype=np.uint8)
+    info=skia.ImageInfo.Make(WIDTH,HEIGHT,skia.ColorType.kBGRA_8888_ColorType,
                             skia.AlphaType.kPremul_AlphaType)
-    surface=skia.Surface.MakeRasterDirect(info,rgba,WIDTH*4)
+    surface=skia.Surface.MakeRasterDirect(info,pixels,WIDTH*4)
     canvas=surface.getCanvas()
     canvas.scale(2,2)
     timebase=Fraction(1,FPS)
@@ -31,7 +31,7 @@ def encode_scene(target, count, draw, preset='medium', threads=3):
                         else {'preset':preset,'crf':'16','profile':'high'})
         for i in range(count):
             draw(canvas,i)
-            frame=av.VideoFrame.from_ndarray(rgba,format='rgba')
+            frame=av.VideoFrame.from_ndarray(pixels,format='bgra')
             frame.pts,frame.time_base=i,timebase
             for packet in stream.encode(frame):
                 container.mux(packet)

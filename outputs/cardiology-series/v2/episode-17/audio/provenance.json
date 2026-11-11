@@ -1,0 +1,13 @@
+{
+  "file": "alexander-episode-17.mp3",
+  "provider": "ElevenLabs",
+  "model": "eleven_multilingual_v2",
+  "voice": "Alexander",
+  "sha256": "49577c89b24008881f977edd44db1feb250e5dfbd1be6a377a78300066463265",
+  "speech_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "use": "voice-only narrative for the corresponding complete episode"
+}

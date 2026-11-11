@@ -27,6 +27,7 @@ spec.loader.exec_module(femoral)
 GREEN, MINT, PALE = '#004b3d', '#73c0aa', '#eff8ee'
 DARK, INK, MUTED = '#0d3531', '#213c37', '#4c7168'
 CREAM, GOLD, CORAL = '#f2fbf3', '#e7bd77', '#aa5969'
+BODY_X, BODY_Y, BODY_SX, BODY_SY = 89, 74, 1.91, 1.10
 BASE = {1: 15, 2: 13, 3: 14, 4: 14, 5: 12, 6: 15,
         7: 13, 8: 13, 9: 14, 10: 12, 11: 13, 12: 8}
 solid, gradient, line, path = wrist.solid, wrist.grad, wrist.line, wrist.path
@@ -171,11 +172,26 @@ def tool_row(c, p, t, ending=False):
     halo(c, x, 552, 4, t, GREEN)
 
 
-def xray(c, p, t, *, side='left', angle=5, label=None, recording=False, hook=False):
+def tool_study(c, current, beat, t):
+    field(c)
+    brand(c)
+    title(c,'Four tools in a coronary angiogram')
+    c.save()
+    c.rotate(mix(-15,-7,ease(beat,0,1)),635,407)
+    c.drawRect(rect(-175,256,1700,330),gradient(332,246,799,591,['#b7d2c5','#e8f1e6','#82ac9e']))
+    line(c,[(-187,260),(1500,260)],'#f3fbef',5,130)
+    line(c,[(-187,584),(1500,584)],'#719e90',6,115)
+    tray_tool(c,current,mix(573,679,ease(beat,0,1)),405,mix(2.85,3.10,ease(beat,0,1)),t,True)
+    c.restore()
+    tag(c,TOOL_NAMES[current],56,629)
+
+
+def xray(c, p, t, *, side='left', angle=5, label=None, recording=False, hook=False,
+         wash=(.65,.94)):
     c.drawImageRect(coronary.radiograph_plate(), rect(0, 0, 1280, 720),
                     skia.SamplingOptions(skia.FilterMode.kNearest))
-    fill = ease(p, 0, .47)
-    alpha = round(249*(1-ease(p,.65,.94)))
+    fill = ease(p, 0, .44)
+    alpha = round(249*(1-ease(p,*wash)))
     coronary.contrast_paths(c, side, fill, alpha, angle, False)
     words(c, 'Simulated coronary X-ray', 55, 67, 30, CREAM)
     if label:
@@ -183,16 +199,22 @@ def xray(c, p, t, *, side='left', angle=5, label=None, recording=False, hook=Fal
     if recording and .05 < p < .81:
         oval(c, 1027, 57, 6.5, 6.5, '#f9cfb0')
         words(c, 'Recording', 1047, 67, 28, CREAM)
-    if hook and t >= 5:
+    if hook and t >= 4.29:
         block(c, 42, 84, 863, 70, 12, solid(DARK, 239))
         title(c, 'Four tools in a coronary angiogram', True, 43)
 
 
 def opener(c,p,t):
-    if t < 6:
+    if t < 4.56:
         xray(c,min(.63,t/7),t,hook=True)
+    elif t >= 13.54:
+        xray(c,.12+.55*ease(t,13.54,14.97),t,label='Contrast outlines the arteries')
     else:
-        tool_row(c,ease(t,6,15),t)
+        boundaries = (4.56,7.04,9.58,11.35,13.54)
+        for tool,(a,b) in enumerate(zip(boundaries,boundaries[1:])):
+            if t<b:
+                tool_study(c,tool,(t-a)/(b-a),t)
+                break
 
 
 @lru_cache(maxsize=1)
@@ -202,8 +224,8 @@ def body_plate():
     c.scale(2,2)
     field(c)
     c.save()
-    c.translate(222, 106)
-    c.scale(1.20, 1.04)
+    c.translate(BODY_X,BODY_Y)
+    c.scale(BODY_SX,BODY_SY)
     c.drawPath(path(ART.BODY, True), gradient(89,65,490,553,['#c1ddd0','#7ba99b','#4e887b']))
     # Opaque drape is baked in above the illustration and has no external features.
     drape = curve((170,412),((230,402),(343,405),(416,417)),((426,443),(438,492),(442,560)),
@@ -222,10 +244,13 @@ def body_plate():
 
 
 def body(c,p,t, diagnostic=False):
+    if not diagnostic and .22<=p<.39:
+        wrist_locator(c,(p-.22)/.17,t)
+        return
     c.drawImageRect(body_plate(),rect(0,0,1280,720),skia.SamplingOptions(skia.FilterMode.kNearest))
     c.save()
-    c.translate(222, 106)
-    c.scale(1.20, 1.04)
+    c.translate(BODY_X,BODY_Y)
+    c.scale(BODY_SX,BODY_SY)
     radial = ART.RADIAL
     femoral = ART.FEMORAL
     if diagnostic:
@@ -235,8 +260,11 @@ def body(c,p,t, diagnostic=False):
         shaft(c,ART.trace(radial,cath),9,TUBE)
         endpoint = ART.trace(radial,advance)[-1]
         halo(c,*endpoint,8,t,'#fff0b6')
+    elif p<.22:
+        halo(c,*radial[0],8,t,'#e6f7e8')
+        halo(c,*femoral[0],8,t+.5,'#e6f7e8')
     else:
-        route, advance = (radial,ease(p,0,.52)) if p<.55 else (femoral,ease(p,.55,.92))
+        route, advance = (radial,ease(p,.39,.73)) if p<.77 else (femoral,ease(p,.77,.99))
         active = ART.trace(route,advance)
         shaft(c,active,7.4,('#175a51','#9fe0c7','#e4fff0'))
         halo(c,*route[0],8,t,'#e6f7e8')
@@ -244,12 +272,48 @@ def body(c,p,t, diagnostic=False):
             oval(c,*active[-1],4,4,'#f2f9cb')
     c.restore()
     brand(c)
-    title(c,'The wire and catheter travel together' if diagnostic else 'Two routes reach the aortic root')
-    name = 'Long wire leads the catheter' if diagnostic else ('Right wrist route' if p<.55 else 'Right groin route')
+    title(c,'To the aortic root' if diagnostic else 'Two routes')
+    name = ('Long wire leads the catheter' if diagnostic else 'Wrist or groin' if p<.22
+            else 'Right wrist route' if p<.77 else 'Right groin route')
     tag(c,name)
     endpoint = radial[-1]
     if p>.68:
-        marker(c,'Aortic root',825,289,(222+endpoint[0]*1.2,106+endpoint[1]*1.04))
+        marker(c,'Aortic root',825,289,(BODY_X+endpoint[0]*BODY_SX,BODY_Y+endpoint[1]*BODY_SY))
+
+
+PALM = curve((1500,213),
+    ((1472,210),(1439,216),(1423,214)),((1410,205),(1400,199),(1383,194)),
+    ((1368,190),(1339,190),(1311,184)),((1300,181),(1296,187),(1308,194)),
+    ((1318,198),(1337,201),(1347,204)),((1334,206),(1299,202),(1283,201)),
+    ((1274,200),(1272,209),(1285,211)),((1309,215),(1330,217),(1346,221)),
+    ((1333,224),(1300,219),(1283,221)),((1276,223),(1278,232),(1289,232)),
+    ((1310,233),(1337,233),(1350,237)),((1334,243),(1307,238),(1298,243)),
+    ((1294,249),(1301,254),(1312,254)),((1335,255),(1352,256),(1368,263)),
+    ((1379,267),(1390,272),(1394,281)),((1404,306),(1415,305),(1418,290)),
+    ((1420,279),(1410,263),(1427,258)),((1446,256),(1482,261),(1500,262)))
+
+
+def wrist_locator(c,p,t):
+    # The established right palmar orientation has fingers to the left and
+    # thumb above. The short red trace is on the thumb side of the wrist.
+    field(c)
+    brand(c)
+    title(c,'The thumb side of the right wrist')
+    shift = 21*(1-ease(p,0,1))
+    project = lambda point: (147+(point[0]-1278)*4.21,203+(point[1]-168)*3.3+shift)
+    palm = [project((x,473-y)) for x,y in PALM]
+    c.drawPath(path([(x+5,y+15) for x,y in palm],True),solid('#386b5f',51))
+    c.drawPath(path(palm,True),gradient(349,230,907,632,['#e4bca0','#cf9a87','#a26867']))
+    line(c,[*palm,palm[0]],'#996a63',3.4)
+    for marks in (((1361,232),(1394,238),(1422,251)),((1368,261),(1386,249),(1412,243))):
+        line(c,[project(point) for point in marks],'#b67970',4.2,146)
+    sleeve=[project(point) for point in ((1490,209),(1549,210),(1549,272),(1490,270))]
+    c.drawPath(path(sleeve,True),gradient(1030,328,1240,541,['#98bdad','#598f82','#377268']))
+    artery=curve((1493,224),((1470,224),(1449,224),(1442,222)),((1433,220),(1429,217),(1425,212)))
+    line(c,[project(point) for point in artery],'#a65360',10.0,207)
+    active=project((1442,222))
+    halo(c,*active,11,t,'#f6eed0')
+    marker(c,'Radial artery',876,255,active)
 
 
 @lru_cache(maxsize=1)
@@ -262,37 +326,55 @@ def wrist_plate():
     return surface.makeImageSnapshot()
 
 
-def wrist_base(c,t,label):
+def wrist_art(c,t):
     c.drawImageRect(wrist_plate(),rect(0,0,1280,720),skia.SamplingOptions(skia.FilterMode.kNearest))
     wrist.flow(c,-t)
+
+
+def wrist_labels(c,label):
     brand(c,x=889)
     words(c,label,1222,138,47,GREEN,face=wrist.HEADING,align='right')
     tag(c,'Right radial artery')
 
 
+def wrist_base(c,t,label):
+    wrist_art(c,t)
+    wrist_labels(c,label)
+
+
 def access_wire(c,p,t):
     wrist_base(c,t,'The short access wire')
-    needle_tip = 591*ease(p,.02,.26)-117*(1-ease(p,.02,.26))-777*ease(p,.69,.93)
-    if p>.29:
-        wire_tip = mix(221,797,ease(p,.29,.67))
+    # A rigid needle stops where the access tract first reaches the lumen.
+    # Only the flexible wire follows the bend further along the vessel.
+    needle_tip = mix(-117,510,ease(p,.02,.26))-696*ease(p,.55,.74)
+    if p>.283:
+        wire_tip = mix(221,797,ease(p,.283,.52))
         wrist.tube(c,wire_tip-930,wire_tip,3.8,wrist.WIRE,taper=7)
     wrist.tube(c,needle_tip-432,needle_tip,6.7,wrist.NEEDLE,taper=25)
     wrist.tube(c,needle_tip-476,needle_tip-429,12,wrist.SHEATH)
-    if p>.36:
-        marker(c,'Short wire',813,213,wrist.xy(wire_tip))
+    if p>.36 and wire_tip>needle_tip+8:
+        marker(c,'Wire stays in place' if p>.74 else 'Short wire',813,213,wrist.xy(wire_tip))
     elif needle_tip>200:
         marker(c,'Needle tip',800,211,wrist.xy(needle_tip))
 
 
 def access_sheath(c,p,t):
-    wrist_base(c,t,'The sheath stays at the wrist')
-    tip = mix(25,631,ease(p,.02,.54))
-    leave = ease(p,.63,.90)
+    zoom = 1+.24*ease(p,.64,.99)
+    c.save()
+    c.translate(631*(1-zoom),449*(1-zoom))
+    c.scale(zoom,zoom)
+    wrist_art(c,t)
+    tip = 25+140*ease(p,.02,.16)+466*ease(p,.17,.36)
+    leave = ease(p,.39,.61)
     dilator_tip = tip+24-830*leave
     wire_tip = 797-1040*leave
     wrist.sheath(c,tip,dilator_tip if leave<.98 else None)
     wrist.tube(c,wire_tip-940,wire_tip,3.8,wrist.WIRE,taper=6)
-    marker(c,'Sheath and dilator' if leave<.93 else 'Open sheath tip',781,216,wrist.xy(tip))
+    c.restore()
+    wrist_labels(c,'The sheath stays at the wrist')
+    x,y=wrist.xy(tip)
+    marker(c,'Sheath and dilator' if leave<.93 else 'Open sheath tip',781,216,
+           (631+(x-631)*zoom,449+(y-449)*zoom))
 
 
 def groin_map(points):
@@ -328,10 +410,11 @@ def groin_plate():
 
 
 def groin(c,p,t):
-    c.drawImageRect(groin_plate(),rect(0,0,1280,720),skia.SamplingOptions(skia.FilterMode.kNearest))
-    brand(c,True)
-    title(c,'One way to enter at the groin',True)
-    tag(c,'Right common femoral artery',dark=True)
+    zoom = 1+.13*ease(p,.64,.99)
+    c.save()
+    c.translate(599*(1-zoom),455*(1-zoom))
+    c.scale(zoom,zoom)
+    c.drawImageRect(groin_plate(),rect(0,0,1280,720),skia.SamplingOptions(skia.FilterMode.kLinear))
     route = femoral.ACCESS
     if p<.49:
         q = ease(p,.02,.38)
@@ -339,8 +422,7 @@ def groin(c,p,t):
         shaft(c,groin_map(route.trace(tip,max(0,tip-.29))),14,SHEATH)
         shaft(c,groin_map(route.trace(tip+.022,max(0,tip-.31))),8,TUBE)
         shaft(c,groin_map(route.trace(femoral.FINE,.02)),3.4,WIRE)
-        marker(c,'Temporary introducer',784,210,groin_position(tip),dark=True)
-    elif p<.57:
+    elif p<.64:
         block(c,0,260,1280,246,0,solid(DARK,248))
         words(c,'After the wire exchange',640,396,49,CREAM,face=wrist.HEADING,align='center')
     else:
@@ -348,24 +430,46 @@ def groin(c,p,t):
         shaft(c,groin_map(route.trace(tip,max(0,tip-.35))),22,SHEATH)
         point=groin_position(tip)
         oval(c,*point,5,9,'#153e36')
-        marker(c,'Working sheath',810,215,point,dark=True)
         halo(c,*point,11,t,GOLD)
+    c.restore()
+    brand(c,True)
+    title(c,'One way to enter at the groin',True)
+    tag(c,'Right common femoral artery',dark=True)
+    if p<.49 or p>=.64:
+        x,y=groin_position(tip)
+        marker(c,'Temporary introducer' if p<.49 else 'Working sheath',784,210,
+               (599+(x-599)*zoom,455+(y-455)*zoom),dark=True)
+
+
+def diagnostic_fluoro(c,p,t):
+    c.drawImageRect(coronary.radiograph_plate(),rect(0,0,1280,720),
+                    skia.SamplingOptions(skia.FilterMode.kNearest))
+    points=[(141+(x-60)*4.02,254+(y-123)*1.17) for x,y in ART.RADIAL]
+    visible=ART.trace(points,.51+.48*ease(p,0,1))
+    line(c,visible,'#152321',8.6)
+    line(c,visible,'#394a42',3)
+    oval(c,*visible[-1],5,5,'#293d35')
+    words(c,'Simulated fluoroscopy',55,67,30,CREAM)
+    tag(c,'Guidewire visible on live X-ray',dark=True)
 
 
 def diagnostic_wire(c,p,t):
-    if p>=.67:
-        body(c,(p-.67)/.33,t,diagnostic=True)
+    if .22<=p<.46:
+        diagnostic_fluoro(c,(p-.22)/.24,t)
+        return
+    if .71<=p<.90:
+        body(c,(p-.71)/.19,t,diagnostic=True)
         return
     wrist_base(c,t,'The long diagnostic guidewire')
-    wire_tip = mix(100,1194,ease(p,.02,.34))
-    cath_tip = mix(87,1035,ease(p,.36,.65))
+    wire_tip = mix(100,1194,ease(p,.02,.20))
+    cath_tip = mix(87,1035,ease(p,.46,.70))
     wrist.sheath(c,631)
     wrist.tube(c,wire_tip-1320,wire_tip,3.9,wrist.WIRE,taper=7)
-    if p>.36:
+    if p>.46:
         wrist.tube(c,cath_tip-1330,cath_tip,8.6,wrist.CATHETER,taper=10,opacity=241)
     if wire_tip>295:
-        marker(c,'Long guidewire' if p<.38 else 'Catheter follows',722,214,
-               wrist.xy(wire_tip if p<.38 else cath_tip))
+        label = 'Long guidewire' if p<.46 else 'Catheter follows' if p<.90 else 'Sheath stays at the wrist'
+        marker(c,label,722,214,wrist.xy(wire_tip if p<.46 else 631 if p>=.90 else cath_tip))
 
 
 def mapped(points):
@@ -410,7 +514,7 @@ def root(c,p,t,inject=False):
         y = 350+(i*19-t*33)%244
         x = 1146+((i*23)%66)-33
         oval(c,*root_point((x,y)),3.7,2.2,'#f6c0ab',99)
-    q = 1 if inject else ease(p,.56,.92)
+    q = 1 if inject else ease(p,.435,.73)
     tip = tuple(mix(a,b,q) for a,b in zip(coronary.NEUTRAL,LEFT))
     catheter = coronary.instrument_path(tip)
     c.save()
@@ -418,7 +522,7 @@ def root(c,p,t,inject=False):
     shaft(c,mapped(catheter),17,TUBE)
     wire_target = None
     if not inject:
-        release = 1-ease(p,.08,.49)
+        release = 1-ease(p,.018,.27)
         if release>0:
             # The stable catheter masks the part of the wire inside its shaft.
             wire = curve(coronary.NEUTRAL,((1143,535),(1144,553),coronary.WIRE))
@@ -427,10 +531,10 @@ def root(c,p,t,inject=False):
             if len(tip_path)>1:
                 wire_target = tip_path[-1]
     else:
-        length = ease(p,0,.32)
+        length = ease(p,0,.48)
         line(c,mapped(ART.trace(catheter,length)),GOLD,7,240)
-        if p>.29:
-            branch=ART.trace(L_COR,ease(p,.29,.80))
+        if p>.48:
+            branch=ART.trace(L_COR,ease(p,.48,.96))
             line(c,mapped(branch),GOLD,13,236)
             if len(branch)>1:
                 oval(c,*mapped(branch)[-1],6.5,6.5,'#ffdf9e')
@@ -445,10 +549,10 @@ def root(c,p,t,inject=False):
 
 
 def contrast(c,p,t):
-    if p<.48:
-        root(c,p/.48,t,True)
+    if p<.59:
+        root(c,p/.59,t,True)
     else:
-        xray(c,(p-.48)/.52,t,label='Left coronary arteries')
+        xray(c,(p-.59)/.41,t,label='Left coronary arteries',wash=(.52,.96))
 
 
 def c_arm(c,p,t):
@@ -469,12 +573,12 @@ def c_arm(c,p,t):
 
 
 def imaging_runs(c,p,t):
-    if p<.36:
-        xray(c,p/.36,t,label='Left coronary view',recording=True)
-    elif p<.57:
-        c_arm(c,(p-.36)/.21,t)
+    if p<.405:
+        xray(c,p/.405,t,label='Left coronary view',recording=True)
+    elif p<.615:
+        c_arm(c,(p-.405)/.21,t)
     else:
-        xray(c,(p-.57)/.43,t,side='right',angle=-17,label='Right coronary view',recording=True)
+        xray(c,(p-.615)/.385,t,side='right',angle=-17,label='Right coronary view',recording=True)
 
 
 def consultation(c,p,t):
@@ -515,26 +619,31 @@ def consultation(c,p,t):
     if before:
         tag(c,'Kidney problems',169,626)
         tag(c,'Past reaction to contrast',760,626)
-    else:
+    elif p<.66:
         tag(c,'Brief warmth can happen',145,626)
-        tag(c,'Tell staff if you feel unwell',730,626)
+    else:
+        tag(c,'Tell staff if you feel unwell',145,626)
+        tag(c,'Chest discomfort' if p<.77 else 'Itching' if p<.85 else 'Breathing trouble',800,626)
 
 
 def recap(c,p,t):
-    if p>.57:
-        tool_row(c,(p-.57)/.43,t,True)
+    if p>=.77:
+        xray(c,(p-.77)/.23,t,label='The team reviews the X-rays')
+        return
+    if p>.31:
+        tool_row(c,(p-.31)/.46,t,True)
         return
     wrist_base(c,t,'The team removes the tools')
-    cath_tip = mix(1035,-139,ease(p,0,.23))
-    sheath_tip = mix(631,-180,ease(p,.33,.55))
+    cath_tip = mix(1035,-139,ease(p,.01,.145))
+    sheath_tip = mix(631,-180,ease(p,.18,.27))
     wrist.sheath(c,sheath_tip)
     wrist.tube(c,cath_tip-1320,cath_tip,9,wrist.CATHETER,taper=11)
-    if p>.28:
-        alpha = round(207*ease(p,.28,.39))
+    if p>.16:
+        alpha = round(207*ease(p,.16,.22))
         oval(c,329,428,42,148,'#70c5b0',alpha//2)
         block(c,295,272,68,47,11,solid('#1c6659',alpha))
         oval(c,329,310,29,15,'#c3ecda',alpha)
-    if p>.45:
+    if p>.27:
         marker(c,'Wrist compression',776,210,(329,311))
 
 
@@ -575,7 +684,8 @@ def thumbnail():
 
 def render(ids, ffmpeg, still_only, force):
     pixels = np.empty((HEIGHT, WIDTH, 4), dtype=np.uint8)
-    info = skia.ImageInfo.Make(WIDTH, HEIGHT, skia.ColorType.kRGBA_8888_ColorType,
+    # Match Skia's cached Windows raster plates to avoid per-frame swizzling.
+    info = skia.ImageInfo.Make(WIDTH, HEIGHT, skia.ColorType.kBGRA_8888_ColorType,
                                skia.AlphaType.kPremul_AlphaType)
     surface = skia.Surface.MakeRasterDirect(info, pixels, WIDTH*4)
     canvas = surface.getCanvas()
@@ -599,7 +709,7 @@ def render(ids, ffmpeg, still_only, force):
         # frames through a small anonymous pipe while another process encodes.
         if shutil.disk_usage(HERE).free < frames*pixels.nbytes+64*1024**2:
             raise OSError(f'Insufficient workspace for {ident} native frame spool')
-        with tempfile.NamedTemporaryFile(prefix=f'.{ident}-',suffix='.rgba',dir=HERE,delete=False) as raw:
+        with tempfile.NamedTemporaryFile(prefix=f'.{ident}-',suffix='.bgra',dir=HERE,delete=False) as raw:
             raw_path=Path(raw.name)
             try:
                 for index in range(frames):
@@ -609,7 +719,7 @@ def render(ids, ffmpeg, still_only, force):
                         print(f'{ident} drawing frame {index+1}/{frames}',flush=True)
                 raw.close()
                 arguments = [
-                    str(ffmpeg),'-hide_banner','-v','error','-y','-f','rawvideo','-pixel_format','rgba',
+                    str(ffmpeg),'-hide_banner','-v','error','-y','-f','rawvideo','-pixel_format','bgra',
                     '-video_size',f'{WIDTH}x{HEIGHT}','-framerate',str(FPS),'-i',str(raw_path),
                     '-an','-filter_threads','1','-c:v','libx264','-threads','2','-preset','fast',
                     '-x264-params','rc-lookahead=14:sync-lookahead=0:ref=2',

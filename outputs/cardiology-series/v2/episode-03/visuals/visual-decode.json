@@ -1,0 +1,44 @@
+[
+  {
+    "file": "P04.mp4",
+    "sha256": "d02f2bbde54e66bebfa9579acb023cd9d73fe65ea085c341130c2984a0c4f860",
+    "frames": 420,
+    "fps": "30/1",
+    "size": [
+      2560,
+      1440
+    ],
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_streams": 0,
+    "samples": 6
+  },
+  {
+    "file": "P06.mp4",
+    "sha256": "29732c5dffcb07118cb9d24aa9cd1f7a014c6a42db64d5e3384fafa457a3c1fc",
+    "frames": 450,
+    "fps": "30/1",
+    "size": [
+      2560,
+      1440
+    ],
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_streams": 0,
+    "samples": 7
+  },
+  {
+    "file": "P07.mp4",
+    "sha256": "444014ddc94ffa7789404a45a2215d6dd61a33502b77f413f5a49b6c15ad53cd",
+    "frames": 390,
+    "fps": "30/1",
+    "size": [
+      2560,
+      1440
+    ],
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_streams": 0,
+    "samples": 8
+  }
+]

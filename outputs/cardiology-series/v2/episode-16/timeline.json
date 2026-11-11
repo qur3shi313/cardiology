@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "episode": "episode-16",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4251,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "A valve that opens less",
+      "start_frame": 0,
+      "end_frame": 412,
+      "narration": "What happens when this heart valve cannot open fully? The aortic valve is the doorway from the heart’s main pumping chamber to the aorta. Watch how narrowing changes that opening with each heartbeat.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-16/audio/alexander-episode-16.mp3",
+        "in_sec": 0.0,
+        "out_sec": 13.733333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-16/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 16,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "The normal route",
+      "start_frame": 412,
+      "end_frame": 949,
+      "narration": "The left ventricle pumps blood through the aortic valve into the aorta. This is the main artery carrying blood to the body. The valve leaflets open as the chamber pumps. They come together as the chamber relaxes, helping keep blood moving in one direction.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-16/audio/alexander-episode-16.mp3",
+        "in_sec": 13.733333333333333,
+        "out_sec": 31.633333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-16/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "What can cause narrowing",
+      "start_frame": 949,
+      "end_frame": 1563,
+      "narration": "Aortic stenosis means the valve opening has narrowed. In many older adults, calcium builds up on the leaflets and makes them stiff. Some people are born with an aortic valve that has two leaflets instead of the usual three. That valve can also become narrowed over time.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-16/audio/alexander-episode-16.mp3",
+        "in_sec": 31.633333333333333,
+        "out_sec": 52.1
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-16/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "Why the heart works harder",
+      "start_frame": 1563,
+      "end_frame": 2232,
+      "narration": "The pumping chamber must generate more pressure to move blood through a tighter opening. Over time its muscular wall can thicken. The heart may have more trouble filling or sending enough blood forward, especially during activity. How much this affects a person depends on the severity and how the heart adapts.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-16/audio/alexander-episode-16.mp3",
+        "in_sec": 52.1,
+        "out_sec": 74.4
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-16/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Symptoms can develop gradually",
+      "start_frame": 2232,
+      "end_frame": 2823,
+      "narration": "Some people feel well for a long time. Others notice breathlessness, chest discomfort, dizziness, fainting or a drop in what they can do comfortably. A healthcare professional considers when symptoms happen and what else could be causing them. A scan helps put those symptoms in context.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-16/audio/alexander-episode-16.mp3",
+        "in_sec": 74.4,
+        "out_sec": 94.1
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-16/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "The echocardiogram",
+      "start_frame": 2823,
+      "end_frame": 3395,
+      "narration": "An echocardiogram is an ultrasound scan of the heart. It can show how far the valve opens, how fast blood moves through it, and how well the heart pumps. The team combines those measurements with the person’s symptoms and other findings. Sometimes more imaging helps clarify the severity.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-16/audio/alexander-episode-16.mp3",
+        "in_sec": 94.1,
+        "out_sec": 113.16666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-16/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 26,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "What happens next",
+      "start_frame": 3395,
+      "end_frame": 4011,
+      "narration": "The next step may be regular monitoring or assessment for valve replacement, depending on the severity and the whole clinical picture. The team also considers how the condition affects daily life. In the next film, we’ll see how specialists use scans and a patient assessment to plan a possible catheter-based valve replacement.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-16/audio/alexander-episode-16.mp3",
+        "in_sec": 113.16666666666667,
+        "out_sec": 133.69
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-16/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 26,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Clinical sources",
+      "start_frame": 4011,
+      "end_frame": 4251,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-16/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

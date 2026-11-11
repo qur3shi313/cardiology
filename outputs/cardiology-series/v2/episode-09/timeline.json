@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "episode": "episode-09",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4867,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "A narrowing can return",
+      "start_frame": 0,
+      "end_frame": 393,
+      "narration": "Can an artery narrow again inside a stent? This simulated angiogram shows a narrower channel where a stent was placed. Finding the cause helps the team decide what to do next.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-09/audio/alexander-episode-09.mp3",
+        "in_sec": 0.0,
+        "out_sec": 13.1
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-09/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 16,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "What restenosis means",
+      "start_frame": 393,
+      "end_frame": 1021,
+      "narration": "In-stent restenosis means narrowing that develops or persists within or close to a stented section. A stent may still be in place when the channel becomes narrow. Some people notice symptoms such as chest discomfort returning. The team considers the symptoms and the test findings together.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-09/audio/alexander-episode-09.mp3",
+        "in_sec": 13.1,
+        "out_sec": 34.03333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-09/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "Different causes can look similar",
+      "start_frame": 1021,
+      "end_frame": 1657,
+      "narration": "There are several possible causes. The stent may have remained partly compressed when it was put in. Tissue may grow inside a stent that opened well. New plaque can also develop in tissue inside the stent. These are different problems, even if the angiogram shows a narrow channel in each case.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-09/audio/alexander-episode-09.mp3",
+        "in_sec": 34.03333333333333,
+        "out_sec": 55.233333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-09/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 27,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "A different problem can happen suddenly",
+      "start_frame": 1657,
+      "end_frame": 2297,
+      "narration": "A clot in a stent is called stent thrombosis. It can suddenly block blood flow and cause a heart attack. Restenosis and a clot need different assessment, and symptoms alone cannot tell which has happened. Severe chest pressure or sudden trouble breathing are reasons to get emergency help.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-09/audio/alexander-episode-09.mp3",
+        "in_sec": 55.233333333333334,
+        "out_sec": 76.56666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-09/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "What the angiogram can show",
+      "start_frame": 2297,
+      "end_frame": 2801,
+      "narration": "The team may use contrast X-rays to see where the channel is narrow and how the rest of the artery looks. The outline alone may leave the cause unclear. Reviewing the previous procedure and earlier images helps put the new findings in context.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-09/audio/alexander-episode-09.mp3",
+        "in_sec": 76.56666666666666,
+        "out_sec": 93.36666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-09/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Looking inside the stent",
+      "start_frame": 2801,
+      "end_frame": 3453,
+      "narration": "The team can sometimes use imaging from inside the artery to see the stent and the vessel wall in more detail. Intravascular ultrasound uses sound. Optical coherence tomography uses light. These images can help show whether the mesh expanded properly and whether tissue has narrowed the space inside.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-09/audio/alexander-episode-09.mp3",
+        "in_sec": 93.36666666666666,
+        "out_sec": 115.1
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-09/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 27,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "The cause guides treatment",
+      "start_frame": 3453,
+      "end_frame": 4072,
+      "narration": "If the stent did not expand well, the team considers how to address that mechanical problem. For selected cases, treatment may include a drug-coated balloon or another drug-eluting stent. A coated balloon is removed after treatment. A new drug-eluting stent leaves another scaffold at the treated site.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-09/audio/alexander-episode-09.mp3",
+        "in_sec": 115.1,
+        "out_sec": 135.73333333333332
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-09/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 26,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Questions after the assessment",
+      "start_frame": 4072,
+      "end_frame": 4627,
+      "narration": "The care team can explain what it found, what treatment is appropriate and how the follow-up plan changes. Useful questions are what caused the narrowing, how the team checked it, and which medicines or follow-up visits are part of the plan. Those answers connect the finding to the next step.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-09/audio/alexander-episode-09.mp3",
+        "in_sec": 135.73333333333332,
+        "out_sec": 154.23
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-09/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 26,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P09",
+      "title": "Clinical sources",
+      "start_frame": 4627,
+      "end_frame": 4867,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-09/visuals/P09.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

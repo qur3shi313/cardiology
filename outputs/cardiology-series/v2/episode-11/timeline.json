@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "episode": "episode-11",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4724,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "Does a narrowing limit blood supply?",
+      "start_frame": 0,
+      "end_frame": 386,
+      "narration": "Can two similar narrowings affect blood flow differently? Yes. A picture shows the shape of the artery. Pressure measurements give the care team another way to assess how much a narrowing matters.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3",
+        "in_sec": 0.0,
+        "out_sec": 12.866666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-11/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 16,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "What the angiogram shows",
+      "start_frame": 386,
+      "end_frame": 973,
+      "narration": "A coronary angiogram uses contrast and X-rays to show the channel inside the artery. The clinician can see where it is narrow. In selected cases, it is unclear how much that narrowing affects blood supply to the heart muscle. That is where a pressure-based test may help.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3",
+        "in_sec": 12.866666666666667,
+        "out_sec": 32.43333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-11/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 21,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "Two pressure measurements",
+      "start_frame": 973,
+      "end_frame": 1631,
+      "narration": "A thin wire carries a pressure sensor. In this example, the sensor is beyond the narrowing. The team compares pressure there with pressure near the artery’s opening, using the aortic pressure as a reference. The comparison helps estimate how strongly the narrowing limits blood flow under the conditions of the test.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3",
+        "in_sec": 32.43333333333333,
+        "out_sec": 54.36666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-11/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "How FFR is measured",
+      "start_frame": 1631,
+      "end_frame": 2228,
+      "narration": "F F R stands for fractional flow reserve. It uses the pressure comparison when blood flow has been increased as much as possible for the test. The team uses a medicine to create those conditions. The measurement helps estimate how the narrowing affects flow when the artery needs to carry more.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3",
+        "in_sec": 54.36666666666667,
+        "out_sec": 74.26666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-11/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 21,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "How iFR is measured",
+      "start_frame": 2228,
+      "end_frame": 2820,
+      "narration": "I F R stands for instantaneous wave-free ratio. It uses the pressure comparison at rest, during a particular part of each heartbeat when the heart is relaxing. The measurement uses that resting window. Both tests use pressure to help the team judge the effect of a narrowing.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3",
+        "in_sec": 74.26666666666667,
+        "out_sec": 94.0
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-11/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Putting the numbers in context",
+      "start_frame": 2820,
+      "end_frame": 3441,
+      "narration": "The team checks that the pressure signals are reliable and interprets them with the symptoms, the artery anatomy and other findings. If the assessment suggests the narrowing is unlikely to limit blood supply, a stent may be deferred. Another result may support a treatment discussion when it fits the clinical picture.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3",
+        "in_sec": 94.0,
+        "out_sec": 114.7
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-11/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 23,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "What the test can answer",
+      "start_frame": 3441,
+      "end_frame": 4020,
+      "narration": "These measurements focus on the effect of a narrowing in a major coronary artery. Chest symptoms can have other causes. If the explanation is still unclear, the care team may consider another test. The goal is to choose a next step that fits the person and the findings together.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3",
+        "in_sec": 114.7,
+        "out_sec": 134.0
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-11/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 23,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "A useful question to ask",
+      "start_frame": 4020,
+      "end_frame": 4484,
+      "narration": "If your team uses one of these measurements, ask what it showed about the narrowing and how that changes the next step. The angiogram supplies the map. F F R and I F R add pressure information that can help guide the decision.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3",
+        "in_sec": 134.0,
+        "out_sec": 149.45
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-11/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 21,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P09",
+      "title": "Clinical sources",
+      "start_frame": 4484,
+      "end_frame": 4724,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-11/visuals/P09.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

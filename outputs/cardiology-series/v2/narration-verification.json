@@ -1,0 +1,208 @@
+{
+  "narration_source_count": 21,
+  "complete_audio_decode": true,
+  "manual_auditory_review_claimed": false,
+  "episodes": [
+    {
+      "episode": 1,
+      "duration_seconds": 419.6,
+      "scenes": 40,
+      "srt_cues": 96,
+      "narration_sources": [
+        "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 2,
+      "duration_seconds": 205.967,
+      "scenes": 12,
+      "srt_cues": 50,
+      "narration_sources": [
+        "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 3,
+      "duration_seconds": 205.133,
+      "scenes": 12,
+      "srt_cues": 51,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 4,
+      "duration_seconds": 190.167,
+      "scenes": 10,
+      "srt_cues": 43,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-04/audio/alexander-episode-04.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 5,
+      "duration_seconds": 198.0,
+      "scenes": 11,
+      "srt_cues": 46,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-05/audio/alexander-episode-05.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 6,
+      "duration_seconds": 297.6,
+      "scenes": 16,
+      "srt_cues": 69,
+      "narration_sources": [
+        "outputs/cardiology-series/episode-02/production/alexander.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 7,
+      "duration_seconds": 162.467,
+      "scenes": 9,
+      "srt_cues": 39,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 8,
+      "duration_seconds": 186.367,
+      "scenes": 10,
+      "srt_cues": 46,
+      "narration_sources": [
+        "outputs/cardiology-series/episode-03/production/alexander.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 9,
+      "duration_seconds": 162.233,
+      "scenes": 9,
+      "srt_cues": 40,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-09/audio/alexander-episode-09.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 10,
+      "duration_seconds": 162.3,
+      "scenes": 9,
+      "srt_cues": 38,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 11,
+      "duration_seconds": 157.467,
+      "scenes": 9,
+      "srt_cues": 38,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 12,
+      "duration_seconds": 153.767,
+      "scenes": 8,
+      "srt_cues": 34,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-12/audio/alexander-episode-12.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 13,
+      "duration_seconds": 143.767,
+      "scenes": 8,
+      "srt_cues": 33,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-13/audio/alexander-episode-13.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 14,
+      "duration_seconds": 147.3,
+      "scenes": 8,
+      "srt_cues": 33,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-14/audio/alexander-episode-14.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 15,
+      "duration_seconds": 149.233,
+      "scenes": 8,
+      "srt_cues": 35,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-15/audio/alexander-episode-15.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 16,
+      "duration_seconds": 141.7,
+      "scenes": 8,
+      "srt_cues": 31,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-16/audio/alexander-episode-16.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 17,
+      "duration_seconds": 140.433,
+      "scenes": 8,
+      "srt_cues": 32,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-17/audio/alexander-episode-17.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 18,
+      "duration_seconds": 192.233,
+      "scenes": 12,
+      "srt_cues": 44,
+      "narration_sources": [
+        "outputs/cardiology-series/episode-04/production/alexander.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 19,
+      "duration_seconds": 140.667,
+      "scenes": 8,
+      "srt_cues": 30,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-19/audio/alexander-episode-19.mp3"
+      ],
+      "captions_structure_passed": true
+    },
+    {
+      "episode": 20,
+      "duration_seconds": 147.867,
+      "scenes": 8,
+      "srt_cues": 34,
+      "narration_sources": [
+        "outputs/cardiology-series/v2/episode-20/audio/alexander-episode-20.mp3"
+      ],
+      "captions_structure_passed": true
+    }
+  ]
+}

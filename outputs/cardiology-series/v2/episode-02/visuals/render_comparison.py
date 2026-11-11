@@ -14,7 +14,6 @@ import shutil
 import subprocess
 import sys
 
-import numpy as np
 import skia
 
 from tools.elysian_video import access as wrist
@@ -26,7 +25,7 @@ OUT = Path(__file__).resolve().parent
 SOURCE = ROOT / "outputs/cardiology-series/episode-01/production/vascular_art.py"
 STENT = OUT.parents[1] / "prototype/render_stent_preview.py"
 INK, TEAL, JADE, PALE = "#163831", "#26685e", "#479485", "#edf8ec"
-MID, MUTED, LIGHT = "#236459", "#4e736b", "#f7fff5"
+LIGHT = "#f7fff5"
 RED, WARN = "#a75e67", "#802f36"
 SKIN, SHADE = "#ddaf92", "#a6776b"
 
@@ -336,6 +335,11 @@ def xray(c,t,p):
 
 def treatment(c,t,p,place=False):
     field(c,"forest")
+    c.save()
+    zoom=1.12 if place else 1+.12*p
+    c.translate(640,392)
+    c.scale(zoom,zoom)
+    c.translate(-640,-392)
     advance=easing(p,.02,.40)
     inflation=easing(p,.42,.62)
     deflation=easing(p,.67,.80)
@@ -353,6 +357,7 @@ def treatment(c,t,p,place=False):
             balloon_art.balloon(c,balloon_x,radius)
     else:
         balloon_art.wire(c,lerp(-50,1125,p))
+    c.restore()
     note(c,"PCI treatment example",57,104,dark=True)
     if place:
         note(c,"Balloon opens a narrowing",1220,675,dark=True,align="right")
@@ -368,8 +373,9 @@ def p03(c,row,n):
         treatment(c,t,p,True)
     else:
         field(c)
-        left=body(c,328,381,1.08,[("wrist",easing(p,0,.82))],t)
-        right=body(c,954,381,1.08,[] if j==4 else [("groin",easing(p,.14,1))],t)
+        scale=.96+p*.14
+        left=body(c,329+p*12,391-p*37,scale,[("wrist",easing(p,0,.82))],t)
+        body(c,951-p*12,391-p*37,scale,[] if j==4 else [("groin",easing(p,.14,1))],t)
         if j==4:
             pulse(c,*left[0],t)
         note(c,"Wrist access is common when suitable" if j==4 else "Either arterial route can be used",
@@ -417,7 +423,7 @@ def femoral_closure(c,t,p):
         ellipse(c,dot[0],dot[1]+((i*19)%30-15),5.4,2.8,"#e88c86",129)
     c.restore()
     if p<.60:
-        pressure=easing(p,0,.32)
+        pressure=easing(p,0,.57)
         glove(c,768,272-58*(1-pressure),1.11,-1)
         return (612,291),"Firm hand pressure"
     stitch=curve((598,455),((595,430),(615,424),(628,450)),
@@ -449,10 +455,10 @@ def p07(c,row,n):
         target,label=femoral_closure(c,t,p)
         marker(c,target,label,420,128)
         return
-    wrist_surface(c,1.36,1,117,pressure=.43)
-    groin_surface(c,953,359,.85)
-    pulse(c,304,367,t)
-    pulse(c,953,372,t+.32)
+    wrist_surface(c,1.31+.17*p,1+34*p,117,pressure=.43)
+    groin_surface(c,963-27*p,359,.85+.12*p)
+    pulse(c,291+70*p,362,t)
+    pulse(c,963-27*p,372,t+.32)
     note(c,"Staff check both sites for bleeding",640,665,align="center")
 
 

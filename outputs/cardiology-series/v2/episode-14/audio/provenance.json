@@ -1,0 +1,13 @@
+{
+  "file": "alexander-episode-14.mp3",
+  "provider": "ElevenLabs",
+  "model": "eleven_multilingual_v2",
+  "voice": "Alexander",
+  "sha256": "4ecb10f09b1755026f00673b0283d91d0a285bdb2a152e7aedeb1f61fb272924",
+  "speech_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "use": "voice-only narrative for the corresponding complete episode"
+}

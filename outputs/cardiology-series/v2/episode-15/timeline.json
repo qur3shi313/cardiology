@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "episode": "episode-15",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4477,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "Two narrowings, one treatment plan",
+      "start_frame": 0,
+      "end_frame": 483,
+      "narration": "Two arteries are narrowed. How does the team decide? This angiogram shows disease in more than one coronary artery. The team uses the pattern of disease, the patient’s situation and the goals of care to choose a plan.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-15/audio/alexander-episode-15.mp3",
+        "in_sec": 0.0,
+        "out_sec": 16.1
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-15/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 16,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "Stable care and emergency care",
+      "start_frame": 483,
+      "end_frame": 1116,
+      "narration": "Timing matters. During a heart attack, the immediate priority is often the artery causing the emergency. The team then decides whether and when to address other significant narrowings. With stable coronary disease, there is usually time to assess symptoms, review the test results and discuss the options.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-15/audio/alexander-episode-15.mp3",
+        "in_sec": 16.1,
+        "out_sec": 37.2
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-15/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "What the tests add",
+      "start_frame": 1116,
+      "end_frame": 1693,
+      "narration": "The team looks at where the narrowings are, how complex they are, and how much heart muscle they may affect. It also checks how well the heart pumps. In selected cases, a pressure measurement inside an artery helps determine whether a particular narrowing limits flow enough to influence treatment.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-15/audio/alexander-episode-15.mp3",
+        "in_sec": 37.2,
+        "out_sec": 56.43333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-15/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "Medicines and prevention",
+      "start_frame": 1693,
+      "end_frame": 2344,
+      "narration": "Medicines and prevention are part of care across these options. In stable coronary disease, treatment can help manage symptoms and reduce the risk of future heart problems. The team may discuss restoring blood flow when symptoms still affect daily life or when the test results point to a particular benefit.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-15/audio/alexander-episode-15.mp3",
+        "in_sec": 56.43333333333333,
+        "out_sec": 78.13333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-15/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Angioplasty and stenting",
+      "start_frame": 2344,
+      "end_frame": 2992,
+      "narration": "Angioplasty and stenting, also called PCI, can open a selected section from inside the artery. A stent supports the treated section and blood flows through it. PCI can be suitable for particular patterns of disease. The team also considers how much disease can be treated and what risks apply.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-15/audio/alexander-episode-15.mp3",
+        "in_sec": 78.13333333333334,
+        "out_sec": 99.73333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-15/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Coronary bypass surgery",
+      "start_frame": 2992,
+      "end_frame": 3585,
+      "narration": "Coronary bypass surgery uses a blood vessel to create another route for blood to reach the heart muscle beyond a narrowing. The team may favour bypass for certain complex patterns, including some patients with diabetes and disease in several arteries, when surgery is suitable for them.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-15/audio/alexander-episode-15.mp3",
+        "in_sec": 99.73333333333333,
+        "out_sec": 119.5
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-15/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "The Heart Team and the patient",
+      "start_frame": 3585,
+      "end_frame": 4237,
+      "narration": "When the choice is unclear, a Heart Team can bring together a cardiologist, an interventional cardiologist and a cardiac surgeon. The team and patient discuss likely benefits, risks, recovery, and what matters in daily life. That conversation connects the test results with a plan the patient understands.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-15/audio/alexander-episode-15.mp3",
+        "in_sec": 119.5,
+        "out_sec": 141.22
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-15/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 27,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Clinical sources",
+      "start_frame": 4237,
+      "end_frame": 4477,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-15/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

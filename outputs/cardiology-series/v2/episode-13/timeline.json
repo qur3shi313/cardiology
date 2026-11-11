@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "episode": "episode-13",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4313,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "A stent meets hard calcium",
+      "start_frame": 0,
+      "end_frame": 432,
+      "narration": "Why can hard calcium stop a stent opening fully? Calcium in the artery wall can make a narrowed section stiff. In this example, part of the stent stays tight as the surrounding section opens.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-13/audio/alexander-episode-13.mp3",
+        "in_sec": 0.0,
+        "out_sec": 14.4
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-13/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 16,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "Where the calcium is",
+      "start_frame": 432,
+      "end_frame": 1075,
+      "narration": "Calcium can build up within the plaque in a coronary artery. Its location, length, and spread around the wall vary. An angiogram can sometimes show calcium. A scan from inside the artery, using ultrasound or OCT, can help the team work out how much of the wall is affected.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-13/audio/alexander-episode-13.mp3",
+        "in_sec": 14.4,
+        "out_sec": 35.833333333333336
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-13/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "Why preparation matters",
+      "start_frame": 1075,
+      "end_frame": 1689,
+      "narration": "A stent is designed to open and support the treated section. If a stiff area prevents it from opening sufficiently, the channel can remain narrow. When the team expects that problem, it may prepare the lesion before placing a stent. The purpose is to make the narrowed section easier to expand.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-13/audio/alexander-episode-13.mp3",
+        "in_sec": 35.833333333333336,
+        "out_sec": 56.3
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-13/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "Specialised balloons",
+      "start_frame": 1689,
+      "end_frame": 2294,
+      "narration": "One option is a specialised balloon. Some have scoring elements or small cutting elements. These concentrate force against selected areas of plaque as the balloon opens. The team chooses a method based on the calcium and whether the device can reach the narrowed section.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-13/audio/alexander-episode-13.mp3",
+        "in_sec": 56.3,
+        "out_sec": 76.46666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-13/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Intravascular lithotripsy",
+      "start_frame": 2294,
+      "end_frame": 2911,
+      "narration": "Another option is intravascular lithotripsy. A balloon-based device delivers pulses that create pressure waves. In selected lesions those waves can fracture calcium within the wall, making it easier for the vessel to expand. In this illustration you can see fine cracks forming in the calcium.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-13/audio/alexander-episode-13.mp3",
+        "in_sec": 76.46666666666667,
+        "out_sec": 97.03333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-13/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Atherectomy",
+      "start_frame": 2911,
+      "end_frame": 3474,
+      "narration": "Atherectomy is a different type of preparation. Some systems use a small rotating element to modify hard plaque. The anatomy and the risks of the procedure guide that decision. This scene shows a separate example of an option the team may choose.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-13/audio/alexander-episode-13.mp3",
+        "in_sec": 97.03333333333333,
+        "out_sec": 115.8
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-13/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "Checking the final opening",
+      "start_frame": 3474,
+      "end_frame": 4073,
+      "narration": "After suitable preparation, the team may place a stent. It checks the final result using the angiogram and may use an inside-artery scan to look at expansion and contact with the wall. The practical aim is a well-expanded stent and a satisfactory blood-flow result in the treated artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-13/audio/alexander-episode-13.mp3",
+        "in_sec": 115.8,
+        "out_sec": 135.76666666666668
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-13/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 27,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Clinical sources",
+      "start_frame": 4073,
+      "end_frame": 4313,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-13/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

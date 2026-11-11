@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "episode": "episode-14",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4419,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "When an artery closes",
+      "start_frame": 0,
+      "end_frame": 526,
+      "narration": "A blocked heart artery needs help fast. What happens next? In this example, a blood clot blocks a coronary artery. The heart muscle it supplies is suddenly short of oxygen. Emergency care can help restore blood flow.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-14/audio/alexander-episode-14.mp3",
+        "in_sec": 0.0,
+        "out_sec": 17.533333333333335
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-14/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 17,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "Recognising a possible heart attack",
+      "start_frame": 526,
+      "end_frame": 1212,
+      "narration": "Warning signs can include chest pressure, shortness of breath, sweating, nausea, or discomfort in the arm, back or jaw. The symptoms can differ from person to person. If a heart attack is suspected, call local emergency services immediately. Emergency responders can start assessment and coordinate hospital care.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-14/audio/alexander-episode-14.mp3",
+        "in_sec": 17.533333333333335,
+        "out_sec": 40.4
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-14/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "Early assessment",
+      "start_frame": 1212,
+      "end_frame": 1831,
+      "narration": "The emergency team considers the symptoms and uses an electrocardiogram, often called an ECG, to look at the heart’s electrical activity. A blood test called troponin can detect injury to the heart muscle. An ECG can sometimes identify a pattern that needs an immediate plan to reopen the artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-14/audio/alexander-episode-14.mp3",
+        "in_sec": 40.4,
+        "out_sec": 61.03333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-14/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "The emergency treatment path",
+      "start_frame": 1831,
+      "end_frame": 2411,
+      "narration": "For a heart attack called STEMI, opening the artery quickly is a priority. When a team can perform emergency angioplasty promptly, it is generally the preferred way to restore flow. Emergency teams can use other pathways depending on access to treatment, test results, and the patient’s condition.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-14/audio/alexander-episode-14.mp3",
+        "in_sec": 61.03333333333333,
+        "out_sec": 80.36666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-14/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Finding the blockage",
+      "start_frame": 2411,
+      "end_frame": 2915,
+      "narration": "In the catheter laboratory, the team uses contrast and moving X-rays to find the blockage. Here, contrast stops at the affected spot. The interventional cardiologist identifies the artery responsible for this heart attack and plans how to reopen it.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-14/audio/alexander-episode-14.mp3",
+        "in_sec": 80.36666666666666,
+        "out_sec": 97.16666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-14/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 23,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Restoring flow",
+      "start_frame": 2915,
+      "end_frame": 3530,
+      "narration": "The treatment is called percutaneous coronary intervention, or PCI. A thin guidewire can pass beyond the blockage. A balloon and, when appropriate, a stent are used to reopen and support the treated segment. The team then checks blood flow and looks for problems before the procedure ends.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-14/audio/alexander-episode-14.mp3",
+        "in_sec": 97.16666666666667,
+        "out_sec": 117.66666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-14/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 26,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "Recovery and prevention",
+      "start_frame": 3530,
+      "end_frame": 4179,
+      "narration": "After the emergency treatment, the team monitors recovery and explains what the patient’s tests showed. Ongoing care can include medicines and cardiac rehabilitation. Some patients need a further assessment of other narrowed arteries. The team discusses the follow-up plan and what to do if symptoms return.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-14/audio/alexander-episode-14.mp3",
+        "in_sec": 117.66666666666667,
+        "out_sec": 139.3
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-14/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 28,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Clinical sources",
+      "start_frame": 4179,
+      "end_frame": 4419,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-14/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

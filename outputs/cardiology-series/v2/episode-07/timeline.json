@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "episode": "episode-07",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4874,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "The balloon leaves",
+      "start_frame": 0,
+      "end_frame": 418,
+      "narration": "The balloon comes out. What stays inside the artery? This is a drug-eluting stent. Its metal mesh supports the treated section, and a medicine coating helps reduce the chance of narrowing again.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3",
+        "in_sec": 0.0,
+        "out_sec": 13.933333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-07/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 15,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "Two jobs for one device",
+      "start_frame": 418,
+      "end_frame": 1024,
+      "narration": "A coronary stent is a tiny mesh tube. The mesh helps hold open a section of an artery that was narrowed. In a drug-eluting stent, a coating releases medicine near the treated area. The scaffold gives mechanical support. The medicine helps limit excess tissue growth as the artery heals.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3",
+        "in_sec": 13.933333333333334,
+        "out_sec": 34.13333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-07/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "How it gets there",
+      "start_frame": 1024,
+      "end_frame": 1602,
+      "narration": "The illustration shows a balloon-expandable coronary stent. The stent is already mounted around a folded balloon. The delivery catheter follows the wire across the narrowing. The balloon expands the mesh. Then the team deflates and removes the balloon and catheter, leaving the mesh in place.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3",
+        "in_sec": 34.13333333333333,
+        "out_sec": 53.4
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-07/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "How the coating releases medicine",
+      "start_frame": 1602,
+      "end_frame": 2198,
+      "narration": "The medicine comes from the coating on the stent and acts near the treated vessel wall. Over time it helps reduce the chance that tissue growth will narrow that section again. Stent designs and coatings differ. The expanded mesh continues to support the treated section as the artery heals.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3",
+        "in_sec": 53.4,
+        "out_sec": 73.26666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-07/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Drug-coated balloon",
+      "start_frame": 2198,
+      "end_frame": 2793,
+      "narration": "A drug-coated balloon delivers medicine in a different way. The medicine is on the balloon’s surface. While the balloon is inflated, some medicine transfers to the treated tissue. The balloon then comes out. In a balloon-only treatment, that balloon leaves no new metal scaffold.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3",
+        "in_sec": 73.26666666666667,
+        "out_sec": 93.1
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-07/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Checking the result",
+      "start_frame": 2793,
+      "end_frame": 3371,
+      "narration": "After placing a stent, the team checks the treated area and the flow beyond it on contrast X-rays. In selected cases, a small imaging device can help the team look at the stent from inside the artery. These checks help the team assess whether the mesh has opened as intended.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3",
+        "in_sec": 93.1,
+        "out_sec": 112.36666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-07/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 22,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "Two kinds of medicine",
+      "start_frame": 3371,
+      "end_frame": 3999,
+      "narration": "The medicine released by the coating and the antiplatelet medicines prescribed after the procedure have different jobs. The coating helps limit tissue growth near the stent. Antiplatelet medicines help reduce the chance of a clot. Your care team chooses your medicine plan and explains how long it applies to you.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3",
+        "in_sec": 112.36666666666666,
+        "out_sec": 133.3
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-07/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "After treatment",
+      "start_frame": 3999,
+      "end_frame": 4634,
+      "narration": "A stent treats a specific section of an artery. Coronary artery disease still needs ongoing care. At follow-up, your team can explain what was treated, how the medicine plan fits your situation, and what to do if symptoms return. The next episode looks at how a drug-coated balloon works.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3",
+        "in_sec": 133.3,
+        "out_sec": 154.46
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-07/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P09",
+      "title": "Clinical sources",
+      "start_frame": 4634,
+      "end_frame": 4874,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-07/visuals/P09.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}

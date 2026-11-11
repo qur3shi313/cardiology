@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "episode": "episode-20",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 4436,
+  "caption_file": "captions.en.srt",
+  "chapter_file": "chapters.txt",
+  "voice_alignment": {
+    "matched_fraction": 1.0,
+    "scribe_differences": [],
+    "requires_listening": true
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "One valve, two ways to replace it",
+      "start_frame": 0,
+      "end_frame": 470,
+      "narration": "One narrowed valve. Two different ways to replace it. Both procedures aim to let blood leave the heart through a new aortic valve. The Heart Team weighs how each option fits the person, both now and in the years ahead.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-20/audio/alexander-episode-20.mp3",
+        "in_sec": 0.0,
+        "out_sec": 15.666666666666666
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-20/visuals/P01.mp4",
+        "in_sec": 0,
+        "out_sec": 17,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P02",
+      "title": "Catheter-based valve replacement",
+      "start_frame": 470,
+      "end_frame": 1136,
+      "narration": "TAVI is transcatheter aortic valve implantation. The team delivers a replacement valve through a catheter, often from an artery in the groin. In the illustrated case, the frame expands inside the narrowed valve and holds its old leaflets aside. The replacement leaflets then control blood flow.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-20/audio/alexander-episode-20.mp3",
+        "in_sec": 15.666666666666666,
+        "out_sec": 37.86666666666667
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-20/visuals/P02.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P03",
+      "title": "Surgical valve replacement",
+      "start_frame": 1136,
+      "end_frame": 1753,
+      "narration": "Surgical aortic valve replacement takes a different route. The surgeon typically removes the diseased valve and puts a new valve in its place. Depending on the person and the operation, surgical options can include a tissue or a mechanical valve. Both can be assessed against the patient’s long-term priorities.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-20/audio/alexander-episode-20.mp3",
+        "in_sec": 37.86666666666667,
+        "out_sec": 58.43333333333333
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-20/visuals/P03.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P04",
+      "title": "Which anatomy fits which route?",
+      "start_frame": 1753,
+      "end_frame": 2367,
+      "narration": "The team considers the size and shape of the valve, where calcium has built up, and whether the blood vessels can carry the catheter. It also asks whether another heart problem needs attention. For example, some patients who need coronary bypass or another valve operation may benefit from a surgical plan.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-20/audio/alexander-episode-20.mp3",
+        "in_sec": 58.43333333333333,
+        "out_sec": 78.9
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-20/visuals/P04.mp4",
+        "in_sec": 0,
+        "out_sec": 25,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Recovery and risks",
+      "start_frame": 2367,
+      "end_frame": 2994,
+      "narration": "Catheter-based treatment often allows a shorter early recovery. Surgery may be more suitable for some people even when recovery takes longer. The team discusses the risks each person faces, including complications such as bleeding, stroke, or changes in heart rhythm. It also asks what support the person will have at home.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-20/audio/alexander-episode-20.mp3",
+        "in_sec": 78.9,
+        "out_sec": 99.8
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-20/visuals/P05.mp4",
+        "in_sec": 0,
+        "out_sec": 24,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Thinking beyond the first procedure",
+      "start_frame": 2994,
+      "end_frame": 3589,
+      "narration": "The team considers how long the replacement valve is expected to work, the person’s overall health and life expectancy, and what future care could involve. If another procedure is needed, the first valve may affect the next options. The team weighs those questions alongside the risks and recovery of the first treatment.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-20/audio/alexander-episode-20.mp3",
+        "in_sec": 99.8,
+        "out_sec": 119.63333333333334
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-20/visuals/P06.mp4",
+        "in_sec": 0,
+        "out_sec": 27,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P07",
+      "title": "A shared decision",
+      "start_frame": 3589,
+      "end_frame": 4196,
+      "narration": "The Heart Team reviews the evidence and explains why it recommends an option. The patient brings their preferences, goals and questions to that decision. In our next series, we’ll look at cardiac surgery, beginning with why a team might recommend coronary artery bypass and how a graft restores a route for blood flow.",
+      "audio": {
+        "path": "outputs/cardiology-series/v2/episode-20/audio/alexander-episode-20.mp3",
+        "in_sec": 119.63333333333334,
+        "out_sec": 139.86
+      },
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-20/visuals/P07.mp4",
+        "in_sec": 0,
+        "out_sec": 26,
+        "reference_only": true
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Clinical sources",
+      "start_frame": 4196,
+      "end_frame": 4436,
+      "narration": "",
+      "audio": null,
+      "footage": {
+        "path": "outputs/cardiology-series/v2/episode-20/visuals/P08.mp4",
+        "in_sec": 0,
+        "out_sec": 8,
+        "reference_only": true
+      }
+    }
+  ]
+}
