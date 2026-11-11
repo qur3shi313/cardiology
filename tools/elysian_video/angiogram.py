@@ -174,19 +174,20 @@ CARDS={
         ('Longer observation','Some people need more checks','pulse'))),
     'P38':('At home after an angiogram',(
         ('Follow your written plan','Dressing, activity, medicines, follow-up','list'),
-        ('What you may notice','A small bruise or mild soreness','band'),
+        ('What you may notice','A small bruise or mild soreness','bruise'),
         ('Contact your care team','Increasing pain, redness, drainage or fever','call'))),
     'P39':('When to get emergency help',(
         ('Heavy or persistent bleeding','Call local emergency services','band'),
         ('Rapid swelling or a cold limb','Call local emergency services','call'),
         ('Chest pressure or breathlessness','Call local emergency services','pulse'))),
     'P40':('Know your result and recovery plan',(
-        ('Clinical sources','AHA  •  SCAI  •  Guy’s and St Thomas’ NHS','check'),)),
+        ('Before leaving','Confirm your result and the recovery plan','list'),
+        ('Clinical sources','AHA  •  SCAI  •  Guy’s and St Thomas’ NHS','check'))),
 }
 # These transitions correspond to complete clauses in the selected Alexander
 # narration. The surrounding scene time comes from the frame-locked manifest.
 MARKS={'P02':(.0,.29,.59),'P03':(.0,.40,.64),'P30':(.0,.35,.49,.73),
-       'P37':(.0,.65),'P38':(.0,.42,.67),'P39':(.0,.40,.73),'P40':(.0,)}
+       'P37':(.0,.65),'P38':(.0,.42,.67),'P39':(.0,.40,.73),'P40':(.0,.43)}
 
 @lru_cache(maxsize=10)
 def editorial_plate(ident):
@@ -250,17 +251,34 @@ def icon(c,kind,p,t):
         block(c,875,y,99,160,16,solid('#d8e4d3'))
         block(c,900,y+47,49,65,7,solid('#648a7e'))
         line(c,[(867,479),(982,479)],'#a7d5c5',4,round(225*q))
+    elif kind=='bruise':
+        # A non-graphic look at a dressed wrist, with only the small
+        # observation window visible. Move the field of view, not the wound.
+        c.save()
+        c.clipRRect(skia.RRect.MakeRectXY(skia.Rect.MakeXYWH(694,199,483,388),36,36),doAntiAlias=True)
+        c.translate(929,385)
+        c.scale(1+.26*p,1+.26*p)
+        c.rotate(-12)
+        block(c,-235,-100,470,206,91,grad(-200,-85,140,88,['#724e45','#d4a892','#a67a65']))
+        for i in range(14,0,-1):
+            c.drawOval(skia.Rect.MakeXYWH(-47-i*2,1-i*1.25,32+i*4,17+i*2.5),solid('#826374',9))
+        block(c,-59,-58,123,72,14,grad(-44,-53,73,17,['#fffdf1','#e3e0ce','#bfbfae']))
+        for x in range(-48,56,6):
+            line(c,[(x,-46),(x,-31)],'#a6b1a4',1,94)
+        c.restore()
     elif kind=='clock':
         dot(c,cx,cy,131,'#c6dfce'); dot(c,cx,cy,119,'#244741')
         line(c,[(cx,cy),(cx,cy-73)],'#d9f4e3',8)
-        a=pi*.62+q*pi*.65
+        a=pi*.62+p*pi*1.5
+        arc=skia.Paint(Color=color('#71bca8'),AntiAlias=True,Style=skia.Paint.kStroke_Style,StrokeWidth=15)
+        c.drawArc(skia.Rect.MakeXYWH(cx-106,cy-106,212,212),-91,298*p,False,arc)
         line(c,[(cx,cy),(cx+76*cos(a),cy+76*sin(a))],'#81b9a9',8)
         dot(c,cx,cy,9,'#c8e7d8')
     elif kind=='medicine':
         for j in range(2):
             c.save()
-            offset=(j-.5)*(69+45*smooth(p))
-            c.rotate(-34+(j-.5)*8*smooth(p),cx+offset,cy)
+            offset=(j-.5)*(69+68*p)
+            c.rotate(-42+(j-.5)*25*p,cx+offset,cy)
             block(c,cx-29+offset,cy-87,58,174,29,solid('#dce7d6'))
             block(c,cx-29+offset,cy-1,58,88,29,solid('#80ad9d'))
             c.restore()
@@ -274,11 +292,14 @@ def icon(c,kind,p,t):
             c.drawCircle(cx,cy,r,edge)
         dot(c,cx,cy,20,'#8dd1ba')
     else:
-        block(c,818,235,228,292,19,solid('#e2eee3'))
-        block(c,880,220,102,48,13,solid('#84baaa'))
+        # Read down the checklist instead of leaving a still graphic in place.
+        block(c,798,224,266,319,23,grad(805,224,1040,535,['#f2f9ef','#d6e7da','#b9d2c5']))
+        block(c,880,210,102,48,13,solid('#84baaa'))
         for j in range(3):
             y=312+j*69
-            show=smooth(p*3-j)
+            show=max(0,min(1,p*3-j))
+            if j<=min(2,int(p*3)):
+                block(c,823,y-20,207,36,8,solid('#a9d6c3',round(155*show)))
             line(c,[(887,y),(887+115*show,y)],'#698b80',5.8)
             if show>.12:
                 checked=art.trace([(841,y-2),(851,y+8),(869,y-13)],show)
@@ -296,7 +317,7 @@ def cards(c,ident,p,t,duration):
     icon(c,kind,local,t)
     text(c,title,85,324,36 if urgent else 40,'#713737' if urgent else '#004b3d')
     text(c,detail,85,385,27,'#333b39',REGULAR)
-    if ident=='P40':
+    if ident=='P40' and i:
         text(c,'Next: Wrist versus groin access',85,472,28,'#235e50')
     for j in range(len(entries)):
         block(c,86+59*j,568,40,7,4,solid('#226956' if j==i else '#adcabe'))

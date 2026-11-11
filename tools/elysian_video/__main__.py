@@ -123,7 +123,7 @@ def picture(exe, scene, work, quality):
                       f'pad={WIDTH}:{HEIGHT}:(ow-iw)/2:(oh-ih)/2:color=0xe8f0e8'])
     chain.extend(['setsar=1','tpad=stop_mode=clone:stop_duration=0.15','format=yuv420p',
                   'noise=alls=2:allf=u'])
-    arguments=['-ss',f'{source.start:.6f}','-t',f'{source.end-source.start:.6f}','-i',source.path]
+    arguments=['-threads',2,'-ss',f'{source.start:.6f}','-t',f'{source.end-source.start:.6f}','-i',source.path]
     if label := spec.get('label'):
         overlay=work/f'{scene["id"]}-label.png'
         title_layer(overlay,label,spec.get('category','Illustrated educational sequence'),spec.get('subline'))
@@ -221,11 +221,13 @@ def render_episode(exe, episode, jobs, quality):
         run(exe,'-v','error','-y','-f','concat','-safe',0,'-i',picture_list,'-i',voice,'-i',captions,
             '-map','0:v:0','-map','1:a:0','-map','2:s:0','-c:v','copy','-c:a','copy','-c:s','mov_text',
             '-metadata:s:a:0','language=eng','-metadata:s:s:0','language=eng','-movflags','+faststart',temporary_master)
-        run(exe,'-v','error','-xerror','-i',temporary_master,'-map','0:v:0','-map','0:a:0','-f','null','-')
+        run(exe,'-v','error','-xerror','-threads',2,'-i',temporary_master,
+            '-map','0:v:0','-map','0:a:0','-f','null','-')
         master=output/f'{episode.name}-1440p.mp4'
         shutil.copy2(temporary_master,master)
-        run(exe,'-v','error','-y','-i',master,'-map','0','-vf','scale=1920:1080:flags=lanczos',
-            '-c:v','libx264','-preset',quality,'-crf',16,'-profile:v','high','-g',60,'-bf',2,'-threads',6,
+        run(exe,'-v','error','-y','-threads',2,'-filter_threads',2,'-i',master,
+            '-map','0','-vf','scale=1920:1080:flags=lanczos',
+            '-c:v','libx264','-preset',quality,'-crf',16,'-profile:v','high','-g',60,'-bf',2,'-threads',4,
             '-c:a','copy','-c:s','copy','-movflags','+faststart',output/f'{episode.name}-1080p.mp4')
         print(f'Complete master: {master}',flush=True)
 
