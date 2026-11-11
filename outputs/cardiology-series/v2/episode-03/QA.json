@@ -1,0 +1,208 @@
+{
+  "input": "episode-03-1440p.mp4",
+  "sha256": "f922f1a7e123baf4522064bffe79ec06ab1dfe7022e0f3776302e576539ea3b4",
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 205.133333,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 55.566665,
+    "percent": 27.088,
+    "longest_seconds": 6.0,
+    "intervals": [
+      {
+        "start_seconds": 14.7,
+        "end_seconds": 16.7,
+        "terminal": false
+      },
+      {
+        "start_seconds": 31.4,
+        "end_seconds": 33.4,
+        "terminal": false
+      },
+      {
+        "start_seconds": 35.766667,
+        "end_seconds": 38.266667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 43.966667,
+        "end_seconds": 48.366667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 66.9,
+        "end_seconds": 68.9,
+        "terminal": false
+      },
+      {
+        "start_seconds": 70.9,
+        "end_seconds": 72.9,
+        "terminal": false
+      },
+      {
+        "start_seconds": 74.4,
+        "end_seconds": 76.733333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 86.666667,
+        "end_seconds": 88.833333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 100.266667,
+        "end_seconds": 102.266667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 102.266667,
+        "end_seconds": 104.266667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 104.266667,
+        "end_seconds": 106.3,
+        "terminal": false
+      },
+      {
+        "start_seconds": 107.533333,
+        "end_seconds": 111.9,
+        "terminal": false
+      },
+      {
+        "start_seconds": 116.266667,
+        "end_seconds": 121.633333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 121.633333,
+        "end_seconds": 123.633333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 123.633333,
+        "end_seconds": 127.1,
+        "terminal": false
+      },
+      {
+        "start_seconds": 127.1,
+        "end_seconds": 131.633333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 142.333333,
+        "end_seconds": 144.733333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 197.133333,
+        "end_seconds": 199.133333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 199.133333,
+        "end_seconds": 205.133333,
+        "terminal": true
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.1,
+    "true_peak_dbtp": -1.4,
+    "raw_loudnorm": {
+      "input_i": "-14.10",
+      "input_tp": "-1.40",
+      "input_lra": "2.70",
+      "input_thresh": "-24.42",
+      "output_i": "-14.13",
+      "output_tp": "-1.28",
+      "output_lra": "2.80",
+      "output_thresh": "-24.45",
+      "normalization_type": "dynamic",
+      "target_offset": "0.13"
+    }
+  },
+  "expected_duration_seconds": 205.13333333333333,
+  "audio_sources": [
+    "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3"
+  ],
+  "human_visual_review": "pending",
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 51,
+    "errors": []
+  },
+  "halal_review": "pending",
+  "contact_sheet": {
+    "file": "episode-03-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195,
+      200,
+      205
+    ]
+  },
+  "errors": [
+    "More than 15 percent of the video is frozen",
+    "Required review pending: mobile_readability",
+    "Required review pending: art_coverage",
+    "Required review pending: device_motion",
+    "Required review pending: clinical_accuracy",
+    "Required review pending: caption_alignment",
+    "Required review pending: voice_only",
+    "Required review pending: thumbnail",
+    "Required review pending: vertical_short",
+    "Required review pending: halal_review"
+  ],
+  "status": "blocked"
+}
