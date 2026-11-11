@@ -1,0 +1,101 @@
+[
+  {
+    "id": "P01",
+    "title": "The balloon leaves",
+    "narration": "The balloon comes out. What stays inside the artery? This is a drug-eluting stent. Its metal mesh supports the treated section, and a medicine coating helps reduce the chance of narrowing again.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 15,
+    "visual_direction": "Open mid-action in a fixed longitudinal coronary cutaway. Already-expanded mesh stays seated while the folded balloon withdraws. Maintain the parked wire for the opening action. Reveal title after the spoken question.",
+    "on_screen_text": "What stays in the artery?",
+    "source_ids": "A, B, G"
+  },
+  {
+    "id": "P02",
+    "title": "Two jobs for one device",
+    "narration": "A coronary stent is a tiny mesh tube. The mesh helps hold open a section of an artery that was narrowed. In a drug-eluting stent, a coating releases medicine near the treated area. The scaffold gives mechanical support. The medicine helps limit excess tissue growth as the artery heals.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 15,
+    "target_end_sec": 37,
+    "visual_direction": "Orbit slowly from the treated artery toward a macro view of one generic stent. Draw a continuous mesh frame, then move to a close-up strut and identify the thin coating. Reveal each role as a separate beat.",
+    "on_screen_text": "Scaffold support · Local medicine",
+    "source_ids": "A, B"
+  },
+  {
+    "id": "P03",
+    "title": "How it gets there",
+    "narration": "The illustration shows a balloon-expandable coronary stent. The stent is already mounted around a folded balloon. The delivery catheter follows the wire across the narrowing. The balloon expands the mesh. Then the team deflates and removes the balloon and catheter, leaving the mesh in place.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 37,
+    "target_end_sec": 59,
+    "visual_direction": "Use one fixed view of a focal lesion beyond the left main split. Advance a crimped stent and folded balloon as one assembly over a stationary coronary wire. Center, expand, deflate and withdraw in separate beats. Keep the seated mesh still during withdrawal.",
+    "on_screen_text": "Stent travels on its balloon",
+    "source_ids": "B, G"
+  },
+  {
+    "id": "P04",
+    "title": "How the coating releases medicine",
+    "narration": "The medicine comes from the coating on the stent and acts near the treated vessel wall. Over time it helps reduce the chance that tissue growth will narrow that section again. Stent designs and coatings differ. The expanded mesh continues to support the treated section as the artery heals.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 59,
+    "target_end_sec": 81,
+    "visual_direction": "Push in on one strut embedded at the wall. Animate a subtle localized halo and a short time transition for release. Preserve the same stent shape. Keep the lumen clear and show remaining plaque behind the wall contours.",
+    "on_screen_text": "Medicine releases near the wall",
+    "source_ids": "A, E"
+  },
+  {
+    "id": "P05",
+    "title": "Drug-coated balloon",
+    "narration": "A drug-coated balloon delivers medicine in a different way. The medicine is on the balloon’s surface. While the balloon is inflated, some medicine transfers to the treated tissue. The balloon then comes out. In a balloon-only treatment, that balloon leaves no new metal scaffold.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 81,
+    "target_end_sec": 103,
+    "visual_direction": "Use a clearly separate device demonstration. A coated balloon contacts the wall and then withdraws. Represent medicine transfer locally and distinguish the balloon surface from the stent coating. No product imagery, brand or inference of identical indications.",
+    "on_screen_text": "Drug-coated balloon comes out",
+    "source_ids": "D"
+  },
+  {
+    "id": "P06",
+    "title": "Checking the result",
+    "narration": "After placing a stent, the team checks the treated area and the flow beyond it on contrast X-rays. In selected cases, a small imaging device can help the team look at the stent from inside the artery. These checks help the team assess whether the mesh has opened as intended.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 103,
+    "target_end_sec": 125,
+    "visual_direction": "Match the same view before and after. Animate the contrast front from the guide catheter opening and keep branch landmarks fixed. Use one separate circular inside-artery view as an imaging concept. Preserve an illustrative immediate result and no outcome guarantee.",
+    "on_screen_text": "Check opening and downstream flow",
+    "source_ids": "C, F, H"
+  },
+  {
+    "id": "P07",
+    "title": "Two kinds of medicine",
+    "narration": "The medicine released by the coating and the antiplatelet medicines prescribed after the procedure have different jobs. The coating helps limit tissue growth near the stent. Antiplatelet medicines help reduce the chance of a clot. Your care team chooses your medicine plan and explains how long it applies to you.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 125,
+    "target_end_sec": 149,
+    "visual_direction": "Match cut from the wall-level coating to an unbranded discharge medication card. Illustrate platelets separately. Keep visual colors distinct from the local coating and use no pill shapes suggesting a specific medicine, dose or duration.",
+    "on_screen_text": "Coating limits growth · Antiplatelets reduce clot risk",
+    "source_ids": "A, E, F"
+  },
+  {
+    "id": "P08",
+    "title": "After treatment",
+    "narration": "A stent treats a specific section of an artery. Coronary artery disease still needs ongoing care. At follow-up, your team can explain what was treated, how the medicine plan fits your situation, and what to do if symptoms return. The next episode looks at how a drug-coated balloon works.",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 149,
+    "target_end_sec": 173,
+    "visual_direction": "Pull back from the treated site to the whole heart, then show a modest fully clothed patient or hands reviewing a follow-up plan. Keep the image realistic and avoid an instant whole-heart cure depiction.",
+    "on_screen_text": "A treated segment and ongoing care",
+    "source_ids": "A, E"
+  },
+  {
+    "id": "P09",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P09.mp4",
+    "target_start_sec": 173,
+    "target_end_sec": 181,
+    "visual_direction": "Eight-second source and production card. Use the authentic logo, a concise list of clinical references and the next episode title. Keep room for an end screen and disclose original illustrative animation and synthetic English narration.",
+    "on_screen_text": "Sources and production",
+    "source_ids": "A–H"
+  }
+]

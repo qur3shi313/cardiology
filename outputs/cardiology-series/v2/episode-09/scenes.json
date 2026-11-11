@@ -1,0 +1,101 @@
+[
+  {
+    "id": "P01",
+    "title": "A narrowing can return",
+    "narration": "Can an artery narrow again inside a stent? This simulated angiogram shows a narrower channel where a stent was placed. Finding the cause helps the team decide what to do next.",
+    "visual_file": "visuals/P01.mp4",
+    "target_start_sec": 0,
+    "target_end_sec": 16,
+    "visual_direction": "Open with contrast moving through the previously treated segment. Match-cut into a fixed cutaway that keeps the original stent visible as the channel narrows. Reveal the title after the five-second question. Use the same case throughout unless the screen identifies an alternate example.",
+    "on_screen_text": "Narrowing inside a stent",
+    "source_ids": "H, I, K"
+  },
+  {
+    "id": "P02",
+    "title": "What restenosis means",
+    "narration": "In-stent restenosis means narrowing that develops or persists within or close to a stented section. A stent may still be in place when the channel becomes narrow. Some people notice symptoms such as chest discomfort returning. The team considers the symptoms and the test findings together.",
+    "visual_file": "visuals/P02.mp4",
+    "target_start_sec": 16,
+    "target_end_sec": 38,
+    "visual_direction": "Trace the stent from end to end. Reveal one focal narrowing within the cage and briefly indicate the nearby edge as a separate possible location. Keep the artery open beyond the lesion in this example. Use an abstract symptoms cue rather than a real patient image.",
+    "on_screen_text": "In-stent restenosis",
+    "source_ids": "E, H, I"
+  },
+  {
+    "id": "P03",
+    "title": "Different causes can look similar",
+    "narration": "There are several possible causes. The stent may have remained partly compressed when it was put in. Tissue may grow inside a stent that opened well. New plaque can also develop in tissue inside the stent. These are different problems, even if the angiogram shows a narrow channel in each case.",
+    "visual_file": "visuals/P03.mp4",
+    "target_start_sec": 38,
+    "target_end_sec": 65,
+    "visual_direction": "Use three separate conceptual cross-sections of the same scale. Show a smaller mesh outline for underexpansion, tissue on the inside of a fully open mesh for growth, and a localized plaque feature in later tissue for new plaque. Do not blend the three findings into one diagnosis.",
+    "on_screen_text": "Underexpansion · Tissue growth · New plaque",
+    "source_ids": "H, I"
+  },
+  {
+    "id": "P04",
+    "title": "A different problem can happen suddenly",
+    "narration": "A clot in a stent is called stent thrombosis. It can suddenly block blood flow and cause a heart attack. Restenosis and a clot need different assessment, and symptoms alone cannot tell which has happened. Severe chest pressure or sudden trouble breathing are reasons to get emergency help.",
+    "visual_file": "visuals/P04.mp4",
+    "target_start_sec": 65,
+    "target_end_sec": 89,
+    "visual_direction": "Use a separate high-contrast clot example. The clot appears abruptly in an otherwise clearly distinct image, with no graphic gore. Then hold the emergency message with a neutral phone icon. Keep these symptoms separate from the main example and do not tell viewers to diagnose themselves.",
+    "on_screen_text": "Clot in a stent · Emergency symptoms",
+    "source_ids": "H, I, J"
+  },
+  {
+    "id": "P05",
+    "title": "What the angiogram can show",
+    "narration": "The team may use contrast X-rays to see where the channel is narrow and how the rest of the artery looks. The outline alone may leave the cause unclear. Reviewing the previous procedure and earlier images helps put the new findings in context.",
+    "visual_file": "visuals/P05.mp4",
+    "target_start_sec": 89,
+    "target_end_sec": 111,
+    "visual_direction": "Use matched simulated coronary views and the original branch landmarks. Highlight the narrower channel without making the struts or tissue type diagnostically obvious on the X-ray. Slide in a neutral previous-record icon with no identifiers.",
+    "on_screen_text": "The angiogram shows the channel",
+    "source_ids": "H, I, K"
+  },
+  {
+    "id": "P06",
+    "title": "Looking inside the stent",
+    "narration": "The team can sometimes use imaging from inside the artery to see the stent and the vessel wall in more detail. Intravascular ultrasound uses sound. Optical coherence tomography uses light. These images can help show whether the mesh expanded properly and whether tissue has narrowed the space inside.",
+    "visual_file": "visuals/P06.mp4",
+    "target_start_sec": 111,
+    "target_end_sec": 138,
+    "visual_direction": "Transition from the long-axis view to a circular vessel cross-section. Show illustrative mesh and tissue boundaries. Use only one active label at a time for ultrasound or light. Avoid simulating exact diagnostic criteria or device setup.",
+    "on_screen_text": "Inside-artery imaging",
+    "source_ids": "C, H, I"
+  },
+  {
+    "id": "P07",
+    "title": "The cause guides treatment",
+    "narration": "If the stent did not expand well, the team considers how to address that mechanical problem. For selected cases, treatment may include a drug-coated balloon or another drug-eluting stent. A coated balloon is removed after treatment. A new drug-eluting stent leaves another scaffold at the treated site.",
+    "visual_file": "visuals/P07.mp4",
+    "target_start_sec": 138,
+    "target_end_sec": 164,
+    "visual_direction": "Stage two generic options after showing a conceptual correction of a tight mesh. In the balloon-only branch, retain the old stent and remove the balloon. In the repeat-stent branch, distinguish the original cage from a second scaffold. Present both as selected options without depicting exact steps.",
+    "on_screen_text": "Treatment depends on the cause",
+    "source_ids": "C, D, H, I"
+  },
+  {
+    "id": "P08",
+    "title": "Questions after the assessment",
+    "narration": "The care team can explain what it found, what treatment is appropriate and how the follow-up plan changes. Useful questions are what caused the narrowing, how the team checked it, and which medicines or follow-up visits are part of the plan. Those answers connect the finding to the next step.",
+    "visual_file": "visuals/P08.mp4",
+    "target_start_sec": 164,
+    "target_end_sec": 190,
+    "visual_direction": "Return to the same case and animate its result into three short questions. Use an illustrated discharge summary, simple hands or modestly clothed figures. Avoid personalized treatment instructions, named medicines or fixed follow-up times.",
+    "on_screen_text": "Cause · Test · Follow-up",
+    "source_ids": "E, H, I"
+  },
+  {
+    "id": "P09",
+    "title": "Clinical sources",
+    "narration": "",
+    "visual_file": "visuals/P09.mp4",
+    "target_start_sec": 190,
+    "target_end_sec": 198,
+    "visual_direction": "Eight-second source and production card. Show the Elysian logo, concise SCAI and ESC references, and the next episode title. Disclose original illustrative animation and synthetic English narration.",
+    "on_screen_text": "Sources and production",
+    "source_ids": "C, D, E, H, I, J, K"
+  }
+]

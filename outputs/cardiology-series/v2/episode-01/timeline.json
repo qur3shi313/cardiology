@@ -1,0 +1,1457 @@
+{
+  "schema_version": 1,
+  "episode": "episode-01",
+  "series_topic": 1,
+  "title": "Coronary angiogram through the wrist or groin",
+  "fps": 30,
+  "size": [
+    2560,
+    1440
+  ],
+  "duration_frames": 12588,
+  "duration_sec": 419.6,
+  "voice": "Alexander",
+  "audio_policy": "Narration only",
+  "caption_file": "episode-01.en.srt",
+  "chapter_file": "chapters.txt",
+  "reference_footage_policy": "Previous picture tracks are anatomical and sequence references for newly drawn, modest 1440p scenes.",
+  "short": {
+    "first_scene": "P25",
+    "last_scene": "P25",
+    "start_frame": 6815,
+    "end_frame": 7528,
+    "size": [
+      1080,
+      1920
+    ],
+    "visual_direction": "Open immediately on the simulated left coronary artery filling with contrast. Keep the catheter tip and the central coronary branches in the phone-safe frame. Burn in the retimed English captions."
+  },
+  "voice_alignment": {
+    "radial": {
+      "timing": "outputs/cardiology-series/episode-01/revision/radial-alexander-scene-timing.json",
+      "captions": "outputs/cardiology-series/episode-01/revision/radial-alexander.en.srt"
+    },
+    "femoral": {
+      "timing": "outputs/cardiology-series/episode-01/revision/femoral-alexander-scene-timing.json",
+      "captions": "outputs/cardiology-series/episode-01/revision/femoral-alexander.en.srt"
+    }
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "title": "What a coronary angiogram shows",
+      "stage": "contrast_hook",
+      "route": "radial",
+      "source_scene": "R01",
+      "narration": "A coronary angiogram answers a question: is there a narrowing or blockage in an artery that supplies the heart muscle?",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 0,
+        "out_sec": 8.45
+      },
+      "footage": {
+        "source_scene": "F18",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 210.566667,
+        "out_sec": 234.333333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F18",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 210.566667,
+          "out_sec": 234.333333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Begin with dark coronary branches filling across the frame in the first second. Mark the image as simulated. Introduce the exact title after five seconds over the moving X-ray, then reveal both modest arterial route outlines.",
+      "display_title": "Coronary angiogram through the wrist or groin",
+      "title_onset_sec": 5,
+      "start_frame": 0,
+      "duration_frames": 253,
+      "end_frame": 253,
+      "target_start_sec": 0.0,
+      "target_end_sec": 8.433333
+    },
+    {
+      "id": "P02",
+      "title": "Why the test is done",
+      "stage": "stenosis",
+      "route": "radial",
+      "source_scene": "R02",
+      "narration": "The heart muscle gets its blood supply from the coronary arteries. Plaque can build up in an artery wall and make the channel narrower. An angiogram may be planned after a review of symptoms and other tests. In some suspected heart attacks, the team may need an urgent angiogram and may go on to treat the artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 22.253,
+        "out_sec": 44.404
+      },
+      "footage": {
+        "source_scene": "R02",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 22.333333,
+        "out_sec": 44.5,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R02",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 22.333333,
+          "out_sec": 44.5,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Show an original layered artery with a short plaque-related narrowing. Introduce planned and urgent assessment without showing any treatment in this beat.",
+      "start_frame": 253,
+      "duration_frames": 665,
+      "end_frame": 918,
+      "target_start_sec": 8.433333,
+      "target_end_sec": 30.6
+    },
+    {
+      "id": "P03",
+      "title": "Preparing for the test",
+      "stage": "preparation",
+      "route": "radial",
+      "source_scene": "R03",
+      "narration": "For a planned angiogram, your team explains the test and reviews your medicines, kidney health and any previous reaction to contrast. Follow their instructions about food, drink and medicines.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 44.404,
+        "out_sec": 58.47
+      },
+      "footage": {
+        "source_scene": "R03",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 44.5,
+        "out_sec": 69.0,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R03",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 44.5,
+          "out_sec": 69.0,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Use an original fully clothed patient and clinician, or gloved hands with a simple illustrated checklist. Highlight medicines, kidney health and prior contrast reaction in two successive views.",
+      "start_frame": 918,
+      "duration_frames": 422,
+      "end_frame": 1340,
+      "target_start_sec": 30.6,
+      "target_end_sec": 44.666667
+    },
+    {
+      "id": "P04",
+      "title": "Find the right radial artery",
+      "stage": "site",
+      "route": "radial",
+      "source_scene": "R04",
+      "narration": "The radial artery runs on the thumb side of the wrist. Here the team checks the right wrist and uses ultrasound to see the artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 68.901,
+        "out_sec": 77.95
+      },
+      "footage": {
+        "source_scene": "R04",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 69.0,
+        "out_sec": 88.1,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R04",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 69.0,
+          "out_sec": 88.1,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Start with a sex-neutral body silhouette and route label. Show the supported right palm turned up. Use one small window over the thumb-side wrist and the ultrasound probe on the skin.",
+      "start_frame": 1340,
+      "duration_frames": 271,
+      "end_frame": 1611,
+      "target_start_sec": 44.666667,
+      "target_end_sec": 53.7
+    },
+    {
+      "id": "P05",
+      "title": "Enter the radial artery",
+      "stage": "needle",
+      "route": "radial",
+      "source_scene": "R05",
+      "narration": "Once the area is numb, a small access needle enters the radial artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 87.999,
+        "out_sec": 93.78
+      },
+      "footage": {
+        "source_scene": "R05",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 88.1,
+        "out_sec": 103.433333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R05",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 88.1,
+          "out_sec": 103.433333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "In the same fixed cutaway, reveal the needle entering the near wall and stopping in the arterial lumen. Keep the local anaesthetic context with the draped setup.",
+      "start_frame": 1611,
+      "duration_frames": 173,
+      "end_frame": 1784,
+      "target_start_sec": 53.7,
+      "target_end_sec": 59.466667
+    },
+    {
+      "id": "P06",
+      "title": "Pass the short access wire",
+      "stage": "short_wire",
+      "route": "radial",
+      "source_scene": "R06",
+      "narration": "A short access wire passes through the hollow needle and into the radial artery. The wire points up the arm.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 103.337,
+        "out_sec": 111.731
+      },
+      "footage": {
+        "source_scene": "R06",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 103.433333,
+        "out_sec": 111.8,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R06",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 103.433333,
+          "out_sec": 111.8,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "The wire alone advances through the stationary needle and curves gently up the arterial lumen.",
+      "start_frame": 1784,
+      "duration_frames": 252,
+      "end_frame": 2036,
+      "target_start_sec": 59.466667,
+      "target_end_sec": 67.866667
+    },
+    {
+      "id": "P07",
+      "title": "Withdraw the wrist needle",
+      "stage": "needle_out",
+      "route": "radial",
+      "source_scene": "R07",
+      "narration": "The needle slides back out over the wire. Watch how the wire stays in the artery and preserves the entry path.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 111.731,
+        "out_sec": 119.985
+      },
+      "footage": {
+        "source_scene": "R07",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 111.8,
+        "out_sec": 120.066667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R07",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 111.8,
+          "out_sec": 120.066667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "The needle exits over the stationary short wire. Preserve the wire and cutaway registration.",
+      "start_frame": 2036,
+      "duration_frames": 248,
+      "end_frame": 2284,
+      "target_start_sec": 67.866667,
+      "target_end_sec": 76.133333
+    },
+    {
+      "id": "P08",
+      "title": "Place the radial sheath",
+      "stage": "sheath_in",
+      "route": "radial",
+      "source_scene": "R08",
+      "narration": "The short radial sheath goes in over the access wire. A tapered insert, called a dilator, sits inside the sheath as it goes in.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 119.985,
+        "out_sec": 130.051
+      },
+      "footage": {
+        "source_scene": "R08",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 120.066667,
+        "out_sec": 130.133333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R08",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 120.066667,
+          "out_sec": 130.133333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Sheath and tapered dilator advance together around the existing wire. Use separate outlines for the two instruments.",
+      "start_frame": 2284,
+      "duration_frames": 302,
+      "end_frame": 2586,
+      "target_start_sec": 76.133333,
+      "target_end_sec": 86.2
+    },
+    {
+      "id": "P09",
+      "title": "Leave the radial sheath in place",
+      "stage": "short_out",
+      "route": "radial",
+      "source_scene": "R09",
+      "narration": "The team removes the short access wire and the dilator. The outer sheath stays at the wrist. It gives the next instruments a way into the artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 130.051,
+        "out_sec": 141.034
+      },
+      "footage": {
+        "source_scene": "R09",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 130.133333,
+        "out_sec": 141.133333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R09",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 130.133333,
+          "out_sec": 141.133333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "The short access wire and dilator withdraw while the outer sheath stays at the wrist.",
+      "start_frame": 2586,
+      "duration_frames": 329,
+      "end_frame": 2915,
+      "target_start_sec": 86.2,
+      "target_end_sec": 97.166667
+    },
+    {
+      "id": "P10",
+      "title": "Pass the longer diagnostic guidewire",
+      "stage": "long_wire",
+      "route": "radial",
+      "source_scene": "R10",
+      "narration": "A longer diagnostic guidewire passes through the sheath. Live X-ray, called fluoroscopy, lets the cardiologist see where the wire is going.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 141.034,
+        "out_sec": 152.643
+      },
+      "footage": {
+        "source_scene": "R10",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 141.133333,
+        "out_sec": 152.733333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R10",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 141.133333,
+          "out_sec": 152.733333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "A distinct long guidewire advances through the empty sheath. Use an X-ray simulation cue without contrast.",
+      "start_frame": 2915,
+      "duration_frames": 348,
+      "end_frame": 3263,
+      "target_start_sec": 97.166667,
+      "target_end_sec": 108.766667
+    },
+    {
+      "id": "P11",
+      "title": "Advance the diagnostic catheter",
+      "stage": "catheter",
+      "route": "radial",
+      "source_scene": "R11",
+      "narration": "The diagnostic catheter advances over the long guidewire. The short sheath remains where the team entered the artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 152.643,
+        "out_sec": 160.143
+      },
+      "footage": {
+        "source_scene": "R11",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 152.733333,
+        "out_sec": 160.233333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R11",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 152.733333,
+          "out_sec": 160.233333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "The diagnostic catheter advances coaxially over the longer wire. Its tip follows behind the wire, and the sheath remains fixed.",
+      "start_frame": 3263,
+      "duration_frames": 225,
+      "end_frame": 3488,
+      "target_start_sec": 108.766667,
+      "target_end_sec": 116.266667
+    },
+    {
+      "id": "P12",
+      "title": "Follow the wrist route to the heart",
+      "stage": "route",
+      "route": "radial",
+      "source_scene": "R12",
+      "narration": "From the wrist, the wire and catheter follow arteries up the arm, through the shoulder, and into the large artery that leads to the aorta.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 160.143,
+        "out_sec": 168.8
+      },
+      "footage": {
+        "source_scene": "R12",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 160.233333,
+        "out_sec": 180.966667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R12",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 160.233333,
+          "out_sec": 180.966667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Zoom out to the sex-neutral body map, keeping the radial-brachial-axillary-subclavian-brachiocephalic and aortic continuity. The guidewire and catheter approach the aortic root.",
+      "start_frame": 3488,
+      "duration_frames": 260,
+      "end_frame": 3748,
+      "target_start_sec": 116.266667,
+      "target_end_sec": 124.933333
+    },
+    {
+      "id": "P13",
+      "title": "Find the right common femoral artery",
+      "stage": "site",
+      "route": "femoral",
+      "source_scene": "F04",
+      "narration": "The common femoral artery runs beneath the skin in the upper thigh near the groin.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 66.418,
+        "out_sec": 71.88
+      },
+      "footage": {
+        "source_scene": "F04",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 66.5,
+        "out_sec": 85.3,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F04",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 66.5,
+          "out_sec": 85.3,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Cut clearly to a separate groin example. A sterile drape covers the body with one small circular window at the right upper thigh. The surrounding anatomical map is sex-neutral.",
+      "start_frame": 3748,
+      "duration_frames": 164,
+      "end_frame": 3912,
+      "target_start_sec": 124.933333,
+      "target_end_sec": 130.4
+    },
+    {
+      "id": "P14",
+      "title": "Enter the common femoral artery",
+      "stage": "needle",
+      "route": "femoral",
+      "source_scene": "F05",
+      "narration": "After numbing the site, the cardiologist uses a fine access needle to enter the common femoral artery under ultrasound.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 85.226,
+        "out_sec": 93.74
+      },
+      "footage": {
+        "source_scene": "F05",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 85.3,
+        "out_sec": 97.733333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F05",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 85.3,
+          "out_sec": 97.733333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Keep the small window and fixed cutaway. The fine needle enters the common femoral artery above the division. Use an original ultrasound inset only if its labels are large enough.",
+      "start_frame": 3912,
+      "duration_frames": 255,
+      "end_frame": 4167,
+      "target_start_sec": 130.4,
+      "target_end_sec": 138.9
+    },
+    {
+      "id": "P15",
+      "title": "Pass the fine groin access wire",
+      "stage": "short_wire",
+      "route": "femoral",
+      "source_scene": "F06",
+      "narration": "A fine access wire passes through the hollow needle. X-ray helps the team confirm that the wire follows the main iliac artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 97.649,
+        "out_sec": 107.634
+      },
+      "footage": {
+        "source_scene": "F06",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 97.733333,
+        "out_sec": 107.733333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F06",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 97.733333,
+          "out_sec": 107.733333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "The fine wire advances through the needle into the common femoral lumen. Briefly trace the wire into the main iliac path in a simulated X-ray locator.",
+      "start_frame": 4167,
+      "duration_frames": 300,
+      "end_frame": 4467,
+      "target_start_sec": 138.9,
+      "target_end_sec": 148.9
+    },
+    {
+      "id": "P16",
+      "title": "Withdraw the groin needle",
+      "stage": "needle_out",
+      "route": "femoral",
+      "source_scene": "F07",
+      "narration": "The needle slides back out over the wire.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 107.634,
+        "out_sec": 110.8
+      },
+      "footage": {
+        "source_scene": "F07",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 107.733333,
+        "out_sec": 115.966667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F07",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 107.733333,
+          "out_sec": 115.966667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "The needle comes out over the stationary fine wire. Match the next frame to that wire position.",
+      "start_frame": 4467,
+      "duration_frames": 95,
+      "end_frame": 4562,
+      "target_start_sec": 148.9,
+      "target_end_sec": 152.066667
+    },
+    {
+      "id": "P17",
+      "title": "Place the temporary introducer",
+      "stage": "sheath_in",
+      "route": "femoral",
+      "source_scene": "F08",
+      "narration": "The team passes a temporary micropuncture introducer with its inner dilator over the fine wire.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 115.889,
+        "out_sec": 122.785
+      },
+      "footage": {
+        "source_scene": "F08",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 115.966667,
+        "out_sec": 122.866667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F08",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 115.966667,
+          "out_sec": 122.866667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "The temporary introducer and inner dilator advance together over the fine wire.",
+      "start_frame": 4562,
+      "duration_frames": 207,
+      "end_frame": 4769,
+      "target_start_sec": 152.066667,
+      "target_end_sec": 158.966667
+    },
+    {
+      "id": "P18",
+      "title": "Leave the temporary introducer",
+      "stage": "short_out",
+      "route": "femoral",
+      "source_scene": "F09",
+      "narration": "The fine wire and inner dilator are taken out. The outer introducer stays in the artery so the team can exchange wires.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 122.785,
+        "out_sec": 132.108
+      },
+      "footage": {
+        "source_scene": "F09",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 122.866667,
+        "out_sec": 132.2,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F09",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 122.866667,
+          "out_sec": 132.2,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Remove the fine wire and inner dilator. Hold the temporary introducer in the arterial lumen.",
+      "start_frame": 4769,
+      "duration_frames": 280,
+      "end_frame": 5049,
+      "target_start_sec": 158.966667,
+      "target_end_sec": 168.3
+    },
+    {
+      "id": "P19",
+      "title": "Pass the exchange wire",
+      "stage": "exchange_wire",
+      "route": "femoral",
+      "source_scene": "F10",
+      "narration": "A larger exchange wire goes through the temporary introducer and into the artery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 132.108,
+        "out_sec": 138.168
+      },
+      "footage": {
+        "source_scene": "F10",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 132.2,
+        "out_sec": 138.266667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F10",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 132.2,
+          "out_sec": 138.266667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Pass the distinct larger exchange wire through the temporary introducer and keep the wire inside the arterial channel.",
+      "start_frame": 5049,
+      "duration_frames": 182,
+      "end_frame": 5231,
+      "target_start_sec": 168.3,
+      "target_end_sec": 174.366667
+    },
+    {
+      "id": "P20",
+      "title": "Withdraw the temporary introducer",
+      "stage": "micro_out",
+      "route": "femoral",
+      "source_scene": "F11",
+      "narration": "The temporary introducer comes out over the exchange wire. The exchange wire stays in place.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 138.168,
+        "out_sec": 145.377
+      },
+      "footage": {
+        "source_scene": "F11",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 138.266667,
+        "out_sec": 145.466667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F11",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 138.266667,
+          "out_sec": 145.466667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "The temporary introducer withdraws over the exchange wire. The exchange wire remains in place.",
+      "start_frame": 5231,
+      "duration_frames": 216,
+      "end_frame": 5447,
+      "target_start_sec": 174.366667,
+      "target_end_sec": 181.566667
+    },
+    {
+      "id": "P21",
+      "title": "Place the working femoral sheath",
+      "stage": "working_sheath",
+      "route": "femoral",
+      "source_scene": "F12",
+      "narration": "The working femoral sheath and its dilator slide in over the exchange wire.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 145.377,
+        "out_sec": 151.008
+      },
+      "footage": {
+        "source_scene": "F12",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 145.466667,
+        "out_sec": 151.1,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F12",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 145.466667,
+          "out_sec": 151.1,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Advance the working sheath and its dilator coaxially over the exchange wire.",
+      "start_frame": 5447,
+      "duration_frames": 169,
+      "end_frame": 5616,
+      "target_start_sec": 181.566667,
+      "target_end_sec": 187.2
+    },
+    {
+      "id": "P22",
+      "title": "Leave the working femoral sheath",
+      "stage": "working_dilator_out",
+      "route": "femoral",
+      "source_scene": "F13",
+      "narration": "The team removes the exchange wire and the dilator. The working sheath stays at the groin. The team can take a separate groin image to check the entry site.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 151.008,
+        "out_sec": 161.603
+      },
+      "footage": {
+        "source_scene": "F13",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 151.1,
+        "out_sec": 162.0,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F13",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 151.1,
+          "out_sec": 162.0,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Withdraw the exchange wire and dilator. The sheath stays. If showing the optional access check, use a separate small simulated groin image during the recorded line, with the wire and dilator already out. Omit settings and injection details.",
+      "start_frame": 5616,
+      "duration_frames": 318,
+      "end_frame": 5934,
+      "target_start_sec": 187.2,
+      "target_end_sec": 197.8
+    },
+    {
+      "id": "P23",
+      "title": "Follow the groin route to the heart",
+      "stage": "route",
+      "route": "femoral",
+      "source_scene": "F16",
+      "narration": "The wire and catheter travel through the right external and common iliac arteries, then up the abdominal and chest aorta. They round the aortic arch toward the aortic root, where the coronary arteries begin above the aortic valve.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 181.125,
+        "out_sec": 198.015
+      },
+      "footage": {
+        "source_scene": "F16",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 181.2,
+        "out_sec": 198.1,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F14",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 162.0,
+          "out_sec": 172.866667,
+          "reference_only": true
+        },
+        {
+          "source_scene": "F15",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 172.866667,
+          "out_sec": 181.2,
+          "reference_only": true
+        },
+        {
+          "source_scene": "F16",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 181.2,
+          "out_sec": 198.1,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Carry forward the empty working sheath. Show a new long diagnostic wire, then the catheter following it at the sheath in the opening seconds. Follow both into the external and common iliac arteries, through the aorta and around its arch to the root above the valve.",
+      "start_frame": 5934,
+      "duration_frames": 507,
+      "end_frame": 6441,
+      "target_start_sec": 197.8,
+      "target_end_sec": 214.7
+    },
+    {
+      "id": "P24",
+      "title": "Withdraw the long guidewire",
+      "stage": "root",
+      "route": "femoral",
+      "source_scene": "F17",
+      "narration": "At the aortic root, the long guidewire is withdrawn from the catheter. Here the curved catheter tip is positioned at the left coronary opening, above the aortic valve.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 198.015,
+        "out_sec": 210.484
+      },
+      "footage": {
+        "source_scene": "F17",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 198.1,
+        "out_sec": 210.566667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F17",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 198.1,
+          "out_sec": 210.566667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Zoom to the aortic root. Withdraw the long wire completely through the catheter. Only then position the shallow catheter tip at the left coronary opening.",
+      "start_frame": 6441,
+      "duration_frames": 374,
+      "end_frame": 6815,
+      "target_start_sec": 214.7,
+      "target_end_sec": 227.166667
+    },
+    {
+      "id": "P25",
+      "title": "Record the left coronary arteries",
+      "stage": "left_contrast",
+      "route": "femoral",
+      "source_scene": "F18",
+      "narration": "The cardiologist injects X-ray contrast through the diagnostic catheter. For a moment, it outlines the channel that blood travels through. Watch the left main artery fill and then see two of its main branches come into view. Now look at the same moment on the X-ray. The dark branching lines show where the contrast is flowing.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 210.484,
+        "out_sec": 234.25
+      },
+      "footage": {
+        "source_scene": "F18",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 210.566667,
+        "out_sec": 234.333333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F18",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 210.566667,
+          "out_sec": 234.333333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Begin the selective contrast only with the long wire fully out. Show liquid flowing from the catheter tip into the left main and downstream branches, then use a full-bleed simulated X-ray of the same run. Wash out with blood flow.",
+      "start_frame": 6815,
+      "duration_frames": 713,
+      "end_frame": 7528,
+      "target_start_sec": 227.166667,
+      "target_end_sec": 250.933333
+    },
+    {
+      "id": "P26",
+      "title": "Withdraw the first diagnostic catheter",
+      "stage": "femoral_left_out",
+      "route": "femoral",
+      "source_scene": "F19",
+      "narration": "In this groin example, the team uses a different catheter for the right artery. The left catheter moves back from the coronary opening and is withdrawn. The working sheath stays at the groin.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 234.25,
+        "out_sec": 248.078
+      },
+      "footage": {
+        "source_scene": "F19",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 234.333333,
+        "out_sec": 248.166667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F19",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 234.333333,
+          "out_sec": 248.166667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Hold the aortic-root orientation as the left catheter comes off the opening and withdraws. Show the working sheath staying at the groin.",
+      "start_frame": 7528,
+      "duration_frames": 415,
+      "end_frame": 7943,
+      "target_start_sec": 250.933333,
+      "target_end_sec": 264.766667
+    },
+    {
+      "id": "P27",
+      "title": "Position the right diagnostic catheter",
+      "stage": "femoral_right_in",
+      "route": "femoral",
+      "source_scene": "F20",
+      "narration": "The right diagnostic catheter follows a guidewire up through the aorta. The team withdraws the wire and positions the catheter tip at the right coronary opening.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 248.078,
+        "out_sec": 259.13
+      },
+      "footage": {
+        "source_scene": "F20",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 248.166667,
+        "out_sec": 259.2,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F20",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 248.166667,
+          "out_sec": 259.2,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Advance the second diagnostic catheter over its guidewire. Withdraw the wire fully, then position only the tip at the right coronary opening.",
+      "start_frame": 7943,
+      "duration_frames": 332,
+      "end_frame": 8275,
+      "target_start_sec": 264.766667,
+      "target_end_sec": 275.833333
+    },
+    {
+      "id": "P28",
+      "title": "Record the right coronary artery",
+      "stage": "right_contrast",
+      "route": "femoral",
+      "source_scene": "F21",
+      "narration": "The cardiologist injects contrast separately at the right coronary opening. The right coronary artery and its branches briefly appear on X-ray. The imaging arm can move around the patient to record the arteries from different angles.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 259.13,
+        "out_sec": 275.57
+      },
+      "footage": {
+        "source_scene": "F21",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 259.2,
+        "out_sec": 275.666667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F21",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 259.2,
+          "out_sec": 275.666667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Show a separate right coronary contrast run with wire out, then move the C-arm between captures to a second angle. Keep the artery and contrast visibly separate from the left run.",
+      "start_frame": 8275,
+      "duration_frames": 493,
+      "end_frame": 8768,
+      "target_start_sec": 275.833333,
+      "target_end_sec": 292.266667
+    },
+    {
+      "id": "P29",
+      "title": "What a narrowing looks like",
+      "stage": "stenosis",
+      "route": "femoral",
+      "source_scene": "F22",
+      "narration": "On this example image, the contrast-filled channel is thinner at one spot.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 275.57,
+        "out_sec": 280.74
+      },
+      "footage": {
+        "source_scene": "F22",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 275.666667,
+        "out_sec": 302.366667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F22",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 275.666667,
+          "out_sec": 302.366667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Show an illustrative X-ray with the same branch and a visible distal segment. Let the contrast make the narrower channel apparent. Use the simulated imaging disclosure.",
+      "start_frame": 8768,
+      "duration_frames": 155,
+      "end_frame": 8923,
+      "target_start_sec": 292.266667,
+      "target_end_sec": 297.433333
+    },
+    {
+      "id": "P30",
+      "title": "What happens next",
+      "stage": "result",
+      "route": "radial",
+      "source_scene": "R18",
+      "narration": "The next step depends on the findings, the symptoms, and whether the situation is urgent. It may be medicines, another test, angioplasty, or a discussion about bypass surgery. Angioplasty uses a balloon and may place a stent to treat a narrowing. In selected cases the team can do that in the same session.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 271.991,
+        "out_sec": 294.14
+      },
+      "footage": {
+        "source_scene": "R18",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 272.066667,
+        "out_sec": 297.666667,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R18",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 272.066667,
+          "out_sec": 297.666667,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Show result-driven options in succession. Illustrate a balloon and stent in a clearly labeled treatment example. Cut back to the diagnostic catheter for the next scene, with no intervention performed in the diagnostic example.",
+      "start_frame": 8923,
+      "duration_frames": 664,
+      "end_frame": 9587,
+      "target_start_sec": 297.433333,
+      "target_end_sec": 319.566667
+    },
+    {
+      "id": "P31",
+      "title": "Withdraw the diagnostic catheter",
+      "stage": "catheter_out",
+      "route": "femoral",
+      "source_scene": "F24",
+      "narration": "After the images are complete, the cardiologist withdraws the diagnostic catheter through the sheath. The sheath is still at the access site.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 326.213,
+        "out_sec": 334.851
+      },
+      "footage": {
+        "source_scene": "F24",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 326.3,
+        "out_sec": 334.933333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F24",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 326.3,
+          "out_sec": 334.933333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "The catheter leaves through the groin sheath, which stays fixed until the following beat. Keep the drape and small access window.",
+      "start_frame": 9587,
+      "duration_frames": 259,
+      "end_frame": 9846,
+      "target_start_sec": 319.566667,
+      "target_end_sec": 328.2
+    },
+    {
+      "id": "P32",
+      "title": "Remove the groin sheath and apply pressure",
+      "stage": "remove",
+      "route": "femoral",
+      "source_scene": "F25",
+      "narration": "For manual closure, the team removes the groin sheath and presses firmly over the entry site to control bleeding.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 334.851,
+        "out_sec": 342.63
+      },
+      "footage": {
+        "source_scene": "F25",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 334.933333,
+        "out_sec": 342.7,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F25",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 334.933333,
+          "out_sec": 342.7,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Remove the sheath while gloved hands provide pressure. Show a small draped access window. Use no visible blood.",
+      "start_frame": 9846,
+      "duration_frames": 233,
+      "end_frame": 10079,
+      "target_start_sec": 328.2,
+      "target_end_sec": 335.966667
+    },
+    {
+      "id": "P33",
+      "title": "A closure device is another option",
+      "stage": "closure",
+      "route": "femoral",
+      "source_scene": "F26",
+      "narration": "In selected cases, the team uses a closure device, such as a plug or stitch system. Staff check the site and leg circulation before the patient gets up.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 342.63,
+        "out_sec": 352.916
+      },
+      "footage": {
+        "source_scene": "F26",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 342.7,
+        "out_sec": 353.0,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F26",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 342.7,
+          "out_sec": 353.0,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Use a clean alternative shot for the illustrated stitch. Show a clothed patient and check circulation on the accessed leg, with only the small draped window available.",
+      "start_frame": 10079,
+      "duration_frames": 309,
+      "end_frame": 10388,
+      "target_start_sec": 335.966667,
+      "target_end_sec": 346.266667
+    },
+    {
+      "id": "P34",
+      "title": "Recovery after groin access",
+      "stage": "aftercare",
+      "route": "femoral",
+      "source_scene": "F27",
+      "narration": "Staff check your pulse, blood pressure, groin and leg circulation. You may need to lie flat with the leg straight while the site is monitored.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+        "in_sec": 352.916,
+        "out_sec": 362.39
+      },
+      "footage": {
+        "source_scene": "F27",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+        "in_sec": 353.0,
+        "out_sec": 375.9,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "F27",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-femoral-picture.mp4",
+          "in_sec": 353.0,
+          "out_sec": 375.9,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Show an entirely clothed patient lying flat with the leg straight. Show staff observing vital signs and checking the leg.",
+      "start_frame": 10388,
+      "duration_frames": 284,
+      "end_frame": 10672,
+      "target_start_sec": 346.266667,
+      "target_end_sec": 355.733333
+    },
+    {
+      "id": "P35",
+      "title": "Remove the wrist sheath and apply a band",
+      "stage": "remove",
+      "route": "radial",
+      "source_scene": "R20",
+      "narration": "Staff position a wrist compression band over the puncture as the sheath comes out. The band puts pressure over the site to control bleeding.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 306.636,
+        "out_sec": 315.819
+      },
+      "footage": {
+        "source_scene": "R20",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 306.733333,
+        "out_sec": 315.9,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R20",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 306.733333,
+          "out_sec": 315.9,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "A clear wrist label signals the return to the earlier route. Keep the access window small. Place the wrist band over the radial puncture as the sheath exits, with the diagnostic catheter already removed.",
+      "start_frame": 10672,
+      "duration_frames": 275,
+      "end_frame": 10947,
+      "target_start_sec": 355.733333,
+      "target_end_sec": 364.9
+    },
+    {
+      "id": "P36",
+      "title": "Check the wrist and hand",
+      "stage": "closure",
+      "route": "radial",
+      "source_scene": "R21",
+      "narration": "Staff check the puncture site and circulation in the hand. They gradually reduce the band pressure and remove it when it is safe.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 315.819,
+        "out_sec": 324.382
+      },
+      "footage": {
+        "source_scene": "R21",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 315.9,
+        "out_sec": 325.0,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R21",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 315.9,
+          "out_sec": 325.0,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Show the band easing and gloved staff checking the puncture and hand circulation. Avoid a fixed pressure or time setting.",
+      "start_frame": 10947,
+      "duration_frames": 257,
+      "end_frame": 11204,
+      "target_start_sec": 364.9,
+      "target_end_sec": 373.466667
+    },
+    {
+      "id": "P37",
+      "title": "Who can go home the same day",
+      "stage": "aftercare",
+      "route": "radial",
+      "source_scene": "R22",
+      "narration": "After an uncomplicated planned test, many patients can go home the same day. Others need longer observation.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 331.45,
+        "out_sec": 339.98
+      },
+      "footage": {
+        "source_scene": "R22",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 325.0,
+        "out_sec": 349.133333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R22",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 325.0,
+          "out_sec": 349.133333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Show fully clothed patients as neutral silhouettes. Illustrate one patient leaving with their care instructions and another remaining for monitoring.",
+      "start_frame": 11204,
+      "duration_frames": 256,
+      "end_frame": 11460,
+      "target_start_sec": 373.466667,
+      "target_end_sec": 382.0
+    },
+    {
+      "id": "P38",
+      "title": "Care at home",
+      "stage": "home",
+      "route": "radial",
+      "source_scene": "R23",
+      "narration": "Follow the written instructions for the dressing, activity, medicines and follow-up. A small bruise or mild soreness can happen. Contact the care team promptly for increasing redness or pain, drainage or fever.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 349.035,
+        "out_sec": 365.22
+      },
+      "footage": {
+        "source_scene": "R23",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 349.133333,
+        "out_sec": 365.3,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R23",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 349.133333,
+          "out_sec": 365.3,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Show a dressing and small bruise only through limited access views. Use two high-contrast cards for routine instructions and symptoms to report to the care team.",
+      "start_frame": 11460,
+      "duration_frames": 486,
+      "end_frame": 11946,
+      "target_start_sec": 382.0,
+      "target_end_sec": 398.2
+    },
+    {
+      "id": "P39",
+      "title": "When to get emergency help",
+      "stage": "urgent",
+      "route": "radial",
+      "source_scene": "R24",
+      "narration": "Call local emergency services for heavy bleeding or bleeding that continues despite firm pressure, rapidly growing swelling, a newly cold or numb hand, new chest pressure or sudden shortness of breath.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 365.22,
+        "out_sec": 379.112
+      },
+      "footage": {
+        "source_scene": "R24",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 365.3,
+        "out_sec": 379.733333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R24",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 365.3,
+          "out_sec": 379.733333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Use an uncluttered emergency card with the local emergency action continuously visible. Illustrate both hand and foot symptoms, labeled on the accessed side. Advance to separate bleeding, swelling and chest/breathing symbols as the voice moves through them.",
+      "start_frame": 11946,
+      "duration_frames": 417,
+      "end_frame": 12363,
+      "target_start_sec": 398.2,
+      "target_end_sec": 412.1
+    },
+    {
+      "id": "P40",
+      "title": "Before you go home",
+      "stage": "credits",
+      "route": "radial",
+      "source_scene": "R25",
+      "narration": "Before you go home, make sure you know your result and what to do during recovery.",
+      "audio": {
+        "path": "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a",
+        "in_sec": 390.24,
+        "out_sec": 395.74
+      },
+      "footage": {
+        "source_scene": "R26",
+        "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+        "in_sec": 395.733333,
+        "out_sec": 402.733333,
+        "reference_only": true
+      },
+      "reference_shots": [
+        {
+          "source_scene": "R26",
+          "path": "outputs/cardiology-series/episode-01/revision/full-review/elysian-angiography-radial-picture.mp4",
+          "in_sec": 395.733333,
+          "out_sec": 402.733333,
+          "reference_only": true
+        }
+      ],
+      "visual_direction": "Start a moving end card during the spoken outro. Give the full card about seven and a half seconds including the outro. Display series name, authentic logo, next video title and a short sources line. Leave room for YouTube end screens.",
+      "start_frame": 12363,
+      "duration_frames": 225,
+      "end_frame": 12588,
+      "target_start_sec": 412.1,
+      "target_end_sec": 419.6
+    }
+  ]
+}
