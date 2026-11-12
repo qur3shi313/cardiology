@@ -1,6 +1,6 @@
 {
   "input": "episode-03-1440p.mp4",
-  "sha256": "f922f1a7e123baf4522064bffe79ec06ab1dfe7022e0f3776302e576539ea3b4",
+  "sha256": "64b68a0493a694ed9ccd316b5eeeadb855c89f72e81939dedf2e65f795ec71d4",
   "codec": "h264",
   "width": 2560,
   "height": 1440,
@@ -12,31 +12,17 @@
   "audio_stereo": true,
   "video_full_decode": true,
   "video_duration_seconds": 205.133333,
+  "video_frames": 6154,
   "freeze": {
     "noise": 0.001,
     "min_duration_seconds": 2,
-    "total_seconds": 55.566665,
-    "percent": 27.088,
+    "total_seconds": 22.899999,
+    "percent": 11.163,
     "longest_seconds": 6.0,
     "intervals": [
       {
         "start_seconds": 14.7,
         "end_seconds": 16.7,
-        "terminal": false
-      },
-      {
-        "start_seconds": 31.4,
-        "end_seconds": 33.4,
-        "terminal": false
-      },
-      {
-        "start_seconds": 35.766667,
-        "end_seconds": 38.266667,
-        "terminal": false
-      },
-      {
-        "start_seconds": 43.966667,
-        "end_seconds": 48.366667,
         "terminal": false
       },
       {
@@ -65,41 +51,6 @@
         "terminal": false
       },
       {
-        "start_seconds": 102.266667,
-        "end_seconds": 104.266667,
-        "terminal": false
-      },
-      {
-        "start_seconds": 104.266667,
-        "end_seconds": 106.3,
-        "terminal": false
-      },
-      {
-        "start_seconds": 107.533333,
-        "end_seconds": 111.9,
-        "terminal": false
-      },
-      {
-        "start_seconds": 116.266667,
-        "end_seconds": 121.633333,
-        "terminal": false
-      },
-      {
-        "start_seconds": 121.633333,
-        "end_seconds": 123.633333,
-        "terminal": false
-      },
-      {
-        "start_seconds": 123.633333,
-        "end_seconds": 127.1,
-        "terminal": false
-      },
-      {
-        "start_seconds": 127.1,
-        "end_seconds": 131.633333,
-        "terminal": false
-      },
-      {
         "start_seconds": 142.333333,
         "end_seconds": 144.733333,
         "terminal": false
@@ -113,6 +64,38 @@
         "start_seconds": 199.133333,
         "end_seconds": 205.133333,
         "terminal": true
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P12",
+        "title": "Clinical sources",
+        "frozen_seconds": 8.0,
+        "scene_seconds": 8.0
+      },
+      {
+        "scene": "P05",
+        "title": "How groin access can differ",
+        "frozen_seconds": 6.333,
+        "scene_seconds": 15.367
+      },
+      {
+        "scene": "P06",
+        "title": "The long diagnostic guidewire",
+        "frozen_seconds": 4.167,
+        "scene_seconds": 20.0
+      },
+      {
+        "scene": "P09",
+        "title": "When the X-rays are recorded",
+        "frozen_seconds": 2.4,
+        "scene_seconds": 18.767
+      },
+      {
+        "scene": "P02",
+        "title": "Two routes, the same goal",
+        "frozen_seconds": 2.0,
+        "scene_seconds": 16.7
       }
     ]
   },
@@ -137,13 +120,164 @@
   "audio_sources": [
     "outputs/cardiology-series/v2/episode-03/audio/alexander-episode-03.mp3"
   ],
-  "human_visual_review": "pending",
+  "human_visual_review": {
+    "master_sha256": "64b68a0493a694ed9ccd316b5eeeadb855c89f72e81939dedf2e65f795ec71d4",
+    "short_sha256": "3f6cfbd6e4f400ddf3477ebf4b39498c03b2d742a604f04f148d22ff2828dfff",
+    "thumbnail_sha256": "5592fb8212c8b51039f2b1b1e926d229b405f6d9c2a96cc7f7947552999c7218",
+    "verified_at": "2026-11-12T06:18:37.8703670+05:00",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "intentional_holds": [
+      {
+        "start_seconds": 197.133333,
+        "end_seconds": 205.133333,
+        "reason": "Clinical sources, original animation and synthetic narration disclosure, and next-episode title remain readable."
+      }
+    ],
+    "review_evidence": {
+      "exact_master": "Inspected 42 exact-master frames at five-second intervals and 27 targeted decoded action samples at 390 pixels wide. Device and anatomical relationship checks used the exact master and the twelve source clips.",
+      "clinical": "Right palm and thumb-side radial access, separate draped common-femoral wire-exchange example, rigid needle followed by flexible wire, dilator and short wire removed while the sheath stays, diagnostic catheter remains after the longer wire leaves, then selective contrast and separate left and right runs. Simulated imaging is labelled and route maps stay schematic.",
+      "captions_and_voice": "All 490 words in the 51 English caption cues match the locked narration. Two-second waveform samples from all eleven narrated scenes match the sole Alexander source with 0 ms best-match offset at 0.25 ms search resolution. Source and signal checks establish alignment and voice provenance. They do not claim manual auditory listening.",
+      "speech_alignment_samples": [
+        {
+          "scene": "P01",
+          "score": 0.84671,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P02",
+          "score": 0.83219,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P03",
+          "score": 0.8222,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P04",
+          "score": 0.84164,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P05",
+          "score": 0.84146,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P06",
+          "score": 0.87157,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P07",
+          "score": 0.82368,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P08",
+          "score": 0.86112,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P09",
+          "score": 0.85978,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P10",
+          "score": 0.84417,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P11",
+          "score": 0.83501,
+          "offset_ms": 0.0
+        }
+      ],
+      "exact_short": "Inspected twelve exact Short frames at 320 pixels. Right-wrist access sequence retains the straight entry path, wire tip, nested sheath, and parked final sheath. The burned captions, masthead and title stay readable in their own bands.",
+      "exact_thumbnail": "Inspected the 1280 by 720 thumbnail at 320 pixels. The title and authentic logo remain readable and the stationary sheath, catheter and distal wire are distinguishable.",
+      "modesty": "Reviewed decoded device and depiction boundaries. The body route map is sex-neutral, the illustrated groin stays draped, and the consultation figures are fully clothed. Audio input provenance is voice only.",
+      "evidence_files": [
+        "delivery/episode-03-1440p-phone.jpg",
+        "delivery/episode-03-editorial-1.jpg",
+        "delivery/episode-03-editorial-2.jpg",
+        "delivery/episode-03-short-phone-review.jpg",
+        "delivery/episode-03-thumbnail-phone-review.jpg",
+        "delivery/episode-03-waveform-review.json"
+      ]
+    }
+  },
   "captions": {
     "file": "captions.en.srt",
     "cue_count": 51,
     "errors": []
   },
-  "halal_review": "pending",
+  "deliverables": {
+    "1080p": {
+      "file": "episode-03-1080p.mp4",
+      "sha256": "dd5d07bcae0afb2cda34f6d6bdffaa747bacdd8abfdf21de3b0f5fcc0e9eb144",
+      "duration_seconds": 205.2,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-03-short.mp4",
+      "sha256": "3f6cfbd6e4f400ddf3477ebf4b39498c03b2d742a604f04f148d22ff2828dfff",
+      "duration_seconds": 35.5,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.08,
+        "true_peak_dbtp": -1.44,
+        "raw_loudnorm": {
+          "input_i": "-14.08",
+          "input_tp": "-1.44",
+          "input_lra": "2.60",
+          "input_thresh": "-24.44",
+          "output_i": "-13.94",
+          "output_tp": "-1.17",
+          "output_lra": "2.50",
+          "output_thresh": "-24.27",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.06"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-03-thumbnail.jpg",
+      "sha256": "5592fb8212c8b51039f2b1b1e926d229b405f6d9c2a96cc7f7947552999c7218",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "halal_review": "pass",
   "contact_sheet": {
     "file": "episode-03-1440p-phone.jpg",
     "frame_width_px": 390,
@@ -192,17 +326,6 @@
       205
     ]
   },
-  "errors": [
-    "More than 15 percent of the video is frozen",
-    "Required review pending: mobile_readability",
-    "Required review pending: art_coverage",
-    "Required review pending: device_motion",
-    "Required review pending: clinical_accuracy",
-    "Required review pending: caption_alignment",
-    "Required review pending: voice_only",
-    "Required review pending: thumbnail",
-    "Required review pending: vertical_short",
-    "Required review pending: halal_review"
-  ],
-  "status": "blocked"
+  "errors": [],
+  "status": "pass"
 }

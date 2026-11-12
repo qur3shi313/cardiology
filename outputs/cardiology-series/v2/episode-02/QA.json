@@ -1,0 +1,254 @@
+{
+  "input": "episode-02-1440p.mp4",
+  "sha256": "2c503fe7cfe9e46b783be729b90a0b55b7ad3466dabdb15d1db85e610b6ff39d",
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 205.966667,
+  "video_frames": 6179,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 8.0,
+    "percent": 3.884,
+    "longest_seconds": 2.0,
+    "intervals": [
+      {
+        "start_seconds": 99.366667,
+        "end_seconds": 101.366667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 199.466667,
+        "end_seconds": 201.466667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 201.466667,
+        "end_seconds": 203.466667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 203.466667,
+        "end_seconds": 205.466667,
+        "terminal": false
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P12",
+        "title": "Clinical sources",
+        "frozen_seconds": 6.0,
+        "scene_seconds": 6.5
+      },
+      {
+        "scene": "P06",
+        "title": "If the team changes route",
+        "frozen_seconds": 2.0,
+        "scene_seconds": 15.467
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.04,
+    "true_peak_dbtp": -1.4,
+    "raw_loudnorm": {
+      "input_i": "-14.04",
+      "input_tp": "-1.40",
+      "input_lra": "2.70",
+      "input_thresh": "-24.34",
+      "output_i": "-14.16",
+      "output_tp": "-1.20",
+      "output_lra": "2.70",
+      "output_thresh": "-24.45",
+      "normalization_type": "dynamic",
+      "target_offset": "0.16"
+    }
+  },
+  "expected_duration_seconds": 205.96666666666667,
+  "audio_sources": [
+    "outputs/cardiology-series/episode-05/production/wrist-vs-groin-alexander.mp3"
+  ],
+  "human_visual_review": {
+    "master_sha256": "2c503fe7cfe9e46b783be729b90a0b55b7ad3466dabdb15d1db85e610b6ff39d",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "intentional_holds": [],
+    "notes": [
+      "Reviewed all 42 actual master frames sampled every five seconds at 390 px, plus decoded treatment, closure, recovery and warning beats. Each illustrated person wears modest clothing and scrub caps. Sex-neutral route maps and small draped groin windows are used throughout. No real-person imagery is used.",
+      "Diagnostic X-ray view is marked simulated. Contrast fills connected branches. The separate PCI illustration shows wire and balloon progression at one angle. The mortality wording stays inside the acute coronary syndrome PCI example.",
+      "Checked source-word-matched English captions, six voice windows, and the narration-only source. Existing Alexander narration opens with a statement and the question is presented visually during the animated opening.",
+      "The thumbnail is readable at phone size. Reviewed twelve decoded Short samples with burned captions, draped groin access, clothed figures and the original narration."
+    ],
+    "layout_evidence": "layout-evidence.json",
+    "master_contact_sheet": "delivery/episode-02-1440p-phone.jpg",
+    "master_voice_alignment": [
+      {
+        "source_sec": 3,
+        "output_sec": 3,
+        "offset_sec": 0.0,
+        "correlation": 0.99992
+      },
+      {
+        "source_sec": 29,
+        "output_sec": 29,
+        "offset_sec": 0.0,
+        "correlation": 0.99926
+      },
+      {
+        "source_sec": 77,
+        "output_sec": 77,
+        "offset_sec": 0.0,
+        "correlation": 0.99952
+      },
+      {
+        "source_sec": 111,
+        "output_sec": 111,
+        "offset_sec": 0.0,
+        "correlation": 0.99947
+      },
+      {
+        "source_sec": 151,
+        "output_sec": 151,
+        "offset_sec": 0.0,
+        "correlation": 0.99991
+      },
+      {
+        "source_sec": 192,
+        "output_sec": 192,
+        "offset_sec": 0.0,
+        "correlation": 0.99807
+      }
+    ],
+    "short_sha256": "df7f4a6fa358ec47c37a5a7639cb2a6197ef425d3f65c1fe5d15229cf5ecc3b6",
+    "thumbnail_sha256": "19e5df880954bab511d19e67701e6c55393aed5ac7800230f9bee20968cf7d52"
+  },
+  "captions": {
+    "file": "episode-02.en.srt",
+    "cue_count": 50,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-02-1080p.mp4",
+      "sha256": "092d1b9c5faf6ed1f9c77fda39385c259fb2a340d7e8cdf815547318a84a33d6",
+      "duration_seconds": 206.0,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-02-short.mp4",
+      "sha256": "df7f4a6fa358ec47c37a5a7639cb2a6197ef425d3f65c1fe5d15229cf5ecc3b6",
+      "duration_seconds": 34.1,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.97,
+        "true_peak_dbtp": -4.15,
+        "raw_loudnorm": {
+          "input_i": "-14.97",
+          "input_tp": "-4.15",
+          "input_lra": "2.70",
+          "input_thresh": "-25.20",
+          "output_i": "-14.20",
+          "output_tp": "-3.21",
+          "output_lra": "2.40",
+          "output_thresh": "-24.39",
+          "normalization_type": "dynamic",
+          "target_offset": "0.20"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-02-thumbnail.png",
+      "sha256": "19e5df880954bab511d19e67701e6c55393aed5ac7800230f9bee20968cf7d52",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "halal_review": "pass",
+  "contact_sheet": {
+    "file": "episode-02-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195,
+      200,
+      205
+    ]
+  },
+  "errors": [],
+  "status": "pass"
+}

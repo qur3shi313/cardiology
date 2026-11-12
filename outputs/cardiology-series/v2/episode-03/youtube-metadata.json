@@ -10,6 +10,8 @@
   "language": "en",
   "planned_release": "2026-11-14T18:00:00+05:00",
   "timezone": "Asia/Karachi",
-  "studio_release_verified": false,
-  "watch_url": null
+  "studio_release_verified": true,
+  "watch_url": "https://youtu.be/pmDPTmLtvak",
+  "scheduled_at": "2026-11-14T18:00:00+05:00",
+  "studio_checks": "checking_at_schedule"
 }
