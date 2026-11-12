@@ -1,0 +1,79 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P01-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 11.7,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P02": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P02-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 19.166666666666668,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P03": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P03-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 17.9,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P04": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P04-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 21.633333333333333,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P05": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P05-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 21.7,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P06": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P06-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 20.6,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P07": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P07-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 19.266666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P08": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P08-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 22.866666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P09": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P09-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 18.6,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P10": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P10-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 16.566666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P11": {
+    "path": "outputs/cardiology-series/v2/episode-05/visuals/P11-recovery-film.mp4",
+    "in_sec": 0,
+    "out_sec": 8.0,
+    "reference_only": false,
+    "native_composition": true
+  }
+}

@@ -63,6 +63,8 @@ class GitHub:
                 conn.request(method,path,body=body,headers=headers)
             response=conn.getresponse()
             body=response.read()
+            if method == 'DELETE' and response.status == 204:
+                return None
             if response.status not in (200,201):
                 raise RuntimeError(f'GitHub returned HTTP {response.status} for this repository action')
             return json.loads(body)
@@ -115,9 +117,13 @@ def release(number,repo,package=None):
         before=prior.get(p.name)
         digest='sha256:'+hash_file(p)
         if before:
-            if before.get('digest')!=digest or before.get('state')!='uploaded':
+            if before.get('digest') == digest and before.get('state') == 'uploaded':
+                continue
+            if not current['draft'] or before.get('state') != 'starter' or before.get('digest'):
                 raise ValueError(f'Existing asset differs from the approved file: {p.name}')
-            continue
+            # GitHub can leave an incomplete placeholder when a transfer is interrupted.
+            request('DELETE', f"/releases/assets/{before['id']}")
+            print(f'Restarting incomplete draft transfer for {p.name}', flush=True)
         response=api.request('POST','uploads.github.com',
             REPO_PATH+f'/releases/{id}/assets?'+urlencode({'name':p.name}),asset=p)
         if response.get('digest')!=digest or response.get('size')!=p.stat().st_size:
