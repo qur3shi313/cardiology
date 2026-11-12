@@ -1,0 +1,65 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P01-angiogram-opening-alternate.mp4",
+    "in_sec": 0,
+    "out_sec": 13.1,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P02": {
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P02-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 20.933333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P03": {
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P03-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 21.2,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P04": {
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P04-thrombus-alternate.mp4",
+    "in_sec": 0,
+    "out_sec": 21.333333333333332,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P05": {
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P05-restenosis-film.mp4",
+    "in_sec": 0,
+    "out_sec": 16.8,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P06": {
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P06-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 21.733333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P07": {
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P07-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 20.633333333333333,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P08": {
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P08-care-questions-alternate.mp4",
+    "in_sec": 0,
+    "out_sec": 18.5,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P09": {
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P09-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 8.0,
+    "reference_only": false,
+    "native_composition": true
+  }
+}
