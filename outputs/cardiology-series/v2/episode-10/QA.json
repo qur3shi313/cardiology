@@ -1,0 +1,331 @@
+{
+  "input": "episode-10-1440p.mp4",
+  "sha256": "f9a15e0b1436137cb1188a394460272b89777f3d7eeffb05dfe25ac294cddd1e",
+  "validation_inputs": {
+    "timeline_sha256": "cf2b87e13dcb37b8c155cefa4a9efdb5fd22ab107bf91cfdec52ade7f9c9542b",
+    "caption_file": "captions.en.srt",
+    "caption_sha256": "23ed49f24caee747927584cad07f7386d2b056cf34779b32e184836991facdcd"
+  },
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 162.3,
+  "video_frames": 4869,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 10.0,
+    "percent": 6.161,
+    "longest_seconds": 6.0,
+    "intervals": [
+      {
+        "start_seconds": 11.033333,
+        "end_seconds": 13.033333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 154.3,
+        "end_seconds": 156.3,
+        "terminal": false
+      },
+      {
+        "start_seconds": 156.3,
+        "end_seconds": 162.3,
+        "terminal": true
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P09",
+        "title": "Clinical sources",
+        "frozen_seconds": 8.0,
+        "scene_seconds": 8.0
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.0,
+    "true_peak_dbtp": -1.45,
+    "raw_loudnorm": {
+      "input_i": "-14.00",
+      "input_tp": "-1.45",
+      "input_lra": "2.90",
+      "input_thresh": "-24.30",
+      "output_i": "-13.77",
+      "output_tp": "-1.00",
+      "output_lra": "2.70",
+      "output_thresh": "-24.06",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.23"
+    }
+  },
+  "expected_duration_seconds": 162.3,
+  "audio_sources": [
+    "outputs/cardiology-series/v2/episode-10/audio/alexander-episode-10.mp3"
+  ],
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 38,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-10-1080p.mp4",
+      "sha256": "c4eff41bf40037d2b71c7b6b97388fb33a4973ea51937d72b8452428ea81221d",
+      "duration_seconds": 162.3,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-10-short.mp4",
+      "sha256": "b0ef9a16bfa4c2ff47c18b671f9e96f64fc91d189ed21f8abb0e03ebb007eb7a",
+      "duration_seconds": 21.97,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.11,
+        "true_peak_dbtp": -1.46,
+        "raw_loudnorm": {
+          "input_i": "-14.11",
+          "input_tp": "-1.46",
+          "input_lra": "2.10",
+          "input_thresh": "-24.44",
+          "output_i": "-13.94",
+          "output_tp": "-1.17",
+          "output_lra": "2.10",
+          "output_thresh": "-24.26",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.06"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-10-thumbnail.jpg",
+      "sha256": "8770efef2dca2e69f83c43e5cb9303ce2dadd9f09675ac34ff642e60cb19f7c2",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "contact_sheet": {
+    "file": "episode-10-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160
+    ]
+  },
+  "mechanical_errors": [],
+  "human_visual_review": {
+    "master_sha256": "f9a15e0b1436137cb1188a394460272b89777f3d7eeffb05dfe25ac294cddd1e",
+    "short_sha256": "b0ef9a16bfa4c2ff47c18b671f9e96f64fc91d189ed21f8abb0e03ebb007eb7a",
+    "thumbnail_sha256": "8770efef2dca2e69f83c43e5cb9303ce2dadd9f09675ac34ff642e60cb19f7c2",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "verified_at": "2026-11-12T09:07:20.035439+05:00",
+    "intentional_holds": [
+      {
+        "start_seconds": 154.3,
+        "end_seconds": 162.3,
+        "reason": "Clinical sources, original illustrations, synthetic English narration and the next episode remain readable."
+      }
+    ],
+    "review_evidence": {
+      "exact_master": "Reviewed the 43 action-timed samples across the nine delivered scenes at 390 pixels wide. Confirmed mobile text hierarchy and both the opening treated stent and later recovery examples.",
+      "clinical": "The seated stent stays fixed while blood flows through it. The P03 platelet examples show a difference in tendency to clump. No existing clot dissolves on screen. The medicine plan remains individual. Post-PCI wound and emergency scenes distinguish mild bruising from new or increasing concerns and severe symptoms. Rehabilitation and written follow-up are discussed with the treating team.",
+      "motion": {
+        "P03": {
+          "hash": "74ed38ec0bb2c8b407ddfaa6b65cfc033f05fcc351e8c4e68042c3bdc91f5c5d",
+          "source_holds_seconds": 0
+        },
+        "P09": {
+          "hash": "2df590e6bd2a3a3bc950229642b997d2e3861f1b4ce0d489b2530d6f490d3aa5",
+          "source_holds_seconds": 8.0
+        },
+        "P04": {
+          "hash": "d9f381b2a3eadd4a9fc6d0008e3d7808ca20c84c0a57a73977ef3809ecf90365",
+          "source_holds_seconds": 0
+        },
+        "P05": {
+          "hash": "45c68bc505d39cc6045735d4488f0c3489eb839494e6659b86c1895963bdf997",
+          "source_holds_seconds": 0
+        },
+        "P07": {
+          "hash": "f908e339c4fe4b0cbb7a0f21fc373cc9aa5b40a8560e45b30550f650a1ecf646",
+          "source_holds_seconds": 0
+        },
+        "P08": {
+          "hash": "88a555f16993f5631dd93deab9f2b7e4fd5a1300376aafe18eeaaf29b3b5a46f",
+          "source_holds_seconds": 0
+        }
+      },
+      "embedded_captions_match": true,
+      "caption_cues": 38,
+      "caption_sha256": "23ed49f24caee747927584cad07f7386d2b056cf34779b32e184836991facdcd",
+      "narration_word_count": 372,
+      "voice_source_sha256": "d9071b3f13d1f2e114133a121eeb5b9b3aad92a88e62b5fdb819f3a768bdcd31",
+      "master_voice_alignment": [
+        {
+          "source_sec": 0.95,
+          "output_sec": 0.95,
+          "offset_sec": 0.0,
+          "correlation": 0.99982,
+          "scene": "P01"
+        },
+        {
+          "source_sec": 11.983333333333333,
+          "output_sec": 11.983333333333333,
+          "offset_sec": 0.0,
+          "correlation": 0.99997,
+          "scene": "P02"
+        },
+        {
+          "source_sec": 30.116666666666667,
+          "output_sec": 30.116666666666667,
+          "offset_sec": 0.0,
+          "correlation": 0.99998,
+          "scene": "P03"
+        },
+        {
+          "source_sec": 52.083333333333336,
+          "output_sec": 52.083333333333336,
+          "offset_sec": 0.0,
+          "correlation": 0.99964,
+          "scene": "P04"
+        },
+        {
+          "source_sec": 69.58333333333334,
+          "output_sec": 69.58333333333334,
+          "offset_sec": 0.0,
+          "correlation": 0.99771,
+          "scene": "P05"
+        },
+        {
+          "source_sec": 93.08333333333334,
+          "output_sec": 93.08333333333334,
+          "offset_sec": 0.0,
+          "correlation": 0.99996,
+          "scene": "P06"
+        },
+        {
+          "source_sec": 115.95,
+          "output_sec": 115.95,
+          "offset_sec": 0.0,
+          "correlation": 0.99996,
+          "scene": "P07"
+        },
+        {
+          "source_sec": 137.45,
+          "output_sec": 137.45,
+          "offset_sec": 0.0,
+          "correlation": 0.99978,
+          "scene": "P08"
+        }
+      ],
+      "short_voice_alignment": [
+        {
+          "source_sec": 30.166666666666668,
+          "output_sec": 1.0,
+          "offset_sec": 0.0,
+          "correlation": 0.84858
+        },
+        {
+          "source_sec": 34.66666666666667,
+          "output_sec": 5.5,
+          "offset_sec": 0.0,
+          "correlation": 0.86126
+        },
+        {
+          "source_sec": 38.46666666666667,
+          "output_sec": 9.3,
+          "offset_sec": 0.0,
+          "correlation": 0.85733
+        },
+        {
+          "source_sec": 43.96666666666667,
+          "output_sec": 14.8,
+          "offset_sec": 0.0,
+          "correlation": 0.84337
+        },
+        {
+          "source_sec": 47.56666666666666,
+          "output_sec": 18.4,
+          "offset_sec": 0.0,
+          "correlation": 0.85327
+        }
+      ],
+      "original_audio_subtitle_packets_unchanged": true,
+      "voice_only": "The Alexander recording is the only source. The closing card is silent. The aligned signal evidence does not claim manual listening.",
+      "exact_short": "Reviewed 12 exact portrait frames. The seated stent and comparison remain centered, and the visual medicine plan accompanies the complete English narration excerpt. Caption and title bands remain separate.",
+      "exact_thumbnail": "Reviewed the delivered thumbnail at 390 pixels wide. The stent is the focal point and the two-line title and authentic logo are readable.",
+      "modesty": "The drawings show a covered sleeve and dressed forearm, a gloved check, and a clothed anonymous figure in a rehabilitation illustration. There is no real patient imagery or music."
+    }
+  },
+  "halal_review": "pass",
+  "errors": [],
+  "status": "pass"
+}

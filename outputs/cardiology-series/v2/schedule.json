@@ -127,7 +127,8 @@
       "master_bytes": 215070576,
       "master_preflight_passed": true,
       "companion_package_qa_pending": false,
-      "studio_checks": "complete_no_issues"
+      "studio_checks": "complete_no_issues",
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-06"
     },
     {
       "topic": 7,
@@ -187,14 +188,20 @@
       "episode": "episode-10",
       "title": "Recovery, medicines and follow-up after PCI",
       "target": "2026-11-21T18:00:00+05:00",
-      "status": "picture_rendering",
+      "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
-      "studio_verified": false,
-      "watch_url": null,
-      "qa_passed": false,
+      "studio_verified": true,
+      "watch_url": "https://youtu.be/lsB6hfBa8hA",
+      "qa_passed": true,
       "duration_seconds": 162.3,
       "scene_count": 9,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "video_id": "lsB6hfBa8hA",
+      "master_sha256": "f9a15e0b1436137cb1188a394460272b89777f3d7eeffb05dfe25ac294cddd1e",
+      "master_bytes": 113395694,
+      "master_preflight_passed": true,
+      "companion_package_qa_pending": false,
+      "studio_checks": "complete_no_issues"
     },
     {
       "topic": 11,

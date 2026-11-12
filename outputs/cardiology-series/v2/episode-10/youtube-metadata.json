@@ -10,6 +10,23 @@
   "language": "en",
   "planned_release": "2026-11-21T18:00:00+05:00",
   "timezone": "Asia/Karachi",
-  "studio_release_verified": false,
-  "watch_url": null
+  "studio_release_verified": true,
+  "watch_url": "https://youtu.be/lsB6hfBa8hA",
+  "video_id": "lsB6hfBa8hA",
+  "master_sha256": "f9a15e0b1436137cb1188a394460272b89777f3d7eeffb05dfe25ac294cddd1e",
+  "studio_checks": "complete_no_issues",
+  "studio_subtitles": "English published",
+  "studio_subtitles_sha256": "23ed49f24caee747927584cad07f7386d2b056cf34779b32e184836991facdcd",
+  "studio_thumbnail_sha256": "8770efef2dca2e69f83c43e5cb9303ce2dadd9f09675ac34ff642e60cb19f7c2",
+  "studio_tags": [
+    "cardiology education",
+    "cardiology explained",
+    "Elysian Biomedical LLP",
+    "Recovery",
+    "medicines and follow-up after PCI"
+  ],
+  "studio_schedule_confirmation": {
+    "publish_at": "2026-11-21T18:00:00+05:00",
+    "timezone": "Asia/Karachi"
+  }
 }

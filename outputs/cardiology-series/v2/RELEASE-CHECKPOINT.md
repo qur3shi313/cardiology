@@ -10,6 +10,7 @@ Studio has confirmed these daily 18:00 Pakistan time releases.
 - 17 November · [Coronary angioplasty and stent placement](https://youtu.be/WdlALjzPXzM)
 - 19 November · [Coronary drug-coated balloons](https://youtu.be/J8YPIjm9OmY)
 - 20 November · [Why a stent can narrow again and how the team investigates](https://youtu.be/tO-TcN-PmBQ)
+- 21 November · [Recovery, medicines and follow-up after PCI](https://youtu.be/lsB6hfBa8hA)
 - 27 November · [What happens in aortic stenosis](https://youtu.be/IWQiJlhhobk)
 
 The older videos occupying 12–15 November were switched to Private after their replacements were confirmed. The superseded angiogram draft is also private. The remaining dates and current statuses are in [the schedule](schedule.json).

@@ -1,0 +1,218 @@
+{
+  "status": "long_master_verified",
+  "reviewed_at": "2026-11-12T08:57:40.533802+05:00",
+  "master": "episode-10-1440p.mp4",
+  "technical": {
+    "sha256": "f9a15e0b1436137cb1188a394460272b89777f3d7eeffb05dfe25ac294cddd1e",
+    "bytes": 113395694,
+    "duration_seconds": 162.3,
+    "frame_count": 4869,
+    "verified_at": "2026-11-12T08:56:59.825795+05:00",
+    "media": {
+      "codec": "h264",
+      "width": 2560,
+      "height": 1440,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true
+    },
+    "audio": {
+      "full_decode": true,
+      "integrated_lufs": -14.0,
+      "true_peak_dbtp": -1.45,
+      "raw_loudnorm": {
+        "input_i": "-14.00",
+        "input_tp": "-1.45",
+        "input_lra": "2.90",
+        "input_thresh": "-24.30",
+        "output_i": "-13.77",
+        "output_tp": "-1.00",
+        "output_lra": "2.70",
+        "output_thresh": "-24.06",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.23"
+      }
+    },
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 10.0,
+      "percent": 6.161,
+      "longest_seconds": 6.0,
+      "intervals": [
+        {
+          "start_seconds": 11.033333,
+          "end_seconds": 13.033333,
+          "terminal": false
+        },
+        {
+          "start_seconds": 154.3,
+          "end_seconds": 156.3,
+          "terminal": false
+        },
+        {
+          "start_seconds": 156.3,
+          "end_seconds": 162.3,
+          "terminal": true
+        }
+      ]
+    },
+    "video_full_decode": true,
+    "long_master_technical_pass": true
+  },
+  "editorial": {
+    "mobile_width_pixels": 390,
+    "sample_times_seconds": [
+      [
+        0,
+        1.6,
+        4.2,
+        10.6,
+        11.3,
+        17,
+        22,
+        27.3,
+        29.2,
+        32.3,
+        34.6,
+        35.1
+      ],
+      [
+        37,
+        39.8,
+        40.3,
+        44.8,
+        45.5,
+        48,
+        50.6,
+        51.2,
+        56,
+        60.1,
+        65,
+        68.3
+      ],
+      [
+        70,
+        75.5,
+        80.2,
+        86.9,
+        92.3,
+        95.8,
+        101,
+        109,
+        113,
+        116.8,
+        124.5,
+        134
+      ],
+      [
+        137,
+        140.5,
+        146.6,
+        152.8,
+        154.35,
+        157.3,
+        161.8
+      ]
+    ],
+    "sample_count": 43,
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "modesty": "pass",
+    "caption_file": "captions.en.srt",
+    "caption_cues": 38,
+    "caption_sha256": "23ed49f24caee747927584cad07f7386d2b056cf34779b32e184836991facdcd",
+    "embedded_captions_match": true,
+    "narration_word_count": 372,
+    "voice_source_sha256": "d9071b3f13d1f2e114133a121eeb5b9b3aad92a88e62b5fdb819f3a768bdcd31",
+    "aligned_waveform_windows": [
+      {
+        "source_sec": 0.95,
+        "output_sec": 0.95,
+        "offset_sec": 0.0,
+        "correlation": 0.99982,
+        "scene": "P01"
+      },
+      {
+        "source_sec": 11.983333333333333,
+        "output_sec": 11.983333333333333,
+        "offset_sec": 0.0,
+        "correlation": 0.99997,
+        "scene": "P02"
+      },
+      {
+        "source_sec": 30.116666666666667,
+        "output_sec": 30.116666666666667,
+        "offset_sec": 0.0,
+        "correlation": 0.99998,
+        "scene": "P03"
+      },
+      {
+        "source_sec": 52.083333333333336,
+        "output_sec": 52.083333333333336,
+        "offset_sec": 0.0,
+        "correlation": 0.99964,
+        "scene": "P04"
+      },
+      {
+        "source_sec": 69.58333333333334,
+        "output_sec": 69.58333333333334,
+        "offset_sec": 0.0,
+        "correlation": 0.99771,
+        "scene": "P05"
+      },
+      {
+        "source_sec": 93.08333333333334,
+        "output_sec": 93.08333333333334,
+        "offset_sec": 0.0,
+        "correlation": 0.99996,
+        "scene": "P06"
+      },
+      {
+        "source_sec": 115.95,
+        "output_sec": 115.95,
+        "offset_sec": 0.0,
+        "correlation": 0.99996,
+        "scene": "P07"
+      },
+      {
+        "source_sec": 137.45,
+        "output_sec": 137.45,
+        "offset_sec": 0.0,
+        "correlation": 0.99978,
+        "scene": "P08"
+      }
+    ],
+    "original_audio_subtitle_packets_unchanged": true,
+    "stream_packet_checksums": {
+      "audio": {
+        "digest": "df30835af06a02e1b5c1713de7ee2eaaba3d74e2c3724d65e1f322e64ecbddd3",
+        "packets": 7609,
+        "time_base": "1/48000"
+      },
+      "subtitle": {
+        "digest": "ac73e6cfa9fed33196141f235863e9af8c7aace97616244cb8db3ef27225a60d",
+        "packets": 75,
+        "time_base": "1/1000000"
+      }
+    },
+    "manual_auditory_listening_claimed": false,
+    "intentional_credit_hold_seconds": [
+      154.3,
+      162.3
+    ],
+    "reviewed_content": "The seated stent, platelet comparison, individualized recovery and medicine plans, emergency symptoms, rehabilitation, next episode and production disclosures are legible in the delivered samples."
+  },
+  "thumbnail": {
+    "file": "episode-10-thumbnail.jpg",
+    "sha256": "8770efef2dca2e69f83c43e5cb9303ce2dadd9f09675ac34ff642e60cb19f7c2",
+    "frame_seconds": 0.9,
+    "exact_regeneration_matches_delivered_bytes": true,
+    "mobile_visual_review": "pass"
+  }
+}
