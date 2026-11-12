@@ -201,21 +201,28 @@
       "master_bytes": 113395694,
       "master_preflight_passed": true,
       "companion_package_qa_pending": false,
-      "studio_checks": "complete_no_issues"
+      "studio_checks": "complete_no_issues",
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-10"
     },
     {
       "topic": 11,
       "episode": "episode-11",
       "title": "How FFR and iFR help assess a coronary narrowing",
       "target": "2026-11-22T18:00:00+05:00",
-      "status": "picture_renderer_queued",
+      "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
-      "studio_verified": false,
-      "watch_url": null,
-      "qa_passed": false,
+      "studio_verified": true,
+      "watch_url": "https://youtu.be/rRP6MZA7cn4",
+      "qa_passed": true,
       "duration_seconds": 157.467,
       "scene_count": 9,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "video_id": "rRP6MZA7cn4",
+      "master_sha256": "48ad028bbb409d1c739a6895e22e7b1e922a593dec2a318559e47e8960ed4a8b",
+      "master_bytes": 30767213,
+      "master_preflight_passed": true,
+      "companion_package_qa_pending": false,
+      "studio_checks": "complete_no_issues"
     },
     {
       "topic": 12,

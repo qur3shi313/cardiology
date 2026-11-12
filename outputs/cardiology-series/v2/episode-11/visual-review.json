@@ -1,0 +1,29 @@
+{
+  "master_sha256": "48ad028bbb409d1c739a6895e22e7b1e922a593dec2a318559e47e8960ed4a8b",
+  "short_sha256": "2ad21534694dcd1bf85fb91d35b7ed7b9c21af1b3e07551b0001b8e8a27bd418",
+  "thumbnail_sha256": "c420e6d4db2abbb8234239c6445cec280e33e70d7310c24c853f1baac5538723",
+  "verified_at": "2026-11-12T09:15:16.315876+05:00",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "intentional_holds": [],
+  "method": "Codex review of exact decoded video frames, caption text, audio packet and waveform measurements, and primary guideline sources. No human clinical review or auditory listening claimed.",
+  "notes": {
+    "long_master": "Forty targeted 390px decoded samples span the nine scenes. The guide catheter runs through the lumen to the ostium and the pressure wire leaves its tip. The distal sensor and pressure traces are visible. FFR is shown during increased flow and iFR during marked resting diastolic windows. The decision scene avoids a stand-alone intervention rule. Final cards include clinical sources, synthetic narration and original illustration disclosure, and the next topic.",
+    "caption_and_voice": "The 38 English cues and 371 words agree with the authored captions and English voice script. All 7,383 AAC packets and 75 caption packets are unchanged from the previous voice master. The locked source is the sole Alexander narration. No music source appears in the timeline.",
+    "thumbnail": "The exact 1280x720 thumbnail uses the 59-second master frame, keeps the vessel route, lesion, distal sensor and both traces in view, and is reproducible from the saved crop.",
+    "short": "Twelve exact decoded portrait frames show the wire emerging from the catheter, the sensor moving past the narrowing, and the two traces appearing. The burned-in English captions stay below the diagram with readable contrast. Four waveform checks align with the long master at zero offset.",
+    "art": "Original anonymous schematic anatomy and device graphics. No patient footage or identifying data."
+  },
+  "evidence": [
+    "delivery/episode-11-exact-pressure-master-evidence.json",
+    "delivery/episode-11-long-editorial-review.json",
+    "delivery/episode-11-short-review-evidence.json"
+  ]
+}

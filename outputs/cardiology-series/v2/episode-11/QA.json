@@ -1,0 +1,202 @@
+{
+  "input": "episode-11-1440p.mp4",
+  "sha256": "48ad028bbb409d1c739a6895e22e7b1e922a593dec2a318559e47e8960ed4a8b",
+  "validation_inputs": {
+    "timeline_sha256": "f59b8b3983816c43ac47d6c3d8fd7d93855d2b0dabd581f401fb0f7c21e30e98",
+    "caption_file": "captions.en.srt",
+    "caption_sha256": "d0d4002aa64c2dd0f768e4939e700812082d47721f8eedb5448bd86ce7043568"
+  },
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 157.466667,
+  "video_frames": 4724,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 4.966666,
+    "percent": 3.154,
+    "longest_seconds": 2.633333,
+    "intervals": [
+      {
+        "start_seconds": 17.766667,
+        "end_seconds": 20.4,
+        "terminal": false
+      },
+      {
+        "start_seconds": 27.6,
+        "end_seconds": 29.933333,
+        "terminal": false
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P02",
+        "title": "What the angiogram shows",
+        "frozen_seconds": 4.967,
+        "scene_seconds": 19.567
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.01,
+    "true_peak_dbtp": -1.4,
+    "raw_loudnorm": {
+      "input_i": "-14.01",
+      "input_tp": "-1.40",
+      "input_lra": "2.80",
+      "input_thresh": "-24.32",
+      "output_i": "-13.92",
+      "output_tp": "-1.00",
+      "output_lra": "2.80",
+      "output_thresh": "-24.23",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.08"
+    }
+  },
+  "expected_duration_seconds": 157.46666666666667,
+  "audio_sources": [
+    "outputs/cardiology-series/v2/episode-11/audio/alexander-episode-11.mp3"
+  ],
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 38,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-11-1080p.mp4",
+      "sha256": "f7e6e21272dd53c5531dc046e9a4ca43a9c2b55ae7ffac202f3d15e62ba335d7",
+      "duration_seconds": 157.5,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-11-short.mp4",
+      "sha256": "2ad21534694dcd1bf85fb91d35b7ed7b9c21af1b3e07551b0001b8e8a27bd418",
+      "duration_seconds": 21.93,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.02,
+        "true_peak_dbtp": -1.68,
+        "raw_loudnorm": {
+          "input_i": "-14.02",
+          "input_tp": "-1.68",
+          "input_lra": "2.40",
+          "input_thresh": "-24.28",
+          "output_i": "-13.84",
+          "output_tp": "-1.00",
+          "output_lra": "1.70",
+          "output_thresh": "-24.09",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.16"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-11-thumbnail.jpg",
+      "sha256": "c420e6d4db2abbb8234239c6445cec280e33e70d7310c24c853f1baac5538723",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "contact_sheet": {
+    "file": "episode-11-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155
+    ]
+  },
+  "mechanical_errors": [],
+  "human_visual_review": {
+    "master_sha256": "48ad028bbb409d1c739a6895e22e7b1e922a593dec2a318559e47e8960ed4a8b",
+    "short_sha256": "2ad21534694dcd1bf85fb91d35b7ed7b9c21af1b3e07551b0001b8e8a27bd418",
+    "thumbnail_sha256": "c420e6d4db2abbb8234239c6445cec280e33e70d7310c24c853f1baac5538723",
+    "verified_at": "2026-11-12T09:15:16.315876+05:00",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "intentional_holds": [],
+    "method": "Codex review of exact decoded video frames, caption text, audio packet and waveform measurements, and primary guideline sources. No human clinical review or auditory listening claimed.",
+    "notes": {
+      "long_master": "Forty targeted 390px decoded samples span the nine scenes. The guide catheter runs through the lumen to the ostium and the pressure wire leaves its tip. The distal sensor and pressure traces are visible. FFR is shown during increased flow and iFR during marked resting diastolic windows. The decision scene avoids a stand-alone intervention rule. Final cards include clinical sources, synthetic narration and original illustration disclosure, and the next topic.",
+      "caption_and_voice": "The 38 English cues and 371 words agree with the authored captions and English voice script. All 7,383 AAC packets and 75 caption packets are unchanged from the previous voice master. The locked source is the sole Alexander narration. No music source appears in the timeline.",
+      "thumbnail": "The exact 1280x720 thumbnail uses the 59-second master frame, keeps the vessel route, lesion, distal sensor and both traces in view, and is reproducible from the saved crop.",
+      "short": "Twelve exact decoded portrait frames show the wire emerging from the catheter, the sensor moving past the narrowing, and the two traces appearing. The burned-in English captions stay below the diagram with readable contrast. Four waveform checks align with the long master at zero offset.",
+      "art": "Original anonymous schematic anatomy and device graphics. No patient footage or identifying data."
+    },
+    "evidence": [
+      "delivery/episode-11-exact-pressure-master-evidence.json",
+      "delivery/episode-11-long-editorial-review.json",
+      "delivery/episode-11-short-review-evidence.json"
+    ]
+  },
+  "halal_review": "pass",
+  "errors": [],
+  "status": "pass"
+}
