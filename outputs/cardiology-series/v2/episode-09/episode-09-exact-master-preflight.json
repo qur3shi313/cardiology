@@ -1,0 +1,68 @@
+{
+  "sha256": "e8f2f7968f57dc75754f68449d7f86491c080d52410b8aafdea0b29586f96b18",
+  "status": "pass",
+  "frames": 4867,
+  "duration_seconds": 162.233333,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 14.466666,
+    "percent": 8.917,
+    "longest_seconds": 3.833333,
+    "intervals": [
+      {
+        "start_seconds": 80.866667,
+        "end_seconds": 84.0,
+        "terminal": false
+      },
+      {
+        "start_seconds": 132.4,
+        "end_seconds": 135.733333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 154.233333,
+        "end_seconds": 156.233333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 156.233333,
+        "end_seconds": 158.4,
+        "terminal": false
+      },
+      {
+        "start_seconds": 158.4,
+        "end_seconds": 162.233333,
+        "terminal": true
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.02,
+    "true_peak_dbtp": -1.45,
+    "raw_loudnorm": {
+      "input_i": "-14.02",
+      "input_tp": "-1.45",
+      "input_lra": "2.90",
+      "input_thresh": "-24.35",
+      "output_i": "-14.01",
+      "output_tp": "-1.21",
+      "output_lra": "2.80",
+      "output_thresh": "-24.34",
+      "normalization_type": "dynamic",
+      "target_offset": "0.01"
+    }
+  },
+  "format": {
+    "codec": "h264",
+    "width": 2560,
+    "height": 1440,
+    "pixel_format": "yuv420p",
+    "fps": 30.0,
+    "audio_present": true,
+    "audio_codec": "aac",
+    "audio_rate": 48000,
+    "audio_stereo": true
+  }
+}

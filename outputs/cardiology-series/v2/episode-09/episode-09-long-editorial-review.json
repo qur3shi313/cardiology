@@ -1,0 +1,96 @@
+{
+  "master_sha256": "e8f2f7968f57dc75754f68449d7f86491c080d52410b8aafdea0b29586f96b18",
+  "reviewed_at": "2026-11-12T08:00:57+05:00",
+  "editorial_status": "pass",
+  "reviewed_390px_frames": 59,
+  "contact_sheets": [
+    "episode-09-editorial-1.jpg",
+    "episode-09-editorial-2.jpg",
+    "episode-09-editorial-3.jpg",
+    "episode-09-editorial-4.jpg",
+    "episode-09-editorial-5.jpg"
+  ],
+  "sequence": [
+    "The simulated coronary X-ray shows contrast filling the vessel and identifies the narrowed channel before cutting to a stent cross-section.",
+    "Three separate labelled examples show underexpansion, growth inside an opened stent and plaque within that tissue.",
+    "Tissue-growth and plaque labels switch at 41.033 and 44.900 seconds, nearest frames to the locked 41.018 and 44.907 second cue starts.",
+    "The clot is a separate example. A neutral emergency card follows without asking the viewer to diagnose the cause.",
+    "Two simulated coronary projections and separate IVUS and OCT views explain how clinicians assess the mechanism.",
+    "The balloon illustration follows the wire through an existing scaffold, then shows inflation, deflation and withdrawal. Repeat stenting is a separate option after mechanical assessment.",
+    "The report and scan illustrations lead to medicines and follow-up questions. The branded eight-second closing card gives references, production disclosure and the next episode."
+  ],
+  "caption_alignment": {
+    "cue_count": 40,
+    "word_count": 364,
+    "srt_sha256": "e9f84dafa95d73669e5bfbe54ae7bf8023d66345c4c6c1bbf179055c2d5b91ce",
+    "embedded_track_matches_sidecar": true
+  },
+  "voice_source_sha256": "87da7d7d092132ca763dab2433d1636ac2e6044a4a4206e6ecc5c5a077f82173",
+  "audio_comparison": [
+    {
+      "scene": "P01",
+      "compared_seconds": 13.1,
+      "correlation": 0.998925
+    },
+    {
+      "scene": "P02",
+      "compared_seconds": 20.933375,
+      "correlation": 0.999716
+    },
+    {
+      "scene": "P03",
+      "compared_seconds": 21.2,
+      "correlation": 0.9996
+    },
+    {
+      "scene": "P04",
+      "compared_seconds": 21.333375,
+      "correlation": 0.999652
+    },
+    {
+      "scene": "P05",
+      "compared_seconds": 16.8,
+      "correlation": 0.999872
+    },
+    {
+      "scene": "P06",
+      "compared_seconds": 21.733375,
+      "correlation": 0.999964
+    },
+    {
+      "scene": "P07",
+      "compared_seconds": 20.633375,
+      "correlation": 0.999569
+    },
+    {
+      "scene": "P08",
+      "compared_seconds": 18.44725,
+      "correlation": 0.999613
+    }
+  ],
+  "packet_comparison": {
+    "identical_packets_by_scene_or_track": {
+      "P01": 393,
+      "P02": 628,
+      "P04": 640,
+      "P05": 504,
+      "P06": 652,
+      "P07": 619,
+      "P08": 555,
+      "P09": 240,
+      "audio": 7606,
+      "subtitle": 79
+    },
+    "replaced_picture_scene": "P03",
+    "replaced_picture_frames": 636
+  },
+  "audio_review_method": "Full scene waveform comparison, with sampled closing silence and sole Alexander narration source.",
+  "modesty": "Original diagrams and neutral icons. There are no depictions of real people or exposed anatomy.",
+  "checked_sources": [
+    "https://doi.org/10.1016/j.jscai.2023.100971",
+    "https://doi.org/10.1093/eurheartj/ehae177",
+    "https://www.fda.gov/medical-devices/recently-approved-devices/agent-paclitaxel-coated-balloon-catheter-p230035",
+    "https://www.heart.org/en/about-us/heart-attack-and-stroke-symptoms"
+  ],
+  "scope": "Long-master editorial review. Companions have separate review."
+}
