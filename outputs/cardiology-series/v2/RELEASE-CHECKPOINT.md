@@ -1,13 +1,10 @@
 # Release checkpoint · 12 November 2026
 
-The 20 release targets run from 12 November through 1 December at 18:00 Pakistan time. This is a production ledger. No replacement has been confirmed in YouTube Studio yet.
+The rebuilt episodes use one daily 18:00 Pakistan time slot from 12 November to 1 December. Studio has confirmed the following slots.
 
-- Narration and captions: all 20 timelines locked; all 21 Alexander source files decoded; 862 caption cues checked.
-- First film: the initial 419.600-second 1440p master exceeded the motion limit at 37.989% detected freeze and was removed from the release queue. The exact revised 268,353,015-byte 1440p master decoded and measured 10.399% detected freeze, a longest interval of 5.867 seconds, −14.03 LUFS and −1.43 dBTP. Final editorial and companion checks remain in progress. The external wrist compression sequence retains the pad, pressure reduction and removal.
-- Second film: all 12 revised source clips and the 144,752,994-byte 1440p master decoded. The captioned vertical edit and thumbnail are complete. The 1080p encode and complete delivery verification are still running.
-- Third film: the earlier 205.133-second master exceeded the motion limit at 27.088% detected freeze and remains blocked. The short-wire, catheter-withdrawal and contrast replacements each show zero source holds of two seconds or longer. The revised 133,669,220-byte 1440p master has decoded in assembly. The 1080p encode and final delivery checks remain in progress.
-- Fourth film: the complete 190.167-second master decoded at 5,705 frames and measured 1.052% detected freeze, −14.02 LUFS and −1.32 dBTP. All nine narrated scenes matched their exact audio source sample within 0.25 milliseconds. The 1080p copy, recropped 14-second Short, captions, chapters and thumbnail passed final verification. The [complete package](https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-04) is archived with verified hashes. YouTube Studio's file selector did not respond, so no file was attached and the empty dialog was closed.
-- Eighth film: all ten revised drug-coated balloon picture clips decoded at 5,591 exact frames. The source motion scan measured 11.57% detected holds, longest unintentional interval 4.567 seconds. The full master and vertical cut are queued.
-- Later films: the local picture and master queues contain the authored material. A queued or encoded file has no release approval until its exact package is reviewed.
+- 13 November · [Wrist versus groin access](https://youtu.be/B5isQ7DbyPQ)
+- 14 November · [What the sheath, guidewire, catheter and contrast each do](https://youtu.be/pmDPTmLtvak)
+- 15 November · [How clinicians read a coronary angiogram](https://youtu.be/2RxYq6RcWrg)
+- 19 November · [Coronary drug-coated balloons](https://youtu.be/J8YPIjm9OmY)
 
-Read the release ledger and each film’s `QA.json` before any upload. The correct YouTube channel is Elysian Biomedical LLP. Studio showed the two existing public angiography films and four older scheduled originals on 12–15 November. Reconcile the relevant old slot before committing a verified replacement. No upload, visibility change, deletion, or schedule change was made in this pass.
+The earlier uploads that occupied 13–15 November were switched to Private after the replacements were confirmed. The 12 November slot still has an earlier PCI upload. An initial revised angiogram was uploaded as a private draft, and a wider radiograph and final credit treatment are being rendered for the release candidate. Episode 05 and Episodes 06–07 have targeted source repairs under way. The remaining dates and exact statuses are recorded in [the schedule](schedule.json).

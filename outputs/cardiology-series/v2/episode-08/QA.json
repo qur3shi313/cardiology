@@ -1,0 +1,284 @@
+{
+  "input": "episode-08-1440p.mp4",
+  "sha256": "8fdb4b9762bc6ab5324949ecad62950fe70fb3dcc953e860022f430225fe400f",
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 186.366667,
+  "video_frames": 5591,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 21.033333,
+    "percent": 11.286,
+    "longest_seconds": 6.0,
+    "intervals": [
+      {
+        "start_seconds": 144.266667,
+        "end_seconds": 147.466667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 156.3,
+        "end_seconds": 160.866667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 160.866667,
+        "end_seconds": 163.9,
+        "terminal": false
+      },
+      {
+        "start_seconds": 163.9,
+        "end_seconds": 166.133333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 178.366667,
+        "end_seconds": 180.366667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 180.366667,
+        "end_seconds": 186.366667,
+        "terminal": true
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P08",
+        "title": "Recovery and the medicine plan",
+        "frozen_seconds": 13.033,
+        "scene_seconds": 21.867
+      },
+      {
+        "scene": "P10",
+        "title": "Clinical sources",
+        "frozen_seconds": 8.0,
+        "scene_seconds": 8.0
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.01,
+    "true_peak_dbtp": -1.43,
+    "raw_loudnorm": {
+      "input_i": "-14.01",
+      "input_tp": "-1.43",
+      "input_lra": "2.80",
+      "input_thresh": "-24.29",
+      "output_i": "-14.11",
+      "output_tp": "-1.38",
+      "output_lra": "2.70",
+      "output_thresh": "-24.39",
+      "normalization_type": "dynamic",
+      "target_offset": "0.11"
+    }
+  },
+  "expected_duration_seconds": 186.36666666666667,
+  "audio_sources": [
+    "outputs/cardiology-series/episode-03/production/alexander.mp3"
+  ],
+  "human_visual_review": {
+    "master_sha256": "8fdb4b9762bc6ab5324949ecad62950fe70fb3dcc953e860022f430225fe400f",
+    "short_sha256": "b0a58432367911378ff43d5b8366ad1dbd5b9c40e5f3962d046bf6542ba2b5b8",
+    "thumbnail_sha256": "0e7f1e9fafb0d52f4c0b6f80ef0aa4b5f0da15406e7affb5e89c9fbb675cff09",
+    "verified_at": "2026-11-12T06:27:58.104765+05:00",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "intentional_holds": [
+      {
+        "start_seconds": 178.366667,
+        "end_seconds": 186.366667,
+        "reason": "Clinical sources, original simulated animation disclosure, synthetic voice disclosure and next episode title remain readable."
+      }
+    ],
+    "review_evidence": {
+      "exact_master": "Reviewed all 38 exact-master five-second samples and 30 device-timed samples at 390 pixels wide. Also reviewed the 92 action-timed frames of the ten exact source clips. Main labels and the enlarged coronary device relationship stay readable. The header approaches the vessel edge during the enlarged transfer view but remains legible.",
+      "clinical": "The pre-existing stent remains fixed. Tissue growth and underexpansion are shown as separate causes. The long wire crosses first and stays parked through plain balloon preparation and removal. The coated balloon advances over the same wire, inflates against the tissue, illustrates local transfer, then deflates and withdraws. Simulated before and after images use a comparable projection. The US FDA example concerns a selected restenosis indication and the small-vessel research is shown separately. Recovery and medicine statements direct the viewer to the treating team.",
+      "captions_and_voice": "All 442 words in the 46 caption cues match the locked narration. Nine two-second waveform samples match the sole Alexander voice source at 0 ms best offset and correlations from .80325 to .86615. This is source and signal verification. Manual auditory listening is unclaimed.",
+      "speech_alignment_samples": [
+        {
+          "scene": "P01",
+          "score": 0.84161,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P02",
+          "score": 0.8063,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P03",
+          "score": 0.84898,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P04",
+          "score": 0.8336,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P05",
+          "score": 0.81258,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P06",
+          "score": 0.83983,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P07",
+          "score": 0.86615,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P08",
+          "score": 0.80836,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P09",
+          "score": 0.80325,
+          "offset_ms": 0.0
+        }
+      ],
+      "exact_short": "Twelve exact 320-pixel Short frames retain the treated segment, wire tip, delivery shaft and stationary scaffold. The excerpt shows advance, wall contact, local transfer, deflation and withdrawal, ending after the complete caption about the original stent. Title, brand and English captions use separate safe bands.",
+      "exact_thumbnail": "The 1280 by 720 illustrated thumbnail is readable at 320 pixels, including the company masthead and two-line title. Inflated temporary balloon, original scaffold and fixed wire remain distinguishable.",
+      "modesty": "Depiction is diagrammatic and includes only a covered recovery figure and a close-up of a dressed wrist. The timeline contains one synthetic voice source and no music.",
+      "evidence_files": [
+        "delivery/episode-08-1440p-phone.jpg",
+        "delivery/episode-08-editorial-1.jpg",
+        "delivery/episode-08-editorial-2.jpg",
+        "delivery/episode-08-short-phone-review.jpg",
+        "delivery/episode-08-thumbnail-phone-review.jpg",
+        "delivery/episode-08-waveform-review.json"
+      ]
+    }
+  },
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 46,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-08-1080p.mp4",
+      "sha256": "63d54ee6056257ec666f5e3bddd1127b5fcb81eaeb289edc4e950df84cadba2f",
+      "duration_seconds": 186.4,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-08-short.mp4",
+      "sha256": "b0a58432367911378ff43d5b8366ad1dbd5b9c40e5f3962d046bf6542ba2b5b8",
+      "duration_seconds": 28.9,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.1,
+        "true_peak_dbtp": -1.46,
+        "raw_loudnorm": {
+          "input_i": "-14.10",
+          "input_tp": "-1.46",
+          "input_lra": "2.30",
+          "input_thresh": "-24.48",
+          "output_i": "-14.18",
+          "output_tp": "-1.36",
+          "output_lra": "2.30",
+          "output_thresh": "-24.58",
+          "normalization_type": "dynamic",
+          "target_offset": "0.18"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-08-thumbnail.jpg",
+      "sha256": "0e7f1e9fafb0d52f4c0b6f80ef0aa4b5f0da15406e7affb5e89c9fbb675cff09",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "halal_review": "pass",
+  "contact_sheet": {
+    "file": "episode-08-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185
+    ]
+  },
+  "errors": [],
+  "status": "pass"
+}

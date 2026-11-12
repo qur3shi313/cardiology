@@ -34,6 +34,7 @@ def diagram(c,ident,p,t):
     rate=1.0 if ident=='P04' else .43
     s=art.Motion(1126,-280,12,-280,14,.1,rate)
     art.blood_flow(c,t*(1.5 if ident=='P04' else .73),s,art_surface)
+    restenosis.trace_channel(c,t,art_surface,.1,rate)
     # A guide catheter sits in the aortic root/at the coronary origin.
     access.line(c,[(79,205),(114,256),(145,330),(177,371),(238,401)],'#2a5b58',23)
     access.line(c,[(79,205),(114,256),(145,330),(177,371),(238,401)],'#8bb4a7',13)
@@ -80,7 +81,16 @@ def draw(c,ident,p,t):
         access.text(c,'Same-looking narrowing, different pressure pattern',56,661,31,'#b9dfd1')
         return
     if ident=='P02':
-        angiogram.imaging(c,'P29',p,t,0)
+        c.drawImageRect(angiogram.radiograph_plate(),skia.Rect.MakeWH(1280,720),
+                        skia.SamplingOptions(skia.FilterMode.kNearest))
+        first=p<.52
+        phase=p/.52 if first else (p-.52)/.48
+        fill=access.smooth(phase/.65)
+        opacity=round(238-115*access.smooth((phase-.64)/.36))
+        x,y=angiogram.contrast_paths(c,'left',fill,opacity,-15 if first else 7,True)
+        if phase>.32:
+            c.drawCircle(x,y,17,access.solid('#f3d2a2',120))
+        angiogram.header(c,'What the angiogram shows','SIMULATED X-RAY',True)
         return
     if ident in ('P03','P04','P05'):
         diagram(c,ident,p,t)

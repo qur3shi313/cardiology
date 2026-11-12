@@ -58,7 +58,7 @@
       "master_sha256": "64b68a0493a694ed9ccd316b5eeeadb855c89f72e81939dedf2e65f795ec71d4",
       "legacy_video_id": "V7NjFLTYhuE",
       "legacy_visibility": "private",
-      "studio_checks": "checking_at_schedule",
+      "studio_checks": "scheduled_no_notices_on_channel_list",
       "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-03"
     },
     {
@@ -79,7 +79,7 @@
       "master_sha256": "b4acd939bbf06ff8e26d39e2a8043591777a819f2f314765e9ae8f0884c7dec3",
       "legacy_video_id": "wTj-F4zotns",
       "legacy_visibility": "private",
-      "studio_checks": "checking_at_schedule"
+      "studio_checks": "scheduled_no_notices_on_channel_list"
     },
     {
       "topic": 5,
@@ -128,15 +128,18 @@
       "episode": "episode-08",
       "title": "Coronary drug-coated balloons",
       "target": "2026-11-19T18:00:00+05:00",
-      "status": "all_pictures_verified_master_queued",
+      "status": "scheduled",
       "production_material": "Existing drug-coated balloon package",
-      "studio_verified": false,
-      "watch_url": null,
-      "qa_passed": false,
+      "studio_verified": true,
+      "watch_url": "https://youtu.be/J8YPIjm9OmY",
+      "qa_passed": true,
       "duration_seconds": 186.367,
       "scene_count": 10,
       "narration_decoded": true,
-      "verified_source_motion_percent": 11.57
+      "verified_source_motion_percent": 11.57,
+      "master_sha256": "8fdb4b9762bc6ab5324949ecad62950fe70fb3dcc953e860022f430225fe400f",
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-08",
+      "studio_checks": "scheduled_no_notices_on_channel_list"
     },
     {
       "topic": 9,

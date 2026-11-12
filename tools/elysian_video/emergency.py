@@ -14,7 +14,10 @@ def stopped_flow(c,p,t):
     c.drawImageRect(angiogram.radiograph_plate(),skia.Rect.MakeWH(1280,720),
                     skia.SamplingOptions(skia.FilterMode.kNearest))
     branches,total=angiogram.tree('left')
-    head=total*access.smooth(p/.45)
+    run=min(int(p*2),1)
+    phase=p*2-run
+    head=total*access.smooth(phase/.62)
+    opacity=round(255-102*access.smooth((phase-.64)/.36))
     culprit=branches[1]
     cut_index=round((len(culprit[0])-1)*.43)
     cutoff=culprit[2]+culprit[1][cut_index]
@@ -29,8 +32,8 @@ def stopped_flow(c,p,t):
         end=sum(d<=remaining for d in lengths)
         if i==1: end=min(end,cut_index+1)
         coordinates=list(map(xy,pts[:end]))
-        access.line(c,coordinates,'#566461',thick*2+4)
-        access.line(c,coordinates,'#192522',thick*2.06)
+        access.line(c,coordinates,'#566461',thick*2+4,opacity)
+        access.line(c,coordinates,'#192522',thick*2.06,opacity)
     x,y=xy(culprit[0][cut_index])
     if p>.41:
         c.drawCircle(x,y,12,access.solid('#f8d18f',187))
@@ -59,6 +62,10 @@ def bypass(c,p,t):
     graft=anatomy.trace(path,access.smooth((p-.16)/.55))
     access.line(c,graft,'#356c60',22)
     access.line(c,graft,'#8fc4ad',13)
+    if p>.71:
+        for i in range(7):
+            position=int(((t*.72+i/7)%1)*(len(path)-1))
+            angiogram.dot(c,*path[position],8,'#d3f4d8',219)
     if p>.72:
         x,y=target
         access.line(c,[(x,y),(1012,y+7),(1188,y+7)],'#235d50',2.7)
@@ -111,7 +118,8 @@ def multiple(c,ident,p,t):
         c.drawImageRect(angiogram.radiograph_plate(),skia.Rect.MakeWH(1280,720),
                         skia.SamplingOptions(skia.FilterMode.kNearest))
         local=p/.53 if s=='left' else (p-.53)/.47
-        point=angiogram.contrast_paths(c,s,access.smooth(local/.47),244,-15 if s=='left' else 20,True)
+        opacity=round(244-110*access.smooth((local-.63)/.37))
+        point=angiogram.contrast_paths(c,s,access.smooth(local/.60),opacity,-15 if s=='left' else 20,True)
         if local>.47:
             x,y=point
             border=access.solid('#f1db9e'); border.setStyle(skia.Paint.kStroke_Style); border.setStrokeWidth(3)

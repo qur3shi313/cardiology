@@ -1,0 +1,85 @@
+{
+  "master_sha256": "8fdb4b9762bc6ab5324949ecad62950fe70fb3dcc953e860022f430225fe400f",
+  "short_sha256": "b0a58432367911378ff43d5b8366ad1dbd5b9c40e5f3962d046bf6542ba2b5b8",
+  "thumbnail_sha256": "0e7f1e9fafb0d52f4c0b6f80ef0aa4b5f0da15406e7affb5e89c9fbb675cff09",
+  "verified_at": "2026-11-12T06:27:58.104765+05:00",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "intentional_holds": [
+    {
+      "start_seconds": 178.366667,
+      "end_seconds": 186.366667,
+      "reason": "Clinical sources, original simulated animation disclosure, synthetic voice disclosure and next episode title remain readable."
+    }
+  ],
+  "review_evidence": {
+    "exact_master": "Reviewed all 38 exact-master five-second samples and 30 device-timed samples at 390 pixels wide. Also reviewed the 92 action-timed frames of the ten exact source clips. Main labels and the enlarged coronary device relationship stay readable. The header approaches the vessel edge during the enlarged transfer view but remains legible.",
+    "clinical": "The pre-existing stent remains fixed. Tissue growth and underexpansion are shown as separate causes. The long wire crosses first and stays parked through plain balloon preparation and removal. The coated balloon advances over the same wire, inflates against the tissue, illustrates local transfer, then deflates and withdraws. Simulated before and after images use a comparable projection. The US FDA example concerns a selected restenosis indication and the small-vessel research is shown separately. Recovery and medicine statements direct the viewer to the treating team.",
+    "captions_and_voice": "All 442 words in the 46 caption cues match the locked narration. Nine two-second waveform samples match the sole Alexander voice source at 0 ms best offset and correlations from .80325 to .86615. This is source and signal verification. Manual auditory listening is unclaimed.",
+    "speech_alignment_samples": [
+      {
+        "scene": "P01",
+        "score": 0.84161,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P02",
+        "score": 0.8063,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P03",
+        "score": 0.84898,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P04",
+        "score": 0.8336,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P05",
+        "score": 0.81258,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P06",
+        "score": 0.83983,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P07",
+        "score": 0.86615,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P08",
+        "score": 0.80836,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P09",
+        "score": 0.80325,
+        "offset_ms": 0.0
+      }
+    ],
+    "exact_short": "Twelve exact 320-pixel Short frames retain the treated segment, wire tip, delivery shaft and stationary scaffold. The excerpt shows advance, wall contact, local transfer, deflation and withdrawal, ending after the complete caption about the original stent. Title, brand and English captions use separate safe bands.",
+    "exact_thumbnail": "The 1280 by 720 illustrated thumbnail is readable at 320 pixels, including the company masthead and two-line title. Inflated temporary balloon, original scaffold and fixed wire remain distinguishable.",
+    "modesty": "Depiction is diagrammatic and includes only a covered recovery figure and a close-up of a dressed wrist. The timeline contains one synthetic voice source and no music.",
+    "evidence_files": [
+      "delivery/episode-08-1440p-phone.jpg",
+      "delivery/episode-08-editorial-1.jpg",
+      "delivery/episode-08-editorial-2.jpg",
+      "delivery/episode-08-short-phone-review.jpg",
+      "delivery/episode-08-thumbnail-phone-review.jpg",
+      "delivery/episode-08-waveform-review.json"
+    ]
+  }
+}

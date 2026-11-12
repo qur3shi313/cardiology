@@ -24,6 +24,7 @@ def calcified(c,ident,p,t):
     lumen=art.artery(c,expansion)
     s=art.Motion(1126,-280,12,-280,14,expansion,1)
     art.blood_flow(c,t,s,lumen)
+    restenosis.trace_channel(c,t,lumen,expansion)
     x0=art.LESION
     if not after:
         xs=range(x0-154,x0+155,4)
@@ -52,7 +53,7 @@ def calcified(c,ident,p,t):
             for i in range(4):
                 rr=29+((t*54+i*24)%85)
                 q=access.solid('#d5ead7',round(156*(1-(rr-29)/85)))
-                q.setStyle(skia.Paint.kStroke_Style); q.setStrokeWidth(3.3)
+                q.setStyle(skia.Paint.kStroke_Style); q.setStrokeWidth(7)
                 c.drawCircle(x0,art.center(x0),rr,q)
             if p>.61:
                 for i in (-1,0,1):

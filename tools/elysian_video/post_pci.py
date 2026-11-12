@@ -4,7 +4,7 @@ import json
 
 import skia
 
-from . import access, angiogram, coating, restenosis
+from . import access, angiogram, restenosis
 from .__main__ import ROOT, SERIES, FPS
 from .encode import encode_scene
 
@@ -54,7 +54,7 @@ def platelet_view(c,p,t):
 
 def draw(c,ident,p,t):
     if ident=='P01':
-        coating.device(c,p,t,True,1,wire=False)
+        restenosis.lumen_view(c,t,'open')
         angiogram.header(c,'The stent stays inside the artery','RECOVERY AFTER PCI')
         access.text(c,'What happens after the procedure?',56,674,31,'#235d51')
         return

@@ -8,6 +8,22 @@ from . import access, angiogram, coating, stent as art
 from .__main__ import ROOT, SERIES, FPS
 from .encode import encode_scene
 
+def trace_channel(c,t,lumen,expansion,flow=1.0):
+    """Show blood passing along the open channel in the longitudinal view."""
+    c.save()
+    c.clipPath(lumen,doAntiAlias=True)
+    for index in range(20):
+        offset=(index*77+t*(108+18*(index%3))*flow)%1500-110
+        points=[]
+        lane=((index*17)%119-59)/103
+        for step in range(6):
+            x=offset-step*12
+            radius=art.lumen_radius(x,-1 if lane<0 else 1,expansion)
+            points.append((x,art.center(x)+lane*radius))
+        access.line(c,points,'#f8ad9a',9,95 if flow>=.5 else 48)
+    c.restore()
+
+
 def lumen_view(c,t,kind,p=1.0,*,scaffold=True):
     access.rect(c,0,0,1280,720,access.solid('#e3eee7'))
     width=116
@@ -15,7 +31,14 @@ def lumen_view(c,t,kind,p=1.0,*,scaffold=True):
     expansion=.52 if kind=='underexpanded' else 1.
     lumen=art.artery(c,expansion)
     s=art.Motion(-350,-350,10,art.LESION,width,expansion,.16 if kind=='clot' else 1)
-    art.blood_flow(c,t,s,lumen)
+    if kind=='clot':
+        c.save()
+        c.clipRect(skia.Rect.MakeLTRB(0,0,art.LESION-52,720))
+        trace_channel(c,t,lumen,expansion,.45)
+        c.restore()
+    else:
+        art.blood_flow(c,t,s,lumen)
+        trace_channel(c,t,lumen,expansion)
     if scaffold:
         art.stent(c,art.LESION,radius,False)
     if kind in ('tissue','plaque','clot'):
@@ -52,10 +75,17 @@ def cross_section(c,p,t,mode):
         angiogram.dot(c,center[0]+164*cos(a),center[1]+164*sin(a),6,'#d8d1b8')
     c.drawOval(skia.Rect.MakeXYWH(596,268,177,130),access.solid('#8f6670'))
     angiogram.dot(c,*center,21,'#9ac6b7')
-    angle=t*3.8
+    angle=t*2.4
     x,y=center
+    aperture=skia.Rect.MakeXYWH(x-154,y-154,308,308)
+    radians_to_degrees=180/pi
+    sweep=skia.Path()
+    sweep.moveTo(x,y)
+    sweep.arcTo(aperture,angle*radians_to_degrees-58,58,False)
+    sweep.close()
+    c.drawPath(sweep,access.solid('#bce9c8' if mode=='OCT' else '#8dd5e5',105))
     access.line(c,[(x,y),(x+140*cos(angle),y+140*sin(angle))],
-                '#caeccd' if mode=='OCT' else '#94cdd0',4)
+                '#caeccd' if mode=='OCT' else '#94cdd0',7)
     angiogram.header(c,'Looking inside the stent','ILLUSTRATED IMAGING',True)
     access.text(c,'OCT uses light' if mode=='OCT' else 'IVUS uses sound',53,392,39,'#d9efe5')
     access.text(c,'Conceptual cross-section',55,677,31,'#b5d5c6')
@@ -65,6 +95,11 @@ def card(c,title,heading,lines,icon,p,t):
     angiogram.header(c,title,'CORONARY STENTS')
     angiogram.block(c,681,190,508,412,39,access.solid('#173c35'))
     angiogram.icon(c,icon,p,t)
+    if icon=='check' or icon=='list':
+        # Walk down the clipboard alongside the explanatory list.
+        y=306+158*p
+        angiogram.block(c,814,y-6,225,22,11,access.solid('#8bd3b9',82))
+        angiogram.dot(c,814,y+5,8,'#d9f8e8')
     def wrap(value,face,size):
         f=skia.Font(face,size)
         out=[]
@@ -144,8 +179,12 @@ def draw(c,ident,p,t):
             label(c,'Another drug-eluting stent','A new inner scaffold remains within the treated section')
         return
     if ident=='P08':
-        card(c,'Questions after the assessment','What was the cause?',
-             ('Ask how the team checked the finding','and what changes in your plan'),'check',p,t)
+        questions=(('What was the cause?',('Ask what caused the narrowing',),'check'),
+                   ('How did the team check it?',('Ask which findings shaped the plan',),'list'),
+                   ('What changes in my care?',('Ask about medicines and follow-up',),'call'))
+        phase=min(int(p*len(questions)),len(questions)-1)
+        heading,lines,icon=questions[phase]
+        card(c,'Questions after the assessment',heading,lines,icon,p*len(questions)-phase,t)
         return
     card(c,'Clinical sources','SCAI, ESC, AHA and NHLBI',
          ('Original animation · Synthetic English narration','Next: recovery and medicines after PCI'),'list',p,t)

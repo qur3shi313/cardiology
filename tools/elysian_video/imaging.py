@@ -29,6 +29,12 @@ def slice_view(c,p,t,mode,*,stent=False,waist=False,calcium=True):
     # Sensor direction is an illustration of the modality, not a scan setting.
     angiogram.dot(c,cx,cy,22,'#a5c5bb')
     angle=t*4
+    aperture=skia.Rect.MakeXYWH(cx-167,cy-167,334,334)
+    sweep=skia.Path()
+    sweep.moveTo(cx,cy)
+    sweep.arcTo(aperture,angle*180/pi-58,58,False)
+    sweep.close()
+    c.drawPath(sweep,access.solid('#f2d39c' if mode=='OCT' else '#9dcfd1',95))
     if mode=='IVUS':
         for j in range(3):
             r=27+(t*55+j*47)%134
@@ -36,7 +42,7 @@ def slice_view(c,p,t,mode,*,stent=False,waist=False,calcium=True):
             pen.setStyle(skia.Paint.kStroke_Style); pen.setStrokeWidth(3)
             c.drawCircle(cx,cy,r,pen)
     elif mode=='OCT':
-        access.line(c,[(cx,cy),(cx+163*cos(angle),cy+163*sin(angle))],'#f2d39c',3.4)
+        access.line(c,[(cx,cy),(cx+163*cos(angle),cy+163*sin(angle))],'#f2d39c',7)
         x,y=cx+163*cos(angle),cy+163*sin(angle)
         angiogram.dot(c,x,y,6,'#f7e2b9')
     angiogram.header(c,'A cross-section from inside the artery','ILLUSTRATED SCAN',True)
@@ -56,6 +62,7 @@ def sweep(c,p,t):
     s=art.Motion(1126,-290,12,-290,12,.16,1)
     lumen=art.artery(c,.16)
     art.blood_flow(c,t,s,lumen)
+    restenosis.trace_channel(c,t,lumen,.16)
     art.wire(c,1126)
     x=360+(870-360)*access.smooth((p-.18)/.66)
     y=art.center(x)
