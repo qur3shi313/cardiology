@@ -14,7 +14,7 @@
     "native_composition": true
   },
   "P03": {
-    "path": "outputs/cardiology-series/v2/episode-09/visuals/P03-motion-revision.mp4",
+    "path": "outputs/cardiology-series/v2/episode-09/visuals/P03-mechanisms-cue-aligned.mp4",
     "in_sec": 0,
     "out_sec": 21.2,
     "reference_only": false,
