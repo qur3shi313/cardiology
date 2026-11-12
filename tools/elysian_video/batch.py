@@ -47,7 +47,7 @@ def exclusive_build(path):
             release()
 
 
-def build(episode, ffmpeg):
+def build(episode, ffmpeg, *, native_copy=False):
     delivery=episode/'delivery'
     delivery.mkdir(exist_ok=True)
     with exclusive_build(delivery/'.batch.lock') as acquired:
@@ -70,7 +70,7 @@ def build(episode, ffmpeg):
             if prior.get('fingerprint')==fingerprint and prior.get('master_mtime_ns')==master.stat().st_mtime_ns:
                 print(f'{episode.name}: these exact pictures already have a complete assembly and QA record',flush=True)
                 return int(json.loads((episode/'QA.json').read_text(encoding='utf-8')).get('status')!='pass')
-        render_episode(ffmpeg,episode,1,'slow')
+        render_episode(ffmpeg,episode,1,'slow',native_copy=native_copy)
         if episode.name=='episode-01' or (episode/'finish-config.json').is_file():
             finish(episode,ffmpeg)
         status=check_master(master,str(ffmpeg),episode)

@@ -59,7 +59,7 @@ def revise(number, ffmpeg):
     pending_map = overrides.with_suffix('.json.tmp')
     pending_map.write_text(json.dumps(replacements, indent=2) + '\n', encoding='utf-8')
     pending_map.replace(overrides)
-    return build(episode, ffmpeg)
+    return build(episode, ffmpeg, native_copy=True)
 
 
 def main():

@@ -179,6 +179,81 @@ def concat_list(work, name, files):
     return path
 
 
+def native_timing(file, frames, *, video_only=True):
+    """Return the exact packet clock for an eligible complete authored scene."""
+    import av
+
+    with av.open(str(file)) as media:
+        if len(media.streams.video)!=1 or (video_only and len(media.streams)!=1):
+            return None
+        stream=media.streams.video[0]
+        codec=stream.codec_context
+        if (codec.name!='h264' or codec.profile!='High' or
+                (codec.width,codec.height)!=(WIDTH,HEIGHT) or codec.format is None or
+                codec.format.name!='yuv420p' or not stream.time_base or stream.start_time!=0 or
+                stream.average_rate!=FPS or stream.frames!=frames or
+                stream.sample_aspect_ratio not in (None,0,1)):
+            return None
+        step=1/(FPS*stream.time_base)
+        if step.denominator!=1 or stream.duration!=frames*step:
+            return None
+        packets=[packet for packet in media.demux(stream) if packet.size]
+        if (len(packets)!=frames or not packets[0].is_keyframe or packets[0].pts!=0 or
+                any(p.pts is None or p.dts is None or p.duration!=step for p in packets)):
+            return None
+        offset=packets[0].dts
+        if (offset not in (-2*step,-step,0) or
+                any(p.dts!=offset+i*step or p.pts<(i-2)*step for i,p in enumerate(packets)) or
+                sorted(p.pts for p in packets)!=[i*step for i in range(frames)]):
+            return None
+        return stream.time_base
+
+
+def native_picture_list(work, scenes):
+    """Use only native clips with no editorial transformation and one common clock."""
+    eligible=[]
+    for scene in scenes:
+        spec=scene['footage']
+        if (not spec.get('native_composition') or spec.get('reference_only') or
+                set(spec)-{'path','in_sec','out_sec','reference_only','native_composition'}):
+            return None
+        media=read_media(spec)
+        count=scene['end_frame']-scene['start_frame']
+        if media.start!=0 or abs(media.end-count/FPS)>1e-5:
+            return None
+        timebase=native_timing(media.path,count)
+        if timebase is None or (eligible and timebase!=eligible[0][2]):
+            return None
+        eligible.append((media.path,count,timebase))
+    if not eligible:
+        return None
+    lines=['ffconcat version 1.0\n']
+    for i,(source,count,_) in enumerate(eligible):
+        linked=work/f'native-{i:02}.mp4'
+        try:
+            os.link(source,linked)
+        except OSError:
+            shutil.copyfile(source,linked)
+        lines.extend([f"file '{linked.name}'\n",f'duration {count/FPS:.9f}\n'])
+    result=work/'native-picture.txt'
+    result.write_text(''.join(lines),encoding='utf-8')
+    return result
+
+
+def mux_master(exe, picture_list, voice, captions, target, *, native_frames=None):
+    arguments=['-y','-f','concat','-safe',0,'-i',picture_list,'-i',voice,'-i',captions,
+               '-map','0:v:0','-map','1:a:0','-map','2:s:0','-c:v','copy','-c:a','copy','-c:s','mov_text',
+               '-metadata:s:a:0','language=eng','-metadata:s:s:0','language=eng','-movflags','+faststart']
+    if native_frames is None:
+        run(exe,'-v','error',*arguments,target)
+        return True
+    # Join clips with different leading B-frame delays while preserving all picture PTS.
+    result=run(exe,'-v','warning',*arguments,'-bsf:v','setts=pts=PTS:dts=(N-2)*DURATION',
+               '-video_track_timescale',30000,target,check=False,capture_output=True)
+    return (result.returncode==0 and not result.stderr.strip() and
+            native_timing(target,native_frames,video_only=False) is not None)
+
+
 def normalized_voice(exe, work, list_path):
     chain='highpass=f=65,loudnorm=I=-14:TP=-1.50:LRA=7'
     measurement=run(exe,'-nostats','-f','concat','-safe',0,'-i',list_path,
@@ -193,7 +268,7 @@ def normalized_voice(exe, work, list_path):
     return target
 
 
-def render_episode(exe, episode, jobs, quality):
+def render_episode(exe, episode, jobs, quality, *, native_copy=False):
     timeline = load_timeline(episode)
     captions = next((path for path in (episode/'captions.en.srt', episode/f'{episode.name}.en.srt')
                      if path.is_file()),episode/'captions.en.srt')
@@ -207,8 +282,14 @@ def render_episode(exe, episode, jobs, quality):
     with scratch('elysian-film-') as temporary:
         work = Path(temporary)
         scenes = timeline['scenes']
+        picture_list=None
+        if native_copy:
+            try:
+                picture_list=native_picture_list(work,scenes)
+            except (ImportError, OSError, ValueError):
+                pass
         with ThreadPoolExecutor(max_workers=jobs) as pool:
-            picture_jobs=[pool.submit(picture,exe,scene,work,quality) for scene in scenes]
+            picture_jobs=[] if picture_list else [pool.submit(picture,exe,scene,work,quality) for scene in scenes]
             voice_jobs=[pool.submit(narration,exe,scene,work) for scene in scenes]
             pictures=[]
             for scene,job in zip(scenes,picture_jobs):
@@ -216,13 +297,28 @@ def render_episode(exe, episode, jobs, quality):
                 print(f'Rendered {scene["id"]} {scene["title"]}',flush=True)
             voices=[job.result() for job in voice_jobs]
         voice = normalized_voice(exe,work,concat_list(work,'voice.txt',voices))
-        picture_list = concat_list(work,'picture.txt',pictures)
         temporary_master = work/'master.mp4'
-        run(exe,'-v','error','-y','-f','concat','-safe',0,'-i',picture_list,'-i',voice,'-i',captions,
-            '-map','0:v:0','-map','1:a:0','-map','2:s:0','-c:v','copy','-c:a','copy','-c:s','mov_text',
-            '-metadata:s:a:0','language=eng','-metadata:s:s:0','language=eng','-movflags','+faststart',temporary_master)
-        run(exe,'-v','error','-xerror','-threads',2,'-i',temporary_master,
-            '-map','0:v:0','-map','0:a:0','-f','null','-')
+        def decode_master():
+            run(exe,'-v','error','-xerror','-threads',2,'-i',temporary_master,
+                '-map','0:v:0','-map','0:a:0','-f','null','-')
+
+        if picture_list:
+            try:
+                copied=mux_master(exe,picture_list,voice,captions,temporary_master,
+                                  native_frames=timeline['duration_frames'])
+                if copied:
+                    decode_master()
+            except (OSError, ValueError, subprocess.CalledProcessError):
+                copied=False
+            if copied:
+                print(f'Joined {len(scenes)} native scenes without re-encoding their pictures.',flush=True)
+            else:
+                print('Native copy validation did not pass; using the standard scene assembly.',flush=True)
+                picture_list=None
+                pictures=[picture(exe,scene,work,quality) for scene in scenes]
+        if not picture_list:
+            mux_master(exe,concat_list(work,'picture.txt',pictures),voice,captions,temporary_master)
+            decode_master()
         master=output/f'{episode.name}-1440p.mp4'
         shutil.copy2(temporary_master,master)
         run(exe,'-v','error','-y','-threads',2,'-filter_threads',2,'-i',master,
