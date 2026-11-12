@@ -222,7 +222,8 @@
       "master_bytes": 30767213,
       "master_preflight_passed": true,
       "companion_package_qa_pending": false,
-      "studio_checks": "complete_no_issues"
+      "studio_checks": "complete_no_issues",
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-11"
     },
     {
       "topic": 12,

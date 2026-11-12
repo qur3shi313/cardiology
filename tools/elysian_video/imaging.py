@@ -31,6 +31,21 @@ def slice_view(c,p,t,mode,*,stent=False,narrower=False,calcium=True,compare_sect
         # The same struts are visible only while the imaging field is clear.
         clearing = access.smooth((t - 10.15) / 4.35)
         c.drawCircle(cx, cy, lumen_radius+5, access.solid('#673949', round(255 * (1 - clearing))))
+        if clearing < .999:
+            field=skia.Path()
+            field.addCircle(cx,cy,lumen_radius-2)
+            c.save()
+            c.clipPath(field,doAntiAlias=True)
+            # Illustrative blood cells move past the imaging plane before the
+            # field clears. The dots and beam carry no acquisition settings.
+            for i in range(36):
+                x=cx-184+(53*i+t*(64+11*(i%4)))%368
+                y=cy-167+(i*89)%335+10*sin(t*1.7+i)
+                w=19+5*(i%4)
+                tone='#a46265' if i%3 else '#ad6b6e'
+                c.drawOval(skia.Rect.MakeXYWH(x-w,y-9,w*2,18),
+                           access.solid(tone,round(216*(1-clearing))))
+            c.restore()
     # Sensor direction is an illustration of the modality, not a scan setting.
     angiogram.dot(c,cx,cy,22,'#a5c5bb')
     angle=t*4
