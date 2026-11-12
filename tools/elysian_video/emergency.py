@@ -79,6 +79,64 @@ def triple(c,title,beats,p,t):
     heading,lines,icon=beats[index]
     restenosis.card(c,title,heading,lines,icon,p*len(beats)-index,t)
 
+
+def restore_culprit_flow(c, t):
+    check_start = 16.2
+    if t >= check_start:
+        culprit_contrast(c, min(1, (t-check_start)/(20.5-check_start)), restored=True)
+        return
+
+    lesion = art.LESION
+    wire = 80 + 1046*art.ease(t, 5.98, 9.15)
+    advance = art.ease(t, 9.27, 11.35)
+    expansion = art.ease(t, 11.4, 13.22)
+    deflate = art.ease(t, 13.25, 14.55)
+    withdraw = art.ease(t, 14.6, 16.16)
+    stent = -280+(lesion+280)*advance
+    balloon = stent-(lesion+280)*withdraw
+    access.rect(c,0,0,1280,720,access.solid('#e6f0e9'))
+    lumen = art.artery(c, expansion)
+
+    # Before the balloon deflates, moving blood is visible only up to the blocked site.
+    c.save()
+    if deflate < .68:
+        c.clipRect(skia.Rect.MakeLTRB(0,0,lesion-33,720))
+    restenosis.trace_channel(c,t,lumen,expansion,.45+.55*deflate)
+    c.restore()
+
+    # Keep a rim of clot against the wall as the channel widens in this example.
+    xs = range(lesion-104, lesion+105, 4)
+    top = [(x, art.center(x)-art.lumen_radius(x, -1, expansion)) for x in xs]
+    depth = 1-.89*expansion
+    lower = [(x, y+depth*(art.lumen_radius(x,-1,expansion)+art.lumen_radius(x,1,expansion))
+                     *exp(-abs((x-lesion)/52)**2.6)) for x,y in top]
+    c.save()
+    c.clipPath(lumen, doAntiAlias=True)
+    c.drawPath(art.enclosed(top,lower),art.gradient(537,302,723,485,['#763349','#431d2d']))
+    c.restore()
+
+    mesh_radius = 14+102*expansion
+    if stent+art.MESH_HALF>art.X0:
+        art.stent(c,stent,mesh_radius,False)
+    if t >= 5.98:
+        art.wire(c,wire)
+    if balloon+art.BALLOON_HALF>art.X0:
+        art.balloon(c,balloon,12+104*expansion*(1-deflate))
+    if stent+art.MESH_HALF>art.X0:
+        art.stent(c,stent,mesh_radius,True)
+
+    if t < 5.98:
+        detail = 'A clot blocks flow through this artery'
+    elif t < 9.27:
+        detail = 'A guidewire passes beyond the blockage'
+    elif t < 13.25:
+        detail = 'In this example, a balloon opens the stent'
+    else:
+        detail = 'The balloon comes out and the stent stays in place'
+    angiogram.header(c,'Restoring blood flow','ILLUSTRATED EMERGENCY PCI')
+    access.text(c,detail,55,677,31,'#20584d')
+
+
 def emergency(c,ident,p,t):
     if ident=='P01':
         restenosis.lumen_view(c,t,'clot',p,scaffold=False)
@@ -100,26 +158,17 @@ def emergency(c,ident,p,t):
     elif ident=='P05':
         culprit_contrast(c,p)
     elif ident=='P06':
-        if p < .20:
-            pci.draw(c,'P05',p/.20,t)
-        elif p < .34:
-            pci.draw(c,'P06',(p-.20)/.14,t)
-        elif p < .46:
-            pci.draw(c,'P07',(p-.34)/.12,t)
-        elif p < .63:
-            pci.draw(c,'P08',(p-.46)/.17,t)
-        elif p < .82:
-            pci.draw(c,'P09',(p-.63)/.19,t)
-        else:
-            culprit_contrast(c,(p-.82)/.18,restored=True)
+        restore_culprit_flow(c,t)
     elif ident=='P07':
         triple(c,'Recovery and prevention',(
            ('Monitoring after treatment',('Ask what the tests showed',),'pulse'),
            ('Ongoing care',('Medicines, rehabilitation and follow-up','may be part of your plan'),'list')),p,t)
     else:
-        triple(c,'Clinical sources',(
-           ('Heart attack warning signs',('American Heart Association',),'call'),
-           ('Acute coronary syndromes',('ACC, AHA and partner-society guidance',),'check')),p,t)
+        angiogram.clinical_credits(c,'HEART ATTACK AND PCI',(
+            'ACC, AHA and partner societies · Acute coronary syndromes',
+            'SCAI · Expert consensus on STEMI and primary PCI',
+            'American Heart Association · Heart attack warning signs'),
+            'Treatment decisions when several coronary arteries are narrowed')
 
 def multiple(c,ident,p,t):
     if ident=='P01':
@@ -157,9 +206,11 @@ def multiple(c,ident,p,t):
             ('Specialists review the options',('Cardiology, interventional cardiology','and cardiac surgery'),'check'),
             ('The patient is part of the decision',('Discuss risks, recovery and what','matters in daily life'),'list')),p,t)
     else:
-        triple(c,'Clinical sources',(
-            ('Coronary revascularisation',('ACC, AHA and SCAI guideline',),'vessel'),
-            ('Chronic coronary syndromes',('ESC clinical guidance',),'check')),p,t)
+        angiogram.clinical_credits(c,'MULTIVESSEL DISEASE',(
+            'ACC, AHA and SCAI · Coronary revascularisation',
+            'AHA and ACC · Chronic coronary disease',
+            'ACC, AHA and partner societies · Acute coronary syndromes'),
+            'What happens in aortic stenosis')
 
 def render(number):
     ep=SERIES/f'episode-{number:02}'

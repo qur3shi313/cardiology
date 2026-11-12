@@ -32,8 +32,8 @@ ACCESS_TUNNEL=angiogram.art.curve((418,604),((428,596),(441,592),ROUTE[0]))
 SHEATH=ACCESS_TUNNEL+ROUTE[1:8]
 ACCESS_WIRE=ACCESS_TUNNEL+ROUTE[1:]
 
-@lru_cache(maxsize=1)
-def route_plate():
+@lru_cache(maxsize=2)
+def route_plate(planning=False):
     surface=skia.Surface(WIDTH,HEIGHT)
     c=surface.getCanvas()
     c.scale(2,2)
@@ -59,16 +59,19 @@ def route_plate():
         access.line(c,branch,'#ca8d85',10)
     access.line(c,ROUTE,'#8f495a',29)
     access.line(c,ROUTE,'#d09588',18)
-    access.line(c,SHEATH,'#24564f',16)
-    access.line(c,SHEATH,'#9bcbb9',9)
-    access.line(c,[(412,609),(419,603)],'#357469',21)
-    angiogram.header(c,'The femoral route to the aortic valve','AORTIC VALVE')
+    if planning:
+        angiogram.header(c,'Checking a possible groin-to-heart route','ILLUSTRATED CT PLAN')
+    else:
+        access.line(c,SHEATH,'#24564f',16)
+        access.line(c,SHEATH,'#9bcbb9',9)
+        access.line(c,[(412,609),(419,603)],'#357469',21)
+        angiogram.header(c,'The femoral route to the aortic valve','AORTIC VALVE')
+        access.text(c,'Sheath stays in the groin',62,594,27,'#235d50',access.REGULAR)
+        access.text(c,'Illustrated route under X-ray guidance',54,686,27,'#245c50')
     access.text(c,'Right femoral artery',62,557,31,'#235d50')
-    access.text(c,'Sheath stays in the groin',62,594,27,'#235d50',access.REGULAR)
     access.line(c,[(326,568),(389,568),(438,581)],'#245c50',3)
     access.text(c,'Aortic arch',920,240,31,'#235d50')
     access.line(c,[(906,233),(822,233),(649,229)],'#245c50',3)
-    access.text(c,'Illustrated route under X-ray guidance',54,686,27,'#245c50')
     return surface.makeImageSnapshot()
 
 def groin_route(c,p,t):
@@ -352,12 +355,16 @@ TEXT={
         ('Heavy or persistent bleeding',('Call local emergency services',),'band'),
         ('Chest pain or breathing trouble',('Call local emergency services',),'pulse'),
         ('Possible signs of stroke',('Sudden face droop, arm weakness or','trouble speaking'),'call'))),
- 'P12':('Clinical sources',(
-        ('Heart valve treatment',('ESC and EACTS clinical guidance',),'vessel'),
-        ('Patient care and recovery',('American Heart Association and NHS',),'list'))),
 }
 
 def draw(c,ident,p,t):
+    if ident=='P12':
+        angiogram.clinical_credits(c,'AORTIC VALVE',(
+            'ACC and AHA · Valvular heart disease guideline',
+            'SCAI · Transcatheter valve delivery guidance',
+            'Guy’s and St Thomas’ NHS Foundation Trust · TAVI procedure'),
+            'Recovery and follow-up after TAVI')
+        return
     if ident not in TEXT:
         clinical(c,ident,p,t)
         return

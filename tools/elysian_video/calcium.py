@@ -65,16 +65,25 @@ def calcified(c,ident,p,t):
                     y=art.center(x)-107
                     art.line(c,[(x,y),(x-8,y+17),(x+8,y+32),(x+2,y+41)],'#635442',3.4)
     elif ident=='P06':
-        art.wire(c,1126)
-        x=364+(x0-333)*access.smooth((p-.21)/.65)
-        y=art.center(x)-7
-        art.line(c,[(0,art.center(0)),(x-39,y)],'#69968d',8.5)
+        approach=access.smooth((p-.21)/.65)
+        x=364+(x0-364)*approach
+        def centerline(at):
+            return art.center(at)-30*approach*exp(-abs((at-x0)/120)**2.6)
+        y=centerline(x)
+        wire=[(at,centerline(at)) for at in range(art.X0,1127,5)]
+        shaft=[(at,centerline(at)) for at in range(art.X0,round(x-34)+1,5)]
+        art.line(c,wire,'#331c29',6.6)
+        art.line(c,wire,'#efd5a0',3.9)
+        art.line(c,shaft+[(x-34,centerline(x-34))],'#69968d',8.5)
         c.drawOval(skia.Rect.MakeXYWH(x-37,y-22,74,44),access.solid('#c7bca1'))
         for i in range(6):
             q=(i/6+t*3)%1
             dx=26*sin(q*2*pi)
             access.line(c,[(x+dx-3,y-16),(x+dx+3,y+16)],'#898578',2.8)
         c.drawOval(skia.Rect.MakeXYWH(x-27,y-17,23,10),access.solid('#e6dac0',145))
+        if approach>.99:
+            access.line(c,[(x,y-22),(x+121,261),(x+251,261)],'#fff1cd',3)
+            access.text(c,'Contact with calcium',x+127,247,28,'#fff1cd')
     title,detail=TEXT[ident]
     if ident == 'P03' and p >= .45:
         title,detail='Preparing the narrowing before a stent','The stiff section limits how far the balloon opens'
@@ -90,8 +99,10 @@ def draw(c,ident,p,t):
     elif ident=='P07' and p>.65:
         coating.summary(c,'P06',.55+.45*(p-.65)/.35,t)
     elif ident=='P08':
-        restenosis.card(c,'Clinical sources','Calcified coronary lesions',
-                        ('SCAI expert consensus','ACC, AHA and SCAI guidance'),'list',p,t)
+        angiogram.clinical_credits(c,'CALCIFIED ARTERY',(
+            'SCAI · Expert consensus on calcified coronary lesions',
+            'ACC, AHA and partner societies · Acute coronary syndromes'),
+            'Heart attack and emergency PCI')
     else:
         calcified(c,ident,p,t)
 

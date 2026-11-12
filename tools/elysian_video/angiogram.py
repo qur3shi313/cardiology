@@ -31,6 +31,17 @@ def header(c,title,tag='CORONARY ANGIOGRAPHY', dark=False):
     text(c,tag,878,57,24,sub)
     text(c,title,55,132,48,tone,HEADING)
 
+
+def clinical_credits(c, topic, sources, next_topic, *, next_label='Next in the series'):
+    rect(c,0,0,1280,720,solid('#173c35'))
+    header(c,'Clinical sources',topic,True)
+    for index, source in enumerate(sources):
+        text(c,source,56,242+55*index,34,'#e4f2e7')
+    text(c,'Original educational animation · Synthetic English narration',56,468,32,'#bbdccd')
+    text(c,next_label,56,549,25,'#bbdccd')
+    text(c,next_topic,56,606,37,'#e4f2e7')
+
+
 def stroke_var(c,pts,weights,shade,opacity):
     # Draw each small run as one smooth stroke, retaining the focal taper.
     for i in range(0,len(weights),5):

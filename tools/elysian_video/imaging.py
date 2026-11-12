@@ -114,8 +114,11 @@ def draw(c,ident,p,t):
         restenosis.card(c,'When imaging adds useful detail','One more view for a decision',
                         ('The team matches the findings to','the anatomy and clinical situation'),'check',p,t)
         return
-    restenosis.card(c,'Clinical sources','Inside-artery imaging',
-                    ('ACC, AHA and SCAI guidance','EAPCI expert consensus'),'list',p,t)
+    angiogram.clinical_credits(c,'INSIDE-ARTERY IMAGING',(
+        'ACC, AHA and partner societies · Acute coronary syndromes',
+        'EAPCI · Expert consensus on intracoronary imaging',
+        'SCAI · Expert consensus on calcified coronary lesions'),
+        'Calcified arteries and complex PCI')
 
 def render():
     ep=SERIES/'episode-12'

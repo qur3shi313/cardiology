@@ -46,6 +46,30 @@ def echo(c,p,t,implanted):
     pressure.trace(c,85,325,287,69,t,'#c4ead7')
     access.text(c,'Illustrated ultrasound',86,245,29,'#e1f2e8')
 
+
+def delivery_route_plan(c,t):
+    c.drawImageRect(valve.route_plate(planning=True),skia.Rect.MakeWH(1280,720),
+                    skia.SamplingOptions(skia.FilterMode.kNearest))
+    progress = access.smooth((t-.3)/8.5)
+    route = angiogram.art.trace(valve.ROUTE,progress)
+    access.line(c,route,'#f5ddb0',16,195)
+    if t >= 9.54:
+        angiogram.block(c,893,290,331,282,23,access.solid('#20443e'))
+        access.text(c,'What CT can show',917,333,29,'#e7f2e8')
+        access.text(c,'Size and bends',918,380,27,'#c4e2d4')
+        bend = angiogram.art.curve((919,421),((980,386),(1048,453),(1191,418)))
+        access.line(c,bend,'#bc8b85',22)
+        access.line(c,bend,'#593b48',12)
+        access.text(c,'Calcium in the wall',918,487,27,'#c4e2d4')
+        access.line(c,[(924,526),(1188,526)],'#bc8b85',22)
+        access.line(c,[(924,526),(1188,526)],'#593b48',12)
+        access.line(c,[(1036,518),(1091,518)],'#f1d6a4',8)
+    detail = ('The team can discuss another route or treatment' if t>=14.11
+              else 'The team reviews the arteries before choosing access')
+    access.rect(c,0,654,1280,66,access.solid('#dcece2'))
+    access.text(c,detail,55,685,29,'#245c50')
+
+
 def plan(c,ident,p,t):
     if ident=='P01':
         annulus_scan(c,p,t)
@@ -57,7 +81,13 @@ def plan(c,ident,p,t):
         annulus_scan(c,p,t)
         return
     if ident=='P04':
-        valve.groin_route(c,p,t)
+        delivery_route_plan(c,t)
+        return
+    if ident=='P08':
+        angiogram.clinical_credits(c,'TAVI PLANNING',(
+            'ESC and EACTS · Valvular heart disease guidelines',
+            'Guy’s and St Thomas’ NHS Foundation Trust · TAVI assessment'),
+            'How transcatheter aortic valve implantation is performed')
         return
     rows={
      'P05':('The assessment goes beyond the valve',(
@@ -69,9 +99,6 @@ def plan(c,ident,p,t):
      'P07':('Preparing for the discussion',(
          ('Why this option?',('Ask about risks and recovery',),'check'),
          ('What happens next?',('Next episode: how TAVI is performed',),'vessel'))),
-     'P08':('Clinical sources',(
-         ('Heart valve guidelines',('ESC and EACTS clinical guidance',),'vessel'),
-         ('Imaging and patient guidance',('American Heart Association and NHS',),'list'))),
     }
     title,beats=rows[ident]
     emergency.triple(c,title,beats,p,t)
@@ -95,6 +122,13 @@ def recovery(c,ident,p,t):
     if ident=='P04':
         echo(c,p,t,True)
         return
+    if ident=='P08':
+        angiogram.clinical_credits(c,'TAVI RECOVERY',(
+            'ESC and EACTS · Valvular heart disease guidelines',
+            'Guy’s and St Thomas’ NHS Foundation Trust · TAVI recovery',
+            'University Hospital Southampton · Post-TAVI care'),
+            'TAVI, surgery and how the Heart Team weighs the options')
+        return
     rows={
      'P02':('The first checks in hospital',(
          ('The covered access site',('Staff look for bleeding and swelling',),'band'),
@@ -108,9 +142,6 @@ def recovery(c,ident,p,t):
      'P07':('Follow-up checks',(
          ('Symptoms, medicines and rhythm',('The team may arrange another ultrasound',),'pulse'),
          ('Know who will arrange follow-up',('Ask whom to call with questions',),'list'))),
-     'P08':('Clinical sources',(
-         ('Heart valve recovery',('ESC, EACTS, AHA and NHS',),'check'),
-         ('Next episode',('TAVI and surgical valve replacement',),'list'))),
     }
     title,beats=rows[ident]
     emergency.triple(c,title,beats,p,t)
@@ -151,6 +182,13 @@ def compare(c,ident,p,t):
         if p<.55: annulus_scan(c,p/.55,t)
         else: emergency.bypass(c,(p-.55)/.45,t)
         return
+    if ident=='P08':
+        angiogram.clinical_credits(c,'HEART VALVE OPTIONS',(
+            'ESC and EACTS · Valvular heart disease guidelines',
+            'American Heart Association · Heart valve replacement options',
+            'NHS · Recovering from heart valve replacement'),
+            'Why a team may recommend coronary artery bypass',next_label='Next series · Cardiac surgery')
+        return
     rows={
      'P05':('Recovery and risks',(
          ('Early recovery can differ',('The team explains what to expect',),'clock'),
@@ -161,9 +199,6 @@ def compare(c,ident,p,t):
      'P07':('A shared decision',(
          ('The Heart Team explains the reasons',('Bring your own goals and questions',),'list'),
          ('Next series: cardiac surgery',('Why a team may recommend','coronary artery bypass'),'vessel'))),
-     'P08':('Clinical sources',(
-         ('Heart valve guidance',('ESC and EACTS valve guidelines',),'check'),
-         ('Patient resources',('American Heart Association and NHS',),'list'))),
     }
     title,beats=rows[ident]
     emergency.triple(c,title,beats,p,t)
