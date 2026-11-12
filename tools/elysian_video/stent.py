@@ -232,6 +232,12 @@ def stent(canvas,x0,radius,front):
         draw_stent(canvas,x0,radius,front)
 
 
+def balloon_profile(at, x, radius):
+    left, right = x - BALLOON_HALF, x + BALLOON_HALF
+    local_radius = radius(at) if callable(radius) else radius
+    return 4 + (local_radius - 4) * ease(at, left, left + 34) * ease(right - at, 0, 34)
+
+
 def balloon(canvas, x, radius):
     left, right = x-BALLOON_HALF, x+BALLOON_HALF
     shaft = [(at,center(at)) for at in range(X0,round(right)+1,5)]
@@ -239,10 +245,8 @@ def balloon(canvas, x, radius):
     line(canvas,shaft,'#79abae',8)
     line(canvas,shaft,'#b5d9cd',2.4,140)
     xs = list(range(round(left),round(right)+1,4))
-    def profile(at):
-        return 4 + (radius-4)*ease(at,left,left+34)*ease(right-at,0,34)
-    top = [(at,center(at)-profile(at)) for at in xs]
-    bottom = [(at,center(at)+profile(at)) for at in xs]
+    top = [(at,center(at)-balloon_profile(at,x,radius)) for at in xs]
+    bottom = [(at,center(at)+balloon_profile(at,x,radius)) for at in xs]
     path = enclosed(top,bottom)
     canvas.drawPath(path,paint('#77bdbd',171))
     line(canvas,top,'#c1ebe0',2.4,227)

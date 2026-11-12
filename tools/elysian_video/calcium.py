@@ -31,24 +31,28 @@ def calcified(c,ident,p,t):
         high=[(x,art.center(x)-113) for x in xs]
         low=[(x,art.center(x)-113+61*exp(-abs((x-x0)/111)**2.7)) for x in xs]
         c.drawPath(art.enclosed(high,low),art.gradient(505,245,775,339,['#f0d8a7','#a0805c']))
-    if ident in ('P01','P03','P07'):
+    if ident in ('P01','P07') or (ident == 'P03' and p < .45):
         opened=access.smooth(p/.45)
         rad=lambda x:16+opened*(100-(65*exp(-abs((x-x0)/100)**2.6) if not after else 0))
         art.stent(c,x0,rad,False)
         if p<.62:
             art.wire(c,1126)
         art.stent(c,x0,rad,True)
-    elif ident in ('P04','P05'):
-        r=13+70*access.smooth((p-.18)/.47)
+    elif ident in ('P03','P04','P05'):
+        progress = (p - .45) / .55 if ident == 'P03' else p
+        r=13+70*access.smooth((progress-.12)/.52)
+        def vessel_limited_radius(at):
+            return min(r, art.lumen_radius(at, -1, expansion) - 4)
         art.wire(c,1126)
-        art.balloon(c,x0,r)
+        art.balloon(c,x0,vessel_limited_radius)
         if ident=='P04':
             # Conceptual scoring element on the specialty balloon's exterior.
             x1,x2=x0-151,x0+151
-            a=[(x,art.center(x)-r) for x in range(x1,x2+1,5)]
+            a=[(x,art.center(x)-art.balloon_profile(x,x0,vessel_limited_radius))
+               for x in range(x1,x2+1,5)]
             art.line(c,a,'#e8dcbd',5.5)
             art.line(c,a,'#fff1cd',2.2)
-        elif p>.45:
+        elif ident=='P05' and p>.45:
             # The waves are symbolic. No energy, pulse number or settings shown.
             for i in range(4):
                 rr=29+((t*54+i*24)%85)
@@ -72,6 +76,8 @@ def calcified(c,ident,p,t):
             access.line(c,[(x+dx-3,y-16),(x+dx+3,y+16)],'#898578',2.8)
         c.drawOval(skia.Rect.MakeXYWH(x-27,y-17,23,10),access.solid('#e6dac0',145))
     title,detail=TEXT[ident]
+    if ident == 'P03' and p >= .45:
+        title,detail='Preparing the narrowing before a stent','The stiff section limits how far the balloon opens'
     angiogram.header(c,title,'CALCIFIED ARTERY')
     access.text(c,detail,56,675,31,'#245b4e')
 
