@@ -6,6 +6,7 @@ from hashlib import sha256
 from io import BytesIO
 import json
 import math
+import os
 from pathlib import Path
 import re
 import shutil
@@ -197,10 +198,81 @@ def check_package(episode, master, ffmpeg, intended):
     return package,errors
 
 
+def caption_path(episode):
+    return next((path for path in (episode/'captions.en.srt', episode/f'{episode.name}.en.srt')
+                 if path.is_file()), episode/'captions.en.srt')
+
+
+def validation_inputs(episode):
+    captions = caption_path(episode)
+    return {'timeline_sha256': file_hash(episode/'timeline.json'),
+            'caption_file': captions.name,
+            'caption_sha256': file_hash(captions) if captions.is_file() else None}
+
+
+def apply_visual_review(report, episode):
+    review_path = episode/'visual-review.json'
+    review = json.loads(review_path.read_text(encoding='utf-8-sig')) if review_path.exists() else {}
+    if review.get('master_sha256') != report['sha256']:
+        review = {}
+    report['human_visual_review'] = review or 'pending'
+    report['halal_review'] = review.get('halal_review', 'pending')
+    errors = list(report['mechanical_errors'])
+    holds = review.get('intentional_holds', [])
+    for interval in report['freeze']['intervals']:
+        start, end = (interval[key+'_seconds'] for key in ('start', 'end'))
+        if end-start > 6 and not any(h['start_seconds'] <= start+.10 and h['end_seconds'] >= end-.10
+                                     and h.get('reason') for h in holds[:3]):
+            errors.append(f'Unreviewed freeze longer than 6 seconds at {start:.3f}')
+    for key in ('mobile_readability', 'art_coverage', 'device_motion', 'clinical_accuracy',
+                'caption_alignment', 'voice_only', 'thumbnail', 'vertical_short', 'halal_review'):
+        if review.get(key) != 'pass':
+            errors.append(f'Required review pending: {key}')
+    for asset in ('short', 'thumbnail'):
+        reviewed_hash = review.get(asset+'_sha256')
+        if reviewed_hash and reviewed_hash != report['deliverables'].get(asset, {}).get('sha256'):
+            errors.append(f'The visual review covers a different {asset} output')
+    report['errors'] = errors
+    report['status'] = 'blocked' if errors else 'pass'
+
+
+def save_report(report, episode):
+    destination = episode/'QA.json'
+    temporary = destination.with_suffix(f'.{os.getpid()}.tmp')
+    temporary.write_text(json.dumps(report, indent=2, allow_nan=False) + '\n', encoding='utf-8')
+    temporary.replace(destination)
+    print(destination)
+    return int(report['status'] != 'pass')
+
+
+def refresh_visual_review(path, episode):
+    report_path = episode/'QA.json'
+    if not report_path.is_file():
+        raise ValueError('Run full media QA before refreshing the visual review.')
+    report = json.loads(report_path.read_text(encoding='utf-8-sig'))
+    if ('mechanical_errors' not in report or report.get('input') != path.name
+            or report.get('validation_inputs') != validation_inputs(episode)
+            or report.get('sha256') != file_hash(path)):
+        raise ValueError('The saved QA does not cover these exact inputs. Run full media QA.')
+    companions = report.get('deliverables', {})
+    for key in ('1080p', 'short', 'thumbnail'):
+        asset = companions.get(key, {})
+        filename = asset.get('file', '')
+        current = path.with_name(filename) if filename and Path(filename).name == filename else None
+        if not current or not current.is_file() or asset.get('sha256') != file_hash(current):
+            raise ValueError(f'The {key} output changed or is missing. Run full media QA.')
+        if key == 'thumbnail' and current.suffix == '.png' and current.with_suffix('.jpg').is_file():
+            raise ValueError('A new thumbnail takes precedence. Run full media QA.')
+    apply_visual_review(report, episode)
+    return save_report(report, episode)
+
+
 def check_master(path, ffmpeg, episode):
     probe = invoke(ffmpeg, '-i', path, check=False)
+    inputs = validation_inputs(episode)
     timeline=json.loads((episode/'timeline.json').read_text(encoding='utf-8-sig'))
-    report = {'input': path.name, 'sha256':file_hash(path), **metadata(probe.stderr.decode('utf-8', 'replace'))}
+    report = {'input': path.name, 'sha256':file_hash(path), 'validation_inputs': inputs,
+              **metadata(probe.stderr.decode('utf-8', 'replace'))}
     video = invoke(ffmpeg, '-v', 'info', '-xerror', '-progress', 'pipe:1', '-i', path,
                    '-map', '0:v:0', '-an', '-vf', 'freezedetect=n=0.001:d=2', '-f', 'null', '-')
     decoded_times = re.findall(r'^out_time_us=(\d+)\s*$', video.stdout.decode(), re.MULTILINE)
@@ -236,38 +308,20 @@ def check_master(path, ffmpeg, episode):
     errors.extend(speech_errors(report['audio']))
     if report['freeze']['percent']>15:
         errors.append('More than 15 percent of the video is frozen')
-    checks=episode/'visual-review.json'
-    review=json.loads(checks.read_text(encoding='utf-8-sig')) if checks.exists() else {}
-    if review.get('master_sha256')!=report['sha256']:
-        review={}
-    report['human_visual_review']=review or 'pending'
-    holds=review.get('intentional_holds',[])
-    for interval in report['freeze']['intervals']:
-        start,end=(interval[k+'_seconds'] for k in ('start','end'))
-        if end-start>6 and not any(h['start_seconds']<=start+.10 and h['end_seconds']>=end-.10
-                                     and h.get('reason') for h in holds[:3]):
-            errors.append(f'Unreviewed freeze longer than 6 seconds at {start:.3f}')
-    cap=next((x for x in (episode/'captions.en.srt',episode/f'{episode.name}.en.srt') if x.is_file()),
-             episode/'captions.en.srt')
-    report['captions']=verify_captions(cap,duration)
+    report['captions']=verify_captions(caption_path(episode),duration)
     errors.extend(report['captions']['errors'])
     report['deliverables'],pack_errors=check_package(episode,path,ffmpeg,intended)
     errors.extend(pack_errors)
-    report['halal_review']=review.get('halal_review','pending')
-    for key in ('mobile_readability','art_coverage','device_motion','clinical_accuracy',
-                'caption_alignment','voice_only','thumbnail','vertical_short','halal_review'):
-        if review.get(key)!='pass':
-            errors.append(f'Required review pending: {key}')
     sheet = path.with_name(f'{path.stem}-phone.jpg')
     report['contact_sheet'] = {'file': sheet.name, 'frame_width_px': 390,
                                'sample_times_seconds': contact_sheet(ffmpeg, path, duration, sheet)}
-    report['errors']=errors
-    report['status']='pass' if not errors else 'blocked'
-    report_path = episode/'QA.json'
-    report_path.write_text(json.dumps(report, indent=2, allow_nan=False) + '\n', encoding='utf-8')
-    print(report_path)
+    if inputs != validation_inputs(episode):
+        raise RuntimeError('The timeline or captions changed during media QA. Run the check again.')
+    report['mechanical_errors'] = errors
+    apply_visual_review(report, episode)
+    status = save_report(report, episode)
     print(sheet)
-    return 1 if errors else 0
+    return status
 
 
 def main():
@@ -275,13 +329,22 @@ def main():
     parser.add_argument('mp4', type=Path, help='Complete 1440p master to decode and inspect')
     parser.add_argument('--episode-dir', type=Path, help='Directory holding its exact timeline and SRT')
     parser.add_argument('--ffmpeg', default=None, help='FFmpeg executable, defaults to FFmpeg on PATH')
+    parser.add_argument('--refresh-review', action='store_true',
+                        help='Apply the visual review if the media and mechanical QA inputs are unchanged')
     args = parser.parse_args()
+    if not args.mp4.is_file() or args.mp4.suffix.lower() != '.mp4':
+        parser.error('Supply an existing MP4 file.')
+    path = args.mp4.resolve()
+    episode = (args.episode_dir or args.mp4.parent.parent).resolve()
+    if args.refresh_review:
+        try:
+            return refresh_visual_review(path, episode)
+        except ValueError as error:
+            parser.error(str(error))
     ffmpeg = args.ffmpeg or shutil.which('ffmpeg')
     if not ffmpeg:
         parser.error('FFmpeg is unavailable. Supply its executable with --ffmpeg.')
-    if not args.mp4.is_file() or args.mp4.suffix.lower() != '.mp4':
-        parser.error('Supply an existing MP4 file.')
-    return check_master(args.mp4.resolve(), ffmpeg, (args.episode_dir or args.mp4.parent.parent).resolve())
+    return check_master(path, ffmpeg, episode)
 
 
 if __name__ == '__main__':

@@ -8,10 +8,11 @@ from . import access, angiogram, restenosis, stent as art
 from .__main__ import ROOT, SERIES, FPS
 from .encode import encode_scene
 
-def slice_view(c,p,t,mode,*,stent=False,waist=False,calcium=True):
+def slice_view(c,p,t,mode,*,stent=False,narrower=False,calcium=True,compare_sections=False):
     access.rect(c,0,0,1280,720,access.solid('#102c2b'))
     cx,cy=729,388
-    for radius,shade in ((236,'#593b48'),(220,'#a47878'),(190,'#774957'),(168,'#181d27')):
+    lumen_radius = 124 if narrower else 168
+    for radius,shade in ((236,'#593b48'),(220,'#a47878'),(190,'#774957'),(lumen_radius,'#181d27')):
         angiogram.dot(c,cx,cy,radius,shade)
     if calcium:
         x,y=cx-104,cy-110
@@ -23,17 +24,17 @@ def slice_view(c,p,t,mode,*,stent=False,waist=False,calcium=True):
     if stent:
         for i in range(20):
             a=i*2*pi/20
-            r=147 if not waist else 117+23*sin(a)
+            r=lumen_radius-5
             x,y=cx+r*cos(a),cy+r*sin(a)
             c.drawRoundRect(skia.Rect.MakeXYWH(x-5,y-4,11,8),2,2,access.solid('#e7d9bf'))
     if mode == 'OCT':
         # The same struts are visible only while the imaging field is clear.
-        clearing = access.smooth((p - .23) / .23)
-        c.drawCircle(cx, cy, 167, access.solid('#673949', round(232 * (1 - clearing))))
+        clearing = access.smooth((t - 10.15) / 4.35)
+        c.drawCircle(cx, cy, lumen_radius+5, access.solid('#673949', round(255 * (1 - clearing))))
     # Sensor direction is an illustration of the modality, not a scan setting.
     angiogram.dot(c,cx,cy,22,'#a5c5bb')
     angle=t*4
-    reach = 48 + 115 * clearing if mode == 'OCT' else 167
+    reach = 48 + 115 * clearing if mode == 'OCT' else lumen_radius - 1
     aperture = skia.Rect.MakeXYWH(cx - reach, cy - reach, 2 * reach, 2 * reach)
     sweep=skia.Path()
     sweep.moveTo(cx,cy)
@@ -52,13 +53,23 @@ def slice_view(c,p,t,mode,*,stent=False,waist=False,calcium=True):
         if clearing > .9:
             angiogram.dot(c,x,y,6,'#f7e2b9')
     angiogram.header(c,'A cross-section from inside the artery','ILLUSTRATED SCAN',True)
-    access.text(c,{'IVUS':'IVUS: sound','OCT':'OCT: light','SCAN':'Conceptual slice'}[mode],
-                61,388,39,'#e8f6e7')
-    if waist:
+    if compare_sections:
+        access.text(c,'Same stent, two sections',61,343,31,'#c6e8d7')
+        access.text(c,'Narrower section' if narrower else 'Adjacent section',61,400,39,'#e8f6e7')
+        access.line(c,[(86,464),(359,464)],'#527873',5)
+        for x in (86,359):
+            selected = (x==359) == narrower
+            angiogram.dot(c,x,464,13 if selected else 8,'#e7d9bf' if selected else '#527873')
+    else:
+        access.text(c,{'IVUS':'IVUS: sound','OCT':'OCT: light','SCAN':'Conceptual slice'}[mode],
+                    61,388,39,'#e8f6e7')
+    if narrower:
         access.text(c,'A section remains narrower than intended',56,668,29,'#c6e8d7')
     elif calcium and mode=='IVUS':
         access.text(c,'Dense calcium can obscure the tissue behind it',56,668,29,'#c6e8d7')
-    elif mode == 'OCT' and p < .56:
+    elif mode == 'OCT' and t < 10.15:
+        access.text(c,'Near-infrared light shows fine surface detail',56,668,29,'#c6e8d7')
+    elif mode == 'OCT' and t < 14.5:
         access.text(c,'Blood briefly clears from the imaging area',56,668,29,'#c6e8d7')
     elif stent:
         access.text(c,'The scan can show individual stent struts',56,668,29,'#c6e8d7')
@@ -97,7 +108,7 @@ def draw(c,ident,p,t):
         sweep(c,p,t)
         return
     if ident=='P06':
-        slice_view(c,p,t,'SCAN',stent=True,waist=p>.38,calcium=False)
+        slice_view(c,p,t,'SCAN',stent=True,narrower=t>=7.77,calcium=False,compare_sections=True)
         return
     if ident=='P07':
         restenosis.card(c,'When imaging adds useful detail','One more view for a decision',
