@@ -1,4 +1,5 @@
 """Original balloon-expandable transcatheter valve sequence and recovery film."""
+from bisect import bisect_right
 from functools import lru_cache
 from math import sin, cos, pi
 import json
@@ -229,13 +230,13 @@ def groin_closure(c,p):
         access.line(c,sheath[:1]+[(sheath[0][0]+13,sheath[0][1]+28)],'#356b62',38)
         c.restore()
     access.line(c,[(630,406),(646,402)],'#a76261',3.8)
-    cover=access.smooth((p-.53)/.36)
+    cover=access.smooth((p-.57)/.36)
     if cover:
         y=blend(289,405,cover)
         angiogram.block(c,534,y-36,208,72,22,access.solid('#f1e8d3'))
         angiogram.block(c,601,y-26,74,52,12,access.solid('#fff6df'))
-    angiogram.header(c,'The groin access site is closed','AORTIC VALVE',True)
-    access.text(c,'Access equipment comes out' if p<.55 else 'Staff dress and check the site',
+    angiogram.header(c,'Closing the groin access site','AORTIC VALVE',True)
+    access.text(c,'Access equipment comes out' if p<.57 else 'Staff dress and check the site',
                 60,675,30,'#dbeee3')
 
 def result_check(c,p,t):
@@ -333,7 +334,10 @@ def clinical(c,ident,p,t):
         cage(c,ANNULUS,129,front=True)
         title='Checking the new valve' if ident=='P07' else 'What TAVI changes'
         note='Imaging checks blood flow through and around the frame'
-        if ident=='P07': result_check(c,p,t)
+        if ident=='P07':
+            result_check(c,p,t)
+            if p>=.51:
+                note='The team also checks the heart rhythm'
     angiogram.header(c,title,'AORTIC VALVE')
     access.text(c,'Aorta',1021,225,31,'#235d50')
     access.text(c,'Left ventricle',990,617,31,'#235d50')
@@ -347,14 +351,23 @@ TEXT={
         ('The team reviews options with you',('Anatomy, health and preferences matter',),'list'))),
  'P08':('Recovery in hospital',(
         ('Heart rhythm and access site',('Staff monitor the rhythm and groin site',),'pulse'),
+        ('Staff watch for complications',('Bleeding, vessel injury or stroke','Changes in heart rhythm'),'check'),
         ('Recovery time varies',('A pacemaker is needed in some cases',),'clock'))),
  'P09':('Your written plan at home',(
-        ('Medicines, wound care and activity',('Follow your team’s instructions',),'list'),
+        ('Medicines, wound care and activity',('Confirm driving and follow-up','Follow your team’s instructions'),'list'),
+        ('Mild groin bruising or soreness',('This can happen after TAVI',),'band'),
         ('Contact your team promptly',('Increasing redness, pain, drainage or fever','need advice'),'call'))),
  'P10':('When to get emergency help',(
-        ('Heavy or persistent bleeding',('Call local emergency services',),'band'),
-        ('Chest pain or breathing trouble',('Call local emergency services',),'pulse'),
+        ('Heavy bleeding',('or bleeding that will not stop',),'band'),
+        ('Severe chest pain',('or sudden trouble breathing',),'pulse'),
         ('Possible signs of stroke',('Sudden face droop, arm weakness or','trouble speaking'),'call'))),
+}
+
+# Scene-local boundaries follow the locked recovery and warning captions.
+RECOVERY_MARKS={
+    'P08':(0.,5.115,10.387,16.867),
+    'P09':(0.,7.882,11.109,17.467),
+    'P10':(0.,5.6,10.685,16.167),
 }
 
 def draw(c,ident,p,t):
@@ -369,9 +382,17 @@ def draw(c,ident,p,t):
         clinical(c,ident,p,t)
         return
     title,beats=TEXT[ident]
-    i=min(len(beats)-1,int(p*len(beats)))
+    if marks := RECOVERY_MARKS.get(ident):
+        i=min(len(beats)-1,bisect_right(marks,t)-1)
+        progress=min(1,(t-marks[i])/(marks[i+1]-marks[i]))
+    else:
+        i=min(len(beats)-1,int(p*len(beats)))
+        progress=p*len(beats)-i
     heading,lines,icon=beats[i]
-    restenosis.card(c,title,heading,lines,icon,p*len(beats)-i,t,topic='TAVI PROCEDURE')
+    restenosis.card(c,title,heading,lines,icon,progress,t,topic='TAVI PROCEDURE')
+    if ident=='P10':
+        access.rect(c,0,632,1280,88,access.solid('#613239'))
+        access.text(c,'Call your local emergency number',55,688,34,'#fff3e8')
 
 def render():
     ep=SERIES/'episode-18'
