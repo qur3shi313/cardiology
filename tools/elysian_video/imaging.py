@@ -90,6 +90,58 @@ def sweep(c,p,t):
     angiogram.header(c,'Planning treatment from a series of slices','INSIDE-ARTERY IMAGING')
     access.text(c,'Study the segment length, wall and calcium',57,673,31,'#265e52')
 
+def decision_views(c,t):
+    """Put the simulated angiogram and matching conceptual stent slice side by side."""
+    access.rect(c,0,0,1280,720,access.solid('#e5eee7'))
+    angiogram.header(c,'Two views help the team decide','INSIDE-ARTERY IMAGING')
+    angiogram.block(c,55,170,561,440,24,access.solid('#1b3e37'))
+    angiogram.block(c,664,170,561,440,24,access.solid('#163632'))
+    access.text(c,'Simulated angiogram',83,223,34,'#e2f3e6')
+    access.text(c,'Illustrated cross-section',692,223,34,'#e2f3e6')
+
+    q=access.smooth((t-1.06)/5.52)*(1-access.smooth((t-13.5)/5.5))
+    phase=(t%6.75)/6.75
+    fill=access.smooth(phase/.42)
+    c.save()
+    c.clipRect(skia.Rect.MakeLTRB(79,248,592,541))
+    c.translate(75,248)
+    c.scale(.405,.405)
+    c.drawImageRect(angiogram.radiograph_plate(),skia.Rect.MakeWH(1280,720),
+                    skia.SamplingOptions(skia.FilterMode.kLinear))
+    angiogram.contrast_paths(c,'left',fill,round(247-73*access.smooth((phase-.78)/.22)),-14,True)
+    # The marker moves from an adjacent slice to the narrower part, then back.
+    branch=angiogram.tree('left')[0][1][0]
+    u,v=angiogram.project(branch[round((len(branch)-1)*(.35+.12*q))],-14)
+    x,y=222+3.48*u,101+1.88*v
+    edge=access.solid('#ffe6a9')
+    edge.setStyle(skia.Paint.kStroke_Style)
+    edge.setStrokeWidth(5)
+    if fill>.55:
+        c.drawCircle(x,y,29,edge)
+    c.restore()
+    access.text(c,'The contrast shows the artery’s path',82,580,28,'#cce6d7')
+
+    cx,cy=944,390
+    lumen=111-31*q
+    for radius,tone in ((137,'#ba8d83'),(127,'#774957'),(lumen,'#1c2c32')):
+        angiogram.dot(c,cx,cy,radius,tone)
+    for i in range(18):
+        a=i*2*pi/18
+        x,y=cx+(lumen-4)*cos(a),cy+(lumen-4)*sin(a)
+        c.drawRoundRect(skia.Rect.MakeXYWH(x-4,y-3,9,7),2,2,access.solid('#eddec4'))
+    scan=skia.Path()
+    scan.moveTo(cx,cy)
+    scan.arcTo(skia.Rect.MakeXYWH(cx-lumen,cy-lumen,2*lumen,2*lumen),t*92,42,False)
+    scan.close()
+    c.drawPath(scan,access.solid('#b8dfcb',92))
+    angiogram.dot(c,cx,cy,11,'#b9dfcb')
+    access.text(c,'Narrower section' if q>.65 else 'Adjacent section',691,580,28,'#cce6d7')
+    note=('The patient’s condition, artery anatomy and goals all matter.' if t>=14.53 else
+          'In complex cases, imaging can guide treatment.' if t>=5.05 else
+          'The cross-section adds detail that the angiogram alone cannot show.')
+    access.text(c,note,55,677,30,'#22594e')
+
+
 def draw(c,ident,p,t):
     if ident in ('P01','P02'):
         split=.34 if ident=='P01' else .52
@@ -111,8 +163,7 @@ def draw(c,ident,p,t):
         slice_view(c,p,t,'SCAN',stent=True,narrower=t>=7.77,calcium=False,compare_sections=True)
         return
     if ident=='P07':
-        restenosis.card(c,'When imaging adds useful detail','One more view for a decision',
-                        ('The team matches the findings to','the anatomy and clinical situation'),'check',p,t)
+        decision_views(c,t)
         return
     angiogram.clinical_credits(c,'INSIDE-ARTERY IMAGING',(
         'ACC, AHA and partner societies · Acute coronary syndromes',

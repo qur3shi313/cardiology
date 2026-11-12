@@ -25,9 +25,14 @@ REVISIONS = {
 }
 
 
-def revise(number, ffmpeg):
+def revise(number, ffmpeg, selected=None):
     episode = SERIES / f'episode-{number:02}'
     draw, override_file, scenes = REVISIONS[number]
+    if selected:
+        invalid=set(selected)-set(scenes)
+        if invalid:
+            raise ValueError(f'Scene revisions unavailable for {episode.name}: {sorted(invalid)}')
+        scenes=tuple(selected)
     visuals = episode / 'visuals'
     overrides = visuals / override_file
     replacements = json.loads(overrides.read_text(encoding='utf-8-sig'))
@@ -65,8 +70,12 @@ def revise(number, ffmpeg):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('episodes', nargs='+', type=int, choices=tuple(REVISIONS))
+    parser.add_argument('--scenes', nargs='+', metavar='SCENE',
+                        help='Rebuild only the selected authored scenes in one episode')
     args = parser.parse_args()
-    statuses = [revise(number, LEGACY_FFMPEG.resolve()) for number in args.episodes]
+    if args.scenes and len(args.episodes)!=1:
+        parser.error('--scenes requires exactly one episode')
+    statuses = [revise(number, LEGACY_FFMPEG.resolve(), args.scenes) for number in args.episodes]
     return any(statuses)
 
 

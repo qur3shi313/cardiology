@@ -195,7 +195,11 @@ def native_timing(file, frames, *, video_only=True):
                 stream.sample_aspect_ratio not in (None,0,1)):
             return None
         step=1/(FPS*stream.time_base)
-        if step.denominator!=1 or stream.duration!=frames*step:
+        # MP4 edit-list rounding may shorten the source header by <1 ms.
+        # All individual packet timestamps are still checked exactly below.
+        tolerance=1/(1000*stream.time_base) if video_only else 0
+        if (step.denominator!=1 or stream.duration is None or
+                abs(stream.duration-frames*step)>tolerance):
             return None
         packets=[packet for packet in media.demux(stream) if packet.size]
         if (len(packets)!=frames or not packets[0].is_keyframe or packets[0].pts!=0 or
