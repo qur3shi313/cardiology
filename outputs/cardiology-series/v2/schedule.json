@@ -114,7 +114,7 @@
       "episode": "episode-06",
       "title": "Coronary angioplasty and stent placement",
       "target": "2026-11-17T18:00:00+05:00",
-      "status": "picture_rendering",
+      "status": "corrected_master_assembling",
       "production_material": "Existing angioplasty and stent package",
       "studio_verified": false,
       "watch_url": null,
@@ -164,7 +164,7 @@
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
       "watch_url": "https://youtu.be/tO-TcN-PmBQ",
-      "qa_passed": false,
+      "qa_passed": true,
       "duration_seconds": 162.233,
       "scene_count": 9,
       "narration_decoded": true,
@@ -172,7 +172,7 @@
       "master_sha256": "e8f2f7968f57dc75754f68449d7f86491c080d52410b8aafdea0b29586f96b18",
       "master_bytes": 102912128,
       "master_preflight_passed": true,
-      "companion_package_qa_pending": true,
+      "companion_package_qa_pending": false,
       "studio_checks": "complete_no_issues"
     },
     {

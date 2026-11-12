@@ -1,0 +1,99 @@
+{
+  "master_sha256": "e8f2f7968f57dc75754f68449d7f86491c080d52410b8aafdea0b29586f96b18",
+  "short_sha256": "93e460bc4c313dc9a8f2af300fbfd1ba5cd668725b604dff9f35d55622ea0e51",
+  "thumbnail_sha256": "1a007ad0b660d31270253d71e8ee701ffcdd059916ea37d5690f4dfc33f0b75e",
+  "verified_at": "2026-11-12T08:09:14+05:00",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "intentional_holds": [
+    {
+      "start_seconds": 154.233333,
+      "end_seconds": 162.233333,
+      "reason": "The closing card preserves the authentic logo, clinical references, animation and voice disclosure, and next topic long enough to read."
+    }
+  ],
+  "review_evidence": {
+    "exact_master": "Reviewed 59 actual decoded master frames at 390 pixels across all nine scenes, including boundaries at 41.033 and 44.900 seconds. The artery and device remain the large focal artwork throughout the clinical motion shots. Separate conceptual IVUS and OCT panels, the emergency card and follow-up illustrations use readable text at phone width.",
+    "clinical": [
+      "The simulated coronary X-ray shows contrast filling the vessel and identifies the narrowed channel before cutting to a stent cross-section.",
+      "Three separate labelled examples show underexpansion, growth inside an opened stent and plaque within that tissue.",
+      "Tissue-growth and plaque labels switch at 41.033 and 44.900 seconds, nearest frames to the locked 41.018 and 44.907 second cue starts.",
+      "The clot is a separate example. A neutral emergency card follows without asking the viewer to diagnose the cause.",
+      "Two simulated coronary projections and separate IVUS and OCT views explain how clinicians assess the mechanism.",
+      "The balloon illustration follows the wire through an existing scaffold, then shows inflation, deflation and withdrawal. Repeat stenting is a separate option after mechanical assessment.",
+      "The report and scan illustrations lead to medicines and follow-up questions. The branded eight-second closing card gives references, production disclosure and the next episode."
+    ],
+    "primary_sources_checked": [
+      "https://doi.org/10.1016/j.jscai.2023.100971",
+      "https://doi.org/10.1093/eurheartj/ehae177",
+      "https://www.fda.gov/medical-devices/recently-approved-devices/agent-paclitaxel-coated-balloon-catheter-p230035",
+      "https://www.heart.org/en/about-us/heart-attack-and-stroke-symptoms"
+    ],
+    "captions_and_voice": "All 364 words in 40 captions match the locked narration. The embedded caption track matches the sidecar exactly. Eight sampled scenes align with the sole ElevenLabs Alexander narration at 0.00-second offset, and the complete narrated sections correlate .998925 to .999964 with the source. Six seconds of the closing card are digitally silent.",
+    "packet_comparison": {
+      "identical_packets_by_scene_or_track": {
+        "P01": 393,
+        "P02": 628,
+        "P04": 640,
+        "P05": 504,
+        "P06": 652,
+        "P07": 619,
+        "P08": 555,
+        "P09": 240,
+        "audio": 7606,
+        "subtitle": 79
+      },
+      "replaced_picture_scene": "P03",
+      "replaced_picture_frames": 636
+    },
+    "exact_short": "Reviewed 12 decoded frames of the 21.2-second portrait cut. It compares all three mechanisms. The tissue-growth and new-plaque labels now match their burnt-in English captions, including both samples during the new-plaque sentence. Caption, artwork, company name and title remain separate. Four voice windows match the corresponding long master.",
+    "short_voice_alignment": [
+      {
+        "source_sec": 35.03333333333333,
+        "output_sec": 1,
+        "offset_sec": 0.0,
+        "correlation": 0.83093
+      },
+      {
+        "source_sec": 39.233333333333334,
+        "output_sec": 5.2,
+        "offset_sec": 0.00025,
+        "correlation": 0.84105
+      },
+      {
+        "source_sec": 43.43333333333333,
+        "output_sec": 9.4,
+        "offset_sec": 0.0,
+        "correlation": 0.82882
+      },
+      {
+        "source_sec": 48.83333333333333,
+        "output_sec": 14.8,
+        "offset_sec": 0.0,
+        "correlation": 0.85888
+      }
+    ],
+    "exact_thumbnail": "Viewed the exact 1280×720 thumbnail reduced to 390×220. The authentic logo and short title remain readable, with an underexpanded stent in the focal position.",
+    "modesty": "Original diagrams and neutral icons. There are no depictions of real people or exposed anatomy.",
+    "evidence_files": [
+      "delivery/episode-09-editorial-1.jpg",
+      "delivery/episode-09-editorial-2.jpg",
+      "delivery/episode-09-editorial-3.jpg",
+      "delivery/episode-09-editorial-4.jpg",
+      "delivery/episode-09-editorial-5.jpg",
+      "delivery/episode-09-exact-master-preflight.json",
+      "delivery/episode-09-long-editorial-review.json",
+      "delivery/episode-09-master-review-evidence.json",
+      "delivery/episode-09-companions-review-evidence.json",
+      "delivery/episode-09-short-phone-review.jpg",
+      "delivery/episode-09-thumbnail-phone-review.jpg"
+    ]
+  }
+}
