@@ -118,7 +118,7 @@
       "production_material": "Existing angioplasty and stent package",
       "studio_verified": true,
       "watch_url": "https://youtu.be/WdlALjzPXzM",
-      "qa_passed": false,
+      "qa_passed": true,
       "duration_seconds": 305.1,
       "scene_count": 17,
       "narration_decoded": true,
@@ -126,7 +126,7 @@
       "master_sha256": "9d8f47e39e4546feedea6274e9b39cc1beae2e5d4d8d7954d405437d06654cc3",
       "master_bytes": 215070576,
       "master_preflight_passed": true,
-      "companion_package_qa_pending": true,
+      "companion_package_qa_pending": false,
       "studio_checks": "complete_no_issues"
     },
     {

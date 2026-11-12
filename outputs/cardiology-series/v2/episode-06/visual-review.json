@@ -1,0 +1,126 @@
+{
+  "master_sha256": "9d8f47e39e4546feedea6274e9b39cc1beae2e5d4d8d7954d405437d06654cc3",
+  "short_sha256": "a3949889d18dbb7135f48d0da6abecbefb480b76b6705ca1cc36000e21480261",
+  "thumbnail_sha256": "16470be25ae23acd7eccd99474f0006529d15f0e35c99394dbaba84b4a819900",
+  "verified_at": "2026-11-12T08:53:58+05:00",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "intentional_holds": [],
+  "review_evidence": {
+    "exact_master": "Reviewed 62 exact decoded five-second samples at 390 pixels, and six targeted frames across wrist sheath withdrawal and the limb warning. The clinical radiograph, layered lumen and devices are large and separate. The image and text do not overlap in the two corrected scenes. Full frame and audio decode were also checked independently.",
+    "clinical": "The long guidewire crosses the narrowed segment. The optional preparation balloon travels and withdraws on the same wire. The mounted mesh and delivery balloon arrive together, open at the lesion, deflate and withdraw in order, and leave the seated mesh. Simulated contrast and selected inside-artery imaging are separate from treatment. Covered wrist compression and covered groin closure are shown as different cases. Medication, follow-up and emergency information is general and keeps the existing source-mapped narration.",
+    "captions_and_voice": "All 69 embedded cues match the locked English SRT text and timing, and the Short covers the complete P09 narration scene. Six full-film Alexander PCM comparisons scored .99937\u2013.99997 at zero offset. Four Short comparisons scored .99922\u2013.99995 at zero offset. The film uses one Alexander source and no music. Manual auditory listening is unclaimed.",
+    "exact_short": "Reviewed 12 exact decoded portrait samples. The stent and balloon stay visible as the balloon opens the mesh, deflates and withdraws. English captions are separated below the clinical artwork and the final line finishes before the cut.",
+    "exact_thumbnail": "Reviewed the 1280 by 720 thumbnail at 390 pixels. The brand, title and fully expanded stent around the delivery balloon are all visible.",
+    "modesty": "All anatomy and patients are original simplified illustrations. Figures in recovery are covered. Access examples show the tool or a small draped site. No real patient imagery, music or second voice track was used.",
+    "motion": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 10.966666,
+      "percent": 3.594,
+      "longest_seconds": 2.7,
+      "intervals": [
+        {
+          "start_seconds": 33.0,
+          "end_seconds": 35.0,
+          "terminal": false
+        },
+        {
+          "start_seconds": 41.133333,
+          "end_seconds": 43.833333,
+          "terminal": false
+        },
+        {
+          "start_seconds": 70.4,
+          "end_seconds": 72.4,
+          "terminal": false
+        },
+        {
+          "start_seconds": 156.6,
+          "end_seconds": 158.6,
+          "terminal": false
+        },
+        {
+          "start_seconds": 190.966667,
+          "end_seconds": 193.233333,
+          "terminal": false
+        }
+      ]
+    },
+    "caption_and_master_voice": {
+      "embedded_cues": 69,
+      "embedded_timing_difference_ms": 0,
+      "samples": [
+        {
+          "source_sec": 2.0,
+          "output_sec": 2,
+          "offset_sec": 0.0,
+          "correlation": 0.99987
+        },
+        {
+          "source_sec": 39.00000000000001,
+          "output_sec": 39,
+          "offset_sec": 0.0,
+          "correlation": 0.99991
+        },
+        {
+          "source_sec": 80.0,
+          "output_sec": 80,
+          "offset_sec": 0.0,
+          "correlation": 0.99997
+        },
+        {
+          "source_sec": 158.00000000000003,
+          "output_sec": 158,
+          "offset_sec": 0.0,
+          "correlation": 0.99977
+        },
+        {
+          "source_sec": 221.99999999999997,
+          "output_sec": 222,
+          "offset_sec": 0.0,
+          "correlation": 0.99937
+        },
+        {
+          "source_sec": 264.0,
+          "output_sec": 264,
+          "offset_sec": 0.0,
+          "correlation": 0.99995
+        }
+      ]
+    },
+    "short_voice": [
+      {
+        "source_sec": 151.25,
+        "output_sec": 0.65,
+        "offset_sec": 0.0,
+        "correlation": 0.99922
+      },
+      {
+        "source_sec": 155.5,
+        "output_sec": 4.9,
+        "offset_sec": 0.0,
+        "correlation": 0.99946
+      },
+      {
+        "source_sec": 159.6,
+        "output_sec": 9.0,
+        "offset_sec": 0.0,
+        "correlation": 0.99993
+      },
+      {
+        "source_sec": 164.79999999999998,
+        "output_sec": 14.2,
+        "offset_sec": 0.0,
+        "correlation": 0.99995
+      }
+    ]
+  }
+}
