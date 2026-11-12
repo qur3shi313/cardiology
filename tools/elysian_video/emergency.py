@@ -9,13 +9,12 @@ from . import access, angiogram, coating, pci, pressure, restenosis, stent as ar
 from .__main__ import ROOT, SERIES, FPS
 from .encode import encode_scene
 
-def stopped_flow(c,p,t):
-    """One left-artery simulation with contrast halted in the culprit branch."""
+def culprit_contrast(c,p,*,restored=False):
+    """Show the same projection and branch before treatment and on the final check."""
     c.drawImageRect(angiogram.radiograph_plate(),skia.Rect.MakeWH(1280,720),
                     skia.SamplingOptions(skia.FilterMode.kNearest))
     branches,total=angiogram.tree('left')
-    run=min(int(p*2),1)
-    phase=p*2-run
+    phase=p if restored else p*2-min(int(p*2),1)
     head=total*access.smooth(phase/.62)
     opacity=round(255-102*access.smooth((phase-.64)/.36))
     culprit=branches[1]
@@ -26,11 +25,11 @@ def stopped_flow(c,p,t):
         return (222+3.48*u,101+1.88*v)
     for i,(pts,lengths,entry,thick) in enumerate(branches):
         remaining=head-entry
-        if i in (4,5,6) and entry>=cutoff:
+        if not restored and i in (4,5,6) and entry>=cutoff:
             continue
         if remaining<=0: continue
         end=sum(d<=remaining for d in lengths)
-        if i==1: end=min(end,cut_index+1)
+        if not restored and i==1: end=min(end,cut_index+1)
         coordinates=list(map(xy,pts[:end]))
         access.line(c,coordinates,'#566461',thick*2+4,opacity)
         access.line(c,coordinates,'#192522',thick*2.06,opacity)
@@ -38,8 +37,10 @@ def stopped_flow(c,p,t):
     if p>.41:
         c.drawCircle(x,y,12,access.solid('#f8d18f',187))
         access.line(c,[(x,y),(x+125,y-84),(x+260,y-84)],'#fff0c6',3)
-        access.text(c,'Contrast stops here',x+132,y-101,30,'#fff4d3')
-    angiogram.header(c,'Finding the blockage','SIMULATED X-RAY',True)
+        label = 'Contrast passes this point' if restored else 'Contrast stops here'
+        access.text(c,label,x+132,y-101,30,'#fff4d3')
+    title = 'Checking flow after treatment' if restored else 'Finding the blockage'
+    angiogram.header(c,title,'SIMULATED X-RAY',True)
 
 def bypass(c,p,t):
     access.rect(c,0,0,1280,720,access.solid('#e5eee7'))
@@ -97,12 +98,20 @@ def emergency(c,ident,p,t):
            ('Promptly restore blood flow',('For STEMI, opening the artery is urgent',),'vessel'),
            ('Treatment depends on the situation',('The emergency team chooses the path',),'list')),p,t)
     elif ident=='P05':
-        stopped_flow(c,p,t)
+        culprit_contrast(c,p)
     elif ident=='P06':
-        if p<.29: pci.draw(c,'P05',p/.29,t)
-        elif p<.53: pci.draw(c,'P08',(p-.29)/.24,t)
-        elif p<.82: pci.draw(c,'P09',(p-.53)/.29,t)
-        else: angiogram.imaging(c,'P25',(p-.82)/.18,t,0)
+        if p < .20:
+            pci.draw(c,'P05',p/.20,t)
+        elif p < .34:
+            pci.draw(c,'P06',(p-.20)/.14,t)
+        elif p < .46:
+            pci.draw(c,'P07',(p-.34)/.12,t)
+        elif p < .63:
+            pci.draw(c,'P08',(p-.46)/.17,t)
+        elif p < .82:
+            pci.draw(c,'P09',(p-.63)/.19,t)
+        else:
+            culprit_contrast(c,(p-.82)/.18,restored=True)
     elif ident=='P07':
         triple(c,'Recovery and prevention',(
            ('Monitoring after treatment',('Ask what the tests showed',),'pulse'),

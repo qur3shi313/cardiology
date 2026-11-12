@@ -26,7 +26,8 @@
       "master_preflight_passed": true,
       "companion_package_qa_pending": false,
       "master_revision": "revisions/episode-01-coverage/episode-01",
-      "superseded_private_draft_url": "https://youtu.be/VOc6jer-Vvc"
+      "superseded_private_draft_url": "https://youtu.be/VOc6jer-Vvc",
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-01"
     },
     {
       "topic": 2,
