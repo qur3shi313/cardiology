@@ -1,0 +1,118 @@
+{
+  "technical": {
+    "master_sha256": "9d8f47e39e4546feedea6274e9b39cc1beae2e5d4d8d7954d405437d06654cc3",
+    "frames": 9153,
+    "video_full_decode": true,
+    "audio_full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 10.966666,
+      "percent": 3.594,
+      "longest_seconds": 2.7,
+      "intervals": [
+        {
+          "start_seconds": 33.0,
+          "end_seconds": 35.0,
+          "terminal": false
+        },
+        {
+          "start_seconds": 41.133333,
+          "end_seconds": 43.833333,
+          "terminal": false
+        },
+        {
+          "start_seconds": 70.4,
+          "end_seconds": 72.4,
+          "terminal": false
+        },
+        {
+          "start_seconds": 156.6,
+          "end_seconds": 158.6,
+          "terminal": false
+        },
+        {
+          "start_seconds": 190.966667,
+          "end_seconds": 193.233333,
+          "terminal": false
+        }
+      ]
+    },
+    "audio": {
+      "full_decode": true,
+      "integrated_lufs": -14.02,
+      "true_peak_dbtp": -1.45,
+      "raw_loudnorm": {
+        "input_i": "-14.02",
+        "input_tp": "-1.45",
+        "input_lra": "3.00",
+        "input_thresh": "-24.34",
+        "output_i": "-14.05",
+        "output_tp": "-1.39",
+        "output_lra": "2.90",
+        "output_thresh": "-24.36",
+        "normalization_type": "dynamic",
+        "target_offset": "0.05"
+      }
+    },
+    "at_pkt": "2026-11-12T08:35:53+05:00"
+  },
+  "voice_and_captions": {
+    "master_sha256": "9d8f47e39e4546feedea6274e9b39cc1beae2e5d4d8d7954d405437d06654cc3",
+    "master_bytes": 215070576,
+    "frames": 9153,
+    "fps": 30,
+    "master_voice_alignment": [
+      {
+        "source_sec": 2.0,
+        "output_sec": 2,
+        "offset_sec": 0.0,
+        "correlation": 0.99987
+      },
+      {
+        "source_sec": 39.00000000000001,
+        "output_sec": 39,
+        "offset_sec": 0.0,
+        "correlation": 0.99991
+      },
+      {
+        "source_sec": 80.0,
+        "output_sec": 80,
+        "offset_sec": 0.0,
+        "correlation": 0.99997
+      },
+      {
+        "source_sec": 158.00000000000003,
+        "output_sec": 158,
+        "offset_sec": 0.0,
+        "correlation": 0.99977
+      },
+      {
+        "source_sec": 221.99999999999997,
+        "output_sec": 222,
+        "offset_sec": 0.0,
+        "correlation": 0.99937
+      },
+      {
+        "source_sec": 264.0,
+        "output_sec": 264,
+        "offset_sec": 0.0,
+        "correlation": 0.99995
+      }
+    ],
+    "narration_sha256": "7acb1ebe69265455b329f5219c3eb6937f679dc37bf1b0dab7933b99e6d46078",
+    "voice_match_pass": true,
+    "timed_caption_check": {
+      "file": "captions.en.srt",
+      "cue_count": 69,
+      "errors": []
+    },
+    "captured_pkt": "2026-11-12T08:33:14+05:00"
+  },
+  "studio": {
+    "publish_at": "2026-11-17T18:00:00+05:00",
+    "video_id": "WdlALjzPXzM",
+    "checks": "complete_no_issues",
+    "visual_review": "All authored scenes reviewed at phone size, including the revised wrist and emergency aftercare."
+  }
+}
