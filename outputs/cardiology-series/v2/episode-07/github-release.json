@@ -1,0 +1,48 @@
+{
+  "tag": "cardiology-v2-episode-07",
+  "release_url": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-07",
+  "assets": [
+    {
+      "name": "captions.en.srt",
+      "size": 3728,
+      "digest": "sha256:0f055344c906dd78296ea98e01f5a936d8915b8da82d30878bde1d7c4059786d",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-07/captions.en.srt"
+    },
+    {
+      "name": "chapters.txt",
+      "size": 253,
+      "digest": "sha256:3d0618c31aa706ed3093e0550a7d8e26d2fb6e2bfc1248682de9af646e6d369d",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-07/chapters.txt"
+    },
+    {
+      "name": "episode-07-1080p.mp4",
+      "size": 84438739,
+      "digest": "sha256:b26839f49bcd0cbde46e4e56aace49d3a3b3c4a3424d0d7abcf4b8c19f1895af",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-07/episode-07-1080p.mp4"
+    },
+    {
+      "name": "episode-07-1440p.mp4",
+      "size": 127673773,
+      "digest": "sha256:8e170f8abee3b46a5ee3c056da09c88a003a6bfa1a5b4f1a53d717bb17e3b5a9",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-07/episode-07-1440p.mp4"
+    },
+    {
+      "name": "episode-07-short.mp4",
+      "size": 3414429,
+      "digest": "sha256:9a1c2e40b6877b76059eca783e0d24959f3b832850eadda86e74e8e6b7a69aa3",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-07/episode-07-short.mp4"
+    },
+    {
+      "name": "episode-07-thumbnail.jpg",
+      "size": 229272,
+      "digest": "sha256:09e3566e871f3bc3c76a840eefb221e52fc967aa4ce771b433faf84ce20af31b",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-07/episode-07-thumbnail.jpg"
+    },
+    {
+      "name": "QA.json",
+      "size": 8788,
+      "digest": "sha256:3e8dc96b8ecd14511f97d8923deadda55ddea00e11553e969e0b8a3ae6d779a4",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-07/QA.json"
+    }
+  ]
+}

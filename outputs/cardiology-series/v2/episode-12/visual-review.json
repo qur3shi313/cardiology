@@ -1,0 +1,39 @@
+{
+  "master_sha256": "9369b95309f119264f089e6861efd0fd197a5fcb93783e23cefcdc8bd14d23e3",
+  "short_sha256": "e4b576bf30af7ac0577137a4764005d3cae78a0a6a0b303d9fab259a5d65bba5",
+  "thumbnail_sha256": "0f1e5fedf4e422f0ca3904865c92e8953e0baa42b810c63a7424effbd20dc8ab",
+  "verified_at": "2026-11-12T09:34:55.544803+05:00",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "intentional_holds": [
+    {
+      "start_seconds": 145.76666666666668,
+      "end_seconds": 153.76666666666668,
+      "reason": "Eight seconds reserved to read the clinical sources, production disclosure and next episode."
+    }
+  ],
+  "method": "Codex review of exact decoded frames, narration alignment and caption data, plus primary clinical sources. Manual listening and independent human clinical review are unverified.",
+  "notes": {
+    "long": [
+      "P01 and P02 contrast-filled left coronary views lead into the original, explicitly illustrated vessel cross-section. The angiogram shows branching paths and the cross-section makes the open channel and wall distinct.",
+      "P03 shows IVUS echoes and then adds focal calcium and its acoustic shadow. The central sensor, echo rings and darkened tissue are readable.",
+      "P04 shows opaque moving blood within the lumen, a progressive clear field during the spoken clearing explanation, and the light sweep revealing individual stent struts afterward. Exact corrected P04 contributes 729 native picture packets.",
+      "P05 uses a scan plane moving along the diseased segment. P06 compares adjacent and narrower portions of one stent, with labels corresponding to the geometric change and spoken explanation.",
+      "P07 uses two explicitly schematic paired views: moving contrast defines the arterial path on the left, and a rotating scan compares adjacent and narrower stent sections on the right. The decision stays contextual. Exact corrected P07 contributes 674 native picture packets.",
+      "P08 is a purposeful eight-second closing card for clinical sources, original animation and synthetic English narration disclosure, and the next topic. It is readable and contains no diagnosis or device promotion."
+    ],
+    "short": [
+      "Exact 22.1-second portrait file uses the IVUS scene and is byte-identical to the reviewed version. Twelve decoded portrait samples cover the ultrasound waves, focal calcium and its darker acoustic shadow.",
+      "English captions are below and separate from the illustration, with the final two-word cue ending 0.399 seconds before the video ends. Four waveform windows match the long at zero offset, with correlations 0.999962 or higher.",
+      "The fixed portrait title and padding make the whole-canvas freeze metric conservative. The decoded moving image band has zero freezes of two seconds or more."
+    ],
+    "thumbnail": "The clean 132.7-second frame preserves both schematic imaging panels and both labels without clipped lettering."
+  }
+}

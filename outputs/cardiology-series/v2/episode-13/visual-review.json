@@ -1,0 +1,34 @@
+{
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "master_sha256": "b5aa6d878d53f795016bd1f5270655a523465c6c2f45fb2ba97eb7c46ea493b0",
+  "short_sha256": "7f693ce970795feaf69abe785e8236348934065721fd883e2d42a01e2fd588ee",
+  "thumbnail_sha256": "09561c4defd69b50de0985b9b82aeda726a745565384580403733620c8c6e037",
+  "verified_at": "2026-11-12T10:12:59.553101+05:00",
+  "intentional_holds": [
+    {
+      "start_seconds": 135.76666666666668,
+      "end_seconds": 143.76666666666668,
+      "reason": "The eight-second end card is held for readable clinical sources, production disclosure and next topic."
+    }
+  ],
+  "method": "Codex inspection of exact decoded pictures, waveform alignment and caption text against primary clinical sources. Manual listening and independent clinical review are unverified.",
+  "notes": {
+    "long_visuals": "Initial exact decoded samples reviewed every scene, and 22 final decoded samples verified the three replacement scenes. All 4,313 coded pictures match the selected native sources. The visible delivery balloon opens the conventional stent; P01 shows the stiff calcified waist remaining after balloon deflation and shaft withdrawal. P03 explicitly cuts back to the pre-stent narrowing. P07 shows post-preparation balloon-supported opening, then deflation, catheter withdrawal, simulated angiographic flow and an illustrated cross-section. The guidewire stays in the lumen while the balloon withdraws.",
+    "unchanged_visuals": "The inside scan shows focal calcific shadow, the specialised balloon has a visible scoring element, lithotripsy uses symbolic pulses and fine cracks, and the rotating atherectomy element travels along its wire and reaches the calcific surface. The three methods are separate examples. All art is original and schematic, without patient footage, manufacturer promotion or procedure settings.",
+    "narration_and_captions": "The final 33 English cues contain all 313 locked spoken words, with matching embedded and sidecar text. All 6,741 AAC and 65 caption packets are unchanged from the independently aligned narration baseline. The source is the single English Alexander narration. No music appears in the timeline.",
+    "thumbnail": "The exact 1280 by 720 JPEG uses the corrected master's 13.7-second frame and clearly shows the underexpanded waist beside focal calcium, with no clipped lettering.",
+    "vertical_short": "Exact 617-frame, 20.566667-second portrait excerpt from unchanged P05 shows the balloon, symbolic pressure waves and subsequent cracks. Twelve decoded phone-size samples confirm legible English captions separated from the picture. Four zero-offset waveform windows correlate 0.988 or better, and the moving image band has no holds of two seconds or more.",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11307856/",
+      "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009"
+    ]
+  }
+}

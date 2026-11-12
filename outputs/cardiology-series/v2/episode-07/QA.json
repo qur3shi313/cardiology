@@ -1,0 +1,275 @@
+{
+  "input": "episode-07-1440p.mp4",
+  "sha256": "8e170f8abee3b46a5ee3c056da09c88a003a6bfa1a5b4f1a53d717bb17e3b5a9",
+  "validation_inputs": {
+    "timeline_sha256": "29a8969c9bb97abdfb130a3fa88a3de3d5174434dd74de0a3a1397605a33f003",
+    "caption_file": "captions.en.srt",
+    "caption_sha256": "0f055344c906dd78296ea98e01f5a936d8915b8da82d30878bde1d7c4059786d"
+  },
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 162.466667,
+  "video_frames": 4874,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 2.0,
+    "percent": 1.231,
+    "longest_seconds": 2.0,
+    "intervals": [
+      {
+        "start_seconds": 97.1,
+        "end_seconds": 99.1,
+        "terminal": false
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P06",
+        "title": "Checking the result",
+        "frozen_seconds": 2.0,
+        "scene_seconds": 19.267
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.0,
+    "true_peak_dbtp": -1.41,
+    "raw_loudnorm": {
+      "input_i": "-14.00",
+      "input_tp": "-1.41",
+      "input_lra": "2.90",
+      "input_thresh": "-24.35",
+      "output_i": "-13.93",
+      "output_tp": "-1.00",
+      "output_lra": "2.80",
+      "output_thresh": "-24.28",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.07"
+    }
+  },
+  "expected_duration_seconds": 162.46666666666667,
+  "audio_sources": [
+    "outputs/cardiology-series/v2/episode-07/audio/alexander-episode-07.mp3"
+  ],
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 39,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-07-1080p.mp4",
+      "sha256": "b26839f49bcd0cbde46e4e56aace49d3a3b3c4a3424d0d7abcf4b8c19f1895af",
+      "duration_seconds": 162.5,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-07-short.mp4",
+      "sha256": "9a1c2e40b6877b76059eca783e0d24959f3b832850eadda86e74e8e6b7a69aa3",
+      "duration_seconds": 13.93,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.22,
+        "true_peak_dbtp": -1.47,
+        "raw_loudnorm": {
+          "input_i": "-14.22",
+          "input_tp": "-1.47",
+          "input_lra": "1.60",
+          "input_thresh": "-24.66",
+          "output_i": "-14.12",
+          "output_tp": "-1.29",
+          "output_lra": "2.20",
+          "output_thresh": "-24.56",
+          "normalization_type": "dynamic",
+          "target_offset": "0.12"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-07-thumbnail.jpg",
+      "sha256": "09e3566e871f3bc3c76a840eefb221e52fc967aa4ce771b433faf84ce20af31b",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "contact_sheet": {
+    "file": "episode-07-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160
+    ]
+  },
+  "mechanical_errors": [],
+  "human_visual_review": {
+    "master_sha256": "8e170f8abee3b46a5ee3c056da09c88a003a6bfa1a5b4f1a53d717bb17e3b5a9",
+    "short_sha256": "9a1c2e40b6877b76059eca783e0d24959f3b832850eadda86e74e8e6b7a69aa3",
+    "thumbnail_sha256": "09e3566e871f3bc3c76a840eefb221e52fc967aa4ce771b433faf84ce20af31b",
+    "verified_at": "2026-11-12T09:45:17+05:00",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "intentional_holds": [],
+    "review_evidence": {
+      "exact_master": "Reviewed 33 exact decoded five-second samples at 390 pixels and 11 targeted samples around balloon exit, stent delivery and drug-coated balloon contact/withdrawal. All nine active source clips were also decoded and reviewed. The main artery cutaway spans the clinical field, with separate device outlines and readable title/callout labels.",
+      "clinical": "The opening shows the seated mesh staying behind after balloon withdrawal. The later sequence separates folded balloon and mounted mesh advancing together over a guidewire, centered inflation, deflation and withdrawal. Local coating release is shown near the wall. The balloon-only demonstration separately shows surface transfer and withdrawal without new metal. Simulated contrast, selected intravascular imaging and antiplatelet follow-up are separate educational views.",
+      "captions_and_voice": "All 39 embedded English cues match the locked SRT text and timing. Six full-film Alexander waveform comparisons scored .99976\u2013.99999 at zero offset. Four Short comparisons scored .99798\u2013.99950 at zero offset. Only the locked Alexander voice is used. Manual auditory listening is unclaimed.",
+      "exact_short": "Reviewed 12 exact decoded portrait samples. The folded balloon visibly exits and the seated stent stays on screen. Burned English captions are below the anatomy. The cut begins at zero and contains the complete 13.933-second P01 narration.",
+      "exact_thumbnail": "Reviewed the canonical 1280 by 720 thumbnail at 390 pixels. The exact image matches the isolated Studio thumbnail and shows the seated mesh, authentic logo and two-line title.",
+      "modesty": "The animation uses original anatomical cutaways and a covered, non-identifiable care illustration. No actual patient imagery, music or additional voice track was used.",
+      "motion": {
+        "noise": 0.001,
+        "min_duration_seconds": 2,
+        "total_seconds": 2.0,
+        "percent": 1.231,
+        "longest_seconds": 2.0,
+        "intervals": [
+          {
+            "start_seconds": 97.1,
+            "end_seconds": 99.1,
+            "terminal": false
+          }
+        ]
+      },
+      "caption_and_master_voice": {
+        "embedded_cues": 39,
+        "embedded_timing_difference_ms": 0,
+        "samples": [
+          {
+            "source_sec": 1.0,
+            "output_sec": 1,
+            "offset_sec": 0.0,
+            "correlation": 0.99976
+          },
+          {
+            "source_sec": 20.000000000000004,
+            "output_sec": 20,
+            "offset_sec": 0.0,
+            "correlation": 0.99997
+          },
+          {
+            "source_sec": 42.99999999999999,
+            "output_sec": 43,
+            "offset_sec": 0.0,
+            "correlation": 0.99982
+          },
+          {
+            "source_sec": 76.99999999999999,
+            "output_sec": 77,
+            "offset_sec": 0.0,
+            "correlation": 0.99998
+          },
+          {
+            "source_sec": 102.0,
+            "output_sec": 102,
+            "offset_sec": 0.0,
+            "correlation": 0.99999
+          },
+          {
+            "source_sec": 138.0,
+            "output_sec": 138,
+            "offset_sec": 0.0,
+            "correlation": 0.99998
+          }
+        ]
+      },
+      "short_voice": [
+        {
+          "source_sec": 0.65,
+          "output_sec": 0.65,
+          "offset_sec": 0.0,
+          "correlation": 0.99798
+        },
+        {
+          "source_sec": 4.9,
+          "output_sec": 4.9,
+          "offset_sec": 0.0,
+          "correlation": 0.9995
+        },
+        {
+          "source_sec": 9.0,
+          "output_sec": 9.0,
+          "offset_sec": 0.0,
+          "correlation": 0.99835
+        },
+        {
+          "source_sec": 10.883333333333333,
+          "output_sec": 10.883333333333333,
+          "offset_sec": 0.0,
+          "correlation": 0.99911
+        }
+      ]
+    }
+  },
+  "halal_review": "pass",
+  "errors": [],
+  "status": "pass"
+}

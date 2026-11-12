@@ -17,6 +17,32 @@ TEXT={
  'P07':('Checking the treated section','The team checks expansion and downstream flow'),
 }
 
+
+def balloon_expanded_stent(c, ident, p, x0, after):
+    # P03 rewinds to pre-treatment anatomy before the delivery system leaves.
+    rewind = ident == 'P03'
+    progress = p / .45 if rewind else p
+    opening = access.smooth(progress / (.68 if rewind else .45))
+    deflation = 0 if rewind else access.smooth((progress-.52)/.17)
+    withdrawal = 0 if rewind else access.smooth((progress-.70)/.28)
+
+    def mesh_radius(at):
+        waist = 0 if after else 65*exp(-abs((at-x0)/100)**2.6)
+        return 16 + opening*(art.OPEN_RADIUS-16-waist)
+
+    def balloon_radius(at):
+        # The balloon opens just inside the mesh. Collapsing it leaves the
+        # expanded mesh at the treated section while the shaft withdraws.
+        return 12 + (mesh_radius(at)-14)*(1-deflation)
+
+    art.stent(c, x0, mesh_radius, False)
+    art.wire(c, 1126)
+    if withdrawal < .999:
+        delivery_x = x0-(x0+art.BALLOON_HALF-art.X0+22)*withdrawal
+        art.balloon(c, delivery_x, balloon_radius)
+    art.stent(c, x0, mesh_radius, True)
+
+
 def calcified(c,ident,p,t):
     access.rect(c,0,0,1280,720,access.solid('#e8f1e9'))
     after=ident=='P07'
@@ -32,13 +58,7 @@ def calcified(c,ident,p,t):
         low=[(x,art.center(x)-113+61*exp(-abs((x-x0)/111)**2.7)) for x in xs]
         c.drawPath(art.enclosed(high,low),art.gradient(505,245,775,339,['#f0d8a7','#a0805c']))
     if ident in ('P01','P07') or (ident == 'P03' and p < .45):
-        opened=access.smooth(p/.45)
-        rad=(art.OPEN_RADIUS if after and opened>=.999 else
-             lambda x:16+opened*(art.OPEN_RADIUS-16-(65*exp(-abs((x-x0)/100)**2.6) if not after else 0)))
-        art.stent(c,x0,rad,False)
-        if p<.62:
-            art.wire(c,1126)
-        art.stent(c,x0,rad,True)
+        balloon_expanded_stent(c, ident, p, x0, after)
     elif ident in ('P03','P04','P05'):
         progress = (p - .45) / .55 if ident == 'P03' else p
         r=13+70*access.smooth((progress-.12)/.52)

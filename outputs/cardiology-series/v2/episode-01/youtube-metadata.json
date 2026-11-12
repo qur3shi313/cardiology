@@ -16,5 +16,18 @@
   "planned_release": "2026-11-12T18:00:00+05:00",
   "timezone": "Asia/Karachi",
   "studio_release_verified": false,
-  "watch_url": null
+  "watch_url": null,
+  "short": {
+    "title": "How contrast reveals the coronary arteries",
+    "status": "scheduled",
+    "studio_verified": true,
+    "video_id": "AMk2HTLXs80",
+    "watch_url": "https://www.youtube.com/shorts/AMk2HTLXs80",
+    "target": "2026-11-12T18:15:00+05:00",
+    "timezone": "Asia/Karachi",
+    "sha256": "086010f5707791668565de4e708283263bf78bb72a70c95009d7b6beadb0538e",
+    "duration_seconds": 23.77,
+    "captions": "English burned into picture",
+    "studio_checks": "complete_no_issues"
+  }
 }

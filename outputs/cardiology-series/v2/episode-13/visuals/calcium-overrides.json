@@ -1,0 +1,58 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/episode-13/visuals/P01-balloon-delivery.mp4",
+    "in_sec": 0,
+    "out_sec": 14.4,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P02": {
+    "path": "outputs/cardiology-series/v2/episode-13/visuals/P02-calcium-film.mp4",
+    "in_sec": 0,
+    "out_sec": 21.433333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P03": {
+    "path": "outputs/cardiology-series/v2/episode-13/visuals/P03-balloon-delivery.mp4",
+    "in_sec": 0,
+    "out_sec": 20.466666666666665,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P04": {
+    "path": "outputs/cardiology-series/v2/episode-13/visuals/P04-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 20.166666666666668,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P05": {
+    "path": "outputs/cardiology-series/v2/episode-13/visuals/P05-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 20.566666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P06": {
+    "path": "outputs/cardiology-series/v2/episode-13/visuals/P06-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 18.766666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P07": {
+    "path": "outputs/cardiology-series/v2/episode-13/visuals/P07-balloon-delivery.mp4",
+    "in_sec": 0,
+    "out_sec": 19.966666666666665,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P08": {
+    "path": "outputs/cardiology-series/v2/episode-13/visuals/P08-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 8.0,
+    "reference_only": false,
+    "native_composition": true
+  }
+}

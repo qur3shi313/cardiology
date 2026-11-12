@@ -1,0 +1,106 @@
+{
+  "master_sha256": "8e170f8abee3b46a5ee3c056da09c88a003a6bfa1a5b4f1a53d717bb17e3b5a9",
+  "short_sha256": "9a1c2e40b6877b76059eca783e0d24959f3b832850eadda86e74e8e6b7a69aa3",
+  "thumbnail_sha256": "09e3566e871f3bc3c76a840eefb221e52fc967aa4ce771b433faf84ce20af31b",
+  "verified_at": "2026-11-12T09:45:17+05:00",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "intentional_holds": [],
+  "review_evidence": {
+    "exact_master": "Reviewed 33 exact decoded five-second samples at 390 pixels and 11 targeted samples around balloon exit, stent delivery and drug-coated balloon contact/withdrawal. All nine active source clips were also decoded and reviewed. The main artery cutaway spans the clinical field, with separate device outlines and readable title/callout labels.",
+    "clinical": "The opening shows the seated mesh staying behind after balloon withdrawal. The later sequence separates folded balloon and mounted mesh advancing together over a guidewire, centered inflation, deflation and withdrawal. Local coating release is shown near the wall. The balloon-only demonstration separately shows surface transfer and withdrawal without new metal. Simulated contrast, selected intravascular imaging and antiplatelet follow-up are separate educational views.",
+    "captions_and_voice": "All 39 embedded English cues match the locked SRT text and timing. Six full-film Alexander waveform comparisons scored .99976\u2013.99999 at zero offset. Four Short comparisons scored .99798\u2013.99950 at zero offset. Only the locked Alexander voice is used. Manual auditory listening is unclaimed.",
+    "exact_short": "Reviewed 12 exact decoded portrait samples. The folded balloon visibly exits and the seated stent stays on screen. Burned English captions are below the anatomy. The cut begins at zero and contains the complete 13.933-second P01 narration.",
+    "exact_thumbnail": "Reviewed the canonical 1280 by 720 thumbnail at 390 pixels. The exact image matches the isolated Studio thumbnail and shows the seated mesh, authentic logo and two-line title.",
+    "modesty": "The animation uses original anatomical cutaways and a covered, non-identifiable care illustration. No actual patient imagery, music or additional voice track was used.",
+    "motion": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 2.0,
+      "percent": 1.231,
+      "longest_seconds": 2.0,
+      "intervals": [
+        {
+          "start_seconds": 97.1,
+          "end_seconds": 99.1,
+          "terminal": false
+        }
+      ]
+    },
+    "caption_and_master_voice": {
+      "embedded_cues": 39,
+      "embedded_timing_difference_ms": 0,
+      "samples": [
+        {
+          "source_sec": 1.0,
+          "output_sec": 1,
+          "offset_sec": 0.0,
+          "correlation": 0.99976
+        },
+        {
+          "source_sec": 20.000000000000004,
+          "output_sec": 20,
+          "offset_sec": 0.0,
+          "correlation": 0.99997
+        },
+        {
+          "source_sec": 42.99999999999999,
+          "output_sec": 43,
+          "offset_sec": 0.0,
+          "correlation": 0.99982
+        },
+        {
+          "source_sec": 76.99999999999999,
+          "output_sec": 77,
+          "offset_sec": 0.0,
+          "correlation": 0.99998
+        },
+        {
+          "source_sec": 102.0,
+          "output_sec": 102,
+          "offset_sec": 0.0,
+          "correlation": 0.99999
+        },
+        {
+          "source_sec": 138.0,
+          "output_sec": 138,
+          "offset_sec": 0.0,
+          "correlation": 0.99998
+        }
+      ]
+    },
+    "short_voice": [
+      {
+        "source_sec": 0.65,
+        "output_sec": 0.65,
+        "offset_sec": 0.0,
+        "correlation": 0.99798
+      },
+      {
+        "source_sec": 4.9,
+        "output_sec": 4.9,
+        "offset_sec": 0.0,
+        "correlation": 0.9995
+      },
+      {
+        "source_sec": 9.0,
+        "output_sec": 9.0,
+        "offset_sec": 0.0,
+        "correlation": 0.99835
+      },
+      {
+        "source_sec": 10.883333333333333,
+        "output_sec": 10.883333333333333,
+        "offset_sec": 0.0,
+        "correlation": 0.99911
+      }
+    ]
+  }
+}

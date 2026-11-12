@@ -13,5 +13,18 @@
   "studio_release_verified": true,
   "watch_url": "https://youtu.be/B5isQ7DbyPQ",
   "scheduled_at": "2026-11-13T18:00:00+05:00",
-  "studio_checks": "complete_no_issues"
+  "studio_checks": "complete_no_issues",
+  "short": {
+    "title": "Why a cardiology team may choose groin access",
+    "status": "scheduled",
+    "studio_verified": true,
+    "video_id": "xMYurCWVfJU",
+    "watch_url": "https://www.youtube.com/shorts/xMYurCWVfJU",
+    "target": "2026-11-13T18:15:00+05:00",
+    "timezone": "Asia/Karachi",
+    "sha256": "df7f4a6fa358ec47c37a5a7639cb2a6197ef425d3f65c1fe5d15229cf5ecc3b6",
+    "duration_seconds": 34.1,
+    "captions": "English burned into picture",
+    "studio_checks": "complete_no_issues"
+  }
 }

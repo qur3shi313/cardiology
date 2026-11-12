@@ -10,6 +10,29 @@
   "language": "en",
   "planned_release": "2026-11-18T18:00:00+05:00",
   "timezone": "Asia/Karachi",
-  "studio_release_verified": false,
-  "watch_url": null
+  "studio_release_verified": true,
+  "watch_url": "https://youtu.be/IsdSmVoqmrA",
+  "video_id": "IsdSmVoqmrA",
+  "master_sha256": "8e170f8abee3b46a5ee3c056da09c88a003a6bfa1a5b4f1a53d717bb17e3b5a9",
+  "studio_checks": "complete_no_issues",
+  "studio_subtitles": "English published",
+  "studio_subtitles_sha256": "0f055344c906dd78296ea98e01f5a936d8915b8da82d30878bde1d7c4059786d",
+  "studio_thumbnail_sha256": "09e3566e871f3bc3c76a840eefb221e52fc967aa4ce771b433faf84ce20af31b",
+  "studio_schedule_confirmation": {
+    "publish_at": "2026-11-18T18:00:00+05:00",
+    "timezone": "Asia/Karachi"
+  },
+  "short": {
+    "title": "What stays in the artery? | Drug-eluting stents",
+    "status": "scheduled",
+    "studio_verified": true,
+    "video_id": "h_p9or083RA",
+    "watch_url": "https://www.youtube.com/shorts/h_p9or083RA",
+    "target": "2026-11-18T18:15:00+05:00",
+    "timezone": "Asia/Karachi",
+    "sha256": "9a1c2e40b6877b76059eca783e0d24959f3b832850eadda86e74e8e6b7a69aa3",
+    "duration_seconds": 13.93,
+    "captions": "English burned into picture",
+    "studio_checks": "complete_no_issues"
+  }
 }
