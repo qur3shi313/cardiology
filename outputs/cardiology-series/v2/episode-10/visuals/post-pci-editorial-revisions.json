@@ -1,0 +1,98 @@
+{
+  "P03": {
+    "path": "P03-medicine-plan-checked-alternate.mp4",
+    "sha256": "74ed38ec0bb2c8b407ddfaa6b65cfc033f05fcc351e8c4e68042c3bdc91f5c5d",
+    "frames": 659,
+    "duration_seconds": 21.966666666666665,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P09": {
+    "path": "P09-closing-credits-alternate.mp4",
+    "sha256": "2df590e6bd2a3a3bc950229642b997d2e3861f1b4ce0d489b2530d6f490d3aa5",
+    "frames": 240,
+    "duration_seconds": 8.0,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 8.0,
+      "percent": 100.0,
+      "longest_seconds": 8.0,
+      "intervals": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 8.0,
+          "terminal": true
+        }
+      ]
+    }
+  },
+  "P04": {
+    "path": "P04-medicine-change-alternate.mp4",
+    "sha256": "d9f381b2a3eadd4a9fc6d0008e3d7808ca20c84c0a57a73977ef3809ecf90365",
+    "frames": 525,
+    "duration_seconds": 17.5,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P05": {
+    "path": "P05-home-recovery-alternate.mp4",
+    "sha256": "45c68bc505d39cc6045735d4488f0c3489eb839494e6659b86c1895963bdf997",
+    "frames": 705,
+    "duration_seconds": 23.5,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P07": {
+    "path": "P07-rehabilitation-alternate.mp4",
+    "sha256": "f908e339c4fe4b0cbb7a0f21fc373cc9aa5b40a8560e45b30550f650a1ecf646",
+    "frames": 645,
+    "duration_seconds": 21.5,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P08": {
+    "path": "P08-take-home-alternate.mp4",
+    "sha256": "88a555f16993f5631dd93deab9f2b7e4fd5a1300376aafe18eeaaf29b3b5a46f",
+    "frames": 534,
+    "duration_seconds": 17.8,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  }
+}
