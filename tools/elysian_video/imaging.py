@@ -26,10 +26,15 @@ def slice_view(c,p,t,mode,*,stent=False,waist=False,calcium=True):
             r=147 if not waist else 117+23*sin(a)
             x,y=cx+r*cos(a),cy+r*sin(a)
             c.drawRoundRect(skia.Rect.MakeXYWH(x-5,y-4,11,8),2,2,access.solid('#e7d9bf'))
+    if mode == 'OCT':
+        # The same struts are visible only while the imaging field is clear.
+        clearing = access.smooth((p - .23) / .23)
+        c.drawCircle(cx, cy, 167, access.solid('#673949', round(232 * (1 - clearing))))
     # Sensor direction is an illustration of the modality, not a scan setting.
     angiogram.dot(c,cx,cy,22,'#a5c5bb')
     angle=t*4
-    aperture=skia.Rect.MakeXYWH(cx-167,cy-167,334,334)
+    reach = 48 + 115 * clearing if mode == 'OCT' else 167
+    aperture = skia.Rect.MakeXYWH(cx - reach, cy - reach, 2 * reach, 2 * reach)
     sweep=skia.Path()
     sweep.moveTo(cx,cy)
     sweep.arcTo(aperture,angle*180/pi-58,58,False)
@@ -42,9 +47,10 @@ def slice_view(c,p,t,mode,*,stent=False,waist=False,calcium=True):
             pen.setStyle(skia.Paint.kStroke_Style); pen.setStrokeWidth(3)
             c.drawCircle(cx,cy,r,pen)
     elif mode=='OCT':
-        access.line(c,[(cx,cy),(cx+163*cos(angle),cy+163*sin(angle))],'#f2d39c',7)
-        x,y=cx+163*cos(angle),cy+163*sin(angle)
-        angiogram.dot(c,x,y,6,'#f7e2b9')
+        x, y = cx + reach * cos(angle), cy + reach * sin(angle)
+        access.line(c, [(cx, cy), (x, y)], '#f2d39c', 7)
+        if clearing > .9:
+            angiogram.dot(c,x,y,6,'#f7e2b9')
     angiogram.header(c,'A cross-section from inside the artery','ILLUSTRATED SCAN',True)
     access.text(c,{'IVUS':'IVUS: sound','OCT':'OCT: light','SCAN':'Conceptual slice'}[mode],
                 61,388,39,'#e8f6e7')
@@ -52,6 +58,8 @@ def slice_view(c,p,t,mode,*,stent=False,waist=False,calcium=True):
         access.text(c,'A section remains narrower than intended',56,668,29,'#c6e8d7')
     elif calcium and mode=='IVUS':
         access.text(c,'Dense calcium can obscure the tissue behind it',56,668,29,'#c6e8d7')
+    elif mode == 'OCT' and p < .56:
+        access.text(c,'Blood briefly clears from the imaging area',56,668,29,'#c6e8d7')
     elif stent:
         access.text(c,'The scan can show individual stent struts',56,668,29,'#c6e8d7')
     else:
@@ -83,7 +91,7 @@ def draw(c,ident,p,t):
         slice_view(c,p,t,'IVUS',calcium=p>.33)
         return
     if ident=='P04':
-        slice_view(c,p,t,'OCT',stent=p>.64,calcium=False)
+        slice_view(c,p,t,'OCT',stent=True,calcium=False)
         return
     if ident=='P05':
         sweep(c,p,t)

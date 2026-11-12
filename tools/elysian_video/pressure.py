@@ -8,11 +8,14 @@ from . import access, angiogram, restenosis, stent as art
 from .__main__ import ROOT, SERIES, FPS
 from .encode import encode_scene
 
-def trace(c,x,y,width,amp,t,shade,*,dashed=False,rest=False):
+TRACE_CYCLES = 3.2
+
+
+def trace(c,x,y,width,amp,t,shade,*,dashed=False):
     points=[]
     for i in range(96):
         f=i/95
-        cycle=(f*3.2+t*.47)%1
+        cycle=(f*TRACE_CYCLES+t*.47)%1
         value=.7*exp(-((cycle-.24)/.105)**2)+.24*exp(-((cycle-.43)/.20)**2)
         points.append((x+f*width,y-amp*value))
     if dashed:
@@ -20,10 +23,18 @@ def trace(c,x,y,width,amp,t,shade,*,dashed=False,rest=False):
             access.line(c,points[i:i+3],shade,3.8)
     else:
         access.line(c,points,shade,4.3)
-    if rest:
-        j=int(((.60+t*.07)%1)*88)
-        gx=points[j][0]
-        access.rect(c,gx,y-amp-18,19,amp+39,access.solid('#9cc9b4',83))
+
+
+def diastolic_bands(c, x, y, width, height, t):
+    """Highlight the same illustrative resting window for both pressure traces."""
+    phase = (t * .47) % 1
+    for beat in range(5):
+        # Schematic phases only: the declining portion of each pressure beat.
+        left = max(0, (beat + .62 - phase) / TRACE_CYCLES)
+        right = min(1, (beat + .94 - phase) / TRACE_CYCLES)
+        if left < right:
+            access.rect(c, x + left * width, y, (right - left) * width, height,
+                        access.solid('#9cc9b4', 82))
 
 def diagram(c,ident,p,t):
     access.rect(c,0,0,1280,720,access.solid('#e7f1e9'))
@@ -55,8 +66,10 @@ def diagram(c,ident,p,t):
     else:
         y=601
         angiogram.block(c,50,555,1171,133,24,access.solid('#153832'))
-        trace(c,670,y+27,489,34,t,'#b0e6cf',rest=ident=='P05')
-        trace(c,670,y+47,489,25,t+.012,'#deb98f',dashed=True)
+        if ident == 'P05':
+            diastolic_bands(c, 670, y - 14, 489, 68, t)
+        trace(c,670,y+27,489,34,t,'#b0e6cf')
+        trace(c,670,y+47,489,25,t,'#deb98f',dashed=True)
         access.text(c,'Conceptual pressure signals',70,y+14,29,'#d9ede2')
         title='FFR: increased-flow condition' if ident=='P04' else 'iFR: resting heartbeat window'
         detail='Illustrative signals, not clinical readings'
