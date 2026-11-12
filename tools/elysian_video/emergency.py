@@ -74,10 +74,10 @@ def bypass(c,p,t):
     angiogram.header(c,'Coronary bypass creates another route','MULTIVESSEL DISEASE')
     access.text(c,'Illustrated graft; the team chooses a plan for the patient',56,675,29,'#285f51')
 
-def triple(c,title,beats,p,t):
+def triple(c,title,beats,p,t,*,topic):
     index=min(len(beats)-1,int(p*len(beats)))
     heading,lines,icon=beats[index]
-    restenosis.card(c,title,heading,lines,icon,p*len(beats)-index,t)
+    restenosis.card(c,title,heading,lines,icon,p*len(beats)-index,t,topic=topic)
 
 
 def restore_culprit_flow(c, t):
@@ -146,15 +146,15 @@ def emergency(c,ident,p,t):
         triple(c,'Recognising a possible heart attack',(
            ('Chest pressure or breathlessness',('Symptoms can vary by person',),'pulse'),
            ('Other warning signs',('Sweating, nausea or pain in the arm,','back or jaw can occur'),'check'),
-           ('Call local emergency services',('Get help immediately if a heart','attack is suspected'),'call')),p,t)
+           ('Call local emergency services',('Get help immediately if a heart','attack is suspected'),'call')),p,t,topic='HEART ATTACK AND PCI')
     elif ident=='P03':
         triple(c,'Early emergency assessment',(
            ('An ECG records electrical activity',('A pattern may guide an urgent plan',),'pulse'),
-           ('A blood test can show injury',('Troponin is one piece of the assessment',),'check')),p,t)
+           ('A blood test can show injury',('Troponin is one piece of the assessment',),'check')),p,t,topic='HEART ATTACK AND PCI')
     elif ident=='P04':
         triple(c,'The emergency treatment path',(
            ('Promptly restore blood flow',('For STEMI, opening the artery is urgent',),'vessel'),
-           ('Treatment depends on the situation',('The emergency team chooses the path',),'list')),p,t)
+           ('Treatment depends on the situation',('The emergency team chooses the path',),'list')),p,t,topic='HEART ATTACK AND PCI')
     elif ident=='P05':
         culprit_contrast(c,p)
     elif ident=='P06':
@@ -162,7 +162,7 @@ def emergency(c,ident,p,t):
     elif ident=='P07':
         triple(c,'Recovery and prevention',(
            ('Monitoring after treatment',('Ask what the tests showed',),'pulse'),
-           ('Ongoing care',('Medicines, rehabilitation and follow-up','may be part of your plan'),'list')),p,t)
+           ('Ongoing care',('Medicines, rehabilitation and follow-up','may be part of your plan'),'list')),p,t,topic='HEART ATTACK AND PCI')
     else:
         angiogram.clinical_credits(c,'HEART ATTACK AND PCI',(
             'ACC, AHA and partner societies · Acute coronary syndromes',
@@ -187,7 +187,7 @@ def multiple(c,ident,p,t):
     if ident=='P02':
         triple(c,'Stable and emergency care differ',(
             ('Heart attack',('The artery causing the emergency','is often the first priority'),'pulse'),
-            ('Stable coronary disease',('There is usually time to review tests','and discuss options'),'clock')),p,t)
+           ('Stable coronary disease',('There is usually time to review tests','and discuss options'),'clock')),p,t,topic='MULTIVESSEL DISEASE')
     elif ident=='P03':
         if p>.62:
             pressure.diagram(c,'P03',(p-.62)/.38,t)
@@ -196,7 +196,7 @@ def multiple(c,ident,p,t):
     elif ident=='P04':
         triple(c,'Medicines and prevention',(
             ('Part of care across options',('Medicines can help control symptoms',),'medicine'),
-            ('Review goals and test results',('The team weighs potential benefits','and risks'),'check')),p,t)
+           ('Review goals and test results',('The team weighs potential benefits','and risks'),'check')),p,t,topic='MULTIVESSEL DISEASE')
     elif ident=='P05':
         pci.draw(c,'P09',p,t)
     elif ident=='P06':
@@ -204,7 +204,7 @@ def multiple(c,ident,p,t):
     elif ident=='P07':
         triple(c,'The Heart Team and the patient',(
             ('Specialists review the options',('Cardiology, interventional cardiology','and cardiac surgery'),'check'),
-            ('The patient is part of the decision',('Discuss risks, recovery and what','matters in daily life'),'list')),p,t)
+           ('The patient is part of the decision',('Discuss risks, recovery and what','matters in daily life'),'list')),p,t,topic='MULTIVESSEL DISEASE')
     else:
         angiogram.clinical_credits(c,'MULTIVESSEL DISEASE',(
             'ACC, AHA and SCAI · Coronary revascularisation',

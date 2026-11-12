@@ -90,9 +90,9 @@ def cross_section(c,p,t,mode):
     access.text(c,'OCT uses light' if mode=='OCT' else 'IVUS uses sound',53,392,39,'#d9efe5')
     access.text(c,'Conceptual cross-section',55,677,31,'#b5d5c6')
 
-def card(c,title,heading,lines,icon,p,t):
+def card(c,title,heading,lines,icon,p,t,*,topic='CORONARY STENTS'):
     access.rect(c,0,0,1280,720,access.solid('#e7f0e8'))
-    angiogram.header(c,title,'CORONARY STENTS')
+    angiogram.header(c,title,topic)
     angiogram.block(c,681,190,508,412,39,access.solid('#173c35'))
     angiogram.icon(c,icon,p,t)
     if icon=='check' or icon=='list':

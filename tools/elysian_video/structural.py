@@ -101,7 +101,7 @@ def plan(c,ident,p,t):
          ('What happens next?',('Next episode: how TAVI is performed',),'vessel'))),
     }
     title,beats=rows[ident]
-    emergency.triple(c,title,beats,p,t)
+    emergency.triple(c,title,beats,p,t,topic='TAVI PLANNING')
 
 def recovery(c,ident,p,t):
     if ident=='P01':
@@ -144,7 +144,7 @@ def recovery(c,ident,p,t):
          ('Know who will arrange follow-up',('Ask whom to call with questions',),'list'))),
     }
     title,beats=rows[ident]
-    emergency.triple(c,title,beats,p,t)
+    emergency.triple(c,title,beats,p,t,topic='TAVI RECOVERY')
 
 def surgical(c,p,t):
     c.drawImageRect(valve.base(),skia.Rect.MakeWH(1280,720),
@@ -201,7 +201,7 @@ def compare(c,ident,p,t):
          ('Next series: cardiac surgery',('Why a team may recommend','coronary artery bypass'),'vessel'))),
     }
     title,beats=rows[ident]
-    emergency.triple(c,title,beats,p,t)
+    emergency.triple(c,title,beats,p,t,topic='HEART VALVE OPTIONS')
 
 def render(number):
     ep=SERIES/f'episode-{number:02}'

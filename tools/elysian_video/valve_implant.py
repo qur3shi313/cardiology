@@ -371,7 +371,7 @@ def draw(c,ident,p,t):
     title,beats=TEXT[ident]
     i=min(len(beats)-1,int(p*len(beats)))
     heading,lines,icon=beats[i]
-    restenosis.card(c,title,heading,lines,icon,p*len(beats)-i,t)
+    restenosis.card(c,title,heading,lines,icon,p*len(beats)-i,t,topic='TAVI PROCEDURE')
 
 def render():
     ep=SERIES/'episode-18'

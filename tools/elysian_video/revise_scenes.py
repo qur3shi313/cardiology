@@ -19,8 +19,8 @@ REVISIONS = {
     14: (emergency.emergency, 'clinical-picture-overrides.json', ('P01', 'P02', 'P03', 'P04', 'P05', 'P06', 'P07', 'P08')),
     15: (emergency.multiple, 'clinical-picture-overrides.json', ('P01', 'P02', 'P03', 'P04', 'P05', 'P06', 'P07', 'P08')),
     17: (structural.plan, 'structural-overrides.json', ('P01', 'P03', 'P04', 'P05', 'P06', 'P07', 'P08')),
-    18: (valve_implant.draw, 'tavi-overrides.json', ('P03', 'P04', 'P05', 'P06', 'P08', 'P09', 'P12')),
-    19: (structural.recovery, 'structural-overrides.json', ('P05', 'P07', 'P08')),
+    18: (valve_implant.draw, 'tavi-overrides.json', ('P03', 'P04', 'P05', 'P06', 'P08', 'P09', 'P10', 'P12')),
+    19: (structural.recovery, 'structural-overrides.json', ('P02', 'P05', 'P06', 'P07', 'P08')),
     20: (structural.compare, 'structural-overrides.json', ('P02', 'P04', 'P05', 'P06', 'P07', 'P08')),
 }
 
