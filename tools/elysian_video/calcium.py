@@ -4,7 +4,7 @@ import json
 
 import skia
 
-from . import access, angiogram, coating, imaging, restenosis, stent as art
+from . import access, angiogram, imaging, restenosis, stent as art
 from .__main__ import ROOT, SERIES, FPS
 from .encode import encode_scene
 
@@ -33,7 +33,8 @@ def calcified(c,ident,p,t):
         c.drawPath(art.enclosed(high,low),art.gradient(505,245,775,339,['#f0d8a7','#a0805c']))
     if ident in ('P01','P07') or (ident == 'P03' and p < .45):
         opened=access.smooth(p/.45)
-        rad=lambda x:16+opened*(100-(65*exp(-abs((x-x0)/100)**2.6) if not after else 0))
+        rad=(art.OPEN_RADIUS if after and opened>=.999 else
+             lambda x:16+opened*(art.OPEN_RADIUS-16-(65*exp(-abs((x-x0)/100)**2.6) if not after else 0)))
         art.stent(c,x0,rad,False)
         if p<.62:
             art.wire(c,1126)
@@ -90,14 +91,41 @@ def calcified(c,ident,p,t):
     angiogram.header(c,title,'CALCIFIED ARTERY')
     access.text(c,detail,56,675,31,'#245b4e')
 
+def checked_result(c,p,t):
+    if t<4.62:
+        calcified(c,'P07',min(1,t/4.62),t)
+        return
+    if 9.3<=t<13.47:
+        c.save()
+        c.clipRect(skia.Rect.MakeLTRB(0,0,1280,638))
+        imaging.slice_view(c,p,t,'SCAN',stent=True,calcium=False)
+        c.restore()
+        access.rect(c,0,638,1280,82,access.solid('#102c2b'))
+        access.text(c,'The scan can show expansion and wall contact',56,674,31,'#c6e8d7')
+        return
+    local=t-4.62 if t<9.3 else (t-13.47)*.72
+    c.drawImageRect(angiogram.radiograph_plate(),skia.Rect.MakeWH(1280,720),
+                    skia.SamplingOptions(skia.FilterMode.kNearest))
+    head=access.smooth(local/2.42)
+    spot=angiogram.contrast_paths(c,'left',head,round(245-38*access.smooth((local-3)/1.7)),-13,False)
+    if head>.54:
+        x,y=spot
+        edge=access.solid('#f5d78f',235)
+        edge.setStyle(skia.Paint.kStroke_Style)
+        edge.setStrokeWidth(3.5)
+        c.drawCircle(x,y,22,edge)
+    angiogram.header(c,'Checking flow beyond the treated section','SIMULATED X-RAY',True)
+    access.text(c,'The angiogram shows where contrast travels',56,683,31,'#e1f0e7')
+
+
 def draw(c,ident,p,t):
     if ident=='P02':
         if p<.45:
             angiogram.imaging(c,'P29',p/.45,t,0)
         else:
             imaging.slice_view(c,(p-.45)/.55,t,'IVUS',calcium=True)
-    elif ident=='P07' and p>.65:
-        coating.summary(c,'P06',.55+.45*(p-.65)/.35,t)
+    elif ident=='P07':
+        checked_result(c,p,t)
     elif ident=='P08':
         angiogram.clinical_credits(c,'CALCIFIED ARTERY',(
             'SCAI · Expert consensus on calcified coronary lesions',
