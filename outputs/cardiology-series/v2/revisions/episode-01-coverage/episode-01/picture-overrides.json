@@ -1,0 +1,37 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/revisions/episode-01-coverage/episode-01/visuals/P01-revised.mp4",
+    "in_sec": 0,
+    "out_sec": 8.433333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P25": {
+    "path": "outputs/cardiology-series/v2/revisions/episode-01-coverage/episode-01/visuals/P25-revised.mp4",
+    "in_sec": 0,
+    "out_sec": 23.766666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P28": {
+    "path": "outputs/cardiology-series/v2/revisions/episode-01-coverage/episode-01/visuals/P28-revised.mp4",
+    "in_sec": 0,
+    "out_sec": 16.433333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P29": {
+    "path": "outputs/cardiology-series/v2/revisions/episode-01-coverage/episode-01/visuals/P29-revised.mp4",
+    "in_sec": 0,
+    "out_sec": 5.166666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P40": {
+    "path": "outputs/cardiology-series/v2/revisions/episode-01-coverage/episode-01/visuals/P40-revised.mp4",
+    "in_sec": 0,
+    "out_sec": 7.5,
+    "reference_only": false,
+    "native_composition": true
+  }
+}

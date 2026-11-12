@@ -1,0 +1,30 @@
+{
+  "title": "Coronary Angiogram Through the Wrist or Groin | Elysian Biomedical LLP",
+  "description_file": "youtube-description.txt",
+  "tags": [
+    "coronary angiogram",
+    "coronary angiography",
+    "wrist angiogram",
+    "radial access",
+    "femoral access",
+    "heart catheterization",
+    "angiogram recovery",
+    "cardiology education",
+    "Elysian Biomedical LLP"
+  ],
+  "language": "en",
+  "planned_release": "2026-11-12T18:00:00+05:00",
+  "timezone": "Asia/Karachi",
+  "studio_release_verified": true,
+  "watch_url": "https://youtu.be/OC8k3XcvhYI",
+  "video_id": "OC8k3XcvhYI",
+  "master_sha256": "a4b9c90ad8e730ff9a7728bd38b7d9c1ba14dd1e0f330c05b6eef2da9cd2eef9",
+  "studio_checks": "complete_no_issues",
+  "studio_schedule_confirmation": {
+    "publish_at": "2026-11-12T18:00:00+05:00",
+    "timezone": "Asia/Karachi"
+  },
+  "studio_subtitles": "English published",
+  "legacy_video_id": "IUdtCju857U",
+  "legacy_visibility": "private"
+}

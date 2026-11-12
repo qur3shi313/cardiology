@@ -1,0 +1,317 @@
+{
+  "input": "episode-05-1440p.mp4",
+  "sha256": "e5099b7031dfdd16198a97c48e7974dbbd735b419c1388699ca4a2ac1b4c8e89",
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 198.0,
+  "video_frames": 5940,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 21.766667,
+    "percent": 10.993,
+    "longest_seconds": 6.0,
+    "intervals": [
+      {
+        "start_seconds": 17.7,
+        "end_seconds": 19.7,
+        "terminal": false
+      },
+      {
+        "start_seconds": 66.0,
+        "end_seconds": 70.166667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 131.966667,
+        "end_seconds": 133.966667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 154.833333,
+        "end_seconds": 156.833333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 156.833333,
+        "end_seconds": 160.433333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 190.0,
+        "end_seconds": 192.0,
+        "terminal": false
+      },
+      {
+        "start_seconds": 192.0,
+        "end_seconds": 198.0,
+        "terminal": true
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P11",
+        "title": "Clinical sources",
+        "frozen_seconds": 8.0,
+        "scene_seconds": 8.0
+      },
+      {
+        "scene": "P09",
+        "title": "What follow-up is for",
+        "frozen_seconds": 5.6,
+        "scene_seconds": 18.6
+      },
+      {
+        "scene": "P04",
+        "title": "Understanding the result",
+        "frozen_seconds": 4.167,
+        "scene_seconds": 21.633
+      },
+      {
+        "scene": "P02",
+        "title": "Closing the access site",
+        "frozen_seconds": 2.0,
+        "scene_seconds": 19.167
+      },
+      {
+        "scene": "P08",
+        "title": "When to get emergency help",
+        "frozen_seconds": 2.0,
+        "scene_seconds": 22.867
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.01,
+    "true_peak_dbtp": -1.43,
+    "raw_loudnorm": {
+      "input_i": "-14.01",
+      "input_tp": "-1.43",
+      "input_lra": "2.70",
+      "input_thresh": "-24.33",
+      "output_i": "-13.89",
+      "output_tp": "-1.17",
+      "output_lra": "2.70",
+      "output_thresh": "-24.20",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.11"
+    }
+  },
+  "expected_duration_seconds": 198.0,
+  "audio_sources": [
+    "outputs/cardiology-series/v2/episode-05/audio/alexander-episode-05.mp3"
+  ],
+  "human_visual_review": {
+    "master_sha256": "e5099b7031dfdd16198a97c48e7974dbbd735b419c1388699ca4a2ac1b4c8e89",
+    "short_sha256": "dcb9f1e177b79bf21f0ff6d98746b5784527af14993c0b8c03772625be487449",
+    "thumbnail_sha256": "376867aec187c993617e80443c7651cee4bc371c64edef666863e8da14b1b0b0",
+    "verified_at": "2026-11-12T06:59:53.766188+05:00",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "intentional_holds": [
+      {
+        "start_seconds": 190,
+        "end_seconds": 198,
+        "reason": "The sources, production disclosure and next-episode title remain readable on the silent closing card."
+      }
+    ],
+    "review_evidence": {
+      "exact_master": "Inspected 40 exact decoded five-second samples and 33 targeted 390-pixel frames from the repaired master, plus all eleven exact source scene contact sheets. The new opening, observation, entry-site and recap sequences use moving clinical artwork. Several existing result, care-plan and emergency summaries still use a bounded icon layout.",
+      "clinical": "The diagnostic catheter withdraws ahead of the sheath, followed by a covered-site check. Separate right wrist band and groin pressure or closure examples precede circulation checks. The film distinguishes short observation from longer monitoring, individual discharge plans from generic instructions, prompt care-team contact from emergency symptoms, and a diagnostic test alone from test plus treatment. Mild bruise or soreness is conveyed by the label and narration over the covered wrist. The angiogram is labelled simulated and the result pathways are examples.",
+      "captions_and_voice": "All 487 words in the 46 caption cues match the locked narration. Ten source waveform samples match the sole Alexander track with .81589\u2013.87679 correlations and 0 ms best-match offsets. This checks voice identity and alignment. Manual auditory listening is unclaimed.",
+      "speech_alignment_samples": [
+        {
+          "scene": "P01",
+          "score": 0.83628,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P02",
+          "score": 0.87679,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P03",
+          "score": 0.84574,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P04",
+          "score": 0.8335,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P05",
+          "score": 0.85601,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P06",
+          "score": 0.81589,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P07",
+          "score": 0.83827,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P08",
+          "score": 0.82546,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P09",
+          "score": 0.8198,
+          "offset_ms": 0.0
+        },
+        {
+          "scene": "P10",
+          "score": 0.83573,
+          "offset_ms": 0.0
+        }
+      ],
+      "exact_short": "Checked twelve exact 320-pixel samples from 11.700 to 39.267 seconds of the master. The wrist and groin illustrations fit in frame, captions remain separate, and the cut ends after the complete circulation-check sentence.",
+      "exact_thumbnail": "Checked the exact 1280 by 720 thumbnail at 320 pixels. The anatomical concept, covered wrist compression band, three-word title and authentic logo read without cropped labels.",
+      "modesty": "The illustrated groin is draped with a small schematic access window. The covered wrist and all bed figures are non-identifiable. Only the synthetic narration source is present.",
+      "evidence_files": [
+        "delivery/episode-05-exact-five-seconds-1.jpg",
+        "delivery/episode-05-exact-five-seconds-2.jpg",
+        "delivery/episode-05-exact-five-seconds-3.jpg",
+        "delivery/episode-05-editorial-1.jpg",
+        "delivery/episode-05-editorial-2.jpg",
+        "delivery/episode-05-editorial-3.jpg",
+        "delivery/episode-05-short-phone-review.jpg",
+        "delivery/episode-05-thumbnail-phone-review.jpg",
+        "delivery/episode-05-waveform-review.json"
+      ]
+    }
+  },
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 46,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-05-1080p.mp4",
+      "sha256": "5f80701af1c183bc0c300b241757442903f6cb9301e0d5f877fbaccb517fe658",
+      "duration_seconds": 198.0,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-05-short.mp4",
+      "sha256": "dcb9f1e177b79bf21f0ff6d98746b5784527af14993c0b8c03772625be487449",
+      "duration_seconds": 27.57,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.03,
+        "true_peak_dbtp": -1.44,
+        "raw_loudnorm": {
+          "input_i": "-14.03",
+          "input_tp": "-1.44",
+          "input_lra": "2.40",
+          "input_thresh": "-24.23",
+          "output_i": "-14.00",
+          "output_tp": "-1.32",
+          "output_lra": "2.50",
+          "output_thresh": "-24.21",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.00"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-05-thumbnail.jpg",
+      "sha256": "376867aec187c993617e80443c7651cee4bc371c64edef666863e8da14b1b0b0",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "halal_review": "pass",
+  "contact_sheet": {
+    "file": "episode-05-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195
+    ]
+  },
+  "errors": [],
+  "status": "pass"
+}

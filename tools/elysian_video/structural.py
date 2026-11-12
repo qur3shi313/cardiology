@@ -21,10 +21,19 @@ def annulus_scan(c,p,t):
         a=.82+i*.14
         angiogram.dot(c,x+225*cos(a),y+159*sin(a),12+(i%3)*3,'#f3d7a1')
     if p>.20:
-        access.line(c,[(x-207,y),(x+207,y)],'#e7eee3',3.4)
+        span=207*access.smooth((p-.2)/.66)
+        access.line(c,[(x-span,y),(x+span,y)],'#e7eee3',3.4)
         for sign in (-1,1):
-            access.line(c,[(x+sign*207,y-17),(x+sign*207,y+17)],'#d5ede0',4)
-    access.rect(c,454,268+((t*47)%210),496,3,access.solid('#c7ede0',83))
+            access.line(c,[(x+sign*span,y-17),(x+sign*span,y+17)],'#d5ede0',4)
+    c.save()
+    field=skia.Path()
+    field.addOval(skia.Rect.MakeXYWH(x-252,y-184,504,368))
+    c.clipPath(field,doAntiAlias=True)
+    level=224+(t*73)%365
+    sweep_paint=access.grad(x,level,x,level+56,['#6f9f96','#c7ede0','#6f9f96'])
+    sweep_paint.setAlpha(105)
+    c.drawRect(skia.Rect.MakeXYWH(x-260,level,520,56),sweep_paint)
+    c.restore()
     angiogram.header(c,'Where a new valve would sit','ILLUSTRATED CT VIEW',True)
     access.text(c,'Annulus and nearby coronary openings',59,674,31,'#d8f0e2')
 

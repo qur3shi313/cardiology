@@ -1,0 +1,30 @@
+{
+  "master_sha256": "a4b9c90ad8e730ff9a7728bd38b7d9c1ba14dd1e0f330c05b6eef2da9cd2eef9",
+  "short_sha256": "086010f5707791668565de4e708283263bf78bb72a70c95009d7b6beadb0538e",
+  "thumbnail_sha256": "208b9c023e022859761d09c3ea842e7afec5d843970a3c2e13fb8f0c03dc1919",
+  "reviewer": "Codex visual inspection of decoded media and clinical source continuity",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "intentional_holds": [],
+  "notes": [
+    "Reviewed 84 actual phone-size frames from the original master and 17 targeted frames from the revised master. The comparison proves the other 35 scenes retain their original encoded pictures and timing.",
+    "The active simulated radiograph field occupies 74.01 percent of the decoded frame in the samples from P01, P25, P28 and P29. The selective left and right runs fill connected branches from the seated catheter. The narrowing callout follows the original lesion position. Revised clinical labels are at least 40.5 nominal pixels at 1080p and revised main titles are 72 nominal pixels.",
+    "The wrist and groin device steps retain the source-checked insertion and removal order. Groin access stays inside a draped cutaway. The route maps are sex-neutral and the illustrated recovery figure is covered. The images are original illustrations, including the labeled simulated X-rays.",
+    "The complete 7.5-second end screen displays the series name, full next episode title and clinical sources, with room for YouTube end elements at right. The original spoken outro continues over it.",
+    "The English SRT retains all 96 timed cues. The revised master matches every original audio and timed subtitle packet, and the Short matches the original voice packets. The two Alexander narration recordings are the only sound inputs.",
+    "Viewed the regenerated 1280 by 720 thumbnail at 320 pixels and eight decoded vertical Short frames at 320 pixels. The Short preserves the catheter origin and main branches, shows both projections and keeps the burned English captions readable. The framing omits a small portion of the outer branches."
+  ],
+  "master_preflight": "master-preflight.json",
+  "exact_rebuild_evidence": "exact-rebuild-evidence.json",
+  "master_contact_sheet": "delivery/episode-01-1440p-phone.jpg",
+  "changed_scenes_contact_sheet": "changed-scenes-phone.jpg",
+  "short_contact_sheet": "short-phone.jpg",
+  "thumbnail_contact_sheet": "thumbnail-phone.jpg"
+}

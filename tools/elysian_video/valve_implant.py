@@ -37,6 +37,13 @@ def groin_route(c,p,t):
     access.line(c,arterial,'#d09588',16)
     progress=access.smooth((p-.03)/.88)
     visible=angiogram.art.trace(arterial,progress)
+    # Highlight the established route while keeping the catheter tip distinct.
+    for index in range(6):
+        phase=(t*.42+index/6)%1
+        if phase<progress:
+            point=int(phase*(len(arterial)-1))
+            start=max(0,point-3)
+            access.line(c,arterial[start:point+1],'#eac298',19,175)
     access.line(c,visible,'#624c32',8)
     access.line(c,visible,'#f9e1a6',4.3)
     if visible:
@@ -55,13 +62,15 @@ def prosthetic_top(c,p,t):
     angiogram.dot(c,x,y,214,'#6a8683')
     angiogram.dot(c,x,y,198,'#b8cbc0')
     angiogram.dot(c,x,y,178,'#845060')
+    opening=max(0,(1-cos(t*2*pi*1.08))/2)
     for i in range(3):
         q=2*pi*i/3-pi/2
         edge=(x+163*cos(q),y+163*sin(q))
         a=(x+120*cos(q-.89),y+120*sin(q-.89))
         b=(x+120*cos(q+.89),y+120*sin(q+.89))
-        c.drawPath(access.path([a,edge,b,(x,y)],True),access.grad(*edge,x,y,['#edd0ab','#a96674']))
-        access.line(c,[(x,y),edge],'#f8e6c8',3)
+        free_edge=(x+98*opening*cos(q),y+98*opening*sin(q))
+        c.drawPath(access.path([a,edge,b,free_edge],True),access.grad(*edge,x,y,['#edd0ab','#a96674']))
+        access.line(c,[free_edge,edge],'#f8e6c8',3)
     angiogram.header(c,'Tissue leaflets inside a metal frame','BALLOON-EXPANDABLE VALVE')
     access.text(c,'Illustrated view of a replacement valve',56,684,30,'#245c50')
 

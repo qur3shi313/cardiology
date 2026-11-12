@@ -1,10 +1,13 @@
 # Release checkpoint · 12 November 2026
 
-The rebuilt episodes use one daily 18:00 Pakistan time slot from 12 November to 1 December. Studio has confirmed the following slots.
+Studio has confirmed these daily 18:00 Pakistan time releases.
 
-- 13 November · [Wrist versus groin access](https://youtu.be/B5isQ7DbyPQ)
+- 12 November · [Coronary angiogram through the wrist or groin](https://youtu.be/OC8k3XcvhYI)
+- 13 November · [Wrist versus groin access and why the team chooses a route](https://youtu.be/B5isQ7DbyPQ)
 - 14 November · [What the sheath, guidewire, catheter and contrast each do](https://youtu.be/pmDPTmLtvak)
 - 15 November · [How clinicians read a coronary angiogram](https://youtu.be/2RxYq6RcWrg)
+- 16 November · [Recovery and next steps after a coronary angiogram](https://youtu.be/n60ALaI6SJE)
 - 19 November · [Coronary drug-coated balloons](https://youtu.be/J8YPIjm9OmY)
+- 27 November · [What happens in aortic stenosis](https://youtu.be/IWQiJlhhobk)
 
-The earlier uploads that occupied 13–15 November were switched to Private after the replacements were confirmed. The 12 November slot still has an earlier PCI upload. An initial revised angiogram was uploaded as a private draft, and a wider radiograph and final credit treatment are being rendered for the release candidate. Episode 05 and Episodes 06–07 have targeted source repairs under way. The remaining dates and exact statuses are recorded in [the schedule](schedule.json).
+The older videos occupying 12–15 November were switched to Private after their replacements were confirmed. The superseded angiogram draft is also private. The remaining dates and current statuses are in [the schedule](schedule.json).

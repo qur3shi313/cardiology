@@ -1,0 +1,15 @@
+{
+  "thumbnail": {
+    "seconds": 6.3,
+    "title": ["Wrist", "or groin?"],
+    "crop": [1620, 880, 510, 290],
+    "eyebrow": "CORONARY ANGIOGRAPHY"
+  },
+  "short": {
+    "start_frame": 6815,
+    "end_frame": 7528,
+    "headings": ["How contrast reveals", "the coronary arteries"],
+    "crop": [1510, 874, 632, 296],
+    "eyebrow": "SIMULATED X-RAY"
+  }
+}

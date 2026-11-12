@@ -4,7 +4,7 @@ import argparse
 import json
 import subprocess
 
-from . import calcium, emergency, imaging, post_pci, pressure, restenosis
+from . import calcium, emergency, imaging, post_pci, pressure, restenosis, structural, valve_implant
 from .__main__ import FPS, LEGACY_FFMPEG, ROOT, SERIES
 from .batch import build
 from .encode import encode_scene
@@ -18,6 +18,10 @@ REVISIONS = {
     13: (calcium.draw, 'calcium-overrides.json', ('P01', 'P03', 'P04', 'P05', 'P06', 'P07', 'P08')),
     14: (emergency.emergency, 'clinical-picture-overrides.json', ('P01', 'P02', 'P03', 'P04', 'P05', 'P07')),
     15: (emergency.multiple, 'clinical-picture-overrides.json', ('P01', 'P02', 'P03', 'P04', 'P05', 'P06', 'P07', 'P08')),
+    17: (structural.plan, 'structural-overrides.json', ('P01', 'P03', 'P04', 'P05', 'P06', 'P07', 'P08')),
+    18: (valve_implant.draw, 'tavi-overrides.json', ('P03', 'P04', 'P05', 'P08', 'P09', 'P12')),
+    19: (structural.recovery, 'structural-overrides.json', ('P05', 'P07', 'P08')),
+    20: (structural.compare, 'structural-overrides.json', ('P02', 'P04', 'P05', 'P06', 'P07', 'P08')),
 }
 
 

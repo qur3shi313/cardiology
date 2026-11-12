@@ -1,0 +1,75 @@
+{
+  "master_sha256": "b5e6a0e00901367487d0117863550e45eb1bf061c92edf85d9b9f2dce845180c",
+  "short_sha256": "243984b232d06e758e6a1bb7efd0fc29e3b19231ccdfa3c0041c9a487c9910cd",
+  "thumbnail_sha256": "3be6a99b6dc1dba10143e3804f0a208f0ed6b15b36b396a45c3bbf95ce4c27b6",
+  "verified_at": "2026-11-12T06:39:25.233034+05:00",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "intentional_holds": [
+    {
+      "start_seconds": 133.7,
+      "end_seconds": 141.7,
+      "reason": "The silent source and production card gives time to read the references and next-episode title."
+    }
+  ],
+  "review_evidence": {
+    "exact_master": "Inspected 29 exact five-second samples and 24 targeted decoded frames at 390 pixels, plus the authored matched valve and long-axis motion evidence. The opening illustrates the matched normal and narrowed valves before the title. Key anatomical and educational labels remain legible.",
+    "clinical": "The same illustrated cardiac phase and scale compare normal and calcific opening. The long-axis scene moves blood from the left ventricle through the valve into the aorta during ejection and omits forward flow in relaxation. Calcium is on the leaflets. The bicuspid example is labelled separately. The film frames muscle thickening as possible, distinguishes symptoms and measurements, labels the echo and Doppler as simulations, and leaves monitoring or valve assessment to the care team.",
+    "captions_and_voice": "All 322 caption words match the locked narration. Seven source waveform samples match the sole Alexander track with .81128–.83921 correlations and a maximum absolute alignment difference of 0.25 ms. This supports track identity and timing. Manual auditory listening is unclaimed.",
+    "speech_alignment_samples": [
+      {
+        "scene": "P01",
+        "score": 0.83618,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P02",
+        "score": 0.81128,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P03",
+        "score": 0.83603,
+        "offset_ms": -0.25
+      },
+      {
+        "scene": "P04",
+        "score": 0.83921,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P05",
+        "score": 0.81302,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P06",
+        "score": 0.8371,
+        "offset_ms": 0.0
+      },
+      {
+        "scene": "P07",
+        "score": 0.82721,
+        "offset_ms": 0.0
+      }
+    ],
+    "exact_short": "The revised 20.467-second source range 31.633–52.100 opens on the calcific example and closes after the completed bicuspid sentence, before P04. Checked all twelve exact 320-pixel samples. Both valve examples and labels stay in frame and the burned captions sit in their own band. The title describes the selected sequence.",
+    "exact_thumbnail": "Checked the authored 1280 by 720 thumbnail and exact JPEG at 320 pixels. The three calcified leaflets and the narrowed opening provide one clear subject, with a readable three-word title and authentic logo.",
+    "modesty": "Diagrams are non-identifiable. The activity figure is fully clothed. The timeline has one synthetic narration input and no music.",
+    "evidence_files": [
+      "delivery/episode-16-1440p-phone.jpg",
+      "delivery/episode-16-editorial-1.jpg",
+      "delivery/episode-16-editorial-2.jpg",
+      "delivery/episode-16-short-phone-review.jpg",
+      "delivery/episode-16-thumbnail-phone-review.jpg",
+      "delivery/episode-16-waveform-review.json"
+    ]
+  }
+}

@@ -85,8 +85,11 @@ def files(episode,qa):
     t=json.loads((episode/'timeline.json').read_text(encoding='utf-8-sig'))
     return paths+[episode/t.get('caption_file','captions.en.srt'),episode/'chapters.txt',episode/'QA.json']
 
-def release(number,repo):
-    episode=SERIES/f'episode-{number:02}'
+def release(number,repo,package=None):
+    episode_name=f'episode-{number:02}'
+    episode=package.resolve() if package else SERIES/episode_name
+    if episode.name!=episode_name or not episode.is_relative_to(SERIES.resolve()):
+        raise ValueError('The package must be for this episode inside the series directory')
     report=json.loads((episode/'QA.json').read_text(encoding='utf-8-sig'))
     sources=files(episode,report)
     for path in sources:
@@ -135,5 +138,6 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('episode',type=int,choices=range(1,21))
     p.add_argument('--repo',type=Path,default=ROOT/'work/github-cardiology')
+    p.add_argument('--package',type=Path,help='Use a reviewed revision of this episode')
     args=p.parse_args()
-    release(args.episode,args.repo.resolve())
+    release(args.episode,args.repo.resolve(),args.package)

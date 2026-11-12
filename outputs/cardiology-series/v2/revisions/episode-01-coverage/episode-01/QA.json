@@ -1,0 +1,389 @@
+{
+  "input": "episode-01-1440p.mp4",
+  "sha256": "a4b9c90ad8e730ff9a7728bd38b7d9c1ba14dd1e0f330c05b6eef2da9cd2eef9",
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 419.6,
+  "video_frames": 12588,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 47.533333,
+    "percent": 11.328,
+    "longest_seconds": 5.866666,
+    "intervals": [
+      {
+        "start_seconds": 5.0,
+        "end_seconds": 7.266667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 36.233333,
+        "end_seconds": 39.1,
+        "terminal": false
+      },
+      {
+        "start_seconds": 39.6,
+        "end_seconds": 44.1,
+        "terminal": false
+      },
+      {
+        "start_seconds": 59.466667,
+        "end_seconds": 61.466667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 61.466667,
+        "end_seconds": 63.466667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 65.466667,
+        "end_seconds": 67.466667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 71.866667,
+        "end_seconds": 73.933333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 92.2,
+        "end_seconds": 94.2,
+        "terminal": false
+      },
+      {
+        "start_seconds": 94.2,
+        "end_seconds": 96.266667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 227.166667,
+        "end_seconds": 229.166667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 311.433333,
+        "end_seconds": 313.433333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 313.566667,
+        "end_seconds": 319.433333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 366.9,
+        "end_seconds": 368.933333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 368.933333,
+        "end_seconds": 371.533333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 382.0,
+        "end_seconds": 384.0,
+        "terminal": false
+      },
+      {
+        "start_seconds": 384.0,
+        "end_seconds": 387.266667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 412.1,
+        "end_seconds": 414.1,
+        "terminal": false
+      },
+      {
+        "start_seconds": 414.1,
+        "end_seconds": 416.1,
+        "terminal": false
+      },
+      {
+        "start_seconds": 416.1,
+        "end_seconds": 418.1,
+        "terminal": false
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P30",
+        "title": "What happens next",
+        "frozen_seconds": 7.867,
+        "scene_seconds": 22.133
+      },
+      {
+        "scene": "P03",
+        "title": "Preparing for the test",
+        "frozen_seconds": 7.367,
+        "scene_seconds": 14.067
+      },
+      {
+        "scene": "P06",
+        "title": "Pass the short access wire",
+        "frozen_seconds": 6.0,
+        "scene_seconds": 8.4
+      },
+      {
+        "scene": "P40",
+        "title": "Before you go home",
+        "frozen_seconds": 6.0,
+        "scene_seconds": 7.5
+      },
+      {
+        "scene": "P38",
+        "title": "Care at home",
+        "frozen_seconds": 5.267,
+        "scene_seconds": 16.2
+      },
+      {
+        "scene": "P36",
+        "title": "Check the wrist and hand",
+        "frozen_seconds": 4.633,
+        "scene_seconds": 8.567
+      },
+      {
+        "scene": "P09",
+        "title": "Leave the radial sheath in place",
+        "frozen_seconds": 4.067,
+        "scene_seconds": 10.967
+      },
+      {
+        "scene": "P01",
+        "title": "What a coronary angiogram shows",
+        "frozen_seconds": 2.267,
+        "scene_seconds": 8.433
+      },
+      {
+        "scene": "P07",
+        "title": "Withdraw the wrist needle",
+        "frozen_seconds": 2.067,
+        "scene_seconds": 8.267
+      },
+      {
+        "scene": "P25",
+        "title": "Record the left coronary arteries",
+        "frozen_seconds": 2.0,
+        "scene_seconds": 23.767
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.03,
+    "true_peak_dbtp": -1.43,
+    "raw_loudnorm": {
+      "input_i": "-14.03",
+      "input_tp": "-1.43",
+      "input_lra": "2.80",
+      "input_thresh": "-24.38",
+      "output_i": "-14.01",
+      "output_tp": "-1.28",
+      "output_lra": "2.80",
+      "output_thresh": "-24.36",
+      "normalization_type": "dynamic",
+      "target_offset": "0.01"
+    }
+  },
+  "expected_duration_seconds": 419.6,
+  "audio_sources": [
+    "outputs/cardiology-series/episode-01/revision/femoral-alexander-full.m4a",
+    "outputs/cardiology-series/episode-01/revision/radial-alexander-full.m4a"
+  ],
+  "human_visual_review": {
+    "master_sha256": "a4b9c90ad8e730ff9a7728bd38b7d9c1ba14dd1e0f330c05b6eef2da9cd2eef9",
+    "short_sha256": "086010f5707791668565de4e708283263bf78bb72a70c95009d7b6beadb0538e",
+    "thumbnail_sha256": "208b9c023e022859761d09c3ea842e7afec5d843970a3c2e13fb8f0c03dc1919",
+    "reviewer": "Codex visual inspection of decoded media and clinical source continuity",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "intentional_holds": [],
+    "notes": [
+      "Reviewed 84 actual phone-size frames from the original master and 17 targeted frames from the revised master. The comparison proves the other 35 scenes retain their original encoded pictures and timing.",
+      "The active simulated radiograph field occupies 74.01 percent of the decoded frame in the samples from P01, P25, P28 and P29. The selective left and right runs fill connected branches from the seated catheter. The narrowing callout follows the original lesion position. Revised clinical labels are at least 40.5 nominal pixels at 1080p and revised main titles are 72 nominal pixels.",
+      "The wrist and groin device steps retain the source-checked insertion and removal order. Groin access stays inside a draped cutaway. The route maps are sex-neutral and the illustrated recovery figure is covered. The images are original illustrations, including the labeled simulated X-rays.",
+      "The complete 7.5-second end screen displays the series name, full next episode title and clinical sources, with room for YouTube end elements at right. The original spoken outro continues over it.",
+      "The English SRT retains all 96 timed cues. The revised master matches every original audio and timed subtitle packet, and the Short matches the original voice packets. The two Alexander narration recordings are the only sound inputs.",
+      "Viewed the regenerated 1280 by 720 thumbnail at 320 pixels and eight decoded vertical Short frames at 320 pixels. The Short preserves the catheter origin and main branches, shows both projections and keeps the burned English captions readable. The framing omits a small portion of the outer branches."
+    ],
+    "master_preflight": "master-preflight.json",
+    "exact_rebuild_evidence": "exact-rebuild-evidence.json",
+    "master_contact_sheet": "delivery/episode-01-1440p-phone.jpg",
+    "changed_scenes_contact_sheet": "changed-scenes-phone.jpg",
+    "short_contact_sheet": "short-phone.jpg",
+    "thumbnail_contact_sheet": "thumbnail-phone.jpg"
+  },
+  "captions": {
+    "file": "episode-01.en.srt",
+    "cue_count": 96,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-01-1080p.mp4",
+      "sha256": "9862a2c47f56fbf51bbac6d0f17b938167a9ae7c64cf12e9cc53678feee49a15",
+      "duration_seconds": 419.6,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-01-short.mp4",
+      "sha256": "086010f5707791668565de4e708283263bf78bb72a70c95009d7b6beadb0538e",
+      "duration_seconds": 23.77,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.08,
+        "true_peak_dbtp": -1.48,
+        "raw_loudnorm": {
+          "input_i": "-14.08",
+          "input_tp": "-1.48",
+          "input_lra": "3.00",
+          "input_thresh": "-24.53",
+          "output_i": "-14.01",
+          "output_tp": "-1.22",
+          "output_lra": "2.70",
+          "output_thresh": "-24.41",
+          "normalization_type": "dynamic",
+          "target_offset": "0.01"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-01-thumbnail.jpg",
+      "sha256": "208b9c023e022859761d09c3ea842e7afec5d843970a3c2e13fb8f0c03dc1919",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "halal_review": "pass",
+  "contact_sheet": {
+    "file": "episode-01-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195,
+      200,
+      205,
+      210,
+      215,
+      220,
+      225,
+      230,
+      235,
+      240,
+      245,
+      250,
+      255,
+      260,
+      265,
+      270,
+      275,
+      280,
+      285,
+      290,
+      295,
+      300,
+      305,
+      310,
+      315,
+      320,
+      325,
+      330,
+      335,
+      340,
+      345,
+      350,
+      355,
+      360,
+      365,
+      370,
+      375,
+      380,
+      385,
+      390,
+      395,
+      400,
+      405,
+      410,
+      415
+    ]
+  },
+  "errors": [],
+  "status": "pass"
+}
