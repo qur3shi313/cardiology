@@ -1,0 +1,243 @@
+{
+  "master_sha256": "48ad028bbb409d1c739a6895e22e7b1e922a593dec2a318559e47e8960ed4a8b",
+  "technical_status": "pass",
+  "decoded_frames": 4724,
+  "decoded_seconds": 157.466667,
+  "motion": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 4.966666,
+    "percent": 3.154,
+    "longest_seconds": 2.633333,
+    "intervals": [
+      {
+        "start_seconds": 17.766667,
+        "end_seconds": 20.4,
+        "terminal": false
+      },
+      {
+        "start_seconds": 27.6,
+        "end_seconds": 29.933333,
+        "terminal": false
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.01,
+    "true_peak_dbtp": -1.4,
+    "raw_loudnorm": {
+      "input_i": "-14.01",
+      "input_tp": "-1.40",
+      "input_lra": "2.80",
+      "input_thresh": "-24.32",
+      "output_i": "-13.92",
+      "output_tp": "-1.00",
+      "output_lra": "2.80",
+      "output_thresh": "-24.23",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.08"
+    }
+  },
+  "format": {
+    "codec": "h264",
+    "width": 2560,
+    "height": 1440,
+    "pixel_format": "yuv420p",
+    "fps": 30.0,
+    "audio_present": true,
+    "audio_codec": "aac",
+    "audio_rate": 48000,
+    "audio_stereo": true
+  },
+  "captions": {
+    "cues": 38,
+    "words": 371,
+    "srt_sha256": "d0d4002aa64c2dd0f768e4939e700812082d47721f8eedb5448bd86ce7043568",
+    "embedded_matches_sidecar": true
+  },
+  "voice_alignment": {
+    "source_sha256": "7fed6e70100bda8a70272a07328bdd003e2e2b68e36d684f5994c1a04dc6689d",
+    "samples": [
+      {
+        "source_sec": 1.0,
+        "output_sec": 1.0,
+        "offset_sec": 0.0,
+        "correlation": 0.99988,
+        "scene": "P01"
+      },
+      {
+        "source_sec": 13.866666666666667,
+        "output_sec": 13.866666666666667,
+        "offset_sec": 0.0,
+        "correlation": 0.99979,
+        "scene": "P02"
+      },
+      {
+        "source_sec": 33.43333333333333,
+        "output_sec": 33.43333333333333,
+        "offset_sec": 0.0,
+        "correlation": 0.99866,
+        "scene": "P03"
+      },
+      {
+        "source_sec": 55.36666666666667,
+        "output_sec": 55.36666666666667,
+        "offset_sec": 0.0,
+        "correlation": 0.99978,
+        "scene": "P04"
+      },
+      {
+        "source_sec": 75.26666666666667,
+        "output_sec": 75.26666666666667,
+        "offset_sec": 0.0,
+        "correlation": 0.99997,
+        "scene": "P05"
+      },
+      {
+        "source_sec": 95.0,
+        "output_sec": 95.0,
+        "offset_sec": 0.0,
+        "correlation": 0.99881,
+        "scene": "P06"
+      },
+      {
+        "source_sec": 115.7,
+        "output_sec": 115.7,
+        "offset_sec": 0.0,
+        "correlation": 0.99971,
+        "scene": "P07"
+      },
+      {
+        "source_sec": 135.0,
+        "output_sec": 135.0,
+        "offset_sec": 0.0,
+        "correlation": 0.99997,
+        "scene": "P08"
+      }
+    ]
+  },
+  "replacement_picture_scenes": [
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P08",
+    "P09"
+  ],
+  "native_picture_slice_match": {
+    "P01": 386,
+    "P02": 587,
+    "P03": 658,
+    "P04": 597,
+    "P05": 592,
+    "P06": 621,
+    "P07": 579,
+    "P08": 464,
+    "P09": 240
+  },
+  "native_decoded_pixel_matches": {
+    "P01": [
+      0,
+      193,
+      385
+    ],
+    "P02": [
+      0,
+      293,
+      586
+    ],
+    "P03": [
+      0,
+      329,
+      657
+    ],
+    "P04": [
+      0,
+      298,
+      596
+    ],
+    "P05": [
+      0,
+      296,
+      591
+    ],
+    "P06": [
+      0,
+      310,
+      620
+    ],
+    "P07": [
+      0,
+      289,
+      578
+    ],
+    "P08": [
+      0,
+      232,
+      463
+    ],
+    "P09": [
+      0,
+      120,
+      239
+    ]
+  },
+  "unchanged_prior_master_packets": {
+    "audio": 7383,
+    "subtitle": 75
+  },
+  "editorial_sample_times_seconds": [
+    [
+      0,
+      3,
+      7,
+      12,
+      13.7,
+      17,
+      22,
+      28,
+      32.5,
+      34.7,
+      37.2,
+      40.3,
+      47,
+      53
+    ],
+    [
+      54.8,
+      59,
+      65,
+      71,
+      74.6,
+      79,
+      84,
+      89,
+      94.5,
+      98.7,
+      101.5,
+      103.5,
+      108.2,
+      113.7
+    ],
+    [
+      115.1,
+      119,
+      126,
+      133.1,
+      134.1,
+      139.8,
+      142,
+      144.4,
+      149.1,
+      150,
+      153.2,
+      157.2
+    ]
+  ],
+  "contact_sheets": [
+    "episode-11-editorial-pressure-1.jpg",
+    "episode-11-editorial-pressure-2.jpg",
+    "episode-11-editorial-pressure-3.jpg"
+  ]
+}

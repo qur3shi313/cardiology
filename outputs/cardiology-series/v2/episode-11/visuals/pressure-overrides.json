@@ -1,0 +1,65 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/episode-11/visuals/P01-pressure-film.mp4",
+    "in_sec": 0,
+    "out_sec": 12.866666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P02": {
+    "path": "outputs/cardiology-series/v2/episode-11/visuals/P02-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 19.566666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P03": {
+    "path": "outputs/cardiology-series/v2/episode-11/visuals/P03-pressure-continuity.mp4",
+    "in_sec": 0,
+    "out_sec": 21.933333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P04": {
+    "path": "outputs/cardiology-series/v2/episode-11/visuals/P04-pressure-continuity.mp4",
+    "in_sec": 0,
+    "out_sec": 19.9,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P05": {
+    "path": "outputs/cardiology-series/v2/episode-11/visuals/P05-pressure-continuity.mp4",
+    "in_sec": 0,
+    "out_sec": 19.733333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P06": {
+    "path": "outputs/cardiology-series/v2/episode-11/visuals/P06-pressure-continuity.mp4",
+    "in_sec": 0,
+    "out_sec": 20.7,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P07": {
+    "path": "outputs/cardiology-series/v2/episode-11/visuals/P07-pressure-film.mp4",
+    "in_sec": 0,
+    "out_sec": 19.3,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P08": {
+    "path": "outputs/cardiology-series/v2/episode-11/visuals/P08-pressure-continuity.mp4",
+    "in_sec": 0,
+    "out_sec": 15.466666666666667,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P09": {
+    "path": "outputs/cardiology-series/v2/episode-11/visuals/P09-pressure-continuity.mp4",
+    "in_sec": 0,
+    "out_sec": 8.0,
+    "reference_only": false,
+    "native_composition": true
+  }
+}
