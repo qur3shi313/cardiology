@@ -10,4 +10,8 @@
 ## Episode 2 · How a bypass graft routes blood around a blockage
 
 - The complete script, storyboard, source map, and moving illustration source are prepared.
-- The next full Alexander recording is pending available ElevenLabs subscription credits.
+- The next full Alexander recording is pending available ElevenLabs subscription credits. The current text-to-speech allowance fell below the cost of even one full Episode 2 generation after Episode 1 narration and caption transcription.
+
+## Episode 3 · Intensive care and recovery after coronary bypass surgery
+
+- The complete script, nine-scene storyboard, and dated clinical source map are prepared.
