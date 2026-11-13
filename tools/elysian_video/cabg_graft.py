@@ -179,16 +179,63 @@ def draw_anatomy(canvas):
                          skia.SamplingOptions(skia.FilterMode.kLinear))
 
 
-def graft_example(canvas, progress, seconds, chest_artery=False, heading=None,
-                  caption=None, *, joined_at=.52):
-    """Fixed anterior view. Moving markers enter the LAD past the native lesion."""
-    studio_light(canvas)
+def inflow_view(canvas, graft, origin, path, seconds, progress, joined_at, chest_artery):
+    """Follow the real route from the aortic arch to the graft's proximal end."""
+    duration = 3.4
+    shot = int(seconds/duration)
+    elapsed = seconds % duration
+    motion = art.smooth(elapsed/duration)
+    landmarks = (AORTA[23], origin, graft[15], graft[27])
+    first = landmarks[min(shot, 2)]
+    second = landmarks[min(shot+1, 3)]
+    focus = tuple(a+(b-a)*motion for a,b in zip(first, second))
+    magnification = 1.8 + .43*motion
+    center = (627, 389)
+    canvas.save()
+    canvas.clipRect(skia.Rect.MakeLTRB(62, 162, 1218, 626), doAntiAlias=True)
+    canvas.translate(*center)
+    canvas.scale(magnification, magnification)
+    canvas.translate(-focus[0], -focus[1])
     draw_anatomy(canvas)
+    vessel(canvas, path, 28, ARTERIAL)
+    graft_pulses(canvas, path, seconds, speed=171, depth=25, tail=79)
+    # Show the graft as an already connected structure. Only the diagram's
+    # emphasis travels along it while the script identifies the distal join.
+    vessel(canvas, graft, 20, GRAFT)
+    reveal = .12 + .77*art.smooth(progress/joined_at)
+    highlighted = ANATOMY.trace(graft, reveal)
+    art.line(canvas, highlighted, '#a4d7a0', 11)
+    canvas.restore()
+    target = origin if shot < 2 else highlighted[-1]
+    marker_x = center[0] + (target[0]-focus[0])*magnification
+    marker_y = center[1] + (target[1]-focus[1])*magnification
+    if 75 < marker_x < 1198 and 175 < marker_y < 603:
+        angiogram.dot(canvas, marker_x, marker_y, 9, '#fff0bf')
+    line = ('Left subclavian artery' if chest_artery else 'Ascending aorta')
+    if shot >= 2:
+        line = ('Left internal thoracic artery' if chest_artery else 'Free vein graft')
+    rounded(canvas, 71, 540, 455, 64, 12, '#e9f1e5')
+    art.text(canvas, line, 93, 582, 34, INK)
+
+
+def graft_example(canvas, progress, seconds, chest_artery=False, heading=None,
+                  caption=None, *, joined_at=.52, example_seconds=None):
+    """Follow the origin, then lock the view as the tracer crosses the join."""
     heading = heading or ('In-place chest artery graft' if chest_artery else 'Free vein graft')
     graft = CHEST_GRAFT if chest_artery else FREE_GRAFT
     origin = CHEST_ORIGIN if chest_artery else ROOT_JUNCTION
     lead = SUBCLAVIAN[:19] if chest_artery else AORTA[5:17]
     background_flow = AORTA[:38]
+    if example_seconds is not None and progress < joined_at-.035:
+        source_path = AORTA[:39] + SUBCLAVIAN[1:19] if chest_artery else AORTA[:17]
+        studio_light(canvas)
+        inflow_view(canvas, graft, origin, source_path, example_seconds, progress,
+                    joined_at, chest_artery)
+        angiogram.header(canvas, heading, TOPIC)
+        footer(canvas, 'Follow the original blood supply to the graft')
+        return
+    studio_light(canvas)
+    draw_anatomy(canvas)
     flow(canvas, background_flow, seconds, speed=126, spacing=128, radius=6)
     flow(canvas, LEFT_MAIN + LAD[1:NARROW_INDEX], seconds, speed=92, spacing=82, radius=4)
 
@@ -522,11 +569,13 @@ def draw(canvas, ident, progress, seconds, *, cues=None):
         if progress < free_start:
             joined = cues.get('chest_join', free_start*.73) / free_start
             graft_example(canvas, progress / free_start, seconds, chest_artery=True,
-                          joined_at=joined)
+                          joined_at=joined, example_seconds=seconds)
         else:
             joined = (cues.get('free_join', free_start+(1-free_start)*.42) - free_start) / (1-free_start)
+            total = seconds/progress
             graft_example(canvas, (progress-free_start) / (1-free_start), seconds,
-                          chest_artery=False, joined_at=joined)
+                          chest_artery=False, joined_at=joined,
+                          example_seconds=seconds-total*free_start)
     elif ident == 'P08':
         surgery(canvas, progress, seconds, cues)
     else:
