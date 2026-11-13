@@ -19,5 +19,18 @@
     "publish_at": "2026-11-15T09:10:00+05:00",
     "timezone": "Asia/Karachi"
   },
-  "studio_subtitles": "English published"
+  "studio_subtitles": "English published",
+  "short": {
+    "title": "Wrist band or groin closure?",
+    "status": "scheduled",
+    "studio_verified": true,
+    "video_id": "EtY-PX7Kx0w",
+    "watch_url": "https://www.youtube.com/shorts/EtY-PX7Kx0w",
+    "target": "2026-11-15T09:25:00+05:00",
+    "timezone": "Asia/Karachi",
+    "sha256": "dcb9f1e177b79bf21f0ff6d98746b5784527af14993c0b8c03772625be487449",
+    "duration_seconds": 27.57,
+    "captions": "English burned into picture",
+    "studio_checks": "complete_no_issues"
+  }
 }

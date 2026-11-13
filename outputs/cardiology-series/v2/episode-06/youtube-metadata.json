@@ -21,5 +21,18 @@
   "studio_schedule_confirmation": {
     "publish_at": "2026-11-16T09:10:00+05:00",
     "timezone": "Asia/Karachi"
+  },
+  "short": {
+    "title": "How a coronary stent opens",
+    "status": "scheduled",
+    "studio_verified": true,
+    "video_id": "xCLcoCIFk00",
+    "watch_url": "https://www.youtube.com/shorts/xCLcoCIFk00",
+    "target": "2026-11-16T09:25:00+05:00",
+    "timezone": "Asia/Karachi",
+    "sha256": "a3949889d18dbb7135f48d0da6abecbefb480b76b6705ca1cc36000e21480261",
+    "duration_seconds": 18.2,
+    "captions": "English burned into picture",
+    "studio_checks": "complete_no_issues"
   }
 }

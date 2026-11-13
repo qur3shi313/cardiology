@@ -49,7 +49,27 @@ def record(number, video, native_time, title, package=None):
     row['short'] = short
     save(meta_path,fields)
     save(ledger,schedule)
+    write_checkpoint(schedule)
     return short
+
+
+def write_checkpoint(schedule):
+    verified = [
+        row['short'] for row in schedule['targets']
+        if row.get('short', {}).get('studio_verified')
+    ]
+    lines = [
+        '# Verified YouTube Shorts',
+        '',
+        'Morning companion releases are scheduled 15 minutes after the long films.',
+        '',
+    ]
+    for item in sorted(verified, key=lambda entry: entry['target']):
+        when = datetime.fromisoformat(item['target'])
+        state = 'Public' if item['status'] == 'published' else when.strftime('%H:%M PKT')
+        lines.append(f"- {when.day} {when:%B} · {state} · [{item['title']}]({item['watch_url']})")
+    (SERIES/'SHORTS-CHECKPOINT.md').write_text(
+        '\n'.join(lines) + '\n', encoding='utf-8', newline='\n')
 
 
 def main():

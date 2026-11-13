@@ -134,7 +134,20 @@
       "legacy_visibility": "private",
       "studio_checks": "scheduled_no_notices_on_channel_list",
       "previous_target": "2026-11-15T18:00:00+05:00",
-      "video_id": "2RxYq6RcWrg"
+      "video_id": "2RxYq6RcWrg",
+      "short": {
+        "title": "One narrowing, two X-ray views",
+        "status": "scheduled",
+        "studio_verified": true,
+        "video_id": "lWGbO3mO4Og",
+        "watch_url": "https://www.youtube.com/shorts/lWGbO3mO4Og",
+        "target": "2026-11-14T09:25:00+05:00",
+        "timezone": "Asia/Karachi",
+        "sha256": "b9a3afde39166283ed3556b889117c22f427ffe235cf5e13e3117b8c1d6d4034",
+        "duration_seconds": 14.0,
+        "captions": "English burned into picture",
+        "studio_checks": "complete_no_issues"
+      }
     },
     {
       "topic": 5,
@@ -154,7 +167,20 @@
       "master_sha256": "e5099b7031dfdd16198a97c48e7974dbbd735b419c1388699ca4a2ac1b4c8e89",
       "master_bytes": 126722375,
       "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-05",
-      "previous_target": "2026-11-16T18:00:00+05:00"
+      "previous_target": "2026-11-16T18:00:00+05:00",
+      "short": {
+        "title": "Wrist band or groin closure?",
+        "status": "scheduled",
+        "studio_verified": true,
+        "video_id": "EtY-PX7Kx0w",
+        "watch_url": "https://www.youtube.com/shorts/EtY-PX7Kx0w",
+        "target": "2026-11-15T09:25:00+05:00",
+        "timezone": "Asia/Karachi",
+        "sha256": "dcb9f1e177b79bf21f0ff6d98746b5784527af14993c0b8c03772625be487449",
+        "duration_seconds": 27.57,
+        "captions": "English burned into picture",
+        "studio_checks": "complete_no_issues"
+      }
     },
     {
       "topic": 6,
@@ -176,7 +202,20 @@
       "companion_package_qa_pending": false,
       "studio_checks": "complete_no_issues",
       "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-06",
-      "previous_target": "2026-11-17T18:00:00+05:00"
+      "previous_target": "2026-11-17T18:00:00+05:00",
+      "short": {
+        "title": "How a coronary stent opens",
+        "status": "scheduled",
+        "studio_verified": true,
+        "video_id": "xCLcoCIFk00",
+        "watch_url": "https://www.youtube.com/shorts/xCLcoCIFk00",
+        "target": "2026-11-16T09:25:00+05:00",
+        "timezone": "Asia/Karachi",
+        "sha256": "a3949889d18dbb7135f48d0da6abecbefb480b76b6705ca1cc36000e21480261",
+        "duration_seconds": 18.2,
+        "captions": "English burned into picture",
+        "studio_checks": "complete_no_issues"
+      }
     },
     {
       "topic": 7,
