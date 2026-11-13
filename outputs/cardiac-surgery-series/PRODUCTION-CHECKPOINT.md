@@ -19,3 +19,8 @@
 
 - The complete script, nine-scene storyboard, dated source map, and all nine illustration modules are prepared. Representative phone-size and motion checks passed. Full narration and decoded assembly remain pending.
 - The thumbnail and Short excerpt are selected. The renderer can derive 26 scene cues and the Short boundaries from the recording, including the spoken emergency instruction. Scenes P01 and P04–P06 still require timing review against the final voice.
+
+## Episodes 4–20 · Editorial packages
+
+- The [series index](README.md) links the 17 new English scripts, timed illustration storyboards and clinical source maps. Each new episode depicts one operation. The first three episodes remain the opening sequence on coronary bypass.
+- The new episodes are prepared for narration and animation. ElevenLabs narration, final scene timing, rendered-media review, and YouTube scheduling remain pending. The files document source verification and visual requirements. Independent clinician sign-off has not been performed.
