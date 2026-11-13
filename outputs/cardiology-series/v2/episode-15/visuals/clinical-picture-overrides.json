@@ -1,0 +1,58 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/episode-15/visuals/P01-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 16.1,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P02": {
+    "path": "outputs/cardiology-series/v2/episode-15/visuals/P02-multivessel-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 21.1,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P03": {
+    "path": "outputs/cardiology-series/v2/episode-15/visuals/P03-multivessel-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 19.233333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P04": {
+    "path": "outputs/cardiology-series/v2/episode-15/visuals/P04-multivessel-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 21.7,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P05": {
+    "path": "outputs/cardiology-series/v2/episode-15/visuals/P05-multivessel-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 21.6,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P06": {
+    "path": "outputs/cardiology-series/v2/episode-15/visuals/P06-multivessel-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 19.766666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P07": {
+    "path": "outputs/cardiology-series/v2/episode-15/visuals/P07-multivessel-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 21.733333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P08": {
+    "path": "outputs/cardiology-series/v2/episode-15/visuals/P08-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 8.0,
+    "reference_only": false,
+    "native_composition": true
+  }
+}

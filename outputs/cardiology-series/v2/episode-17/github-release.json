@@ -1,0 +1,48 @@
+{
+  "tag": "cardiology-v2-episode-17",
+  "release_url": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-17",
+  "assets": [
+    {
+      "name": "captions.en.srt",
+      "size": 3199,
+      "digest": "sha256:cbdce07135dff2be7c7ed10e8c4be6d665030ec321d469c3ffe401353962b526",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-17/captions.en.srt"
+    },
+    {
+      "name": "chapters.txt",
+      "size": 295,
+      "digest": "sha256:3627cc3356ae4791bb701cdf0cc56022ba4a6d3263c89eb2cf86e01e91d7e1bf",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-17/chapters.txt"
+    },
+    {
+      "name": "episode-17-1080p.mp4",
+      "size": 18302711,
+      "digest": "sha256:d96ce2b782aa764ecfbf72518529ebe13dae169223bb6e4fc6a033c507cdc55b",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-17/episode-17-1080p.mp4"
+    },
+    {
+      "name": "episode-17-1440p.mp4",
+      "size": 20303760,
+      "digest": "sha256:7ed1da7c9fbd84da257793d0a4af8c3c2566c263855428fffbd0ac8752601f5c",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-17/episode-17-1440p.mp4"
+    },
+    {
+      "name": "episode-17-short.mp4",
+      "size": 2113854,
+      "digest": "sha256:f24c4fce5e3a009b02bea258394eb68b6d80153b6a4a2d45cd8fe49ab5cf4316",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-17/episode-17-short.mp4"
+    },
+    {
+      "name": "episode-17-thumbnail.jpg",
+      "size": 122482,
+      "digest": "sha256:d27c66ed7c1a332ff931e26eeb7e759e13a6306bd35ecace8339f93bc6186a17",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-17/episode-17-thumbnail.jpg"
+    },
+    {
+      "name": "QA.json",
+      "size": 9753,
+      "digest": "sha256:43e6edc21273ed14ca04fb253a925fc551e071ceb42a83fefbf08675817f926d",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-17/QA.json"
+    }
+  ]
+}

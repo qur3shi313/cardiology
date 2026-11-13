@@ -1,0 +1,388 @@
+{
+  "input": "episode-15-1440p.mp4",
+  "sha256": "6c9e1f8ddc1df2c3ae3705c9dd26d6150fba222e8ae2d1e266d8db4debd91a9a",
+  "validation_inputs": {
+    "timeline_sha256": "a5d3db04a6db1d67078a54a09b5cfb77b22010253a13e6828c7ac1bef4cc08ef",
+    "caption_file": "captions.en.srt",
+    "caption_sha256": "c8ff5491a59de755986ca79e1293046563790302b6a380fdc03ceb4b0d8ad958"
+  },
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 149.233333,
+  "video_frames": 4477,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 10.333333,
+    "percent": 6.924,
+    "longest_seconds": 8.0,
+    "intervals": [
+      {
+        "start_seconds": 3.8,
+        "end_seconds": 6.133333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 141.233333,
+        "end_seconds": 149.233333,
+        "terminal": true
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P08",
+        "title": "Clinical sources",
+        "frozen_seconds": 8.0,
+        "scene_seconds": 8.0
+      },
+      {
+        "scene": "P01",
+        "title": "Two narrowings, one treatment plan",
+        "frozen_seconds": 2.333,
+        "scene_seconds": 16.1
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.0,
+    "true_peak_dbtp": -1.46,
+    "raw_loudnorm": {
+      "input_i": "-14.00",
+      "input_tp": "-1.46",
+      "input_lra": "2.90",
+      "input_thresh": "-24.26",
+      "output_i": "-13.76",
+      "output_tp": "-1.00",
+      "output_lra": "2.80",
+      "output_thresh": "-24.02",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.24"
+    }
+  },
+  "expected_duration_seconds": 149.23333333333332,
+  "audio_sources": [
+    "outputs/cardiology-series/v2/episode-15/audio/alexander-episode-15.mp3"
+  ],
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 35,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-15-1080p.mp4",
+      "sha256": "a02592d28928f7e7648499b23f22423e7f575b8fa6f3f8e6897e5c3496464638",
+      "duration_seconds": 149.3,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-15-short.mp4",
+      "sha256": "25b03e98b351059373bd53f969ba0aa29ffe7fbd74706d8e5c9bb17d67fb9fa1",
+      "duration_seconds": 19.77,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.02,
+        "true_peak_dbtp": -1.81,
+        "raw_loudnorm": {
+          "input_i": "-14.02",
+          "input_tp": "-1.81",
+          "input_lra": "2.20",
+          "input_thresh": "-24.29",
+          "output_i": "-14.15",
+          "output_tp": "-1.77",
+          "output_lra": "1.30",
+          "output_thresh": "-24.35",
+          "normalization_type": "dynamic",
+          "target_offset": "0.15"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-15-thumbnail.jpg",
+      "sha256": "d9eb5e4177d14240bae8dfdd0ed40028d7f7ab55462a4ee4906fb83a25e7907b",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "contact_sheet": {
+    "file": "episode-15-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145
+    ]
+  },
+  "mechanical_errors": [],
+  "human_visual_review": {
+    "master_sha256": "6c9e1f8ddc1df2c3ae3705c9dd26d6150fba222e8ae2d1e266d8db4debd91a9a",
+    "short_sha256": "25b03e98b351059373bd53f969ba0aa29ffe7fbd74706d8e5c9bb17d67fb9fa1",
+    "thumbnail_sha256": "d9eb5e4177d14240bae8dfdd0ed40028d7f7ab55462a4ee4906fb83a25e7907b",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "verified_at": "2026-11-13T07:09:23.172613+05:00",
+    "intentional_holds": [
+      {
+        "start_seconds": 141.233333,
+        "end_seconds": 149.233333,
+        "reason": "Clinical references, production credit and next episode are readable in the silent closing."
+      }
+    ],
+    "review_evidence": {
+      "verified_at": "2026-11-13T07:09:11.373209+05:00",
+      "master_sha256": "6c9e1f8ddc1df2c3ae3705c9dd26d6150fba222e8ae2d1e266d8db4debd91a9a",
+      "short_sha256": "25b03e98b351059373bd53f969ba0aa29ffe7fbd74706d8e5c9bb17d67fb9fa1",
+      "copy_sha256": "a02592d28928f7e7648499b23f22423e7f575b8fa6f3f8e6897e5c3496464638",
+      "thumbnail_sha256": "d9eb5e4177d14240bae8dfdd0ed40028d7f7ab55462a4ee4906fb83a25e7907b",
+      "caption_alignment": {
+        "cues": 35,
+        "words": 326,
+        "srt_sha256": "c8ff5491a59de755986ca79e1293046563790302b6a380fdc03ceb4b0d8ad958",
+        "embedded_matches_sidecar": true
+      },
+      "source_voice_alignment": {
+        "source_sha256": "3ba8ba8b430c627c66b2545dc860f3f6b820260224136f3c7f9ed2eb34a427c4",
+        "samples": [
+          {
+            "source_sec": 1.0,
+            "output_sec": 1.0,
+            "offset_sec": 0.0,
+            "correlation": 0.9988,
+            "scene": "P01"
+          },
+          {
+            "source_sec": 17.1,
+            "output_sec": 17.1,
+            "offset_sec": 0.0,
+            "correlation": 0.99997,
+            "scene": "P02"
+          },
+          {
+            "source_sec": 38.2,
+            "output_sec": 38.2,
+            "offset_sec": 0.0,
+            "correlation": 0.99854,
+            "scene": "P03"
+          },
+          {
+            "source_sec": 57.43333333333333,
+            "output_sec": 57.43333333333333,
+            "offset_sec": 0.0,
+            "correlation": 0.99967,
+            "scene": "P04"
+          },
+          {
+            "source_sec": 79.13333333333334,
+            "output_sec": 79.13333333333334,
+            "offset_sec": 0.0,
+            "correlation": 0.99998,
+            "scene": "P05"
+          },
+          {
+            "source_sec": 100.73333333333333,
+            "output_sec": 100.73333333333333,
+            "offset_sec": 0.0,
+            "correlation": 0.9996,
+            "scene": "P06"
+          },
+          {
+            "source_sec": 120.5,
+            "output_sec": 120.5,
+            "offset_sec": 0.0,
+            "correlation": 0.99881,
+            "scene": "P07"
+          }
+        ]
+      },
+      "short_voice_alignment": [
+        {
+          "source_sec": 100.58333333333333,
+          "output_sec": 0.85,
+          "offset_sec": 0.0,
+          "highpass_reference_only_correlation": 0.82809,
+          "equivalent_pcm_zero_offset_correlation": 0.9999806
+        },
+        {
+          "source_sec": 103.93333333333334,
+          "output_sec": 4.2,
+          "offset_sec": 0.0,
+          "highpass_reference_only_correlation": 0.8567,
+          "equivalent_pcm_zero_offset_correlation": 0.9999768
+        },
+        {
+          "source_sec": 108.23333333333333,
+          "output_sec": 8.5,
+          "offset_sec": 0.0,
+          "highpass_reference_only_correlation": 0.85721,
+          "equivalent_pcm_zero_offset_correlation": 0.9999707
+        },
+        {
+          "source_sec": 113.13333333333334,
+          "output_sec": 13.4,
+          "offset_sec": 0.0,
+          "highpass_reference_only_correlation": 0.81907,
+          "equivalent_pcm_zero_offset_correlation": 0.9999655
+        },
+        {
+          "source_sec": 117.03333333333333,
+          "output_sec": 17.3,
+          "offset_sec": 0.0,
+          "highpass_reference_only_correlation": 0.85842,
+          "equivalent_pcm_zero_offset_correlation": 0.9999953
+        }
+      ],
+      "closing_peak": 0.0,
+      "audio_and_caption_packets_unchanged": true,
+      "video_full_decode": true,
+      "freeze": {
+        "noise": 0.001,
+        "min_duration_seconds": 2,
+        "total_seconds": 10.333333,
+        "percent": 6.924,
+        "longest_seconds": 8.0,
+        "intervals": [
+          {
+            "start_seconds": 3.8,
+            "end_seconds": 6.133333,
+            "terminal": false
+          },
+          {
+            "start_seconds": 141.233333,
+            "end_seconds": 149.233333,
+            "terminal": true
+          }
+        ],
+        "scene_contributors": [
+          {
+            "scene": "P08",
+            "title": "Clinical sources",
+            "frozen_seconds": 8.0,
+            "scene_seconds": 8.0
+          },
+          {
+            "scene": "P01",
+            "title": "Two narrowings, one treatment plan",
+            "frozen_seconds": 2.333,
+            "scene_seconds": 16.1
+          }
+        ]
+      },
+      "native_frame_counts": {
+        "P01": 483,
+        "P02": 633,
+        "P03": 577,
+        "P04": 651,
+        "P05": 648,
+        "P06": 593,
+        "P07": 652,
+        "P08": 240
+      },
+      "selected_sources": {
+        "P01": {
+          "path": "outputs/cardiology-series/v2/episode-15/visuals/P01-motion-revision.mp4",
+          "sha256": "19fa32cb8297fad6375acfe1de5ea31ebc660910caa0058f38789871b8454e91"
+        },
+        "P02": {
+          "path": "outputs/cardiology-series/v2/episode-15/visuals/P02-multivessel-revision.mp4",
+          "sha256": "eb5753af8e752e819c63a3271d8be5b8e10a6c91b12dbc817e09ddac55503caf"
+        },
+        "P03": {
+          "path": "outputs/cardiology-series/v2/episode-15/visuals/P03-multivessel-revision.mp4",
+          "sha256": "f05241a1ed0134266afb66ad78280cf9077b9f0ec013dd589b465c4af9f05fa6"
+        },
+        "P04": {
+          "path": "outputs/cardiology-series/v2/episode-15/visuals/P04-multivessel-revision.mp4",
+          "sha256": "0362948cfe9b3c783438dd96185e6af8885862f187dbe2e740ab9bad50f50751"
+        },
+        "P05": {
+          "path": "outputs/cardiology-series/v2/episode-15/visuals/P05-multivessel-revision.mp4",
+          "sha256": "d58b08e15a0e0a0e0aea3a3da27ca253271387a6125d81d94b7c102091b465af"
+        },
+        "P06": {
+          "path": "outputs/cardiology-series/v2/episode-15/visuals/P06-multivessel-revision.mp4",
+          "sha256": "f09f3f407376b865a37a96cb89bcf91b64cb76e85ca405e8aae4a29a42540a8c"
+        },
+        "P07": {
+          "path": "outputs/cardiology-series/v2/episode-15/visuals/P07-multivessel-revision.mp4",
+          "sha256": "80fdbda1881ab18903e302503f2c6ed66814870fc9c87a9df9ad3ec9a00c1f02"
+        },
+        "P08": {
+          "path": "outputs/cardiology-series/v2/episode-15/visuals/P08-motion-revision.mp4",
+          "sha256": "71784a063ab251ab90b0cd72442db47c5b0e543459415c24aa17c1a52fa5ed32"
+        }
+      },
+      "sampled_master_frames": 46,
+      "sampled_short_frames": 12,
+      "clinical_and_device": "The film distinguishes stable disease and emergency assessment, and shows a selected PCI example with scaffold expansion, balloon deflation and withdrawal followed by guidewire removal. The diagram shows one graft path from the aorta to a coronary segment beyond the original narrowing. The Heart Team discussion preserves individualized benefits, risks, recovery and patient preferences.",
+      "visual": "Reviewed all eight scenes at phone width and the complete portrait topic at twelve exact decoded sample times. The thumbnail uses the completed graft and the portrait keeps narration captions separate from the illustrated graft.",
+      "audio": "Alexander narration is the sole recorded audio and its compressed packets are unchanged. Embedded captions match the original sidecar, the closing is silent, and no manual auditory listening is claimed."
+    }
+  },
+  "halal_review": "pass",
+  "errors": [],
+  "status": "pass"
+}

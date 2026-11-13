@@ -5,12 +5,12 @@
       "narrowed",
       "arteries"
     ],
-    "seconds": 106.23333333333333,
+    "seconds": 115.6,
     "crop": [
-      1580,
-      1000,
-      530,
-      300
+      1260,
+      946,
+      412,
+      317
     ],
     "eyebrow": "CARDIOLOGY EDUCATION"
   },
@@ -24,10 +24,10 @@
       "another route"
     ],
     "crop": [
-      2560,
-      1440,
-      0,
-      0
+      2450,
+      976,
+      56,
+      300
     ],
     "eyebrow": "ILLUSTRATED CORONARY BYPASS"
   }

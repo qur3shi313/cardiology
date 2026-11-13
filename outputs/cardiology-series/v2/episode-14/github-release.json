@@ -1,0 +1,48 @@
+{
+  "tag": "cardiology-v2-episode-14",
+  "release_url": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-14",
+  "assets": [
+    {
+      "name": "captions.en.srt",
+      "size": 3249,
+      "digest": "sha256:2625b65dd0660fe3ab189fcec795e9763c71e0ef4d360a81eed60fb89c298ee5",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-14/captions.en.srt"
+    },
+    {
+      "name": "chapters.txt",
+      "size": 237,
+      "digest": "sha256:0cc73b2b2f80f0de3f0eff03aa641d3fbfa379e955a61059ce4c70a00f6a00f8",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-14/chapters.txt"
+    },
+    {
+      "name": "episode-14-1080p.mp4",
+      "size": 25734169,
+      "digest": "sha256:4bc766b502bba7b9df0e68b668f427114d19858912352e65ec01baad968f1969",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-14/episode-14-1080p.mp4"
+    },
+    {
+      "name": "episode-14-1440p.mp4",
+      "size": 29997033,
+      "digest": "sha256:2638b7400766584a1cf10aa7674ac980d0978a50027f72b8ffb31b6876b8b481",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-14/episode-14-1440p.mp4"
+    },
+    {
+      "name": "episode-14-short.mp4",
+      "size": 2992892,
+      "digest": "sha256:9d76c9fd4f41c4da32c6ac329181824d3cb173aa247baccc40118ed07f18d37a",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-14/episode-14-short.mp4"
+    },
+    {
+      "name": "episode-14-thumbnail.jpg",
+      "size": 191578,
+      "digest": "sha256:e1df97780dd09c14434eb8e86c53831e2e0d5c75193227065da2c0e80512d8ba",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-14/episode-14-thumbnail.jpg"
+    },
+    {
+      "name": "QA.json",
+      "size": 9915,
+      "digest": "sha256:0f71e367f2bd2d6a12d0f1c763a839d83f64a656e4833aeb7688605cece98fdb",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-14/QA.json"
+    }
+  ]
+}

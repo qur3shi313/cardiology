@@ -28,12 +28,11 @@
     "studio_verified": true,
     "video_id": "W3Q2Gn9R5jg",
     "watch_url": "https://www.youtube.com/shorts/W3Q2Gn9R5jg",
-    "target": "2026-11-24T18:15:00+05:00",
+    "target": "2026-11-23T09:25:00+05:00",
     "timezone": "Asia/Karachi",
     "sha256": "7f693ce970795feaf69abe785e8236348934065721fd883e2d42a01e2fd588ee",
     "duration_seconds": 20.57,
     "captions": "English burned into picture",
-    "studio_checks": "complete_no_issues",
-    "requested_target": "2026-11-23T09:25:00+05:00"
+    "studio_checks": "complete_no_issues"
   }
 }

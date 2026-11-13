@@ -1,0 +1,317 @@
+{
+  "input": "episode-17-1440p.mp4",
+  "sha256": "7ed1da7c9fbd84da257793d0a4af8c3c2566c263855428fffbd0ac8752601f5c",
+  "validation_inputs": {
+    "timeline_sha256": "9bb382acc1203bb35ff265b6b25ebfaf1308784d4175bb8c0ec4878ab7c48d2c",
+    "caption_file": "captions.en.srt",
+    "caption_sha256": "cbdce07135dff2be7c7ed10e8c4be6d665030ec321d469c3ffe401353962b526"
+  },
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 140.433333,
+  "video_frames": 4213,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 10.1,
+    "percent": 7.192,
+    "longest_seconds": 8.0,
+    "intervals": [
+      {
+        "start_seconds": 10.133333,
+        "end_seconds": 12.233333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 132.433333,
+        "end_seconds": 140.433333,
+        "terminal": true
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P08",
+        "title": "Clinical sources",
+        "frozen_seconds": 8.0,
+        "scene_seconds": 8.0
+      },
+      {
+        "scene": "P01",
+        "title": "Planning starts before the procedure",
+        "frozen_seconds": 2.1,
+        "scene_seconds": 12.233
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.01,
+    "true_peak_dbtp": -1.42,
+    "raw_loudnorm": {
+      "input_i": "-14.01",
+      "input_tp": "-1.42",
+      "input_lra": "2.80",
+      "input_thresh": "-24.27",
+      "output_i": "-14.04",
+      "output_tp": "-1.09",
+      "output_lra": "2.70",
+      "output_thresh": "-24.29",
+      "normalization_type": "dynamic",
+      "target_offset": "0.04"
+    }
+  },
+  "expected_duration_seconds": 140.43333333333334,
+  "audio_sources": [
+    "outputs/cardiology-series/v2/episode-17/audio/alexander-episode-17.mp3"
+  ],
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 32,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-17-1080p.mp4",
+      "sha256": "d96ce2b782aa764ecfbf72518529ebe13dae169223bb6e4fc6a033c507cdc55b",
+      "duration_seconds": 140.5,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-17-short.mp4",
+      "sha256": "f24c4fce5e3a009b02bea258394eb68b6d80153b6a4a2d45cd8fe49ab5cf4316",
+      "duration_seconds": 21.17,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.0,
+        "true_peak_dbtp": -1.58,
+        "raw_loudnorm": {
+          "input_i": "-14.00",
+          "input_tp": "-1.58",
+          "input_lra": "3.50",
+          "input_thresh": "-24.38",
+          "output_i": "-14.33",
+          "output_tp": "-1.34",
+          "output_lra": "2.30",
+          "output_thresh": "-24.68",
+          "normalization_type": "dynamic",
+          "target_offset": "0.33"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-17-thumbnail.jpg",
+      "sha256": "d27c66ed7c1a332ff931e26eeb7e759e13a6306bd35ecace8339f93bc6186a17",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "contact_sheet": {
+    "file": "episode-17-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140
+    ]
+  },
+  "mechanical_errors": [],
+  "human_visual_review": {
+    "master_sha256": "7ed1da7c9fbd84da257793d0a4af8c3c2566c263855428fffbd0ac8752601f5c",
+    "short_sha256": "f24c4fce5e3a009b02bea258394eb68b6d80153b6a4a2d45cd8fe49ab5cf4316",
+    "thumbnail_sha256": "d27c66ed7c1a332ff931e26eeb7e759e13a6306bd35ecace8339f93bc6186a17",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "verified_at": "2026-11-13T07:07:55.943717+05:00",
+    "intentional_holds": [
+      {
+        "start_seconds": 132.43333333333334,
+        "end_seconds": 140.43333333333334,
+        "reason": "The final eight seconds hold the clinical references, production disclosure and next episode."
+      }
+    ],
+    "review_evidence": {
+      "master_sha256": "7ed1da7c9fbd84da257793d0a4af8c3c2566c263855428fffbd0ac8752601f5c",
+      "short_sha256": "f24c4fce5e3a009b02bea258394eb68b6d80153b6a4a2d45cd8fe49ab5cf4316",
+      "copy_sha256": "d96ce2b782aa764ecfbf72518529ebe13dae169223bb6e4fc6a033c507cdc55b",
+      "thumbnail_sha256": "d27c66ed7c1a332ff931e26eeb7e759e13a6306bd35ecace8339f93bc6186a17",
+      "verified_at": "2026-11-13T07:07:55.429573+05:00",
+      "captions": {
+        "file": "captions.en.srt",
+        "cue_count": 32,
+        "errors": []
+      },
+      "caption_sha256": "cbdce07135dff2be7c7ed10e8c4be6d665030ec321d469c3ffe401353962b526",
+      "embedded_captions_match": true,
+      "narration_words": 334,
+      "scribe_transcript_matches": true,
+      "packets": {
+        "audio": {
+          "digest": "dd066d49d512b770ce2365714fc43c54a3bda3706c0681aed020c28c5048f62b",
+          "packets": 6584,
+          "time_base": "1/48000"
+        },
+        "subtitle": {
+          "digest": "60b34ae719e5369e9710b7f1f99a17828169abb02bd004bebc64d5d71f3af066",
+          "packets": 63,
+          "time_base": "1/1000000"
+        }
+      },
+      "audio_and_caption_packets_unchanged": true,
+      "voice_source_sha256": "49577c89b24008881f977edd44db1feb250e5dfbd1be6a377a78300066463265",
+      "master_voice_alignment": [
+        {
+          "source_sec": 0.93,
+          "output_sec": 0.93,
+          "offset_sec": 0.0,
+          "correlation": 0.99997,
+          "scene": "P01"
+        },
+        {
+          "source_sec": 13.163333333333332,
+          "output_sec": 13.163333333333332,
+          "offset_sec": 0.0,
+          "correlation": 0.99974,
+          "scene": "P02"
+        },
+        {
+          "source_sec": 32.663333333333334,
+          "output_sec": 32.663333333333334,
+          "offset_sec": 0.0,
+          "correlation": 0.99902,
+          "scene": "P03"
+        },
+        {
+          "source_sec": 53.83,
+          "output_sec": 53.83,
+          "offset_sec": 0.0,
+          "correlation": 0.99992,
+          "scene": "P04"
+        },
+        {
+          "source_sec": 72.23,
+          "output_sec": 72.23,
+          "offset_sec": 0.0,
+          "correlation": 0.99997,
+          "scene": "P05"
+        },
+        {
+          "source_sec": 91.56333333333335,
+          "output_sec": 91.56333333333335,
+          "offset_sec": 0.0,
+          "correlation": 0.99986,
+          "scene": "P06"
+        },
+        {
+          "source_sec": 113.56333333333335,
+          "output_sec": 113.56333333333335,
+          "offset_sec": 0.0,
+          "correlation": 0.99997,
+          "scene": "P07"
+        }
+      ],
+      "short_voice_alignment": [
+        {
+          "source_sec": 32.833333333333336,
+          "output_sec": 1.1,
+          "offset_sec": 0.00038,
+          "correlation": 0.84145
+        },
+        {
+          "source_sec": 37.53333333333333,
+          "output_sec": 5.8,
+          "offset_sec": 0.00013,
+          "correlation": 0.84576
+        },
+        {
+          "source_sec": 41.833333333333336,
+          "output_sec": 10.1,
+          "offset_sec": 0.00013,
+          "correlation": 0.83946
+        },
+        {
+          "source_sec": 45.93333333333334,
+          "output_sec": 14.2,
+          "offset_sec": 0.0,
+          "correlation": 0.79972
+        },
+        {
+          "source_sec": 49.9,
+          "output_sec": 18.166666666666664,
+          "offset_sec": 0.0,
+          "correlation": 0.82379
+        }
+      ],
+      "closing_silent": true,
+      "long_sample_count": 48,
+      "short_sample_count": 12,
+      "clinical": "The planning sequence distinguishes the illustrated echocardiogram from an ECG, the oblique annular slice from the longitudinal view of the higher coronary openings, and the potential femoral\u2013iliac\u2013aortic route from device insertion. Other tests, surgical review, patient preferences and recovery discussion remain conditional.",
+      "picture": "Exact 390-pixel long-film and 216-pixel portrait samples check cue alignment, legibility, anatomy, the narrated final line, synthetic narration disclosure, and clothed anonymous diagrammatic figures. The thumbnail shows the same annular CT illustration.",
+      "audio": "The only audio is the preserved ElevenLabs Alexander narration. The embedded captions, exact packets, Scribe words and waveform windows agree. No manual auditory listening is claimed."
+    }
+  },
+  "halal_review": "pass",
+  "errors": [],
+  "status": "pass"
+}

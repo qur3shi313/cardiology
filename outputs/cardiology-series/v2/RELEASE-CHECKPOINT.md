@@ -16,10 +16,10 @@ Episode 3 starts the daily 09:10 Pakistan time schedule.
 - 22 November · 09:10 PKT · [Looking inside coronary arteries with IVUS and OCT](https://youtu.be/2F9rY6PkpNc)
 - 23 November · 09:10 PKT · [Calcified arteries and complex PCI](https://youtu.be/fkHM98hZN9k)
 - 24 November · 09:10 PKT · [Heart attack and emergency PCI](https://youtu.be/T7FBQqxPgqI)
-- 25 November · In production · Treatment decisions when several coronary arteries are narrowed
+- 25 November · 09:10 PKT · [Treatment decisions when several coronary arteries are narrowed](https://youtu.be/b5HiwiyGDQ4)
 - 26 November · 09:10 PKT · [What happens in aortic stenosis](https://youtu.be/IWQiJlhhobk)
-- 27 November · In production · How the Heart Team plans TAVI
-- 28 November · In production · How transcatheter aortic valve implantation is performed
+- 27 November · 09:10 PKT · [How the Heart Team plans TAVI](https://youtu.be/-ZrUmNveaKc)
+- 28 November · 09:10 PKT · [How transcatheter aortic valve implantation is performed](https://youtu.be/jm8EM73HFzg)
 - 29 November · In production · Recovery and follow-up after TAVI
 - 30 November · In production · TAVI, surgery and how the Heart Team weighs the options
 

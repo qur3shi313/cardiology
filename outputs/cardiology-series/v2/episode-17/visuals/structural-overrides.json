@@ -1,0 +1,58 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/episode-17/visuals/P01-assessment-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 12.233333333333333,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P02": {
+    "path": "outputs/cardiology-series/v2/episode-17/visuals/P02-assessment-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 19.5,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P03": {
+    "path": "outputs/cardiology-series/v2/episode-17/visuals/P03-assessment-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 21.166666666666668,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P04": {
+    "path": "outputs/cardiology-series/v2/episode-17/visuals/P04-assessment-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 18.4,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P05": {
+    "path": "outputs/cardiology-series/v2/episode-17/visuals/P05-assessment-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 19.333333333333332,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P06": {
+    "path": "outputs/cardiology-series/v2/episode-17/visuals/P06-assessment-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 22.0,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P07": {
+    "path": "outputs/cardiology-series/v2/episode-17/visuals/P07-assessment-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 19.8,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P08": {
+    "path": "outputs/cardiology-series/v2/episode-17/visuals/P08-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 8.0,
+    "reference_only": false,
+    "native_composition": true
+  }
+}

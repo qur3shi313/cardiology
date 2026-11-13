@@ -84,6 +84,26 @@ def groin_route(c,p,t):
     access.line(c,wire,'#f9e1a6',4.3)
     x,y=wire[-1]
     angiogram.dot(c,x,y,6,'#fff3d0')
+    # The lower-right inset magnifies the same point on the path, so the
+    # moving wire remains visible when the overview is viewed on a phone.
+    bx,by,bw,bh=880,320,342,261
+    angiogram.block(c,bx,by,bw,bh,18,access.solid('#193e37'))
+    access.text(c,'Guidewire detail',bx+20,by+42,32,'#ecf6eb')
+    c.save()
+    c.clipRRect(skia.RRect.MakeRectXY(skia.Rect.MakeXYWH(bx+14,by+61,bw-28,155),10,10),doAntiAlias=True)
+    c.translate(bx+bw/2,by+140)
+    c.scale(2.65,2.65)
+    c.translate(-x,-y)
+    access.rect(c,x-80,y-45,160,90,access.solid('#142b2a'))
+    access.line(c,ROUTE,'#9e575d',35)
+    access.line(c,ROUTE,'#d1978a',23)
+    access.line(c,SHEATH,'#34665d',17)
+    access.line(c,SHEATH,'#96c4b4',10)
+    access.line(c,wire,'#644932',7)
+    access.line(c,wire,'#f8db9c',4.2)
+    angiogram.dot(c,x,y,5.8,'#fff3d0')
+    c.restore()
+    access.text(c,'Magnified from the route',bx+19,by+246,24,'#c5e7d7')
 
 def prosthetic_top(c,p,t):
     access.rect(c,0,0,1280,720,access.solid('#e5eee6'))
@@ -268,6 +288,206 @@ def result_check(c,p,t):
         trace=[(x+19+i*8,y+151+pattern[(i+start)%len(pattern)]) for i in range(36)]
         access.line(c,trace,'#bbebd1',4)
 
+
+def panel(c,title,heading,lines,tag='TAVI PROCEDURE'):
+    access.rect(c,0,0,1280,720,access.solid('#e7f0e8'))
+    angiogram.header(c,title,tag)
+    angiogram.block(c,680,184,547,424,28,access.solid('#193d37'))
+    for index,text in enumerate(heading):
+        access.text(c,text,56,291+47*index,43,'#004b3d')
+    for index,text in enumerate(lines):
+        access.text(c,text,56,357+47*(len(heading)-1)+40*index,32,'#333b39',access.REGULAR)
+
+
+def rhythm(c,t,x,y,w,h):
+    pattern=(0,0,0,-5,0,0,11,-49,28,0,0,-11,-15,0,0,0,0,0)
+    for index in range(4):
+        level=y+index*h/3
+        access.line(c,[(x,level),(x+w,level)],'#7bada0',1.8,125)
+    phase=t*13
+    points=[]
+    for index in range(94):
+        position=phase+index*.62
+        step=int(position)
+        height=blend(pattern[step%len(pattern)],pattern[(step+1)%len(pattern)],position-step)
+        points.append((x+index*w/93,y+h*.55+height*h/83))
+    access.line(c,points,'#4e8977',11)
+    access.line(c,points,'#c6f1d8',4.8)
+
+
+def focus_rows(c,items,progress,*,y=263,step=63):
+    position=min(len(items)-.001,progress*len(items))
+    selected=int(position)
+    for index,label in enumerate(items):
+        line_y=y+step*index
+        fill='#40796b' if index==selected else '#265349'
+        angiogram.block(c,708,line_y-34,490,53,15,access.solid(fill))
+        if index==selected:
+            underline=415*(position-selected)
+            if underline>1:
+                angiogram.block(c,758,line_y+8,underline,6,3,access.solid('#8ac5ae'))
+        angiogram.dot(c,738,line_y-8,8,'#e4ce99' if index==selected else '#8db4a6')
+        access.text(c,label,763,line_y+1,29,'#edf6ea')
+
+
+def recovery_indicator(c,t,kind):
+    """Draw the monitored finding or recovery action alongside its text."""
+    angiogram.block(c,709,501,489,80,14,access.solid('#112e2a'))
+    if kind in ('rhythm','observe'):
+        rhythm(c,t,732,516,430,49)
+    elif kind in ('bleeding','injury'):
+        access.line(c,[(742,544),(1162,544)],'#a85d65',23)
+        access.line(c,[(742,544),(1162,544)],'#e3aa92',12)
+        for index in range(6):
+            x=755+(index*71+t*144)%394
+            angiogram.dot(c,x,544,4,'#f3deab')
+        if kind=='bleeding':
+            pulse=(1-cos(t*2*pi))/2
+            angiogram.dot(c,951,529,8+6*pulse,'#efd0a0')
+        else:
+            access.line(c,[(930,550),(944,537),(957,550)],'#ffe1ae',4)
+    elif kind=='stroke':
+        angiogram.dot(c,950,541,30,'#5f9685')
+        for sign in (-1,1):
+            angiogram.dot(c,950+sign*11,536,3.4,'#e4f2e6')
+        access.line(c,[(936,552),(948,555),(962,550+6*(1-cos(t*2*pi))/2)],'#e4f2e6',4)
+    else:
+        y=539
+        for index in range(3):
+            x=829+index*121
+            angiogram.dot(c,x,y,17,'#659f8d')
+            angiogram.dot(c,x,y,7+3*cos(t*3-index),'#d0eddc')
+        access.line(c,[(845,y),(933,y)],'#8ebbaa',4)
+        access.line(c,[(966,y),(1054,y)],'#8ebbaa',4)
+
+
+def discharge_indicator(c,t,kind):
+    """Identify the action or symptom being highlighted on the home plan."""
+    angiogram.block(c,709,501,489,80,14,access.solid('#112e2a'))
+    phase=(1-cos(t*2*pi*.65))/2
+    if kind in ('medicines','dressing'):
+        for index in range(3):
+            x=761+index*130
+            fill='#d5ebdd' if index==int(t*1.4)%3 else '#689e8f'
+            angiogram.block(c,x,520,109,38,19,access.solid(fill))
+            if kind=='dressing':
+                angiogram.block(c,x+34,525,41,28,8,access.solid('#f3dfb5'))
+            else:
+                access.line(c,[(x+54,524),(x+54,554)],'#225a50',4)
+    elif kind in ('activity','follow-up'):
+        for index in range(5):
+            x=775+index*87
+            y=544+8*sin(t*4-index)
+            angiogram.dot(c,x,y,14,'#a7d2be')
+            if index:
+                access.line(c,[(x-73,544),(x-16,544)],'#6b9f91',5)
+    elif kind=='fever':
+        angiogram.block(c,765,529,353,22,11,access.solid('#587e75'))
+        angiogram.block(c,765,529,162+70*phase,22,11,access.solid('#e2b780'))
+        angiogram.dot(c,761,540,24,'#edc68c')
+    else:
+        angiogram.block(c,754,519,392,48,16,access.solid('#ba8c79'))
+        angiogram.block(c,901,523,107,39,13,access.solid('#f5e6c8'))
+        if kind=='redness':
+            c.drawOval(skia.Rect.MakeXYWH(839,523,60+30*phase,40),access.solid('#985565',210))
+        else:
+            angiogram.dot(c,1018+19*phase,548,9,'#f0c991')
+
+
+def planning(c,t):
+    if t<5.97:
+        clinical(c,'P02',0,t)
+        angiogram.block(c,55,183,371,200,20,access.solid('#193d37'))
+        access.text(c,'Illustrated echocardiogram',75,230,27,'#e6f3e8')
+        beat=(1-cos(t*2*pi*1.08))/2
+        for sign in (-1,1):
+            cusp=angiogram.art.curve((241+sign*112,307),
+                ((241+sign*68,273),(241+sign*35,322),(241+sign*(5+28*beat),293)))
+            access.line(c,cusp,'#73a79a',13)
+            access.line(c,cusp,'#cbeada',5)
+        access.line(c,[(241,365),(241,311)],'#e3cb94',5)
+        access.line(c,[(230,325),(241,311),(252,325)],'#e3cb94',5)
+        access.rect(c,0,673,1280,47,access.solid('#173b35'))
+        access.text(c,'Echo shows how tightly the aortic valve is narrowed',54,705,29,'#e7f4e9')
+        return
+    if t<11.1:
+        c.drawImageRect(route_plate(planning=True),skia.Rect.MakeWH(1280,720),
+                        skia.SamplingOptions(skia.FilterMode.kNearest))
+        progress=access.smooth((t-5.97)/4.7)
+        path=angiogram.art.trace(ROUTE,progress)
+        access.line(c,path,'#f3d79a',14)
+        x,y=path[-1]
+        angiogram.dot(c,x,y,15,'#f3d79a',188)
+        angiogram.block(c,888,311,329,241,23,access.solid('#193e37'))
+        access.text(c,'Valve fit on CT',912,353,31,'#e6f3e9')
+        x,y=1048,443
+        for width,height,tone in ((190,138,'#7b9a91'),(163,116,'#a7b9a6'),(133,91,'#284941')):
+            c.drawOval(skia.Rect.MakeXYWH(x-width/2,y-height/2,width,height),access.solid(tone))
+        marker=404+75*((t-5.97)%2.0)/2.0
+        access.line(c,[(970,marker),(1128,marker)],'#d4f3df',5.5)
+        access.text(c,'Illustrated annular view',909,527,23,'#c5e7d5')
+        access.text(c,'CT assesses both valve anatomy and the access arteries',54,685,29,'#245c50')
+        return
+    if t<16.5:
+        panel(c,'How the Heart Team decides',('Your health and goals',),
+              ('The team reviews the findings with you.',))
+        focus_rows(c,('Symptoms','Valve and artery anatomy','Overall health','Patient preferences'),
+                   (t-11.1)/5.4,y=265,step=85)
+    else:
+        panel(c,'How the Heart Team decides',('More than one option',),
+              ('Surgical valve replacement may','be a better option for some people.'))
+        focus_rows(c,('Transcatheter replacement','Surgical valve replacement','Risks and recovery'),
+                   (t-16.5)/6.27,y=291,step=102)
+    access.text(c,'The decision is tailored to the person',55,672,29,'#2b6456')
+
+
+def recovery(c,ident,t):
+    if ident=='P08':
+        title='Recovery in hospital'
+        if t<4.9:
+            panel(c,title,('Rhythm and groin checks',),('Staff monitor your heart rhythm','and inspect the access site.'))
+            access.text(c,'Illustrated rhythm monitor',712,245,31,'#dff2e4')
+            rhythm(c,t,715,279,473,157)
+            access.text(c,'The team checks the groin site',712,526,28,'#c7e7d8')
+        elif t<11.25:
+            panel(c,title,('Monitoring for complications',),('The team checks for these risks.','Tell staff about any new symptoms.'))
+            progress=(t-4.9)/6.35
+            focus_rows(c,('Bleeding','Vessel injury','Stroke','Heart rhythm changes'),progress,y=251,step=69)
+            recovery_indicator(c,t,('bleeding','injury','stroke','rhythm')[min(3,int(progress*4))])
+        elif t<13.45:
+            panel(c,title,('Some need a pacemaker',),('The team uses heart rhythm','checks to guide that decision.'))
+            access.text(c,'Illustrated rhythm monitor',712,245,31,'#dff2e4')
+            rhythm(c,t,715,279,473,157)
+        else:
+            panel(c,title,('Recovery time varies',),('Your recovery guides how long','you stay in hospital.'))
+            progress=(t-13.45)/3.42
+            focus_rows(c,('Observe your progress','Review readiness to go home'),progress,y=291,step=104)
+            recovery_indicator(c,t,'observe' if progress<.5 else 'follow-up')
+    else:
+        title='Your written plan at home'
+        if t<7.88:
+            panel(c,title,('Ask for written instructions',),('Confirm how your team wants you','to manage recovery at home.'))
+            progress=t/7.88
+            focus_rows(c,('Medicines','Wound care','Activity and driving','Follow-up'),progress,y=251,step=69)
+            discharge_indicator(c,t,('medicines','dressing','activity','follow-up')[min(3,int(progress*4))])
+        elif t<11.10:
+            panel(c,title,('Mild bruising or soreness',),('This can happen at the groin','access site after TAVI.'))
+            access.text(c,'Illustrated groin dressing',711,243,30,'#dff2e4')
+            angiogram.block(c,724,282,452,254,36,access.solid('#bb8c78'))
+            c.drawOval(skia.Rect.MakeXYWH(814,315,220,159),access.solid('#956279',190))
+            angiogram.block(c,845,337,209,100,25,access.solid('#f6e9cc'))
+            angiogram.block(c,897,354,104,66,16,access.solid('#fff3db'))
+            view=861+156*access.smooth((t-7.88)/2.9)
+            access.line(c,[(view,455),(view,489),(view+36,489)],'#ffedc7',7)
+            angiogram.dot(c,view+39,489,10,'#fff0d2')
+        else:
+            panel(c,title,('Call your care team promptly',),('Report a wound that is getting','worse or a new fever.'))
+            progress=(t-11.1)/6.37
+            focus_rows(c,('Increasing redness or pain','Drainage from the site','Fever'),progress,y=258,step=93)
+            discharge_indicator(c,t,('redness','drainage','fever')[min(2,int(progress*3))])
+    access.text(c,'Follow your own care team’s advice',55,672,29,'#2b6456')
+
+
 def clinical(c,ident,p,t):
     if ident=='P04' and p<.64:
         groin_route(c,p/.64,t)
@@ -344,31 +564,12 @@ def clinical(c,ident,p,t):
     access.rect(c,0,673,1280,47,access.solid('#173b35'))
     access.text(c,note,54,705,29,'#dceddf',access.REGULAR)
 
-TEXT={
- 'P03':('How the Heart Team decides',(
-        ('Echocardiography',('Checks how tightly the valve is narrowed',),'pulse'),
-        ('CT helps plan the approach',('See where the valve would sit and','how the device might reach it'),'check'),
-        ('The team reviews options with you',('Anatomy, health and preferences matter',),'list'))),
- 'P08':('Recovery in hospital',(
-        ('Heart rhythm and access site',('Staff monitor the rhythm and groin site',),'pulse'),
-        ('Staff watch for complications',('Bleeding, vessel injury or stroke','Changes in heart rhythm'),'check'),
-        ('Recovery time varies',('A pacemaker is needed in some cases',),'clock'))),
- 'P09':('Your written plan at home',(
-        ('Medicines, wound care and activity',('Confirm driving and follow-up','Follow your team’s instructions'),'list'),
-        ('Mild groin bruising or soreness',('This can happen after TAVI',),'band'),
-        ('Contact your team promptly',('Increasing redness, pain, drainage or fever','need advice'),'call'))),
- 'P10':('When to get emergency help',(
-        ('Heavy bleeding',('or bleeding that will not stop',),'band'),
-        ('Severe chest pain',('or sudden trouble breathing',),'pulse'),
-        ('Possible signs of stroke',('Sudden face droop, arm weakness or','trouble speaking'),'call'))),
-}
-
-# Scene-local boundaries follow the locked recovery and warning captions.
-RECOVERY_MARKS={
-    'P08':(0.,5.115,10.387,16.867),
-    'P09':(0.,7.882,11.109,17.467),
-    'P10':(0.,5.6,10.685,16.167),
-}
+EMERGENCY_BEATS=(
+    ('Heavy bleeding',('or bleeding that will not stop',),'band'),
+    ('Severe chest pain',('or sudden trouble breathing',),'pulse'),
+    ('Possible signs of stroke',('Sudden face droop, arm weakness or','trouble speaking'),'call'),
+)
+EMERGENCY_MARKS=(0.,5.6,10.685,16.167)
 
 def draw(c,ident,p,t):
     if ident=='P12':
@@ -378,21 +579,22 @@ def draw(c,ident,p,t):
             'Guy’s and St Thomas’ NHS Foundation Trust · TAVI procedure'),
             'Recovery and follow-up after TAVI')
         return
-    if ident not in TEXT:
+    if ident=='P03':
+        planning(c,t)
+        return
+    if ident in ('P08','P09'):
+        recovery(c,ident,t)
+        return
+    if ident!='P10':
         clinical(c,ident,p,t)
         return
-    title,beats=TEXT[ident]
-    if marks := RECOVERY_MARKS.get(ident):
-        i=min(len(beats)-1,bisect_right(marks,t)-1)
-        progress=min(1,(t-marks[i])/(marks[i+1]-marks[i]))
-    else:
-        i=min(len(beats)-1,int(p*len(beats)))
-        progress=p*len(beats)-i
-    heading,lines,icon=beats[i]
-    restenosis.card(c,title,heading,lines,icon,progress,t,topic='TAVI PROCEDURE')
-    if ident=='P10':
-        access.rect(c,0,632,1280,88,access.solid('#613239'))
-        access.text(c,'Call your local emergency number',55,688,34,'#fff3e8')
+    index=min(len(EMERGENCY_BEATS)-1,bisect_right(EMERGENCY_MARKS,t)-1)
+    start,end=EMERGENCY_MARKS[index:index+2]
+    progress=min(1,(t-start)/(end-start))
+    heading,lines,icon=EMERGENCY_BEATS[index]
+    restenosis.card(c,'When to get emergency help',heading,lines,icon,progress,t,topic='TAVI PROCEDURE')
+    access.rect(c,0,632,1280,88,access.solid('#613239'))
+    access.text(c,'Call your local emergency number',55,688,34,'#fff3e8')
 
 def render():
     ep=SERIES/'episode-18'

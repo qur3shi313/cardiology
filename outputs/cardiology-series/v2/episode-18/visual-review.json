@@ -1,0 +1,37 @@
+{
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "master_sha256": "4bd7ae67df7a0e1c961960326f323c6e6b051ed6a6dda30ef6863357973f0930",
+  "short_sha256": "905a384c58f38281dd267ad9fff760238818a70bb1dc25a7eaf7d246a07ff1d3",
+  "thumbnail_sha256": "3c8099d17a1b2da91057a6019b5210e2054dd52622648cc3a377b8d236ccbd94",
+  "verified_at": "2026-11-13T07:07:26.244519+05:00",
+  "notes": {
+    "long": "Reviewed the exact decoded retained scenes and all four exact repaired scenes. The film shows the narrowed native valve, echo and CT planning, Heart Team options, the femoral-to-aorta wire route, wire crossing into the left ventricle, the compressed tissue valve on a balloon, expansion, balloon and wire withdrawal, and blood flowing through the new valve. The illustrated case uses a balloon-expandable device. Device relationships are visible and operating parameters are omitted.",
+    "recovery": "The exact decoded revisions show groin and rhythm checks, monitoring for complications, the possibility of a pacemaker, individual stay length, and written home instructions. Wound and symptom illustrations are anonymous and schematic. The emergency section and closing credits were retained and reviewed.",
+    "motion": "The 5,767-frame final master has 13.543 percent measured holds including eight seconds for the deliberate closing card. The longest non-credit hold is 3.2 seconds. All coded pictures match the selected native clips and all revised scenes match decoded pixels at the first, middle and last frames.",
+    "captions_and_voice": "All 44 English cues and 441 words match the locked script and embedded captions. All 9,012 AAC and 87 caption packets match the prior aligned master exactly. Eleven voiced scenes matched the sole Alexander narration source at zero detected offset. No music source appears in the timeline.",
+    "short": "Exact 529-frame, 17.633333-second vertical excerpt covers P06. Twelve decoded portrait samples show balloon inflation, frame opening, withdrawal and valve flow. The burned-in English captions stay readable below the art. The active picture band has one two-second measured hold and the four measured narration windows align to the long excerpt at zero offset.",
+    "thumbnail": "The selected 99.5-second 1280 by 720 JPEG shows the valve frame around the open balloon, the shaft, displaced native leaflets and the guidewire curl. It is reproducible from the final master and contains no clipped text.",
+    "clinical_sources": [
+      "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/all-esc-practice-guidelines/valvular-heart-disease/",
+      "https://www.heart.org/en/health-topics/heart-valve-problems-and-disease/understanding-your-heart-valve-treatment-options/what-is-tavr",
+      "https://www.guysandstthomas.nhs.uk/health-information/tavi-aortic-stenosis/tavi-procedure",
+      "https://www.guysandstthomas.nhs.uk/health-information/tavi-aortic-stenosis/recovery-tavi"
+    ]
+  },
+  "method": "Codex review of exact decoded pictures, English subtitle text, primary sources and waveform alignment. Manual listening and independent clinical review remain unverified.",
+  "intentional_holds": [
+    {
+      "start_seconds": 184.23333333333332,
+      "end_seconds": 192.23333333333332,
+      "reason": "Eight seconds for the source credits, production disclosure and next topic."
+    }
+  ]
+}

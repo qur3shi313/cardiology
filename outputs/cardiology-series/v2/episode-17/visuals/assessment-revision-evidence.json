@@ -1,0 +1,106 @@
+{
+  "P01": {
+    "file": "P01-assessment-revision.mp4",
+    "sha256": "5facfa0f738437565d1797a4e4c671c6f1b63f4f0a1c6cd08d0963f832fe5503",
+    "frames": 367,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 2.1,
+      "percent": 17.166,
+      "longest_seconds": 2.1,
+      "intervals": [
+        {
+          "start_seconds": 10.133333,
+          "end_seconds": 12.233333333333333,
+          "terminal": true
+        }
+      ]
+    }
+  },
+  "P02": {
+    "file": "P02-assessment-revision.mp4",
+    "sha256": "2cd954df1108bf20cb641f40a2702afa8c1220b289556a19492374f69aabd510",
+    "frames": 585,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P03": {
+    "file": "P03-assessment-revision.mp4",
+    "sha256": "6523d60430307d6bbd09938ca47a5eb1d020c17a0289a05c229887f8e674f851",
+    "frames": 635,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P04": {
+    "file": "P04-assessment-revision.mp4",
+    "sha256": "a5ff08f962ad05d9bd355ed70b9026ffd53532e9b456dc73b3315f6bdc7d1776",
+    "frames": 552,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P05": {
+    "file": "P05-assessment-revision.mp4",
+    "sha256": "2209647c32f83aac8a552882859240a952cad4e141f654928692009ff42c66ce",
+    "frames": 580,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P06": {
+    "file": "P06-assessment-revision.mp4",
+    "sha256": "2e4a7f92de3a47017f29388894793a85e68d6c4e05d99d977e74cd0f4d7e938b",
+    "frames": 660,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P07": {
+    "file": "P07-assessment-revision.mp4",
+    "sha256": "ed5e27b8dcfed8856b67cdcb7a4bc407904521c964753d745a49dc5c21653f7c",
+    "frames": 594,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  }
+}

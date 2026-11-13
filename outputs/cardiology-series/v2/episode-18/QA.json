@@ -1,0 +1,270 @@
+{
+  "input": "episode-18-1440p.mp4",
+  "sha256": "4bd7ae67df7a0e1c961960326f323c6e6b051ed6a6dda30ef6863357973f0930",
+  "validation_inputs": {
+    "timeline_sha256": "706eaa1a796a4954fbcf6bfd19b76e5232fa5d6c8dfa43d9890ea212f975c7b5",
+    "caption_file": "captions.en.srt",
+    "caption_sha256": "554de6f849abd5f904d1c5a7fc95737b89202b7faec865fa0e709bed0a42dc57"
+  },
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 192.233333,
+  "video_frames": 5767,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 26.033334,
+    "percent": 13.543,
+    "longest_seconds": 8.0,
+    "intervals": [
+      {
+        "start_seconds": 54.0,
+        "end_seconds": 56.1,
+        "terminal": false
+      },
+      {
+        "start_seconds": 56.1,
+        "end_seconds": 58.2,
+        "terminal": false
+      },
+      {
+        "start_seconds": 58.2,
+        "end_seconds": 60.266667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 103.8,
+        "end_seconds": 106.0,
+        "terminal": false
+      },
+      {
+        "start_seconds": 148.5,
+        "end_seconds": 151.7,
+        "terminal": false
+      },
+      {
+        "start_seconds": 151.7,
+        "end_seconds": 153.833333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 153.833333,
+        "end_seconds": 155.966667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 155.966667,
+        "end_seconds": 158.066667,
+        "terminal": false
+      },
+      {
+        "start_seconds": 184.233333,
+        "end_seconds": 192.233333,
+        "terminal": true
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P09",
+        "title": "Going home",
+        "frozen_seconds": 9.567,
+        "scene_seconds": 17.467
+      },
+      {
+        "scene": "P12",
+        "title": "Clinical sources",
+        "frozen_seconds": 8.0,
+        "scene_seconds": 8.0
+      },
+      {
+        "scene": "P03",
+        "title": "How the heart team decides",
+        "frozen_seconds": 6.267,
+        "scene_seconds": 22.767
+      },
+      {
+        "scene": "P06",
+        "title": "Opening the new valve",
+        "frozen_seconds": 2.2,
+        "scene_seconds": 17.633
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.03,
+    "true_peak_dbtp": -1.41,
+    "raw_loudnorm": {
+      "input_i": "-14.03",
+      "input_tp": "-1.41",
+      "input_lra": "3.30",
+      "input_thresh": "-24.39",
+      "output_i": "-13.95",
+      "output_tp": "-1.22",
+      "output_lra": "3.10",
+      "output_thresh": "-24.30",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.05"
+    }
+  },
+  "expected_duration_seconds": 192.23333333333332,
+  "audio_sources": [
+    "outputs/cardiology-series/episode-04/production/alexander.mp3"
+  ],
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 44,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-18-1080p.mp4",
+      "sha256": "df7a1f597e7e66a4b82cf015437274cffca6c24a546715f09073b64d3eb3d8dc",
+      "duration_seconds": 192.3,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-18-short.mp4",
+      "sha256": "905a384c58f38281dd267ad9fff760238818a70bb1dc25a7eaf7d246a07ff1d3",
+      "duration_seconds": 17.63,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.01,
+        "true_peak_dbtp": -1.73,
+        "raw_loudnorm": {
+          "input_i": "-14.01",
+          "input_tp": "-1.73",
+          "input_lra": "1.70",
+          "input_thresh": "-24.25",
+          "output_i": "-14.08",
+          "output_tp": "-1.73",
+          "output_lra": "1.80",
+          "output_thresh": "-24.33",
+          "normalization_type": "dynamic",
+          "target_offset": "0.08"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-18-thumbnail.jpg",
+      "sha256": "3c8099d17a1b2da91057a6019b5210e2054dd52622648cc3a377b8d236ccbd94",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "contact_sheet": {
+    "file": "episode-18-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190
+    ]
+  },
+  "mechanical_errors": [],
+  "human_visual_review": {
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "master_sha256": "4bd7ae67df7a0e1c961960326f323c6e6b051ed6a6dda30ef6863357973f0930",
+    "short_sha256": "905a384c58f38281dd267ad9fff760238818a70bb1dc25a7eaf7d246a07ff1d3",
+    "thumbnail_sha256": "3c8099d17a1b2da91057a6019b5210e2054dd52622648cc3a377b8d236ccbd94",
+    "verified_at": "2026-11-13T07:07:26.244519+05:00",
+    "notes": {
+      "long": "Reviewed the exact decoded retained scenes and all four exact repaired scenes. The film shows the narrowed native valve, echo and CT planning, Heart Team options, the femoral-to-aorta wire route, wire crossing into the left ventricle, the compressed tissue valve on a balloon, expansion, balloon and wire withdrawal, and blood flowing through the new valve. The illustrated case uses a balloon-expandable device. Device relationships are visible and operating parameters are omitted.",
+      "recovery": "The exact decoded revisions show groin and rhythm checks, monitoring for complications, the possibility of a pacemaker, individual stay length, and written home instructions. Wound and symptom illustrations are anonymous and schematic. The emergency section and closing credits were retained and reviewed.",
+      "motion": "The 5,767-frame final master has 13.543 percent measured holds including eight seconds for the deliberate closing card. The longest non-credit hold is 3.2 seconds. All coded pictures match the selected native clips and all revised scenes match decoded pixels at the first, middle and last frames.",
+      "captions_and_voice": "All 44 English cues and 441 words match the locked script and embedded captions. All 9,012 AAC and 87 caption packets match the prior aligned master exactly. Eleven voiced scenes matched the sole Alexander narration source at zero detected offset. No music source appears in the timeline.",
+      "short": "Exact 529-frame, 17.633333-second vertical excerpt covers P06. Twelve decoded portrait samples show balloon inflation, frame opening, withdrawal and valve flow. The burned-in English captions stay readable below the art. The active picture band has one two-second measured hold and the four measured narration windows align to the long excerpt at zero offset.",
+      "thumbnail": "The selected 99.5-second 1280 by 720 JPEG shows the valve frame around the open balloon, the shaft, displaced native leaflets and the guidewire curl. It is reproducible from the final master and contains no clipped text.",
+      "clinical_sources": [
+        "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/all-esc-practice-guidelines/valvular-heart-disease/",
+        "https://www.heart.org/en/health-topics/heart-valve-problems-and-disease/understanding-your-heart-valve-treatment-options/what-is-tavr",
+        "https://www.guysandstthomas.nhs.uk/health-information/tavi-aortic-stenosis/tavi-procedure",
+        "https://www.guysandstthomas.nhs.uk/health-information/tavi-aortic-stenosis/recovery-tavi"
+      ]
+    },
+    "method": "Codex review of exact decoded pictures, English subtitle text, primary sources and waveform alignment. Manual listening and independent clinical review remain unverified.",
+    "intentional_holds": [
+      {
+        "start_seconds": 184.23333333333332,
+        "end_seconds": 192.23333333333332,
+        "reason": "Eight seconds for the source credits, production disclosure and next topic."
+      }
+    ]
+  },
+  "halal_review": "pass",
+  "errors": [],
+  "status": "pass"
+}

@@ -73,8 +73,12 @@ def record(number, video, native_time, master_sha, thumbnail):
     prefix = old.split('\n- ',1)[0]
     suffix = old[old.index('The older videos'):]
     lines = []
-    for item in verified:
+    for item in schedule['targets']:
         day = datetime.fromisoformat(item['target'])
+        if not item.get('studio_verified'):
+            state = 'Ready for Studio' if item.get('qa_passed') else 'In production'
+            lines.append(f"- {day.day} {day:%B} · {state} · {item['title']}")
+            continue
         state = 'Public' if item.get('status')=='published' else day.strftime('%H:%M PKT')
         lines.append(f"- {day.day} {day:%B} · {state} · [{item['title']}]({item['watch_url']})")
     checkpoint.write_text(prefix+'\n'+'\n'.join(lines)+'\n\n'+suffix,

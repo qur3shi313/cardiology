@@ -7,4 +7,4 @@ Morning companion releases are scheduled 15 minutes after the long films.
 - 13 November · 09:25 PKT · [Needle, wire, then sheath | Wrist artery access](https://www.youtube.com/shorts/4uWOhJmUjeM)
 - 17 November · 09:25 PKT · [What stays in the artery? | Drug-eluting stents](https://www.youtube.com/shorts/h_p9or083RA)
 - 22 November · 09:25 PKT · [How IVUS sees inside a coronary artery](https://www.youtube.com/shorts/Gpv-_JouNwA)
-- 24 November · 18:15 PKT · move to 23 November 09:25 PKT awaiting Studio confirmation · [How pressure waves act on coronary calcium](https://www.youtube.com/shorts/W3Q2Gn9R5jg)
+- 23 November · 09:25 PKT · [How pressure waves act on coronary calcium](https://www.youtube.com/shorts/W3Q2Gn9R5jg)
