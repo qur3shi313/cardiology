@@ -270,7 +270,20 @@
       "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-08",
       "studio_checks": "scheduled_no_notices_on_channel_list",
       "previous_target": "2026-11-19T18:00:00+05:00",
-      "video_id": "J8YPIjm9OmY"
+      "video_id": "J8YPIjm9OmY",
+      "short": {
+        "title": "Coronary drug-coated balloons",
+        "status": "scheduled",
+        "studio_verified": true,
+        "video_id": "DydgM8a-PG4",
+        "watch_url": "https://www.youtube.com/shorts/DydgM8a-PG4",
+        "target": "2026-11-18T09:25:00+05:00",
+        "timezone": "Asia/Karachi",
+        "sha256": "b0a58432367911378ff43d5b8366ad1dbd5b9c40e5f3962d046bf6542ba2b5b8",
+        "duration_seconds": 28.9,
+        "captions": "English burned into picture",
+        "studio_checks": "complete_no_issues"
+      }
     },
     {
       "topic": 9,
@@ -292,7 +305,20 @@
       "companion_package_qa_pending": false,
       "studio_checks": "complete_no_issues",
       "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-09",
-      "previous_target": "2026-11-20T18:00:00+05:00"
+      "previous_target": "2026-11-20T18:00:00+05:00",
+      "short": {
+        "title": "Why a stent can narrow again",
+        "status": "scheduled",
+        "studio_verified": true,
+        "video_id": "OqwW9fFQ4Do",
+        "watch_url": "https://www.youtube.com/shorts/OqwW9fFQ4Do",
+        "target": "2026-11-19T09:25:00+05:00",
+        "timezone": "Asia/Karachi",
+        "sha256": "93e460bc4c313dc9a8f2af300fbfd1ba5cd668725b604dff9f35d55622ea0e51",
+        "duration_seconds": 21.2,
+        "captions": "English burned into picture",
+        "studio_checks": "complete_no_issues"
+      }
     },
     {
       "topic": 10,
@@ -314,7 +340,20 @@
       "companion_package_qa_pending": false,
       "studio_checks": "complete_no_issues",
       "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-10",
-      "previous_target": "2026-11-21T18:00:00+05:00"
+      "previous_target": "2026-11-21T18:00:00+05:00",
+      "short": {
+        "title": "Medicines after a stent",
+        "status": "scheduled",
+        "studio_verified": true,
+        "video_id": "jSE8v8GXyws",
+        "watch_url": "https://www.youtube.com/shorts/jSE8v8GXyws",
+        "target": "2026-11-20T09:25:00+05:00",
+        "timezone": "Asia/Karachi",
+        "sha256": "b0ef9a16bfa4c2ff47c18b671f9e96f64fc91d189ed21f8abb0e03ebb007eb7a",
+        "duration_seconds": 21.97,
+        "captions": "English burned into picture",
+        "studio_checks": "complete_no_issues"
+      }
     },
     {
       "topic": 11,

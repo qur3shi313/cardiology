@@ -20,5 +20,18 @@
   "studio_schedule_confirmation": {
     "publish_at": "2026-11-19T09:10:00+05:00",
     "timezone": "Asia/Karachi"
+  },
+  "short": {
+    "title": "Why a stent can narrow again",
+    "status": "scheduled",
+    "studio_verified": true,
+    "video_id": "OqwW9fFQ4Do",
+    "watch_url": "https://www.youtube.com/shorts/OqwW9fFQ4Do",
+    "target": "2026-11-19T09:25:00+05:00",
+    "timezone": "Asia/Karachi",
+    "sha256": "93e460bc4c313dc9a8f2af300fbfd1ba5cd668725b604dff9f35d55622ea0e51",
+    "duration_seconds": 21.2,
+    "captions": "English burned into picture",
+    "studio_checks": "complete_no_issues"
   }
 }
