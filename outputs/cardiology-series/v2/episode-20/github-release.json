@@ -1,0 +1,48 @@
+{
+  "tag": "cardiology-v2-episode-20",
+  "release_url": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-20",
+  "assets": [
+    {
+      "name": "captions.en.srt",
+      "size": 3414,
+      "digest": "sha256:bad599c6b3a842dd6ca681b6cd168de223b09bf84648f7692dc695aa965acbf7",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-20/captions.en.srt"
+    },
+    {
+      "name": "chapters.txt",
+      "size": 272,
+      "digest": "sha256:42b9205e0170948c01869516606fd7474d1d001eaab8598ad69f7a2fe7c98e4e",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-20/chapters.txt"
+    },
+    {
+      "name": "episode-20-1080p.mp4",
+      "size": 21144587,
+      "digest": "sha256:0066572f49d4ed32a2567bc354797b24b9f2c9a7844c60a4ec8551efb8cb6e9f",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-20/episode-20-1080p.mp4"
+    },
+    {
+      "name": "episode-20-1440p.mp4",
+      "size": 23588231,
+      "digest": "sha256:662db42ee7bc5604e6b5791009d40926708911ad8706a6f705f4df2ee33d54d4",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-20/episode-20-1440p.mp4"
+    },
+    {
+      "name": "episode-20-short.mp4",
+      "size": 2754020,
+      "digest": "sha256:c94e5105d925f2adc5e33ac5547287a562efb380af2961bc0fd9613dc56d7499",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-20/episode-20-short.mp4"
+    },
+    {
+      "name": "episode-20-thumbnail.jpg",
+      "size": 148331,
+      "digest": "sha256:cd374e700a2dc5ec44261c044e74af5d38e08956f7681beb044974cc53f0c42a",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-20/episode-20-thumbnail.jpg"
+    },
+    {
+      "name": "QA.json",
+      "size": 9699,
+      "digest": "sha256:e937bbce2c7efd5bc756aa2fd07890dc399e05adfbbe81dc20e445226ed8208f",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiology-v2-episode-20/QA.json"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "P01": {
+    "file": "P01-comparison-revision.mp4",
+    "sha256": "9895f83e9457f73df5954ba7fc35bee28fd964ce325a853c7e72f64a2a734713",
+    "frames": 470,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P02": {
+    "file": "P02-comparison-revision.mp4",
+    "sha256": "94f550ffff02bb5ca8141350b3ea114a7165ad888fe5c02d97326b9d45bcbd23",
+    "frames": 666,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P03": {
+    "file": "P03-comparison-revision.mp4",
+    "sha256": "515be8fb291afa245300d8d2041bfa77d66572dac85abc60b05ebebd61242a6d",
+    "frames": 617,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P04": {
+    "file": "P04-comparison-revision.mp4",
+    "sha256": "c086947af6f6131ace44b8ffc7bfb3b937116e4bded14d0a10e2ec03b3c9ad3c",
+    "frames": 614,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P05": {
+    "file": "P05-comparison-revision.mp4",
+    "sha256": "116a2e79a819da09561904694cf0eac69ef3317dc5ee983a00e3b16e74bfb6b3",
+    "frames": 627,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P06": {
+    "file": "P06-comparison-revision.mp4",
+    "sha256": "484be3767904d726e75ed97f2928ec3d7d5af2dc46508ba74c6bba5226ca3a70",
+    "frames": 595,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  },
+  "P07": {
+    "file": "P07-comparison-revision.mp4",
+    "sha256": "4547a738b49ffd363eee4f4119be595ab46d8a734878a8f2718ee6c86603bad8",
+    "frames": 607,
+    "full_decode": true,
+    "freeze": {
+      "noise": 0.001,
+      "min_duration_seconds": 2,
+      "total_seconds": 0,
+      "percent": 0.0,
+      "longest_seconds": 0.0,
+      "intervals": []
+    }
+  }
+}

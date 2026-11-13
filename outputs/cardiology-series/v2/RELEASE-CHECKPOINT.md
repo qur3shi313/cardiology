@@ -20,8 +20,8 @@ Episode 3 starts the daily 09:10 Pakistan time schedule.
 - 26 November · 09:10 PKT · [What happens in aortic stenosis](https://youtu.be/IWQiJlhhobk)
 - 27 November · 09:10 PKT · [How the Heart Team plans TAVI](https://youtu.be/-ZrUmNveaKc)
 - 28 November · 09:10 PKT · [How transcatheter aortic valve implantation is performed](https://youtu.be/jm8EM73HFzg)
-- 29 November · In production · Recovery and follow-up after TAVI
-- 30 November · In production · TAVI, surgery and how the Heart Team weighs the options
+- 29 November · 09:10 PKT · [Recovery and follow-up after TAVI](https://youtu.be/QDc__SjZ3PI)
+- 30 November · 09:10 PKT · [TAVI, surgery and how the Heart Team weighs the options](https://youtu.be/hxOO3831Oqs)
 
 The older videos occupying the original 12–15 November slots are private.
 The two standalone wrist and groin angiograms are also private. The rebuilt Episode 1 covers both approaches. See [the schedule](schedule.json) and [companion Shorts](SHORTS-CHECKPOINT.md) for verification details.

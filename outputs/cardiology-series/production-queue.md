@@ -1,5 +1,7 @@
 # Elysian cardiology series
 
+The schedule below preserves the original 11 November plan. Use the [v2 release checkpoint](v2/RELEASE-CHECKPOINT.md) for current YouTube links and the 9:10 a.m. Pakistan time schedule.
+
 The owner confirmed a 20-day run including 11 November 2026. The two route-specific opening videos were already public on 11 November. The next 19 releases run from 12 through 30 November at 18:00 Asia/Karachi. The daily production task prepares each complete episode for the following day's release. After the final cardiology episode is confirmed public, the same daily cadence continues with Cardiac Surgery, starting 1 December if the planned run completes on time.
 
 | Video | Approved topic | YouTube episode | 2026 release date | Record |
@@ -27,7 +29,7 @@ The owner confirmed a 20-day run including 11 November 2026. The two route-speci
 | 21 | 20 | TAVI, surgery and how the Heart Team weighs the options | 30 November | Planned |
 | Cardiac Surgery 1 | New series | Why coronary artery bypass grafting is chosen | 1 December | Planned after the cardiology finale |
 
-YouTube Studio confirmed the releases for 12 through 15 November on 11 November 2026. [Schedule record](youtube-schedule.json)
+YouTube Studio confirmed the releases for 12 through 15 November on 11 November 2026. [Schedule record](youtube-schedule.json) · [Latest Studio verification](episode-05/production/delivery/youtube-studio-verified.png)
 
 The approved 20-topic outline is preserved. The original first topic is delivered as two route-specific films. The later decisions to produce angioplasty, drug-coated balloons and TAVI early are reflected in the order above. Companion episodes have their own teaching questions, including access choice and how drug-eluting stents work.
 

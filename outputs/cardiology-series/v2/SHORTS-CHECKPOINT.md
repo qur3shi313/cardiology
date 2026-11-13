@@ -8,3 +8,6 @@ Morning companion releases are scheduled 15 minutes after the long films.
 - 17 November · 09:25 PKT · [What stays in the artery? | Drug-eluting stents](https://www.youtube.com/shorts/h_p9or083RA)
 - 22 November · 09:25 PKT · [How IVUS sees inside a coronary artery](https://www.youtube.com/shorts/Gpv-_JouNwA)
 - 23 November · 09:25 PKT · [How pressure waves act on coronary calcium](https://www.youtube.com/shorts/W3Q2Gn9R5jg)
+- 25 November · 09:25 PKT · [How bypass creates another route](https://www.youtube.com/shorts/5Szj_h8QrQE)
+- 27 November · 09:25 PKT · [Measuring where the valve sits](https://www.youtube.com/shorts/wtzQ0lwqfG4)
+- 28 November · 09:25 PKT · [How a TAVI valve opens in place](https://www.youtube.com/shorts/0XMjlXjiRNA)

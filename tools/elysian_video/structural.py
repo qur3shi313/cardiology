@@ -103,10 +103,93 @@ def plan(c,ident,p,t):
     title,beats=rows[ident]
     emergency.triple(c,title,beats,p,t,topic='TAVI PLANNING')
 
+def recovery_plan(c,t):
+    paper, ink, mint = '#eaf4eb', '#1c4c40', '#a9d3bc'
+    access.rect(c,0,0,1280,720,access.solid(paper))
+    angiogram.header(c,'The plan for recovery at home','TAVI RECOVERY')
+    angiogram.block(c,491,166,711,456,26,access.solid('#1c433a'))
+    if t>=9.76:
+        appointment=access.smooth((t-9.76)/3.45)
+        access.text(c,'Contact and next visit',69,315,39,ink)
+        access.text(c,'Your plan is personal',69,391,34,ink,access.REGULAR)
+        angiogram.block(c,618,225,455,307,20,access.solid('#b0d8be'))
+        access.line(c,[(620,292),(1071,292)],'#375f52',8)
+        if t<13.21:
+            angiogram.block(c,658+289*appointment,328,66,158,9,access.solid('#527f69'))
+        else:
+            access.rect(c,618,301,455,231,access.solid('#b0d8be'))
+            reveal=max(0,min(1,(t-13.21)/5.42))
+            angiogram.block(c,654,330,383,152,14,access.solid('#305748'))
+            curve=[(690,396),(757,443),(829,367),(880,413),(1004,357)]
+            access.line(c,angiogram.art.trace(curve,reveal),'#f1d3a3',23)
+        access.text(c,'Follow the plan your care team gives you',64,677,31,ink)
+        return
+    items = ('Wound care','Build up activity','Prescribed medicines')
+    cue_times = (0, 4.7, 6.72, 9.76)
+    for index,(label,cue) in enumerate(zip(items,cue_times)):
+        y=238+index*90
+        progress=access.smooth((t-cue)/.72)
+        active=cue<=t<cue_times[index+1]
+        sweep=max(0,min(1,(t-cue)/(cue_times[index+1]-cue)))
+        access.text(c,label,75,y+12,36,ink,access.REGULAR)
+        access.line(c,[(540,y),(1135,y)],'#44695b',2.5)
+        if progress>0:
+            access.line(c,[(540,y),(540+595*sweep,y)],mint,15)
+            angiogram.dot(c,540+595*sweep,y,9 if active else 4,'#f5ddb0')
+        if progress>.1:
+            angiogram.dot(c,519,y,10,'#a8d5bb')
+        if active and index==0:
+            zoom=access.smooth(sweep)*110
+            angiogram.block(c,742-zoom/2,258,132+zoom,50,8,access.solid('#d9bc9a'))
+            angiogram.block(c,793-zoom/4,258,28+zoom/2,50,5,access.solid('#f3e2c9'))
+        if active and index==1:
+            for step in range(3):
+                offset=(step*33+t*80)%115
+                c.drawOval(skia.Rect.MakeXYWH(785+offset,351+(step%2)*11,20,10),access.solid(mint))
+        if active and index==2:
+            angiogram.block(c,807,439,108,30,15,access.solid('#a8d5bb'))
+            access.line(c,[(861,441),(861,468)],'#385f51',3)
+    access.text(c,'Follow the plan your care team gives you',64,677,31,ink)
+
+
+def recovery_echo(c,p,t):
+    valve.clinical(c,'P11',p,t)
+    valve.result_check(c,0,t)
+
+
+def recovery_follow_up(c,t):
+    if t<11.9:
+        recovery_echo(c,t/11.9,t)
+        access.rect(c,0,0,1280,139,access.solid('#eaf4eb'))
+        angiogram.header(c,'Follow-up checks the replacement valve','TAVI RECOVERY')
+        access.rect(c,0,648,1280,72,access.solid('#eaf4eb'))
+        label='The team may repeat an ultrasound' if t>=9.7 else 'The team reviews recovery and how the valve is working'
+        access.text(c,label,59,682,30,'#255b4c')
+        return
+    access.rect(c,0,0,1280,720,access.solid('#eaf4eb'))
+    angiogram.header(c,'Know who will arrange your follow-up','TAVI RECOVERY')
+    angiogram.block(c,635,172,564,456,26,access.solid('#1c433a'))
+    access.text(c,'Follow-up appointment',72,315,40,'#1c4c40')
+    access.text(c,'Who to call with questions',72,524,37,'#1c4c40')
+    angiogram.block(c,716,226,392,167,15,access.solid('#b0d8be'))
+    access.line(c,[(718,269),(1105,269)],'#375f52',7)
+    selected=max(0,min(1,(t-11.9)/3.48))
+    angiogram.block(c,749+260*selected,278,65,87,6,access.solid('#4e7a65'))
+    for day in range(5):
+        x=782+65*day
+        angiogram.dot(c,x,322,7,'#395e4e')
+    call=max(0,min(1,(t-14.7)/3.97))
+    call_path=[(746,445),(746,562),(1008,562),(1080,601),(1080,445),(746,445)]
+    access.line(c,call_path,'#436e5e',21)
+    access.line(c,angiogram.art.trace(call_path,call),'#b0d8be',21)
+    for index in range(3):
+        angiogram.dot(c,899+29*index,519,5+3*(.5+.5*sin(t*5-index)),'#e2f4e5')
+
+
 def recovery(c,ident,p,t):
     if ident=='P01':
         if p<.42: valve.clinical(c,'P11',p/.42,t)
-        else: echo(c,(p-.42)/.58,t,True)
+        else: recovery_echo(c,(p-.42)/.58,t)
         return
     if ident=='P03':
         valve.clinical(c,'P11',p,t)
@@ -120,7 +203,17 @@ def recovery(c,ident,p,t):
         access.text(c,'Rhythm monitoring',88,309,29,'#e1f2e7')
         return
     if ident=='P04':
-        echo(c,p,t,True)
+        recovery_echo(c,p,t)
+        access.rect(c,0,648,1280,72,access.solid('#eaf4eb'))
+        label=('The team also checks for leakage around the frame' if t>=9.1
+               else 'An ultrasound shows how the valve opens and closes')
+        access.text(c,label,59,682,30,'#255b4c')
+        return
+    if ident=='P05':
+        recovery_plan(c,t)
+        return
+    if ident=='P07':
+        recovery_follow_up(c,t)
         return
     if ident=='P08':
         angiogram.clinical_credits(c,'TAVI RECOVERY',(
@@ -133,15 +226,9 @@ def recovery(c,ident,p,t):
      'P02':('The first checks in hospital',(
          ('The covered access site',('Staff look for bleeding and swelling',),'band'),
          ('Rhythm and blood pressure',('Recovery time depends on the checks',),'pulse'))),
-     'P05':('The plan for recovery at home',(
-         ('Wound care, activity, medicines',('Follow the plan your team gives you',),'list'),
-         ('Know your contact and next visit',('The details vary with your recovery',),'call'))),
      'P06':('When to get emergency help',(
          ('Severe bleeding',('Call local emergency services',),'band'),
          ('Possible stroke signs',('Sudden face droop, arm weakness','or trouble speaking need emergency help'),'call'))),
-     'P07':('Follow-up checks',(
-         ('Symptoms, medicines and rhythm',('The team may arrange another ultrasound',),'pulse'),
-         ('Know who will arrange follow-up',('Ask whom to call with questions',),'list'))),
     }
     title,beats=rows[ident]
     emergency.triple(c,title,beats,p,t,topic='TAVI RECOVERY')

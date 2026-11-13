@@ -1,0 +1,142 @@
+{
+  "master_sha256": "662db42ee7bc5604e6b5791009d40926708911ad8706a6f705f4df2ee33d54d4",
+  "short_sha256": "c94e5105d925f2adc5e33ac5547287a562efb380af2961bc0fd9613dc56d7499",
+  "thumbnail_sha256": "cd374e700a2dc5ec44261c044e74af5d38e08956f7681beb044974cc53f0c42a",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "verified_at": "2026-11-13T07:35:05.996300+05:00",
+  "intentional_holds": [
+    {
+      "start_seconds": 139.86666666666667,
+      "end_seconds": 147.86666666666667,
+      "reason": "The final eight seconds hold the clinical references, production disclosure and next episode."
+    }
+  ],
+  "review_evidence": {
+    "master_sha256": "662db42ee7bc5604e6b5791009d40926708911ad8706a6f705f4df2ee33d54d4",
+    "short_sha256": "c94e5105d925f2adc5e33ac5547287a562efb380af2961bc0fd9613dc56d7499",
+    "copy_sha256": "0066572f49d4ed32a2567bc354797b24b9f2c9a7844c60a4ec8551efb8cb6e9f",
+    "thumbnail_sha256": "cd374e700a2dc5ec44261c044e74af5d38e08956f7681beb044974cc53f0c42a",
+    "verified_at": "2026-11-13T07:34:53.640146+05:00",
+    "captions": {
+      "file": "captions.en.srt",
+      "cue_count": 34,
+      "errors": []
+    },
+    "caption_sha256": "bad599c6b3a842dd6ca681b6cd168de223b09bf84648f7692dc695aa965acbf7",
+    "embedded_captions_match": true,
+    "narration_words": 347,
+    "scribe_transcript_matches": true,
+    "packets": {
+      "audio": {
+        "digest": "fba1d0038d017787df34ae928eb23b137e275d0e11cbe92aac996f8fec61f3ff",
+        "packets": 6933,
+        "time_base": "1/48000"
+      },
+      "subtitle": {
+        "digest": "0a40825897a237ae9bdd1b4020369707a845c66d3f27990e867cddef9441d814",
+        "packets": 67,
+        "time_base": "1/1000000"
+      }
+    },
+    "audio_and_caption_packets_unchanged": true,
+    "voice_source_sha256": "ecf8c7f24ac992df5cae3ffc1331e6406d3ec6267d5e870c0120355ae0543f71",
+    "master_voice_alignment": [
+      {
+        "source_sec": 0.93,
+        "output_sec": 0.93,
+        "offset_sec": 0.0,
+        "correlation": 0.99938,
+        "scene": "P01"
+      },
+      {
+        "source_sec": 16.596666666666668,
+        "output_sec": 16.596666666666668,
+        "offset_sec": 0.0,
+        "correlation": 0.99997,
+        "scene": "P02"
+      },
+      {
+        "source_sec": 38.79666666666667,
+        "output_sec": 38.79666666666667,
+        "offset_sec": 0.0,
+        "correlation": 0.99998,
+        "scene": "P03"
+      },
+      {
+        "source_sec": 59.36333333333333,
+        "output_sec": 59.36333333333333,
+        "offset_sec": 0.0,
+        "correlation": 0.99991,
+        "scene": "P04"
+      },
+      {
+        "source_sec": 79.83000000000001,
+        "output_sec": 79.83000000000001,
+        "offset_sec": 0.0,
+        "correlation": 0.99997,
+        "scene": "P05"
+      },
+      {
+        "source_sec": 100.73,
+        "output_sec": 100.73,
+        "offset_sec": 0.0,
+        "correlation": 0.99941,
+        "scene": "P06"
+      },
+      {
+        "source_sec": 120.56333333333335,
+        "output_sec": 120.56333333333335,
+        "offset_sec": 0.0,
+        "correlation": 0.9999,
+        "scene": "P07"
+      }
+    ],
+    "short_voice_alignment": [
+      {
+        "source_sec": 38.96666666666667,
+        "output_sec": 1.1,
+        "offset_sec": 0.0,
+        "correlation": 0.84208
+      },
+      {
+        "source_sec": 43.666666666666664,
+        "output_sec": 5.8,
+        "offset_sec": 0.00013,
+        "correlation": 0.84885
+      },
+      {
+        "source_sec": 47.96666666666667,
+        "output_sec": 10.1,
+        "offset_sec": 0.0,
+        "correlation": 0.8624
+      },
+      {
+        "source_sec": 52.06666666666666,
+        "output_sec": 14.2,
+        "offset_sec": 0.0,
+        "correlation": 0.86801
+      },
+      {
+        "source_sec": 55.43333333333333,
+        "output_sec": 17.566666666666663,
+        "offset_sec": 0.0,
+        "correlation": 0.84926
+      }
+    ],
+    "closing_silent": true,
+    "long_sample_count": 55,
+    "short_sample_count": 12,
+    "copy_audio_and_caption_packets_unchanged": true,
+    "clinical": "The matched aortic roots distinguish transcatheter frame expansion inside native leaflets from surgical removal and seated replacement. Separate schematic surgical tissue and bileaflet mechanical valves show their different opening motion. Individual anatomy, early recovery, risks, home support and future treatment are conditional. The coronary graft illustration is continuous from the aorta to the artery beyond the narrowing and shows onward flow.",
+    "picture": "Exact 390-pixel long-film and 216-pixel portrait samples check cue alignment, legibility, anatomy, the narrated final line, synthetic narration disclosure, and clothed anonymous diagrammatic figures. The thumbnail shows the two completed anatomical replacements side by side.",
+    "audio": "The only audio is the preserved ElevenLabs Alexander narration. The embedded captions, exact packets, Scribe words and waveform windows agree. No manual auditory listening is claimed."
+  }
+}

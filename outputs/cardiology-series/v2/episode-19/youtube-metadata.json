@@ -10,6 +10,16 @@
   "language": "en",
   "planned_release": "2026-11-29T09:10:00+05:00",
   "timezone": "Asia/Karachi",
-  "studio_release_verified": false,
-  "watch_url": null
+  "studio_release_verified": true,
+  "watch_url": "https://youtu.be/QDc__SjZ3PI",
+  "video_id": "QDc__SjZ3PI",
+  "master_sha256": "1e7c749cbc6b52077c0c3eecff02d658147940694688e686a01d696481707346",
+  "studio_checks": "complete_no_issues",
+  "studio_subtitles": "English published",
+  "studio_subtitles_sha256": "a9898e49369c6ee6b5803324cf538243652bf718ccb3d73518e2fb9c67073260",
+  "studio_thumbnail_sha256": "72761b09010c406b0ccdec47c44440679acb8d311baed42fe9f17258906b8a9a",
+  "studio_schedule_confirmation": {
+    "publish_at": "2026-11-29T09:10:00+05:00",
+    "timezone": "Asia/Karachi"
+  }
 }

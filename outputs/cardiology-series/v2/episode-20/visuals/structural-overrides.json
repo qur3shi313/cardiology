@@ -1,0 +1,58 @@
+{
+  "P01": {
+    "path": "outputs/cardiology-series/v2/episode-20/visuals/P01-comparison-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 15.666666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P02": {
+    "path": "outputs/cardiology-series/v2/episode-20/visuals/P02-comparison-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 22.2,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P03": {
+    "path": "outputs/cardiology-series/v2/episode-20/visuals/P03-comparison-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 20.566666666666666,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P04": {
+    "path": "outputs/cardiology-series/v2/episode-20/visuals/P04-comparison-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 20.466666666666665,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P05": {
+    "path": "outputs/cardiology-series/v2/episode-20/visuals/P05-comparison-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 20.9,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P06": {
+    "path": "outputs/cardiology-series/v2/episode-20/visuals/P06-comparison-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 19.833333333333332,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P07": {
+    "path": "outputs/cardiology-series/v2/episode-20/visuals/P07-comparison-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 20.233333333333334,
+    "reference_only": false,
+    "native_composition": true
+  },
+  "P08": {
+    "path": "outputs/cardiology-series/v2/episode-20/visuals/P08-motion-revision.mp4",
+    "in_sec": 0,
+    "out_sec": 8.0,
+    "reference_only": false,
+    "native_composition": true
+  }
+}

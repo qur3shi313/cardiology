@@ -1,0 +1,38 @@
+{
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "master_sha256": "1e7c749cbc6b52077c0c3eecff02d658147940694688e686a01d696481707346",
+  "short_sha256": "a4b658655864305196306b80ac9889110cfb489d495920eca7999ab286af78c8",
+  "thumbnail_sha256": "72761b09010c406b0ccdec47c44440679acb8d311baed42fe9f17258906b8a9a",
+  "verified_at": "2026-11-13T07:38:42.337283+05:00",
+  "notes": {
+    "clinical_and_visual": "Exact 390-pixel samples cover all eight scenes, with additional frames across the four revised scenes. The animation depicts the valve after implantation, access-site and rhythm checks, an illustrated echo view with visibly opening leaflets and blood flow, checking for leakage around the frame, a home recovery plan, emergency warning signs, and organising follow-up. P01 and P04 show the updated leaflet/flow inset. P05 and P07 retain the reviewed larger graphics for home recovery, follow-up and whom to contact. Illustrated measurements and rhythm graphics are schematic, without patient data, treatment settings or product claims.",
+    "motion": "All 4,220 coded H.264 picture packets match selected authored sources. First, middle and last decoded frames match for all four revised scenes. The 140.666667-second master measures 8.886 percent holds including eight seconds for the source card. The longest non-credit hold is 2.4 seconds.",
+    "voice_and_captions": "All 30 embedded English cues and 330 words match the locked narration and the SRT sidecar. The seven voiced scenes align at zero detected offset against the sole Alexander track. The 6,595 AAC and 59 subtitle packet signatures are unchanged from the prior aligned master. The full master measures -14.03 LUFS and -1.48 dBTP.",
+    "short": "The exact 561-frame 18.7-second portrait includes the revised illustrated echo with distinct opening and closing views, through-flow and the narration's leakage-check context. Twelve decoded portrait samples verify legible captions beneath the illustration. The active art region has zero measured holds and the four waveform windows align to the long excerpt at zero detected offset.",
+    "thumbnail": "The exact 1280-by-720 JPEG shows the prosthetic frame and an open leaflet phase, paired with the complete illustrated echo inset. The crop has no clipped lettering and is reproducible from the exact final master.",
+    "primary_sources_reviewed": [
+      "https://www.guysandstthomas.nhs.uk/health-information/tavi-aortic-stenosis/recovery-tavi",
+      "https://www.uhsussex.nhs.uk/resources/discharge-advice-for-same-day-discharge-transcatheter-aortic-valve-implantation-tavi-at-the-sussex-cardiac-centre/",
+      "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2020/10/20/20/59/2020-acc-expert-consensus-conduction-disturbances",
+      "https://www.ouh.nhs.uk/patient-guide/leaflets/files/109954tavi.pdf",
+      "https://www.nhs.uk/tests-and-treatments/heart-valve-replacement/recovery/",
+      "https://academic.oup.com/eurheartj/article/46/44/4635/8234488"
+    ]
+  },
+  "method": "Codex reviewed exact decoded visuals, authored English captions, audio waveform alignment and clinical sources. Manual listening and independent clinical review remain unverified.",
+  "intentional_holds": [
+    {
+      "start_seconds": 132.66666666666666,
+      "end_seconds": 140.66666666666666,
+      "reason": "Eight seconds for clinical source credits, production disclosure and the next topic."
+    }
+  ]
+}
