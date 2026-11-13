@@ -5,7 +5,9 @@
 - YouTube Studio confirmed public release for December 1, 2026 at 9:10 a.m. Pakistan time after the November 30 cardiology finale. [Scheduled bypass film](https://youtu.be/xA1IFclqDWo)
 - The complete Alexander narration was generated in ElevenLabs in two sections. Scribe matched 99.74% of the words. The differences are two spelling variants and the transcription of Elysian.
 - The complete 8:05.53 film has 12 narration-aligned scenes. The corrected graft and emergency scenes passed the motion check. Final media QA, English captions, mobile review and Studio copyright and Community Guidelines checks passed. Independent external clinician review and manual auditory listening were not performed.
-- The 1440p release uses Canva-exported picture, trimmed to the 14,566 authored frames, with the timed ElevenLabs Alexander mix and captions restored during final packaging. The 1080p copy uses the same native scene picture and voice. The checked 27-second vertical edit is in Studio pending its native checks and schedule confirmation.
+- The 1440p release uses Canva-exported picture, trimmed to the 14,566 authored frames, with the timed ElevenLabs Alexander mix and captions restored during final packaging. The 1080p copy uses the same native scene picture and voice.
+- Studio confirmed the captioned 27-second Short for December 1, 2026 at 9:25 a.m. Pakistan time. Its description links to the full film. [Scheduled Short](https://www.youtube.com/shorts/qLE272dupNU)
+- GitHub returned matching SHA-256 digests for all seven assets in the public archive. [Download the full release package](https://github.com/qur3shi313/cardiology/releases/tag/cardiac-surgery-episode-01)
 
 ## Episode 2 · How a bypass graft routes blood around a blockage
 

@@ -1,0 +1,48 @@
+{
+  "tag": "cardiac-surgery-episode-01",
+  "release_url": "https://github.com/qur3shi313/cardiology/releases/tag/cardiac-surgery-episode-01",
+  "assets": [
+    {
+      "name": "episode-01-1440p.mp4",
+      "size": 83726430,
+      "digest": "sha256:5a0f1d93804af62d30dab7099a550d8f443dabb41a3c92ad4e5968919699de06",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiac-surgery-episode-01/episode-01-1440p.mp4"
+    },
+    {
+      "name": "episode-01-1080p.mp4",
+      "size": 103089150,
+      "digest": "sha256:dbe6dc01b3de6d613a79110d3e4b28cc05c231fff98be00d1256a973b5781e28",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiac-surgery-episode-01/episode-01-1080p.mp4"
+    },
+    {
+      "name": "episode-01-short.mp4",
+      "size": 3956405,
+      "digest": "sha256:af512128718bba4155fe8b262845dec9ceeff3ae64be281ca811e5e5c43fcb6c",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiac-surgery-episode-01/episode-01-short.mp4"
+    },
+    {
+      "name": "episode-01-thumbnail.jpg",
+      "size": 200983,
+      "digest": "sha256:488a57a309e3b624cf83edf1b980282cd2643677d5bf77b198ec97da9cd3dcd5",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiac-surgery-episode-01/episode-01-thumbnail.jpg"
+    },
+    {
+      "name": "captions.en.srt",
+      "size": 11326,
+      "digest": "sha256:0a8b642b72ad16bdcf734ab75bf1f4a74b8019dd7dcf37989f6e03249392dbf0",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiac-surgery-episode-01/captions.en.srt"
+    },
+    {
+      "name": "chapters.txt",
+      "size": 469,
+      "digest": "sha256:7ceda1582dd6dc2e12864540669e986977926b6c9de70fb87b52262d88854f6b",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiac-surgery-episode-01/chapters.txt"
+    },
+    {
+      "name": "QA.json",
+      "size": 6781,
+      "digest": "sha256:0e8e8726a3538e02103f1dcf1e8166ffbef11d7f06c4bd64f766c49cb9b9ac1b",
+      "url": "https://github.com/qur3shi313/cardiology/releases/download/cardiac-surgery-episode-01/QA.json"
+    }
+  ]
+}

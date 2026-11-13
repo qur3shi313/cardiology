@@ -51,7 +51,19 @@
           "size": 6781,
           "digest": "sha256:0e8e8726a3538e02103f1dcf1e8166ffbef11d7f06c4bd64f766c49cb9b9ac1b"
         }
-      ]
+      ],
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiac-surgery-episode-01",
+      "short": {
+        "video_id": "qLE272dupNU",
+        "watch_url": "https://www.youtube.com/shorts/qLE272dupNU",
+        "target": "2026-12-01T09:25:00+05:00",
+        "timezone": "Asia/Karachi",
+        "status": "scheduled",
+        "studio_verified": true,
+        "studio_checks": "complete_no_issues",
+        "sha256": "af512128718bba4155fe8b262845dec9ceeff3ae64be281ca811e5e5c43fcb6c",
+        "captions": "English burned into picture"
+      }
     }
   ]
 }
