@@ -1,0 +1,27 @@
+{
+  "master_sha256": "5a0f1d93804af62d30dab7099a550d8f443dabb41a3c92ad4e5968919699de06",
+  "short_sha256": "af512128718bba4155fe8b262845dec9ceeff3ae64be281ca811e5e5c43fcb6c",
+  "thumbnail_sha256": "488a57a309e3b624cf83edf1b980282cd2643677d5bf77b198ec97da9cd3dcd5",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "intentional_holds": [
+    {
+      "end_seconds": 485.533333,
+      "start_seconds": 477.533333,
+      "reason": "Eight seconds to read the clinical sources card."
+    }
+  ],
+  "notes": [
+    "Reviewed decoded 390px samples across the full cut and exact repaired motion in P05 and P07. Reviewed 320px custom cover and vertical burned captions.",
+    "Compared illustrated claims with the source map and checked graft origins, downstream joins, heart-lung support and recovery context. No independent external clinician review was performed.",
+    "Voice-only ElevenLabs Alexander. The English text and timing were cross-checked against the word-level Scribe alignment. Manual auditory listening is not claimed.",
+    "The 1440p picture came from Canva. Its extra five-second tail was excluded at the exact authored frame count and the original timed ElevenLabs mix and English subtitle stream were remuxed. The 1080p companion uses the matching native scene picture and voice."
+  ]
+}

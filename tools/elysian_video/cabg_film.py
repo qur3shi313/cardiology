@@ -106,6 +106,12 @@ def author(selected):
 
 
 def assemble():
+    schedule = EPISODE.parent / 'schedule.json'
+    if schedule.is_file():
+        entries = json.loads(schedule.read_text(encoding='utf-8-sig'))['targets']
+        if any(row['episode'] == EPISODE.name and row.get('studio_verified') for row in entries):
+            print('The scheduled release is frozen. Use its recorded delivery package.', flush=True)
+            return 0
     visuals = EPISODE / 'visuals'
     timeline = json.loads((EPISODE / 'timeline.json').read_text(encoding='utf-8'))
     overrides = {}

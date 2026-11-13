@@ -1,14 +1,34 @@
 {
   "thumbnail": {
-    "title": ["Why choose", "bypass?"],
+    "title": [
+      "Why choose",
+      "bypass?"
+    ],
     "seconds": 298.5,
-    "crop": [1770, 1000, 525, 250],
-    "eyebrow": "CARDIAC SURGERY EDUCATION"
+    "crop": [
+      1340,
+      1020,
+      578,
+      330
+    ],
+    "eyebrow": "CARDIAC SURGERY EDUCATION",
+    "artwork": "artwork-thumbnail.jpg"
   },
   "short": {
-    "seconds": [279.8, 305.15],
-    "headings": ["How a bypass graft", "reroutes blood"],
-    "crop": [2560, 1440, 0, 0],
+    "seconds": [
+      285.0,
+      312.1
+    ],
+    "headings": [
+      "How a bypass graft",
+      "reroutes blood"
+    ],
+    "crop": [
+      2560,
+      1440,
+      0,
+      0
+    ],
     "eyebrow": "ILLUSTRATED GRAFT FLOW"
   }
 }

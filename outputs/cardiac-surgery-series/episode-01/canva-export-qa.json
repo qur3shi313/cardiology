@@ -1,0 +1,99 @@
+{
+  "status": "pass",
+  "sha256": "5a0f1d93804af62d30dab7099a550d8f443dabb41a3c92ad4e5968919699de06",
+  "source_master_sha256": "b7fbcc76255f8dc15f271e65f282309b20ea19deebb7811f26a9854eeb9eb561",
+  "canva_export": {
+    "width": 2560,
+    "height": 1440,
+    "fps": 30.0,
+    "frames": 14566,
+    "duration": 485.53333333333336
+  },
+  "decoded_fully": true,
+  "scene_checks": [
+    {
+      "scene": "P01",
+      "seconds": 13.666666666666666,
+      "picture_rmse": 3.671318292617798,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P02",
+      "seconds": 44.53333333333333,
+      "picture_rmse": 3.3266546726226807,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P03",
+      "seconds": 84.18333333333334,
+      "picture_rmse": 4.427864074707031,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P04",
+      "seconds": 134.13333333333333,
+      "picture_rmse": 3.4330453872680664,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P05",
+      "seconds": 184.73333333333332,
+      "picture_rmse": 3.6879327297210693,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P06",
+      "seconds": 227.71666666666667,
+      "picture_rmse": 2.5743701457977295,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P07",
+      "seconds": 280.03333333333336,
+      "picture_rmse": 2.9997169971466064,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P08",
+      "seconds": 335.71666666666664,
+      "picture_rmse": 3.412768602371216,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P09",
+      "seconds": 377.65,
+      "picture_rmse": 3.745293378829956,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P10",
+      "seconds": 416.7,
+      "picture_rmse": 3.831437587738037,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P11",
+      "seconds": 449.01666666666665,
+      "picture_rmse": 2.8152880668640137,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    },
+    {
+      "scene": "P12",
+      "seconds": 473.25,
+      "picture_rmse": 3.8481616973876953,
+      "voice_correlation": 1.0,
+      "audio_offset_seconds": 0.0
+    }
+  ]
+}

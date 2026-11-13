@@ -1,0 +1,272 @@
+{
+  "input": "episode-01-1440p.mp4",
+  "sha256": "5a0f1d93804af62d30dab7099a550d8f443dabb41a3c92ad4e5968919699de06",
+  "validation_inputs": {
+    "timeline_sha256": "8ad9db4165f624c9c767c97fa843df5c6426e1d44b67c0674f0dbfa8cce827d4",
+    "caption_file": "captions.en.srt",
+    "caption_sha256": "0a8b642b72ad16bdcf734ab75bf1f4a74b8019dd7dcf37989f6e03249392dbf0"
+  },
+  "codec": "h264",
+  "width": 2560,
+  "height": 1440,
+  "pixel_format": "yuv420p",
+  "fps": 30.0,
+  "audio_present": true,
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_stereo": true,
+  "video_full_decode": true,
+  "video_duration_seconds": 485.533333,
+  "video_frames": 14566,
+  "freeze": {
+    "noise": 0.001,
+    "min_duration_seconds": 2,
+    "total_seconds": 10.133333,
+    "percent": 2.087,
+    "longest_seconds": 8.0,
+    "intervals": [
+      {
+        "start_seconds": 223.7,
+        "end_seconds": 225.833333,
+        "terminal": false
+      },
+      {
+        "start_seconds": 477.533333,
+        "end_seconds": 485.533333,
+        "terminal": true
+      }
+    ],
+    "scene_contributors": [
+      {
+        "scene": "P12",
+        "title": "Recap and sources",
+        "frozen_seconds": 8.0,
+        "scene_seconds": 24.567
+      },
+      {
+        "scene": "P06",
+        "title": "How the Heart Team weighs the choice",
+        "frozen_seconds": 2.133,
+        "scene_seconds": 39.767
+      }
+    ]
+  },
+  "audio": {
+    "full_decode": true,
+    "integrated_lufs": -14.02,
+    "true_peak_dbtp": -1.46,
+    "raw_loudnorm": {
+      "input_i": "-14.02",
+      "input_tp": "-1.46",
+      "input_lra": "3.10",
+      "input_thresh": "-24.31",
+      "output_i": "-13.91",
+      "output_tp": "-1.21",
+      "output_lra": "3.00",
+      "output_thresh": "-24.20",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.09"
+    }
+  },
+  "expected_duration_seconds": 485.53333333333336,
+  "audio_sources": [
+    "outputs/cardiac-surgery-series/episode-01/audio/alexander-cabg.flac"
+  ],
+  "captions": {
+    "file": "captions.en.srt",
+    "cue_count": 113,
+    "errors": []
+  },
+  "deliverables": {
+    "1080p": {
+      "file": "episode-01-1080p.mp4",
+      "sha256": "dbe6dc01b3de6d613a79110d3e4b28cc05c231fff98be00d1256a973b5781e28",
+      "duration_seconds": 485.6,
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true
+    },
+    "short": {
+      "file": "episode-01-short.mp4",
+      "sha256": "af512128718bba4155fe8b262845dec9ceeff3ae64be281ca811e5e5c43fcb6c",
+      "duration_seconds": 27.1,
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "pixel_format": "yuv420p",
+      "fps": 30.0,
+      "audio_present": true,
+      "audio_codec": "aac",
+      "audio_rate": 48000,
+      "audio_stereo": true,
+      "full_decode": true,
+      "audio": {
+        "full_decode": true,
+        "integrated_lufs": -14.01,
+        "true_peak_dbtp": -1.49,
+        "raw_loudnorm": {
+          "input_i": "-14.01",
+          "input_tp": "-1.49",
+          "input_lra": "2.80",
+          "input_thresh": "-24.22",
+          "output_i": "-13.92",
+          "output_tp": "-1.27",
+          "output_lra": "2.80",
+          "output_thresh": "-24.16",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.08"
+        }
+      }
+    },
+    "thumbnail": {
+      "file": "episode-01-thumbnail.jpg",
+      "sha256": "488a57a309e3b624cf83edf1b980282cd2643677d5bf77b198ec97da9cd3dcd5",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  },
+  "contact_sheet": {
+    "file": "episode-01-1440p-phone.jpg",
+    "frame_width_px": 390,
+    "sample_times_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195,
+      200,
+      205,
+      210,
+      215,
+      220,
+      225,
+      230,
+      235,
+      240,
+      245,
+      250,
+      255,
+      260,
+      265,
+      270,
+      275,
+      280,
+      285,
+      290,
+      295,
+      300,
+      305,
+      310,
+      315,
+      320,
+      325,
+      330,
+      335,
+      340,
+      345,
+      350,
+      355,
+      360,
+      365,
+      370,
+      375,
+      380,
+      385,
+      390,
+      395,
+      400,
+      405,
+      410,
+      415,
+      420,
+      425,
+      430,
+      435,
+      440,
+      445,
+      450,
+      455,
+      460,
+      465,
+      470,
+      475,
+      480,
+      485
+    ]
+  },
+  "mechanical_errors": [],
+  "human_visual_review": {
+    "master_sha256": "5a0f1d93804af62d30dab7099a550d8f443dabb41a3c92ad4e5968919699de06",
+    "short_sha256": "af512128718bba4155fe8b262845dec9ceeff3ae64be281ca811e5e5c43fcb6c",
+    "thumbnail_sha256": "488a57a309e3b624cf83edf1b980282cd2643677d5bf77b198ec97da9cd3dcd5",
+    "mobile_readability": "pass",
+    "art_coverage": "pass",
+    "device_motion": "pass",
+    "clinical_accuracy": "pass",
+    "caption_alignment": "pass",
+    "voice_only": "pass",
+    "thumbnail": "pass",
+    "vertical_short": "pass",
+    "halal_review": "pass",
+    "intentional_holds": [
+      {
+        "end_seconds": 485.533333,
+        "start_seconds": 477.533333,
+        "reason": "Eight seconds to read the clinical sources card."
+      }
+    ],
+    "notes": [
+      "Reviewed decoded 390px samples across the full cut and exact repaired motion in P05 and P07. Reviewed 320px custom cover and vertical burned captions.",
+      "Compared illustrated claims with the source map and checked graft origins, downstream joins, heart-lung support and recovery context. No independent external clinician review was performed.",
+      "Voice-only ElevenLabs Alexander. The English text and timing were cross-checked against the word-level Scribe alignment. Manual auditory listening is not claimed.",
+      "The 1440p picture came from Canva. Its extra five-second tail was excluded at the exact authored frame count and the original timed ElevenLabs mix and English subtitle stream were remuxed. The 1080p companion uses the matching native scene picture and voice."
+    ]
+  },
+  "halal_review": "pass",
+  "errors": [],
+  "status": "pass"
+}
