@@ -8,7 +8,7 @@
     "Coronary angioplasty and stent placement"
   ],
   "language": "en",
-  "planned_release": "2026-11-17T18:00:00+05:00",
+  "planned_release": "2026-11-16T09:10:00+05:00",
   "timezone": "Asia/Karachi",
   "studio_release_verified": true,
   "watch_url": "https://youtu.be/WdlALjzPXzM",
@@ -19,7 +19,7 @@
   "studio_subtitles_sha256": "f791d4cde2ff3881bb0750e986cc6982ac92e26fd6252620582069594ff9e4df",
   "studio_thumbnail_sha256": "16470be25ae23acd7eccd99474f0006529d15f0e35c99394dbaba84b4a819900",
   "studio_schedule_confirmation": {
-    "publish_at": "2026-11-17T18:00:00+05:00",
+    "publish_at": "2026-11-16T09:10:00+05:00",
     "timezone": "Asia/Karachi"
   }
 }

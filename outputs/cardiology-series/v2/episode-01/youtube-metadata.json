@@ -19,7 +19,7 @@
   "watch_url": null,
   "short": {
     "title": "How contrast reveals the coronary arteries",
-    "status": "scheduled",
+    "status": "published",
     "studio_verified": true,
     "video_id": "AMk2HTLXs80",
     "watch_url": "https://www.youtube.com/shorts/AMk2HTLXs80",
@@ -29,5 +29,10 @@
     "duration_seconds": 23.77,
     "captions": "English burned into picture",
     "studio_checks": "complete_no_issues"
+  },
+  "studio_publication_confirmation": {
+    "date": "2026-11-12",
+    "timezone": "Asia/Karachi",
+    "visibility": "public"
   }
 }

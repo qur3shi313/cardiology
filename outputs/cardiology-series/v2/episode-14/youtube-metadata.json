@@ -8,8 +8,18 @@
     "Heart attack and emergency PCI"
   ],
   "language": "en",
-  "planned_release": "2026-11-25T18:00:00+05:00",
+  "planned_release": "2026-11-24T09:10:00+05:00",
   "timezone": "Asia/Karachi",
-  "studio_release_verified": false,
-  "watch_url": null
+  "studio_release_verified": true,
+  "watch_url": "https://youtu.be/T7FBQqxPgqI",
+  "video_id": "T7FBQqxPgqI",
+  "master_sha256": "2638b7400766584a1cf10aa7674ac980d0978a50027f72b8ffb31b6876b8b481",
+  "studio_checks": "complete_no_issues",
+  "studio_subtitles": "English published",
+  "studio_subtitles_sha256": "2625b65dd0660fe3ab189fcec795e9763c71e0ef4d360a81eed60fb89c298ee5",
+  "studio_thumbnail_sha256": "e1df97780dd09c14434eb8e86c53831e2e0d5c75193227065da2c0e80512d8ba",
+  "studio_schedule_confirmation": {
+    "publish_at": "2026-11-24T09:10:00+05:00",
+    "timezone": "Asia/Karachi"
+  }
 }

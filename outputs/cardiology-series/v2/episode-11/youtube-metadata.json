@@ -8,7 +8,7 @@
     "How FFR and iFR help assess a coronary narrowing"
   ],
   "language": "en",
-  "planned_release": "2026-11-22T18:00:00+05:00",
+  "planned_release": "2026-11-21T09:10:00+05:00",
   "timezone": "Asia/Karachi",
   "studio_release_verified": true,
   "watch_url": "https://youtu.be/rRP6MZA7cn4",
@@ -19,7 +19,7 @@
   "studio_subtitles_sha256": "d0d4002aa64c2dd0f768e4939e700812082d47721f8eedb5448bd86ce7043568",
   "studio_thumbnail_sha256": "c420e6d4db2abbb8234239c6445cec280e33e70d7310c24c853f1baac5538723",
   "studio_schedule_confirmation": {
-    "publish_at": "2026-11-22T18:00:00+05:00",
+    "publish_at": "2026-11-21T09:10:00+05:00",
     "timezone": "Asia/Karachi"
   }
 }

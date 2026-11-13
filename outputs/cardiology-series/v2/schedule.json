@@ -1,13 +1,13 @@
 {
   "timezone": "Asia/Karachi",
-  "daily_release_time": "18:00",
+  "daily_release_time": "09:10",
   "targets": [
     {
       "topic": 1,
       "episode": "episode-01",
       "title": "Coronary angiogram through the wrist or groin",
       "target": "2026-11-12T18:00:00+05:00",
-      "status": "scheduled",
+      "status": "published",
       "production_material": "Existing wrist and groin scripts, footage and Alexander voice",
       "studio_verified": true,
       "watch_url": "https://youtu.be/OC8k3XcvhYI",
@@ -30,7 +30,7 @@
       "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-01",
       "short": {
         "title": "How contrast reveals the coronary arteries",
-        "status": "scheduled",
+        "status": "published",
         "studio_verified": true,
         "video_id": "AMk2HTLXs80",
         "watch_url": "https://www.youtube.com/shorts/AMk2HTLXs80",
@@ -40,14 +40,15 @@
         "duration_seconds": 23.77,
         "captions": "English burned into picture",
         "studio_checks": "complete_no_issues"
-      }
+      },
+      "published_date_pkt": "2026-11-12"
     },
     {
       "topic": 2,
       "episode": "episode-02",
       "title": "Wrist versus groin access and why the team chooses a route",
       "target": "2026-11-13T18:00:00+05:00",
-      "status": "scheduled",
+      "status": "published",
       "production_material": "Existing wrist versus groin access package",
       "studio_verified": true,
       "watch_url": "https://youtu.be/B5isQ7DbyPQ",
@@ -73,13 +74,15 @@
         "duration_seconds": 34.1,
         "captions": "English burned into picture",
         "studio_checks": "complete_no_issues"
-      }
+      },
+      "video_id": "B5isQ7DbyPQ",
+      "published_date_pkt": "2026-11-13"
     },
     {
       "topic": 3,
       "episode": "episode-03",
       "title": "What the sheath, guidewire, catheter and contrast each do",
-      "target": "2026-11-14T18:00:00+05:00",
+      "target": "2026-11-13T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Existing device roles script, storyboard and animation",
       "studio_verified": true,
@@ -101,19 +104,21 @@
         "studio_verified": true,
         "video_id": "4uWOhJmUjeM",
         "watch_url": "https://www.youtube.com/shorts/4uWOhJmUjeM",
-        "target": "2026-11-14T18:15:00+05:00",
+        "target": "2026-11-13T09:25:00+05:00",
         "timezone": "Asia/Karachi",
         "sha256": "3f6cfbd6e4f400ddf3477ebf4b39498c03b2d742a604f04f148d22ff2828dfff",
         "duration_seconds": 35.5,
         "captions": "English burned into picture",
         "studio_checks": "complete_no_issues"
-      }
+      },
+      "previous_target": "2026-11-14T18:00:00+05:00",
+      "video_id": "pmDPTmLtvak"
     },
     {
       "topic": 4,
       "episode": "episode-04",
       "title": "How clinicians read a coronary angiogram",
-      "target": "2026-11-15T18:00:00+05:00",
+      "target": "2026-11-14T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
@@ -127,13 +132,15 @@
       "master_sha256": "b4acd939bbf06ff8e26d39e2a8043591777a819f2f314765e9ae8f0884c7dec3",
       "legacy_video_id": "wTj-F4zotns",
       "legacy_visibility": "private",
-      "studio_checks": "scheduled_no_notices_on_channel_list"
+      "studio_checks": "scheduled_no_notices_on_channel_list",
+      "previous_target": "2026-11-15T18:00:00+05:00",
+      "video_id": "2RxYq6RcWrg"
     },
     {
       "topic": 5,
       "episode": "episode-05",
       "title": "Recovery and next steps after a coronary angiogram",
-      "target": "2026-11-16T18:00:00+05:00",
+      "target": "2026-11-15T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
@@ -146,13 +153,14 @@
       "studio_checks": "complete_no_issues",
       "master_sha256": "e5099b7031dfdd16198a97c48e7974dbbd735b419c1388699ca4a2ac1b4c8e89",
       "master_bytes": 126722375,
-      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-05"
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-05",
+      "previous_target": "2026-11-16T18:00:00+05:00"
     },
     {
       "topic": 6,
       "episode": "episode-06",
       "title": "Coronary angioplasty and stent placement",
-      "target": "2026-11-17T18:00:00+05:00",
+      "target": "2026-11-16T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Existing angioplasty and stent package",
       "studio_verified": true,
@@ -167,13 +175,14 @@
       "master_preflight_passed": true,
       "companion_package_qa_pending": false,
       "studio_checks": "complete_no_issues",
-      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-06"
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-06",
+      "previous_target": "2026-11-17T18:00:00+05:00"
     },
     {
       "topic": 7,
       "episode": "episode-07",
       "title": "How drug-eluting stents work",
-      "target": "2026-11-18T18:00:00+05:00",
+      "target": "2026-11-17T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
@@ -195,19 +204,20 @@
         "studio_verified": true,
         "video_id": "h_p9or083RA",
         "watch_url": "https://www.youtube.com/shorts/h_p9or083RA",
-        "target": "2026-11-18T18:15:00+05:00",
+        "target": "2026-11-17T09:25:00+05:00",
         "timezone": "Asia/Karachi",
         "sha256": "9a1c2e40b6877b76059eca783e0d24959f3b832850eadda86e74e8e6b7a69aa3",
         "duration_seconds": 13.93,
         "captions": "English burned into picture",
         "studio_checks": "complete_no_issues"
-      }
+      },
+      "previous_target": "2026-11-18T18:00:00+05:00"
     },
     {
       "topic": 8,
       "episode": "episode-08",
       "title": "Coronary drug-coated balloons",
-      "target": "2026-11-19T18:00:00+05:00",
+      "target": "2026-11-18T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Existing drug-coated balloon package",
       "studio_verified": true,
@@ -219,13 +229,15 @@
       "verified_source_motion_percent": 11.57,
       "master_sha256": "8fdb4b9762bc6ab5324949ecad62950fe70fb3dcc953e860022f430225fe400f",
       "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-08",
-      "studio_checks": "scheduled_no_notices_on_channel_list"
+      "studio_checks": "scheduled_no_notices_on_channel_list",
+      "previous_target": "2026-11-19T18:00:00+05:00",
+      "video_id": "J8YPIjm9OmY"
     },
     {
       "topic": 9,
       "episode": "episode-09",
       "title": "Why a stent can narrow again and how the team investigates",
-      "target": "2026-11-20T18:00:00+05:00",
+      "target": "2026-11-19T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
@@ -240,13 +252,14 @@
       "master_preflight_passed": true,
       "companion_package_qa_pending": false,
       "studio_checks": "complete_no_issues",
-      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-09"
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-09",
+      "previous_target": "2026-11-20T18:00:00+05:00"
     },
     {
       "topic": 10,
       "episode": "episode-10",
       "title": "Recovery, medicines and follow-up after PCI",
-      "target": "2026-11-21T18:00:00+05:00",
+      "target": "2026-11-20T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
@@ -261,13 +274,14 @@
       "master_preflight_passed": true,
       "companion_package_qa_pending": false,
       "studio_checks": "complete_no_issues",
-      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-10"
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-10",
+      "previous_target": "2026-11-21T18:00:00+05:00"
     },
     {
       "topic": 11,
       "episode": "episode-11",
       "title": "How FFR and iFR help assess a coronary narrowing",
-      "target": "2026-11-22T18:00:00+05:00",
+      "target": "2026-11-21T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
@@ -282,13 +296,14 @@
       "master_preflight_passed": true,
       "companion_package_qa_pending": false,
       "studio_checks": "complete_no_issues",
-      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-11"
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-11",
+      "previous_target": "2026-11-22T18:00:00+05:00"
     },
     {
       "topic": 12,
       "episode": "episode-12",
       "title": "Looking inside coronary arteries with IVUS and OCT",
-      "target": "2026-11-23T18:00:00+05:00",
+      "target": "2026-11-22T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
@@ -310,19 +325,20 @@
         "studio_verified": true,
         "video_id": "Gpv-_JouNwA",
         "watch_url": "https://www.youtube.com/shorts/Gpv-_JouNwA",
-        "target": "2026-11-23T18:15:00+05:00",
+        "target": "2026-11-22T09:25:00+05:00",
         "timezone": "Asia/Karachi",
         "sha256": "e4b576bf30af7ac0577137a4764005d3cae78a0a6a0b303d9fab259a5d65bba5",
         "duration_seconds": 22.1,
         "captions": "English burned into picture",
         "studio_checks": "complete_no_issues"
-      }
+      },
+      "previous_target": "2026-11-23T18:00:00+05:00"
     },
     {
       "topic": 13,
       "episode": "episode-13",
       "title": "Calcified arteries and complex PCI",
-      "target": "2026-11-24T18:00:00+05:00",
+      "target": "2026-11-23T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
@@ -349,28 +365,37 @@
         "sha256": "7f693ce970795feaf69abe785e8236348934065721fd883e2d42a01e2fd588ee",
         "duration_seconds": 20.57,
         "captions": "English burned into picture",
-        "studio_checks": "complete_no_issues"
-      }
+        "studio_checks": "complete_no_issues",
+        "requested_target": "2026-11-23T09:25:00+05:00"
+      },
+      "previous_target": "2026-11-24T18:00:00+05:00"
     },
     {
       "topic": 14,
       "episode": "episode-14",
       "title": "Heart attack and emergency PCI",
-      "target": "2026-11-25T18:00:00+05:00",
-      "status": "picture_renderer_queued",
+      "target": "2026-11-24T09:10:00+05:00",
+      "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
-      "studio_verified": false,
-      "watch_url": null,
-      "qa_passed": false,
+      "studio_verified": true,
+      "watch_url": "https://youtu.be/T7FBQqxPgqI",
+      "qa_passed": true,
       "duration_seconds": 147.3,
       "scene_count": 8,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "previous_target": "2026-11-25T18:00:00+05:00",
+      "video_id": "T7FBQqxPgqI",
+      "master_sha256": "2638b7400766584a1cf10aa7674ac980d0978a50027f72b8ffb31b6876b8b481",
+      "master_bytes": 29997033,
+      "master_preflight_passed": true,
+      "companion_package_qa_pending": false,
+      "studio_checks": "complete_no_issues"
     },
     {
       "topic": 15,
       "episode": "episode-15",
       "title": "Treatment decisions when several coronary arteries are narrowed",
-      "target": "2026-11-26T18:00:00+05:00",
+      "target": "2026-11-25T09:10:00+05:00",
       "status": "picture_renderer_queued",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": false,
@@ -378,13 +403,14 @@
       "qa_passed": false,
       "duration_seconds": 149.233,
       "scene_count": 8,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "previous_target": "2026-11-26T18:00:00+05:00"
     },
     {
       "topic": 16,
       "episode": "episode-16",
       "title": "What happens in aortic stenosis",
-      "target": "2026-11-27T18:00:00+05:00",
+      "target": "2026-11-26T09:10:00+05:00",
       "status": "scheduled",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": true,
@@ -399,13 +425,14 @@
       "master_sha256": "b5e6a0e00901367487d0117863550e45eb1bf061c92edf85d9b9f2dce845180c",
       "master_bytes": 97423915,
       "studio_checks": "studio_schedule_confirmed",
-      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-16"
+      "github_release": "https://github.com/qur3shi313/cardiology/releases/tag/cardiology-v2-episode-16",
+      "previous_target": "2026-11-27T18:00:00+05:00"
     },
     {
       "topic": 17,
       "episode": "episode-17",
       "title": "How the Heart Team plans TAVI",
-      "target": "2026-11-28T18:00:00+05:00",
+      "target": "2026-11-27T09:10:00+05:00",
       "status": "picture_renderer_queued",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": false,
@@ -413,13 +440,14 @@
       "qa_passed": false,
       "duration_seconds": 140.433,
       "scene_count": 8,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "previous_target": "2026-11-28T18:00:00+05:00"
     },
     {
       "topic": 18,
       "episode": "episode-18",
       "title": "How transcatheter aortic valve implantation is performed",
-      "target": "2026-11-29T18:00:00+05:00",
+      "target": "2026-11-28T09:10:00+05:00",
       "status": "picture_renderer_queued",
       "production_material": "Existing TAVI package",
       "studio_verified": false,
@@ -427,13 +455,14 @@
       "qa_passed": false,
       "duration_seconds": 192.233,
       "scene_count": 12,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "previous_target": "2026-11-29T18:00:00+05:00"
     },
     {
       "topic": 19,
       "episode": "episode-19",
       "title": "Recovery and follow-up after TAVI",
-      "target": "2026-11-30T18:00:00+05:00",
+      "target": "2026-11-29T09:10:00+05:00",
       "status": "picture_renderer_queued",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": false,
@@ -441,13 +470,14 @@
       "qa_passed": false,
       "duration_seconds": 140.667,
       "scene_count": 8,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "previous_target": "2026-11-30T18:00:00+05:00"
     },
     {
       "topic": 20,
       "episode": "episode-20",
       "title": "TAVI, surgery and how the Heart Team weighs the options",
-      "target": "2026-12-01T18:00:00+05:00",
+      "target": "2026-11-30T09:10:00+05:00",
       "status": "picture_renderer_queued",
       "production_material": "Source-mapped script, original picture program, recorded Alexander narration and timed captions",
       "studio_verified": false,
@@ -455,7 +485,23 @@
       "qa_passed": false,
       "duration_seconds": 147.867,
       "scene_count": 8,
-      "narration_decoded": true
+      "narration_decoded": true,
+      "previous_target": "2026-12-01T18:00:00+05:00"
+    }
+  ],
+  "companion_short_time": "09:25",
+  "legacy_angiograms": [
+    {
+      "video_id": "YIw1bSATJqY",
+      "status": "private",
+      "studio_verified": true,
+      "replacement_watch_url": "https://youtu.be/OC8k3XcvhYI"
+    },
+    {
+      "video_id": "sFbJGjFIuHo",
+      "status": "private",
+      "studio_verified": true,
+      "replacement_watch_url": "https://youtu.be/OC8k3XcvhYI"
     }
   ]
 }

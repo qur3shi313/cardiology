@@ -8,7 +8,7 @@
     "What happens in aortic stenosis"
   ],
   "language": "en",
-  "planned_release": "2026-11-27T18:00:00+05:00",
+  "planned_release": "2026-11-26T09:10:00+05:00",
   "timezone": "Asia/Karachi",
   "studio_release_verified": true,
   "watch_url": "https://youtu.be/IWQiJlhhobk",
@@ -16,7 +16,7 @@
   "master_sha256": "b5e6a0e00901367487d0117863550e45eb1bf061c92edf85d9b9f2dce845180c",
   "studio_checks": "studio_schedule_confirmed",
   "studio_schedule_confirmation": {
-    "publish_at": "2026-11-27T18:00:00+05:00",
+    "publish_at": "2026-11-26T09:10:00+05:00",
     "timezone": "Asia/Karachi"
   }
 }

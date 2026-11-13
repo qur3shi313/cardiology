@@ -8,7 +8,7 @@
     "What the sheath, guidewire, catheter and contrast each do"
   ],
   "language": "en",
-  "planned_release": "2026-11-14T18:00:00+05:00",
+  "planned_release": "2026-11-13T09:10:00+05:00",
   "timezone": "Asia/Karachi",
   "studio_release_verified": true,
   "watch_url": "https://youtu.be/pmDPTmLtvak",
@@ -20,11 +20,15 @@
     "studio_verified": true,
     "video_id": "4uWOhJmUjeM",
     "watch_url": "https://www.youtube.com/shorts/4uWOhJmUjeM",
-    "target": "2026-11-14T18:15:00+05:00",
+    "target": "2026-11-13T09:25:00+05:00",
     "timezone": "Asia/Karachi",
     "sha256": "3f6cfbd6e4f400ddf3477ebf4b39498c03b2d742a604f04f148d22ff2828dfff",
     "duration_seconds": 35.5,
     "captions": "English burned into picture",
     "studio_checks": "complete_no_issues"
+  },
+  "studio_schedule_confirmation": {
+    "publish_at": "2026-11-13T09:10:00+05:00",
+    "timezone": "Asia/Karachi"
   }
 }

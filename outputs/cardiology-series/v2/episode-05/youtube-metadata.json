@@ -8,7 +8,7 @@
     "Recovery and next steps after a coronary angiogram"
   ],
   "language": "en",
-  "planned_release": "2026-11-16T18:00:00+05:00",
+  "planned_release": "2026-11-15T09:10:00+05:00",
   "timezone": "Asia/Karachi",
   "studio_release_verified": true,
   "watch_url": "https://youtu.be/n60ALaI6SJE",
@@ -16,7 +16,7 @@
   "master_sha256": "e5099b7031dfdd16198a97c48e7974dbbd735b419c1388699ca4a2ac1b4c8e89",
   "studio_checks": "complete_no_issues",
   "studio_schedule_confirmation": {
-    "publish_at": "2026-11-16T18:00:00+05:00",
+    "publish_at": "2026-11-15T09:10:00+05:00",
     "timezone": "Asia/Karachi"
   },
   "studio_subtitles": "English published"

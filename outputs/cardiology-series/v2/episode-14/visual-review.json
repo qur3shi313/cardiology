@@ -1,0 +1,140 @@
+{
+  "master_sha256": "2638b7400766584a1cf10aa7674ac980d0978a50027f72b8ffb31b6876b8b481",
+  "short_sha256": "9d76c9fd4f41c4da32c6ac329181824d3cb173aa247baccc40118ed07f18d37a",
+  "thumbnail_sha256": "e1df97780dd09c14434eb8e86c53831e2e0d5c75193227065da2c0e80512d8ba",
+  "mobile_readability": "pass",
+  "art_coverage": "pass",
+  "device_motion": "pass",
+  "clinical_accuracy": "pass",
+  "caption_alignment": "pass",
+  "voice_only": "pass",
+  "thumbnail": "pass",
+  "vertical_short": "pass",
+  "halal_review": "pass",
+  "verified_at": "2026-11-12T10:27:55.000383+05:00",
+  "intentional_holds": [
+    {
+      "start_seconds": 139.3,
+      "end_seconds": 147.3,
+      "reason": "The original artwork, clinical sources, narration disclosure and next episode remain readable."
+    }
+  ],
+  "review_evidence": {
+    "master_sha256": "2638b7400766584a1cf10aa7674ac980d0978a50027f72b8ffb31b6876b8b481",
+    "short_sha256": "9d76c9fd4f41c4da32c6ac329181824d3cb173aa247baccc40118ed07f18d37a",
+    "copy_sha256": "4bc766b502bba7b9df0e68b668f427114d19858912352e65ec01baad968f1969",
+    "thumbnail_sha256": "e1df97780dd09c14434eb8e86c53831e2e0d5c75193227065da2c0e80512d8ba",
+    "verified_at": "2026-11-12T10:27:01.203129+05:00",
+    "captions": {
+      "file": "captions.en.srt",
+      "cue_count": 33,
+      "errors": []
+    },
+    "caption_sha256": "2625b65dd0660fe3ab189fcec795e9763c71e0ef4d360a81eed60fb89c298ee5",
+    "embedded_captions_match": true,
+    "narration_words": 317,
+    "audio_and_caption_packets_unchanged": true,
+    "packets": {
+      "audio": {
+        "digest": "465e38609eb07eb3277920796334eec0743697acebd01f5aa8c7a4327c6d4384",
+        "packets": 6906,
+        "time_base": "1/48000"
+      },
+      "subtitle": {
+        "digest": "8ae2b1ac35556f3f4b899160132698ffb8497041327b23099ff31076faaf90f5",
+        "packets": 65,
+        "time_base": "1/1000000"
+      }
+    },
+    "voice_source_sha256": "4ecb10f09b1755026f00673b0283d91d0a285bdb2a152e7aedeb1f61fb272924",
+    "master_voice_alignment": [
+      {
+        "source_sec": 0.93,
+        "output_sec": 0.93,
+        "offset_sec": 0.0,
+        "correlation": 0.99982,
+        "scene": "P01"
+      },
+      {
+        "source_sec": 18.463333333333335,
+        "output_sec": 18.463333333333335,
+        "offset_sec": 0.0,
+        "correlation": 0.99887,
+        "scene": "P02"
+      },
+      {
+        "source_sec": 41.33,
+        "output_sec": 41.33,
+        "offset_sec": 0.0,
+        "correlation": 0.99998,
+        "scene": "P03"
+      },
+      {
+        "source_sec": 61.96333333333333,
+        "output_sec": 61.96333333333333,
+        "offset_sec": 0.0,
+        "correlation": 0.99997,
+        "scene": "P04"
+      },
+      {
+        "source_sec": 81.29666666666667,
+        "output_sec": 81.29666666666667,
+        "offset_sec": 0.0,
+        "correlation": 0.99998,
+        "scene": "P05"
+      },
+      {
+        "source_sec": 98.09666666666668,
+        "output_sec": 98.09666666666668,
+        "offset_sec": 0.0,
+        "correlation": 0.99973,
+        "scene": "P06"
+      },
+      {
+        "source_sec": 118.59666666666668,
+        "output_sec": 118.59666666666668,
+        "offset_sec": 0.0,
+        "correlation": 0.99961,
+        "scene": "P07"
+      }
+    ],
+    "short_voice_alignment": [
+      {
+        "source_sec": 98.16666666666667,
+        "output_sec": 1.0,
+        "offset_sec": 0.0,
+        "correlation": 0.85893
+      },
+      {
+        "source_sec": 102.56666666666668,
+        "output_sec": 5.4,
+        "offset_sec": 0.0,
+        "correlation": 0.85513
+      },
+      {
+        "source_sec": 106.26666666666667,
+        "output_sec": 9.1,
+        "offset_sec": 0.0,
+        "correlation": 0.87046
+      },
+      {
+        "source_sec": 110.36666666666667,
+        "output_sec": 13.2,
+        "offset_sec": 0.0,
+        "correlation": 0.86144
+      },
+      {
+        "source_sec": 114.06666666666666,
+        "output_sec": 16.9,
+        "offset_sec": 0.0,
+        "correlation": 0.84651
+      }
+    ],
+    "closing_silent": true,
+    "master_contact_sample_count": 47,
+    "short_contact_sample_count": 12,
+    "clinical_and_device": "Reviewed the clot and downstream heart territory, simulated contrast stopping before treatment, and the same coronary projection showing flow after treatment. The selected example preserves the distal wire, balloon-mounted scaffold, expansion, deflation, withdrawal and recheck. Emergency symptoms direct viewers to their local emergency number. The selected STEMI pathway and recovery depend on the clinical situation.",
+    "visual": "Review sampled all eight scenes at 390 pixels, twelve exact portrait frames, and nine extra frames across the portrait closing sentence. The portrait retains the complete reperfusion explanation and separate caption area, including the closing words “procedure ends” before the fade. The thumbnail highlights the seated stent, balloon and continuous wire. Figures are diagrammatic and clothed.",
+    "audio": "The Alexander source is the only narrated track. Exact compressed audio and subtitle packets match the prior delivery. The closing is silent, and no manual auditory listening is claimed."
+  }
+}

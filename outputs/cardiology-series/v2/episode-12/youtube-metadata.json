@@ -8,7 +8,7 @@
     "Looking inside coronary arteries with IVUS and OCT"
   ],
   "language": "en",
-  "planned_release": "2026-11-23T18:00:00+05:00",
+  "planned_release": "2026-11-22T09:10:00+05:00",
   "timezone": "Asia/Karachi",
   "studio_release_verified": true,
   "watch_url": "https://youtu.be/2F9rY6PkpNc",
@@ -19,7 +19,7 @@
   "studio_subtitles_sha256": "4ade7c3464b631ab41848731847c02901e8b3b43a6c5f95bcec8627561c7191c",
   "studio_thumbnail_sha256": "0f1e5fedf4e422f0ca3904865c92e8953e0baa42b810c63a7424effbd20dc8ab",
   "studio_schedule_confirmation": {
-    "publish_at": "2026-11-23T18:00:00+05:00",
+    "publish_at": "2026-11-22T09:10:00+05:00",
     "timezone": "Asia/Karachi"
   },
   "short": {
@@ -28,7 +28,7 @@
     "studio_verified": true,
     "video_id": "Gpv-_JouNwA",
     "watch_url": "https://www.youtube.com/shorts/Gpv-_JouNwA",
-    "target": "2026-11-23T18:15:00+05:00",
+    "target": "2026-11-22T09:25:00+05:00",
     "timezone": "Asia/Karachi",
     "sha256": "e4b576bf30af7ac0577137a4764005d3cae78a0a6a0b303d9fab259a5d65bba5",
     "duration_seconds": 22.1,

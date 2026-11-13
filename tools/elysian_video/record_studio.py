@@ -29,9 +29,8 @@ def record(number, video, native_time, master_sha, thumbnail):
     schedule = load(ledger)
     row = next(r for r in schedule['targets'] if r['topic']==number)
     publish = datetime.fromisoformat(native_time)
-    if (row['target']!=publish.isoformat() or publish.utcoffset()!=timedelta(hours=5)
-            or (publish.hour,publish.minute,publish.second)!=(18,0,0)):
-        raise ValueError('The confirmed native date must match the assigned 18:00 Pakistan slot.')
+    if row['target']!=publish.isoformat() or publish.utcoffset()!=timedelta(hours=5):
+        raise ValueError('The confirmed native date and time must match the assigned Pakistan slot.')
     if any((r.get('video_id')==video and r['topic']!=number) for r in schedule['targets']):
         raise ValueError('This video is already associated with a different episode.')
     if row.get('studio_verified') and row.get('video_id')!=video:
@@ -76,7 +75,8 @@ def record(number, video, native_time, master_sha, thumbnail):
     lines = []
     for item in verified:
         day = datetime.fromisoformat(item['target'])
-        lines.append(f"- {day.day} {day:%B} · [{item['title']}]({item['watch_url']})")
+        state = 'Public' if item.get('status')=='published' else day.strftime('%H:%M PKT')
+        lines.append(f"- {day.day} {day:%B} · {state} · [{item['title']}]({item['watch_url']})")
     checkpoint.write_text(prefix+'\n'+'\n'.join(lines)+'\n\n'+suffix,
                           encoding='utf-8',newline='\n')
     return row, len(verified)

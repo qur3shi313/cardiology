@@ -8,10 +8,14 @@
     "Coronary drug-coated balloons"
   ],
   "language": "en",
-  "planned_release": "2026-11-19T18:00:00+05:00",
+  "planned_release": "2026-11-18T09:10:00+05:00",
   "timezone": "Asia/Karachi",
   "studio_release_verified": true,
   "watch_url": "https://youtu.be/J8YPIjm9OmY",
   "scheduled_at": "2026-11-19T18:00:00+05:00",
-  "studio_checks": "scheduled_no_notices_on_channel_list"
+  "studio_checks": "scheduled_no_notices_on_channel_list",
+  "studio_schedule_confirmation": {
+    "publish_at": "2026-11-18T09:10:00+05:00",
+    "timezone": "Asia/Karachi"
+  }
 }

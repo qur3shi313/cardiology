@@ -26,5 +26,10 @@
     "duration_seconds": 34.1,
     "captions": "English burned into picture",
     "studio_checks": "complete_no_issues"
+  },
+  "studio_publication_confirmation": {
+    "date": "2026-11-13",
+    "timezone": "Asia/Karachi",
+    "visibility": "public"
   }
 }
