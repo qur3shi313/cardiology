@@ -1,0 +1,52 @@
+{
+  "P01": {
+    "wide": {
+      "phrase": "In this episode, we'll follow two grafts",
+      "edge": "start"
+    }
+  },
+  "P02": {
+    "coronary": {
+      "phrase": "The coronary arteries branch from its base",
+      "edge": "start"
+    },
+    "lad": {
+      "phrase": "the left anterior descending artery",
+      "edge": "start"
+    },
+    "cutaway": {
+      "phrase": "plaque in the artery wall has left a narrow channel",
+      "edge": "start"
+    }
+  },
+  "P03": {
+    "open": {
+      "phrase": "The end of the graft opens into the side",
+      "edge": "start"
+    },
+    "closer": {
+      "phrase": "The connections and the direction of flow are easier to see",
+      "edge": "start"
+    }
+  },
+  "P04": {
+    "thoracic": {
+      "phrase": "That smaller vessel is the left internal thoracic artery",
+      "edge": "start"
+    },
+    "joined": {
+      "phrase": "The lower end is joined",
+      "edge": "start"
+    }
+  },
+  "P05": {
+    "aorta": {
+      "phrase": "One end is joined to the ascending aorta",
+      "edge": "start"
+    },
+    "joined": {
+      "phrase": "The other end joins a coronary branch beyond its narrowing",
+      "edge": "start"
+    }
+  }
+}

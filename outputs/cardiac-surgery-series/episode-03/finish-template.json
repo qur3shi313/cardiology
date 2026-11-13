@@ -1,0 +1,15 @@
+{
+  "thumbnail": {
+    "title": ["After bypass", "surgery"],
+    "artwork": "artwork-thumbnail.jpg"
+  },
+  "short": {
+    "scene": "P02",
+    "start": {"phrase": "A ventilator may still be helping you breathe through a tube in your windpipe", "edge": "start"},
+    "end": {"phrase": "extra oxygen through a mask or soft tubes at the nose", "edge": "end"},
+    "alternate_end": {"phrase": "before they decide whether the tube can come out", "edge": "end"},
+    "headings": ["Breathing support", "after heart surgery"],
+    "crop": [2560, 1440, 0, 0],
+    "eyebrow": "ILLUSTRATED ICU RECOVERY"
+  }
+}

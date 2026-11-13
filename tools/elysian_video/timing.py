@@ -24,7 +24,7 @@ def measured_duration(audio,ffmpeg):
     h,m,s=m.groups()
     return int(h)*3600+int(m)*60+float(s)
 
-def align(rows, transcript, duration):
+def align_words(rows, transcript, duration):
     offsets=[]; desired=[]; heard=[]; times=[]
     for row in rows:
         offsets.append(len(desired))
@@ -50,6 +50,19 @@ def align(rows, transcript, duration):
         end=matching[right][0] if right<len(desired) else duration
         step=max(0,end-start)/(right-left-1)
         matching[i]=(start+step*(i-left-1),start+step*(i-left))
+    return offsets, desired, matching, rate, differences
+
+
+def phrase_index(words, phrase):
+    target = [norm(match.group()) for match in WORD.finditer(phrase)]
+    matches = [i for i in range(len(words) - len(target) + 1) if words[i:i + len(target)] == target]
+    if not target or len(matches) != 1:
+        raise ValueError(f'Expected one occurrence of anchor phrase: {phrase!r}')
+    return matches[0], matches[0] + len(target) - 1
+
+
+def align(rows, transcript, duration, *, anchors=None):
+    offsets, desired, matching, rate, differences = align_words(rows, transcript, duration)
     stops=[0.]
     for i in range(1,len(rows)):
         word=offsets[i]
@@ -79,14 +92,33 @@ def align(rows, transcript, duration):
             a,b=matching[off+j][0],matching[off+k-1][1]
             cues.append((a,b,text))
             j=k
-    return stops,cues,rate,differences
+    if anchors is None:
+        return stops,cues,rate,differences
+    phrase_times = {}
+    indexes = {row['id']: i for i, row in enumerate(rows)}
+    for scene, phrases in anchors.items():
+        if scene not in indexes:
+            raise ValueError(f'Unknown scene in phrase anchors: {scene}')
+        i = indexes[scene]
+        offset = offsets[i]
+        end = offsets[i + 1] if i + 1 < len(offsets) else len(desired)
+        scene_times = {}
+        for key, spec in phrases.items():
+            first, last = phrase_index(desired[offset:end], spec['phrase'])
+            edge = spec.get('edge', 'start')
+            if edge not in ('start', 'end'):
+                raise ValueError(f'Invalid edge for {scene}.{key}: {edge!r}')
+            scene_times[key] = matching[offset + first][0] if edge == 'start' else matching[offset + last][1]
+        phrase_times[scene] = scene_times
+    return stops,cues,rate,differences,phrase_times
 
-def prepare(folder,audio,scribe,ffmpeg):
+def prepare(folder,audio,scribe,ffmpeg, *, anchors=None):
     rows=json.loads((folder/'scenes.json').read_text(encoding='utf-8-sig'))
     transcript=json.loads(scribe.read_text(encoding='utf-8-sig'))
     if isinstance(transcript,dict): transcript=transcript['words']
     duration=measured_duration(audio,ffmpeg)
-    stops,cues,score,diff=align(rows,transcript,duration)
+    result=align(rows,transcript,duration,anchors=anchors)
+    stops,cues,score,diff=result[:4]
     frames=list(map(lambda t:round(t*FPS),stops))
     last=rows[-1]
     holds=last.get('target_end_sec',0)-last.get('target_start_sec',0)
@@ -119,6 +151,8 @@ def prepare(folder,audio,scribe,ffmpeg):
           'caption_file':captions.name,'chapter_file':chapter.name,
           'voice_alignment':{'matched_fraction':score,'scribe_differences':diff,'requires_listening':True},
           'scenes':scenes}
+    if anchors is not None:
+        data['aligned_phrase_seconds'] = result[4]
     (folder/'timeline.json').write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     return data
 

@@ -1,0 +1,15 @@
+{
+  "thumbnail": {
+    "title": ["How bypass", "works"],
+    "artwork": "artwork-thumbnail.jpg"
+  },
+  "short": {
+    "scene": "P05",
+    "start": {"phrase": "Now look at a separate example.", "edge": "start"},
+    "alternate_start": {"phrase": "This time a segment of the saphenous vein", "edge": "start"},
+    "end": {"phrase": "it carries oxygen-rich blood from the aorta to the heart muscle", "edge": "end"},
+    "headings": ["Follow a vein", "bypass graft"],
+    "crop": [2560, 1440, 0, 0],
+    "eyebrow": "ILLUSTRATED GRAFT FLOW"
+  }
+}

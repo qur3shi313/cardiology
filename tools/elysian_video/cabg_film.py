@@ -44,6 +44,48 @@ def combine_audio(first, second, output):
         '-map', '[out]', '-ac', '1', '-c:a', 'flac', output)
 
 
+def timing_inputs(episode):
+    cue_file = episode / 'cue-anchors.json'
+    package_file = episode / 'finish-template.json'
+    if not package_file.is_file():
+        return None, None
+    anchors = json.loads(cue_file.read_text(encoding='utf-8-sig')) if cue_file.is_file() else {}
+    template = json.loads(package_file.read_text(encoding='utf-8-sig'))
+    short = template['short']
+    for key in ('start', 'alternate_start', 'end', 'alternate_end'):
+        if key in short:
+            anchors.setdefault(short['scene'], {})['short_' + key] = short[key]
+    return anchors, template
+
+
+def prepare_delivery(episode, timeline, template):
+    phrase_times = timeline['aligned_phrase_seconds']
+    visual_cues = {}
+    for row in timeline['scenes']:
+        ident = row['id']
+        duration = (row['end_frame'] - row['start_frame']) / FPS
+        start = row['start_frame'] / FPS
+        cues = {key: max(0, min(1, (seconds - start) / duration))
+                for key, seconds in phrase_times.get(ident, {}).items() if not key.startswith('short_')}
+        if cues:
+            visual_cues[ident] = cues
+
+    short = template['short']
+    selected = phrase_times[short['scene']]
+    start = selected['short_start']
+    end = selected['short_end']
+    if end - start > 44.8:
+        start = selected.get('short_alternate_start', start)
+        end = selected.get('short_alternate_end', end)
+    if not 0 < end - start <= 44.8:
+        raise ValueError('Choose a complete phrase-bounded Short within 45 seconds')
+    picture_keys = ('headings', 'crop', 'eyebrow')
+    template['short'] = {key: short[key] for key in picture_keys}
+    template['short']['seconds'] = [round(max(0, start - .05), 4), round(end + .08, 4)]
+    write_json(episode / 'visual-cues.json', visual_cues)
+    write_json(episode / 'finish-config.json', template)
+
+
 def prepare(episode, first, first_words, second=None, second_words=None):
     audio_dir = episode / 'audio'
     audio_dir.mkdir(exist_ok=True)
@@ -67,9 +109,12 @@ def prepare(episode, first, first_words, second=None, second_words=None):
     alignment = audio_dir / 'scribe-alignment.json'
     write_json(alignment, {'words': transcript})
     write_json(episode / 'scenes.json', rows)
-    timeline = timing.prepare(episode, audio, alignment, FFMPEG)
+    anchors, template = timing_inputs(episode)
+    timeline = timing.prepare(episode, audio, alignment, FFMPEG, anchors=anchors)
     timeline['duration_frames'] += 8 * FPS
     timeline['scenes'][-1]['end_frame'] += 8 * FPS
+    if template is not None:
+        prepare_delivery(episode, timeline, template)
     write_json(episode / 'timeline.json', timeline)
     print(f"{timeline['duration_frames'] / FPS:.3f} seconds, matched words "
           f"{timeline['voice_alignment']['matched_fraction']:.2%}", flush=True)

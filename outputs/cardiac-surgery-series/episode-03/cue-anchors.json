@@ -1,0 +1,38 @@
+{
+  "P02": {
+    "airway": {"phrase": "a tube in your windpipe", "edge": "start"},
+    "respond": {"phrase": "A nurse can ask questions", "edge": "start"},
+    "readiness": {"phrase": "Staff check how awake you are", "edge": "start"},
+    "oxygen": {"phrase": "After it is removed", "edge": "start"}
+  },
+  "P03": {
+    "ecg": {"phrase": "The heart monitor shows", "edge": "start"},
+    "oxygen": {"phrase": "A small sensor on a finger", "edge": "start"},
+    "pressure": {"phrase": "A line in an artery", "edge": "start"},
+    "iv": {"phrase": "lines can give fluids or medicines", "edge": "start"},
+    "chest": {"phrase": "A chest drain carries fluid", "edge": "start"},
+    "urine": {"phrase": "A bladder catheter may collect urine", "edge": "start"},
+    "pacing": {"phrase": "You may also have temporary pacing wires", "edge": "start"},
+    "removal": {"phrase": "The team decides when each support", "edge": "start"}
+  },
+  "P07": {
+    "activity": {"phrase": "Build up activity using the plan", "edge": "start"},
+    "rehab": {"phrase": "Cardiac rehabilitation is a supervised programme", "edge": "start"},
+    "follow": {"phrase": "Follow-up also helps the team", "edge": "start"}
+  },
+  "P08": {
+    "emergency": {"phrase": "Call your local emergency number straight away", "edge": "start"},
+    "breathing": {"phrase": "severe trouble breathing", "edge": "start"},
+    "stroke": {"phrase": "possible signs of a stroke", "edge": "start"},
+    "face": {"phrase": "a drooping face", "edge": "start"},
+    "arm": {"phrase": "sudden arm weakness", "edge": "start"},
+    "speech": {"phrase": "difficulty speaking", "edge": "start"},
+    "any": {"phrase": "Even one of these stroke signs", "edge": "start"}
+  },
+  "P09": {
+    "move": {"phrase": "what you can safely do next", "edge": "start"},
+    "contact": {"phrase": "and whom to contact if something changes", "edge": "start"},
+    "next": {"phrase": "In the next episode", "edge": "start"},
+    "credits": {"phrase": "surgical replacement of the aortic valve", "edge": "end"}
+  }
+}
