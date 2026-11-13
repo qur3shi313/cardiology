@@ -196,13 +196,15 @@ def cutaway_plate(occluded):
             y = center(x) - 86 + (y_edge - center(x) + 86) * (.25 + (j % 5) * .09)
             angiogram.dot(c, x, y, 2 + j % 4, '#f6c49b', 130)
     if occluded:
-        clot = ART.curve((LESION - 38, center(LESION) - 37),
-                         ((LESION - 9, center(LESION) - 53), (LESION + 38, center(LESION) - 24), (LESION + 42, center(LESION) + 44)),
-                         ((LESION + 33, center(LESION) + 72), (LESION - 38, center(LESION) + 62), (LESION - 38, center(LESION) - 37)))
+        upper, lower = center(LESION) - stent.lumen_radius(LESION, -1, 0), center(LESION) + stent.lumen_radius(LESION, 1, 0)
+        clot = ART.curve((LESION - 45, upper - 8),
+                         ((LESION - 8, upper - 16), (LESION + 43, upper - 5), (LESION + 48, upper + 22)),
+                         ((LESION + 58, lower + 4), (LESION + 18, lower + 19), (LESION + 4, lower + 17)),
+                         ((LESION - 32, lower + 15), (LESION - 56, lower - 4), (LESION - 45, upper - 8)))
         c.drawPath(access.path(clot, True),
                    access.grad(LESION - 31, 403, LESION + 21, 483, ['#b24d52','#8a344e','#52243c']))
         for i in range(9):
-            angiogram.dot(c, LESION - 24 + i * 29 % 50, center(LESION) - 27 + i * 23 % 75,
+            angiogram.dot(c, LESION - 26 + i * 29 % 51, upper + 7 + i * 23 % 67,
                           2.5 + i % 3, '#d47b70', 123)
     return surface.makeImageSnapshot()
 
