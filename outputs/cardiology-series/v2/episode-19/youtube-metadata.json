@@ -21,5 +21,18 @@
   "studio_schedule_confirmation": {
     "publish_at": "2026-11-29T09:10:00+05:00",
     "timezone": "Asia/Karachi"
+  },
+  "short": {
+    "title": "Checking the valve after TAVI",
+    "status": "scheduled",
+    "studio_verified": true,
+    "video_id": "Uj8-2joCu3E",
+    "watch_url": "https://www.youtube.com/shorts/Uj8-2joCu3E",
+    "target": "2026-11-29T09:25:00+05:00",
+    "timezone": "Asia/Karachi",
+    "sha256": "a4b658655864305196306b80ac9889110cfb489d495920eca7999ab286af78c8",
+    "duration_seconds": 18.7,
+    "captions": "English burned into picture",
+    "studio_checks": "complete_no_issues"
   }
 }

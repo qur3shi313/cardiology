@@ -17,5 +17,8 @@ Morning companion releases are scheduled 15 minutes after the long films.
 - 23 November · 09:25 PKT · [How pressure waves act on coronary calcium](https://www.youtube.com/shorts/W3Q2Gn9R5jg)
 - 24 November · 09:25 PKT · [Emergency PCI: restoring flow](https://www.youtube.com/shorts/_KHSPRJvKBI)
 - 25 November · 09:25 PKT · [How bypass creates another route](https://www.youtube.com/shorts/5Szj_h8QrQE)
+- 26 November · 09:25 PKT · [Why the aortic valve narrows](https://www.youtube.com/shorts/3wTWluiommk)
 - 27 November · 09:25 PKT · [Measuring where the valve sits](https://www.youtube.com/shorts/wtzQ0lwqfG4)
 - 28 November · 09:25 PKT · [How a TAVI valve opens in place](https://www.youtube.com/shorts/0XMjlXjiRNA)
+- 29 November · 09:25 PKT · [Checking the valve after TAVI](https://www.youtube.com/shorts/Uj8-2joCu3E)
+- 30 November · 09:25 PKT · [Surgical aortic valve replacement](https://www.youtube.com/shorts/dtHmF7sawhM)
