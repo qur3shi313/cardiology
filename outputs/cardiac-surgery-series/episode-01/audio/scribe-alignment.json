@@ -1,0 +1,6874 @@
+{
+  "words": [
+    {
+      "text": "How",
+      "type": "word",
+      "start": 0.12,
+      "end": 0.24
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 0.34,
+      "end": 0.46
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 0.58,
+      "end": 0.84
+    },
+    {
+      "text": "get",
+      "type": "word",
+      "start": 0.92,
+      "end": 1.08
+    },
+    {
+      "text": "past",
+      "type": "word",
+      "start": 1.14,
+      "end": 1.42
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 1.48,
+      "end": 1.56
+    },
+    {
+      "text": "narrowed",
+      "type": "word",
+      "start": 1.62,
+      "end": 1.96
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 2.04,
+      "end": 2.26
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 2.32,
+      "end": 2.74
+    },
+    {
+      "text": "while",
+      "type": "word",
+      "start": 3.06,
+      "end": 3.18
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 3.22,
+      "end": 3.3
+    },
+    {
+      "text": "narrowing",
+      "type": "word",
+      "start": 3.36,
+      "end": 3.86
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 3.9,
+      "end": 4.0
+    },
+    {
+      "text": "still",
+      "type": "word",
+      "start": 4.1,
+      "end": 4.34
+    },
+    {
+      "text": "there?",
+      "type": "word",
+      "start": 4.38,
+      "end": 4.84
+    },
+    {
+      "text": "Watch",
+      "type": "word",
+      "start": 5.6,
+      "end": 5.76
+    },
+    {
+      "text": "it",
+      "type": "word",
+      "start": 5.8,
+      "end": 5.88
+    },
+    {
+      "text": "take",
+      "type": "word",
+      "start": 5.94,
+      "end": 6.08
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 6.12,
+      "end": 6.16
+    },
+    {
+      "text": "new",
+      "type": "word",
+      "start": 6.2,
+      "end": 6.38
+    },
+    {
+      "text": "route.",
+      "type": "word",
+      "start": 6.44,
+      "end": 6.74
+    },
+    {
+      "text": "This",
+      "type": "word",
+      "start": 7.4,
+      "end": 7.54
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 7.6,
+      "end": 7.8
+    },
+    {
+      "text": "coronary",
+      "type": "word",
+      "start": 7.88,
+      "end": 8.38
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 8.54,
+      "end": 8.88
+    },
+    {
+      "text": "bypass",
+      "type": "word",
+      "start": 9.04,
+      "end": 9.54
+    },
+    {
+      "text": "grafting,",
+      "type": "word",
+      "start": 9.64,
+      "end": 10.14
+    },
+    {
+      "text": "often",
+      "type": "word",
+      "start": 10.52,
+      "end": 10.76
+    },
+    {
+      "text": "called",
+      "type": "word",
+      "start": 10.86,
+      "end": 11.2
+    },
+    {
+      "text": "CABG",
+      "type": "word",
+      "start": 11.28,
+      "end": 11.72
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 11.78,
+      "end": 11.88
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 12.02,
+      "end": 12.2
+    },
+    {
+      "text": "bypass",
+      "type": "word",
+      "start": 12.3,
+      "end": 12.74
+    },
+    {
+      "text": "surgery.",
+      "type": "word",
+      "start": 12.82,
+      "end": 13.4
+    },
+    {
+      "text": "A",
+      "type": "word",
+      "start": 14.1,
+      "end": 14.18
+    },
+    {
+      "text": "surgeon",
+      "type": "word",
+      "start": 14.24,
+      "end": 14.58
+    },
+    {
+      "text": "uses",
+      "type": "word",
+      "start": 14.72,
+      "end": 15.06
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 15.12,
+      "end": 15.22
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 15.24,
+      "end": 15.44
+    },
+    {
+      "text": "vessel",
+      "type": "word",
+      "start": 15.52,
+      "end": 15.86
+    },
+    {
+      "text": "from",
+      "type": "word",
+      "start": 15.88,
+      "end": 16.059
+    },
+    {
+      "text": "elsewhere",
+      "type": "word",
+      "start": 16.12,
+      "end": 16.54
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 16.58,
+      "end": 16.66
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 16.7,
+      "end": 16.8
+    },
+    {
+      "text": "body",
+      "type": "word",
+      "start": 16.82,
+      "end": 17.16
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 17.4,
+      "end": 17.5
+    },
+    {
+      "text": "carry",
+      "type": "word",
+      "start": 17.56,
+      "end": 17.76
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 17.92,
+      "end": 18.22
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 18.54,
+      "end": 18.62
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 18.66,
+      "end": 18.74
+    },
+    {
+      "text": "coronary",
+      "type": "word",
+      "start": 18.82,
+      "end": 19.32
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 19.46,
+      "end": 19.84
+    },
+    {
+      "text": "beyond",
+      "type": "word",
+      "start": 20.0,
+      "end": 20.36
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 20.4,
+      "end": 20.48
+    },
+    {
+      "text": "narrowed",
+      "type": "word",
+      "start": 20.56,
+      "end": 20.96
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 21.12,
+      "end": 21.2
+    },
+    {
+      "text": "blocked",
+      "type": "word",
+      "start": 21.34,
+      "end": 21.64
+    },
+    {
+      "text": "section.",
+      "type": "word",
+      "start": 21.74,
+      "end": 22.28
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 23.46,
+      "end": 23.52
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 23.56,
+      "end": 23.78
+    },
+    {
+      "text": "muscle",
+      "type": "word",
+      "start": 23.82,
+      "end": 24.12
+    },
+    {
+      "text": "downstream",
+      "type": "word",
+      "start": 24.24,
+      "end": 24.84
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 24.94,
+      "end": 25.06
+    },
+    {
+      "text": "receive",
+      "type": "word",
+      "start": 25.1,
+      "end": 25.44
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 25.58,
+      "end": 25.86
+    },
+    {
+      "text": "through",
+      "type": "word",
+      "start": 25.9,
+      "end": 26.1
+    },
+    {
+      "text": "that",
+      "type": "word",
+      "start": 26.16,
+      "end": 26.34
+    },
+    {
+      "text": "new",
+      "type": "word",
+      "start": 26.42,
+      "end": 26.64
+    },
+    {
+      "text": "route.",
+      "type": "word",
+      "start": 26.68,
+      "end": 27.04
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 27.64,
+      "end": 27.76
+    },
+    {
+      "text": "coronary",
+      "type": "word",
+      "start": 27.8,
+      "end": 28.26
+    },
+    {
+      "text": "arteries",
+      "type": "word",
+      "start": 28.42,
+      "end": 28.86
+    },
+    {
+      "text": "bring",
+      "type": "word",
+      "start": 28.94,
+      "end": 29.2
+    },
+    {
+      "text": "oxygen-rich",
+      "type": "word",
+      "start": 29.28,
+      "end": 29.96
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 30.08,
+      "end": 30.36
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 30.38,
+      "end": 30.46
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 30.5,
+      "end": 30.56
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 30.6,
+      "end": 30.8
+    },
+    {
+      "text": "muscle.",
+      "type": "word",
+      "start": 30.88,
+      "end": 31.38
+    },
+    {
+      "text": "Over",
+      "type": "word",
+      "start": 32.1,
+      "end": 32.259
+    },
+    {
+      "text": "time,",
+      "type": "word",
+      "start": 32.36,
+      "end": 32.72
+    },
+    {
+      "text": "plaque",
+      "type": "word",
+      "start": 33.1,
+      "end": 33.52
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 33.56,
+      "end": 33.74
+    },
+    {
+      "text": "narrow",
+      "type": "word",
+      "start": 33.8,
+      "end": 34.14
+    },
+    {
+      "text": "their",
+      "type": "word",
+      "start": 34.18,
+      "end": 34.32
+    },
+    {
+      "text": "openings.",
+      "type": "word",
+      "start": 34.4,
+      "end": 35.06
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 35.8,
+      "end": 35.86
+    },
+    {
+      "text": "muscle",
+      "type": "word",
+      "start": 35.9,
+      "end": 36.2
+    },
+    {
+      "text": "may",
+      "type": "word",
+      "start": 36.24,
+      "end": 36.4
+    },
+    {
+      "text": "still",
+      "type": "word",
+      "start": 36.48,
+      "end": 36.64
+    },
+    {
+      "text": "receive",
+      "type": "word",
+      "start": 36.68,
+      "end": 37.02
+    },
+    {
+      "text": "enough",
+      "type": "word",
+      "start": 37.04,
+      "end": 37.32
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 37.36,
+      "end": 37.54
+    },
+    {
+      "text": "at",
+      "type": "word",
+      "start": 37.58,
+      "end": 37.7
+    },
+    {
+      "text": "rest,",
+      "type": "word",
+      "start": 37.76,
+      "end": 38.1
+    },
+    {
+      "text": "yet",
+      "type": "word",
+      "start": 38.4,
+      "end": 38.54
+    },
+    {
+      "text": "have",
+      "type": "word",
+      "start": 38.58,
+      "end": 38.84
+    },
+    {
+      "text": "too",
+      "type": "word",
+      "start": 38.9,
+      "end": 39.14
+    },
+    {
+      "text": "little",
+      "type": "word",
+      "start": 39.2,
+      "end": 39.46
+    },
+    {
+      "text": "when",
+      "type": "word",
+      "start": 39.48,
+      "end": 39.58
+    },
+    {
+      "text": "it",
+      "type": "word",
+      "start": 39.62,
+      "end": 39.68
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 39.74,
+      "end": 39.86
+    },
+    {
+      "text": "working",
+      "type": "word",
+      "start": 39.92,
+      "end": 40.22
+    },
+    {
+      "text": "harder.",
+      "type": "word",
+      "start": 40.3,
+      "end": 40.74
+    },
+    {
+      "text": "This",
+      "type": "word",
+      "start": 41.54,
+      "end": 41.68
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 41.7,
+      "end": 41.84
+    },
+    {
+      "text": "cause",
+      "type": "word",
+      "start": 41.88,
+      "end": 42.1
+    },
+    {
+      "text": "angina,",
+      "type": "word",
+      "start": 42.16,
+      "end": 42.74
+    },
+    {
+      "text": "which",
+      "type": "word",
+      "start": 43.02,
+      "end": 43.14
+    },
+    {
+      "text": "often",
+      "type": "word",
+      "start": 43.2,
+      "end": 43.42
+    },
+    {
+      "text": "feels",
+      "type": "word",
+      "start": 43.54,
+      "end": 43.8
+    },
+    {
+      "text": "like",
+      "type": "word",
+      "start": 43.86,
+      "end": 44.08
+    },
+    {
+      "text": "pressure",
+      "type": "word",
+      "start": 44.12,
+      "end": 44.64
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 44.68,
+      "end": 44.76
+    },
+    {
+      "text": "discomfort",
+      "type": "word",
+      "start": 44.84,
+      "end": 45.46
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 45.5,
+      "end": 45.56
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 45.6,
+      "end": 45.68
+    },
+    {
+      "text": "chest.",
+      "type": "word",
+      "start": 45.72,
+      "end": 46.12
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 47.06,
+      "end": 47.16
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 47.22,
+      "end": 47.52
+    },
+    {
+      "text": "reviews",
+      "type": "word",
+      "start": 47.58,
+      "end": 48.04
+    },
+    {
+      "text": "where",
+      "type": "word",
+      "start": 48.08,
+      "end": 48.22
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 48.26,
+      "end": 48.34
+    },
+    {
+      "text": "disease",
+      "type": "word",
+      "start": 48.38,
+      "end": 48.78
+    },
+    {
+      "text": "is,",
+      "type": "word",
+      "start": 48.88,
+      "end": 49.12
+    },
+    {
+      "text": "how",
+      "type": "word",
+      "start": 49.54,
+      "end": 49.64
+    },
+    {
+      "text": "much",
+      "type": "word",
+      "start": 49.68,
+      "end": 49.86
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 49.92,
+      "end": 50.14
+    },
+    {
+      "text": "muscle",
+      "type": "word",
+      "start": 50.18,
+      "end": 50.48
+    },
+    {
+      "text": "it",
+      "type": "word",
+      "start": 50.52,
+      "end": 50.58
+    },
+    {
+      "text": "affects,",
+      "type": "word",
+      "start": 50.62,
+      "end": 51.12
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 51.38,
+      "end": 51.48
+    },
+    {
+      "text": "how",
+      "type": "word",
+      "start": 51.54,
+      "end": 51.72
+    },
+    {
+      "text": "well",
+      "type": "word",
+      "start": 51.78,
+      "end": 51.98
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 52.02,
+      "end": 52.08
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 52.1,
+      "end": 52.3
+    },
+    {
+      "text": "pumps.",
+      "type": "word",
+      "start": 52.4,
+      "end": 52.84
+    },
+    {
+      "text": "An",
+      "type": "word",
+      "start": 53.72,
+      "end": 53.84
+    },
+    {
+      "text": "angiogram",
+      "type": "word",
+      "start": 53.94,
+      "end": 54.52
+    },
+    {
+      "text": "shows",
+      "type": "word",
+      "start": 54.62,
+      "end": 54.92
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 54.96,
+      "end": 55.08
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 55.16,
+      "end": 55.5
+    },
+    {
+      "text": "openings.",
+      "type": "word",
+      "start": 55.62,
+      "end": 56.22
+    },
+    {
+      "text": "An",
+      "type": "word",
+      "start": 56.9,
+      "end": 57.02
+    },
+    {
+      "text": "ultrasound",
+      "type": "word",
+      "start": 57.08,
+      "end": 57.68
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 57.72,
+      "end": 57.78
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 57.82,
+      "end": 57.9
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 57.94,
+      "end": 58.24
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 58.5,
+      "end": 58.66
+    },
+    {
+      "text": "show",
+      "type": "word",
+      "start": 58.7,
+      "end": 58.92
+    },
+    {
+      "text": "how",
+      "type": "word",
+      "start": 58.98,
+      "end": 59.22
+    },
+    {
+      "text": "well",
+      "type": "word",
+      "start": 59.26,
+      "end": 59.48
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 59.5,
+      "end": 59.6
+    },
+    {
+      "text": "main",
+      "type": "word",
+      "start": 59.64,
+      "end": 59.84
+    },
+    {
+      "text": "pumping",
+      "type": "word",
+      "start": 59.98,
+      "end": 60.28
+    },
+    {
+      "text": "chamber",
+      "type": "word",
+      "start": 60.38,
+      "end": 60.7
+    },
+    {
+      "text": "works.",
+      "type": "word",
+      "start": 60.8,
+      "end": 61.26
+    },
+    {
+      "text": "When",
+      "type": "word",
+      "start": 62.24,
+      "end": 62.4
+    },
+    {
+      "text": "coronary",
+      "type": "word",
+      "start": 62.44,
+      "end": 62.92
+    },
+    {
+      "text": "disease",
+      "type": "word",
+      "start": 63.02,
+      "end": 63.42
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 63.46,
+      "end": 63.56
+    },
+    {
+      "text": "stable,",
+      "type": "word",
+      "start": 63.66,
+      "end": 64.08
+    },
+    {
+      "text": "medicines",
+      "type": "word",
+      "start": 64.459,
+      "end": 64.98
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 65.0,
+      "end": 65.12
+    },
+    {
+      "text": "heart-healthy",
+      "type": "word",
+      "start": 65.2,
+      "end": 65.76
+    },
+    {
+      "text": "habits",
+      "type": "word",
+      "start": 65.8,
+      "end": 66.22
+    },
+    {
+      "text": "help",
+      "type": "word",
+      "start": 66.46,
+      "end": 66.7
+    },
+    {
+      "text": "manage",
+      "type": "word",
+      "start": 66.76,
+      "end": 67.08
+    },
+    {
+      "text": "symptoms",
+      "type": "word",
+      "start": 67.18,
+      "end": 67.66
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 67.8,
+      "end": 67.9
+    },
+    {
+      "text": "reduce",
+      "type": "word",
+      "start": 67.94,
+      "end": 68.34
+    },
+    {
+      "text": "future",
+      "type": "word",
+      "start": 68.46,
+      "end": 68.82
+    },
+    {
+      "text": "risk.",
+      "type": "word",
+      "start": 68.94,
+      "end": 69.36
+    },
+    {
+      "text": "If",
+      "type": "word",
+      "start": 70.28,
+      "end": 70.36
+    },
+    {
+      "text": "angina",
+      "type": "word",
+      "start": 70.38,
+      "end": 70.8
+    },
+    {
+      "text": "still",
+      "type": "word",
+      "start": 70.92,
+      "end": 71.1
+    },
+    {
+      "text": "limits",
+      "type": "word",
+      "start": 71.18,
+      "end": 71.52
+    },
+    {
+      "text": "daily",
+      "type": "word",
+      "start": 71.56,
+      "end": 71.86
+    },
+    {
+      "text": "life",
+      "type": "word",
+      "start": 71.92,
+      "end": 72.26
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 72.44,
+      "end": 72.52
+    },
+    {
+      "text": "there",
+      "type": "word",
+      "start": 72.56,
+      "end": 72.66
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 72.7,
+      "end": 72.78
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 72.84,
+      "end": 72.9
+    },
+    {
+      "text": "significant",
+      "type": "word",
+      "start": 72.94,
+      "end": 73.58
+    },
+    {
+      "text": "narrowing",
+      "type": "word",
+      "start": 73.72,
+      "end": 74.18
+    },
+    {
+      "text": "that",
+      "type": "word",
+      "start": 74.22,
+      "end": 74.32
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 74.36,
+      "end": 74.46
+    },
+    {
+      "text": "be",
+      "type": "word",
+      "start": 74.5,
+      "end": 74.64
+    },
+    {
+      "text": "treated,",
+      "type": "word",
+      "start": 74.68,
+      "end": 75.08
+    },
+    {
+      "text": "restoring",
+      "type": "word",
+      "start": 75.5,
+      "end": 76.02
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 76.14,
+      "end": 76.34
+    },
+    {
+      "text": "flow",
+      "type": "word",
+      "start": 76.44,
+      "end": 76.72
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 76.98,
+      "end": 77.08
+    },
+    {
+      "text": "help",
+      "type": "word",
+      "start": 77.12,
+      "end": 77.3
+    },
+    {
+      "text": "relieve",
+      "type": "word",
+      "start": 77.38,
+      "end": 77.78
+    },
+    {
+      "text": "symptoms.",
+      "type": "word",
+      "start": 77.92,
+      "end": 78.56
+    },
+    {
+      "text": "One",
+      "type": "word",
+      "start": 79.74,
+      "end": 79.86
+    },
+    {
+      "text": "option",
+      "type": "word",
+      "start": 79.96,
+      "end": 80.4
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 80.46,
+      "end": 80.66
+    },
+    {
+      "text": "PCI,",
+      "type": "word",
+      "start": 80.72,
+      "end": 81.68
+    },
+    {
+      "text": "often",
+      "type": "word",
+      "start": 82.12,
+      "end": 82.34
+    },
+    {
+      "text": "called",
+      "type": "word",
+      "start": 82.44,
+      "end": 82.64
+    },
+    {
+      "text": "angioplasty",
+      "type": "word",
+      "start": 82.78,
+      "end": 83.74
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 83.76,
+      "end": 83.86
+    },
+    {
+      "text": "stenting.",
+      "type": "word",
+      "start": 84.02,
+      "end": 84.54
+    },
+    {
+      "text": "It",
+      "type": "word",
+      "start": 85.2,
+      "end": 85.26
+    },
+    {
+      "text": "opens",
+      "type": "word",
+      "start": 85.32,
+      "end": 85.6
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 85.64,
+      "end": 85.72
+    },
+    {
+      "text": "selected",
+      "type": "word",
+      "start": 85.76,
+      "end": 86.18
+    },
+    {
+      "text": "section",
+      "type": "word",
+      "start": 86.26,
+      "end": 86.66
+    },
+    {
+      "text": "from",
+      "type": "word",
+      "start": 86.68,
+      "end": 86.86
+    },
+    {
+      "text": "inside",
+      "type": "word",
+      "start": 86.92,
+      "end": 87.34
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 87.38,
+      "end": 87.48
+    },
+    {
+      "text": "artery.",
+      "type": "word",
+      "start": 87.54,
+      "end": 88.06
+    },
+    {
+      "text": "Bypass",
+      "type": "word",
+      "start": 88.84,
+      "end": 89.4
+    },
+    {
+      "text": "surgery",
+      "type": "word",
+      "start": 89.46,
+      "end": 89.84
+    },
+    {
+      "text": "supplies",
+      "type": "word",
+      "start": 89.94,
+      "end": 90.36
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 90.48,
+      "end": 90.7
+    },
+    {
+      "text": "around",
+      "type": "word",
+      "start": 90.74,
+      "end": 91.0
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 91.04,
+      "end": 91.12
+    },
+    {
+      "text": "narrowing",
+      "type": "word",
+      "start": 91.18,
+      "end": 91.66
+    },
+    {
+      "text": "through",
+      "type": "word",
+      "start": 91.9,
+      "end": 92.04
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 92.08,
+      "end": 92.16
+    },
+    {
+      "text": "separate",
+      "type": "word",
+      "start": 92.22,
+      "end": 92.54
+    },
+    {
+      "text": "vessel.",
+      "type": "word",
+      "start": 92.62,
+      "end": 93.08
+    },
+    {
+      "text": "Some",
+      "type": "word",
+      "start": 93.9,
+      "end": 94.06
+    },
+    {
+      "text": "people",
+      "type": "word",
+      "start": 94.08,
+      "end": 94.38
+    },
+    {
+      "text": "continue",
+      "type": "word",
+      "start": 94.4,
+      "end": 94.88
+    },
+    {
+      "text": "with",
+      "type": "word",
+      "start": 94.92,
+      "end": 95.04
+    },
+    {
+      "text": "medicines",
+      "type": "word",
+      "start": 95.1,
+      "end": 95.54
+    },
+    {
+      "text": "alone.",
+      "type": "word",
+      "start": 95.6,
+      "end": 96.06
+    },
+    {
+      "text": "Others",
+      "type": "word",
+      "start": 96.98,
+      "end": 97.28
+    },
+    {
+      "text": "have",
+      "type": "word",
+      "start": 97.34,
+      "end": 97.62
+    },
+    {
+      "text": "PCI",
+      "type": "word",
+      "start": 97.68,
+      "end": 98.46
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 98.66,
+      "end": 98.72
+    },
+    {
+      "text": "bypass",
+      "type": "word",
+      "start": 98.8,
+      "end": 99.26
+    },
+    {
+      "text": "surgery",
+      "type": "word",
+      "start": 99.34,
+      "end": 99.82
+    },
+    {
+      "text": "alongside",
+      "type": "word",
+      "start": 99.98,
+      "end": 100.56
+    },
+    {
+      "text": "medical",
+      "type": "word",
+      "start": 100.6,
+      "end": 100.88
+    },
+    {
+      "text": "care.",
+      "type": "word",
+      "start": 101.0,
+      "end": 101.36
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 102.24,
+      "end": 102.32
+    },
+    {
+      "text": "right",
+      "type": "word",
+      "start": 102.36,
+      "end": 102.56
+    },
+    {
+      "text": "choice",
+      "type": "word",
+      "start": 102.62,
+      "end": 102.88
+    },
+    {
+      "text": "depends",
+      "type": "word",
+      "start": 102.96,
+      "end": 103.26
+    },
+    {
+      "text": "on",
+      "type": "word",
+      "start": 103.3,
+      "end": 103.44
+    },
+    {
+      "text": "what",
+      "type": "word",
+      "start": 103.48,
+      "end": 103.6
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 103.64,
+      "end": 103.74
+    },
+    {
+      "text": "treatment",
+      "type": "word",
+      "start": 103.78,
+      "end": 104.16
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 104.2,
+      "end": 104.28
+    },
+    {
+      "text": "expected",
+      "type": "word",
+      "start": 104.32,
+      "end": 104.8
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 104.84,
+      "end": 104.9
+    },
+    {
+      "text": "achieve",
+      "type": "word",
+      "start": 104.96,
+      "end": 105.34
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 105.38,
+      "end": 105.48
+    },
+    {
+      "text": "that",
+      "type": "word",
+      "start": 105.54,
+      "end": 105.7
+    },
+    {
+      "text": "person.",
+      "type": "word",
+      "start": 105.74,
+      "end": 106.18
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 107.1,
+      "end": 107.18
+    },
+    {
+      "text": "left",
+      "type": "word",
+      "start": 107.22,
+      "end": 107.42
+    },
+    {
+      "text": "main",
+      "type": "word",
+      "start": 107.54,
+      "end": 107.76
+    },
+    {
+      "text": "coronary",
+      "type": "word",
+      "start": 107.82,
+      "end": 108.3
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 108.44,
+      "end": 108.76
+    },
+    {
+      "text": "supplies",
+      "type": "word",
+      "start": 108.86,
+      "end": 109.34
+    },
+    {
+      "text": "two",
+      "type": "word",
+      "start": 109.4,
+      "end": 109.6
+    },
+    {
+      "text": "major",
+      "type": "word",
+      "start": 109.72,
+      "end": 109.98
+    },
+    {
+      "text": "branches",
+      "type": "word",
+      "start": 110.08,
+      "end": 110.62
+    },
+    {
+      "text": "that",
+      "type": "word",
+      "start": 110.86,
+      "end": 110.96
+    },
+    {
+      "text": "feed",
+      "type": "word",
+      "start": 111.02,
+      "end": 111.18
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 111.22,
+      "end": 111.3
+    },
+    {
+      "text": "large",
+      "type": "word",
+      "start": 111.34,
+      "end": 111.64
+    },
+    {
+      "text": "part",
+      "type": "word",
+      "start": 111.76,
+      "end": 112.0
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 112.04,
+      "end": 112.12
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 112.16,
+      "end": 112.2
+    },
+    {
+      "text": "heart.",
+      "type": "word",
+      "start": 112.28,
+      "end": 112.66
+    },
+    {
+      "text": "When",
+      "type": "word",
+      "start": 113.52,
+      "end": 113.62
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 113.66,
+      "end": 113.74
+    },
+    {
+      "text": "left",
+      "type": "word",
+      "start": 113.8,
+      "end": 114.02
+    },
+    {
+      "text": "main",
+      "type": "word",
+      "start": 114.12,
+      "end": 114.36
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 114.4,
+      "end": 114.5
+    },
+    {
+      "text": "significantly",
+      "type": "word",
+      "start": 114.56,
+      "end": 115.28
+    },
+    {
+      "text": "narrowed,",
+      "type": "word",
+      "start": 115.4,
+      "end": 115.86
+    },
+    {
+      "text": "bypass",
+      "type": "word",
+      "start": 116.26,
+      "end": 116.82
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 116.84,
+      "end": 116.94
+    },
+    {
+      "text": "improve",
+      "type": "word",
+      "start": 116.98,
+      "end": 117.36
+    },
+    {
+      "text": "survival",
+      "type": "word",
+      "start": 117.44,
+      "end": 117.98
+    },
+    {
+      "text": "compared",
+      "type": "word",
+      "start": 118.3,
+      "end": 118.66
+    },
+    {
+      "text": "with",
+      "type": "word",
+      "start": 118.7,
+      "end": 118.82
+    },
+    {
+      "text": "medical",
+      "type": "word",
+      "start": 118.9,
+      "end": 119.2
+    },
+    {
+      "text": "treatment",
+      "type": "word",
+      "start": 119.32,
+      "end": 119.72
+    },
+    {
+      "text": "alone.",
+      "type": "word",
+      "start": 119.8,
+      "end": 120.2
+    },
+    {
+      "text": "PCI",
+      "type": "word",
+      "start": 121.22,
+      "end": 121.96
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 122.0,
+      "end": 122.12
+    },
+    {
+      "text": "be",
+      "type": "word",
+      "start": 122.16,
+      "end": 122.22
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 122.3,
+      "end": 122.38
+    },
+    {
+      "text": "reasonable",
+      "type": "word",
+      "start": 122.42,
+      "end": 122.96
+    },
+    {
+      "text": "option",
+      "type": "word",
+      "start": 123.04,
+      "end": 123.42
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 123.46,
+      "end": 123.54
+    },
+    {
+      "text": "some",
+      "type": "word",
+      "start": 123.64,
+      "end": 123.84
+    },
+    {
+      "text": "people",
+      "type": "word",
+      "start": 123.88,
+      "end": 124.22
+    },
+    {
+      "text": "whose",
+      "type": "word",
+      "start": 124.26,
+      "end": 124.52
+    },
+    {
+      "text": "arteries",
+      "type": "word",
+      "start": 124.6,
+      "end": 125.06
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 125.08,
+      "end": 125.2
+    },
+    {
+      "text": "be",
+      "type": "word",
+      "start": 125.24,
+      "end": 125.38
+    },
+    {
+      "text": "treated",
+      "type": "word",
+      "start": 125.42,
+      "end": 125.7
+    },
+    {
+      "text": "equally",
+      "type": "word",
+      "start": 125.86,
+      "end": 126.2
+    },
+    {
+      "text": "well",
+      "type": "word",
+      "start": 126.32,
+      "end": 126.58
+    },
+    {
+      "text": "with",
+      "type": "word",
+      "start": 126.84,
+      "end": 127.0
+    },
+    {
+      "text": "either",
+      "type": "word",
+      "start": 127.08,
+      "end": 127.28
+    },
+    {
+      "text": "procedure.",
+      "type": "word",
+      "start": 127.38,
+      "end": 128.12
+    },
+    {
+      "text": "Another",
+      "type": "word",
+      "start": 128.88,
+      "end": 129.199
+    },
+    {
+      "text": "example",
+      "type": "word",
+      "start": 129.24,
+      "end": 129.78
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 129.86,
+      "end": 130.039
+    },
+    {
+      "text": "diabetes",
+      "type": "word",
+      "start": 130.259,
+      "end": 130.9
+    },
+    {
+      "text": "with",
+      "type": "word",
+      "start": 130.94,
+      "end": 131.06
+    },
+    {
+      "text": "disease",
+      "type": "word",
+      "start": 131.1,
+      "end": 131.58
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 131.62,
+      "end": 131.76
+    },
+    {
+      "text": "several",
+      "type": "word",
+      "start": 131.84,
+      "end": 132.12
+    },
+    {
+      "text": "coronary",
+      "type": "word",
+      "start": 132.26,
+      "end": 132.72
+    },
+    {
+      "text": "arteries,",
+      "type": "word",
+      "start": 132.84,
+      "end": 133.4
+    },
+    {
+      "text": "including",
+      "type": "word",
+      "start": 133.66,
+      "end": 134.08
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 134.14,
+      "end": 134.22
+    },
+    {
+      "text": "left",
+      "type": "word",
+      "start": 134.26,
+      "end": 134.5
+    },
+    {
+      "text": "anterior",
+      "type": "word",
+      "start": 134.64,
+      "end": 135.14
+    },
+    {
+      "text": "descending",
+      "type": "word",
+      "start": 135.24,
+      "end": 135.7
+    },
+    {
+      "text": "artery,",
+      "type": "word",
+      "start": 135.78,
+      "end": 136.2
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 136.62,
+      "end": 136.8
+    },
+    {
+      "text": "LAD.",
+      "type": "word",
+      "start": 136.94,
+      "end": 137.8
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 138.72,
+      "end": 138.82
+    },
+    {
+      "text": "LAD",
+      "type": "word",
+      "start": 138.92,
+      "end": 139.6
+    },
+    {
+      "text": "runs",
+      "type": "word",
+      "start": 139.72,
+      "end": 139.98
+    },
+    {
+      "text": "down",
+      "type": "word",
+      "start": 140.02,
+      "end": 140.2
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 140.24,
+      "end": 140.34
+    },
+    {
+      "text": "front",
+      "type": "word",
+      "start": 140.36,
+      "end": 140.52
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 140.56,
+      "end": 140.62
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 140.66,
+      "end": 140.7
+    },
+    {
+      "text": "heart.",
+      "type": "word",
+      "start": 140.76,
+      "end": 141.1
+    },
+    {
+      "text": "Bypass",
+      "type": "word",
+      "start": 141.9,
+      "end": 142.42
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 142.48,
+      "end": 142.58
+    },
+    {
+      "text": "often",
+      "type": "word",
+      "start": 142.64,
+      "end": 142.88
+    },
+    {
+      "text": "favored",
+      "type": "word",
+      "start": 143.04,
+      "end": 143.42
+    },
+    {
+      "text": "when",
+      "type": "word",
+      "start": 143.68,
+      "end": 143.8
+    },
+    {
+      "text": "those",
+      "type": "word",
+      "start": 143.84,
+      "end": 144.06
+    },
+    {
+      "text": "patients",
+      "type": "word",
+      "start": 144.1,
+      "end": 144.48
+    },
+    {
+      "text": "are",
+      "type": "word",
+      "start": 144.52,
+      "end": 144.66
+    },
+    {
+      "text": "suitable",
+      "type": "word",
+      "start": 144.72,
+      "end": 145.12
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 145.14,
+      "end": 145.22
+    },
+    {
+      "text": "surgery.",
+      "type": "word",
+      "start": 145.32,
+      "end": 145.94
+    },
+    {
+      "text": "In",
+      "type": "word",
+      "start": 146.74,
+      "end": 146.88
+    },
+    {
+      "text": "suitable",
+      "type": "word",
+      "start": 146.94,
+      "end": 147.24
+    },
+    {
+      "text": "patients",
+      "type": "word",
+      "start": 147.36,
+      "end": 147.82
+    },
+    {
+      "text": "with",
+      "type": "word",
+      "start": 147.86,
+      "end": 148.04
+    },
+    {
+      "text": "disease",
+      "type": "word",
+      "start": 148.06,
+      "end": 148.48
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 148.52,
+      "end": 148.66
+    },
+    {
+      "text": "several",
+      "type": "word",
+      "start": 148.72,
+      "end": 149.0
+    },
+    {
+      "text": "arteries",
+      "type": "word",
+      "start": 149.14,
+      "end": 149.68
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 149.92,
+      "end": 150.02
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 150.06,
+      "end": 150.12
+    },
+    {
+      "text": "severely",
+      "type": "word",
+      "start": 150.16,
+      "end": 150.68
+    },
+    {
+      "text": "weakened",
+      "type": "word",
+      "start": 150.72,
+      "end": 151.04
+    },
+    {
+      "text": "left",
+      "type": "word",
+      "start": 151.16,
+      "end": 151.38
+    },
+    {
+      "text": "ventricle,",
+      "type": "word",
+      "start": 151.48,
+      "end": 152.0
+    },
+    {
+      "text": "bypass",
+      "type": "word",
+      "start": 152.44,
+      "end": 153.0
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 153.02,
+      "end": 153.22
+    },
+    {
+      "text": "also",
+      "type": "word",
+      "start": 153.3,
+      "end": 153.62
+    },
+    {
+      "text": "improve",
+      "type": "word",
+      "start": 153.66,
+      "end": 154.02
+    },
+    {
+      "text": "survival.",
+      "type": "word",
+      "start": 154.1,
+      "end": 154.72
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 155.86,
+      "end": 155.96
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 156.0,
+      "end": 156.26
+    },
+    {
+      "text": "looks",
+      "type": "word",
+      "start": 156.32,
+      "end": 156.5
+    },
+    {
+      "text": "at",
+      "type": "word",
+      "start": 156.52,
+      "end": 156.62
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 156.66,
+      "end": 156.72
+    },
+    {
+      "text": "location",
+      "type": "word",
+      "start": 156.78,
+      "end": 157.4
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 157.42,
+      "end": 157.52
+    },
+    {
+      "text": "complexity",
+      "type": "word",
+      "start": 157.6,
+      "end": 158.22
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 158.26,
+      "end": 158.34
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 158.38,
+      "end": 158.48
+    },
+    {
+      "text": "disease,",
+      "type": "word",
+      "start": 158.5,
+      "end": 159.0
+    },
+    {
+      "text": "as",
+      "type": "word",
+      "start": 159.32,
+      "end": 159.44
+    },
+    {
+      "text": "well",
+      "type": "word",
+      "start": 159.48,
+      "end": 159.64
+    },
+    {
+      "text": "as",
+      "type": "word",
+      "start": 159.7,
+      "end": 159.8
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 159.86,
+      "end": 159.94
+    },
+    {
+      "text": "number",
+      "type": "word",
+      "start": 159.98,
+      "end": 160.22
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 160.28,
+      "end": 160.36
+    },
+    {
+      "text": "narrowings.",
+      "type": "word",
+      "start": 160.4,
+      "end": 161.12
+    },
+    {
+      "text": "A",
+      "type": "word",
+      "start": 162.16,
+      "end": 162.22
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 162.26,
+      "end": 162.42
+    },
+    {
+      "text": "attack",
+      "type": "word",
+      "start": 162.46,
+      "end": 162.82
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 162.98,
+      "end": 163.16
+    },
+    {
+      "text": "suddenly",
+      "type": "word",
+      "start": 163.22,
+      "end": 163.66
+    },
+    {
+      "text": "cut",
+      "type": "word",
+      "start": 163.7,
+      "end": 163.92
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 163.96,
+      "end": 164.18
+    },
+    {
+      "text": "flow",
+      "type": "word",
+      "start": 164.22,
+      "end": 164.46
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 164.5,
+      "end": 164.58
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 164.64,
+      "end": 164.82
+    },
+    {
+      "text": "muscle.",
+      "type": "word",
+      "start": 164.9,
+      "end": 165.4
+    },
+    {
+      "text": "In",
+      "type": "word",
+      "start": 166.26,
+      "end": 166.36
+    },
+    {
+      "text": "one",
+      "type": "word",
+      "start": 166.44,
+      "end": 166.54
+    },
+    {
+      "text": "type,",
+      "type": "word",
+      "start": 166.64,
+      "end": 166.9
+    },
+    {
+      "text": "called",
+      "type": "word",
+      "start": 167.18,
+      "end": 167.42
+    },
+    {
+      "text": "STEMI,",
+      "type": "word",
+      "start": 167.58,
+      "end": 168.14
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 168.46,
+      "end": 168.52
+    },
+    {
+      "text": "immediate",
+      "type": "word",
+      "start": 168.56,
+      "end": 168.98
+    },
+    {
+      "text": "priority",
+      "type": "word",
+      "start": 169.06,
+      "end": 169.66
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 169.8,
+      "end": 169.9
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 169.94,
+      "end": 170.0
+    },
+    {
+      "text": "restore",
+      "type": "word",
+      "start": 170.04,
+      "end": 170.46
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 170.56,
+      "end": 170.78
+    },
+    {
+      "text": "flow",
+      "type": "word",
+      "start": 170.84,
+      "end": 171.0
+    },
+    {
+      "text": "quickly.",
+      "type": "word",
+      "start": 171.14,
+      "end": 171.62
+    },
+    {
+      "text": "When",
+      "type": "word",
+      "start": 172.62,
+      "end": 172.74
+    },
+    {
+      "text": "it",
+      "type": "word",
+      "start": 172.78,
+      "end": 172.86
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 172.92,
+      "end": 173.0
+    },
+    {
+      "text": "available",
+      "type": "word",
+      "start": 173.06,
+      "end": 173.48
+    },
+    {
+      "text": "promptly",
+      "type": "word",
+      "start": 173.62,
+      "end": 174.18
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 174.2,
+      "end": 174.34
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 174.36,
+      "end": 174.48
+    },
+    {
+      "text": "be",
+      "type": "word",
+      "start": 174.52,
+      "end": 174.64
+    },
+    {
+      "text": "done,",
+      "type": "word",
+      "start": 174.66,
+      "end": 174.98
+    },
+    {
+      "text": "emergency",
+      "type": "word",
+      "start": 175.46,
+      "end": 176.06
+    },
+    {
+      "text": "PCI",
+      "type": "word",
+      "start": 176.2,
+      "end": 177.02
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 177.08,
+      "end": 177.26
+    },
+    {
+      "text": "usually",
+      "type": "word",
+      "start": 177.36,
+      "end": 177.7
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 177.72,
+      "end": 177.82
+    },
+    {
+      "text": "first",
+      "type": "word",
+      "start": 177.86,
+      "end": 178.06
+    },
+    {
+      "text": "choice.",
+      "type": "word",
+      "start": 178.16,
+      "end": 178.58
+    },
+    {
+      "text": "Urgent",
+      "type": "word",
+      "start": 179.34,
+      "end": 179.6
+    },
+    {
+      "text": "bypass",
+      "type": "word",
+      "start": 179.68,
+      "end": 180.28
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 180.3,
+      "end": 180.42
+    },
+    {
+      "text": "help",
+      "type": "word",
+      "start": 180.48,
+      "end": 180.66
+    },
+    {
+      "text": "selected",
+      "type": "word",
+      "start": 180.74,
+      "end": 181.12
+    },
+    {
+      "text": "people",
+      "type": "word",
+      "start": 181.22,
+      "end": 181.56
+    },
+    {
+      "text": "when",
+      "type": "word",
+      "start": 181.6,
+      "end": 181.78
+    },
+    {
+      "text": "PCI",
+      "type": "word",
+      "start": 181.82,
+      "end": 182.56
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 182.6,
+      "end": 182.76
+    },
+    {
+      "text": "impossible",
+      "type": "word",
+      "start": 182.8,
+      "end": 183.48
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 183.62,
+      "end": 183.78
+    },
+    {
+      "text": "unsuccessful",
+      "type": "word",
+      "start": 183.84,
+      "end": 184.64
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 184.94,
+      "end": 185.04
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 185.08,
+      "end": 185.12
+    },
+    {
+      "text": "large",
+      "type": "word",
+      "start": 185.18,
+      "end": 185.5
+    },
+    {
+      "text": "area",
+      "type": "word",
+      "start": 185.58,
+      "end": 185.86
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 185.9,
+      "end": 186.0
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 186.06,
+      "end": 186.26
+    },
+    {
+      "text": "muscle",
+      "type": "word",
+      "start": 186.34,
+      "end": 186.66
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 186.7,
+      "end": 186.8
+    },
+    {
+      "text": "still",
+      "type": "word",
+      "start": 186.92,
+      "end": 187.12
+    },
+    {
+      "text": "at",
+      "type": "word",
+      "start": 187.16,
+      "end": 187.28
+    },
+    {
+      "text": "risk.",
+      "type": "word",
+      "start": 187.34,
+      "end": 187.74
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 188.56,
+      "end": 188.66
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 188.7,
+      "end": 188.9
+    },
+    {
+      "text": "checks",
+      "type": "word",
+      "start": 189.02,
+      "end": 189.34
+    },
+    {
+      "text": "whether",
+      "type": "word",
+      "start": 189.38,
+      "end": 189.6
+    },
+    {
+      "text": "there",
+      "type": "word",
+      "start": 189.64,
+      "end": 189.76
+    },
+    {
+      "text": "are",
+      "type": "word",
+      "start": 189.8,
+      "end": 189.96
+    },
+    {
+      "text": "suitable",
+      "type": "word",
+      "start": 190.02,
+      "end": 190.34
+    },
+    {
+      "text": "arteries",
+      "type": "word",
+      "start": 190.52,
+      "end": 191.0
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 191.04,
+      "end": 191.12
+    },
+    {
+      "text": "attach",
+      "type": "word",
+      "start": 191.16,
+      "end": 191.52
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 191.56,
+      "end": 191.64
+    },
+    {
+      "text": "grafts",
+      "type": "word",
+      "start": 191.68,
+      "end": 192.1
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 192.14,
+      "end": 192.34
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 192.62,
+      "end": 192.72
+    },
+    {
+      "text": "whether",
+      "type": "word",
+      "start": 192.76,
+      "end": 192.96
+    },
+    {
+      "text": "surgery",
+      "type": "word",
+      "start": 193.1,
+      "end": 193.64
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 193.68,
+      "end": 193.82
+    },
+    {
+      "text": "likely",
+      "type": "word",
+      "start": 193.92,
+      "end": 194.26
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 194.3,
+      "end": 194.38
+    },
+    {
+      "text": "help.",
+      "type": "word",
+      "start": 194.42,
+      "end": 194.76
+    },
+    {
+      "text": "In",
+      "type": "word",
+      "start": 195.58,
+      "end": 195.72
+    },
+    {
+      "text": "some",
+      "type": "word",
+      "start": 195.76,
+      "end": 195.96
+    },
+    {
+      "text": "people",
+      "type": "word",
+      "start": 196.0,
+      "end": 196.3
+    },
+    {
+      "text": "whose",
+      "type": "word",
+      "start": 196.36,
+      "end": 196.58
+    },
+    {
+      "text": "emergency",
+      "type": "word",
+      "start": 196.62,
+      "end": 197.2
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 197.26,
+      "end": 197.62
+    },
+    {
+      "text": "has",
+      "type": "word",
+      "start": 197.66,
+      "end": 197.8
+    },
+    {
+      "text": "already",
+      "type": "word",
+      "start": 197.86,
+      "end": 198.22
+    },
+    {
+      "text": "been",
+      "type": "word",
+      "start": 198.24,
+      "end": 198.38
+    },
+    {
+      "text": "reopened,",
+      "type": "word",
+      "start": 198.46,
+      "end": 199.06
+    },
+    {
+      "text": "bypass",
+      "type": "word",
+      "start": 199.4,
+      "end": 199.98
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 200.0,
+      "end": 200.12
+    },
+    {
+      "text": "be",
+      "type": "word",
+      "start": 200.16,
+      "end": 200.24
+    },
+    {
+      "text": "considered",
+      "type": "word",
+      "start": 200.28,
+      "end": 200.74
+    },
+    {
+      "text": "later",
+      "type": "word",
+      "start": 200.8,
+      "end": 201.12
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 201.16,
+      "end": 201.32
+    },
+    {
+      "text": "other",
+      "type": "word",
+      "start": 201.4,
+      "end": 201.54
+    },
+    {
+      "text": "complex",
+      "type": "word",
+      "start": 201.64,
+      "end": 202.14
+    },
+    {
+      "text": "narrowings.",
+      "type": "word",
+      "start": 202.2,
+      "end": 202.9
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 203.58,
+      "end": 203.66
+    },
+    {
+      "text": "timing",
+      "type": "word",
+      "start": 203.72,
+      "end": 204.08
+    },
+    {
+      "text": "depends",
+      "type": "word",
+      "start": 204.1,
+      "end": 204.48
+    },
+    {
+      "text": "on",
+      "type": "word",
+      "start": 204.52,
+      "end": 204.62
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 204.64,
+      "end": 204.78
+    },
+    {
+      "text": "findings",
+      "type": "word",
+      "start": 204.82,
+      "end": 205.36
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 205.58,
+      "end": 205.66
+    },
+    {
+      "text": "on",
+      "type": "word",
+      "start": 205.72,
+      "end": 205.82
+    },
+    {
+      "text": "how",
+      "type": "word",
+      "start": 205.86,
+      "end": 205.98
+    },
+    {
+      "text": "stable",
+      "type": "word",
+      "start": 206.22,
+      "end": 206.56
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 206.6,
+      "end": 206.68
+    },
+    {
+      "text": "person",
+      "type": "word",
+      "start": 206.72,
+      "end": 207.04
+    },
+    {
+      "text": "is.",
+      "type": "word",
+      "start": 207.12,
+      "end": 207.4
+    },
+    {
+      "text": "When",
+      "type": "word",
+      "start": 208.26,
+      "end": 208.38
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 208.42,
+      "end": 208.52
+    },
+    {
+      "text": "best",
+      "type": "word",
+      "start": 208.56,
+      "end": 208.78
+    },
+    {
+      "text": "approach",
+      "type": "word",
+      "start": 208.82,
+      "end": 209.14
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 209.2,
+      "end": 209.32
+    },
+    {
+      "text": "unclear,",
+      "type": "word",
+      "start": 209.38,
+      "end": 209.92
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 210.24,
+      "end": 210.3
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 210.34,
+      "end": 210.56
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 210.6,
+      "end": 210.78
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 210.86,
+      "end": 211.02
+    },
+    {
+      "text": "bring",
+      "type": "word",
+      "start": 211.04,
+      "end": 211.24
+    },
+    {
+      "text": "together",
+      "type": "word",
+      "start": 211.26,
+      "end": 211.64
+    },
+    {
+      "text": "an",
+      "type": "word",
+      "start": 211.68,
+      "end": 211.8
+    },
+    {
+      "text": "interventional",
+      "type": "word",
+      "start": 211.84,
+      "end": 212.44
+    },
+    {
+      "text": "cardiologist,",
+      "type": "word",
+      "start": 212.56,
+      "end": 213.4
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 213.64,
+      "end": 213.7
+    },
+    {
+      "text": "cardiac",
+      "type": "word",
+      "start": 213.76,
+      "end": 214.2
+    },
+    {
+      "text": "surgeon,",
+      "type": "word",
+      "start": 214.32,
+      "end": 214.7
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 214.84,
+      "end": 215.0
+    },
+    {
+      "text": "other",
+      "type": "word",
+      "start": 215.06,
+      "end": 215.2
+    },
+    {
+      "text": "clinicians",
+      "type": "word",
+      "start": 215.3,
+      "end": 215.82
+    },
+    {
+      "text": "involved",
+      "type": "word",
+      "start": 215.92,
+      "end": 216.34
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 216.38,
+      "end": 216.44
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 216.48,
+      "end": 216.58
+    },
+    {
+      "text": "person's",
+      "type": "word",
+      "start": 216.62,
+      "end": 217.02
+    },
+    {
+      "text": "care.",
+      "type": "word",
+      "start": 217.08,
+      "end": 217.46
+    },
+    {
+      "text": "They",
+      "type": "word",
+      "start": 218.36,
+      "end": 218.48
+    },
+    {
+      "text": "look",
+      "type": "word",
+      "start": 218.56,
+      "end": 218.68
+    },
+    {
+      "text": "at",
+      "type": "word",
+      "start": 218.72,
+      "end": 218.8
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 218.84,
+      "end": 218.94
+    },
+    {
+      "text": "angiogram,",
+      "type": "word",
+      "start": 219.02,
+      "end": 219.78
+    },
+    {
+      "text": "how",
+      "type": "word",
+      "start": 220.16,
+      "end": 220.36
+    },
+    {
+      "text": "well",
+      "type": "word",
+      "start": 220.4,
+      "end": 220.64
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 220.68,
+      "end": 220.76
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 220.8,
+      "end": 221.0
+    },
+    {
+      "text": "pumps,",
+      "type": "word",
+      "start": 221.12,
+      "end": 221.48
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 221.82,
+      "end": 221.92
+    },
+    {
+      "text": "health",
+      "type": "word",
+      "start": 221.98,
+      "end": 222.18
+    },
+    {
+      "text": "factors",
+      "type": "word",
+      "start": 222.3,
+      "end": 222.74
+    },
+    {
+      "text": "such",
+      "type": "word",
+      "start": 222.78,
+      "end": 222.96
+    },
+    {
+      "text": "as",
+      "type": "word",
+      "start": 223.02,
+      "end": 223.24
+    },
+    {
+      "text": "kidney",
+      "type": "word",
+      "start": 223.3,
+      "end": 223.58
+    },
+    {
+      "text": "disease",
+      "type": "word",
+      "start": 223.6,
+      "end": 224.08
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 224.12,
+      "end": 224.2
+    },
+    {
+      "text": "frailty.",
+      "type": "word",
+      "start": 224.34,
+      "end": 224.92
+    },
+    {
+      "text": "They",
+      "type": "word",
+      "start": 225.82,
+      "end": 225.92
+    },
+    {
+      "text": "also",
+      "type": "word",
+      "start": 226.02,
+      "end": 226.36
+    },
+    {
+      "text": "ask",
+      "type": "word",
+      "start": 226.5,
+      "end": 226.8
+    },
+    {
+      "text": "what",
+      "type": "word",
+      "start": 226.84,
+      "end": 227.0
+    },
+    {
+      "text": "matters",
+      "type": "word",
+      "start": 227.06,
+      "end": 227.42
+    },
+    {
+      "text": "most",
+      "type": "word",
+      "start": 227.48,
+      "end": 227.76
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 227.8,
+      "end": 227.86
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 227.9,
+      "end": 227.98
+    },
+    {
+      "text": "person.",
+      "type": "word",
+      "start": 228.02,
+      "end": 228.54
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 229.32,
+      "end": 229.38
+    },
+    {
+      "text": "conversation",
+      "type": "word",
+      "start": 229.42,
+      "end": 230.16
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 230.2,
+      "end": 230.36
+    },
+    {
+      "text": "cover",
+      "type": "word",
+      "start": 230.4,
+      "end": 230.72
+    },
+    {
+      "text": "likely",
+      "type": "word",
+      "start": 230.78,
+      "end": 231.22
+    },
+    {
+      "text": "symptom",
+      "type": "word",
+      "start": 231.28,
+      "end": 231.6
+    },
+    {
+      "text": "relief,",
+      "type": "word",
+      "start": 231.66,
+      "end": 232.06
+    },
+    {
+      "text": "whether",
+      "type": "word",
+      "start": 232.44,
+      "end": 232.64
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 232.68,
+      "end": 232.78
+    },
+    {
+      "text": "proposed",
+      "type": "word",
+      "start": 232.8,
+      "end": 233.26
+    },
+    {
+      "text": "treatment",
+      "type": "word",
+      "start": 233.3,
+      "end": 233.72
+    },
+    {
+      "text": "may",
+      "type": "word",
+      "start": 233.76,
+      "end": 233.9
+    },
+    {
+      "text": "help",
+      "type": "word",
+      "start": 233.96,
+      "end": 234.18
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 234.22,
+      "end": 234.3
+    },
+    {
+      "text": "person",
+      "type": "word",
+      "start": 234.34,
+      "end": 234.66
+    },
+    {
+      "text": "live",
+      "type": "word",
+      "start": 234.7,
+      "end": 234.86
+    },
+    {
+      "text": "longer,",
+      "type": "word",
+      "start": 234.92,
+      "end": 235.32
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 235.64,
+      "end": 235.72
+    },
+    {
+      "text": "chance",
+      "type": "word",
+      "start": 235.76,
+      "end": 236.02
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 236.06,
+      "end": 236.14
+    },
+    {
+      "text": "needing",
+      "type": "word",
+      "start": 236.18,
+      "end": 236.44
+    },
+    {
+      "text": "another",
+      "type": "word",
+      "start": 236.48,
+      "end": 236.7
+    },
+    {
+      "text": "procedure,",
+      "type": "word",
+      "start": 236.8,
+      "end": 237.42
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 237.7,
+      "end": 237.78
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 237.82,
+      "end": 237.92
+    },
+    {
+      "text": "risks",
+      "type": "word",
+      "start": 237.94,
+      "end": 238.28
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 238.34,
+      "end": 238.44
+    },
+    {
+      "text": "recovery",
+      "type": "word",
+      "start": 238.48,
+      "end": 239.0
+    },
+    {
+      "text": "involved.",
+      "type": "word",
+      "start": 239.04,
+      "end": 239.62
+    },
+    {
+      "text": "Useful",
+      "type": "word",
+      "start": 240.46,
+      "end": 240.74
+    },
+    {
+      "text": "questions",
+      "type": "word",
+      "start": 240.84,
+      "end": 241.32
+    },
+    {
+      "text": "are,",
+      "type": "word",
+      "start": 241.42,
+      "end": 241.58
+    },
+    {
+      "text": "\"What",
+      "type": "word",
+      "start": 241.94,
+      "end": 242.04
+    },
+    {
+      "text": "are",
+      "type": "word",
+      "start": 242.08,
+      "end": 242.14
+    },
+    {
+      "text": "you",
+      "type": "word",
+      "start": 242.18,
+      "end": 242.3
+    },
+    {
+      "text": "hoping",
+      "type": "word",
+      "start": 242.36,
+      "end": 242.68
+    },
+    {
+      "text": "this",
+      "type": "word",
+      "start": 242.74,
+      "end": 242.9
+    },
+    {
+      "text": "treatment",
+      "type": "word",
+      "start": 242.94,
+      "end": 243.32
+    },
+    {
+      "text": "will",
+      "type": "word",
+      "start": 243.36,
+      "end": 243.5
+    },
+    {
+      "text": "do",
+      "type": "word",
+      "start": 243.54,
+      "end": 243.72
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 243.76,
+      "end": 243.86
+    },
+    {
+      "text": "me?\"",
+      "type": "word",
+      "start": 243.9,
+      "end": 244.14
+    },
+    {
+      "text": "and,",
+      "type": "word",
+      "start": 244.54,
+      "end": 244.76
+    },
+    {
+      "text": "\"What",
+      "type": "word",
+      "start": 245.14,
+      "end": 245.28
+    },
+    {
+      "text": "alternatives",
+      "type": "word",
+      "start": 245.36,
+      "end": 245.98
+    },
+    {
+      "text": "fit",
+      "type": "word",
+      "start": 246.12,
+      "end": 246.3
+    },
+    {
+      "text": "my",
+      "type": "word",
+      "start": 246.34,
+      "end": 246.5
+    },
+    {
+      "text": "situation?\"",
+      "type": "word",
+      "start": 246.54,
+      "end": 247.32
+    },
+    {
+      "text": "Watch",
+      "type": "word",
+      "start": 247.91,
+      "end": 248.21
+    },
+    {
+      "text": "where",
+      "type": "word",
+      "start": 248.39000000000001,
+      "end": 248.53
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 248.57000000000002,
+      "end": 248.63000000000002
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 248.73000000000002,
+      "end": 249.03
+    },
+    {
+      "text": "enters",
+      "type": "word",
+      "start": 249.19,
+      "end": 249.57000000000002
+    },
+    {
+      "text": "each",
+      "type": "word",
+      "start": 249.69,
+      "end": 249.83
+    },
+    {
+      "text": "graft.",
+      "type": "word",
+      "start": 249.93,
+      "end": 250.45000000000002
+    },
+    {
+      "text": "In",
+      "type": "word",
+      "start": 251.49,
+      "end": 251.57000000000002
+    },
+    {
+      "text": "this",
+      "type": "word",
+      "start": 251.61,
+      "end": 251.78900000000002
+    },
+    {
+      "text": "first",
+      "type": "word",
+      "start": 251.829,
+      "end": 252.05
+    },
+    {
+      "text": "example,",
+      "type": "word",
+      "start": 252.09,
+      "end": 252.65
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 252.93,
+      "end": 253.03
+    },
+    {
+      "text": "surgeon",
+      "type": "word",
+      "start": 253.07000000000002,
+      "end": 253.41
+    },
+    {
+      "text": "uses",
+      "type": "word",
+      "start": 253.55,
+      "end": 253.83
+    },
+    {
+      "text": "an",
+      "type": "word",
+      "start": 253.85000000000002,
+      "end": 253.99
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 254.05,
+      "end": 254.47
+    },
+    {
+      "text": "that",
+      "type": "word",
+      "start": 254.51000000000002,
+      "end": 254.65
+    },
+    {
+      "text": "already",
+      "type": "word",
+      "start": 254.73000000000002,
+      "end": 255.05
+    },
+    {
+      "text": "runs",
+      "type": "word",
+      "start": 255.21,
+      "end": 255.57000000000002
+    },
+    {
+      "text": "inside",
+      "type": "word",
+      "start": 255.71,
+      "end": 256.15000000000003
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 256.19,
+      "end": 256.27
+    },
+    {
+      "text": "left",
+      "type": "word",
+      "start": 256.31,
+      "end": 256.49
+    },
+    {
+      "text": "chest,",
+      "type": "word",
+      "start": 256.63,
+      "end": 256.99
+    },
+    {
+      "text": "called",
+      "type": "word",
+      "start": 257.33,
+      "end": 257.51
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 257.57,
+      "end": 257.67
+    },
+    {
+      "text": "left",
+      "type": "word",
+      "start": 257.71000000000004,
+      "end": 257.97
+    },
+    {
+      "text": "internal",
+      "type": "word",
+      "start": 258.15000000000003,
+      "end": 258.61
+    },
+    {
+      "text": "thoracic",
+      "type": "word",
+      "start": 258.71000000000004,
+      "end": 259.23
+    },
+    {
+      "text": "artery.",
+      "type": "word",
+      "start": 259.35,
+      "end": 259.81
+    },
+    {
+      "text": "It",
+      "type": "word",
+      "start": 260.75,
+      "end": 260.87
+    },
+    {
+      "text": "normally",
+      "type": "word",
+      "start": 260.93,
+      "end": 261.39
+    },
+    {
+      "text": "receives",
+      "type": "word",
+      "start": 261.43,
+      "end": 261.83
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 261.95,
+      "end": 262.23
+    },
+    {
+      "text": "from",
+      "type": "word",
+      "start": 262.27,
+      "end": 262.39
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 262.43,
+      "end": 262.53000000000003
+    },
+    {
+      "text": "left",
+      "type": "word",
+      "start": 262.59000000000003,
+      "end": 262.83
+    },
+    {
+      "text": "subclavian",
+      "type": "word",
+      "start": 262.97,
+      "end": 263.71000000000004
+    },
+    {
+      "text": "artery.",
+      "type": "word",
+      "start": 263.79,
+      "end": 264.27
+    },
+    {
+      "text": "Its",
+      "type": "word",
+      "start": 264.81,
+      "end": 264.97
+    },
+    {
+      "text": "upper",
+      "type": "word",
+      "start": 265.03000000000003,
+      "end": 265.27
+    },
+    {
+      "text": "end",
+      "type": "word",
+      "start": 265.33,
+      "end": 265.53000000000003
+    },
+    {
+      "text": "keeps",
+      "type": "word",
+      "start": 265.67,
+      "end": 265.91
+    },
+    {
+      "text": "that",
+      "type": "word",
+      "start": 265.97,
+      "end": 266.13
+    },
+    {
+      "text": "connection.",
+      "type": "word",
+      "start": 266.17,
+      "end": 266.75
+    },
+    {
+      "text": "Its",
+      "type": "word",
+      "start": 267.55,
+      "end": 267.71000000000004
+    },
+    {
+      "text": "lower",
+      "type": "word",
+      "start": 267.77,
+      "end": 268.03000000000003
+    },
+    {
+      "text": "end",
+      "type": "word",
+      "start": 268.11,
+      "end": 268.33
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 268.39,
+      "end": 268.53000000000003
+    },
+    {
+      "text": "joined",
+      "type": "word",
+      "start": 268.59000000000003,
+      "end": 268.87
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 268.91,
+      "end": 268.97
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 269.01,
+      "end": 269.15000000000003
+    },
+    {
+      "text": "LAD",
+      "type": "word",
+      "start": 269.29,
+      "end": 270.07
+    },
+    {
+      "text": "beyond",
+      "type": "word",
+      "start": 270.19,
+      "end": 270.55
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 270.59000000000003,
+      "end": 270.67
+    },
+    {
+      "text": "narrowing.",
+      "type": "word",
+      "start": 270.71000000000004,
+      "end": 271.25
+    },
+    {
+      "text": "Blood",
+      "type": "word",
+      "start": 272.31,
+      "end": 272.53000000000003
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 272.63,
+      "end": 272.77
+    },
+    {
+      "text": "then",
+      "type": "word",
+      "start": 272.81,
+      "end": 273.01
+    },
+    {
+      "text": "travel",
+      "type": "word",
+      "start": 273.07,
+      "end": 273.47
+    },
+    {
+      "text": "from",
+      "type": "word",
+      "start": 273.51,
+      "end": 273.63
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 273.67,
+      "end": 273.77
+    },
+    {
+      "text": "subclavian",
+      "type": "word",
+      "start": 273.83,
+      "end": 274.51
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 274.63,
+      "end": 275.05
+    },
+    {
+      "text": "through",
+      "type": "word",
+      "start": 275.39,
+      "end": 275.59000000000003
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 275.63,
+      "end": 275.71000000000004
+    },
+    {
+      "text": "graft",
+      "type": "word",
+      "start": 275.75,
+      "end": 276.23
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 276.47,
+      "end": 276.59000000000003
+    },
+    {
+      "text": "into",
+      "type": "word",
+      "start": 276.65000000000003,
+      "end": 276.85
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 276.89,
+      "end": 276.99
+    },
+    {
+      "text": "downstream",
+      "type": "word",
+      "start": 277.03000000000003,
+      "end": 277.61
+    },
+    {
+      "text": "coronary",
+      "type": "word",
+      "start": 277.79,
+      "end": 278.33
+    },
+    {
+      "text": "artery.",
+      "type": "word",
+      "start": 278.49,
+      "end": 278.97
+    },
+    {
+      "text": "Here",
+      "type": "word",
+      "start": 279.81,
+      "end": 280.09000000000003
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 280.13,
+      "end": 280.23
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 280.27,
+      "end": 280.35
+    },
+    {
+      "text": "separate",
+      "type": "word",
+      "start": 280.42900000000003,
+      "end": 280.77
+    },
+    {
+      "text": "example",
+      "type": "word",
+      "start": 280.81,
+      "end": 281.33000000000004
+    },
+    {
+      "text": "using",
+      "type": "word",
+      "start": 281.47,
+      "end": 281.71000000000004
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 281.75,
+      "end": 281.85
+    },
+    {
+      "text": "vein",
+      "type": "word",
+      "start": 281.89,
+      "end": 282.15000000000003
+    },
+    {
+      "text": "from",
+      "type": "word",
+      "start": 282.19,
+      "end": 282.31
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 282.37,
+      "end": 282.45
+    },
+    {
+      "text": "leg",
+      "type": "word",
+      "start": 282.51,
+      "end": 282.81
+    },
+    {
+      "text": "as",
+      "type": "word",
+      "start": 283.09000000000003,
+      "end": 283.17
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 283.21000000000004,
+      "end": 283.31
+    },
+    {
+      "text": "free",
+      "type": "word",
+      "start": 283.35,
+      "end": 283.53000000000003
+    },
+    {
+      "text": "graft.",
+      "type": "word",
+      "start": 283.65000000000003,
+      "end": 284.15000000000003
+    },
+    {
+      "text": "One",
+      "type": "word",
+      "start": 285.05,
+      "end": 285.21000000000004
+    },
+    {
+      "text": "end",
+      "type": "word",
+      "start": 285.29,
+      "end": 285.57
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 285.87,
+      "end": 285.99
+    },
+    {
+      "text": "usually",
+      "type": "word",
+      "start": 286.05,
+      "end": 286.49
+    },
+    {
+      "text": "joined",
+      "type": "word",
+      "start": 286.53000000000003,
+      "end": 286.87
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 286.91,
+      "end": 286.99
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 287.03000000000003,
+      "end": 287.09000000000003
+    },
+    {
+      "text": "ascending",
+      "type": "word",
+      "start": 287.15000000000003,
+      "end": 287.61
+    },
+    {
+      "text": "aorta.",
+      "type": "word",
+      "start": 287.81,
+      "end": 288.21000000000004
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 288.91,
+      "end": 288.97
+    },
+    {
+      "text": "other",
+      "type": "word",
+      "start": 289.03000000000003,
+      "end": 289.27
+    },
+    {
+      "text": "joins",
+      "type": "word",
+      "start": 289.67,
+      "end": 289.95
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 290.01,
+      "end": 290.11
+    },
+    {
+      "text": "chosen",
+      "type": "word",
+      "start": 290.15000000000003,
+      "end": 290.49
+    },
+    {
+      "text": "coronary",
+      "type": "word",
+      "start": 290.65000000000003,
+      "end": 291.19
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 291.33000000000004,
+      "end": 291.75
+    },
+    {
+      "text": "beyond",
+      "type": "word",
+      "start": 292.07,
+      "end": 292.55
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 292.59000000000003,
+      "end": 292.67
+    },
+    {
+      "text": "narrowing.",
+      "type": "word",
+      "start": 292.71000000000004,
+      "end": 293.27
+    },
+    {
+      "text": "Oxygen-rich",
+      "type": "word",
+      "start": 294.33000000000004,
+      "end": 295.01
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 295.13,
+      "end": 295.41
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 295.67,
+      "end": 295.79
+    },
+    {
+      "text": "then",
+      "type": "word",
+      "start": 295.83000000000004,
+      "end": 296.03000000000003
+    },
+    {
+      "text": "travel",
+      "type": "word",
+      "start": 296.09000000000003,
+      "end": 296.47
+    },
+    {
+      "text": "from",
+      "type": "word",
+      "start": 296.51,
+      "end": 296.63
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 296.69,
+      "end": 296.77
+    },
+    {
+      "text": "aorta",
+      "type": "word",
+      "start": 296.99,
+      "end": 297.35
+    },
+    {
+      "text": "through",
+      "type": "word",
+      "start": 297.61,
+      "end": 297.79
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 297.83000000000004,
+      "end": 297.91
+    },
+    {
+      "text": "graft",
+      "type": "word",
+      "start": 297.95,
+      "end": 298.39
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 298.67,
+      "end": 298.77
+    },
+    {
+      "text": "into",
+      "type": "word",
+      "start": 298.83000000000004,
+      "end": 299.01
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 299.05,
+      "end": 299.13
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 299.19,
+      "end": 299.39
+    },
+    {
+      "text": "muscle's",
+      "type": "word",
+      "start": 299.47,
+      "end": 299.83000000000004
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 299.97,
+      "end": 300.21000000000004
+    },
+    {
+      "text": "supply.",
+      "type": "word",
+      "start": 300.27,
+      "end": 300.85
+    },
+    {
+      "text": "In",
+      "type": "word",
+      "start": 301.95,
+      "end": 302.09000000000003
+    },
+    {
+      "text": "both",
+      "type": "word",
+      "start": 302.11,
+      "end": 302.31
+    },
+    {
+      "text": "examples,",
+      "type": "word",
+      "start": 302.37,
+      "end": 303.09000000000003
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 303.39,
+      "end": 303.45
+    },
+    {
+      "text": "original",
+      "type": "word",
+      "start": 303.51,
+      "end": 303.91
+    },
+    {
+      "text": "plaque",
+      "type": "word",
+      "start": 304.03000000000003,
+      "end": 304.35
+    },
+    {
+      "text": "stays",
+      "type": "word",
+      "start": 304.45,
+      "end": 304.71000000000004
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 304.75,
+      "end": 304.89
+    },
+    {
+      "text": "place.",
+      "type": "word",
+      "start": 304.93,
+      "end": 305.39
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 306.25,
+      "end": 306.33000000000004
+    },
+    {
+      "text": "surgeon",
+      "type": "word",
+      "start": 306.37,
+      "end": 306.75
+    },
+    {
+      "text": "chooses",
+      "type": "word",
+      "start": 306.87,
+      "end": 307.29
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 307.33000000000004,
+      "end": 307.41
+    },
+    {
+      "text": "vessels",
+      "type": "word",
+      "start": 307.47,
+      "end": 307.97
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 308.13,
+      "end": 308.31
+    },
+    {
+      "text": "number",
+      "type": "word",
+      "start": 308.37,
+      "end": 308.63
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 308.69,
+      "end": 308.75
+    },
+    {
+      "text": "grafts",
+      "type": "word",
+      "start": 308.85,
+      "end": 309.31
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 309.41,
+      "end": 309.49
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 309.53000000000003,
+      "end": 309.61
+    },
+    {
+      "text": "person's",
+      "type": "word",
+      "start": 309.65000000000003,
+      "end": 310.11
+    },
+    {
+      "text": "anatomy",
+      "type": "word",
+      "start": 310.17,
+      "end": 310.73
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 310.77,
+      "end": 310.85
+    },
+    {
+      "text": "circumstances.",
+      "type": "word",
+      "start": 310.95,
+      "end": 312.03000000000003
+    },
+    {
+      "text": "Before",
+      "type": "word",
+      "start": 312.89,
+      "end": 313.17
+    },
+    {
+      "text": "planned",
+      "type": "word",
+      "start": 313.31,
+      "end": 313.65
+    },
+    {
+      "text": "surgery,",
+      "type": "word",
+      "start": 313.71000000000004,
+      "end": 314.25
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 314.61,
+      "end": 314.71000000000004
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 314.75,
+      "end": 314.99
+    },
+    {
+      "text": "reviews",
+      "type": "word",
+      "start": 315.03000000000003,
+      "end": 315.47
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 315.51,
+      "end": 315.63
+    },
+    {
+      "text": "tests",
+      "type": "word",
+      "start": 315.67,
+      "end": 316.09000000000003
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 316.25,
+      "end": 316.31
+    },
+    {
+      "text": "explains",
+      "type": "word",
+      "start": 316.37,
+      "end": 316.93
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 316.97,
+      "end": 317.05
+    },
+    {
+      "text": "operation,",
+      "type": "word",
+      "start": 317.11,
+      "end": 317.75
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 318.03000000000003,
+      "end": 318.09000000000003
+    },
+    {
+      "text": "risks,",
+      "type": "word",
+      "start": 318.17,
+      "end": 318.57
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 318.77,
+      "end": 318.87
+    },
+    {
+      "text": "how",
+      "type": "word",
+      "start": 318.97,
+      "end": 319.19
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 319.21000000000004,
+      "end": 319.31
+    },
+    {
+      "text": "prepare.",
+      "type": "word",
+      "start": 319.33000000000004,
+      "end": 319.93
+    },
+    {
+      "text": "Follow",
+      "type": "word",
+      "start": 320.79,
+      "end": 321.09000000000003
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 321.13,
+      "end": 321.21000000000004
+    },
+    {
+      "text": "hospital's",
+      "type": "word",
+      "start": 321.23,
+      "end": 321.75
+    },
+    {
+      "text": "instructions",
+      "type": "word",
+      "start": 321.79,
+      "end": 322.47
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 322.51,
+      "end": 322.61
+    },
+    {
+      "text": "your",
+      "type": "word",
+      "start": 322.65,
+      "end": 322.77
+    },
+    {
+      "text": "medicines",
+      "type": "word",
+      "start": 322.83000000000004,
+      "end": 323.39
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 323.61,
+      "end": 323.75
+    },
+    {
+      "text": "when",
+      "type": "word",
+      "start": 323.81,
+      "end": 324.05
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 324.09000000000003,
+      "end": 324.17
+    },
+    {
+      "text": "stop",
+      "type": "word",
+      "start": 324.23,
+      "end": 324.45000000000005
+    },
+    {
+      "text": "eating",
+      "type": "word",
+      "start": 324.59000000000003,
+      "end": 324.83000000000004
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 324.85,
+      "end": 324.93
+    },
+    {
+      "text": "drinking.",
+      "type": "word",
+      "start": 324.99,
+      "end": 325.49
+    },
+    {
+      "text": "During",
+      "type": "word",
+      "start": 326.45000000000005,
+      "end": 326.73
+    },
+    {
+      "text": "bypass",
+      "type": "word",
+      "start": 326.83000000000004,
+      "end": 327.31
+    },
+    {
+      "text": "surgery,",
+      "type": "word",
+      "start": 327.37,
+      "end": 327.87
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 328.15,
+      "end": 328.23
+    },
+    {
+      "text": "patient",
+      "type": "word",
+      "start": 328.27,
+      "end": 328.65
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 328.71000000000004,
+      "end": 328.79
+    },
+    {
+      "text": "under",
+      "type": "word",
+      "start": 328.85,
+      "end": 329.03000000000003
+    },
+    {
+      "text": "general",
+      "type": "word",
+      "start": 329.17,
+      "end": 329.51
+    },
+    {
+      "text": "anesthesia.",
+      "type": "word",
+      "start": 329.63,
+      "end": 330.49
+    },
+    {
+      "text": "In",
+      "type": "word",
+      "start": 331.27,
+      "end": 331.33000000000004
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 331.37,
+      "end": 331.43
+    },
+    {
+      "text": "common",
+      "type": "word",
+      "start": 331.49,
+      "end": 331.75
+    },
+    {
+      "text": "approach,",
+      "type": "word",
+      "start": 331.79,
+      "end": 332.33000000000004
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 332.67,
+      "end": 332.75
+    },
+    {
+      "text": "surgeon",
+      "type": "word",
+      "start": 332.81,
+      "end": 333.13
+    },
+    {
+      "text": "reaches",
+      "type": "word",
+      "start": 333.25,
+      "end": 333.61
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 333.65,
+      "end": 333.73
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 333.77,
+      "end": 334.01
+    },
+    {
+      "text": "through",
+      "type": "word",
+      "start": 334.03000000000003,
+      "end": 334.19
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 334.23,
+      "end": 334.31
+    },
+    {
+      "text": "breastbone,",
+      "type": "word",
+      "start": 334.35,
+      "end": 334.95000000000005
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 335.33000000000004,
+      "end": 335.41
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 335.47,
+      "end": 335.51
+    },
+    {
+      "text": "heart-lung",
+      "type": "word",
+      "start": 335.57,
+      "end": 336.03000000000003
+    },
+    {
+      "text": "machine",
+      "type": "word",
+      "start": 336.07,
+      "end": 336.51
+    },
+    {
+      "text": "temporarily",
+      "type": "word",
+      "start": 336.87,
+      "end": 337.47
+    },
+    {
+      "text": "pumps",
+      "type": "word",
+      "start": 337.61,
+      "end": 337.85
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 338.01,
+      "end": 338.33000000000004
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 338.63,
+      "end": 338.73
+    },
+    {
+      "text": "adds",
+      "type": "word",
+      "start": 338.77,
+      "end": 339.03000000000003
+    },
+    {
+      "text": "oxygen",
+      "type": "word",
+      "start": 339.13,
+      "end": 339.65
+    },
+    {
+      "text": "while",
+      "type": "word",
+      "start": 339.71000000000004,
+      "end": 339.87
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 339.91,
+      "end": 339.99
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 340.05,
+      "end": 340.25
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 340.29,
+      "end": 340.41
+    },
+    {
+      "text": "stopped.",
+      "type": "word",
+      "start": 340.49,
+      "end": 340.95000000000005
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 341.85,
+      "end": 341.95000000000005
+    },
+    {
+      "text": "surgeon",
+      "type": "word",
+      "start": 341.99,
+      "end": 342.29
+    },
+    {
+      "text": "connects",
+      "type": "word",
+      "start": 342.39,
+      "end": 342.77
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 342.81,
+      "end": 342.89
+    },
+    {
+      "text": "grafts",
+      "type": "word",
+      "start": 342.93,
+      "end": 343.41
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 343.47,
+      "end": 343.53000000000003
+    },
+    {
+      "text": "their",
+      "type": "word",
+      "start": 343.57,
+      "end": 343.73
+    },
+    {
+      "text": "planned",
+      "type": "word",
+      "start": 343.77,
+      "end": 344.11
+    },
+    {
+      "text": "sites.",
+      "type": "word",
+      "start": 344.19,
+      "end": 344.63
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 345.47,
+      "end": 345.53000000000003
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 345.59000000000003,
+      "end": 345.87
+    },
+    {
+      "text": "then",
+      "type": "word",
+      "start": 345.91,
+      "end": 346.09000000000003
+    },
+    {
+      "text": "resumes",
+      "type": "word",
+      "start": 346.15,
+      "end": 346.57
+    },
+    {
+      "text": "pumping,",
+      "type": "word",
+      "start": 346.67,
+      "end": 347.07
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 347.55,
+      "end": 347.61
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 347.65,
+      "end": 347.75
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 347.81,
+      "end": 348.03000000000003
+    },
+    {
+      "text": "comes",
+      "type": "word",
+      "start": 348.17,
+      "end": 348.47
+    },
+    {
+      "text": "off",
+      "type": "word",
+      "start": 348.53000000000003,
+      "end": 348.67
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 348.71000000000004,
+      "end": 348.75
+    },
+    {
+      "text": "machine",
+      "type": "word",
+      "start": 348.79,
+      "end": 349.29
+    },
+    {
+      "text": "when",
+      "type": "word",
+      "start": 349.57,
+      "end": 349.67
+    },
+    {
+      "text": "it",
+      "type": "word",
+      "start": 349.71000000000004,
+      "end": 349.77
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 349.83000000000004,
+      "end": 349.95000000000005
+    },
+    {
+      "text": "safe",
+      "type": "word",
+      "start": 350.01,
+      "end": 350.31
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 350.35,
+      "end": 350.45000000000005
+    },
+    {
+      "text": "do",
+      "type": "word",
+      "start": 350.49,
+      "end": 350.61
+    },
+    {
+      "text": "so.",
+      "type": "word",
+      "start": 350.75,
+      "end": 351.03000000000003
+    },
+    {
+      "text": "In",
+      "type": "word",
+      "start": 352.07,
+      "end": 352.19
+    },
+    {
+      "text": "selected",
+      "type": "word",
+      "start": 352.25,
+      "end": 352.71000000000004
+    },
+    {
+      "text": "people,",
+      "type": "word",
+      "start": 352.77,
+      "end": 353.09000000000003
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 353.43,
+      "end": 353.51
+    },
+    {
+      "text": "surgeon",
+      "type": "word",
+      "start": 353.57,
+      "end": 353.93
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 353.95000000000005,
+      "end": 354.11
+    },
+    {
+      "text": "work",
+      "type": "word",
+      "start": 354.19,
+      "end": 354.49
+    },
+    {
+      "text": "while",
+      "type": "word",
+      "start": 354.75,
+      "end": 354.87
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 354.89,
+      "end": 354.97
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 355.03000000000003,
+      "end": 355.33000000000004
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 355.37,
+      "end": 355.47
+    },
+    {
+      "text": "still",
+      "type": "word",
+      "start": 355.57,
+      "end": 355.85
+    },
+    {
+      "text": "beating",
+      "type": "word",
+      "start": 355.89,
+      "end": 356.25
+    },
+    {
+      "text": "without",
+      "type": "word",
+      "start": 356.71000000000004,
+      "end": 357.29
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 357.33000000000004,
+      "end": 357.41
+    },
+    {
+      "text": "heart-lung",
+      "type": "word",
+      "start": 357.45000000000005,
+      "end": 357.91
+    },
+    {
+      "text": "machine.",
+      "type": "word",
+      "start": 357.95000000000005,
+      "end": 358.45000000000005
+    },
+    {
+      "text": "A",
+      "type": "word",
+      "start": 359.47,
+      "end": 359.55
+    },
+    {
+      "text": "working",
+      "type": "word",
+      "start": 359.59000000000003,
+      "end": 359.99
+    },
+    {
+      "text": "graft",
+      "type": "word",
+      "start": 360.03000000000003,
+      "end": 360.43
+    },
+    {
+      "text": "gives",
+      "type": "word",
+      "start": 360.69,
+      "end": 360.95000000000005
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 360.99,
+      "end": 361.31
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 361.37,
+      "end": 361.45000000000005
+    },
+    {
+      "text": "new",
+      "type": "word",
+      "start": 361.53000000000003,
+      "end": 361.73
+    },
+    {
+      "text": "route",
+      "type": "word",
+      "start": 361.79,
+      "end": 361.99
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 362.03000000000003,
+      "end": 362.11
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 362.15,
+      "end": 362.21000000000004
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 362.25,
+      "end": 362.49
+    },
+    {
+      "text": "muscle.",
+      "type": "word",
+      "start": 362.53000000000003,
+      "end": 362.99
+    },
+    {
+      "text": "Some",
+      "type": "word",
+      "start": 363.75,
+      "end": 363.91
+    },
+    {
+      "text": "people",
+      "type": "word",
+      "start": 363.95000000000005,
+      "end": 364.21000000000004
+    },
+    {
+      "text": "have",
+      "type": "word",
+      "start": 364.25,
+      "end": 364.43
+    },
+    {
+      "text": "less",
+      "type": "word",
+      "start": 364.49,
+      "end": 364.71000000000004
+    },
+    {
+      "text": "angina",
+      "type": "word",
+      "start": 364.77,
+      "end": 365.33000000000004
+    },
+    {
+      "text": "after",
+      "type": "word",
+      "start": 365.41,
+      "end": 365.63
+    },
+    {
+      "text": "recovery.",
+      "type": "word",
+      "start": 365.67,
+      "end": 366.33000000000004
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 366.97,
+      "end": 367.05
+    },
+    {
+      "text": "benefit",
+      "type": "word",
+      "start": 367.09000000000003,
+      "end": 367.45000000000005
+    },
+    {
+      "text": "depends",
+      "type": "word",
+      "start": 367.47,
+      "end": 367.85
+    },
+    {
+      "text": "on",
+      "type": "word",
+      "start": 367.91,
+      "end": 368.03000000000003
+    },
+    {
+      "text": "why",
+      "type": "word",
+      "start": 368.09000000000003,
+      "end": 368.23
+    },
+    {
+      "text": "surgery",
+      "type": "word",
+      "start": 368.35,
+      "end": 368.79
+    },
+    {
+      "text": "was",
+      "type": "word",
+      "start": 368.83000000000004,
+      "end": 368.95000000000005
+    },
+    {
+      "text": "recommended",
+      "type": "word",
+      "start": 368.99,
+      "end": 369.61
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 369.85,
+      "end": 369.95000000000005
+    },
+    {
+      "text": "which",
+      "type": "word",
+      "start": 369.99,
+      "end": 370.19
+    },
+    {
+      "text": "areas",
+      "type": "word",
+      "start": 370.27,
+      "end": 370.61
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 370.65,
+      "end": 370.73
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 370.77,
+      "end": 370.81
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 370.87,
+      "end": 371.11
+    },
+    {
+      "text": "are",
+      "type": "word",
+      "start": 371.15,
+      "end": 371.27
+    },
+    {
+      "text": "supplied.",
+      "type": "word",
+      "start": 371.31,
+      "end": 371.95000000000005
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 372.77,
+      "end": 372.87
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 372.91,
+      "end": 373.21000000000004
+    },
+    {
+      "text": "also",
+      "type": "word",
+      "start": 373.29,
+      "end": 373.57
+    },
+    {
+      "text": "discusses",
+      "type": "word",
+      "start": 373.59000000000003,
+      "end": 374.11
+    },
+    {
+      "text": "risks",
+      "type": "word",
+      "start": 374.23,
+      "end": 374.63
+    },
+    {
+      "text": "such",
+      "type": "word",
+      "start": 374.89,
+      "end": 375.03000000000003
+    },
+    {
+      "text": "as",
+      "type": "word",
+      "start": 375.09000000000003,
+      "end": 375.25
+    },
+    {
+      "text": "bleeding,",
+      "type": "word",
+      "start": 375.27,
+      "end": 375.69
+    },
+    {
+      "text": "infection,",
+      "type": "word",
+      "start": 375.96900000000005,
+      "end": 376.61
+    },
+    {
+      "text": "an",
+      "type": "word",
+      "start": 376.99,
+      "end": 377.09000000000003
+    },
+    {
+      "text": "irregular",
+      "type": "word",
+      "start": 377.15,
+      "end": 377.65
+    },
+    {
+      "text": "heartbeat,",
+      "type": "word",
+      "start": 377.749,
+      "end": 378.249
+    },
+    {
+      "text": "kidney",
+      "type": "word",
+      "start": 378.57000000000005,
+      "end": 378.89
+    },
+    {
+      "text": "problems,",
+      "type": "word",
+      "start": 378.90999999999997,
+      "end": 379.43
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 379.69,
+      "end": 379.85
+    },
+    {
+      "text": "attack,",
+      "type": "word",
+      "start": 379.89,
+      "end": 380.25
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 380.39,
+      "end": 380.47
+    },
+    {
+      "text": "stroke.",
+      "type": "word",
+      "start": 380.63,
+      "end": 381.05
+    },
+    {
+      "text": "Bypass",
+      "type": "word",
+      "start": 381.93,
+      "end": 382.55
+    },
+    {
+      "text": "treats",
+      "type": "word",
+      "start": 382.69,
+      "end": 383.01
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 383.05,
+      "end": 383.15
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 383.17,
+      "end": 383.35
+    },
+    {
+      "text": "flow",
+      "type": "word",
+      "start": 383.43,
+      "end": 383.59000000000003
+    },
+    {
+      "text": "problem",
+      "type": "word",
+      "start": 383.71000000000004,
+      "end": 384.15
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 384.21000000000004,
+      "end": 384.33000000000004
+    },
+    {
+      "text": "selected",
+      "type": "word",
+      "start": 384.39,
+      "end": 384.87
+    },
+    {
+      "text": "arteries.",
+      "type": "word",
+      "start": 384.97,
+      "end": 385.57000000000005
+    },
+    {
+      "text": "Coronary",
+      "type": "word",
+      "start": 386.40999999999997,
+      "end": 386.90999999999997
+    },
+    {
+      "text": "artery",
+      "type": "word",
+      "start": 387.05,
+      "end": 387.37
+    },
+    {
+      "text": "disease",
+      "type": "word",
+      "start": 387.45000000000005,
+      "end": 387.85
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 387.95000000000005,
+      "end": 388.11
+    },
+    {
+      "text": "still",
+      "type": "word",
+      "start": 388.23,
+      "end": 388.39
+    },
+    {
+      "text": "progress,",
+      "type": "word",
+      "start": 388.49,
+      "end": 389.05
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 389.40999999999997,
+      "end": 389.51
+    },
+    {
+      "text": "grafts",
+      "type": "word",
+      "start": 389.59000000000003,
+      "end": 390.07000000000005
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 390.15,
+      "end": 390.31
+    },
+    {
+      "text": "narrow",
+      "type": "word",
+      "start": 390.37,
+      "end": 390.83000000000004
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 390.89,
+      "end": 390.97
+    },
+    {
+      "text": "block",
+      "type": "word",
+      "start": 391.09000000000003,
+      "end": 391.40999999999997
+    },
+    {
+      "text": "over",
+      "type": "word",
+      "start": 391.47,
+      "end": 391.67
+    },
+    {
+      "text": "time.",
+      "type": "word",
+      "start": 391.73,
+      "end": 392.13
+    },
+    {
+      "text": "Follow-up",
+      "type": "word",
+      "start": 393.01,
+      "end": 393.53
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 393.55,
+      "end": 393.63
+    },
+    {
+      "text": "prevention",
+      "type": "word",
+      "start": 393.71000000000004,
+      "end": 394.25
+    },
+    {
+      "text": "remain",
+      "type": "word",
+      "start": 394.37,
+      "end": 394.73
+    },
+    {
+      "text": "part",
+      "type": "word",
+      "start": 394.89,
+      "end": 395.15
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 395.21000000000004,
+      "end": 395.33000000000004
+    },
+    {
+      "text": "care.",
+      "type": "word",
+      "start": 395.39,
+      "end": 395.87
+    },
+    {
+      "text": "After",
+      "type": "word",
+      "start": 396.83000000000004,
+      "end": 397.03
+    },
+    {
+      "text": "surgery,",
+      "type": "word",
+      "start": 397.15,
+      "end": 397.65
+    },
+    {
+      "text": "staff",
+      "type": "word",
+      "start": 397.99,
+      "end": 398.27
+    },
+    {
+      "text": "often",
+      "type": "word",
+      "start": 398.45000000000005,
+      "end": 398.71000000000004
+    },
+    {
+      "text": "monitor",
+      "type": "word",
+      "start": 398.83000000000004,
+      "end": 399.17
+    },
+    {
+      "text": "breathing,",
+      "type": "word",
+      "start": 399.29,
+      "end": 399.71000000000004
+    },
+    {
+      "text": "heart",
+      "type": "word",
+      "start": 399.99,
+      "end": 400.21000000000004
+    },
+    {
+      "text": "rhythm,",
+      "type": "word",
+      "start": 400.29,
+      "end": 400.57000000000005
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 400.67,
+      "end": 400.79
+    },
+    {
+      "text": "blood",
+      "type": "word",
+      "start": 400.90999999999997,
+      "end": 401.09000000000003
+    },
+    {
+      "text": "pressure",
+      "type": "word",
+      "start": 401.17,
+      "end": 401.61
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 401.65,
+      "end": 401.73
+    },
+    {
+      "text": "intensive",
+      "type": "word",
+      "start": 401.77,
+      "end": 402.37
+    },
+    {
+      "text": "care.",
+      "type": "word",
+      "start": 402.49,
+      "end": 402.90999999999997
+    },
+    {
+      "text": "You",
+      "type": "word",
+      "start": 403.71000000000004,
+      "end": 403.77
+    },
+    {
+      "text": "may",
+      "type": "word",
+      "start": 403.81,
+      "end": 403.90999999999997
+    },
+    {
+      "text": "have",
+      "type": "word",
+      "start": 403.97,
+      "end": 404.17
+    },
+    {
+      "text": "temporary",
+      "type": "word",
+      "start": 404.23,
+      "end": 404.71000000000004
+    },
+    {
+      "text": "breathing",
+      "type": "word",
+      "start": 404.83000000000004,
+      "end": 405.15
+    },
+    {
+      "text": "support",
+      "type": "word",
+      "start": 405.25,
+      "end": 405.65
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 405.87,
+      "end": 405.95000000000005
+    },
+    {
+      "text": "tubes",
+      "type": "word",
+      "start": 406.09000000000003,
+      "end": 406.49
+    },
+    {
+      "text": "that",
+      "type": "word",
+      "start": 406.53,
+      "end": 406.67
+    },
+    {
+      "text": "drain",
+      "type": "word",
+      "start": 406.73,
+      "end": 406.97
+    },
+    {
+      "text": "fluid",
+      "type": "word",
+      "start": 407.09000000000003,
+      "end": 407.43
+    },
+    {
+      "text": "from",
+      "type": "word",
+      "start": 407.47,
+      "end": 407.59000000000003
+    },
+    {
+      "text": "around",
+      "type": "word",
+      "start": 407.65,
+      "end": 407.95000000000005
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 407.99,
+      "end": 408.07000000000005
+    },
+    {
+      "text": "chest.",
+      "type": "word",
+      "start": 408.13,
+      "end": 408.59000000000003
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 409.05,
+      "end": 409.15
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 409.19,
+      "end": 409.40999999999997
+    },
+    {
+      "text": "manages",
+      "type": "word",
+      "start": 409.51,
+      "end": 409.95000000000005
+    },
+    {
+      "text": "pain",
+      "type": "word",
+      "start": 410.07000000000005,
+      "end": 410.37
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 410.69,
+      "end": 410.79
+    },
+    {
+      "text": "helps",
+      "type": "word",
+      "start": 410.83000000000004,
+      "end": 411.07000000000005
+    },
+    {
+      "text": "you",
+      "type": "word",
+      "start": 411.13,
+      "end": 411.23
+    },
+    {
+      "text": "start",
+      "type": "word",
+      "start": 411.29,
+      "end": 411.51
+    },
+    {
+      "text": "moving",
+      "type": "word",
+      "start": 411.61,
+      "end": 411.95000000000005
+    },
+    {
+      "text": "when",
+      "type": "word",
+      "start": 411.99,
+      "end": 412.07000000000005
+    },
+    {
+      "text": "it",
+      "type": "word",
+      "start": 412.11,
+      "end": 412.19
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 412.23,
+      "end": 412.35
+    },
+    {
+      "text": "safe.",
+      "type": "word",
+      "start": 412.40999999999997,
+      "end": 412.81
+    },
+    {
+      "text": "At",
+      "type": "word",
+      "start": 413.57000000000005,
+      "end": 413.69
+    },
+    {
+      "text": "discharge,",
+      "type": "word",
+      "start": 413.75,
+      "end": 414.35
+    },
+    {
+      "text": "ask",
+      "type": "word",
+      "start": 414.77,
+      "end": 415.03
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 415.07000000000005,
+      "end": 415.19
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 415.25,
+      "end": 415.29
+    },
+    {
+      "text": "written",
+      "type": "word",
+      "start": 415.35,
+      "end": 415.63
+    },
+    {
+      "text": "plan",
+      "type": "word",
+      "start": 415.75,
+      "end": 416.13
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 416.17,
+      "end": 416.33000000000004
+    },
+    {
+      "text": "wound",
+      "type": "word",
+      "start": 416.39,
+      "end": 416.59000000000003
+    },
+    {
+      "text": "care,",
+      "type": "word",
+      "start": 416.71000000000004,
+      "end": 416.95000000000005
+    },
+    {
+      "text": "medicines,",
+      "type": "word",
+      "start": 417.27,
+      "end": 417.83000000000004
+    },
+    {
+      "text": "activity,",
+      "type": "word",
+      "start": 418.09000000000003,
+      "end": 418.61
+    },
+    {
+      "text": "driving,",
+      "type": "word",
+      "start": 418.93,
+      "end": 419.40999999999997
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 419.71000000000004,
+      "end": 419.81
+    },
+    {
+      "text": "follow-up.",
+      "type": "word",
+      "start": 419.93,
+      "end": 420.53
+    },
+    {
+      "text": "Recovery",
+      "type": "word",
+      "start": 421.53,
+      "end": 422.03
+    },
+    {
+      "text": "varies,",
+      "type": "word",
+      "start": 422.15,
+      "end": 422.69
+    },
+    {
+      "text": "so",
+      "type": "word",
+      "start": 423.05,
+      "end": 423.21000000000004
+    },
+    {
+      "text": "use",
+      "type": "word",
+      "start": 423.33000000000004,
+      "end": 423.51
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 423.55,
+      "end": 423.63
+    },
+    {
+      "text": "advice",
+      "type": "word",
+      "start": 423.67,
+      "end": 424.09000000000003
+    },
+    {
+      "text": "your",
+      "type": "word",
+      "start": 424.15,
+      "end": 424.29
+    },
+    {
+      "text": "own",
+      "type": "word",
+      "start": 424.33000000000004,
+      "end": 424.55
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 424.59000000000003,
+      "end": 424.79
+    },
+    {
+      "text": "gives",
+      "type": "word",
+      "start": 424.90999999999997,
+      "end": 425.15
+    },
+    {
+      "text": "you.",
+      "type": "word",
+      "start": 425.23,
+      "end": 425.43
+    },
+    {
+      "text": "Cardiac",
+      "type": "word",
+      "start": 426.21000000000004,
+      "end": 426.67
+    },
+    {
+      "text": "rehabilitation",
+      "type": "word",
+      "start": 426.75,
+      "end": 427.63
+    },
+    {
+      "text": "can",
+      "type": "word",
+      "start": 427.65,
+      "end": 427.77
+    },
+    {
+      "text": "help",
+      "type": "word",
+      "start": 427.81,
+      "end": 428.01
+    },
+    {
+      "text": "you",
+      "type": "word",
+      "start": 428.05,
+      "end": 428.11
+    },
+    {
+      "text": "build",
+      "type": "word",
+      "start": 428.23,
+      "end": 428.45000000000005
+    },
+    {
+      "text": "activity",
+      "type": "word",
+      "start": 428.53,
+      "end": 428.93
+    },
+    {
+      "text": "safely",
+      "type": "word",
+      "start": 429.07000000000005,
+      "end": 429.51
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 429.73,
+      "end": 429.81
+    },
+    {
+      "text": "support",
+      "type": "word",
+      "start": 429.85,
+      "end": 430.23
+    },
+    {
+      "text": "longer-term",
+      "type": "word",
+      "start": 430.29,
+      "end": 430.83000000000004
+    },
+    {
+      "text": "prevention.",
+      "type": "word",
+      "start": 430.89,
+      "end": 431.53
+    },
+    {
+      "text": "Keep",
+      "type": "word",
+      "start": 432.45000000000005,
+      "end": 432.65
+    },
+    {
+      "text": "taking",
+      "type": "word",
+      "start": 432.69,
+      "end": 432.95000000000005
+    },
+    {
+      "text": "prescribed",
+      "type": "word",
+      "start": 433.05,
+      "end": 433.63
+    },
+    {
+      "text": "medicines",
+      "type": "word",
+      "start": 433.67,
+      "end": 434.19
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 434.35,
+      "end": 434.43
+    },
+    {
+      "text": "discuss",
+      "type": "word",
+      "start": 434.45000000000005,
+      "end": 434.90999999999997
+    },
+    {
+      "text": "any",
+      "type": "word",
+      "start": 434.97,
+      "end": 435.19
+    },
+    {
+      "text": "changes",
+      "type": "word",
+      "start": 435.23,
+      "end": 435.65
+    },
+    {
+      "text": "with",
+      "type": "word",
+      "start": 435.69,
+      "end": 435.79
+    },
+    {
+      "text": "your",
+      "type": "word",
+      "start": 435.83000000000004,
+      "end": 435.95000000000005
+    },
+    {
+      "text": "care",
+      "type": "word",
+      "start": 436.01,
+      "end": 436.19
+    },
+    {
+      "text": "team.",
+      "type": "word",
+      "start": 436.31,
+      "end": 436.59000000000003
+    },
+    {
+      "text": "Call",
+      "type": "word",
+      "start": 437.51,
+      "end": 437.71000000000004
+    },
+    {
+      "text": "your",
+      "type": "word",
+      "start": 437.77,
+      "end": 437.90999999999997
+    },
+    {
+      "text": "care",
+      "type": "word",
+      "start": 437.97,
+      "end": 438.17
+    },
+    {
+      "text": "team",
+      "type": "word",
+      "start": 438.27,
+      "end": 438.47
+    },
+    {
+      "text": "promptly",
+      "type": "word",
+      "start": 438.61,
+      "end": 439.27
+    },
+    {
+      "text": "if",
+      "type": "word",
+      "start": 439.33000000000004,
+      "end": 439.40999999999997
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 439.45000000000005,
+      "end": 439.53
+    },
+    {
+      "text": "wound",
+      "type": "word",
+      "start": 439.57000000000005,
+      "end": 439.83000000000004
+    },
+    {
+      "text": "becomes",
+      "type": "word",
+      "start": 439.87,
+      "end": 440.23
+    },
+    {
+      "text": "more",
+      "type": "word",
+      "start": 440.27,
+      "end": 440.47
+    },
+    {
+      "text": "painful,",
+      "type": "word",
+      "start": 440.53,
+      "end": 440.97
+    },
+    {
+      "text": "red,",
+      "type": "word",
+      "start": 441.29,
+      "end": 441.51
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 441.63,
+      "end": 441.73
+    },
+    {
+      "text": "starts",
+      "type": "word",
+      "start": 441.87,
+      "end": 442.11
+    },
+    {
+      "text": "draining,",
+      "type": "word",
+      "start": 442.19,
+      "end": 442.59000000000003
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 442.90999999999997,
+      "end": 443.03
+    },
+    {
+      "text": "if",
+      "type": "word",
+      "start": 443.09000000000003,
+      "end": 443.19
+    },
+    {
+      "text": "you",
+      "type": "word",
+      "start": 443.23,
+      "end": 443.31
+    },
+    {
+      "text": "develop",
+      "type": "word",
+      "start": 443.33000000000004,
+      "end": 443.67
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 443.71000000000004,
+      "end": 443.79
+    },
+    {
+      "text": "fever.",
+      "type": "word",
+      "start": 443.85,
+      "end": 444.31
+    },
+    {
+      "text": "Call",
+      "type": "word",
+      "start": 445.05,
+      "end": 445.25
+    },
+    {
+      "text": "your",
+      "type": "word",
+      "start": 445.29,
+      "end": 445.43
+    },
+    {
+      "text": "local",
+      "type": "word",
+      "start": 445.47,
+      "end": 445.73
+    },
+    {
+      "text": "emergency",
+      "type": "word",
+      "start": 445.77,
+      "end": 446.31
+    },
+    {
+      "text": "number",
+      "type": "word",
+      "start": 446.39,
+      "end": 446.65
+    },
+    {
+      "text": "right",
+      "type": "word",
+      "start": 446.79,
+      "end": 446.93
+    },
+    {
+      "text": "away",
+      "type": "word",
+      "start": 446.99,
+      "end": 447.27
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 447.31,
+      "end": 447.47
+    },
+    {
+      "text": "sudden",
+      "type": "word",
+      "start": 447.51,
+      "end": 447.79
+    },
+    {
+      "text": "chest",
+      "type": "word",
+      "start": 447.83000000000004,
+      "end": 448.05
+    },
+    {
+      "text": "pressure",
+      "type": "word",
+      "start": 448.13,
+      "end": 448.53
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 448.57000000000005,
+      "end": 448.71000000000004
+    },
+    {
+      "text": "discomfort",
+      "type": "word",
+      "start": 448.75,
+      "end": 449.31
+    },
+    {
+      "text": "that",
+      "type": "word",
+      "start": 449.33000000000004,
+      "end": 449.45000000000005
+    },
+    {
+      "text": "does",
+      "type": "word",
+      "start": 449.47,
+      "end": 449.61
+    },
+    {
+      "text": "not",
+      "type": "word",
+      "start": 449.65,
+      "end": 449.83000000000004
+    },
+    {
+      "text": "go",
+      "type": "word",
+      "start": 449.87,
+      "end": 449.99
+    },
+    {
+      "text": "away,",
+      "type": "word",
+      "start": 450.07000000000005,
+      "end": 450.49
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 450.99,
+      "end": 451.13
+    },
+    {
+      "text": "signs",
+      "type": "word",
+      "start": 451.19,
+      "end": 451.45000000000005
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 451.47,
+      "end": 451.53
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 451.57000000000005,
+      "end": 451.63
+    },
+    {
+      "text": "stroke",
+      "type": "word",
+      "start": 451.71000000000004,
+      "end": 451.99
+    },
+    {
+      "text": "such",
+      "type": "word",
+      "start": 452.05,
+      "end": 452.21000000000004
+    },
+    {
+      "text": "as",
+      "type": "word",
+      "start": 452.27,
+      "end": 452.47
+    },
+    {
+      "text": "face",
+      "type": "word",
+      "start": 452.53,
+      "end": 452.75
+    },
+    {
+      "text": "droop,",
+      "type": "word",
+      "start": 452.83000000000004,
+      "end": 453.07000000000005
+    },
+    {
+      "text": "arm",
+      "type": "word",
+      "start": 453.35,
+      "end": 453.55
+    },
+    {
+      "text": "weakness,",
+      "type": "word",
+      "start": 453.61,
+      "end": 454.05
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 454.11,
+      "end": 454.21000000000004
+    },
+    {
+      "text": "trouble",
+      "type": "word",
+      "start": 454.33000000000004,
+      "end": 454.57000000000005
+    },
+    {
+      "text": "speaking.",
+      "type": "word",
+      "start": 454.69,
+      "end": 455.15
+    },
+    {
+      "text": "As",
+      "type": "word",
+      "start": 456.01,
+      "end": 456.13
+    },
+    {
+      "text": "you",
+      "type": "word",
+      "start": 456.17,
+      "end": 456.25
+    },
+    {
+      "text": "go",
+      "type": "word",
+      "start": 456.29,
+      "end": 456.45000000000005
+    },
+    {
+      "text": "home,",
+      "type": "word",
+      "start": 456.49,
+      "end": 456.77
+    },
+    {
+      "text": "make",
+      "type": "word",
+      "start": 457.07000000000005,
+      "end": 457.21000000000004
+    },
+    {
+      "text": "sure",
+      "type": "word",
+      "start": 457.27,
+      "end": 457.51
+    },
+    {
+      "text": "you",
+      "type": "word",
+      "start": 457.55,
+      "end": 457.67
+    },
+    {
+      "text": "know",
+      "type": "word",
+      "start": 457.71000000000004,
+      "end": 457.87
+    },
+    {
+      "text": "who",
+      "type": "word",
+      "start": 457.90999999999997,
+      "end": 457.99
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 458.03,
+      "end": 458.13
+    },
+    {
+      "text": "contact",
+      "type": "word",
+      "start": 458.17,
+      "end": 458.73
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 458.90999999999997,
+      "end": 459.05
+    },
+    {
+      "text": "when",
+      "type": "word",
+      "start": 459.09000000000003,
+      "end": 459.25
+    },
+    {
+      "text": "your",
+      "type": "word",
+      "start": 459.29,
+      "end": 459.40999999999997
+    },
+    {
+      "text": "next",
+      "type": "word",
+      "start": 459.45000000000005,
+      "end": 459.65
+    },
+    {
+      "text": "appointment",
+      "type": "word",
+      "start": 459.69,
+      "end": 460.17
+    },
+    {
+      "text": "is.",
+      "type": "word",
+      "start": 460.27,
+      "end": 460.55
+    },
+    {
+      "text": "Bypass",
+      "type": "word",
+      "start": 461.39,
+      "end": 461.90999999999997
+    },
+    {
+      "text": "creates",
+      "type": "word",
+      "start": 462.03,
+      "end": 462.40999999999997
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 462.47,
+      "end": 462.51
+    },
+    {
+      "text": "new",
+      "type": "word",
+      "start": 462.65,
+      "end": 462.89
+    },
+    {
+      "text": "route",
+      "type": "word",
+      "start": 462.95000000000005,
+      "end": 463.19
+    },
+    {
+      "text": "for",
+      "type": "word",
+      "start": 463.23,
+      "end": 463.37
+    },
+    {
+      "text": "blood.",
+      "type": "word",
+      "start": 463.39,
+      "end": 463.71000000000004
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 464.45000000000005,
+      "end": 464.53
+    },
+    {
+      "text": "choice",
+      "type": "word",
+      "start": 464.57000000000005,
+      "end": 464.81
+    },
+    {
+      "text": "starts",
+      "type": "word",
+      "start": 464.90999999999997,
+      "end": 465.25
+    },
+    {
+      "text": "with",
+      "type": "word",
+      "start": 465.29,
+      "end": 465.37
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 465.40999999999997,
+      "end": 465.51
+    },
+    {
+      "text": "person's",
+      "type": "word",
+      "start": 465.55,
+      "end": 465.93
+    },
+    {
+      "text": "symptoms,",
+      "type": "word",
+      "start": 466.01,
+      "end": 466.53
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 466.79,
+      "end": 466.87
+    },
+    {
+      "text": "pattern",
+      "type": "word",
+      "start": 466.90999999999997,
+      "end": 467.21000000000004
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 467.25,
+      "end": 467.35
+    },
+    {
+      "text": "disease,",
+      "type": "word",
+      "start": 467.37,
+      "end": 467.97
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 468.25,
+      "end": 468.35
+    },
+    {
+      "text": "what",
+      "type": "word",
+      "start": 468.39,
+      "end": 468.55
+    },
+    {
+      "text": "each",
+      "type": "word",
+      "start": 468.63,
+      "end": 468.79
+    },
+    {
+      "text": "treatment",
+      "type": "word",
+      "start": 468.93,
+      "end": 469.37
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 469.43,
+      "end": 469.53
+    },
+    {
+      "text": "likely",
+      "type": "word",
+      "start": 469.69,
+      "end": 470.07000000000005
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 470.11,
+      "end": 470.19
+    },
+    {
+      "text": "achieve.",
+      "type": "word",
+      "start": 470.23,
+      "end": 470.79
+    },
+    {
+      "text": "This",
+      "type": "word",
+      "start": 472.01,
+      "end": 472.13
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 472.19,
+      "end": 472.31
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 472.35,
+      "end": 472.45000000000005
+    },
+    {
+      "text": "first",
+      "type": "word",
+      "start": 472.51,
+      "end": 472.73
+    },
+    {
+      "text": "episode",
+      "type": "word",
+      "start": 472.81,
+      "end": 473.31
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 473.35,
+      "end": 473.40999999999997
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 473.47,
+      "end": 473.53
+    },
+    {
+      "text": "Elesian",
+      "type": "word",
+      "start": 473.57000000000005,
+      "end": 474.01
+    },
+    {
+      "text": "Biomedical",
+      "type": "word",
+      "start": 474.13,
+      "end": 474.71000000000004
+    },
+    {
+      "text": "Cardiac",
+      "type": "word",
+      "start": 474.85,
+      "end": 475.29
+    },
+    {
+      "text": "Surgery",
+      "type": "word",
+      "start": 475.39,
+      "end": 475.81
+    },
+    {
+      "text": "Education",
+      "type": "word",
+      "start": 475.95000000000005,
+      "end": 476.53
+    },
+    {
+      "text": "series.",
+      "type": "word",
+      "start": 476.65,
+      "end": 477.21000000000004
+    }
+  ]
+}

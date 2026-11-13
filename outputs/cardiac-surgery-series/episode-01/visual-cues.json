@@ -1,0 +1,23 @@
+{
+  "P06": {
+    "tests": 0.264711,
+    "pumping": 0.309975,
+    "health": 0.351718,
+    "priorities": 0.452305,
+    "question1": 0.85767,
+    "question2": 0.938139
+  },
+  "P07": {
+    "chest_join": 0.320504,
+    "free_start": 0.496557,
+    "free_join": 0.636845
+  },
+  "P08": {
+    "anaesthesia": 0.300717,
+    "breastbone": 0.404373,
+    "machine": 0.494695,
+    "join": 0.6319,
+    "resume": 0.709749,
+    "beating": 0.851685
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "thumbnail": {
+    "title": ["Why choose", "bypass?"],
+    "seconds": 298.5,
+    "crop": [1770, 1000, 525, 250],
+    "eyebrow": "CARDIAC SURGERY EDUCATION"
+  },
+  "short": {
+    "seconds": [279.8, 305.15],
+    "headings": ["How a bypass graft", "reroutes blood"],
+    "crop": [2560, 1440, 0, 0],
+    "eyebrow": "ILLUSTRATED GRAFT FLOW"
+  }
+}
